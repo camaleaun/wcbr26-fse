@@ -430,11 +430,11 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 /* ── FOOTER ── */
 .site-footer { background: var(--teal-dd); color: var(--foot-text); padding-block: 64px 72px; }
 .footer__grid { display: grid; gap: 40px; }
-.footer__brand img { width: 171px; height: auto; margin-bottom: 20px; }
-.footer__social { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
-.footer__social a { color: #fff; opacity: .9; display: inline-flex; }
-.footer__social .social-icon { height: 20px; width: 20px; }
-.footer__social a:hover { color: var(--foot-head); opacity: 1; }
+.footer__brand img { width: 171px; height: auto; margin-bottom: 20px; filter: invert(1); }
+.footer__social.wp-block-social-links { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; padding: 0; color: #fff; }
+.footer__social .wp-block-social-link a { color: inherit; opacity: .9; padding: 0; background: none; border-radius: 0; }
+.footer__social .wp-block-social-link a:hover { color: var(--foot-head); opacity: 1; }
+.footer__social .wp-block-social-link svg { fill: currentColor; width: 20px; height: 20px; display: block; }
 .footer__tags { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .1em; color: var(--foot-head); text-transform: uppercase; margin-bottom: 8px; }
 .footer__desc { font-size: .875rem; line-height: 1.6; opacity: .7; }
 .footer__date { font-size: .625rem; text-transform: uppercase; letter-spacing: .04em; opacity: .7; margin-top: 8px; }
@@ -510,14 +510,6 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
   filter: brightness(0) saturate(100%) invert(29%) sepia(51%) saturate(7128%) hue-rotate(1096deg) brightness(94%) contrast(102%);
 }
 
-/* Redes sociais no footer: branco (fundo escuro teal-dd), hover: foot-head */
-.footer__social img.social-icon {
-  filter: invert(1);
-  transition: filter .15s ease;
-}
-.footer__social a:hover img.social-icon {
-  filter: brightness(0) saturate(100%) invert(88%) sepia(60%) saturate(870%) hue-rotate(1013deg) brightness(101%) contrast(101%);
-}
 
 /* Ícones do drawer (fechar, nav): teal-d #004E4D */
 .drawer__close img,
