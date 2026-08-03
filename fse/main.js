@@ -63,7 +63,7 @@
 
 /* Acordeon dos formatos — colapsável no mobile, sempre aberto no desktop */
 (function () {
-  var heads = document.querySelectorAll(".fmt__head");
+  var heads = document.querySelectorAll(".format-head");
   if (!heads.length) return;
   var mq = window.matchMedia("(min-width: 640px)");
 
