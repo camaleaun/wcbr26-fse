@@ -1,7 +1,7 @@
-<!-- wp:group {"tagName":"section","align":"full","className":"hero","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"hero","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull hero">
-<!-- wp:group {"tagName":"div","className":"container hero__grid","layout":{"type":"default"}} -->
-<div class="wp-block-group container hero__grid">
+<!-- wp:group {"tagName":"div","className":"hero__grid","layout":{"type":"default"}} -->
+<div class="wp-block-group hero__grid">
 
 <!-- wp:group {"tagName":"div","className":"hero__content","layout":{"type":"default"}} -->
 <div class="wp-block-group hero__content">
@@ -27,24 +27,22 @@
 <p class="hero__lead">A maior conferência WordPress da América Latina desembarca na capital mineira em 2026. Junte-se a nós para dois dias de aprendizado, networking e inovação.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<a class="btn" href="#">Garanta seu ingresso</a>
-<!-- /wp:html -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"className":"btn"} -->
+<div class="wp-block-button btn"><a class="wp-block-button__link wp-element-button" href="#">Garanta seu ingresso</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
 
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"div","className":"hero__media","layout":{"type":"default"}} -->
 <div class="wp-block-group hero__media">
-<!-- wp:html -->
-<div class="hero__frame">
-  <picture>
-    <source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/hero.avif">
-    <source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/hero.webp">
-    <img src="/wp-content/uploads/wcbr2026/img/hero.jpg" alt="Vista panorâmica de Belo Horizonte, sede do WordCamp Brasil 2026" width="512" height="512" fetchpriority="high">
-  </picture>
-</div>
-<!-- /wp:html -->
+<!-- wp:image {"className":"hero__frame","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full hero__frame"><img src="/wp-content/uploads/wcbr2026/img/hero.jpg" alt="Vista panorâmica de Belo Horizonte, sede do WordCamp Brasil 2026"/></figure>
+<!-- /wp:image -->
 </div>
 <!-- /wp:group -->
 
@@ -53,10 +51,10 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"stats section","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"stats section","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull stats section">
-<!-- wp:group {"tagName":"div","className":"container stats__grid","layout":{"type":"default"}} -->
-<div class="wp-block-group container stats__grid">
+<!-- wp:group {"tagName":"div","className":"stats__grid","layout":{"type":"default"}} -->
+<div class="wp-block-group stats__grid">
 
 <!-- wp:group {"tagName":"div","className":"stat","layout":{"type":"default"}} -->
 <div class="wp-block-group stat">
@@ -87,20 +85,16 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"section about","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"section about","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull section about">
-<!-- wp:group {"tagName":"div","className":"container about__grid","layout":{"type":"default"}} -->
-<div class="wp-block-group container about__grid">
+<!-- wp:group {"tagName":"div","className":"about__grid","layout":{"type":"default"}} -->
+<div class="wp-block-group about__grid">
 
 <!-- wp:group {"tagName":"div","className":"about__media","layout":{"type":"default"}} -->
 <div class="wp-block-group about__media">
-<!-- wp:html -->
-<picture>
-  <source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/about.avif">
-  <source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/about.webp">
-  <img src="/wp-content/uploads/wcbr2026/img/about.jpg" alt="Profissionais reunidos em uma mesa durante uma edição do WordCamp" width="584" height="428" loading="lazy">
-</picture>
-<!-- /wp:html -->
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/wcbr2026/img/about.jpg" alt="Profissionais reunidos em uma mesa durante uma edição do WordCamp"/></figure>
+<!-- /wp:image -->
 </div>
 <!-- /wp:group -->
 
@@ -134,18 +128,12 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"section formats","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"section formats","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull section formats">
-<!-- wp:group {"tagName":"div","className":"container","layout":{"type":"default"}} -->
-<div class="wp-block-group container">
 
-<!-- wp:group {"tagName":"div","className":"section__head","layout":{"type":"default"}} -->
-<div class="wp-block-group section__head">
-<!-- wp:heading {"level":2,"anchor":"formats-title"} -->
-<h2 class="wp-block-heading" id="formats-title">O que esperar</h2>
+<!-- wp:heading {"level":2,"className":"section__head","anchor":"formats-title"} -->
+<h2 class="wp-block-heading section__head" id="formats-title">O que esperar</h2>
 <!-- /wp:heading -->
-</div>
-<!-- /wp:group -->
 
 <!-- wp:html -->
 <div class="formats__grid">
@@ -188,104 +176,44 @@
 </div>
 <!-- /wp:html -->
 
-</div>
-<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"section news","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"section news","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull section news">
-<!-- wp:group {"tagName":"div","className":"container","layout":{"type":"default"}} -->
-<div class="wp-block-group container">
 
-<!-- wp:group {"tagName":"div","className":"section__head","layout":{"type":"default"}} -->
-<div class="wp-block-group section__head">
-<!-- wp:heading {"level":2,"anchor":"news-title"} -->
-<h2 class="wp-block-heading" id="news-title">Últimas notícias</h2>
+<!-- wp:heading {"level":2,"className":"section__head","anchor":"news-title"} -->
+<h2 class="wp-block-heading section__head" id="news-title">Últimas notícias</h2>
 <!-- /wp:heading -->
+
+<!-- wp:query {"query":{"perPage":6,"postType":"post","inherit":false},"className":"news__grid"} -->
+<div class="wp-block-query news__grid">
+<!-- wp:post-template -->
+<!-- wp:post-featured-image {"isLink":true,"className":"news-card__media","sizeSlug":"medium_large"} /-->
+<!-- wp:group {"className":"news-card__body","layout":{"type":"default"}} -->
+<div class="wp-block-group news-card__body">
+<!-- wp:post-terms {"term":"category","className":"tag"} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"className":"news-card__title"} /-->
+<!-- wp:post-excerpt {"moreText":""} /-->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:html -->
-<div class="news__grid">
-  <article class="news-card">
-    <a class="news-card__media" href="#"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/news-convocacao.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/news-convocacao.webp"><img src="/wp-content/uploads/wcbr2026/img/news-convocacao.jpg" alt="Microfone com o letreiro Call for Speakers ao fundo" width="512" height="320" loading="lazy"></picture></a>
-    <div class="news-card__body">
-      <span class="tag">Convocação</span>
-      <h3 class="h3 news-card__title"><a href="#">Chamada para Palestrantes aberta!</a></h3>
-      <p>Compartilhe sua experiência com a comunidade. Estamos buscando novas vozes para o palco.</p>
-      <a class="link-under" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </article>
-  <article class="news-card">
-    <a class="news-card__media" href="#"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/news-patrocinio.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/news-patrocinio.webp"><img src="/wp-content/uploads/wcbr2026/img/news-patrocinio.jpg" alt="Crachá de identificação sobre uma mesa" width="512" height="320" loading="lazy"></picture></a>
-    <div class="news-card__body">
-      <span class="tag">Patrocínio</span>
-      <h3 class="h3 news-card__title"><a href="#">Apoie o WordCamp Brasil 2026</a></h3>
-      <p>Coloque sua marca em destaque no maior evento WordPress do país. Conheça as cotas.</p>
-      <a class="link-under" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </article>
-  <article class="news-card">
-    <a class="news-card__media" href="#"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/news-voluntariado.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/news-voluntariado.webp"><img src="/wp-content/uploads/wcbr2026/img/news-voluntariado.jpg" alt="Mãos de várias pessoas unidas ao centro" width="512" height="320" loading="lazy"></picture></a>
-    <div class="news-card__body">
-      <span class="tag">Voluntariado</span>
-      <h3 class="h3 news-card__title"><a href="#">Seja parte da equipe organizadora</a></h3>
-      <p>Ajudar no WordCamp é uma experiência incrível de aprendizado e networking.</p>
-      <a class="link-under" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </article>
-  <article class="news-card">
-    <a class="news-card__media" href="#"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/news-local.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/news-local.webp"><img src="/wp-content/uploads/wcbr2026/img/news-local.jpg" alt="Vista aérea do campus universitário" width="512" height="320" loading="lazy"></picture></a>
-    <div class="news-card__body">
-      <span class="tag">Local</span>
-      <h3 class="h3 news-card__title"><a href="#">Por dentro do Campus da FUMEC</a></h3>
-      <p>Conheça o local que receberá centenas de entusiastas WordPress em outubro.</p>
-      <a class="link-under" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </article>
-  <article class="news-card">
-    <a class="news-card__media" href="#"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/news-turismo.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/news-turismo.webp"><img src="/wp-content/uploads/wcbr2026/img/news-turismo.jpg" alt="Pães de queijo sobre uma tábua de madeira" width="512" height="320" loading="lazy"></picture></a>
-    <div class="news-card__body">
-      <span class="tag">Turismo</span>
-      <h3 class="h3 news-card__title"><a href="#">Guia de Belo Horizonte para visitantes</a></h3>
-      <p>Onde comer pão de queijo e quais museus visitar durante sua estadia.</p>
-      <a class="link-under" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </article>
-  <article class="news-card">
-    <a class="news-card__media" href="#"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/news-evento.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/news-evento.webp"><img src="/wp-content/uploads/wcbr2026/img/news-evento.jpg" alt="Cartão Save the Date sobre uma mesa" width="512" height="320" loading="lazy"></picture></a>
-    <div class="news-card__body">
-      <span class="tag">Evento</span>
-      <h3 class="h3 news-card__title"><a href="#">Save the Date: Outubro 2026</a></h3>
-      <p>Marque na sua agenda. As vendas de ingressos do primeiro lote começam em breve.</p>
-      <a class="link-under" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </article>
+<!-- /wp:post-template -->
 </div>
-<!-- /wp:html -->
+<!-- /wp:query -->
 
 <!-- wp:paragraph {"className":"section__more"} -->
 <p class="section__more"><a class="link-under" href="#">Ver todas as notícias <svg class="ic" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
 <!-- /wp:paragraph -->
 
-</div>
-<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"section sponsors","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"section sponsors","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull section sponsors">
-<!-- wp:group {"tagName":"div","className":"container","layout":{"type":"default"}} -->
-<div class="wp-block-group container">
 
-<!-- wp:group {"tagName":"div","className":"section__head","layout":{"type":"default"}} -->
-<div class="wp-block-group section__head">
-<!-- wp:heading {"level":2,"anchor":"sponsors-title"} -->
-<h2 class="wp-block-heading" id="sponsors-title">Nossos patrocinadores</h2>
+<!-- wp:heading {"level":2,"className":"section__head","anchor":"sponsors-title"} -->
+<h2 class="wp-block-heading section__head" id="sponsors-title">Nossos patrocinadores</h2>
 <!-- /wp:heading -->
-</div>
-<!-- /wp:group -->
 
 <!-- wp:heading {"level":3,"className":"tier"} -->
 <h3 class="wp-block-heading tier">Cota Tropeirão (Ouro)</h3>
@@ -356,36 +284,25 @@
 <p class="section__cta"><a class="btn" href="#">Torne-se um patrocinador</a></p>
 <!-- /wp:paragraph -->
 
-</div>
-<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"section organization","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"section organization","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull section organization">
-<!-- wp:group {"tagName":"div","className":"container","layout":{"type":"default"}} -->
-<div class="wp-block-group container">
 
-<!-- wp:group {"tagName":"div","className":"section__head","layout":{"type":"default"}} -->
-<div class="wp-block-group section__head">
-<!-- wp:heading {"level":2,"anchor":"org-title"} -->
-<h2 class="wp-block-heading" id="org-title">Organização</h2>
+<!-- wp:heading {"level":2,"className":"section__head","anchor":"org-title"} -->
+<h2 class="wp-block-heading section__head" id="org-title">Organização</h2>
 <!-- /wp:heading -->
-</div>
-<!-- /wp:group -->
 
-<!-- wp:html -->
-<ul class="org-grid">
-  <li class="organizer"><span class="avatar avatar--brick"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/christian.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/christian.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/christian.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Christian van &#39;t Hof</span><span class="organizer__role">Liderança e Patrocínios</span></li>
-  <li class="organizer"><span class="avatar avatar--teal"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/eduardo.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/eduardo.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/eduardo.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Eduardo Zulian</span><span class="organizer__role">Financeiro</span></li>
-  <li class="organizer"><span class="avatar avatar--brick"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/amanda.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/amanda.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/amanda.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Amanda Cardoso</span><span class="organizer__role">Local do Evento</span></li>
-  <li class="organizer"><span class="avatar avatar--teal"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/andre.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/andre.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/andre.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">André Ribeiro</span><span class="organizer__role">Dia do Evento</span></li>
-  <li class="organizer"><span class="avatar avatar--brick"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/hans.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/hans.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/hans.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Hans Möhl</span><span class="organizer__role">Website e Design</span></li>
-  <li class="organizer"><span class="avatar avatar--teal"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/sandra.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/sandra.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/sandra.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Sandra Peres</span><span class="organizer__role">Rede Social e Textos</span></li>
-  <li class="organizer"><span class="avatar avatar--brick"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/gilberto.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/gilberto.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/gilberto.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Gilberto Tavares</span><span class="organizer__role">Voluntários</span></li>
-  <li class="organizer"><span class="avatar avatar--teal"><picture><source type="image/avif" srcset="/wp-content/uploads/wcbr2026/img/organizers/pamela.avif"><source type="image/webp" srcset="/wp-content/uploads/wcbr2026/img/organizers/pamela.webp"><img src="/wp-content/uploads/wcbr2026/img/organizers/pamela.jpg" alt="" width="72" height="72" loading="lazy"></picture></span><span class="organizer__name">Pâmela Ribeiro</span><span class="organizer__role">Hospitalidade</span></li>
-</ul>
-<!-- /wp:html -->
+<!-- wp:query {"query":{"perPage":100,"postType":"wcb_organizer","inherit":false,"orderby":"menu_order","order":"ASC"},"className":"org-grid"} -->
+<div class="wp-block-query org-grid">
+<!-- wp:post-template -->
+<!-- wp:post-featured-image {"isLink":false,"className":"avatar","width":"72px","height":"72px"} /-->
+<!-- wp:post-title {"level":3,"isLink":false,"className":"organizer__name"} /-->
+<!-- wp:post-terms {"term":"wcb_organizer_team","className":"organizer__role"} /-->
+<!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
 
 <!-- wp:paragraph {"className":"section__more"} -->
 <p class="section__more"><a class="link-under" href="#">Ver todos <svg class="ic" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
@@ -395,15 +312,11 @@
 <p class="organization__note">Uma equipe apaixonada de voluntários trabalhando para tornar o WordCamp Brasil 2026 em Belo Horizonte uma experiência inesquecível.</p>
 <!-- /wp:paragraph -->
 
-</div>
-<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"section newsletter","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"section newsletter","layout":{"type":"constrained","contentSize":"720px"}} -->
 <section class="wp-block-group alignfull section newsletter">
-<!-- wp:group {"tagName":"div","className":"container newsletter__inner","layout":{"type":"default"}} -->
-<div class="wp-block-group container newsletter__inner">
 
 <!-- wp:heading {"level":2,"className":"h2 newsletter__title","anchor":"signup-title"} -->
 <h2 class="wp-block-heading h2 newsletter__title" id="signup-title">Fique por dentro das novidades</h2>
@@ -421,7 +334,5 @@
 </form>
 <!-- /wp:html -->
 
-</div>
-<!-- /wp:group -->
 </section>
 <!-- /wp:group -->

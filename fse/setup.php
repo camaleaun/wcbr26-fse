@@ -32,12 +32,14 @@ $mime_map = [
 ];
 
 // Builds $url_map: '/wp-content/uploads/wcbr2026/img/FILE' => 'https://.../YYYY/MM/FILE'
-$url_map = [];
+// Builds $attach_id_map: 'filename-stem' => attach_id (for set_post_thumbnail)
+$url_map       = [];
+$attach_id_map = [];
 
 function wcbr_import_image( $src, $dest_filename, $old_rel, $media_dir, $media_url, $mime_map, &$url_map ) {
 	$ext = strtolower( pathinfo( $dest_filename, PATHINFO_EXTENSION ) );
 	if ( ! isset( $mime_map[ $ext ] ) ) {
-		return;
+		return 0;
 	}
 
 	$dest    = $media_dir . '/' . $dest_filename;
@@ -46,7 +48,7 @@ function wcbr_import_image( $src, $dest_filename, $old_rel, $media_dir, $media_u
 	$url_map[ '/wp-content/uploads/wcbr2026/img/' . $old_rel ] = $new_url;
 
 	if ( ! file_exists( $src ) ) {
-		return;
+		return 0;
 	}
 
 	if ( ! file_exists( $dest ) ) {
@@ -61,7 +63,7 @@ function wcbr_import_image( $src, $dest_filename, $old_rel, $media_dir, $media_u
 		'posts_per_page' => 1,
 	] );
 	if ( $existing_meta ) {
-		return;
+		return $existing_meta[0]->ID;
 	}
 
 	$attach_id = wp_insert_attachment( [
@@ -75,7 +77,9 @@ function wcbr_import_image( $src, $dest_filename, $old_rel, $media_dir, $media_u
 	if ( $attach_id && ! is_wp_error( $attach_id ) ) {
 		$meta = wp_generate_attachment_metadata( $attach_id, $dest );
 		wp_update_attachment_metadata( $attach_id, $meta );
+		return $attach_id;
 	}
+	return 0;
 }
 
 // Flat images in wcbr2026/img/ (skip icon-* utility files)
@@ -88,12 +92,15 @@ if ( is_dir( $img_dir ) ) {
 		if ( strpos( $file, 'icon-' ) === 0 ) {
 			continue; // nav icons stay at wcbr2026/img/
 		}
-		wcbr_import_image(
+		$id = wcbr_import_image(
 			$img_dir . $file,
 			$file,
 			$file,
 			$media_dir, $media_url, $mime_map, $url_map
 		);
+		if ( $id ) {
+			$attach_id_map[ pathinfo( $file, PATHINFO_FILENAME ) ] = $id;
+		}
 	}
 }
 
@@ -104,12 +111,16 @@ if ( is_dir( $org_dir ) ) {
 		if ( $file === '.' || $file === '..' ) {
 			continue;
 		}
-		wcbr_import_image(
+		$dest_file = 'organizer-' . $file;
+		$id        = wcbr_import_image(
 			$org_dir . $file,
-			'organizer-' . $file,
+			$dest_file,
 			'organizers/' . $file,
 			$media_dir, $media_url, $mime_map, $url_map
 		);
+		if ( $id ) {
+			$attach_id_map[ pathinfo( $dest_file, PATHINFO_FILENAME ) ] = $id;
+		}
 	}
 }
 
@@ -314,6 +325,89 @@ if ( $existing_tpl ) {
 	] );
 	if ( $tpl_id && ! is_wp_error( $tpl_id ) ) {
 		wp_set_object_terms( $tpl_id, 'twentytwentyfive', 'wp_theme' );
+	}
+}
+
+// ── 5. News posts ─────────────────────────────────────────────────────────────
+
+$news_data = [
+	[ 'title' => 'Chamada para Palestrantes aberta!',         'excerpt' => 'Compartilhe sua experiência com a comunidade. Estamos buscando novas vozes para o palco.',              'category' => 'Convocação',  'img' => 'news-convocacao'  ],
+	[ 'title' => 'Apoie o WordCamp Brasil 2026',              'excerpt' => 'Coloque sua marca em destaque no maior evento WordPress do país. Conheça as cotas.',                    'category' => 'Patrocínio',  'img' => 'news-patrocinio'  ],
+	[ 'title' => 'Seja parte da equipe organizadora',         'excerpt' => 'Ajudar no WordCamp é uma experiência incrível de aprendizado e networking.',                             'category' => 'Voluntariado','img' => 'news-voluntariado'],
+	[ 'title' => 'Por dentro do Campus da FUMEC',             'excerpt' => 'Conheça o local que receberá centenas de entusiastas WordPress em outubro.',                             'category' => 'Local',       'img' => 'news-local'       ],
+	[ 'title' => 'Guia de Belo Horizonte para visitantes',    'excerpt' => 'Onde comer pão de queijo e quais museus visitar durante sua estadia.',                                    'category' => 'Turismo',     'img' => 'news-turismo'     ],
+	[ 'title' => 'Save the Date: Outubro 2026',               'excerpt' => 'Marque na sua agenda. As vendas de ingressos do primeiro lote começam em breve.',                        'category' => 'Evento',      'img' => 'news-evento'      ],
+];
+
+foreach ( $news_data as $item ) {
+	$cat = get_term_by( 'name', $item['category'], 'category' );
+	if ( ! $cat ) {
+		$result = wp_insert_term( $item['category'], 'category' );
+		$cat_id = is_wp_error( $result ) ? 0 : $result['term_id'];
+	} else {
+		$cat_id = $cat->term_id;
+	}
+
+	$existing = get_posts( [ 'post_type' => 'post', 'title' => $item['title'], 'post_status' => 'publish', 'numberposts' => 1 ] );
+	if ( $existing ) {
+		continue;
+	}
+
+	$post_id = wp_insert_post( [
+		'post_type'    => 'post',
+		'post_title'   => $item['title'],
+		'post_excerpt' => $item['excerpt'],
+		'post_status'  => 'publish',
+		'post_content' => '',
+		'post_category' => $cat_id ? [ $cat_id ] : [],
+	] );
+
+	if ( $post_id && ! is_wp_error( $post_id ) && ! empty( $attach_id_map[ $item['img'] ] ) ) {
+		set_post_thumbnail( $post_id, $attach_id_map[ $item['img'] ] );
+	}
+}
+
+// ── 6. Organizer posts ────────────────────────────────────────────────────────
+
+$organizers_data = [
+	[ 'name' => "Christian van 't Hof", 'role' => 'Liderança e Patrocínios', 'img' => 'organizer-christian' ],
+	[ 'name' => 'Eduardo Zulian',       'role' => 'Financeiro',              'img' => 'organizer-eduardo'   ],
+	[ 'name' => 'Amanda Cardoso',       'role' => 'Local do Evento',         'img' => 'organizer-amanda'    ],
+	[ 'name' => 'André Ribeiro',        'role' => 'Dia do Evento',           'img' => 'organizer-andre'     ],
+	[ 'name' => 'Hans Möhl',            'role' => 'Website e Design',        'img' => 'organizer-hans'      ],
+	[ 'name' => 'Sandra Peres',         'role' => 'Rede Social e Textos',    'img' => 'organizer-sandra'    ],
+	[ 'name' => 'Gilberto Tavares',     'role' => 'Voluntários',             'img' => 'organizer-gilberto'  ],
+	[ 'name' => 'Pâmela Ribeiro',       'role' => 'Hospitalidade',           'img' => 'organizer-pamela'    ],
+];
+
+foreach ( $organizers_data as $item ) {
+	$term = get_term_by( 'name', $item['role'], 'wcb_organizer_team' );
+	if ( ! $term ) {
+		$result  = wp_insert_term( $item['role'], 'wcb_organizer_team' );
+		$term_id = is_wp_error( $result ) ? 0 : $result['term_id'];
+	} else {
+		$term_id = $term->term_id;
+	}
+
+	$existing = get_posts( [ 'post_type' => 'wcb_organizer', 'title' => $item['name'], 'post_status' => 'publish', 'numberposts' => 1 ] );
+	if ( $existing ) {
+		continue;
+	}
+
+	$post_id = wp_insert_post( [
+		'post_type'    => 'wcb_organizer',
+		'post_title'   => $item['name'],
+		'post_status'  => 'publish',
+		'post_content' => '',
+	] );
+
+	if ( $post_id && ! is_wp_error( $post_id ) ) {
+		if ( $term_id ) {
+			wp_set_object_terms( $post_id, $term_id, 'wcb_organizer_team' );
+		}
+		if ( ! empty( $attach_id_map[ $item['img'] ] ) ) {
+			set_post_thumbnail( $post_id, $attach_id_map[ $item['img'] ] );
+		}
 	}
 }
 
