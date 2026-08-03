@@ -1,0 +1,18 @@
+# WordPress Playground local instance
+playground/
+
+# Referência: apenas logos e fontes rastreadas; fotos excluídas
+html-from-figma/assets/img/*.avif
+html-from-figma/assets/img/*.webp
+html-from-figma/assets/img/about.*
+html-from-figma/assets/img/hero.*
+html-from-figma/assets/img/news-*
+html-from-figma/assets/img/organizers/
+
+# Imagens de alta resolução
+mirante-das-mangabeiras-4928x3264.jpg
+
+# Sistema
+.DS_Store
+*.log
+node_modules/
