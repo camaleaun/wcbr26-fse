@@ -267,11 +267,7 @@ body.no-scroll { overflow: hidden; }
 
 /* ── WP BLOCK BRIDGES ── */
 .wp-block-group { margin: 0; }
-.wp-block-group.is-layout-flow > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-}
+img.soc { width: 17px; height: 17px; }
 
 /* ── STATS ── */
 .stats { background: var(--teal); color: #fff; padding-block: clamp(44px, 6vw, 64px); }

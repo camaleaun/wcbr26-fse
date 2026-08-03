@@ -1,6 +1,7 @@
 <?php
 /**
- * Blueprint setup: cria template parts (header/footer) e global styles no banco.
+ * Blueprint setup: importa imagens para mídia WP, cria template parts
+ * (header/footer) e global styles no banco.
  * Executado via runPHP no blueprint.json.
  */
 
@@ -9,6 +10,120 @@ wp_set_current_user( 1 );
 
 $uploads_base = content_url( 'uploads/wcbr2026/' );
 $uploads_dir  = WP_CONTENT_DIR . '/uploads/wcbr2026/';
+
+// ── 0. Media Import ───────────────────────────────────────────────────────────
+
+require_once ABSPATH . 'wp-admin/includes/image.php';
+require_once ABSPATH . 'wp-admin/includes/file.php';
+require_once ABSPATH . 'wp-admin/includes/media.php';
+
+$wp_upload = wp_upload_dir();
+$media_dir = $wp_upload['path'];
+$media_url = $wp_upload['url'];
+wp_mkdir_p( $media_dir );
+
+$mime_map = [
+	'jpg'  => 'image/jpeg',
+	'jpeg' => 'image/jpeg',
+	'png'  => 'image/png',
+	'webp' => 'image/webp',
+	'avif' => 'image/avif',
+	'gif'  => 'image/gif',
+];
+
+// Builds $url_map: '/wp-content/uploads/wcbr2026/img/FILE' => 'https://.../YYYY/MM/FILE'
+$url_map = [];
+
+function wcbr_import_image( $src, $dest_filename, $old_rel, $media_dir, $media_url, $mime_map, &$url_map ) {
+	$ext = strtolower( pathinfo( $dest_filename, PATHINFO_EXTENSION ) );
+	if ( ! isset( $mime_map[ $ext ] ) ) {
+		return;
+	}
+
+	$dest    = $media_dir . '/' . $dest_filename;
+	$new_url = $media_url . '/' . $dest_filename;
+
+	$url_map[ '/wp-content/uploads/wcbr2026/img/' . $old_rel ] = $new_url;
+
+	if ( ! file_exists( $src ) ) {
+		return;
+	}
+
+	if ( ! file_exists( $dest ) ) {
+		copy( $src, $dest );
+	}
+
+	$year_month    = date( 'Y/m' );
+	$existing_meta = get_posts( [
+		'post_type'      => 'attachment',
+		'meta_key'       => '_wp_attached_file',
+		'meta_value'     => $year_month . '/' . $dest_filename,
+		'posts_per_page' => 1,
+	] );
+	if ( $existing_meta ) {
+		return;
+	}
+
+	$attach_id = wp_insert_attachment( [
+		'guid'           => $new_url,
+		'post_mime_type' => $mime_map[ $ext ],
+		'post_title'     => sanitize_file_name( $dest_filename ),
+		'post_content'   => '',
+		'post_status'    => 'inherit',
+	], $dest );
+
+	if ( $attach_id && ! is_wp_error( $attach_id ) ) {
+		$meta = wp_generate_attachment_metadata( $attach_id, $dest );
+		wp_update_attachment_metadata( $attach_id, $meta );
+	}
+}
+
+// Flat images in wcbr2026/img/ (skip icon-* utility files)
+$img_dir = $uploads_dir . 'img/';
+if ( is_dir( $img_dir ) ) {
+	foreach ( scandir( $img_dir ) as $file ) {
+		if ( $file === '.' || $file === '..' || is_dir( $img_dir . $file ) ) {
+			continue;
+		}
+		if ( strpos( $file, 'icon-' ) === 0 ) {
+			continue; // nav icons stay at wcbr2026/img/
+		}
+		wcbr_import_image(
+			$img_dir . $file,
+			$file,
+			$file,
+			$media_dir, $media_url, $mime_map, $url_map
+		);
+	}
+}
+
+// Organizer photos in wcbr2026/img/organizers/
+$org_dir = $uploads_dir . 'img/organizers/';
+if ( is_dir( $org_dir ) ) {
+	foreach ( scandir( $org_dir ) as $file ) {
+		if ( $file === '.' || $file === '..' ) {
+			continue;
+		}
+		wcbr_import_image(
+			$org_dir . $file,
+			'organizer-' . $file,
+			'organizers/' . $file,
+			$media_dir, $media_url, $mime_map, $url_map
+		);
+	}
+}
+
+// Helper: replace photo URLs then fix remaining wcbr2026/ paths
+function wcbr_process_content( $content, $uploads_base, $url_map ) {
+	if ( ! empty( $url_map ) ) {
+		$content = str_replace(
+			array_keys( $url_map ),
+			array_values( $url_map ),
+			$content
+		);
+	}
+	return str_replace( '/wp-content/uploads/wcbr2026/', $uploads_base, $content );
+}
 
 // ── 1. Template Parts ────────────────────────────────────────────────────────
 
@@ -23,13 +138,7 @@ foreach ( $parts as $slug => $meta ) {
 		continue;
 	}
 
-	$content = file_get_contents( $file );
-	// Corrige caminhos de imagem para URL absoluta do Playground
-	$content = str_replace(
-		'/wp-content/uploads/wcbr2026/',
-		$uploads_base,
-		$content
-	);
+	$content = wcbr_process_content( file_get_contents( $file ), $uploads_base, $url_map );
 
 	$existing = get_posts( [
 		'post_type'      => 'wp_template_part',
@@ -68,7 +177,6 @@ foreach ( $parts as $slug => $meta ) {
 $css_file = $uploads_dir . 'styles.css';
 $css      = file_exists( $css_file ) ? file_get_contents( $css_file ) : '';
 
-// Substitui placeholder de font path pelo URL real
 $font_url = content_url( 'uploads/wcbr2026/fonts/' );
 $css      = str_replace( 'WCBR_FONT_PATH/', $font_url, $css );
 
@@ -91,7 +199,7 @@ $palette = [
 ];
 
 $gs_content = wp_json_encode( [
-	'version'                   => 3,
+	'version'                     => 3,
 	'isGlobalStylesUserThemeJSON' => true,
 	'settings' => [
 		'color'  => [ 'palette' => $palette ],
@@ -142,9 +250,9 @@ if ( $query->have_posts() ) {
 
 // ── 3. Front page com Hero ──────────────────────────────────────────────────
 
-$hero_file = $uploads_dir . 'hero.html';
+$hero_file    = $uploads_dir . 'hero.html';
 $hero_content = file_exists( $hero_file ) ? file_get_contents( $hero_file ) : '';
-$hero_content = str_replace( '/wp-content/uploads/wcbr2026/', $uploads_base, $hero_content );
+$hero_content = wcbr_process_content( $hero_content, $uploads_base, $url_map );
 
 $existing_page = get_posts( [
 	'post_type'   => 'page',
@@ -177,7 +285,7 @@ if ( $page_id && ! is_wp_error( $page_id ) ) {
 // ── 4. Page template override (remove post-title) ─────────────────────────
 
 $page_tpl_content = '<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
-<!-- wp:post-content /-->
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->';
 
 $existing_tpl = get_posts( [
