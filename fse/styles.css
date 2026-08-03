@@ -162,6 +162,10 @@ svg.icon, .social svg, .sponsor-icon svg, .avatar svg {
 .header__social a:hover { color: var(--grenadier); }
 .header__tags { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .06em; color: var(--brick); text-transform: uppercase; }
 .header__date { font-family: var(--ff-head); font-weight: 400; font-size: .625rem; letter-spacing: .02em; color: var(--ink); text-transform: uppercase; margin-top: 2px; }
+/* WP renders className paragraphs as .wp-block-paragraph only (no header__tags/header__date classes);
+   override font-size and margin that WP block defaults inflate (1.125rem, 1.2em margin) */
+.header__meta p.wp-block-paragraph { font-family: var(--ff-body); font-weight: 700; font-size: .625rem !important; letter-spacing: .06em; color: var(--brick); text-transform: uppercase; margin-block: 0 !important; line-height: 1.4 !important; }
+.header__meta p.wp-block-paragraph:nth-of-type(2) { font-family: var(--ff-head); font-weight: 400; letter-spacing: .02em; color: var(--ink); margin-top: 2px !important; }
 .header__ingressos { display: none; }
 .nav-toggle {
   margin-left: auto;
@@ -284,10 +288,11 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 
 /* wp:query grid bridges: ul.wp-block-post-template transparent to parent grid */
 .news__grid .wp-block-post-template { display: contents; list-style: none; padding: 0; margin: 0; }
-.news__grid .wp-block-post-template > li { background: var(--cream); border: 1px solid var(--line); display: flex; flex-direction: column; }
+/* is-layout-flow > * + * adds margin-block-start between li items; reset it so grid gap is the only spacing */
+.news__grid .wp-block-post-template > li { background: var(--cream); border: 1px solid var(--line); display: flex; flex-direction: column; margin-block-start: 0; }
 .news__grid .wp-block-post-featured-image { aspect-ratio: 16/9; overflow: hidden; border-bottom: 1px solid var(--line); display: none; }
 .news__grid .wp-block-post-featured-image img { width: 100%; height: 100%; object-fit: cover; }
-.news__grid .wp-block-post-excerpt { display: none; font-size: 1.125rem; color: var(--ink); }
+.news__grid .wp-block-post-excerpt { display: none; font-size: 1.125rem; color: var(--ink); margin-block-start: 0; }
 .news__grid .wp-block-post-title a { color: inherit; }
 .news__grid .wp-block-post-title a:hover { color: var(--grenadier); }
 .news__grid .wp-block-post-terms { align-self: flex-start; }
@@ -322,6 +327,8 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 /* ── O QUE ESPERAR ── */
 .formats { background: var(--cream); }
 .formats__grid { display: grid; gap: 20px; }
+/* accordion is mobile-only fallback; visual card grid is desktop-only */
+.wp-block-accordion.formats__grid { display: none; }
 .format {
   background: var(--cream); border: 2px solid var(--line);
   box-shadow: 5px 5px 0 0 var(--teal);
@@ -437,23 +444,24 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .site-footer { background: var(--teal-dd); color: var(--foot-text); padding-block: 64px 72px; }
 .footer__grid { display: grid; gap: 40px; }
 .footer__brand img { width: 171px; height: auto; margin-bottom: 20px; filter: invert(1); }
-.footer__social.wp-block-social-links { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; padding: 0; color: #fff; }
+.footer__social.wp-block-social-links { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; margin-block-start: 0; padding: 0; color: #fff; }
 .footer__social .wp-block-social-link a { color: inherit; opacity: .9; padding: 0; background: none; border-radius: 0; }
 .footer__social .wp-block-social-link a:hover { color: var(--foot-head); opacity: 1; }
 .footer__social .wp-block-social-link svg { fill: currentColor; width: 20px; height: 20px; display: block; }
-.footer__tags { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .1em; color: var(--foot-head); text-transform: uppercase; margin-bottom: 8px; }
-.footer__desc { font-size: .875rem; line-height: 1.6; opacity: .7; }
+.footer__tags { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .1em; color: var(--foot-head); text-transform: uppercase; margin-block-start: 0; margin-bottom: 8px; }
+.footer__desc { font-size: .875rem !important; line-height: 1.6; opacity: .7; margin-block-start: 0; }
 .footer__date { font-size: .625rem; text-transform: uppercase; letter-spacing: .04em; opacity: .7; margin-top: 8px; }
 .footer__title { font-family: var(--ff-head); font-weight: 400; text-transform: uppercase; font-size: 1rem; color: var(--foot-head); margin-bottom: 20px; }
 .footer__col ul { display: flex; flex-direction: column; gap: 12px; }
+.footer__col ul li, .footer__legal li { margin-block-start: 0; }
 .footer__col a { font-size: 1rem; opacity: .8; transition: opacity .15s ease; }
 .footer__col a:hover { opacity: 1; color: var(--foot-head); }
 .footer__bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 48px; padding-top: 32px; text-align: center; }
-.footer__legal { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; margin-bottom: 20px; }
+.footer__legal { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; margin-bottom: 20px; padding: 0; }
 .footer__legal a { font-family: var(--ff-head); font-weight: 400; text-transform: uppercase; font-size: .8rem; letter-spacing: .04em; opacity: .8; transition: opacity .15s ease; }
 .footer__legal a:hover { opacity: 1; color: var(--foot-head); }
 .footer__motto { font-family: var(--ff-head); font-weight: 700; font-size: 1.15rem; color: var(--foot-head); margin: 0 0 12px; }
-.footer__copy { font-size: .8rem; line-height: 1.6; opacity: .6; }
+.footer__copy { font-size: .8rem; line-height: 1.6; opacity: .6; margin-block-start: 0; }
 
 /* ── RESPONSIVO ── */
 @media (min-width: 640px) {
@@ -503,6 +511,8 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Redes sociais no header: teal-d via currentColor, hover: grenadier */
 .header__social.wp-block-social-links { color: var(--teal-d); padding: 0; }
+/* WP renders li as display:inline-block with brand bg-color inline style; force flex + strip WP defaults */
+.header__social.wp-block-social-links .wp-block-social-link.wp-social-link { display: flex !important; align-items: center; background: none !important; border-radius: 0 !important; padding: 0 !important; }
 .header__social .wp-block-social-link a { color: inherit; padding: 0; background: none; border-radius: 0; }
 .header__social .wp-block-social-link a:hover { color: var(--grenadier); }
 .header__social .wp-block-social-link svg { fill: currentColor; width: 16px; height: 16px; display: block; }
