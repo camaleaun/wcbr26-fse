@@ -91,7 +91,8 @@ $palette = [
 ];
 
 $gs_content = wp_json_encode( [
-	'version'  => 3,
+	'version'                   => 3,
+	'isGlobalStylesUserThemeJSON' => true,
 	'settings' => [
 		'color' => [ 'palette' => $palette ],
 	],
