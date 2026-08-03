@@ -331,7 +331,7 @@ img.nav__caret {
 
 /* Redes sociais no footer: branco (fundo escuro teal-dd), hover: foot-head */
 .footer__social img.soc {
-  filter: brightness(0) invert(1);
+  filter: invert(1);
   transition: filter .15s ease;
 }
 .footer__social a:hover img.soc {
