@@ -104,6 +104,11 @@ $gs_content = wp_json_encode( [
 	],
 ] );
 
+// wp_insert_post/wp_update_post chamam wp_unslash() no conteúdo, removendo
+// as barras invertidas do JSON (ex: \" vira ", \n vira n) e quebrando o JSON.
+// wp_slash() adiciona uma camada extra de barras para compensar.
+$gs_content_slashed = wp_slash( $gs_content );
+
 $query = new WP_Query( [
 	'post_type'      => 'wp_global_styles',
 	'post_status'    => 'publish',
@@ -118,7 +123,7 @@ $query = new WP_Query( [
 if ( $query->have_posts() ) {
 	wp_update_post( [
 		'ID'           => $query->posts[0]->ID,
-		'post_content' => $gs_content,
+		'post_content' => $gs_content_slashed,
 	] );
 } else {
 	$post_id = wp_insert_post( [
@@ -126,7 +131,7 @@ if ( $query->have_posts() ) {
 		'post_title'   => 'wp-global-styles-twentytwentyfive',
 		'post_name'    => 'wp-global-styles-twentytwentyfive',
 		'post_status'  => 'publish',
-		'post_content' => $gs_content,
+		'post_content' => $gs_content_slashed,
 	] );
 	if ( $post_id && ! is_wp_error( $post_id ) ) {
 		wp_set_object_terms( $post_id, 'twentytwentyfive', 'wp_theme' );
