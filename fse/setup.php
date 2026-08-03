@@ -352,14 +352,14 @@ foreach ( $news_data as $item ) {
 // ── 6. Organizer posts (Gravatar as featured image) ───────────────────────────
 
 $organizers_data = [
-	[ 'name' => "Christian van 't Hof", 'role' => 'Liderança e Patrocínios', 'username' => 'Brightsol',     'gravatar' => '28c5f3cff8b39f99dd482db0bed1a36db4d9b0f2d471f477d68685dcbabf0683' ],
-	[ 'name' => 'Eduardo Zulian',       'role' => 'Financeiro',              'username' => 'eduardozulian',  'gravatar' => 'd2b86b9638463db3ab4fb8ca2c51713befed32c44728e785fc531ec2d1922ffa'  ],
-	[ 'name' => 'Amanda Cardoso',       'role' => 'Local do Evento',         'username' => 'amandacodb',     'gravatar' => 'a262ac5d912dbbb8c1f145ad3342cc6b53a3c37db6fda9f097361859a0468cc5'  ],
-	[ 'name' => 'Hans Möhl',            'role' => 'Website e Design',        'username' => 'hansmosl',       'gravatar' => 'e22f54b57dbecad0d7645dca2c8747955c7f6087bafaf55046c98d605937a243'  ],
-	[ 'name' => 'Sandra Peres',         'role' => 'Rede Social e Textos',    'username' => 'San Prs',        'gravatar' => '7b7eaaa4aadc682d507bfde811645ed2a87632d6a23235c4e69b0b975ed61338'  ],
-	[ 'name' => 'André Ribeiro',        'role' => 'Dia do Evento',           'username' => 'andr3ribeiro',   'gravatar' => '706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535'  ],
-	[ 'name' => 'Gilberto Tavares',     'role' => 'Voluntários',             'username' => 'camaleaun',      'gravatar' => '846dac0ad49da6ec36c808dc932f2a9c2adae7e4b594025eec4e3081a524fefd'  ],
-	[ 'name' => 'Pâmela Ribeiro',       'role' => 'Hospitalidade',           'username' => 'pamprn',         'gravatar' => '8cc582cc64177f604d63cc370b7c3168b79edb1b67797bbc29c36e90ca4b3e40'  ],
+	[ 'name' => "Christian van 't Hof", 'role' => 'Liderança e Patrocínios', 'photo' => 'christian', 'username' => 'Brightsol',     'gravatar' => '28c5f3cff8b39f99dd482db0bed1a36db4d9b0f2d471f477d68685dcbabf0683' ],
+	[ 'name' => 'Eduardo Zulian',       'role' => 'Financeiro',              'photo' => 'eduardo',   'username' => 'eduardozulian',  'gravatar' => 'd2b86b9638463db3ab4fb8ca2c51713befed32c44728e785fc531ec2d1922ffa'  ],
+	[ 'name' => 'Amanda Cardoso',       'role' => 'Local do Evento',         'photo' => 'amanda',    'username' => 'amandacodb',     'gravatar' => 'a262ac5d912dbbb8c1f145ad3342cc6b53a3c37db6fda9f097361859a0468cc5'  ],
+	[ 'name' => 'Hans Möhl',            'role' => 'Website e Design',        'photo' => 'hans',      'username' => 'hansmosl',       'gravatar' => 'e22f54b57dbecad0d7645dca2c8747955c7f6087bafaf55046c98d605937a243'  ],
+	[ 'name' => 'Sandra Peres',         'role' => 'Rede Social e Textos',    'photo' => 'sandra',    'username' => 'San Prs',        'gravatar' => '7b7eaaa4aadc682d507bfde811645ed2a87632d6a23235c4e69b0b975ed61338'  ],
+	[ 'name' => 'André Ribeiro',        'role' => 'Dia do Evento',           'photo' => 'andre',     'username' => 'andr3ribeiro',   'gravatar' => '706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535'  ],
+	[ 'name' => 'Gilberto Tavares',     'role' => 'Voluntários',             'photo' => 'gilberto',  'username' => 'camaleaun',      'gravatar' => '846dac0ad49da6ec36c808dc932f2a9c2adae7e4b594025eec4e3081a524fefd'  ],
+	[ 'name' => 'Pâmela Ribeiro',       'role' => 'Hospitalidade',           'photo' => 'pamela',    'username' => 'pamprn',         'gravatar' => '8cc582cc64177f604d63cc370b7c3168b79edb1b67797bbc29c36e90ca4b3e40'  ],
 ];
 
 foreach ( $organizers_data as $order => $item ) {
@@ -384,18 +384,28 @@ foreach ( $organizers_data as $order => $item ) {
 		'menu_order'   => $order,
 	] );
 
-	if ( $post_id && ! is_wp_error( $post_id ) ) {
-		if ( $term_id ) {
-			wp_set_object_terms( $post_id, $term_id, 'wcb_organizer_team' );
-		}
-		update_post_meta( $post_id, '_wcpt_user_name', $item['username'] );
-		update_post_meta( $post_id, '_gravatar_hash', $item['gravatar'] );
+	if ( ! $post_id || is_wp_error( $post_id ) ) {
+		continue;
+	}
 
+	if ( $term_id ) {
+		wp_set_object_terms( $post_id, $term_id, 'wcb_organizer_team' );
+	}
+	update_post_meta( $post_id, '_wcpt_user_name', $item['username'] );
+	update_post_meta( $post_id, '_gravatar_hash', $item['gravatar'] );
+
+	// Foto local (reliable em Playground); Gravatar como fallback se rede disponível
+	$photo_src = $uploads_dir . 'img/organizers/' . $item['photo'] . '.jpg';
+	$dest_file  = 'organizer-' . $item['photo'] . '.jpg';
+	$thumb_id   = wcbr_import_image( $photo_src, $dest_file, 'organizers/' . $item['photo'] . '.jpg', $media_dir, $media_url, $mime_map, $url_map );
+
+	if ( ! $thumb_id ) {
 		$gravatar_url = 'https://secure.gravatar.com/avatar/' . $item['gravatar'] . '?s=96&d=mm&r=g';
 		$thumb_id     = media_sideload_image( $gravatar_url, $post_id, $item['name'], 'id' );
-		if ( $thumb_id && ! is_wp_error( $thumb_id ) ) {
-			set_post_thumbnail( $post_id, $thumb_id );
-		}
+	}
+
+	if ( $thumb_id && ! is_wp_error( $thumb_id ) ) {
+		set_post_thumbnail( $post_id, $thumb_id );
 	}
 }
 

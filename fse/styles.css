@@ -291,7 +291,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .org-grid .wp-block-post-featured-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .org-grid .wp-block-post-title { font-family: var(--ff-head); font-weight: 600; color: var(--teal-d); font-size: 1rem; }
 .org-grid .wp-block-post-terms { font-family: var(--ff-body); font-weight: 400; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: var(--muted); }
-.org-grid .wp-block-post-terms a { color: inherit; }
+.org-grid .wp-block-post-terms a { color: inherit; pointer-events: none; cursor: default; }
 
 /* ── STATS ── */
 .stats { background: var(--teal); color: #fff; padding-block: clamp(44px, 6vw, 64px); }
