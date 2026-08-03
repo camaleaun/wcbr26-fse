@@ -13,36 +13,50 @@ O `blueprint.json` configura um WordPress completo no browser:
 1. Instala o tema Twenty Twenty-Five
 2. Copia os arquivos de `fse/` para `wp-content/uploads/wcbr2026/`
 3. Copia as fontes de `html-from-figma/assets/fonts/`
-4. Executa `fse/setup.php` que insere no banco:
-   - `wp_template_part` para header e footer
-   - `wp_global_styles` com paleta de cores e CSS customizado
-   - Página inicial com o bloco hero
-5. Ativa mu-plugin para registrar o padrão hero
+4. Copia as imagens de `html-from-figma/assets/img/` para `wp-content/uploads/wcbr2026/img/`
+5. Executa `fse/setup.php` que:
+   - Importa fotos para `wp-content/uploads/YYYY/MM/` via `wp_insert_attachment`
+   - Insere `wp_template_part` para header e footer
+   - Insere `wp_global_styles` com paleta de cores e CSS customizado
+   - Cria página inicial com os blocos da home
+   - Define template de página sem título do post
 
 ## Estrutura
 
 ```
 fse/
-  header.html     — template part header (FSE)
-  footer.html     — template part footer (FSE)
-  hero.html       — conteúdo da página inicial
-  styles.css      — CSS global (fontes, cores, layout)
+  header.html     — template part header (FSE, blocos WP nativos)
+  footer.html     — template part footer (FSE, blocos WP nativos)
+  hero.html       — conteúdo da página inicial (8 seções em blocos WP nativos)
+  styles.css      — CSS global (fontes, cores, layout, componentes)
   setup.php       — script de setup via runPHP
-  mu-plugin.php   — must-use plugin (enqueue JS, registra padrões)
-  img/            — ícones SVG monocromáticos (pretos, coloridos via CSS filter)
+  mu-plugin.php   — must-use plugin (enqueue JS)
+  img/            — ícones PNG 150×150 para header/footer nav
 
 html-from-figma/
-  assets/fonts/   — Poppins 900 + Montserrat (woff2)
-  assets/img/     — logo-white.png
-
-css-filter.py     — gerador de CSS filter a partir de hex
-                    (port de angel-rs/css-color-filter-generator)
+  index.html            — referência HTML puro gerada do Figma
+  assets/fonts/         — Poppins 900 + Montserrat (woff2)
+  assets/img/           — fotos (hero, about, notícias, organizadores), logos
+  assets/img/icons/     — ícones SVG do drawer (nav, close) — html-from-figma apenas
 ```
 
-## Uso do gerador de filtros CSS
+## Arquitetura de blocos
+
+Cada seção da home segue o padrão:
+
+```
+wp:group align=full className="section nome"   ← background fullwidth
+  wp:group className="container [grid-class]"  ← conteúdo centrado em 1232px
+    wp:heading / wp:paragraph                  ← blocos nativos
+    wp:html                                    ← apenas: picture, form, SVG inline, acordeão
+```
+
+Validação: `block-runner validate fse/hero.html` — 69 blocos, 0 inválidos.
+
+## Gerador de filtros CSS
+
+Converte hex para `filter: brightness(0) saturate(100%) invert(...)` — usado nos ícones PNG monocromáticos:
 
 ```bash
 python3 css-filter.py "#D43900" "#00595D" "#004E4D"
 ```
-
-Também disponível em `~/workspace/bash/css-filter.py`.
