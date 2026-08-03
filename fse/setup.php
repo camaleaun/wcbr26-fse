@@ -230,6 +230,14 @@ $gs_content = wp_json_encode( [
 				'color'      => [ 'text' => '#00595D' ],
 				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.4rem, 3vw, 1.875rem)' ],
 			],
+			'h4' => [
+				'color'      => [ 'text' => '#00595D' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '700', 'textTransform' => 'uppercase', 'lineHeight' => '1.1' ],
+			],
+			'link' => [
+				'color'      => [ 'text' => 'inherit' ],
+				'typography' => [ 'textDecoration' => 'none' ],
+			],
 		],
 		'css' => $css,
 	],
