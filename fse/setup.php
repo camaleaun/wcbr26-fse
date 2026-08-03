@@ -191,19 +191,47 @@ $palette = [
 	[ 'color' => '#F7F0E6', 'name' => 'WCBR Foot Text', 'slug' => 'wcbr-foot-text' ],
 ];
 
+$ff_head = '"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+$ff_body = '"Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
 $gs_content = wp_json_encode( [
 	'version'                     => 3,
 	'isGlobalStylesUserThemeJSON' => true,
 	'settings' => [
-		'color'  => [ 'palette' => $palette ],
-		'layout' => [ 'contentSize' => '1232px', 'wideSize' => '1440px' ],
+		'color'      => [ 'palette' => $palette ],
+		'layout'     => [ 'contentSize' => '1232px', 'wideSize' => '1440px' ],
+		'typography' => [
+			'fontFamilies' => [
+				[ 'fontFamily' => $ff_head, 'name' => 'Poppins',    'slug' => 'poppins'    ],
+				[ 'fontFamily' => $ff_body, 'name' => 'Montserrat', 'slug' => 'montserrat' ],
+			],
+		],
 	],
-	'styles'   => [
+	'styles' => [
 		'color' => [
 			'background' => '#FFF8F1',
 			'text'       => '#3E4948',
 		],
-		'css'   => $css,
+		'typography' => [
+			'fontFamily' => 'var:preset|font-family|montserrat',
+			'fontSize'   => '1.125rem',
+			'lineHeight' => '1.45',
+		],
+		'elements' => [
+			'h1' => [
+				'color'      => [ 'text' => '#00595D' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(2.25rem, 6.2vw, 3.625rem)', 'letterSpacing' => '-0.02em' ],
+			],
+			'h2' => [
+				'color'      => [ 'text' => '#00595D' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.9rem, 5vw, 3rem)', 'letterSpacing' => '-0.01em' ],
+			],
+			'h3' => [
+				'color'      => [ 'text' => '#00595D' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.4rem, 3vw, 1.875rem)' ],
+			],
+		],
+		'css' => $css,
 	],
 ] );
 

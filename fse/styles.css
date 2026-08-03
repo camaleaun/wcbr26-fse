@@ -75,10 +75,7 @@ svg.ic, .social svg, .sponsor__ic svg, .avatar svg {
 .skip-link:focus { top: 12px; }
 :where(a, button, input):focus-visible { outline: 3px solid var(--grenadier); outline-offset: 3px; }
 
-.h1, .h2, .h3 { font-family: var(--ff-head); font-weight: 900; text-transform: uppercase; color: var(--teal); line-height: 1.08; }
-.h1 { font-size: clamp(2.25rem, 6.2vw, 3.625rem); letter-spacing: -0.02em; }
-.h2 { font-size: clamp(1.9rem, 5vw, 3rem); letter-spacing: -0.01em; }
-.h3 { font-size: clamp(1.4rem, 3vw, 1.875rem); }
+/* h1-h3 typography definida em styles.elements via wp_global_styles (setup.php) */
 
 .section { padding-block: clamp(64px, 9vw, 102px); }
 .section__head { text-align: center; margin-bottom: clamp(40px, 6vw, 64px); }
