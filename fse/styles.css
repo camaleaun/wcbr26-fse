@@ -259,21 +259,6 @@ body.no-scroll { overflow: hidden; }
 .wp-block-group { margin: 0; }
 img.soc { width: 17px; height: 17px; }
 
-/* wp:button with className="btn" on the wrapper div */
-.wp-block-button.btn .wp-block-button__link {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  font-family: var(--ff-head); font-weight: 900; text-transform: uppercase;
-  letter-spacing: .05em; color: #fff; text-align: center;
-  background: var(--grenadier); border: 2px solid var(--south);
-  box-shadow: 5px 5px 0 0 var(--south); border-radius: 0;
-  padding: 20px 40px; font-size: 1.05rem;
-  transition: transform .12s ease, box-shadow .12s ease;
-}
-.wp-block-button.btn:hover .wp-block-button__link { transform: translate(2px, 2px); box-shadow: 3px 3px 0 0 var(--south); }
-.wp-block-button.btn:active .wp-block-button__link { transform: translate(5px, 5px); box-shadow: 0 0 0 0 var(--south); }
-.wp-block-button.btn--brick .wp-block-button__link { background: var(--brick); border-color: var(--brick-b); box-shadow: 5px 5px 0 0 var(--brick-b); }
-.wp-block-button.btn--brick:hover .wp-block-button__link { box-shadow: 3px 3px 0 0 var(--brick-b); }
-.wp-block-button.btn--brick:active .wp-block-button__link { box-shadow: 0 0 0 0 var(--brick-b); }
 
 /* wp:post-featured-image inside about__media fills the container */
 .about__media .wp-block-post-featured-image,
