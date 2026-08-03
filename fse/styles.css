@@ -121,7 +121,7 @@ svg.icon, .social svg, .sponsor-icon svg, .avatar svg {
 .header__nav .wp-block-navigation__container { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
 .header__nav .wp-block-navigation-item { position: relative; }
 .header__nav .wp-block-navigation-item__content {
-  display: inline-flex; align-items: center; gap: 4px;
+  display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--ff-head); font-weight: 700; text-transform: uppercase;
   font-size: 1rem; color: var(--teal); padding: 6px 0;
   border-bottom: 3px solid transparent; text-decoration: none; background: none;
@@ -143,6 +143,12 @@ svg.icon, .social svg, .sponsor-icon svg, .avatar svg {
   list-style: none; display: flex; flex-direction: column; gap: 2px;
   background: var(--cream); border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.14);
   z-index: 105;
+  opacity: 0; visibility: hidden; transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+}
+.header__nav .has-child:hover > .wp-block-navigation__submenu-container,
+.header__nav .has-child:focus-within > .wp-block-navigation__submenu-container {
+  opacity: 1; visibility: visible; transform: translateY(0);
 }
 .header__nav .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
   display: block; padding: 9px 12px; border: 0;
@@ -363,7 +369,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .news__grid .wp-block-read-more::after {
   content: "";
   width: 14px; height: 14px; flex: none; display: inline-block;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23004E4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");
   background-repeat: no-repeat; background-size: contain;
 }
 
