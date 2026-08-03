@@ -267,10 +267,10 @@ img.soc { width: 17px; height: 17px; }
 .about__media .wp-block-post-featured-image img,
 .about__media .wp-block-image img { width: 100%; height: 100%; object-fit: cover; }
 
-/* hero__frame on a wp:image figure */
-figure.hero__frame { position: relative; aspect-ratio: 1/1; isolation: isolate; border: 2px solid var(--teal-dd); box-shadow: 5px 5px 0 0 var(--teal-dd); margin: 0; }
-figure.hero__frame::before { content: ""; position: absolute; inset: -16px 16px 16px -16px; border: 4px solid var(--teal-d); z-index: -1; }
-figure.hero__frame img { width: 100%; height: 100%; object-fit: cover; }
+/* hero-frame on a wp:image figure */
+figure.hero-frame { position: relative; aspect-ratio: 1/1; isolation: isolate; border: 2px solid var(--teal-dd); box-shadow: 5px 5px 0 0 var(--teal-dd); margin: 0; }
+figure.hero-frame::before { content: ""; position: absolute; inset: -16px 16px 16px -16px; border: 4px solid var(--teal-d); z-index: -1; }
+figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 
 /* wp:query grid bridges: ul.wp-block-post-template transparent to parent grid */
 .news__grid .wp-block-post-template { display: contents; list-style: none; padding: 0; margin: 0; }
