@@ -304,11 +304,11 @@ body.no-scroll { overflow: hidden; }
 
 /* ── ICON FILTERS (img icons pretos → cor via CSS filter) ──────────────── */
 /* Gerado com css-filter.py (port de angel-rs/css-color-filter-generator)  */
-/* --teal-d #004E4D */ --fi-teal-d: brightness(0) saturate(100%) invert(23%) sepia(17%) saturate(3228%) hue-rotate(858deg) brightness(98%) contrast(104%);
-/* --teal   #00595D */ --fi-teal:   brightness(0) saturate(100%) invert(21%) sepia(91%) saturate(870%) hue-rotate(506deg) brightness(98%) contrast(101%);
-/* --gren   #D43900 */ --fi-gren:   brightness(0) saturate(100%) invert(29%) sepia(51%) saturate(7128%) hue-rotate(1096deg) brightness(94%) contrast(102%);
-/* --fhead  #FFB4A3 */ --fi-fhead:  brightness(0) saturate(100%) invert(88%) sepia(60%) saturate(870%) hue-rotate(1013deg) brightness(101%) contrast(101%);
-/* --ink    #3E4948 */ --fi-ink:    brightness(0) saturate(100%) invert(27%) sepia(8%) saturate(583%) hue-rotate(485deg) brightness(93%) contrast(93%);
+/* teal-d #004E4D: brightness(0) saturate(100%) invert(23%) sepia(17%) saturate(3228%) hue-rotate(858deg) brightness(98%) contrast(104%) */
+/* teal   #00595D: brightness(0) saturate(100%) invert(21%) sepia(91%) saturate(870%) hue-rotate(506deg) brightness(98%) contrast(101%) */
+/* gren   #D43900: brightness(0) saturate(100%) invert(29%) sepia(51%) saturate(7128%) hue-rotate(1096deg) brightness(94%) contrast(102%) */
+/* fhead  #FFB4A3: brightness(0) saturate(100%) invert(88%) sepia(60%) saturate(870%) hue-rotate(1013deg) brightness(101%) contrast(101%) */
+/* ink    #3E4948: brightness(0) saturate(100%) invert(27%) sepia(8%) saturate(583%) hue-rotate(485deg) brightness(93%) contrast(93%) */
 
 /* Nav caret desktop: teal #00595D */
 img.nav__caret {

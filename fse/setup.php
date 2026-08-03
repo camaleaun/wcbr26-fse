@@ -5,6 +5,7 @@
  */
 
 require '/wordpress/wp-load.php';
+wp_set_current_user( 1 );
 
 $uploads_base = content_url( 'uploads/wcbr2026/' );
 $uploads_dir  = WP_CONTENT_DIR . '/uploads/wcbr2026/';
