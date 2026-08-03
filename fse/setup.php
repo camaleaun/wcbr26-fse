@@ -314,7 +314,7 @@ if ( $page_id && ! is_wp_error( $page_id ) ) {
 // ── 4. Page template override (remove post-title) ─────────────────────────
 
 $page_tpl_content = '<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
-<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+<!-- wp:post-content /-->
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->';
 
 $existing_tpl = get_posts( [

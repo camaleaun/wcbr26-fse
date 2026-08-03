@@ -405,7 +405,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .avatar--teal   { border-color: var(--teal-d); }
 .avatar--orange { border-color: var(--south); }
 .avatar--brick  { border-color: var(--brick); }
-.organizer__name { font-family: var(--ff-head); font-weight: 600; color: var(--teal-d); font-size: 1rem; }
+.organizer__name { font-family: var(--ff-head); font-weight: 600; color: var(--teal-d); font-size: 1rem; text-transform: none; }
 .organizer__role { font-family: var(--ff-body); font-weight: 400; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: var(--muted); }
 .organization__note { text-align: center; color: var(--ink); max-width: 52ch; margin: 32px auto 0; }
 
