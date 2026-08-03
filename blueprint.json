@@ -53,27 +53,14 @@
       "path": "/wordpress/wp-content/uploads/wcbr2026/img"
     },
     {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/uploads/wcbr2026/img/logo.png",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/camaleaun/wcbr26-fse/main/logo.png"
-      }
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/uploads/wcbr2026/img/logo-white.png",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/camaleaun/wcbr26-fse/main/html-from-figma/assets/img/logo-white.png"
-      }
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/uploads/wcbr2026/img/mirante-das-mangabeiras.jpg",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/camaleaun/wcbr26-fse/main/mirante-das-mangabeiras.jpg"
+      "step": "writeFiles",
+      "writeToPath": "/wordpress/wp-content/uploads/wcbr2026/img",
+      "filesTree": {
+        "resource": "git:directory",
+        "url": "https://github.com/camaleaun/wcbr26-fse",
+        "ref": "main",
+        "refType": "branch",
+        "path": "/html-from-figma/assets/img"
       }
     },
     {

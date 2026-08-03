@@ -94,7 +94,8 @@ $gs_content = wp_json_encode( [
 	'version'                   => 3,
 	'isGlobalStylesUserThemeJSON' => true,
 	'settings' => [
-		'color' => [ 'palette' => $palette ],
+		'color'  => [ 'palette' => $palette ],
+		'layout' => [ 'contentSize' => '1232px', 'wideSize' => '1440px' ],
 	],
 	'styles'   => [
 		'color' => [
@@ -171,6 +172,41 @@ if ( $existing_page ) {
 if ( $page_id && ! is_wp_error( $page_id ) ) {
 	update_option( 'page_on_front', $page_id );
 	update_option( 'show_on_front', 'page' );
+}
+
+// ── 4. Page template override (remove post-title) ─────────────────────────
+
+$page_tpl_content = '<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:post-content /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->';
+
+$existing_tpl = get_posts( [
+	'post_type'      => 'wp_template',
+	'name'           => 'page',
+	'posts_per_page' => 1,
+	'tax_query'      => [ [
+		'taxonomy' => 'wp_theme',
+		'field'    => 'slug',
+		'terms'    => 'twentytwentyfive',
+	] ],
+] );
+
+if ( $existing_tpl ) {
+	wp_update_post( [
+		'ID'           => $existing_tpl[0]->ID,
+		'post_content' => $page_tpl_content,
+	] );
+} else {
+	$tpl_id = wp_insert_post( [
+		'post_type'    => 'wp_template',
+		'post_title'   => 'Page',
+		'post_name'    => 'page',
+		'post_status'  => 'publish',
+		'post_content' => $page_tpl_content,
+	] );
+	if ( $tpl_id && ! is_wp_error( $tpl_id ) ) {
+		wp_set_object_terms( $tpl_id, 'twentytwentyfive', 'wp_theme' );
+	}
 }
 
 echo 'WCBR2026 setup concluído.';
