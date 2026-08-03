@@ -394,14 +394,14 @@ foreach ( $organizers_data as $order => $item ) {
 	update_post_meta( $post_id, '_wcpt_user_name', $item['username'] );
 	update_post_meta( $post_id, '_gravatar_hash', $item['gravatar'] );
 
-	// Foto local (reliable em Playground); Gravatar como fallback se rede disponível
-	$photo_src = $uploads_dir . 'img/organizers/' . $item['photo'] . '.jpg';
-	$dest_file  = 'organizer-' . $item['photo'] . '.jpg';
-	$thumb_id   = wcbr_import_image( $photo_src, $dest_file, 'organizers/' . $item['photo'] . '.jpg', $media_dir, $media_url, $mime_map, $url_map );
+	// Gravatar como fonte primária; foto local como fallback
+	$gravatar_url = 'https://secure.gravatar.com/avatar/' . $item['gravatar'] . '?s=96&d=mm&r=g';
+	$thumb_id     = media_sideload_image( $gravatar_url, $post_id, $item['name'], 'id' );
 
-	if ( ! $thumb_id ) {
-		$gravatar_url = 'https://secure.gravatar.com/avatar/' . $item['gravatar'] . '?s=96&d=mm&r=g';
-		$thumb_id     = media_sideload_image( $gravatar_url, $post_id, $item['name'], 'id' );
+	if ( ! $thumb_id || is_wp_error( $thumb_id ) ) {
+		$photo_src = $uploads_dir . 'img/organizers/' . $item['photo'] . '.jpg';
+		$dest_file = 'organizer-' . $item['photo'] . '.jpg';
+		$thumb_id  = wcbr_import_image( $photo_src, $dest_file, 'organizers/' . $item['photo'] . '.jpg', $media_dir, $media_url, $mime_map, $url_map );
 	}
 
 	if ( $thumb_id && ! is_wp_error( $thumb_id ) ) {

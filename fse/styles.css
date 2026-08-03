@@ -289,6 +289,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .org-grid .wp-block-post-template > li { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
 .org-grid .wp-block-post-featured-image { width: 72px; height: 72px; border-radius: 50%; overflow: hidden; border: 3px solid var(--teal-d); flex: none; }
 .org-grid .wp-block-post-featured-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.org-grid .wp-block-post-template > li:nth-child(odd) .wp-block-post-featured-image { border-color: var(--brick); }
 .org-grid .wp-block-post-title { font-family: var(--ff-head); font-weight: 600; color: var(--teal-d); font-size: 1rem; }
 .org-grid .wp-block-post-terms { font-family: var(--ff-body); font-weight: 400; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: var(--muted); }
 .org-grid .wp-block-post-terms a { color: inherit; pointer-events: none; cursor: default; }
@@ -356,6 +357,13 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .news-card__title { margin: 0; font-family: var(--ff-head); font-weight: 400; text-transform: none; color: var(--teal-d); font-size: 1.5rem; line-height: 1.15; }
 .news-card__title a:hover { color: var(--grenadier); }
 .news .link-under { border-bottom: 0; padding-bottom: 0; font-weight: 400; font-size: 1rem; }
+.news__grid .wp-block-read-more { margin-top: auto; }
+.news__grid .wp-block-read-more::after {
+  content: "";
+  width: 14px; height: 14px; flex: none; display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-size: contain;
+}
 
 /* ── PATROCINADORES ── */
 .sponsors { background: var(--cream); }
