@@ -33,7 +33,7 @@ foreach ( $parts as $slug => $meta ) {
 
 	$existing = get_posts( [
 		'post_type'      => 'wp_template_part',
-		'post_name'      => $slug,
+		'name'           => $slug,
 		'posts_per_page' => 1,
 		'tax_query'      => [ [
 			'taxonomy' => 'wp_theme',
