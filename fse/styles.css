@@ -246,8 +246,8 @@ body.no-scroll { overflow: hidden; }
 .hero__chip--teal { background: var(--teal); }
 .hero__chip--orange { background: var(--grenadier); font-weight: 700; }
 .hero__chip p { margin: 0; font: inherit; color: inherit; }
-figure.chip-icon { margin: 0; display: contents; }
-figure.chip-icon img { width: 16px; height: 16px; display: block; flex: none; filter: invert(1); }
+.wp-block-icon.chip-icon { margin: 0; display: contents; }
+.wp-block-icon.chip-icon svg { width: 16px; height: 16px; display: block; flex: none; }
 .hero__title { margin-bottom: 24px; }
 .hero__lead {
   font-family: var(--ff-body); font-size: clamp(1.05rem, 2.2vw, 1.375rem);
