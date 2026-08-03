@@ -178,8 +178,8 @@ svg.ic, .social svg, .sponsor__ic svg, .avatar svg {
 }
 .drawer-backdrop.is-open { opacity: 1; visibility: visible; }
 .drawer {
-  position: fixed; top: 0; right: 0; z-index: 120;
-  height: 100vh; height: 100dvh; width: min(320px, 86vw);
+  position: fixed; top: var(--wp-admin--admin-bar--height, 0px); right: 0; z-index: 120;
+  height: calc(100dvh - var(--wp-admin--admin-bar--height, 0px)); width: min(320px, 86vw);
   background: var(--cream);
   transform: translateX(100%); transition: transform .28s ease;
   display: flex; flex-direction: column; padding: 24px; overflow-y: auto;
@@ -428,7 +428,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .footer__brand img { width: 171px; height: auto; margin-bottom: 20px; }
 .footer__social { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
 .footer__social a { color: #fff; opacity: .9; display: inline-flex; }
-.footer__social .soc { height: 20px; }
+.footer__social .soc { height: 20px; width: 20px; }
 .footer__social a:hover { color: var(--foot-head); opacity: 1; }
 .footer__tags { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .1em; color: var(--foot-head); text-transform: uppercase; margin-bottom: 8px; }
 .footer__desc { font-size: .875rem; line-height: 1.6; opacity: .7; }
