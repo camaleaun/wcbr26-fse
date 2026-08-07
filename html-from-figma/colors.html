@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WCBR2026 — Paleta de Cores</title>
+  <link rel="preload" href="assets/fonts/poppins-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background: #FFF8F1;
+      color: #3E4948;
+      padding: 3rem 1.5rem;
+    }
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #00595d;
+      margin: 0 0 0.25rem;
+    }
+    .subtitle {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.875rem;
+      color: #556260;
+      margin: 0 0 3rem;
+    }
+    .group {
+      margin-bottom: 3rem;
+    }
+    .group-title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #556260;
+      margin: 0 0 0.75rem;
+    }
+    .swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .swatch {
+      width: 160px;
+    }
+    .swatch-block {
+      height: 80px;
+      border: 1px solid rgba(0,0,0,.06);
+    }
+    .swatch-info {
+      padding: 0.5rem 0 0;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+    .swatch-name {
+      font-weight: 700;
+      color: #3E4948;
+    }
+    .swatch-hex {
+      color: #556260;
+      font-size: 0.75rem;
+    }
+    .swatch-use {
+      color: #BEC9C8;
+      font-size: 0.7rem;
+      margin-top: 0.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Paleta de Cores</h1>
+  <p class="subtitle">WCBR2026 — tokens de cor do design system</p>
+
+  <!-- Primárias -->
+  <div class="group">
+    <p class="group-title">Primárias</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#00595d"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$teal</div>
+          <div class="swatch-hex">#00595d</div>
+          <div class="swatch-use">primary, headings, links</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#f56530"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$orange</div>
+          <div class="swatch-hex">#f56530</div>
+          <div class="swatch-use">secondary, CTA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teal — tons -->
+  <div class="group">
+    <p class="group-title">Teal — tons</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#00595d"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$teal</div>
+          <div class="swatch-hex">#00595d</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#004e51"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$teal-700</div>
+          <div class="swatch-hex">#004e51</div>
+          <div class="swatch-use">newsletter, molduras</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#003e40"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$teal-900</div>
+          <div class="swatch-hex">#003e40</div>
+          <div class="swatch-use">footer, sombras hero</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Orange — tons -->
+  <div class="group">
+    <p class="group-title">Orange — tons</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#f56530"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$orange</div>
+          <div class="swatch-hex">#f56530</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#d85929"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$orange-500</div>
+          <div class="swatch-hex">#d85929</div>
+          <div class="swatch-use">botões CTA</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#c04f25"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$orange-700</div>
+          <div class="swatch-hex">#c04f25</div>
+          <div class="swatch-use">variante brick</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#a84520"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$orange-900</div>
+          <div class="swatch-hex">#a84520</div>
+          <div class="swatch-use">botão newsletter</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backgrounds & superfícies -->
+  <div class="group">
+    <p class="group-title">Backgrounds &amp; superfícies</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#FFF8F1;border-color:#BEC9C8"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$cream</div>
+          <div class="swatch-hex">#FFF8F1</div>
+          <div class="swatch-use">body-bg</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#F5EDE3;border-color:#BEC9C8"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$cream-alt</div>
+          <div class="swatch-hex">#F5EDE3</div>
+          <div class="swatch-use">fundo alternado</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#E9E1D8"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$panel</div>
+          <div class="swatch-hex">#E9E1D8</div>
+          <div class="swatch-use">painéis, cards</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#BEC9C8"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$line</div>
+          <div class="swatch-hex">#BEC9C8</div>
+          <div class="swatch-use">bordas, divisores</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Texto -->
+  <div class="group">
+    <p class="group-title">Texto</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#3E4948"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$ink</div>
+          <div class="swatch-hex">#3E4948</div>
+          <div class="swatch-use">body-color</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#556260"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$muted</div>
+          <div class="swatch-hex">#556260</div>
+          <div class="swatch-use">texto secundário</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="group">
+    <p class="group-title">Footer</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#FFB4A3"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$foot-head</div>
+          <div class="swatch-hex">#FFB4A3</div>
+          <div class="swatch-use">headings no footer</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#F7F0E6;border-color:#BEC9C8"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">$foot-text</div>
+          <div class="swatch-hex">#F7F0E6</div>
+          <div class="swatch-use">texto no footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
