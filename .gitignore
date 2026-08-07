@@ -9,3 +9,6 @@ mirante-das-mangabeiras-4928x3264.jpg
 .DS_Store
 *.log
 node_modules/
+
+# Dumps de export (Figma/localhost)
+localhost_*.json
