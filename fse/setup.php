@@ -232,9 +232,10 @@ $gs_content = wp_json_encode( [
 			'text'       => 'var:preset|color|gray-700',
 		],
 		'typography' => [
-			'fontFamily' => 'var:preset|font-family|montserrat',
-			'fontSize'   => 'var:preset|font-size|medium',
-			'lineHeight' => '1.5',
+			'fontFamily'    => 'var:preset|font-family|montserrat',
+			'fontSize'      => 'var:preset|font-size|medium',
+			'lineHeight'    => '1.5',
+			'letterSpacing' => '0',
 		],
 		'elements' => [
 			'h1' => [
