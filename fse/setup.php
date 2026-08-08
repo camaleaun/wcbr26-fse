@@ -174,21 +174,17 @@ $font_url = content_url( 'uploads/wcbr2026/fonts/' );
 $css      = str_replace( 'WCBR_FONT_PATH/', $font_url, $css );
 
 $palette = [
-	[ 'color' => '#00595D', 'name' => 'WCBR Teal',      'slug' => 'wcbr-teal' ],
-	[ 'color' => '#004E4D', 'name' => 'WCBR Teal D',    'slug' => 'wcbr-teal-d' ],
-	[ 'color' => '#003E3E', 'name' => 'WCBR Teal DD',   'slug' => 'wcbr-teal-dd' ],
-	[ 'color' => '#D43900', 'name' => 'WCBR Grenadier', 'slug' => 'wcbr-grenadier' ],
-	[ 'color' => '#F56530', 'name' => 'WCBR South',     'slug' => 'wcbr-south' ],
-	[ 'color' => '#B52701', 'name' => 'WCBR Brick',     'slug' => 'wcbr-brick' ],
-	[ 'color' => '#C94220', 'name' => 'WCBR Brick B',   'slug' => 'wcbr-brick-b' ],
-	[ 'color' => '#FFF8F1', 'name' => 'WCBR Cream',     'slug' => 'wcbr-cream' ],
-	[ 'color' => '#F5EDE3', 'name' => 'WCBR Cream 2',   'slug' => 'wcbr-cream-2' ],
-	[ 'color' => '#BEC9C8', 'name' => 'WCBR Line',      'slug' => 'wcbr-line' ],
-	[ 'color' => '#E9E1D8', 'name' => 'WCBR Panel',     'slug' => 'wcbr-panel' ],
-	[ 'color' => '#3E4948', 'name' => 'WCBR Ink',       'slug' => 'wcbr-ink' ],
-	[ 'color' => '#556260', 'name' => 'WCBR Muted',     'slug' => 'wcbr-muted' ],
-	[ 'color' => '#FFB4A3', 'name' => 'WCBR Foot Head', 'slug' => 'wcbr-foot-head' ],
-	[ 'color' => '#F7F0E6', 'name' => 'WCBR Foot Text', 'slug' => 'wcbr-foot-text' ],
+	[ 'color' => '#00595d', 'name' => 'Cyan 700',   'slug' => 'cyan-700'   ],
+	[ 'color' => '#004c4d', 'name' => 'Cyan 800',   'slug' => 'cyan-800'   ],
+	[ 'color' => '#003e3e', 'name' => 'Cyan 900',   'slug' => 'cyan-900'   ],
+	[ 'color' => '#c6360b', 'name' => 'Orange 600', 'slug' => 'orange-600' ],
+	[ 'color' => '#f56530', 'name' => 'Orange 500', 'slug' => 'orange-500' ],
+	[ 'color' => '#fff8f1', 'name' => 'Sand 100',   'slug' => 'sand-100'   ],
+	[ 'color' => '#f6eee4', 'name' => 'Sand 200',   'slug' => 'sand-200'   ],
+	[ 'color' => '#e9e0d8', 'name' => 'Sand 300',   'slug' => 'sand-300'   ],
+	[ 'color' => '#bec9c8', 'name' => 'Gray 400',   'slug' => 'gray-400'   ],
+	[ 'color' => '#4a5654', 'name' => 'Gray 700',   'slug' => 'gray-700'   ],
+	[ 'color' => '#ffb4a3', 'name' => 'Red 200',    'slug' => 'red-200'    ],
 ];
 
 $ff_head = '"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
@@ -209,8 +205,8 @@ $gs_content = wp_json_encode( [
 	],
 	'styles' => [
 		'color' => [
-			'background' => '#FFF8F1',
-			'text'       => '#3E4948',
+			'background' => 'var:preset|color|sand-100',
+			'text'       => 'var:preset|color|gray-700',
 		],
 		'typography' => [
 			'fontFamily' => 'var:preset|font-family|montserrat',
@@ -219,19 +215,19 @@ $gs_content = wp_json_encode( [
 		],
 		'elements' => [
 			'h1' => [
-				'color'      => [ 'text' => '#00595D' ],
+				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
 				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(2.25rem, 6.2vw, 3.625rem)', 'letterSpacing' => '-0.02em' ],
 			],
 			'h2' => [
-				'color'      => [ 'text' => '#00595D' ],
+				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
 				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.9rem, 5vw, 3rem)', 'letterSpacing' => '-0.01em' ],
 			],
 			'h3' => [
-				'color'      => [ 'text' => '#00595D' ],
+				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
 				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.4rem, 3vw, 1.875rem)' ],
 			],
 			'h4' => [
-				'color'      => [ 'text' => '#00595D' ],
+				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
 				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '700', 'textTransform' => 'uppercase', 'lineHeight' => '1.1' ],
 			],
 			'link' => [
@@ -242,7 +238,7 @@ $gs_content = wp_json_encode( [
 		'blocks' => [
 			'core/button' => [
 				'color'      => [
-					'background' => 'var:preset|color|wcbr-grenadier',
+					'background' => 'var:preset|color|orange-600',
 					'text'       => '#ffffff',
 				],
 				'border'     => [ 'radius' => '0px' ],
