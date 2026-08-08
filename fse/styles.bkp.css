@@ -254,8 +254,6 @@ body.no-scroll { overflow: hidden; }
   font-family: var(--ff-head); font-weight: 600; font-size: .9rem; letter-spacing: .05em;
   text-transform: uppercase; color: #fff; padding: 9px 16px; border-radius: 2px;
 }
-.hero__chip--teal { background: var(--cyan-700); }
-.hero__chip--orange { background: var(--orange-600); font-weight: 700; }
 .hero__chip p { margin: 0; font: inherit; color: inherit; }
 .wp-block-icon.chip-icon { margin: 0; display: contents; }
 .wp-block-icon.chip-icon svg { width: 16px; height: 16px; display: block; flex: none; }
@@ -303,13 +301,12 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .org-grid .wp-block-post-terms a { color: inherit; pointer-events: none; cursor: default; }
 
 /* ── STATS ── */
-.stats { background: var(--cyan-700); color: #fff; padding-block: clamp(44px, 6vw, 64px); }
+.stats { padding-block: clamp(44px, 6vw, 64px); }
 .stats__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; text-align: center; }
 .stat__num { display: block; font-family: var(--ff-head); font-weight: 900; font-size: clamp(2.5rem, 7vw, 3rem); line-height: 1.1; }
 .stat__label { display: block; font-family: var(--ff-head); font-weight: 400; text-transform: uppercase; font-size: .95rem; margin-top: 6px; }
 
 /* ── SOBRE ── */
-.about { background: var(--sand-200); }
 .about__grid { display: grid; gap: 40px; align-items: center; }
 .about__media {
   position: relative; aspect-ratio: 584 / 428;
@@ -423,7 +420,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .organization__note { text-align: center; color: var(--gray-700); max-width: 52ch; margin: 32px auto 0; }
 
 /* ── NEWSLETTER ── */
-.newsletter { background: var(--cyan-800); color: #fff; text-align: center; }
+.newsletter { text-align: center; }
 .newsletter__title { color: #fff; margin-bottom: 16px; }
 .newsletter__lead { font-family: var(--ff-body); font-weight: 400; font-size: clamp(1.05rem, 2.2vw, 1.375rem); line-height: 1.4; opacity: .9; margin-bottom: 32px; }
 .newsletter__form { display: flex; flex-direction: column; gap: 16px; max-width: 576px; margin-inline: auto; }

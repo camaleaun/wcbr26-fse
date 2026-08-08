@@ -185,6 +185,7 @@ $palette = [
 	[ 'color' => '#bec9c8', 'name' => 'Gray 400',   'slug' => 'gray-400'   ],
 	[ 'color' => '#4a5654', 'name' => 'Gray 700',   'slug' => 'gray-700'   ],
 	[ 'color' => '#ffb4a3', 'name' => 'Red 200',    'slug' => 'red-200'    ],
+	[ 'color' => '#ffffff', 'name' => 'White',      'slug' => 'white'      ],
 ];
 
 $ff_head = '"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
@@ -215,6 +216,7 @@ $gs_content = wp_json_encode( [
 				[ 'fontFamily' => $ff_body, 'name' => 'Montserrat', 'slug' => 'montserrat' ],
 			],
 			'fontSizes' => [
+				[ 'slug' => 'x-small',   'size' => '0.75rem',                         'name' => 'X Small'   ],
 				[ 'slug' => 'small',     'size' => '0.875rem',                        'name' => 'Small'     ],
 				[ 'slug' => 'medium',    'size' => '1rem',                            'name' => 'Medium'    ],
 				[ 'slug' => 'large',     'size' => '1.25rem',                         'name' => 'Large'     ],
