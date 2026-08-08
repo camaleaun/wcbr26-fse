@@ -258,7 +258,7 @@ $gs_content = wp_json_encode( [
 					'letterSpacing' => '0.05em',
 				],
 				'spacing'    => [
-					'padding' => [ 'top' => '1.25rem', 'bottom' => '1.25rem', 'left' => '2.5rem', 'right' => '2.5rem' ],
+					'padding' => [ 'top' => '1rem', 'bottom' => '1rem', 'left' => '2rem', 'right' => '2rem' ],
 				],
 			],
 			'core/paragraph' => [
