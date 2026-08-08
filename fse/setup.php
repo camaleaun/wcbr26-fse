@@ -201,6 +201,14 @@ $gs_content = wp_json_encode( [
 				[ 'fontFamily' => $ff_head, 'name' => 'Poppins',    'slug' => 'poppins'    ],
 				[ 'fontFamily' => $ff_body, 'name' => 'Montserrat', 'slug' => 'montserrat' ],
 			],
+			'fontSizes' => [
+				[ 'slug' => 'small',     'size' => '0.875rem',                        'name' => 'Small'     ],
+				[ 'slug' => 'medium',    'size' => '1rem',                            'name' => 'Medium'    ],
+				[ 'slug' => 'large',     'size' => '1.25rem',                         'name' => 'Large'     ],
+				[ 'slug' => 'x-large',  'size' => 'clamp(1.4rem, 3vw, 1.875rem)',    'name' => 'X Large'   ],
+				[ 'slug' => 'xx-large', 'size' => 'clamp(1.9rem, 5vw, 3rem)',        'name' => 'XX Large'  ],
+				[ 'slug' => 'xxx-large','size' => 'clamp(2.25rem, 6.2vw, 3.625rem)', 'name' => 'XXX Large' ],
+			],
 		],
 	],
 	'styles' => [
@@ -210,21 +218,21 @@ $gs_content = wp_json_encode( [
 		],
 		'typography' => [
 			'fontFamily' => 'var:preset|font-family|montserrat',
-			'fontSize'   => '1rem',
+			'fontSize'   => 'var:preset|font-size|medium',
 			'lineHeight' => '1.5',
 		],
 		'elements' => [
 			'h1' => [
 				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
-				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(2.25rem, 6.2vw, 3.625rem)', 'letterSpacing' => '-0.02em' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'var:preset|font-size|xxx-large', 'letterSpacing' => '-0.02em' ],
 			],
 			'h2' => [
 				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
-				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.9rem, 5vw, 3rem)', 'letterSpacing' => '-0.01em' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'var:preset|font-size|xx-large', 'letterSpacing' => '-0.01em' ],
 			],
 			'h3' => [
 				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
-				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'clamp(1.4rem, 3vw, 1.875rem)' ],
+				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '900', 'textTransform' => 'uppercase', 'lineHeight' => '1.08', 'fontSize' => 'var:preset|font-size|x-large' ],
 			],
 			'h4' => [
 				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
@@ -253,7 +261,7 @@ $gs_content = wp_json_encode( [
 				],
 			],
 			'core/paragraph' => [
-				'typography' => [ 'fontSize' => '1rem' ],
+				'typography' => [ 'fontSize' => 'var:preset|font-size|medium' ],
 			],
 			'core/list' => [
 				'spacing' => [ 'padding' => '0' ],
