@@ -210,8 +210,8 @@ $gs_content = wp_json_encode( [
 		],
 		'typography' => [
 			'fontFamily' => 'var:preset|font-family|montserrat',
-			'fontSize'   => '1.125rem',
-			'lineHeight' => '1.45',
+			'fontSize'   => '1rem',
+			'lineHeight' => '1.5',
 		],
 		'elements' => [
 			'h1' => [
@@ -247,7 +247,6 @@ $gs_content = wp_json_encode( [
 					'fontWeight'    => '900',
 					'textTransform' => 'uppercase',
 					'letterSpacing' => '0.05em',
-					'fontSize'      => '1.05rem',
 				],
 				'spacing'    => [
 					'padding' => [ 'top' => '20px', 'bottom' => '20px', 'left' => '40px', 'right' => '40px' ],
