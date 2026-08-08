@@ -197,6 +197,7 @@ $gs_content = wp_json_encode( [
 		'color'      => [ 'palette' => $palette ],
 		'layout'     => [ 'contentSize' => '1232px', 'wideSize' => '1440px' ],
 		'typography' => [
+			'fluid'        => false,
 			'fontFamilies' => [
 				[ 'fontFamily' => $ff_head, 'name' => 'Poppins',    'slug' => 'poppins'    ],
 				[ 'fontFamily' => $ff_body, 'name' => 'Montserrat', 'slug' => 'montserrat' ],
