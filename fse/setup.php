@@ -262,6 +262,7 @@ $gs_content = wp_json_encode( [
 					'background' => 'var:preset|color|cyan-700',
 					'text'       => '#ffffff',
 				],
+				'shadow'     => 'var:preset|shadow|hard-cyan-900',
 				'border'     => [ 'radius' => '0', 'color' => 'var:preset|color|cyan-900', 'style' => 'solid', 'width' => '2px' ],
 				'typography' => [
 					'fontFamily'    => 'var:preset|font-family|poppins',
