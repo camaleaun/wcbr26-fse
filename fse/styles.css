@@ -164,8 +164,8 @@ svg.icon, .social svg, .sponsor-icon svg, .avatar svg {
 .header__date { font-family: var(--ff-head); font-weight: 400; font-size: .625rem; letter-spacing: .02em; color: var(--ink); text-transform: uppercase; margin-top: 2px; }
 /* WP renders className paragraphs as .wp-block-paragraph only (no header__tags/header__date classes);
    override font-size and margin that WP block defaults inflate (1.125rem, 1.2em margin) */
-.header__meta p.wp-block-paragraph { font-family: var(--ff-body); font-weight: 700; font-size: .625rem !important; letter-spacing: .06em; color: var(--brick); text-transform: uppercase; margin-block: 0 !important; line-height: 1.4 !important; }
-.header__meta p.wp-block-paragraph:nth-of-type(2) { font-family: var(--ff-head); font-weight: 400; letter-spacing: .02em; color: var(--ink); margin-top: 2px !important; }
+.header__meta p.wp-block-paragraph { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .06em; color: var(--brick); text-transform: uppercase; margin-block: 0; line-height: 1.4; }
+.header__meta p.wp-block-paragraph:nth-of-type(2) { font-family: var(--ff-head); font-weight: 400; letter-spacing: .02em; color: var(--ink); margin-top: 2px; }
 .header__ingressos { display: none; }
 .nav-toggle {
   margin-left: auto;
@@ -271,7 +271,6 @@ body.no-scroll { overflow: hidden; }
 .hero__media { position: relative; justify-self: end; width: 100%; max-width: 512px; }
 
 /* ── WP BLOCK BRIDGES ── */
-.wp-block-group { margin: 0; }
 img.social-icon { width: 17px; height: 17px; }
 
 
@@ -449,7 +448,7 @@ figure.hero-frame img { width: 100%; height: 100%; object-fit: cover; }
 .footer__social .wp-block-social-link a:hover { color: var(--foot-head); opacity: 1; }
 .footer__social .wp-block-social-link svg { fill: currentColor; width: 20px; height: 20px; display: block; }
 .footer__tags { font-family: var(--ff-body); font-weight: 700; font-size: .625rem; letter-spacing: .1em; color: var(--foot-head); text-transform: uppercase; margin-block-start: 0; margin-bottom: 8px; }
-.footer__desc { font-size: .875rem !important; line-height: 1.6; opacity: .7; margin-block-start: 0; }
+.footer__desc { font-size: .875rem; line-height: 1.6; opacity: .7; margin-block-start: 0; }
 .footer__date { font-size: .625rem; text-transform: uppercase; letter-spacing: .04em; opacity: .7; margin-top: 8px; }
 .footer__title { font-family: var(--ff-head); font-weight: 400; text-transform: uppercase; font-size: 1rem; color: var(--foot-head); margin-bottom: 20px; }
 .footer__col ul { display: flex; flex-direction: column; gap: 12px; }

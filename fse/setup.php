@@ -239,6 +239,37 @@ $gs_content = wp_json_encode( [
 				'typography' => [ 'textDecoration' => 'none' ],
 			],
 		],
+		'blocks' => [
+			'core/button' => [
+				'color'      => [
+					'background' => 'var:preset|color|wcbr-grenadier',
+					'text'       => '#ffffff',
+				],
+				'border'     => [ 'radius' => '0px' ],
+				'typography' => [
+					'fontFamily'    => 'var:preset|font-family|poppins',
+					'fontWeight'    => '900',
+					'textTransform' => 'uppercase',
+					'letterSpacing' => '0.05em',
+					'fontSize'      => '1.05rem',
+				],
+				'spacing'    => [
+					'padding' => [ 'top' => '20px', 'bottom' => '20px', 'left' => '40px', 'right' => '40px' ],
+				],
+			],
+			'core/paragraph' => [
+				'typography' => [ 'fontSize' => '1rem' ],
+			],
+			'core/list' => [
+				'spacing' => [ 'padding' => '0' ],
+			],
+			'core/group' => [
+				'spacing' => [ 'margin' => '0' ],
+			],
+			'core/social-links' => [
+				'spacing' => [ 'padding' => '0' ],
+			],
+		],
 		'css' => $css,
 	],
 ] );
