@@ -270,7 +270,6 @@ $gs_content = wp_json_encode( [
 					'fontFamily'    => 'var:preset|font-family|poppins',
 					'fontWeight'    => '400',
 					'textTransform' => 'uppercase',
-					'letterSpacing' => '0.05em',
 				],
 				'spacing'    => [
 					'padding' => [ 'top' => '1rem', 'bottom' => '1rem', 'left' => '2rem', 'right' => '2rem' ],
