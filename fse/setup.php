@@ -196,6 +196,18 @@ $gs_content = wp_json_encode( [
 	'settings' => [
 		'color'      => [ 'palette' => $palette ],
 		'layout'     => [ 'contentSize' => '1232px', 'wideSize' => '1440px' ],
+		'shadow'     => [
+			'presets' => [
+				[ 'slug' => 'hard-orange-500', 'name' => 'Hard Orange 500', 'shadow' => '5px 5px 0 0 var(--wp--preset--color--orange-500)' ],
+				[ 'slug' => 'hard-orange-600', 'name' => 'Hard Orange 600', 'shadow' => '5px 5px 0 0 var(--wp--preset--color--orange-600)' ],
+				[ 'slug' => 'hard-cyan-700',   'name' => 'Hard Cyan 700',   'shadow' => '5px 5px 0 0 var(--wp--preset--color--cyan-700)'   ],
+				[ 'slug' => 'hard-cyan-900',   'name' => 'Hard Cyan 900',   'shadow' => '5px 5px 0 0 var(--wp--preset--color--cyan-900)'   ],
+				[ 'slug' => 'hard-4-cyan-700', 'name' => 'Hard 4 Cyan 700', 'shadow' => '4px 4px 0 0 var(--wp--preset--color--cyan-700)'   ],
+				[ 'slug' => 'hard-3-gray-400', 'name' => 'Hard 3 Gray 400', 'shadow' => '3px 3px 0 0 var(--wp--preset--color--gray-400)'   ],
+				[ 'slug' => 'soft-sm',         'name' => 'Soft Small',      'shadow' => '0 10px 30px rgba(0,0,0,.14)'                      ],
+				[ 'slug' => 'soft-lg',         'name' => 'Soft Large',      'shadow' => '0 25px 50px -12px rgba(0,0,0,.25)'                ],
+			],
+		],
 		'typography' => [
 			'fluid'        => false,
 			'fontFamilies' => [
