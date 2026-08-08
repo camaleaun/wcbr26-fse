@@ -238,10 +238,10 @@ $gs_content = wp_json_encode( [
 		'blocks' => [
 			'core/button' => [
 				'color'      => [
-					'background' => 'var:preset|color|orange-600',
+					'background' => 'var:preset|color|cyan-700',
 					'text'       => '#ffffff',
 				],
-				'border'     => [ 'radius' => '0px' ],
+				'border'     => [ 'radius' => '0', 'color' => 'var:preset|color|cyan-900', 'style' => 'solid', 'width' => '2px' ],
 				'typography' => [
 					'fontFamily'    => 'var:preset|font-family|poppins',
 					'fontWeight'    => '900',
