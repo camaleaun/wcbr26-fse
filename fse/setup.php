@@ -265,7 +265,7 @@ $gs_content = wp_json_encode( [
 				'border'     => [ 'radius' => '0', 'color' => 'var:preset|color|cyan-900', 'style' => 'solid', 'width' => '2px' ],
 				'typography' => [
 					'fontFamily'    => 'var:preset|font-family|poppins',
-					'fontWeight'    => '900',
+					'fontWeight'    => '400',
 					'textTransform' => 'uppercase',
 					'letterSpacing' => '0.05em',
 				],
