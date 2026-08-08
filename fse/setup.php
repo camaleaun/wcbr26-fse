@@ -249,7 +249,7 @@ $gs_content = wp_json_encode( [
 					'letterSpacing' => '0.05em',
 				],
 				'spacing'    => [
-					'padding' => [ 'top' => '20px', 'bottom' => '20px', 'left' => '40px', 'right' => '40px' ],
+					'padding' => [ 'top' => '1.25rem', 'bottom' => '1.25rem', 'left' => '2.5rem', 'right' => '2.5rem' ],
 				],
 			],
 			'core/paragraph' => [
