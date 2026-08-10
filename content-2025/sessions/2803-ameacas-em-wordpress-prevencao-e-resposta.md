@@ -1,0 +1,5 @@
+\n
+
+A palestra é o resultado do trabalho executado em análise de ameaças e estudo do cenário atual baseado na coleta de threat intel que desenvolvo na Automattic. Irei apresentar rapidamente o cenário atual, casos reais, formas de precaução e de resposta. Além de apresentar ferramentas para auxiliar em análise de artefatos.
+
+\n

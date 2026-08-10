@@ -1,0 +1,65 @@
+Another wave of brilliant minds is joining the stage at **WordCamp Asia 2026** — and we couldn’t be more excited to introduce them.
+
+This round brings together a diverse mix of leaders, creators, product thinkers, and open-source contributors from across the WordPress ecosystem. Each speaker represents a unique perspective — from building scalable products and strengthening communities to driving innovation and solving real-world challenges.
+
+**WordCamp Asia** has always been about more than sessions and slides. It’s about meaningful conversations, shared learning, and the energy that comes from people who care deeply about the open web.
+
+With every speaker announcement, the experience grows richer — more ideas, more connections, more inspiration.
+
+And this is only Round 5 — there’s **more** to come.
+
+Stay tuned as we continue unveiling the voices shaping WordPress across Asia and beyond. **In the meantime, catch up on our <a href="https://asia.wordcamp.org/2026/speaker_group/announcement-round-4/" data-type="wcb_speaker_group" data-id="89">Round 4 speakers</a> and grab your pass <a href="https://asia.wordcamp.org/2026/event-pass/?refresh=true#get-your-pass" data-type="link" data-id="https://asia.wordcamp.org/2026/event-pass/?refresh=true#get-your-pass">here</a>.**
+
+------------------------------------------------------------------------
+
+<div class="wp-block-query alignwide has-global-padding is-layout-constrained wp-block-query-is-layout-constrained">
+
+- <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c1b0fa05 wp-block-group-is-layout-constrained" style="border-width:1px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
+
+  <figure class="aligncenter is-style-rounded wp-block-wordcamp-avatar" style="width:96px;height:96px">
+  <img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?fit=72%2C96&amp;ssl=1" class="attachment-96x96 size-96x96 wp-post-image" loading="lazy" decoding="async" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?w=1920&amp;ssl=1 1920w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?resize=1536%2C2048&amp;ssl=1 1536w" sizes="auto, (max-width: 72px) 100vw, 72px" data-attachment-id="8327" data-permalink="https://asia.wordcamp.org/2026/speaker/mahangu-weerasinghe/mahangu-profile-pic-wc-asia-2026/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?fit=1920%2C2560&amp;ssl=1" data-orig-size="1920,2560" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="mahangu-profile-pic-wc-asia-2026" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/mahangu-profile-pic-wc-asia-2026-scaled.jpg?fit=768%2C1024&amp;ssl=1" width="72" height="96" alt="Mahangu Weerasinghe" />
+  </figure>
+
+  ## <a href="https://asia.wordcamp.org/2026/speaker/mahangu-weerasinghe/" target="_self">Mahangu Weerasinghe</a>
+
+  <div class="has-text-align-center wp-block-post-excerpt">
+
+  Automattic Inc.
+
+  </div>
+
+  </div>
+
+- <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c1b0fa05 wp-block-group-is-layout-constrained" style="border-width:1px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
+
+  <figure class="aligncenter is-style-rounded wp-block-wordcamp-avatar" style="width:96px;height:96px">
+  <img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?fit=72%2C96&amp;ssl=1" class="attachment-96x96 size-96x96 wp-post-image" loading="lazy" decoding="async" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?w=1920&amp;ssl=1 1920w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?resize=225%2C300&amp;ssl=1 225w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?resize=768%2C1024&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?resize=1152%2C1536&amp;ssl=1 1152w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?resize=1536%2C2048&amp;ssl=1 1536w" sizes="auto, (max-width: 72px) 100vw, 72px" data-attachment-id="8323" data-permalink="https://asia.wordcamp.org/2026/speaker/maitreyie-chavan/maitreyie-chavan-3/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?fit=1920%2C2560&amp;ssl=1" data-orig-size="1920,2560" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Maitreyie Chavan" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Maitreyie-Chavan-scaled.jpeg?fit=768%2C1024&amp;ssl=1" width="72" height="96" alt="Maitreyie Chavan" />
+  </figure>
+
+  ## <a href="https://asia.wordcamp.org/2026/speaker/maitreyie-chavan/" target="_self">Maitreyie Chavan</a>
+
+  <div class="has-text-align-center wp-block-post-excerpt">
+
+  rtCamp
+
+  </div>
+
+  </div>
+
+- <div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-c1b0fa05 wp-block-group-is-layout-constrained" style="border-width:1px;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
+
+  <figure class="aligncenter is-style-rounded wp-block-wordcamp-avatar" style="width:96px;height:96px">
+  <img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?fit=96%2C96&amp;ssl=1" class="attachment-96x96 size-96x96 wp-post-image" loading="lazy" decoding="async" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?w=1008&amp;ssl=1 1008w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?resize=768%2C768&amp;ssl=1 768w" sizes="auto, (max-width: 96px) 100vw, 96px" data-attachment-id="7918" data-permalink="https://asia.wordcamp.org/2026/speaker/nabin-jaiswal/nabin-jaiswal-wordcamp-asia/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?fit=1008%2C1008&amp;ssl=1" data-orig-size="1008,1008" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Nabin Jaiswal" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/Nabin-Jaiswal-WordCamp-Asia.png?fit=1008%2C1008&amp;ssl=1" width="96" height="96" alt="Nabin Jaiswal" />
+  </figure>
+
+  ## <a href="https://asia.wordcamp.org/2026/speaker/nabin-jaiswal/" target="_self">Nabin Jaiswal</a>
+
+  <div class="has-text-align-center wp-block-post-excerpt">
+
+  Codewing Solutions
+
+  </div>
+
+  </div>
+
+</div>

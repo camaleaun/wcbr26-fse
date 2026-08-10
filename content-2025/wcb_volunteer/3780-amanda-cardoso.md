@@ -1,0 +1,5 @@
+\n
+
+Desenvolvedora Front-end e UX Designer, criei meu primeiro site em 2015. Hoje atuo como freelancer e sou uma das organizadoras da Comunidade WordPress BH.
+
+\n

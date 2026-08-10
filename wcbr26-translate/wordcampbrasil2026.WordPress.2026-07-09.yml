@@ -1,0 +1,4196 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/camaleaun/wxr-command/trunk/schemas/1.2/wxr-complete.schema.json
+meta:
+  created: 20260709T0202
+  wordpress: 7.0.1
+channel:
+  title: WordCamp Brasil 2026
+  link: https://brasil.wordcamp.org/2026
+  pub_date: 20260709T020253
+  language: pt-BR
+  image:
+    url: https://brasil.wordcamp.org/2026/files/2026/07/cropped-logo-icon-32x32.png
+    title: WordCamp Brasil 2026
+    link: https://brasil.wordcamp.org/2026
+    width: 32
+    height: 32
+  authors:
+    - 
+      id: 14240579
+      login: unintended8
+      email: juan@ciudadanob.com
+      display_name: Juan Hernando
+      first_name: Juan
+      last_name: Hernando
+    - 
+      id: 14652449
+      login: camaleaun
+      email: camaleaun@gmail.com
+      display_name: camaleaun
+      first_name: camaleaun
+    - 
+      id: 14661631
+      login: Brightsol
+      email: info@brightsol.nl
+      display_name: "Christian van 't Hof"
+      first_name: Christian
+      last_name: "van 't Hof"
+    - 
+      id: 7694169
+      login: wordcamp
+      email: support@wordcamp.org
+      display_name: WordCamp.org
+      first_name: WordCamp.org
+  categories:
+    - 
+      id: "1"
+      slug: uncategorized
+      parent: ""
+      name: Uncategorized
+      description: ""
+  terms:
+    - 
+      id: "2"
+      taxonomy: wcm_task_category
+      slug: after-party
+      parent: ""
+      name: After Party
+      description: ""
+    - 
+      id: "3"
+      taxonomy: wcm_task_category
+      slug: audio-video
+      parent: ""
+      name: Audio/Video
+      description: ""
+    - 
+      id: "4"
+      taxonomy: wcm_task_category
+      slug: budget
+      parent: ""
+      name: Budget
+      description: ""
+    - 
+      id: "5"
+      taxonomy: wcm_task_category
+      slug: committee
+      parent: ""
+      name: Committee
+      description: ""
+    - 
+      id: "6"
+      taxonomy: wcm_task_category
+      slug: contributor-day
+      parent: ""
+      name: Contributor Day
+      description: ""
+    - 
+      id: "7"
+      taxonomy: wcm_task_category
+      slug: design
+      parent: ""
+      name: Design
+      description: ""
+    - 
+      id: "8"
+      taxonomy: wcm_task_category
+      slug: food
+      parent: ""
+      name: Food
+      description: ""
+    - 
+      id: "9"
+      taxonomy: wcm_task_category
+      slug: lead
+      parent: ""
+      name: Lead
+      description: ""
+    - 
+      id: "10"
+      taxonomy: wcm_task_category
+      slug: registration
+      parent: ""
+      name: Registration
+      description: ""
+    - 
+      id: "11"
+      taxonomy: wcm_task_category
+      slug: speaker
+      parent: ""
+      name: Speaker
+      description: ""
+    - 
+      id: "12"
+      taxonomy: wcm_task_category
+      slug: sponsor
+      parent: ""
+      name: Sponsor
+      description: ""
+    - 
+      id: "13"
+      taxonomy: wcm_task_category
+      slug: swag
+      parent: ""
+      name: Swag
+      description: ""
+    - 
+      id: "14"
+      taxonomy: wcm_task_category
+      slug: volunteer
+      parent: ""
+      name: Volunteer
+      description: ""
+    - 
+      id: "15"
+      taxonomy: wcm_task_category
+      slug: web
+      parent: ""
+      name: Web
+      description: ""
+items:
+  - 
+    post_id: 2
+    title: Sample Page
+    link: https://brasil.wordcamp.org/2026/sample-page/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: http://brasil.wordcamp.org/2026/?page_id=2
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph -->
+      <p>This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:quote -->
+      <blockquote class="wp-block-quote">
+      <!-- wp:paragraph -->
+      <p>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</p>
+      <!-- /wp:paragraph -->
+      </blockquote>
+      <!-- /wp:quote -->
+      
+      <!-- wp:paragraph -->
+      <p>...or something like this:</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:quote -->
+      <blockquote class="wp-block-quote">
+      <!-- wp:paragraph -->
+      <p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p>
+      <!-- /wp:paragraph -->
+      </blockquote>
+      <!-- /wp:quote -->
+      
+      <!-- wp:paragraph -->
+      <p>As a new WordPress user, you should go to <a href="https://brasil.wordcamp.org/2026/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T174907
+    post_modified: 20260623T174907
+    comment_status: closed
+    ping_status: open
+    post_name: sample-page
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+    meta:
+      _wp_page_template: default
+  - 
+    post_id: 7
+    title: Schedule
+    link: https://brasil.wordcamp.org/2026/schedule/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/schedule/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Organizers note:</em> You can enter content for this page in the Sessions menu item in the sidebar.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:wordcamp/schedule /-->
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: closed
+    ping_status: closed
+    post_name: schedule
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 8
+    title: Speakers
+    link: https://brasil.wordcamp.org/2026/speakers/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/speakers/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Organizers note:</em> You can enter content for this page in the Speakers menu item in the sidebar.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:pattern {"slug":"wordcamp/speaker-grid-centered"} /-->
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: closed
+    ping_status: closed
+    post_name: speakers
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 13
+    title: Tickets
+    link: https://brasil.wordcamp.org/2026/?page_id=13
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?page_id=13
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Organizers note:</em> If you'd like to change the slug for this page, please make sure you do that before opening ticket sales. Changing the page slug after tickets have started selling will break the link that users receive in their receipt e-mail.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:shortcode -->
+      [camptix]
+      <!-- /wp:shortcode -->
+    post_date: 20260623T144907+1776450249
+    post_modified: 20260623T144907+1776450249
+    comment_status: closed
+    ping_status: closed
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 14
+    title: Attendees
+    link: https://brasil.wordcamp.org/2026/?page_id=14
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?page_id=14
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:shortcode -->
+      [camptix_attendees columns="3"]
+      <!-- /wp:shortcode -->
+    post_date: 20260708T230130+1776487101
+    post_modified: 20260708T230130-03
+    comment_status: closed
+    ping_status: closed
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+    meta:
+      classic-editor-remember: block-editor
+      _crdt_document: '{"document":"AAAGzsn69xoKCgYUqAIEAgECCkoAHSgCJwAEACcABAAnACgEJwAoACcABwAoAycAKAAniAPiAnN0YXRldmVyc2lvbmRvY3VtZW50ZGF0ZWRvY3VtZW50c3RhdHVzZG9jdW1lbnR0aXRsZUF0dGVuZGVlc2RvY3VtZW50Y29udGVudDwhLS0gd3A6c2hvcnRjb2RlIC0tPgpbY2FtcHRpeF9hdHRlbmRlZXMgY29sdW1ucz0iMyJdCjwhLS0gL3dwOnNob3J0Y29kZSAtLT4KZG9jdW1lbnRleGNlcnB0ZG9jdW1lbnRhdXRob3Jkb2N1bWVudGZlYXR1cmVkX21lZGlhZG9jdW1lbnRjb21tZW50X3N0YXR1c2RvY3VtZW50cGluZ19zdGF0dXNkb2N1bWVudHRlbXBsYXRlZG9jdW1lbnRtZXRhZm9vdG5vdGVzZG9jdW1lbnRibG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc3RleHRpbm5lckJsb2NrcwUHCAQIBggFCQgHjQEIBwgGCA4IDggLSAEECQgGCAcPBAoECw8BAwAAAQAAAAEGAAABAAAHQgEBAEEAAAJBDAEYAH0BdxMyMDI2LTA2LTIzVDE0OjQ5OjA3dwVkcmFmdH2/3/0NfQB3BmNsb3NlZHcGY2xvc2VkdwB3AHckMGU4OGZkZDQtMTk0Ni00ODUxLWI2ZGEtYmVhNDQ4MTQ5ZTk5eHcfW2NhbXB0aXhfYXR0ZW5kZWVzIGNvbHVtbnM9IjMiXXcOY29yZS9zaG9ydGNvZGV3H1tjYW1wdGl4X2F0dGVuZGVlcyBjb2x1bW5zPSIzIl0A","updateId":959720210}'
+  - 
+    post_id: 15
+    title: Videos
+    link: https://brasil.wordcamp.org/2026/?page_id=15
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?page_id=15
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Organizers note:</em> After your WordCamp is over and the sessions are published to WordPress.tv, you can embed them here. Just enter the event slug into the shortcode below, and hit the <em>Publish</em> button.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:shortcode -->
+      [wptv event="enter-event-slug-here"]
+      <!-- /wp:shortcode -->
+    post_date: 20260623T144907+1776450249
+    post_modified: 20260623T144907+1776450249
+    comment_status: closed
+    ping_status: closed
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 16
+    title: Slideshow
+    link: https://brasil.wordcamp.org/2026/?page_id=16
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?page_id=16
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:jetpack/slideshow -->
+      <div class="wp-block-jetpack-slideshow aligncenter" data-effect="slide"><div class="wp-block-jetpack-slideshow_container swiper-container"><ul class="wp-block-jetpack-slideshow_swiper-wrappper swiper-wrapper"></ul><a class="wp-block-jetpack-slideshow_button-prev swiper-button-prev swiper-button-white" role="button"></a><a class="wp-block-jetpack-slideshow_button-next swiper-button-next swiper-button-white" role="button"></a><a aria-label="Pause Slideshow" class="wp-block-jetpack-slideshow_button-pause" role="button"></a><div class="wp-block-jetpack-slideshow_pagination swiper-pagination swiper-pagination-white"></div></div></div>
+      <!-- /wp:jetpack/slideshow -->
+    post_date: 20260623T144907+1776450249
+    post_modified: 20260623T144907+1776450249
+    comment_status: closed
+    ping_status: closed
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 19
+    title: Day Of Event
+    link: https://brasil.wordcamp.org/2026/?page_id=19
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?page_id=19
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph -->
+      <p>January 1, 1970<br>
+      <br />
+      </p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading -->
+      <h2>Schedule</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:wordcamp/live-schedule {"level":3} -->
+      <div data-now="On Now" data-next="Next Up" data-level="3" class="wp-block-wordcamp-live-schedule"></div>
+      <!-- /wp:wordcamp/live-schedule -->
+      
+      <!-- wp:heading -->
+      <h2>Latest Posts</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:latest-posts {"displayPostDate":true,"liveUpdateEnabled":true} /-->
+    post_date: 20260623T144908+1776450249
+    post_modified: 20260623T144908+1776450249
+    comment_status: closed
+    ping_status: closed
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 22
+    title: Hostinger-logo-primary-1
+    link: https://brasil.wordcamp.org/2026/sponsor/hostinger/hostinger-logo-primary-1/
+    pub_date: 20260623T174908
+    creator: unintended8
+    guid:
+      value: https://brasil.wordcamp.org/2026/wp-content/blogs.dir/1861/files/2026/06/Hostinger-logo-primary-1.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144908-03
+    post_modified: 20260623T144908-03
+    comment_status: open
+    ping_status: closed
+    post_name: hostinger-logo-primary-1
+    status: inherit
+    post_parent: 21
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/06/Hostinger-logo-primary-1.png
+    meta:
+      _wp_attached_file: 2026/06/Hostinger-logo-primary-1.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:1920;s:6:"height";i:385;s:4:"file";s:36:"2026/06/Hostinger-logo-primary-1.png";s:8:"filesize";i:18096;s:5:"sizes";a:11:{s:6:"medium";a:5:{s:4:"file";s:35:"Hostinger-logo-primary-1-300x60.png";s:5:"width";i:300;s:6:"height";i:60;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:4037;}s:5:"large";a:5:{s:4:"file";s:37:"Hostinger-logo-primary-1-1024x205.png";s:5:"width";i:1024;s:6:"height";i:205;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:14516;}s:9:"thumbnail";a:5:{s:4:"file";s:36:"Hostinger-logo-primary-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:2622;}s:12:"medium_large";a:5:{s:4:"file";s:36:"Hostinger-logo-primary-1-768x154.png";s:5:"width";i:768;s:6:"height";i:154;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:9989;}s:28:"wccsp_image_medium_rectangle";a:5:{s:4:"file";s:36:"Hostinger-logo-primary-1-500x100.png";s:5:"width";i:500;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:6523;}s:9:"1536x1536";a:5:{s:4:"file";s:37:"Hostinger-logo-primary-1-1536x308.png";s:5:"width";i:1536;s:6:"height";i:308;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:22717;}s:14:"post-thumbnail";a:5:{s:4:"file";s:36:"Hostinger-logo-primary-1-940x198.png";s:5:"width";i:940;s:6:"height";i:198;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:12516;}s:25:"wccentral-thumbnail-small";a:5:{s:4:"file";s:34:"Hostinger-logo-primary-1-82x37.png";s:5:"width";i:82;s:6:"height";i:37;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:1186;}s:25:"wccentral-thumbnail-large";a:5:{s:4:"file";s:36:"Hostinger-logo-primary-1-926x160.png";s:5:"width";i:926;s:6:"height";i:160;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:11727;}s:24:"wccentral-thumbnail-past";a:5:{s:4:"file";s:35:"Hostinger-logo-primary-1-130x60.png";s:5:"width";i:130;s:6:"height";i:60;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:1852;}s:24:"wccentral-thumbnail-hero";a:5:{s:4:"file";s:36:"Hostinger-logo-primary-1-493x315.png";s:5:"width";i:493;s:6:"height";i:315;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8859;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+      _source_url: https://central.wordcamp.org/wp-content/blogs.dir/5/files/2026/04/Hostinger-logo-primary-1.png
+  - 
+    post_id: 24
+    title: automattic-logotype-color
+    link: https://brasil.wordcamp.org/2026/sponsor/automattic/automattic-logotype-color/
+    pub_date: 20260623T174908
+    creator: unintended8
+    guid:
+      value: https://brasil.wordcamp.org/2026/wp-content/blogs.dir/1861/files/2026/06/automattic-logotype-color.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144908-03
+    post_modified: 20260623T144908-03
+    comment_status: open
+    ping_status: closed
+    post_name: automattic-logotype-color
+    status: inherit
+    post_parent: 23
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/06/automattic-logotype-color.png
+    meta:
+      _wp_attached_file: 2026/06/automattic-logotype-color.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:1297;s:6:"height";i:432;s:4:"file";s:37:"2026/06/automattic-logotype-color.png";s:8:"filesize";i:10311;s:5:"sizes";a:10:{s:6:"medium";a:5:{s:4:"file";s:37:"automattic-logotype-color-300x100.png";s:5:"width";i:300;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:3021;}s:5:"large";a:5:{s:4:"file";s:38:"automattic-logotype-color-1024x341.png";s:5:"width";i:1024;s:6:"height";i:341;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:12212;}s:9:"thumbnail";a:5:{s:4:"file";s:37:"automattic-logotype-color-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:2476;}s:12:"medium_large";a:5:{s:4:"file";s:37:"automattic-logotype-color-768x256.png";s:5:"width";i:768;s:6:"height";i:256;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8666;}s:28:"wccsp_image_medium_rectangle";a:5:{s:4:"file";s:37:"automattic-logotype-color-500x167.png";s:5:"width";i:500;s:6:"height";i:167;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:5228;}s:14:"post-thumbnail";a:5:{s:4:"file";s:37:"automattic-logotype-color-940x198.png";s:5:"width";i:940;s:6:"height";i:198;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:10397;}s:25:"wccentral-thumbnail-small";a:5:{s:4:"file";s:35:"automattic-logotype-color-82x37.png";s:5:"width";i:82;s:6:"height";i:37;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:958;}s:25:"wccentral-thumbnail-large";a:5:{s:4:"file";s:37:"automattic-logotype-color-926x160.png";s:5:"width";i:926;s:6:"height";i:160;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:9860;}s:24:"wccentral-thumbnail-past";a:5:{s:4:"file";s:36:"automattic-logotype-color-130x60.png";s:5:"width";i:130;s:6:"height";i:60;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:1473;}s:24:"wccentral-thumbnail-hero";a:5:{s:4:"file";s:37:"automattic-logotype-color-493x315.png";s:5:"width";i:493;s:6:"height";i:315;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:6675;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+      _source_url: https://central.wordcamp.org/wp-content/blogs.dir/5/files/2023/02/automattic-logotype-color.png
+  - 
+    post_id: 26
+    title: bh_logo_2015
+    link: https://brasil.wordcamp.org/2026/sponsor/bluehost/bh_logo_2015/
+    pub_date: 20260623T174909
+    creator: unintended8
+    guid:
+      value: https://brasil.wordcamp.org/2026/wp-content/blogs.dir/1861/files/2026/06/bh_logo_2015.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144909-03
+    post_modified: 20260623T144909-03
+    comment_status: open
+    ping_status: closed
+    post_name: bh_logo_2015
+    status: inherit
+    post_parent: 25
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/06/bh_logo_2015.png
+    meta:
+      _wp_attached_file: 2026/06/bh_logo_2015.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:651;s:6:"height";i:137;s:4:"file";s:24:"2026/06/bh_logo_2015.png";s:8:"filesize";i:5786;s:5:"sizes";a:6:{s:6:"medium";a:5:{s:4:"file";s:23:"bh_logo_2015-300x63.png";s:5:"width";i:300;s:6:"height";i:63;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:4713;}s:9:"thumbnail";a:5:{s:4:"file";s:24:"bh_logo_2015-150x137.png";s:5:"width";i:150;s:6:"height";i:137;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:2066;}s:28:"wccsp_image_medium_rectangle";a:5:{s:4:"file";s:24:"bh_logo_2015-500x105.png";s:5:"width";i:500;s:6:"height";i:105;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:8124;}s:25:"wccentral-thumbnail-small";a:5:{s:4:"file";s:22:"bh_logo_2015-82x37.png";s:5:"width";i:82;s:6:"height";i:37;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:1402;}s:24:"wccentral-thumbnail-past";a:5:{s:4:"file";s:23:"bh_logo_2015-130x60.png";s:5:"width";i:130;s:6:"height";i:60;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:2361;}s:24:"wccentral-thumbnail-hero";a:5:{s:4:"file";s:24:"bh_logo_2015-493x137.png";s:5:"width";i:493;s:6:"height";i:137;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:5798;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+      _source_url: https://central.wordcamp.org/wp-content/blogs.dir/5/files/2014/05/bh_logo_2015.png
+  - 
+    post_id: 28
+    title: Copy-of-woocommerce-logo-color-black@2x-2
+    link: https://brasil.wordcamp.org/2026/sponsor/woo/copy-of-woocommerce-logo-color-black2x-2/
+    pub_date: 20260623T174909
+    creator: unintended8
+    guid:
+      value: https://brasil.wordcamp.org/2026/wp-content/blogs.dir/1861/files/2026/06/Copy-of-woocommerce-logo-color-black@2x-2.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144909-03
+    post_modified: 20260623T144909-03
+    comment_status: open
+    ping_status: closed
+    post_name: copy-of-woocommerce-logo-color-black2x-2
+    status: inherit
+    post_parent: 27
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/06/Copy-of-woocommerce-logo-color-black@2x-2.png
+    meta:
+      _wp_attached_file: 2026/06/Copy-of-woocommerce-logo-color-black@2x-2.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:1561;s:6:"height";i:361;s:4:"file";s:53:"2026/06/Copy-of-woocommerce-logo-color-black@2x-2.png";s:8:"filesize";i:26518;s:5:"sizes";a:11:{s:6:"medium";a:5:{s:4:"file";s:52:"Copy-of-woocommerce-logo-color-black@2x-2-300x69.png";s:5:"width";i:300;s:6:"height";i:69;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:6883;}s:5:"large";a:5:{s:4:"file";s:54:"Copy-of-woocommerce-logo-color-black@2x-2-1024x237.png";s:5:"width";i:1024;s:6:"height";i:237;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:29198;}s:9:"thumbnail";a:5:{s:4:"file";s:53:"Copy-of-woocommerce-logo-color-black@2x-2-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:3270;}s:12:"medium_large";a:5:{s:4:"file";s:53:"Copy-of-woocommerce-logo-color-black@2x-2-768x178.png";s:5:"width";i:768;s:6:"height";i:178;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:20438;}s:28:"wccsp_image_medium_rectangle";a:5:{s:4:"file";s:53:"Copy-of-woocommerce-logo-color-black@2x-2-500x116.png";s:5:"width";i:500;s:6:"height";i:116;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:12296;}s:9:"1536x1536";a:5:{s:4:"file";s:54:"Copy-of-woocommerce-logo-color-black@2x-2-1536x355.png";s:5:"width";i:1536;s:6:"height";i:355;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:48324;}s:14:"post-thumbnail";a:5:{s:4:"file";s:53:"Copy-of-woocommerce-logo-color-black@2x-2-940x198.png";s:5:"width";i:940;s:6:"height";i:198;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:26076;}s:25:"wccentral-thumbnail-small";a:5:{s:4:"file";s:51:"Copy-of-woocommerce-logo-color-black@2x-2-82x37.png";s:5:"width";i:82;s:6:"height";i:37;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:1720;}s:25:"wccentral-thumbnail-large";a:5:{s:4:"file";s:53:"Copy-of-woocommerce-logo-color-black@2x-2-926x160.png";s:5:"width";i:926;s:6:"height";i:160;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:24518;}s:24:"wccentral-thumbnail-past";a:5:{s:4:"file";s:52:"Copy-of-woocommerce-logo-color-black@2x-2-130x60.png";s:5:"width";i:130;s:6:"height";i:60;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:2895;}s:24:"wccentral-thumbnail-hero";a:5:{s:4:"file";s:53:"Copy-of-woocommerce-logo-color-black@2x-2-493x315.png";s:5:"width";i:493;s:6:"height";i:315;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:13319;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+      _source_url: https://central.wordcamp.org/wp-content/blogs.dir/5/files/2019/03/Copy-of-woocommerce-logo-color-black@2x-2.png
+  - 
+    post_id: 103
+    title: Leave Feedback
+    link: https://brasil.wordcamp.org/2026/feedback/
+    pub_date: 20260623T174927
+    guid:
+      value: https://brasil.wordcamp.org/2026/feedback/
+      isPermaLink: 'false'
+    content: '<!-- wp:paragraph {"textColor":"white","customBackgroundColor":"#94240b"} --><p style="background-color:#94240b" class="has-text-color has-background has-white-color">Organizer Note: This page is used to display the session list for the Speaker Feedback form. It will be added after the content you enter here. You can remove this note.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>You can show your appreciation and contribute back to the community by leaving constructive feedback. This not only helps speakers know what worked in their presentation and what didn’t, but it helps organizers get a sense of how successful the event was as a whole.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>The feedback you give will only be shown to speakers and organizers.</p><!-- /wp:paragraph -->'
+    post_date: 20260623T144927-03
+    post_modified: 20260623T144927-03
+    comment_status: closed
+    ping_status: closed
+    post_name: feedback
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 111
+    title: 'Ricardo Filipo - 2026-07-07 23:43:14'
+    link: 'https://brasil.wordcamp.org/2026/?post_type=feedback&p=111'
+    pub_date: 20260708T024314
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=feedback&p=111'
+      isPermaLink: 'false'
+    content: '{"subject":"[L0bBp2im] WordCamp Contact Request","ip":"99.181.60.30","country_code":null,"user_agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/428.4.939275213 Mobile/15E148 Safari/604.1","notification_recipients":[],"logged_in_user":null,"entry_title":"Contact","entry_page":1,"source_id":17,"source_type":"single","request_url":"https://brasil.wordcamp.org/2026","fields":[{"key":"1_Name","label":"Name","value":"Ricardo Filipo","type":"name","meta":[],"form_field_id":"g17-name"},{"key":"2_Email","label":"Email","value":"filipo@kibkob.org","type":"email","meta":[],"form_field_id":"g17-email"},{"key":"3_Message","label":"Message","value":"Eu gostaria de ajudar na organiza\u00e7\u00e3o do WordCamp2026. \r\nQuando ser\u00e1 a pr\u00f3xima reuni\u00e3o?\r\nObrigado!","type":"textarea","meta":[],"form_field_id":"g17-message"}]}'
+    post_date: 20260707T234314-03
+    post_modified: 20260708T090953-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 5d20acb7a2de82aa70822db60ff4ec4a
+    status: publish
+    post_parent: 17
+    menu_order: 0
+    post_type: feedback
+    is_sticky: 0
+    meta:
+      _feedback_source_post_id: "17"
+      _feedback_extra_fields: 'a:1:{s:8:"is_block";s:1:"1";}'
+      _feedback_akismet_values: |
+        a:30:{s:14:"comment_author";s:14:"Ricardo Filipo";s:20:"comment_author_email";s:17:"filipo@kibkob.org";s:18:"comment_author_url";s:0:"";s:20:"contact_form_subject";s:35:"[L0bBp2im] WordCamp Contact Request";s:17:"comment_author_ip";s:12:"99.181.60.30";s:15:"comment_content";s:102:"Eu gostaria de ajudar na organização do WordCamp2026.
+        Quando será a próxima reunião?
+        Obrigado!";s:9:"permalink";s:41:"https://brasil.wordcamp.org/2026/contact/";s:12:"comment_type";s:12:"contact_form";s:7:"user_ip";s:12:"99.181.60.30";s:10:"user_agent";s:144:"Mozilla/5.0 (iPhone; CPU iPhone OS 26_5_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/428.4.939275213 Mobile/15E148 Safari/604.1";s:8:"referrer";s:33:"https://brasil.wordcamp.org/2026/";s:4:"blog";s:32:"https://brasil.wordcamp.org/2026";s:9:"blog_lang";s:5:"en-US";s:16:"comment_date_gmt";s:25:"2026-07-08T02:43:14+00:00";s:11:"REQUEST_URI";s:57:"/2026/wp-admin/admin-ajax.php?action=grunion-contact-form";s:20:"HTTP_ACCEPT_ENCODING";s:23:"gzip, deflate, br, zstd";s:13:"HTTP_PRIORITY";s:6:"u=3, i";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.9";s:19:"HTTP_CONTENT_LENGTH";s:4:"3139";s:19:"HTTP_SEC_FETCH_DEST";s:5:"empty";s:19:"HTTP_SEC_FETCH_MODE";s:4:"cors";s:11:"HTTP_ORIGIN";s:27:"https://brasil.wordcamp.org";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:17:"HTTP_CONTENT_TYPE";s:68:"multipart/form-data; boundary=----WebKitFormBoundary1y1QBTAr2YxCeEEJ";s:11:"HTTP_ACCEPT";s:16:"application/json";s:9:"HTTP_HOST";s:19:"brasil.wordcamp.org";s:11:"REMOTE_ADDR";s:12:"99.181.60.30";s:12:"DOCUMENT_URI";s:28:"/mu//wp-admin/admin-ajax.php";s:19:"POST_ak_hp_textarea";s:0:"";s:10:"POST_ak_js";s:13:"1783478453950";}
+      _feedback_email: |
+        a:2:{s:2:"to";a:1:{i:0;s:24:"info <info@brightsol.nl>";}s:7:"message";s:16280:"
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style media="all" type="text/css"> body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.5;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#1e1e1e}table{border-collapse:separate;mso-table-lspace:0pt;mso-table-rspace:0pt;width:100%}table td{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:14px;vertical-align:top}body{background-color:#f6f7f7;margin:0;padding:0}.body{background-color:#f6f7f7;width:100%}.container{margin:0 auto !important;max-width:830px;padding:0;padding-top:24px;padding-bottom:24px;width:830px}.content{box-sizing:border-box;display:block;margin:0 auto;max-width:830px;padding:0}.main{background:#ffffff;border-radius:8px;width:100%}.wrapper{box-sizing:border-box;padding:40px 48px}.preheader{color:transparent;display:none;height:0;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;visibility:hidden;width:0}.email-header{font-size:20px;font-weight:600;color:#1e1e1e;margin:0 0 24px 0;padding:0}.respondent-name{font-size:16px;font-weight:500;color:#1e1e1e;margin:0 0 2px 0}.respondent-email{font-size:14px;color:#757575;margin:0;line-height:1.4}.metadata-table{width:100%}.metadata-table td{padding:4px 0;font-size:13px;vertical-align:top}.metadata-label{color:#636363;width:110px;padding-right:12px}.metadata-value{color:#1e1e1e}.metadata-value a{color:#1e1e1e;text-decoration:underline}.form-fields{margin-top:8px}.form-fields-inner{padding:16px 16px 24px}.action-button{display:inline-block;padding:12px 24px;border-radius:4px;font-size:14px;font-weight:500;text-decoration:none;margin:0 6px}.action-button-primary{background-color:#3858e9;color:#ffffff !important}.action-button-secondary{background-color:transparent;color:#1e1e1e !important;border:1px solid #1e1e1e}.powered-by{text-align:center;padding:16px 0}h1{font-size:20px;font-weight:600}p{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:14px;font-weight:normal;margin:0;margin-bottom:16px}.respondent-avatar-cell{width:64px;vertical-align:middle}.respondent-avatar-wrapper{width:48px;height:48px;border-radius:24px;background-color:#f0f0f0;text-align:center;line-height:48px;font-size:18px;font-weight:600;color:#50575e}.respondent-details-cell{vertical-align:middle}</style> <style media="all" type="text/css"> @media only screen and (max-width:640px){.main p,.main td,.main span{font-size:14px !important}.wrapper{padding:16px !important}.content{padding:0 !important}.container{padding:0 !important;padding-top:8px !important;padding-bottom:8px !important;width:100% !important}.main{border-left-width:0 !important;border-radius:0 !important;border-right-width:0 !important}.test-submission-banner{width:calc(100% - 16px) !important;margin:0 8px 24px 8px !important}.collapse{display:none}h1{padding:0 16px}.powered-by{padding:0 16px 16px !important}.form-fields-inner{padding:8px 8px 16px !important}.metadata-label{width:90px !important}.actions{width:100% !important;padding:0 !important}.actions .button-table,.actions .button-table tbody,.actions .button-table tr,.actions .button-cell{display:block !important;width:100% !important;max-width:100% !important}.button-cell{text-align:center !important;padding:4px 0 !important}.action-button{display:block !important;width:100% !important;box-sizing:border-box !important;text-align:center !important}}@media print{body,.body{background-color:#ffffff !important}.container{width:100% !important;max-width:100% !important;padding:0 !important}.wrapper{padding:16px 0 !important}.main{border-radius:0 !important}.field-icon-cell{display:none !important;width:0 !important;max-width:0 !important;padding:0 !important;overflow:hidden !important}.form-fields-inner{padding:0 !important}.actions,.powered-by-table,.preheader{display:none !important}.collapse{display:none !important}}@media all{.ExternalClass{width:100%}.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{line-height:100%}.apple-link a{color:inherit !important;font-family:inherit !important;font-size:inherit !important;font-weight:inherit !important;line-height:inherit !important;text-decoration:none !important}#MessageViewBody a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit}}</style>
+        </head>
+        <body>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+        <tr>
+        <td class="collapse">&nbsp;</td>
+        <td class="container">
+        <div class="content">
+        <span class="preheader"></span>
+        
+        <!-- Top-of-email banner (e.g. test-submission notice) -->
+        
+        
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
+        <tr>
+        <td class="wrapper">
+        <!-- Header title -->
+        
+        
+        <!-- Respondent Info -->
+        
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="respondent-table" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 16px;">
+        <tr>
+        <td class="respondent-avatar-cell" style="width: 64px; vertical-align: middle; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">
+        <!--[if mso]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="48" height="48" style="width: 48px; height: 48px;">
+        <tr>
+        <td align="center" valign="middle" style="width: 48px; height: 48px; background-color: #f0f0f0; border-radius: 24px; font-size: 18px; font-weight: 600; color: #50575e;">
+        <![endif]-->
+        <div class="respondent-avatar-wrapper" style="width: 48px; height: 48px; border-radius: 24px; background-color: #f0f0f0; text-align: center; line-height: 48px; font-size: 18px; font-weight: 600; color: #50575e;">
+        <img src="https://gravatar.com/avatar/4cc4dfdf75820a9189c419c767f3a412?d=initials&#038;name=Ricardo%20Filipo&#038;s=96" alt="" width="48" height="48" style="border-radius: 24px; vertical-align: middle;">
+        </div>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+        </td>
+        <td class="respondent-details-cell" style="vertical-align: middle; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">
+        <div class="respondent-name" style="font-size: 16px; font-weight: 600; color: #1e1e1e; margin: 0 0 2px 0; line-height: 1.4;">Ricardo Filipo</div>
+        <div class="respondent-email" style="font-size: 14px; margin: 0; line-height: 1.4;"><a href="mailto:filipo@kibkob.org" style="color: #757575; text-decoration: underline;">filipo@kibkob.org</a></div>
+        </td>
+        </tr>
+        </table>
+        
+        <!-- Metadata -->
+        
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="metadata-table" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin-bottom: 24px;">
+        
+        <tr>
+        <td class="metadata-label" style="color: #50575e; width: 100px; padding: 4px 12px 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">Date:</td>
+        <td class="metadata-value" style="color: #1e1e1e; padding: 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">July 7, 2026 at 11:43 pm</td>
+        </tr>
+        <tr>
+        <td class="metadata-label" style="color: #50575e; width: 100px; padding: 4px 12px 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">Source:</td>
+        <td class="metadata-value" style="color: #1e1e1e; padding: 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;"><a href="https://brasil.wordcamp.org/2026/contact/" style="color: #1e1e1e; text-decoration: underline;">Contact</a></td>
+        </tr>
+        <tr>
+        <td class="metadata-label" style="color: #50575e; width: 100px; padding: 4px 12px 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">Device:</td>
+        <td class="metadata-value" style="color: #1e1e1e; padding: 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">Safari (Mobile)</td>
+        </tr>
+        <tr>
+        <td class="metadata-label" style="color: #50575e; width: 100px; padding: 4px 12px 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">IP address:</td>
+        <td class="metadata-value" style="color: #1e1e1e; padding: 4px 0; font-size: 13px; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; line-height: 1.4;">99.181.60.30</td>
+        </tr>
+        <tr><td colspan="2" style="padding: 24px 0 0 0; border-bottom: 1px solid #E4E4E7; font-size: 0; line-height: 0;">&nbsp;</td></tr>
+        </table>
+        
+        <!-- Form Fields -->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="form-fields" style="margin-top: 8px;">
+        <tr>
+        <td class="form-fields-inner" style="padding: 16px 16px 24px;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 1px solid #F0F0F0; padding: 0; margin: 0;"><tr><td class="field-icon-cell" width="24" valign="top" style="padding: 18px 16px 20px 0; width: 24px; vertical-align: top; -webkit-user-select: none; user-select: none;"><img src="https://brasil.wordcamp.org/2026/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/src/contact-form/images/field-icons/field-text@2x.png" width="24" height="24" alt="" style="display: block; width: 24px; height: 24px; -webkit-user-select: none; user-select: none;" /></td><td valign="top" style="padding: 20px 0;"><div style="font-size: 15px; color: #757575; line-height: 1.4; margin-bottom: 8px;">Name</div><div style="font-size: 16px; color: #1e1e1e; line-height: 1.5;">Ricardo Filipo</div></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 1px solid #F0F0F0; padding: 0; margin: 0;"><tr><td class="field-icon-cell" width="24" valign="top" style="padding: 18px 16px 20px 0; width: 24px; vertical-align: top; -webkit-user-select: none; user-select: none;"><img src="https://brasil.wordcamp.org/2026/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/src/contact-form/images/field-icons/field-email@2x.png" width="24" height="24" alt="" style="display: block; width: 24px; height: 24px; -webkit-user-select: none; user-select: none;" /></td><td valign="top" style="padding: 20px 0;"><div style="font-size: 15px; color: #757575; line-height: 1.4; margin-bottom: 8px;">Email</div><div style="font-size: 16px; color: #1e1e1e; line-height: 1.5;">filipo@kibkob.org</div></td></tr></table><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-bottom: 1px solid #F0F0F0; padding: 0; margin: 0;"><tr><td class="field-icon-cell" width="24" valign="top" style="padding: 18px 16px 20px 0; width: 24px; vertical-align: top; -webkit-user-select: none; user-select: none;"><img src="https://brasil.wordcamp.org/2026/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/src/contact-form/images/field-icons/field-textarea@2x.png" width="24" height="24" alt="" style="display: block; width: 24px; height: 24px; -webkit-user-select: none; user-select: none;" /></td><td valign="top" style="padding: 20px 0;"><div style="font-size: 15px; color: #757575; line-height: 1.4; margin-bottom: 8px;">Message</div><div style="font-size: 16px; color: #1e1e1e; line-height: 1.5;">Eu gostaria de ajudar na organização do WordCamp2026. <br />
+        Quando será a próxima reunião?<br />
+        Obrigado!</div></td></tr></table>
+        </td>
+        </tr>
+        </table>
+        
+        
+        
+        
+        <!-- Actions -->
+        <div class="actions">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="button-table" align="center" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0 auto;">
+        <tr>
+        <td class="button-cell" width="50%" style="text-align: right; padding-right: 8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">
+        <a href="https://brasil.wordcamp.org/2026/wp-admin/admin.php?page=jetpack-forms-responses-wp-admin&#038;p=%2Fresponses%2Finbox%3FresponseIds%3D%5B%22111%22%5D%26mark_as_spam%3D1" class="action-button action-button-secondary" style="display: inline-block; background-color: transparent; color: #1e1e1e; border: 1px solid #1e1e1e; border-radius: 4px; font-size: 14px; font-weight: 500; text-decoration: none; padding: 12px 24px; text-align: center; mso-padding-alt: 0;">Mark as spam</a>
+        </td>
+        <td class="button-cell" width="50%" style="text-align: left; padding-left: 8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">
+        <a href="https://brasil.wordcamp.org/2026/wp-admin/admin.php?page=jetpack-forms-responses-wp-admin&#038;p=%2Fresponses%2Finbox%3FresponseIds%3D%5B%22111%22%5D" class="action-button action-button-primary" style="display: inline-block; background-color: #3858e9; color: #ffffff; border-radius: 4px; font-size: 14px; font-weight: 500; text-decoration: none; padding: 12px 24px; text-align: center; mso-padding-alt: 0;">View in dashboard</a>
+        </td>
+        </tr>
+        </table>
+        </div>
+        
+        <!-- Powered By -->
+        
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="powered-by-table" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-top: 24px;">
+        <tr>
+        <td align="center" class="powered-by" style="padding: 24px 0 0 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">
+        <img src="https://brasil.wordcamp.org/2026/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-forms/src/contact-form/images/field-icons/jetpack-logo@2x.png" alt="Jetpack" width="20" height="20" style="vertical-align: middle; margin-right: 6px; border: 0; outline: none; text-decoration: none; -webkit-user-select: none; user-select: none;">
+        <span style="font-size: 13px; color: #50575e; line-height: 20px;">Powered by <a href="https://jetpack.com/forms/?utm_source=jetpack-forms&utm_medium=email&utm_campaign=form-submissions" style="font-size: 13px; color: #50575e; text-decoration: none;">Jetpack Forms</a></span>
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+        </div>
+        </td>
+        <td class="collapse">&nbsp;</td>
+        </tr>
+        </table>
+        <img src="https://pixel.wp.com/t.gif?_en=jetpack_forms_email_open&_ui=b9d0b71a9a87a0b9fa8dd0a461612195&_ut=anon&browser_type=php-agent&_aua=tracks-client-v0.3&_ts=1783478594454" alt="" width="1" height="1" />
+        <style type="text/css">@media print {
+        body, .body { background-color: #ffffff !important; }
+        .container { width: 100% !important; max-width: 100% !important; padding: 0 !important; }
+        .wrapper { padding: 16px 0 !important; }
+        .main { border-radius: 0 !important; }
+        .field-icon-cell { display: none !important; width: 0 !important; max-width: 0 !important; padding: 0 !important; overflow: hidden !important; }
+        .form-fields-inner { padding: 0 !important; }
+        .actions, .powered-by-table, .preheader { display: none !important; }
+        .collapse { display: none !important; }
+        }</style></body>
+        </html>
+        ";}
+  - 
+    post_id: 124
+    title: logo-icon
+    link: https://brasil.wordcamp.org/2026/logo-icon/
+    pub_date: 20260708T140425
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/files/2026/07/logo-icon.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T110425-03
+    post_modified: 20260708T110425-03
+    comment_status: open
+    ping_status: closed
+    post_name: logo-icon
+    status: inherit
+    post_parent: 0
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/07/logo-icon.png
+    meta:
+      _wp_attached_file: 2026/07/logo-icon.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:512;s:6:"height";i:512;s:4:"file";s:21:"2026/07/logo-icon.png";s:8:"filesize";i:21755;s:5:"sizes";a:3:{s:6:"medium";a:5:{s:4:"file";s:21:"logo-icon-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:53385;}s:9:"thumbnail";a:5:{s:4:"file";s:21:"logo-icon-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:20229;}s:28:"wccsp_image_medium_rectangle";a:5:{s:4:"file";s:21:"logo-icon-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:53385;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+  - 
+    post_id: 125
+    title: cropped-logo-icon.png
+    link: https://brasil.wordcamp.org/2026/logo-icon/cropped-logo-icon-png/
+    pub_date: 20260708T140427
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/files/2026/07/cropped-logo-icon.png
+      isPermaLink: 'false'
+    content: https://brasil.wordcamp.org/2026/files/2026/07/cropped-logo-icon.png
+    post_date: 20260708T110427-03
+    post_modified: 20260708T110427-03
+    comment_status: open
+    ping_status: closed
+    post_name: cropped-logo-icon-png
+    status: inherit
+    post_parent: 124
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/07/cropped-logo-icon.png
+    meta:
+      _wp_attached_file: 2026/07/cropped-logo-icon.png
+      _wp_attachment_context: site-icon
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:512;s:6:"height";i:512;s:4:"file";s:29:"2026/07/cropped-logo-icon.png";s:8:"filesize";i:61687;s:5:"sizes";a:7:{s:6:"medium";a:5:{s:4:"file";s:29:"cropped-logo-icon-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:53385;}s:9:"thumbnail";a:5:{s:4:"file";s:29:"cropped-logo-icon-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:20229;}s:28:"wccsp_image_medium_rectangle";a:5:{s:4:"file";s:29:"cropped-logo-icon-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:53385;}s:13:"site_icon-270";a:5:{s:4:"file";s:29:"cropped-logo-icon-270x270.png";s:5:"width";i:270;s:6:"height";i:270;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:45897;}s:13:"site_icon-192";a:5:{s:4:"file";s:29:"cropped-logo-icon-192x192.png";s:5:"width";i:192;s:6:"height";i:192;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:27797;}s:13:"site_icon-180";a:5:{s:4:"file";s:29:"cropped-logo-icon-180x180.png";s:5:"width";i:180;s:6:"height";i:180;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:26153;}s:12:"site_icon-32";a:5:{s:4:"file";s:27:"cropped-logo-icon-32x32.png";s:5:"width";i:32;s:6:"height";i:32;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:2290;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+  - 
+    post_id: 133
+    title: logo-icon-192
+    link: https://brasil.wordcamp.org/2026/logo-icon-192/
+    pub_date: 20260708T143517
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/files/2026/07/logo-icon-192.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T113517-03
+    post_modified: 20260708T113517-03
+    comment_status: open
+    ping_status: closed
+    post_name: logo-icon-192
+    status: inherit
+    post_parent: 0
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/07/logo-icon-192.png
+    meta:
+      _wp_attached_file: 2026/07/logo-icon-192.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:192;s:6:"height";i:192;s:4:"file";s:25:"2026/07/logo-icon-192.png";s:8:"filesize";i:28527;s:5:"sizes";a:1:{s:9:"thumbnail";a:5:{s:4:"file";s:25:"logo-icon-192-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:23875;}}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+  - 
+    post_id: 142
+    title: logo-icon
+    link: https://brasil.wordcamp.org/2026/logo-icon-2/
+    pub_date: 20260708T152231
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/files/2026/07/logo-icon-1.png
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T122231-03
+    post_modified: 20260708T122231-03
+    comment_status: open
+    ping_status: closed
+    post_name: logo-icon-2
+    status: inherit
+    post_parent: 0
+    menu_order: 0
+    post_type: attachment
+    is_sticky: 0
+    attachment_url: https://brasil.wordcamp.org/2026/files/2026/07/logo-icon-1.png
+    meta:
+      _wp_attached_file: 2026/07/logo-icon-1.png
+      _wp_attachment_metadata: 'a:6:{s:5:"width";i:136;s:6:"height";i:136;s:4:"file";s:23:"2026/07/logo-icon-1.png";s:8:"filesize";i:17995;s:5:"sizes";a:0:{}s:10:"image_meta";a:13:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}s:3:"alt";s:0:"";}}'
+  - 
+    post_id: 155
+    title: twentytwentyfour
+    link: https://brasil.wordcamp.org/2026/twentytwentyfour/
+    pub_date: 20260708T152956
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/twentytwentyfour/
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T122956-03
+    post_modified: 20260708T122956-03
+    comment_status: closed
+    ping_status: closed
+    post_name: twentytwentyfour
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: custom_css
+    is_sticky: 0
+  - 
+    post_id: 162
+    title: Captação de leads
+    link: 'https://brasil.wordcamp.org/2026/?post_type=jetpack_form&p=162'
+    pub_date: 20260708T220535
+    creator: Brightsol
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=jetpack_form&p=162'
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:jetpack/contact-form {"variationName":"lead-capture-form","layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical","justifyContent":"left","verticalAlignment":"top"}} -->
+      <div class="wp-block-jetpack-contact-form"><!-- wp:jetpack/field-name {"required":true} -->
+      <div><!-- wp:jetpack/label {"label":"Nome"} /-->
+      
+      <!-- wp:jetpack/input /--></div>
+      <!-- /wp:jetpack/field-name -->
+      
+      <!-- wp:jetpack/field-email {"required":true} -->
+      <div><!-- wp:jetpack/label {"label":"E-mail"} /-->
+      
+      <!-- wp:jetpack/input /--></div>
+      <!-- /wp:jetpack/field-email -->
+      
+      <!-- wp:jetpack/field-consent -->
+      <div><!-- wp:jetpack/label /-->
+      
+      <!-- wp:jetpack/input {"type":"checkbox"} /--></div>
+      <!-- /wp:jetpack/field-consent -->
+      
+      <!-- wp:button {"tagName":"button","type":"submit"} -->
+      <div class="wp-block-button"><button type="submit" class="wp-block-button__link wp-element-button">Assinar</button></div>
+      <!-- /wp:button --></div>
+      <!-- /wp:jetpack/contact-form -->
+    post_date: 20260708T190535-03
+    post_modified: 20260708T190537-03
+    comment_status: closed
+    ping_status: closed
+    post_name: captacao-de-leads
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: jetpack_form
+    is_sticky: 0
+    meta:
+      _jetpack_forms_source_post_id: "10"
+      _crdt_document: '{"document":"AAAH2ruMxgSMAVsIJIgeAAYCAQIKARFKNAIBAgoBAkoWAgECCgECSgAYAQIKSnCAAQECCgEBShQCAQIKAQJKABgBAgpKbj4BAgoBBUocAgECCgECSgAYAQIKAEp2iAEBAgoBAAZQAIMBKAMnAAQAJwAEACgBJwAoAScABwAoAycAKBMnAAcAKAMnACgEJwAHACgDJwAoBCcAhwAoAycAKAAnAIcAKAMnACgDJwAHACgDJwAoBCcAhwAoAycAKAAnAIcAKAMnACgHJwAHACgDJwAoBCcAhwAoAycAKAEnAIcAKAMnACgBJwAEACfEFKwTc3RhdGV2ZXJzaW9uZG9jdW1lbnRkYXRlZG9jdW1lbnRzbHVnZG9jdW1lbnRzdGF0dXNkb2N1bWVudHRpdGxlQ2FwdGHDp8OjbyBkZSBsZWFkc2RvY3VtZW50Y29udGVudDwhLS0gd3A6amV0cGFjay9jb250YWN0LWZvcm0geyJ2YXJpYXRpb25OYW1lIjoibGVhZC1jYXB0dXJlLWZvcm0iLCJsYXlvdXQiOnsidHlwZSI6ImZsZXgiLCJmbGV4V3JhcCI6Im5vd3JhcCIsIm9yaWVudGF0aW9uIjoidmVydGljYWwiLCJqdXN0aWZ5Q29udGVudCI6ImxlZnQiLCJ2ZXJ0aWNhbEFsaWdubWVudCI6InRvcCJ9fSAtLT4KPGRpdiBjbGFzcz0id3AtYmxvY2stamV0cGFjay1jb250YWN0LWZvcm0iPjwhLS0gd3A6amV0cGFjay9maWVsZC1uYW1lIHsicmVxdWlyZWQiOnRydWV9IC0tPgo8ZGl2PjwhLS0gd3A6amV0cGFjay9sYWJlbCB7ImxhYmVsIjoiTm9tZSJ9IC8tLT4KCjwhLS0gd3A6amV0cGFjay9pbnB1dCAvLS0+PC9kaXY+CjwhLS0gL3dwOmpldHBhY2svZmllbGQtbmFtZSAtLT4KCjwhLS0gd3A6amV0cGFjay9maWVsZC1lbWFpbCB7InJlcXVpcmVkIjp0cnVlfSAtLT4KPGRpdj48IS0tIHdwOmpldHBhY2svbGFiZWwgeyJsYWJlbCI6IkUtbWFpbCJ9IC8tLT4KCjwhLS0gd3A6amV0cGFjay9pbnB1dCAvLS0+PC9kaXY+CjwhLS0gL3dwOmpldHBhY2svZmllbGQtZW1haWwgLS0+Cgo8IS0tIHdwOmpldHBhY2svZmllbGQtY29uc2VudCAtLT4KPGRpdj48IS0tIHdwOmpldHBhY2svbGFiZWwgLy0tPgoKPCEtLSB3cDpqZXRwYWNrL2lucHV0IHsidHlwZSI6ImNoZWNrYm94In0gLy0tPjwvZGl2Pgo8IS0tIC93cDpqZXRwYWNrL2ZpZWxkLWNvbnNlbnQgLS0+Cgo8IS0tIHdwOmJ1dHRvbiB7InRhZ05hbWUiOiJidXR0b24iLCJ0eXBlIjoic3VibWl0In0gLS0+CjxkaXYgY2xhc3M9IndwLWJsb2NrLWJ1dHRvbiI+PGJ1dHRvbiB0eXBlPSJzdWJtaXQiIGNsYXNzPSJ3cC1ibG9jay1idXR0b25fX2xpbmsgd3AtZWxlbWVudC1idXR0b24iPkFzc2luYXI8L2J1dHRvbj48L2Rpdj4KPCEtLSAvd3A6YnV0dG9uIC0tPjwvZGl2Pgo8IS0tIC93cDpqZXRwYWNrL2NvbnRhY3QtZm9ybSAtLT5kb2N1bWVudGF1dGhvcmRvY3VtZW50dGVtcGxhdGVkb2N1bWVudG1ldGFfamV0cGFja19mb3Jtc19zb3VyY2VfcG9zdF9pZGZvb3Rub3Rlc2RvY3VtZW50YmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNzdWJqZWN0dG9jdXN0b21UaGFua3lvdWN1c3RvbVRoYW5reW91SGVhZGluZ2N1c3RvbVRoYW5reW91TWVzc2FnZWN1c3RvbVRoYW5reW91UmVkaXJlY3Rjb25maXJtYXRpb25UeXBlZm9ybVRpdGxldmFyaWF0aW9uTmFtZXNhbGVzZm9yY2VEYXRhbWFpbHBvZXRob3N0aW5nZXJSZWFjaHNhdmVSZXNwb25zZXNlbWFpbE5vdGlmaWNhdGlvbnNkaXNhYmxlR29CYWNrZGlzYWJsZVN1bW1hcnlmb3JtTm90aWZpY2F0aW9uc25vdGlmaWNhdGlvblJlY2lwaWVudHN3ZWJob29rc2xheW91dGlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNyZXF1aXJlZHJlcXVpcmVkSW5kaWNhdG9yd2lkdGhzaGFyZUZpZWxkQXR0cmlidXRlc2ZpZWxkVmFyaWFudGlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNsYWJlbHBsYWNlaG9sZGVycmVxdWlyZWRUZXh0cmVxdWlyZWRJbmRpY2F0b3JtZXRhZGF0YWlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNwbGFjZWhvbGRlcmlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNyZXF1aXJlZHJlcXVpcmVkSW5kaWNhdG9yd2lkdGhzaGFyZUZpZWxkQXR0cmlidXRlc2lubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNsYWJlbHBsYWNlaG9sZGVycmVxdWlyZWRUZXh0cmVxdWlyZWRJbmRpY2F0b3JtZXRhZGF0YWlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNwbGFjZWhvbGRlcmlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNyZXF1aXJlZHJlcXVpcmVkSW5kaWNhdG9yd2lkdGhzaGFyZUZpZWxkQXR0cmlidXRlc2NvbnNlbnRUeXBlZGVmYXVsdFZhbHVlaW1wbGljaXRDb25zZW50TWVzc2FnZWV4cGxpY2l0Q29uc2VudE1lc3NhZ2Vpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzbGFiZWxwbGFjZWhvbGRlcnJlcXVpcmVkVGV4dHJlcXVpcmVkSW5kaWNhdG9ybWV0YWRhdGFpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzcGxhY2Vob2xkZXJ0eXBlaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc3RhZ05hbWV0eXBldGV4dEFzc2luYXJpbm5lckJsb2NrcwUHCAQIBAgGCAURCAeBDwgGSAEEHQkIBggHDwQKBwIOVQAWEAkNDggODRINDhEWCAYLCAcPBAoIEQUUDAsIBw8ECgULDBEICwgHDwQKSwAIBw8ECggRBRQLCAcPBAoFCwwRCAsIBw8ECksACAcPBAoIEQUUCwxWAAsIBw8ECgULDBEICwgHDwQKCwQLCAcPBAoHRAAHCw8BBAAAAQAAAAECAAEBAAAmQgABAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAgACQWwBlwEAfQF3EzIwMjYtMDctMDhUMTk6MDU6MzV3EWNhcHRhY2FvLWRlLWxlYWRzdwdwdWJsaXNofb/f/Q13AH0KdwB3JGZlYTFhZWRlLTQzMmYtNGQxZi1hZjRkLTVlYTVlNjM1MzcyOHh3NzxkaXYgY2xhc3M9IndwLWJsb2NrLWpldHBhY2stY29udGFjdC1mb3JtIj4KCgoKCgo8L2Rpdj53FGpldHBhY2svY29udGFjdC1mb3Jtdx9bV29yZENhbXAgQnJhc2lsIDIwMjZdIFNwb25zb3JzdxFpbmZvQGJyaWdodHNvbC5ubHcAdxxUaGFuayB5b3UgZm9yIHlvdXIgcmVzcG9uc2UudwB3AHcEdGV4dHcAdxFsZWFkLWNhcHR1cmUtZm9ybXYBDm9yZ2FuaXphdGlvbklkdwB2AgZsaXN0SWR+CGxpc3ROYW1lfnYBCWdyb3VwTmFtZXcAeHh5eXh1AHUAdgUEdHlwZXcEZmxleAhmbGV4V3JhcHcGbm93cmFwC29yaWVudGF0aW9udwh2ZXJ0aWNhbA5qdXN0aWZ5Q29udGVudHcEbGVmdBF2ZXJ0aWNhbEFsaWdubWVudHcDdG9wdyQ4MjRkNzRlOC05NWI0LTQ2M2UtOGEwNS1lZWE5ZDQ0ZWI3MmN4dw08ZGl2PgoKPC9kaXY+dxJqZXRwYWNrL2ZpZWxkLW5hbWV4eH2kAXh3AHckYWJhYWZlYTktMGYyZi00NmI2LTlhYWQtNjFiZjJhMDEwYjg5eHcAdw1qZXRwYWNrL2xhYmVsdwROb21ldwB3AHh2AHckYjVlODRjYzYtZmIzNy00ZWViLWI4MzItNTZiMjA5MTFkMWMxeHcAdw1qZXRwYWNrL2lucHV0dwB3JDk2MTY3ODc2LTA3MTYtNDA2NS04ZTBjLTA5YWQ4YTU3NzI0Mnh3DTxkaXY+Cgo8L2Rpdj53E2pldHBhY2svZmllbGQtZW1haWx4eH2kAXh3JDc5ODNkODkwLWIyNjItNDEyOC1hZmJkLTBiZmRjMjg5OGQ0N3h3AHcNamV0cGFjay9sYWJlbHcGRS1tYWlsdwB3AHh2AHckMjYyMzczYTgtMjMwNC00N2E5LWEzOGMtOGMwN2Y3ODc2ZDk5eHcAdw1qZXRwYWNrL2lucHV0dwB3JDUzZDJhYzA4LTZhMWEtNDg4My05YTZlLTFlYzA5ZDFiYTJjY3h3DTxkaXY+Cgo8L2Rpdj53FWpldHBhY2svZmllbGQtY29uc2VudHl4faQBeHcIaW1wbGljaXR3AHeDAUFvIGVudmlhciBzdWFzIGluZm9ybWHDp8O1ZXMsIHZvY8OqIHBlcm1pdGUgcXVlIGVudmllbW9zIGUtbWFpbHMgcGFyYSB2b2PDqi4gVm9jw6ogcG9kZSBjYW5jZWxhciBzdWEgYXNzaW5hdHVyYSBhIHF1YWxxdWVyIG1vbWVudG8udzVQb2RlbW9zIGVudmlhciB1bSBlLW1haWwgcGFyYSB2b2PDqiBkZSB2ZXogZW0gcXVhbmRvP3ckYzMyNDg4MTYtYjIzOC00N2E0LTg2YmUtMzlmYjFiMjA4MWY4eHcAdw1qZXRwYWNrL2xhYmVsdwB3AHcAeHYAdyRlNTRhYjUwNi0xMzBjLTQ4YjgtYjZlMC1jZTgxM2ViYWM5YjV4dwB3DWpldHBhY2svaW5wdXR3AHcIY2hlY2tib3h3JDUyNWMyNTZlLWYyNDEtNDI0Yy1iZGYyLTc1MjVjNDdlNzBkZXh3eTxkaXYgY2xhc3M9IndwLWJsb2NrLWJ1dHRvbiI+PGJ1dHRvbiB0eXBlPSJzdWJtaXQiIGNsYXNzPSJ3cC1ibG9jay1idXR0b25fX2xpbmsgd3AtZWxlbWVudC1idXR0b24iPkFzc2luYXI8L2J1dHRvbj48L2Rpdj53C2NvcmUvYnV0dG9udwZidXR0b253BnN1Ym1pdAA=","updateId":246529124}'
+  - 
+    post_id: 1
+    title: Hello world!
+    link: https://brasil.wordcamp.org/2026/hello-world/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: http://brasil.wordcamp.org/2026/?p=1
+      isPermaLink: 'false'
+    content: This WordCamp site is in early planning. Check back soon for more information.
+    post_date: 20260623T174907
+    post_modified: 20260708T230140-03
+    comment_status: open
+    ping_status: open
+    post_name: hello-world
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: post
+    is_sticky: 0
+    categories:
+      - 
+        domain: category
+        nicename: uncategorized
+        value: Uncategorized
+    meta:
+      classic-editor-remember: block-editor
+      _crdt_document: '{"document":"AAAG8cPtgxAQDAgargIBBBQCAQIKSgAdKAMnAAQAJwAEACcAKAYnACgIJwAHACgDJwAoACeyBfwEc3RhdGV2ZXJzaW9uZG9jdW1lbnRkYXRlZG9jdW1lbnRzbHVnZG9jdW1lbnRzdGF0dXNkb2N1bWVudHRpdGxlSGVsbG8gd29ybGQhZG9jdW1lbnRjb250ZW50VGhpcyBXb3JkQ2FtcCBzaXRlIGlzIGluIGVhcmx5IHBsYW5uaW5nLiBDaGVjayBiYWNrIHNvb24gZm9yIG1vcmUgaW5mb3JtYXRpb24uZG9jdW1lbnRleGNlcnB0ZG9jdW1lbnRhdXRob3Jkb2N1bWVudGZlYXR1cmVkX21lZGlhZG9jdW1lbnRjb21tZW50X3N0YXR1c2RvY3VtZW50cGluZ19zdGF0dXNkb2N1bWVudHN0aWNreWRvY3VtZW50dGVtcGxhdGVkb2N1bWVudGZvcm1hdGRvY3VtZW50bWV0YV9qZXRwYWNrX25ld3NsZXR0ZXJfYWNjZXNzX2pldHBhY2tfZG9udF9lbWFpbF9wb3N0X3RvX3N1YnNfamV0cGFja19uZXdzbGV0dGVyX3RpZXJfaWRfamV0cGFja19tZW1iZXJzaGlwc19jb250YWluc19wYXl3YWxsZWRfY29udGVudF9qZXRwYWNrX21lbWJlcnNoaXBzX2NvbnRhaW5zX3BhaWRfY29udGVudGZvb3Rub3Rlc2pldHBhY2tfcG9zdF93YXNfZXZlcl9wdWJsaXNoZWRkb2N1bWVudGNhdGVnb3JpZXNkb2N1bWVudHRhZ3Nkb2N1bWVudGJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzY29udGVudGlubmVyQmxvY2tzBQcIBAgECAYIBQwIB44BCAcIBggOCA4ICwgGSAEGCAQaIBsvKgkfCAoIBAgGCAcPBAoHCw8BBAAAAQAAAAEIAAYBAgAHQgEBAEEAAAJBFwEjAH0BdxMyMDI2LTA2LTIzVDE3OjQ5OjA3dwtoZWxsby13b3JsZHcHcHVibGlzaH2/3/0NfQB3BG9wZW53BG9wZW55dwB3CHN0YW5kYXJkdwB+fQB5eXcAeXUBfQF1AHckODM3OGZkNzAtOTQxZi00YWQxLWE4ZjYtMTAyODE1MGMxZjQyeHdVPHA+VGhpcyBXb3JkQ2FtcCBzaXRlIGlzIGluIGVhcmx5IHBsYW5uaW5nLiBDaGVjayBiYWNrIHNvb24gZm9yIG1vcmUgaW5mb3JtYXRpb24uPC9wPncNY29yZS9mcmVlZm9ybXdVPHA+VGhpcyBXb3JkQ2FtcCBzaXRlIGlzIGluIGVhcmx5IHBsYW5uaW5nLiBDaGVjayBiYWNrIHNvb24gZm9yIG1vcmUgaW5mb3JtYXRpb24uPC9wPgA=","updateId":306587102}'
+    comments:
+      - 
+        id: 1
+        author: Mr. WordPress
+        author_email: wapuu@wordpress.example
+        author_url: https://wordpress.org/
+        author_ip: ""
+        date: 2026-06-23 17:49:07
+        date_gmt: 2026-06-23 17:49:07
+        content: |
+          Hi, this is a comment.
+          To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+          Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.
+        approved: "1"
+        type: comment
+        parent: 0
+        user_id: 0
+  - 
+    post_id: 3
+    title: Welcome to WordCamp Brasil 2026
+    link: https://brasil.wordcamp.org/2026/welcome-to-wordcamp-brasil-2026/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/welcome-to-wordcamp-brasil-2026/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Organizers note:</em> Please update the portions <span style="color: red;text-decoration: underline">with red text</span>.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>We're happy to announce that <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> is officially on the calendar!</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p><span style="color: red;text-decoration: underline">WordCamp YourCityName</span> will be <span style="color: red;text-decoration: underline">DATE(S)</span> at <span style="color: red;text-decoration: underline">LOCATION</span>.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p><span style="color: red;text-decoration: underline">Subscribe using the form in the sidebar</span> to stay up to date on the most recent news. We’ll be keeping you posted on all the details over the coming months, including speaker submissions, ticket sales and more!</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: open
+    ping_status: open
+    post_name: welcome-to-wordcamp-brasil-2026
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: post
+    is_sticky: 0
+    categories:
+      - 
+        domain: category
+        nicename: uncategorized
+        value: Uncategorized
+  - 
+    post_id: 4
+    title: Call for Sponsors
+    link: https://brasil.wordcamp.org/2026/?p=4
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=4
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"backgroundColor":"accent","textColor":"background","className":"has-accent-background-color has-background"} -->
+      <p class="has-accent-background-color has-background has-background-color has-text-color"><em>Organizers Note:</em>
+      Submissions to this form will automatically create <code>draft</code>
+      <a href="https://brasil.wordcamp.org/2026/wp-admin/edit.php?post_type=wcb_sponsor">Sponsor posts</a>.
+      You can use those to manage your sponsors, by publishing the ones that you accept, and deleting the ones that you don't.
+      Changing the <code>name</code>, <code>email</code>, <code>username</code>, or <code>first time sponsoring</code> questions can break the automation, though.
+      </p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>Blurb with information for potential sponsors.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:jetpack/contact-form {"subject":"WordCamp Sponsor Request","hasFormSettingsSet":"yes"} -->
+      <!-- wp:jetpack/field-text {"label":"Contact Name","required":true} /-->
+      
+      <!-- wp:jetpack/field-name {"label":"Company Name","required":true} /-->
+      
+      <!-- wp:jetpack/field-url {"label":"Company Website","required":true} /-->
+      
+      <!-- wp:jetpack/field-email {"label":"Email","required":true,"requiredText":"(required)","id":"sponsor-email"} /-->
+      
+      <!-- wp:jetpack/field-telephone {"label":"Phone Number"} /-->
+      
+      <!-- wp:jetpack/field-select {"label":"Sponsorship Level","options":["Bronze","Silver","Gold"]} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Why Would you Like to Sponsor WordCamp?","required":true} /-->
+      
+      <!-- wp:jetpack/field-radio {"label":"Is this your first time being a sponsor at a WordPress event?","options":["Yes","No","Unsure"],"id":"first-time-sponsor"} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Questions / Comments"} /-->
+      <!-- /wp:jetpack/contact-form -->
+    post_date: 20260623T144907+1776450249
+    post_modified: 20260623T144907+1776450249
+    comment_status: open
+    ping_status: open
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: post
+    is_sticky: 0
+    categories:
+      - 
+        domain: category
+        nicename: uncategorized
+        value: Uncategorized
+    meta:
+      wcfd-key: call-for-sponsors
+  - 
+    post_id: 5
+    title: Call for Speakers
+    link: https://brasil.wordcamp.org/2026/?p=5
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=5
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Organizers note:</em> Submissions to this form will automatically create draft posts for the Speaker and Session post types. Feel free to customize the form, but deleting or renaming the following fields will break the automation: Name, Email, WordPress.org Username, Your Bio, Session Title, Session Description.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>If you'd like to propose multiple topics, please submit the form multiple times, once for each topic. [Other speaker instructions/info goes here.]</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:jetpack/contact-form {"subject":"WordCamp Speaker Request","hasFormSettingsSet":"yes"} -->
+      <!-- wp:jetpack/field-name {"label":"Name","required":true} /-->
+      
+      <!-- wp:jetpack/field-email {"label":"Email","required":true,"requiredText":"(required)","id":"speaker-email"} /-->
+      
+      <!-- wp:jetpack/field-text {"label":"WordPress.org Username","requiredText":"(required)","id":"speaker-username","required":true} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Your Bio","required":true} /-->
+      
+      <!-- wp:jetpack/field-text {"label":"Topic Title","required":true} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Topic Description","required":true} /-->
+      
+      <!-- wp:jetpack/field-text {"label":"Intended Audience","required":true} /-->
+      
+      <!-- wp:jetpack/field-radio {"label":"Is this your first time being a speaker at a WordPress event?","options":["Yes","No","Unsure"],"id":"first-time-speaker"} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Past Speaking Experience (not necessary to apply)"} /-->
+      <!-- /wp:jetpack/contact-form -->
+    post_date: 20260623T144907+1776450249
+    post_modified: 20260623T144907+1776450249
+    comment_status: open
+    ping_status: open
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: post
+    is_sticky: 0
+    categories:
+      - 
+        domain: category
+        nicename: uncategorized
+        value: Uncategorized
+    meta:
+      wcfd-key: call-for-speakers
+  - 
+    post_id: 6
+    title: Call for Volunteers
+    link: https://brasil.wordcamp.org/2026/?p=6
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=6
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"backgroundColor":"accent","textColor":"background","className":"has-accent-background-color has-background"} -->
+      <p class="has-accent-background-color has-background has-background-color has-text-color"><em>Organizers Note:</em>
+      Submissions to this form will automatically create <code>draft</code>
+      <a href="https://brasil.wordcamp.org/2026/wp-admin/edit.php?post_type=wcb_volunteer">Volunteer posts</a>.
+      You can use those to manage your volunteers, by publishing the ones that you accept, and deleting the ones that you don't.
+      Changing the <code>name</code>, <code>email</code>, <code>username</code>, or <code>first time volunteering</code> questions can break the automation, though.
+      </p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>Blurb with information for potential volunteers.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:jetpack/contact-form {"subject":"WordCamp Volunteer Application","hasFormSettingsSet":"yes"} -->
+      <!-- wp:jetpack/field-name {"label":"Name","required":true} /-->
+      <!-- wp:jetpack/field-email {"label":"Email","required":true,"requiredText":"(required)","id":"volunteer-email"} /-->
+      
+      <!-- wp:jetpack/field-text {"label":"WordPress.org Username","requiredText":"(required)","id":"volunteer-username"} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Skills / Interests / Experience (not necessary to volunteer)","required":true} /-->
+      
+      <!-- wp:jetpack/field-text {"label":"Number of Hours Available","required":true} /-->
+      
+      <!-- wp:jetpack/field-radio {"label":"Is this the first time you have volunteered at a WordPress event?","options":["Yes","No","Unsure"],"id":"first-time-volunteer"} /-->
+      
+      <!-- wp:jetpack/field-textarea {"label":"Questions / Comments"} /-->
+      <!-- /wp:jetpack/contact-form -->
+    post_date: 20260623T144907+1776450249
+    post_modified: 20260623T144907+1776450249
+    comment_status: open
+    ping_status: open
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: post
+    is_sticky: 0
+    categories:
+      - 
+        domain: category
+        nicename: uncategorized
+        value: Uncategorized
+    meta:
+      wcfd-key: call-for-volunteers
+  - 
+    post_id: 9
+    title: Sessions
+    link: https://brasil.wordcamp.org/2026/sessions/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/sessions/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Organizers note:</em> You can enter content for this page in the Sessions menu item in the sidebar.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:pattern {"slug":"wordcamp/session-list-basic"} /-->
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: closed
+    ping_status: closed
+    post_name: sessions
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 10
+    title: Sponsors
+    link: https://brasil.wordcamp.org/2026/sponsors/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/sponsors/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:group {"style":{"color":{"background":"#eeeeee"},"spacing":{"padding":{"top":"1em","right":"1em","bottom":"1em","left":"1em"}}},"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group has-background" style="background-color:#eeeeee;padding-top:1em;padding-right:1em;padding-bottom:1em;padding-left:1em"><!-- wp:paragraph -->
+      <p><strong><em>Organizers notes:</em></strong></p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>Multi-event sponsors have been automatically created in the Sponsors menu, but you'll need to remove the ones that don't apply to your specific event. To find out which ones apply, please visit the <a href="https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/fundraising/global-community-sponsorship-for-event-organizers/">Global Community Sponsorship</a> handbook page. After that, you should add the sponsors that are specific to your event. For non-English sites, make sure the URL below matches the Call for Sponsors page.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>The "Call for Sponsors" post was created as a draft, but there is a link to it below. Please update the content of that post, and publish it, before you turn off Coming Soon mode.</p>
+      <!-- /wp:paragraph --></div>
+      <!-- /wp:group -->
+      
+      <!-- wp:heading -->
+      <h2 class="wp-block-heading">Our Sponsors</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>Blurb thanking sponsors</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:pattern {"slug":"wordcamp/sponsor-grid-basic"} /-->
+      
+      <!-- wp:heading -->
+      <h2 class="wp-block-heading">Interested in sponsoring WordCamp this year?</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>Check out our <a href="https://brasil.wordcamp.org/2026/call-for-sponsors/">Call for Sponsors</a> post for details on how you can help make this year's WordCamp the best it can be!</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144907-03
+    post_modified: 20260708T190436-03
+    comment_status: closed
+    ping_status: closed
+    post_name: sponsors
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+    meta:
+      classic-editor-remember: block-editor
+      _crdt_document: '{"document":"AAALsebytBvT08iGAVpQCBKgOgQCAQIKAQBKEgIBAgoCQkoAqAEBAgoCQkoAqhEBAgoCQkrmE54ZAQIKAkJKACoBAgoCQkoAgAEBAgpKABABAgoCQkoAqgEBAgoCQkoAfygAIQAoAicABAAnAAQAJwAoBCcAKAAnAAcAKAMnACgCJwAHACgDJwEEACgAJwCHACgDJwEEACgAJwCHACgDJwEEACgAJwCHACgDJwEEACgAJwCHACgDJwEEACgAJwCHACgDJwAoACcAhwAoAycBBAAoACcAhwAoAycBBAAoACefHqodc3RhdGV2ZXJzaW9uc3RhdGV2ZXJzaW9uZG9jdW1lbnRkYXRlZG9jdW1lbnRzbHVnZG9jdW1lbnRzdGF0dXNkb2N1bWVudHRpdGxlU3BvbnNvcnNkb2N1bWVudGNvbnRlbnQ8IS0tIHdwOmdyb3VwIHsic3R5bGUiOnsiY29sb3IiOnsiYmFja2dyb3VuZCI6IiNlZWVlZWUifSwic3BhY2luZyI6eyJwYWRkaW5nIjp7InRvcCI6IjFlbSIsInJpZ2h0IjoiMWVtIiwiYm90dG9tIjoiMWVtIiwibGVmdCI6IjFlbSJ9fX0sImxheW91dCI6eyJ0eXBlIjoiY29uc3RyYWluZWQifX0gLS0+CjxkaXYgY2xhc3M9IndwLWJsb2NrLWdyb3VwIGhhcy1iYWNrZ3JvdW5kIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlO3BhZGRpbmctdG9wOjFlbTtwYWRkaW5nLXJpZ2h0OjFlbTtwYWRkaW5nLWJvdHRvbToxZW07cGFkZGluZy1sZWZ0OjFlbSI+PCEtLSB3cDpwYXJhZ3JhcGggLS0+CjxwPjxzdHJvbmc+PGVtPk9yZ2FuaXplcnMgbm90ZXM6PC9lbT48L3N0cm9uZz48L3A+CjwhLS0gL3dwOnBhcmFncmFwaCAtLT4KCjwhLS0gd3A6cGFyYWdyYXBoIC0tPgo8cD5NdWx0aS1ldmVudCBzcG9uc29ycyBoYXZlIGJlZW4gYXV0b21hdGljYWxseSBjcmVhdGVkIGluIHRoZSBTcG9uc29ycyBtZW51LCBidXQgeW91J2xsIG5lZWQgdG8gcmVtb3ZlIHRoZSBvbmVzIHRoYXQgZG9uJ3QgYXBwbHkgdG8geW91ciBzcGVjaWZpYyBldmVudC4gVG8gZmluZCBvdXQgd2hpY2ggb25lcyBhcHBseSwgcGxlYXNlIHZpc2l0IHRoZSA8YSBocmVmPSJodHRwczovL21ha2Uud29yZHByZXNzLm9yZy9jb21tdW5pdHkvaGFuZGJvb2svd29yZGNhbXAtb3JnYW5pemVyL3BsYW5uaW5nLWRldGFpbHMvZnVuZHJhaXNpbmcvZ2xvYmFsLWNvbW11bml0eS1zcG9uc29yc2hpcC1mb3ItZXZlbnQtb3JnYW5pemVycy8iPkdsb2JhbCBDb21tdW5pdHkgU3BvbnNvcnNoaXA8L2E+IGhhbmRib29rIHBhZ2UuIEFmdGVyIHRoYXQsIHlvdSBzaG91bGQgYWRkIHRoZSBzcG9uc29ycyB0aGF0IGFyZSBzcGVjaWZpYyB0byB5b3VyIGV2ZW50LiBGb3Igbm9uLUVuZ2xpc2ggc2l0ZXMsIG1ha2Ugc3VyZSB0aGUgVVJMIGJlbG93IG1hdGNoZXMgdGhlIENhbGwgZm9yIFNwb25zb3JzIHBhZ2UuPC9wPgo8IS0tIC93cDpwYXJhZ3JhcGggLS0+Cgo8IS0tIHdwOnBhcmFncmFwaCAtLT4KPHA+VGhlICJDYWxsIGZvciBTcG9uc29ycyIgcG9zdCB3YXMgY3JlYXRlZCBhcyBhIGRyYWZ0LCBidXQgdGhlcmUgaXMgYSBsaW5rIHRvIGl0IGJlbG93LiBQbGVhc2UgdXBkYXRlIHRoZSBjb250ZW50IG9mIHRoYXQgcG9zdCwgYW5kIHB1Ymxpc2ggaXQsIGJlZm9yZSB5b3UgdHVybiBvZmYgQ29taW5nIFNvb24gbW9kZS48L3A+CjwhLS0gL3dwOnBhcmFncmFwaCAtLT48L2Rpdj4KPCEtLSAvd3A6Z3JvdXAgLS0+Cgo8IS0tIHdwOmhlYWRpbmcgLS0+CjxoMiBjbGFzcz0id3AtYmxvY2staGVhZGluZyI+T3VyIFNwb25zb3JzPC9oMj4KPCEtLSAvd3A6aGVhZGluZyAtLT4KCjwhLS0gd3A6cGFyYWdyYXBoIC0tPgo8cD5CbHVyYiB0aGFua2luZyBzcG9uc29yczwvcD4KPCEtLSAvd3A6cGFyYWdyYXBoIC0tPgoKPCEtLSB3cDpwYXR0ZXJuIHsic2x1ZyI6IndvcmRjYW1wL3Nwb25zb3ItZ3JpZC1iYXNpYyJ9IC8tLT4KCjwhLS0gd3A6aGVhZGluZyAtLT4KPGgyIGNsYXNzPSJ3cC1ibG9jay1oZWFkaW5nIj5JbnRlcmVzdGVkIGluIHNwb25zb3JpbmcgV29yZENhbXAgdGhpcyB5ZWFyPzwvaDI+CjwhLS0gL3dwOmhlYWRpbmcgLS0+Cgo8IS0tIHdwOnBhcmFncmFwaCAtLT4KPHA+Q2hlY2sgb3V0IG91ciA8YSBocmVmPSJodHRwczovL2JyYXNpbC53b3JkY2FtcC5vcmcvMjAyNi9jYWxsLWZvci1zcG9uc29ycy8iPkNhbGwgZm9yIFNwb25zb3JzPC9hPiBwb3N0IGZvciBkZXRhaWxzIG9uIGhvdyB5b3UgY2FuIGhlbHAgbWFrZSB0aGlzIHllYXIncyBXb3JkQ2FtcCB0aGUgYmVzdCBpdCBjYW4gYmUhPC9wPgo8IS0tIC93cDpwYXJhZ3JhcGggLS0+CmRvY3VtZW50ZXhjZXJwdGRvY3VtZW50YXV0aG9yZG9jdW1lbnRmZWF0dXJlZF9tZWRpYWRvY3VtZW50Y29tbWVudF9zdGF0dXNkb2N1bWVudHBpbmdfc3RhdHVzZG9jdW1lbnR0ZW1wbGF0ZWRvY3VtZW50bWV0YWZvb3Rub3Rlc2RvY3VtZW50YmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXN0YWdOYW1lc3R5bGVsYXlvdXRpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzY29udGVudDxzdHJvbmc+PGVtPk9yZ2FuaXplcnMgbm90ZXM6PC9lbT48L3N0cm9uZz5kcm9wQ2FwaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc2NvbnRlbnRNdWx0aS1ldmVudCBzcG9uc29ycyBoYXZlIGJlZW4gYXV0b21hdGljYWxseSBjcmVhdGVkIGluIHRoZSBTcG9uc29ycyBtZW51LCBidXQgeW91J2xsIG5lZWQgdG8gcmVtb3ZlIHRoZSBvbmVzIHRoYXQgZG9uJ3QgYXBwbHkgdG8geW91ciBzcGVjaWZpYyBldmVudC4gVG8gZmluZCBvdXQgd2hpY2ggb25lcyBhcHBseSwgcGxlYXNlIHZpc2l0IHRoZSA8YSBocmVmPSJodHRwczovL21ha2Uud29yZHByZXNzLm9yZy9jb21tdW5pdHkvaGFuZGJvb2svd29yZGNhbXAtb3JnYW5pemVyL3BsYW5uaW5nLWRldGFpbHMvZnVuZHJhaXNpbmcvZ2xvYmFsLWNvbW11bml0eS1zcG9uc29yc2hpcC1mb3ItZXZlbnQtb3JnYW5pemVycy8iPkdsb2JhbCBDb21tdW5pdHkgU3BvbnNvcnNoaXA8L2E+IGhhbmRib29rIHBhZ2UuIEFmdGVyIHRoYXQsIHlvdSBzaG91bGQgYWRkIHRoZSBzcG9uc29ycyB0aGF0IGFyZSBzcGVjaWZpYyB0byB5b3VyIGV2ZW50LiBGb3Igbm9uLUVuZ2xpc2ggc2l0ZXMsIG1ha2Ugc3VyZSB0aGUgVVJMIGJlbG93IG1hdGNoZXMgdGhlIENhbGwgZm9yIFNwb25zb3JzIHBhZ2UuZHJvcENhcGlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNjb250ZW50VGhlICJDYWxsIGZvciBTcG9uc29ycyIgcG9zdCB3YXMgY3JlYXRlZCBhcyBhIGRyYWZ0LCBidXQgdGhlcmUgaXMgYSBsaW5rIHRvIGl0IGJlbG93LiBQbGVhc2UgdXBkYXRlIHRoZSBjb250ZW50IG9mIHRoYXQgcG9zdCwgYW5kIHB1Ymxpc2ggaXQsIGJlZm9yZSB5b3UgdHVybiBvZmYgQ29taW5nIFNvb24gbW9kZS5kcm9wQ2FwaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc2NvbnRlbnRPdXIgU3BvbnNvcnNsZXZlbGlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNjb250ZW50Qmx1cmIgdGhhbmtpbmcgc3BvbnNvcnNkcm9wQ2FwaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc3NsdWdpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzY29udGVudEludGVyZXN0ZWQgaW4gc3BvbnNvcmluZyBXb3JkQ2FtcCB0aGlzIHllYXI/bGV2ZWxpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzY29udGVudENoZWNrIG91dCBvdXIgPGEgaHJlZj0iaHR0cHM6Ly9icmFzaWwud29yZGNhbXAub3JnLzIwMjYvY2FsbC1mb3Itc3BvbnNvcnMvIj5DYWxsIGZvciBTcG9uc29yczwvYT4gcG9zdCBmb3IgZGV0YWlscyBvbiBob3cgeW91IGNhbiBoZWxwIG1ha2UgdGhpcyB5ZWFyJ3MgV29yZENhbXAgdGhlIGJlc3QgaXQgY2FuIGJlIWRyb3BDYXBpbm5lckJsb2NrcwUHBQcIBAgECAYIBUgAB4kdCAcIBggOCA4IC0gBBAkIBggHDwQKBwUGCwgHDwQKBysHCwgHDwQKB6wIBwsIBw8ECgezAgcLCAcPBAoHDAULCAcPBAoHFwcLCAcPBAoECwgHDwQKBywFCwgHDwQKB7QCBwsPAQUAAAEAAAABBgAAAQAAJkIBAQBBAABBAAIAQQACAEEAAgBBAAIAQQACAEEAAEEAAgBBAAIAAkE4AgEAfQFpAHcTMjAyNi0wNi0yM1QxNDo0OTowN3cIc3BvbnNvcnN3B3B1Ymxpc2h9v9/9DX0AdwZjbG9zZWR3BmNsb3NlZHcAdwB3JDBjNjg2OTM5LWVmMWQtNGY5MC05ZDY2LWFiNjViOGMwMjBmY3h3nAE8ZGl2IGNsYXNzPSJ3cC1ibG9jay1ncm91cCBoYXMtYmFja2dyb3VuZCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6I2VlZWVlZTtwYWRkaW5nLXRvcDoxZW07cGFkZGluZy1yaWdodDoxZW07cGFkZGluZy1ib3R0b206MWVtO3BhZGRpbmctbGVmdDoxZW0iPgoKCgo8L2Rpdj53CmNvcmUvZ3JvdXB3A2RpdnYCBWNvbG9ydgEKYmFja2dyb3VuZHcHI2VlZWVlZQdzcGFjaW5ndgEHcGFkZGluZ3YEA3RvcHcDMWVtBXJpZ2h0dwMxZW0GYm90dG9tdwMxZW0EbGVmdHcDMWVtdgEEdHlwZXcLY29uc3RyYWluZWR3JDQwYzM0ZDY0LTM0MjMtNGY4OS1hNGFhLTBlNDViNTFkODMyZHh3MjxwPjxzdHJvbmc+PGVtPk9yZ2FuaXplcnMgbm90ZXM6PC9lbT48L3N0cm9uZz48L3A+dw5jb3JlL3BhcmFncmFwaHl3JDQ0MTBjOTU4LTQwMGQtNGYzMy1iNDlkLWU2Y2E0OWI1NDkxMXh3swQ8cD5NdWx0aS1ldmVudCBzcG9uc29ycyBoYXZlIGJlZW4gYXV0b21hdGljYWxseSBjcmVhdGVkIGluIHRoZSBTcG9uc29ycyBtZW51LCBidXQgeW91J2xsIG5lZWQgdG8gcmVtb3ZlIHRoZSBvbmVzIHRoYXQgZG9uJ3QgYXBwbHkgdG8geW91ciBzcGVjaWZpYyBldmVudC4gVG8gZmluZCBvdXQgd2hpY2ggb25lcyBhcHBseSwgcGxlYXNlIHZpc2l0IHRoZSA8YSBocmVmPSJodHRwczovL21ha2Uud29yZHByZXNzLm9yZy9jb21tdW5pdHkvaGFuZGJvb2svd29yZGNhbXAtb3JnYW5pemVyL3BsYW5uaW5nLWRldGFpbHMvZnVuZHJhaXNpbmcvZ2xvYmFsLWNvbW11bml0eS1zcG9uc29yc2hpcC1mb3ItZXZlbnQtb3JnYW5pemVycy8iPkdsb2JhbCBDb21tdW5pdHkgU3BvbnNvcnNoaXA8L2E+IGhhbmRib29rIHBhZ2UuIEFmdGVyIHRoYXQsIHlvdSBzaG91bGQgYWRkIHRoZSBzcG9uc29ycyB0aGF0IGFyZSBzcGVjaWZpYyB0byB5b3VyIGV2ZW50LiBGb3Igbm9uLUVuZ2xpc2ggc2l0ZXMsIG1ha2Ugc3VyZSB0aGUgVVJMIGJlbG93IG1hdGNoZXMgdGhlIENhbGwgZm9yIFNwb25zb3JzIHBhZ2UuPC9wPncOY29yZS9wYXJhZ3JhcGh5dyRhMTAxNDc2Yy1mZTU4LTQ4OGYtOGE5NC1mOTczOGUzMWZkNzh4d7oBPHA+VGhlICJDYWxsIGZvciBTcG9uc29ycyIgcG9zdCB3YXMgY3JlYXRlZCBhcyBhIGRyYWZ0LCBidXQgdGhlcmUgaXMgYSBsaW5rIHRvIGl0IGJlbG93LiBQbGVhc2UgdXBkYXRlIHRoZSBjb250ZW50IG9mIHRoYXQgcG9zdCwgYW5kIHB1Ymxpc2ggaXQsIGJlZm9yZSB5b3UgdHVybiBvZmYgQ29taW5nIFNvb24gbW9kZS48L3A+dw5jb3JlL3BhcmFncmFwaHl3JGFiNGVhYzBlLWY2ZWEtNDhmYy1hNjc4LTBkZmEyOGNhMzkzNnh3LjxoMiBjbGFzcz0id3AtYmxvY2staGVhZGluZyI+T3VyIFNwb25zb3JzPC9oMj53DGNvcmUvaGVhZGluZ30CdyQ5YWFjN2UwZi0zMzNlLTRlNGMtYWY0YS01NTQ5ZGNjYTJjODh4dx48cD5CbHVyYiB0aGFua2luZyBzcG9uc29yczwvcD53DmNvcmUvcGFyYWdyYXBoeXckZjNhNTMwODYtMmY5Yi00NjUxLWE5ZmMtMDNhZWEyMjY5N2VieHcAdwxjb3JlL3BhdHRlcm53G3dvcmRjYW1wL3Nwb25zb3ItZ3JpZC1iYXNpY3ckMDYzZTg1MjUtZWIyOS00NjVhLWFkOTAtZjIyMGUyZjRjYjVkeHdOPGgyIGNsYXNzPSJ3cC1ibG9jay1oZWFkaW5nIj5JbnRlcmVzdGVkIGluIHNwb25zb3JpbmcgV29yZENhbXAgdGhpcyB5ZWFyPzwvaDI+dwxjb3JlL2hlYWRpbmd9AnckYjg1ZTIyYzYtMjA3MC00OTAwLWJlMDQtMDVjOTg0OTgyMjQ3eHe7ATxwPkNoZWNrIG91dCBvdXIgPGEgaHJlZj0iaHR0cHM6Ly9icmFzaWwud29yZGNhbXAub3JnLzIwMjYvY2FsbC1mb3Itc3BvbnNvcnMvIj5DYWxsIGZvciBTcG9uc29yczwvYT4gcG9zdCBmb3IgZGV0YWlscyBvbiBob3cgeW91IGNhbiBoZWxwIG1ha2UgdGhpcyB5ZWFyJ3MgV29yZENhbXAgdGhlIGJlc3QgaXQgY2FuIGJlITwvcD53DmNvcmUvcGFyYWdyYXBoeQHTqaRDAQAA","updateId":296273114}'
+  - 
+    post_id: 11
+    title: Location
+    link: https://brasil.wordcamp.org/2026/location/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/location/
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: closed
+    ping_status: closed
+    post_name: location
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 12
+    title: Organizers
+    link: https://brasil.wordcamp.org/2026/organizers/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/organizers/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Organizers note:</em> You can enter content for this page in the Organizers menu item in the sidebar.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:pattern {"slug":"wordcamp/organizer-list-bio"} /-->
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: closed
+    ping_status: closed
+    post_name: organizers
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 17
+    title: Contact
+    link: https://brasil.wordcamp.org/2026/contact/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/contact/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:jetpack/contact-form {"subject":"WordCamp Contact Request","jetpackCRM":false,"salesforceData":{"organizationId":"","sendToSalesforce":false},"mailpoet":{"listId":null,"listName":null,"enabledForForm":false}} -->
+      <div class="wp-block-jetpack-contact-form"><!-- wp:jetpack/field-name {"id":"","required":true,"fieldVariant":"name"} -->
+      <div><!-- wp:jetpack/label {"label":"Nome"} /-->
+      
+      <!-- wp:jetpack/input {"style":{"border":{"style":"solid"}}} /--></div>
+      <!-- /wp:jetpack/field-name -->
+      
+      <!-- wp:jetpack/field-email {"id":"","required":true} -->
+      <div><!-- wp:jetpack/label {"label":"E-mail"} /-->
+      
+      <!-- wp:jetpack/input {"style":{"border":{"style":"solid"}}} /--></div>
+      <!-- /wp:jetpack/field-email -->
+      
+      <!-- wp:jetpack/field-textarea {"id":"","required":true} -->
+      <div><!-- wp:jetpack/label {"label":"Mensagem"} /-->
+      
+      <!-- wp:jetpack/input {"type":"textarea","style":{"border":{"style":"solid"}}} /--></div>
+      <!-- /wp:jetpack/field-textarea -->
+      
+      <!-- wp:jetpack/button {"element":"button","text":"Enviar","lock":{"move":false,"remove":true}} /--></div>
+      <!-- /wp:jetpack/contact-form -->
+    post_date: 20260623T144907-03
+    post_modified: 20260708T111034-03
+    comment_status: closed
+    ping_status: closed
+    post_name: contact
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+    meta:
+      classic-editor-remember: block-editor
+      _crdt_document: '{"document":"AAAH1KvM+xD3AugBCBCIAgMCBQADAAQDBAQDBAw4AwAGAgYCBAIkAggDAB4FAQIIAgQDAwYCCAIkAioeBAMDBAMBBAMCCQADAA4KhAEQBAIBAgoBFko+AgECCgENSiwCAQEIAQJIABYBAQgASMQBlAEBAgoBDUosAgEBCAECSAAWAQEIAEjEAZQBAQIKAQ1KLAIBAQgBAkgAFgEBCAEASMQBlgEBAQgBAEj0A7wD6gQIQpYBqgPWApUBAOYOBAIHAAIEAgQDAAYCBAMBDDgDAAYCBgIEAjIeCAYIAgQCBAMABgoCJAIqHgQCBAMABAIEBg4aCjmiAgQCBwACBAIEAwAGAgQDAQw4AwAGAgYCBAIyHggGCAIEAgQDAAYKAiQCKh4EAgQDAAQCBAYOGgrVASgDJwAEACcABACBAIQBgQCEAIEAhAOBAIQCgQCEAYEAhA6BAIQAgQCEAYEAhACBAIQEgQCEA4EAhAeBAIQEgQCEAIEAhACBAIQAgQCEAIEAhACBAIQCgQAnACgEJwAoACcABwAoAycAKBgnAAcAKAMnACgPJwAHACgCJwAoBCcAhwAoAicAKAEnAIcAKAMnACgPJwAHACgCJwAoBCcAhwAoAicAKAEnAIcAKAMnACgPJwAHACgCJwAoBCcAhwAoAicAKAInAIcAKAInACgCJwAoA6gHxJcZ5hZzdGF0ZXZlcnNpb25kb2N1bWVudGRhdGVkb2N1bWVudHNsdWdkb2N1bWVudHN0YXR1c2RvY3VtZW50dGl0bGVDb250YWN0ZG9jdW1lbnRjb250ZW50PCEtLSB3cDpqZXRwYWNrL2NvbnRhY3QtZm9ybSB7InN1YmplY3QiOiJXb3JkQ2FtcCBDb250YWN0IFJlcXVlc3QiLCJhc29yZXR0aW5zU2UiOiJlcyJ9IC0tPgo8IS0tIHdwOmpldHBhY2svZmllbGQtbmFtZSB7ImxhYmVsIjoiTmFtZSIsInJlcXVpcmVkIjp0cnVlfSAtLT4KPCEtLSB3cDpqZXRwYWNrL2VsZW1haWwgeyJsYmVsIjoibWFpbCIsInJlcXVpcmVkIjp0cnVlfSAvLS0+Cgo8IS0tIHdwOmpldHBhY2svZmllbGQtdGV4dGFyZWEgeyJsYmVsIjoiZWFlLCJyZWUiOnRydWV9IC8tLT4KPCEtLSAvd3A6amV0cGFjay9jb250YWN0LWZvcm0gLS0+ZG9jdW1lbnRleGNlcnB0ZG9jdW1lbnRhdXRob3Jkb2N1bWVudGZlYXR1cmVkX21lZGlhZG9jdW1lbnRjb21tZW50X3N0YXR1c2RvY3VtZW50cGluZ19zdGF0dXNkb2N1bWVudHRlbXBsYXRlZG9jdW1lbnRtZXRhZm9vdG5vdGVzZG9jdW1lbnRibG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc3JlZnN1YmplY3R0b2N1c3RvbVRoYW5reW91Y3VzdG9tVGhhbmt5b3VIZWFkaW5nY3VzdG9tVGhhbmt5b3VNZXNzYWdlY3VzdG9tVGhhbmt5b3VSZWRpcmVjdGNvbmZpcm1hdGlvblR5cGVqZXRwYWNrQ1JNZm9ybVRpdGxldmFyaWF0aW9uTmFtZXNhbGVzZm9yY2VEYXRhbWFpbHBvZXRob3N0aW5nZXJSZWFjaHNhdmVSZXNwb25zZXNlbWFpbE5vdGlmaWNhdGlvbnNkaXNhYmxlR29CYWNrZGlzYWJsZVN1bW1hcnlmb3JtTm90aWZpY2F0aW9uc25vdGlmaWNhdGlvblJlY2lwaWVudHN3ZWJob29rc2xvY2tjbGFzc05hbWVzdHlsZW1ldGFkYXRhaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRvcmlnaW5hbENvbnRlbnRuYW1lYXR0cmlidXRlc2xhYmVscmVxdWlyZWRyZXF1aXJlZFRleHRyZXF1aXJlZEluZGljYXRvcm9wdGlvbnNkZWZhdWx0VmFsdWVpZHdpZHRoYnV0dG9uQmFja2dyb3VuZENvbG9yYnV0dG9uQm9yZGVyUmFkaXVzYnV0dG9uQm9yZGVyV2lkdGhzaGFyZUZpZWxkQXR0cmlidXRlc2xvY2tjbGFzc05hbWVzdHlsZW1ldGFkYXRhaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRuYW1lYXR0cmlidXRlc2xhYmVscGxhY2Vob2xkZXJyZXF1aXJlZFRleHRyZXF1aXJlZEluZGljYXRvcm1ldGFkYXRhaW5uZXJCbG9ja3NjbGllbnRJZGlzVmFsaWRuYW1lYXR0cmlidXRlc3BsYWNlaG9sZGVyc3R5bGVpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG9yaWdpbmFsQ29udGVudG5hbWVhdHRyaWJ1dGVzbGFiZWxyZXF1aXJlZHJlcXVpcmVkVGV4dHJlcXVpcmVkSW5kaWNhdG9yb3B0aW9uc2RlZmF1bHRWYWx1ZWlkd2lkdGhidXR0b25CYWNrZ3JvdW5kQ29sb3JidXR0b25Cb3JkZXJSYWRpdXNidXR0b25Cb3JkZXJXaWR0aHNoYXJlRmllbGRBdHRyaWJ1dGVzbG9ja2NsYXNzTmFtZXN0eWxlbWV0YWRhdGFpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG5hbWVhdHRyaWJ1dGVzbGFiZWxwbGFjZWhvbGRlcnJlcXVpcmVkVGV4dHJlcXVpcmVkSW5kaWNhdG9ybWV0YWRhdGFpbm5lckJsb2Nrc2NsaWVudElkaXNWYWxpZG5hbWVhdHRyaWJ1dGVzcGxhY2Vob2xkZXJzdHlsZWlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkb3JpZ2luYWxDb250ZW50bmFtZWF0dHJpYnV0ZXNsYWJlbHJlcXVpcmVkcmVxdWlyZWRUZXh0cmVxdWlyZWRJbmRpY2F0b3JvcHRpb25zZGVmYXVsdFZhbHVlaWR3aWR0aGJ1dHRvbkJhY2tncm91bmRDb2xvcmJ1dHRvbkJvcmRlclJhZGl1c2J1dHRvbkJvcmRlcldpZHRoc2hhcmVGaWVsZEF0dHJpYnV0ZXNsb2NrY2xhc3NOYW1lc3R5bGVtZXRhZGF0YWlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkbmFtZWF0dHJpYnV0ZXNsYWJlbHBsYWNlaG9sZGVycmVxdWlyZWRUZXh0cmVxdWlyZWRJbmRpY2F0b3JtZXRhZGF0YWlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkbmFtZWF0dHJpYnV0ZXNwbGFjZWhvbGRlcnR5cGVzdHlsZWlubmVyQmxvY2tzY2xpZW50SWRpc1ZhbGlkbmFtZWF0dHJpYnV0ZXNlbGVtZW50c2F2ZUluUG9zdENvbnRlbnR0ZXh0aW5uZXJCbG9ja3NmaWVsZFZhcmlhbnRsb2Nrc3RhdGVzYXZlZEF0c3RhdGVzYXZlZEJ5amV0cGNrQ1JNIjpmYWxlLCJzYWxlc2ZjRGFhIjp7Im9yZ2FuaXphb0lkIjoiIiwiZW5kVG9hbHNmb3JjZWZhbHNlfSxtYWlscG90Ijp7ImxpdElkOm51bGwsImxpc3ROYW1lIjpudWxsLCJlbmFibGVkRm9yRm9ybSI6ZmFsc2V9ZGl2IGNsYXNzPSJ3cC1ibG9jay1qZXRwYWNrLWNvbnRhY3QtZm9ybSI+PGlkIjoiIiwicmVxdWlyZWQiOnRydWUsImZpZWRWcmlhbnQiOiJuYW1lIn0gLS0+CjxkaXY+PCEtLSB3cDpqZXRwYWNrL2xhIHtsYWJlbCJvbWUifSAvLS0+Cgo8IS0tIHdwOmpldHBjay9pbnB1dCB7InN0eWxlIjp7ImJvcmRlciI6eyJzdHlsZSI6InNvbGlkIn19fSAvLS0+PC9kaXY+CjwhLS0gL3dwOmpldHBhY2svZmllbGQtbmEgLS0+Cgo8IS0tIHdwOmpldHBhY2svZmllbGQtZW1haWwge2lkIjoiImRpdj48bGFiIHsibGFibCI6IkUtIn0vLS0+Cgo8IS0tIHdwOmpldHBhY2svaW5wdXQgc3R5ZSI6eyJvcmRyIjp7InN0eWVzb2xpZCJ9fX0gLy0tPjwvZGl2Pgo8IS0tIC93cDpqZXRwYWNrL2ZpZWxkLWUgLS0+Cgo8IS0tIHdwOmpldHBhY2svZmllbGQtdGV4dGFyZWEge2lkIjoiIi0tPgo8ZGl2PjwhLS0gd3A6amV0cGFja2xhYmVsIHsibGFiZWwiOiJNZW5zYWdlbSJ9IC9pbnB1dCB7InR5cGUiOiJ0ZXh0YXJlYSIsInN0eWxlIjp7ImJvcmRlciI6eyJzdHlsZSI6InNvbGlkIn19fSAvLS0+PC9kaXY+CjwhLS0gL3dwOmpldHBhY2svLS0+Cgo8IS0tIHdwOmpldHBhY2svYnV0dG9uIGVlbWVudCI6InV0dG9uIiwidHh0IjoiRW52aWFyIiwib2Nre21vdiI6ZmxzbW92fTwvZGl2PgUHCAQIBAgGCAUHCAeEAUEAAkEAAkECAkEDBhxBAAMBAwECARIEAQ8CAQQBAkECAwQBEgEVDwJBAgJBAgQBBwUiCAcIBggOCA4IC0gBBAkIBggHDwQKAwcCDlUAFhAKCQ0OCA4NEg0OERYIBAkFCAsIBw8ECgUIDBEHDAIFFRIRFAQJBQgLCAcECgULDBEICwgHBAoLBQsIBw8ECgUIDBEHDAIFFRIRFAQJBQgLCAcECgULDBEICwgHBAoLBQsIBw8ECgUIDBEHDAIFFRIRFAQJBQgLCAcECgULDBEICwgHBAoLBAULCAcECgcRBAsMBAUHBQcECgkBAg0BCAUCBgcGBwMsASsbAioCBhiUASMGBQNGAAIcAwUDCAEtJgYYHJsBHAEICQ4DAUMAAgMBBhIBBAAAAQAAAAEGAAABAACjAQElQgEBAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAAEEAABVBBAJBA0IAQQICQQAEQZQBA0EABwEBzwIAfQF3EzIwMjYtMDYtMjNUMTQ6NDk6MDd3B2NvbnRhY3R3B3B1Ymxpc2h9v9/9DX0AdwZjbG9zZWR3BmNsb3NlZHcAdwB3JGRmMjhmNGQzLWJlZjEtNDAyMi04Y2YwLThlNzI0YTM3YzBkZXh3AHcUamV0cGFjay9jb250YWN0LWZvcm1/dxhXb3JkQ2FtcCBDb250YWN0IFJlcXVlc3R3EWluZm9AYnJpZ2h0c29sLm5sdwB3HFRoYW5rIHlvdSBmb3IgeW91ciByZXNwb25zZS53AHcAdwR0ZXh0f3cAdwB2AQ5vcmdhbml6YXRpb25JZHcAdgIGbGlzdElkfghsaXN0TmFtZX52AQlncm91cE5hbWV3AHh4eXl4dQB1AH9/f393JDgzZWNiYjQ5LTBjY2QtNDQ4ZC1iMjkyLTdjNTQ1NTkwMzVkM3h3AHcSamV0cGFjay9maWVsZC1uYW1ldwROYW1leH94dQB3AHcAfaQBf3cAdwB4f39/f3ckYjI5ZGUxYjItNDU2ZC00ODFiLTk0YTctNzQyYjM0YjE4ZGUzeHcNamV0cGFjay9sYWJlbHcETmFtZXcAdwB4dgB3JDVlYzdkNjhlLTJmMTktNGVhMC1hOGJjLTRlNzA1ZmJmMjJlMHh3DWpldHBhY2svaW5wdXR3AHYBBmJvcmRlcnYBBXN0eWxldwVzb2xpZHckNjlkYWNmZjUtZWRlZC00ZWJiLWFkMGUtZGVlZTNmOWJhOTEzeHcAdxNqZXRwYWNrL2ZpZWxkLWVtYWlsdwVFbWFpbHh/eHUAdwB3AH2kAX93AHcAeH9/f393JGQ3YzdiNjdjLWYyNGQtNDQ2OC04OGE5LWNkOWYyZDNiYzY1OXh3DWpldHBhY2svbGFiZWx3BUVtYWlsdwB3AHh2AHckMDI0MTdmMjQtODgzZC00YzdlLWJlZWItZjIwNzIxM2NkNGY0eHcNamV0cGFjay9pbnB1dHcAdgEGYm9yZGVydgEFc3R5bGV3BXNvbGlkdyQ5NWNmMDEwYS0wYzMyLTRkZWItOWM5Mi01YjNiMjkxYTcwNWV4dwB3FmpldHBhY2svZmllbGQtdGV4dGFyZWF3B01lc3NhZ2V4f3h1AHcAdwB9pAF/dwB3AHh/f39/dyQ4NzZiOGMwNi0wMzBmLTQyZGUtYWRlZC0zNTk5YmRiZjA3ODF4dw1qZXRwYWNrL2xhYmVsdwdNZXNzYWdldwB3AHh2AHckZjhjNGIxOGEtMzBmYi00NmNjLTk2OTgtYTBhYTNlYWVjYzI1eHcNamV0cGFjay9pbnB1dHcAdwh0ZXh0YXJlYXYBBmJvcmRlcnYBBXN0eWxldwVzb2xpZHckZjNkZTM3MTAtZTg0ZC00ZDk0LWE2ZjEtMTZmM2NlN2U5ZjNieHcOamV0cGFjay9idXR0b253BmJ1dHRvbnl3BkVudmlhcncEbmFtZXYCBG1vdmV5BnJlbW92ZXh7Qnn0IQsAYAB7QeD3MVqAAAB5dgMGbGlzdElkfghsaXN0TmFtZX4OZW5hYmxlZEZvckZvcm15dgIOb3JnYW5pemF0aW9uSWR3ABBzZW5kVG9TYWxlc2ZvcmNleXcBTncCTm93A05vbXcETm9tZXcGRS1tYWlsdwFNdwJNZXcDTWVudwRNZW5zdwVNZW5zYXcGTWVuc2FndwdNZW5zYWdldwhNZW5zYWdlbQHUlea9CBtRAAIAAgEFAAMAAwBFAAQAEAECAQkABgA/AAYAAQEBAAEABAMBAC4AFwACASkAKQApAB4CAgY=","updateId":945894782}'
+  - 
+    post_id: 18
+    title: Offline
+    link: https://brasil.wordcamp.org/2026/offline/
+    pub_date: 20260623T174907
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/offline/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background">Organizers note: Update this page with some basic information about your WordCamp. It will be stored in site visitor's browsers, and automatically shown if they try to visit the site without an internet connection.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>This page couldn't be loaded because you appear to be offline. Please try again once you have a network connection.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading -->
+      <h2>Location &amp; Date</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>January 1, 1970<br>
+      <br />
+      </p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading -->
+      <h2>Schedule</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:wordcamp/schedule /-->
+    post_date: 20260623T144907-03
+    post_modified: 20260623T144907-03
+    comment_status: closed
+    ping_status: closed
+    post_name: offline
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+    meta:
+      wc_page_offline: 'yes'
+  - 
+    post_id: 20
+    title: Code of Conduct
+    link: https://brasil.wordcamp.org/2026/code-of-conduct/
+    pub_date: 20260623T174908
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/code-of-conduct/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Organizers note:</em> Below is a boilerplate code of conduct that you can customize; another great example is the Ada Initiative <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">anti-harassment policy.</a></p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background">We also recommend the organizing team read this article on <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports">how to take a harassment report</a></p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background">Please update the portions <span style="color: red;text-decoration: underline">with red text.</span> To remove the red underline formatting, click the arrow in the toolbar called "more rich text controls," and toggle off the underline.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>1. Purpose</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p><span style="color: red;text-decoration: underline">WordCamp YourCityName</span> believes our community should be truly open for everyone. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, age, caste, social class, preferred operating system, programming language, or text editor, among other identifying characteristics.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>This code of conduct outlines our expectations for participant behavior as well as the consequences for unacceptable behavior.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>We invite all sponsors, volunteers, speakers, attendees, and other participants to help us realize a safe and positive conference experience for everyone.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>2. Open Source Citizenship</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>A supplemental goal of this code of conduct is to increase open source citizenship by encouraging participants to recognize and strengthen the relationships between what we do and the community at large.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>In service of this goal, <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> organizers will be taking nominations for exemplary citizens throughout the event and will recognize select participants after the conference on the website.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>If you see someone who is making an extra effort to ensure our community is welcoming, friendly, and encourages all participants to contribute to the fullest extent, we want to know. <span style="color: red;text-decoration: underline">You can nominate someone at the Registration table or online at URL HERE.</span></p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>3. Expected Behavior</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:list -->
+      <ul><li>Be considerate, respectful, and collaborative.</li><li>Refrain from demeaning, discriminatory or harassing behavior and speech.</li><li>Be mindful of your surroundings and of your fellow participants. Alert conference organizers if you notice a dangerous situation or someone in distress.</li><li>Participate in an authentic and active way. In doing so, you help to create <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> and make it your own.</li></ul>
+      <!-- /wp:list -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>4. Unacceptable Behavior</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>Unacceptable behaviors include: intimidating, harassing, abusive, discriminatory, derogatory or demeaning conduct by any attendees of <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> and related events. All <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> venues may be shared with members of the public; please be respectful to all patrons of these locations.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>Harassment includes: offensive verbal comments related to gender, sexual orientation, race, religion, disability; inappropriate use of nudity and/or sexual images in public spaces (including presentation slides); deliberate intimidation, stalking or following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact, and unwelcome sexual attention.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>5. Consequences Of Unacceptable Behavior</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>Unacceptable behavior will not be tolerated whether by other attendees, organizers, venue staff, sponsors, or other patrons of <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> venues.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>Anyone asked to stop unacceptable behavior is expected to comply immediately.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>If a participant engages in unacceptable behavior, the conference organizers may take any action they deem appropriate, up to and including expulsion from the conference without warning or refund.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>6. What To Do If You Witness Or Are Subject To Unacceptable Behavior</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>If you are subject to unacceptable behavior, notice that someone else is being subject to unacceptable behavior, or have any other concerns, please notify a conference organizer as soon as possible.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>The <span style="color: red;text-decoration: underline">WordCamp YourCityName</span> team will be available to help participants contact venue security or local law enforcement, to provide escorts, or to otherwise assist those experiencing unacceptable behavior to feel safe for the duration of the conference. <span style="color: red;text-decoration: underline">Volunteers will be wearing XXXXXXXXXXXXXXXXXXXXXXXX.</span> Any volunteer can connect you with a conference organizer. You can also come to the special registration desk in the lobby and ask for the organizers.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>7. Scope</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>We expect all conference participants (sponsors, volunteers, speakers, attendees, and other guests) to abide by this code of conduct at all conference venues and conference-related social events.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>8. Contact Information</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p><span style="color: red;text-decoration: underline">Contact info here! Make sure this includes a way to access the organizers during the event.</span></p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>9. License And Attribution</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>This Code of Conduct is a direct swipe from the awesome work of Open Source Bridge, but with our event information substituted. The original is available at <a href="http://web.archive.org/web/20191206083557/http://opensourcebridge.org/about/code-of-conduct/">Open Source Bridge 2018 [archived]</a> and is released under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike</a> license.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:heading {"level":3} -->
+      <h3>Statement about Socials or Supplemental Events (where applicable)</h3>
+      <!-- /wp:heading -->
+      
+      <!-- wp:paragraph -->
+      <p>Social and supplemental events are intended to provide networking and additional educational opportunities, as well as an opportunity to unwind after a full WordCamp. They should also be places where attendees can feel safe and secure.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>We want you to enjoy yourself at these events, and we want you to do so safely. If you experience a Code of Conduct violation, see a violation, are concerned about the well-being, safety or behavior of another attendee, or have a general question (we understand that violations are not always obvious!) contact us immediately by notifying a WordCamp organizer or emailing <a href="mailto:report@wordcamp.org">report@wordcamp.org</a>. For in-person events, if you need help or are unable to comfortably or safely remove yourself from a situation you do not want to be in, organizers will prioritize assisting you immediately and discretely. Some examples are: not feeling well; your transportation arrangements fall through; you are intoxicated, you are alone or with someone you do not trust, you are overwhelmed, you have experienced or witnessed a Code of Conduct violation. Please ask any nearby event volunteer or organizer to help you.</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144908-03
+    post_modified: 20260623T144908-03
+    comment_status: closed
+    ping_status: closed
+    post_name: code-of-conduct
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: page
+    is_sticky: 0
+  - 
+    post_id: 21
+    title: Hostinger
+    link: https://brasil.wordcamp.org/2026/sponsor/hostinger/
+    pub_date: 20260623T174908
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=21
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph -->
+      <p><a href="https://www.hostinger.com/">Hostinger</a> creates products and services to help clients successfully develop their online presence, offering tools for e-commerce, blogs, portfolio websites, and more. In 2025, the product portfolio was expanded to include <a href="https://www.hostinger.com/horizons?trk=brand_horizons&amp;utm_source=google&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_id=1758060185&amp;utm_campaign=Brand-Phrase|NT:Se|LO:USA&amp;utm_term=hostinger+horizons&amp;utm_content=734451715881&amp;gad_source=1&amp;gad_campaignid=1758060185&amp;gbraid=0AAAAADMy-hZWqmaJGrWk8lhW5NCAqMh9u&amp;gclid=CjwKCAjw7vzOBhBxEiwAc7WNryJiMGVwypmMPOGbDDwdOT_o-z2wHyV4JDy-80BMTfM4sUzPwu_2-xoCY8MQAvD_BwE">Hostinger Horizons</a>, a simple web app-building solution.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>The company was founded in Lithuania in 2004. Its international team currently consists of around 900 professionals. For six consecutive years, Hostinger has been featured in the Financial Times’ annual FT 1000 ranking of Europe’s fastest-growing companies. Not only is the company's business consistently growing, but so is its brand awareness – according to Google Trends, Hostinger is now the second most searched hosting provider in the world.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p></p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144908-03
+    post_modified: 20260623T144908-03
+    comment_status: closed
+    ping_status: closed
+    post_name: hostinger
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wcb_sponsor
+    is_sticky: 0
+    meta:
+      _mes_id: "14399943"
+      _wcpt_sponsor_company_name: Hostinger
+      _wcpt_sponsor_website: https://www.hostinger.com/
+      _wcpt_sponsor_first_name: Agnė
+      _wcpt_sponsor_last_name: Liutkienė
+      _wcpt_sponsor_email_address: agne.liutkiene@hostinger.com
+      _wcpt_sponsor_phone_number: n/a
+      _wcpt_sponsor_twitter_handle: n/a
+      _wcpt_sponsor_street_address1: 61 Lordou Vironos Street
+      _wcpt_sponsor_street_address2: ""
+      _wcpt_sponsor_city: Larnaca
+      _wcpt_sponsor_state: Cyprus
+      _wcpt_sponsor_zip_code: "6023"
+      _wcpt_sponsor_country: CY
+      _wcb_sponsor_first_time: 'no'
+      _thumbnail_id: "22"
+  - 
+    post_id: 23
+    title: Automattic
+    link: https://brasil.wordcamp.org/2026/sponsor/automattic/
+    pub_date: 20260623T174908
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=23
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph -->
+      <p>At <a href="https://automattic.com/about/" target="_blank" rel="noreferrer noopener">Automattic</a>, <em>we are</em>&nbsp;passionate about making&nbsp;<em>the&nbsp;web</em>&nbsp;a better&nbsp;place.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>We are the people behind&nbsp;<a href="https://wordpress.com/">WordPress.com</a>,&nbsp;<a href="https://woocommerce.com/">WooCommerce</a>,&nbsp;<a href="https://jetpack.com/">Jetpack</a>,&nbsp;<a href="https://wpvip.com/">WordPress VIP</a>,&nbsp;<a href="https://simplenote.com/">Simplenote</a>,&nbsp;<a href="https://longreads.com/">Longreads</a>,&nbsp;<a href="http://wpscan.com/">WPScan</a>,&nbsp;<a href="https://akismet.com/">Akismet</a>,&nbsp;<a href="https://en.gravatar.com/">Gravatar</a>,&nbsp;<a href="https://crowdsignal.com/">Crowdsignal</a>,&nbsp;<a href="https://cloudup.com/">Cloudup</a>,&nbsp;<a href="https://www.tumblr.com/">Tumblr</a>,&nbsp;<a href="https://dayoneapp.com/">Day One</a>,&nbsp;<a href="https://www.pocketcasts.com/">Pocket Casts</a>, and more. We believe in making the web a better place.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p><a href="https://distributed.blog/">We’re a distributed company</a>&nbsp;with 2,007 Automatticians in 97 countries speaking 123 different languages. We’re committed to&nbsp;<a href="https://automattic.com/diversity-and-inclusion/">diversity, equity, and inclusion</a>, and our common goal is to democratize publishing and commerce so that anyone with a story can tell it, and anyone with a product can sell it, regardless of income, gender, politics, language, or where they live in the world.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p><a href="https://github.com/Automattic">We believe in Open Source</a>&nbsp;and the vast majority of our work is available under the GPL.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>We strive to live by the&nbsp;<a href="https://automattic.com/creed/">Automattic Creed</a>.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>Automattic is a&nbsp;<a href="https://mostlovedworkplace.com/companies/automattic-inc/">Most Loved Company</a>&nbsp;and&nbsp;<a href="https://disabilityconfident.campaign.gov.uk/">Disability Confident Committed</a>. (Here’s&nbsp;<a href="https://happinessengineer.blog/2022/09/08/happiness-for-everyone-working-with-a-disability-at-automattic/">what that might mean for you</a>.) Come&nbsp;<a href="https://automattic.com/work-with-us/">work with us</a>.</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144908-03
+    post_modified: 20260623T144908-03
+    comment_status: closed
+    ping_status: closed
+    post_name: automattic
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wcb_sponsor
+    is_sticky: 0
+    meta:
+      _mes_id: "3160922"
+      _wcpt_sponsor_company_name: Automattic, Inc.
+      _wcpt_sponsor_website: https://automattic.com/about/
+      _wcpt_sponsor_first_name: Team
+      _wcpt_sponsor_last_name: Automattic
+      _wcpt_sponsor_email_address: meetups@automattic.com
+      _wcpt_sponsor_phone_number: NA
+      _wcpt_sponsor_twitter_handle: ""
+      _wcpt_sponsor_street_address1: Address to be updated
+      _wcpt_sponsor_street_address2: ""
+      _wcpt_sponsor_city: Address to be updated
+      _wcpt_sponsor_state: Address to be updated
+      _wcpt_sponsor_zip_code: "000"
+      _wcpt_sponsor_country: ""
+      _wcb_sponsor_first_time: 'no'
+      _thumbnail_id: "24"
+  - 
+    post_id: 25
+    title: Bluehost
+    link: https://brasil.wordcamp.org/2026/sponsor/bluehost/
+    pub_date: 20260623T174909
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=25
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph -->
+      <p><a href="https://www.bluehost.com/">Bluehost</a> has been a WordPress partner since 2005, and powers over 2 million websites across the world with reliable hosting and personalized guidance. By leveraging the power of WordPress, Bluehost provides the fast website creation methods coupled with intuitive management tools. From secure automated WordPress installations to advanced marketing tools and services, and access to specialized WordPress experts, Bluehost is the best place to build, grow, and scale an online presence.</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144909-03
+    post_modified: 20260623T144909-03
+    comment_status: closed
+    ping_status: closed
+    post_name: bluehost
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wcb_sponsor
+    is_sticky: 0
+    meta:
+      _mes_id: "2347409"
+      _wcpt_sponsor_company_name: Bluehost
+      _wcpt_sponsor_website: https://www.bluehost.com/
+      _wcpt_sponsor_first_name: Devin
+      _wcpt_sponsor_last_name: Sears
+      _wcpt_sponsor_email_address: wordcamp@bluehost.com
+      _wcpt_sponsor_phone_number: NA
+      _wcpt_sponsor_twitter_handle: ""
+      _wcpt_sponsor_street_address1: 560 Timpanogos Pkwy
+      _wcpt_sponsor_street_address2: ""
+      _wcpt_sponsor_city: Ogden
+      _wcpt_sponsor_state: UT
+      _wcpt_sponsor_zip_code: "84097"
+      _wcpt_sponsor_country: US
+      _wcb_sponsor_first_time: 'no'
+      _thumbnail_id: "26"
+  - 
+    post_id: 27
+    title: Woo
+    link: https://brasil.wordcamp.org/2026/sponsor/woo/
+    pub_date: 20260623T174909
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=27
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:paragraph -->
+      <p><a href="https://woo.com/">Woo</a> is the leading open-source ecommerce platform, powering 31.4% of the top million online stores.* Built on WordPress, Woo empowers anyone, anywhere, to sell anything with truly unlimited extensibility, flexibility, and control over how they build and evolve their business.</p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph -->
+      <p>* StoreLeads, <a href="https://storeleads.app/reports">StoreLeads.app, January 2024</a>.</p>
+      <!-- /wp:paragraph -->
+    post_date: 20260623T144909-03
+    post_modified: 20260623T144909-03
+    comment_status: closed
+    ping_status: closed
+    post_name: woo
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wcb_sponsor
+    is_sticky: 0
+    meta:
+      _mes_id: "3040832"
+      _wcpt_sponsor_company_name: WooCommerce, Inc.
+      _wcpt_sponsor_website: https://woo.com/
+      _wcpt_sponsor_first_name: Team
+      _wcpt_sponsor_last_name: Automattic
+      _wcpt_sponsor_email_address: meetups@automattic.com
+      _wcpt_sponsor_phone_number: "0000000"
+      _wcpt_sponsor_twitter_handle: ""
+      _wcpt_sponsor_street_address1: '60 29th Street #343'
+      _wcpt_sponsor_street_address2: ""
+      _wcpt_sponsor_city: San Francisco
+      _wcpt_sponsor_state: CA
+      _wcpt_sponsor_zip_code: "94110"
+      _wcpt_sponsor_country: US
+      _wcb_sponsor_first_time: 'no'
+      _thumbnail_id: "28"
+  - 
+    post_id: 29
+    title: Thank you to our Gold sponsors
+    link: https://brasil.wordcamp.org/2026/?p=29
+    pub_date: ""
+    creator: Brightsol
+    guid:
+      value: https://brasil.wordcamp.org/2026/?p=29
+      isPermaLink: 'false'
+    content: ' <p></p> <p></p> <p>Bluehost has been a WordPress partner since 2005, and powers over 2 million websites across the world with reliable hosting and personalized guidance.</p> <p></p>'
+    post_date: 20260623T144909+1776450249
+    post_modified: 20260623T144909+1776450249
+    comment_status: open
+    ping_status: open
+    post_name: ""
+    status: draft
+    post_parent: 0
+    menu_order: 0
+    post_type: post
+    is_sticky: 0
+    categories:
+      - 
+        domain: category
+        nicename: uncategorized
+        value: Uncategorized
+  - 
+    post_id: 30
+    title: t5o8
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=30'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=30'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: t5o8
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 10
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: lead
+        value: Lead
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 31
+    title: 22ix
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=31'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=31'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 22ix
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 20
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: lead
+        value: Lead
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 32
+    title: v2cu
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=32'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=32'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: v2cu
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 30
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 33
+    title: 8pb0
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=33'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=33'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 8pb0
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 40
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: budget
+        value: Budget
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 34
+    title: jv29
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=34'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=34'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: jv29
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 50
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: design
+        value: Design
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 35
+    title: o1rt
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=35'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=35'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: o1rt
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 60
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 36
+    title: 7j6f
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=36'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=36'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 7j6f
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 70
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 37
+    title: siq8
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=37'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=37'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: siq8
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 80
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 38
+    title: lkcs
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=38'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=38'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: lkcs
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 90
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: swag
+        value: Swag
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 39
+    title: 5j0m
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=39'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=39'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 5j0m
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 100
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: food
+        value: Food
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 40
+    title: n7rk
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=40'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=40'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: n7rk
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 110
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: budget
+        value: Budget
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 41
+    title: f087
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=41'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=41'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: f087
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 120
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: lead
+        value: Lead
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 42
+    title: asdf
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=42'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=42'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: asdf
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 130
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+      - 
+        domain: wcm_task_category
+        nicename: contributor-day
+        value: Contributor Day
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 43
+    title: 75sp
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=43'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=43'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 75sp
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 140
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: after-party
+        value: After Party
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 44
+    title: vbbj
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=44'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=44'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: vbbj
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 150
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: design
+        value: Design
+      - 
+        domain: wcm_task_category
+        nicename: web
+        value: Web
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 45
+    title: krv3
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=45'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=45'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: krv3
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 160
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: web
+        value: Web
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 46
+    title: inv6
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=46'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=46'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: inv6
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 170
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 47
+    title: 3vf4
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=47'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=47'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 3vf4
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 180
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 48
+    title: erjt
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=48'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=48'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: erjt
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 190
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+      - 
+        domain: wcm_task_category
+        nicename: registration
+        value: Registration
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 49
+    title: 5uqp
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=49'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=49'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 5uqp
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 200
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 50
+    title: 9tsp
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=50'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=50'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 9tsp
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 210
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 51
+    title: u1rl
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=51'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=51'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: u1rl
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 220
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 52
+    title: ibzq
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=52'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=52'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: ibzq
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 230
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 53
+    title: wccy
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=53'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=53'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: wccy
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 240
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 54
+    title: 3b1k
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=54'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=54'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 3b1k
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 250
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 55
+    title: rko5
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=55'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=55'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: rko5
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 260
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 56
+    title: uw8g
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=56'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=56'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: uw8g
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 270
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: registration
+        value: Registration
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 57
+    title: qi9n
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=57'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=57'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: qi9n
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 280
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 58
+    title: co30
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=58'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=58'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: co30
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 290
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 59
+    title: eu82
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=59'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=59'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: eu82
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 300
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 60
+    title: m2sc
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=60'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=60'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: m2sc
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 310
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 61
+    title: k9k0
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=61'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=61'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: k9k0
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 320
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 62
+    title: fucx
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=62'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=62'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: fucx
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 330
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: swag
+        value: Swag
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 63
+    title: cxpj
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=63'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=63'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: cxpj
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 340
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 64
+    title: uutz
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=64'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=64'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: uutz
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 350
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: audio-video
+        value: Audio/Video
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 65
+    title: mkj1
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=65'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=65'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: mkj1
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 360
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 66
+    title: c00l
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=66'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=66'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: c00l
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 370
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 67
+    title: 84y3
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=67'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=67'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 84y3
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 380
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+      - 
+        domain: wcm_task_category
+        nicename: web
+        value: Web
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 68
+    title: sfrb
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=68'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=68'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: sfrb
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 390
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+      - 
+        domain: wcm_task_category
+        nicename: web
+        value: Web
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 69
+    title: l931
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=69'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=69'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: l931
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 400
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+      - 
+        domain: wcm_task_category
+        nicename: web
+        value: Web
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 70
+    title: p0ns
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=70'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=70'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: p0ns
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 410
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 71
+    title: 03kv
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=71'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=71'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 03kv
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 420
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 72
+    title: srgu
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=72'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=72'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: srgu
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 430
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 73
+    title: bc1e
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=73'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=73'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: bc1e
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 440
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: design
+        value: Design
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 74
+    title: e0uc
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=74'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=74'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: e0uc
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 450
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: design
+        value: Design
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 75
+    title: ws2p
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=75'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=75'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: ws2p
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 460
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: swag
+        value: Swag
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 76
+    title: 2u4x
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=76'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=76'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 2u4x
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 470
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 77
+    title: tpvw
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=77'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=77'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: tpvw
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 480
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: lead
+        value: Lead
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 78
+    title: r3ge
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=78'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=78'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: r3ge
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 490
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 79
+    title: ckzp
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=79'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=79'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: ckzp
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 500
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 80
+    title: q97z
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=80'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=80'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: q97z
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 510
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 81
+    title: c46e
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=81'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=81'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: c46e
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 520
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: food
+        value: Food
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 82
+    title: nhws
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=82'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=82'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: nhws
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 530
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: design
+        value: Design
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 83
+    title: f1ln
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=83'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=83'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: f1ln
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 540
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: design
+        value: Design
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 84
+    title: h641
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=84'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=84'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: h641
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 550
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 85
+    title: svit
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=85'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=85'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: svit
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 560
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 86
+    title: 2iiq
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=86'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=86'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 2iiq
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 570
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: audio-video
+        value: Audio/Video
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 87
+    title: w3l6
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=87'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=87'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: w3l6
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 580
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 88
+    title: gmue
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=88'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=88'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: gmue
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 590
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: registration
+        value: Registration
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 89
+    title: yzu9
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=89'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=89'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: yzu9
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 600
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: swag
+        value: Swag
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 90
+    title: rhgc
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=90'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=90'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: rhgc
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 610
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 91
+    title: hscb
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=91'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=91'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: hscb
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 620
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 92
+    title: 20g7
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=92'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=92'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 20g7
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 630
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 93
+    title: hkv5
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=93'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=93'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: hkv5
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 640
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: audio-video
+        value: Audio/Video
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 94
+    title: gyc3
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=94'
+    pub_date: 20260623T174911
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=94'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144911-03
+    post_modified: 20260623T144911-03
+    comment_status: closed
+    ping_status: closed
+    post_name: gyc3
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 650
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 95
+    title: jccc
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=95'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=95'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: jccc
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 660
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: audio-video
+        value: Audio/Video
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 96
+    title: gnws
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=96'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=96'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: gnws
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 670
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: audio-video
+        value: Audio/Video
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 97
+    title: f8k2
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=97'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=97'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: f8k2
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 680
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: budget
+        value: Budget
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 98
+    title: r95r
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=98'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=98'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: r95r
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 690
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: lead
+        value: Lead
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 99
+    title: uu96
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=99'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=99'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: uu96
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 700
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: sponsor
+        value: Sponsor
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 100
+    title: uqrx
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=100'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=100'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: uqrx
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 710
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: speaker
+        value: Speaker
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 101
+    title: 1hc1
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=101'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=101'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 1hc1
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 720
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: volunteer
+        value: Volunteer
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 102
+    title: fl69
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=102'
+    pub_date: 20260623T174912
+    creator: unintended8
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wcm_task&p=102'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260623T144912-03
+    post_modified: 20260623T144912-03
+    comment_status: closed
+    ping_status: closed
+    post_name: fl69
+    status: wcm_task_incomplete
+    post_parent: 0
+    menu_order: 730
+    post_type: wcm_task
+    is_sticky: 0
+    categories:
+      - 
+        domain: wcm_task_category
+        nicename: committee
+        value: Committee
+    meta:
+      wcm-data-version: "20170323"
+  - 
+    post_id: 104
+    title: Navigation
+    link: https://brasil.wordcamp.org/2026/navigation/
+    pub_date: 20260623T175035
+    creator: unintended8
+    guid:
+      value: https://brasil.wordcamp.org/2026/navigation/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:navigation-submenu {"label":"Páginas","type":"page","url":"#","kind":"post-type"} -->
+      <!-- wp:navigation-link {"label":"Code of Conduct","type":"page","id":20,"url":"https://brasil.wordcamp.org/2026/code-of-conduct/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Contact","type":"page","id":17,"url":"https://brasil.wordcamp.org/2026/contact/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Leave Feedback","type":"page","id":103,"url":"https://brasil.wordcamp.org/2026/feedback/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Location","type":"page","id":11,"url":"https://brasil.wordcamp.org/2026/location/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Offline","type":"page","id":18,"url":"https://brasil.wordcamp.org/2026/offline/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Organizers","type":"page","id":12,"url":"https://brasil.wordcamp.org/2026/organizers/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Sample Page","type":"page","id":2,"url":"https://brasil.wordcamp.org/2026/sample-page/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Schedule","type":"page","id":7,"url":"https://brasil.wordcamp.org/2026/schedule/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Sessions","type":"page","id":9,"url":"https://brasil.wordcamp.org/2026/sessions/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Speakers","type":"page","id":8,"url":"https://brasil.wordcamp.org/2026/speakers/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      
+      <!-- wp:navigation-link {"label":"Sponsors","type":"page","id":10,"url":"https://brasil.wordcamp.org/2026/sponsors/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}}} /-->
+      <!-- /wp:navigation-submenu -->
+    post_date: 20260623T145035-03
+    post_modified: 20260708T115635-03
+    comment_status: closed
+    ping_status: closed
+    post_name: navigation
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_navigation
+    is_sticky: 0
+  - 
+    post_id: 121
+    title: Custom Styles
+    link: https://brasil.wordcamp.org/2026/wp-global-styles-twentytwentyfour/
+    pub_date: 20260708T135339
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/wp-global-styles-twentytwentyfour/
+      isPermaLink: 'false'
+    content: '{"styles":{"css":":where(.wp-site-blocks *:focus){outline-width:2px;outline-style:solid}\n\nh1 {\ndisplay: none;\n}\n.wccsp-image + h1 {\n\twidth: 1px !important;\n\theight: 1px !important;\n\tpadding: 0 !important;\n\tmargin: -1px !important;\n\toverflow: hidden !important;\n\tclip: rect(0, 0, 0, 0) !important;\n\twhite-space: nowrap !important;\n\tborder: 0 !important;\n}\n.logo-site-text a {\ntext-decoration: none;\n}","color":{"text":"var(--wp--preset--color--contrast-2)"},"elements":{"link":{"color":{"text":"var(--wp--preset--color--contrast-2)"}},"button":{"color":{"background":"var(--wp--preset--color--accent-3)","text":"var(--wp--preset--color--base-2)"}}},"typography":{"fontFamily":"var(--wp--preset--font-family--poppins)"}},"settings":{"color":{"palette":{"theme":[{"color":"#fff8f1","name":"Base","slug":"base"},{"color":"#ffffff","name":"Base / Two","slug":"base-2"},{"color":"#00595d","name":"Contrast","slug":"contrast"},{"color":"#3e4948","name":"Contrast / Two","slug":"contrast-2"},{"color":"#A4A4A4","name":"Contrast / Three","slug":"contrast-3"},{"color":"#cfcabe","name":"Accent","slug":"accent"},{"color":"#c2a990","name":"Accent / Two","slug":"accent-2"},{"color":"#d43900","name":"Accent / Three","slug":"accent-3"},{"color":"#b1c5a4","name":"Accent / Four","slug":"accent-4"},{"color":"#b5bdbc","name":"Accent / Five","slug":"accent-5"}]}},"typography":{"fontSizes":{"default":[{"name":"Small","slug":"small","size":"13px"},{"name":"Medium","slug":"medium","size":"20px"},{"name":"Large","slug":"large","size":"36px"},{"name":"Extra Large","slug":"x-large","size":"42px"}],"theme":[{"fluid":false,"name":"Small","size":"0.75rem","slug":"small"},{"fluid":false,"name":"Medium","size":"1rem","slug":"medium"},{"fluid":{"min":"1.39rem","max":"1.85rem"},"name":"Large","size":"1.85rem","slug":"large"},{"fluid":{"min":"1.85rem","max":"2.5rem"},"name":"Extra Large","size":"2.5rem","slug":"x-large"},{"fluid":{"min":"2.5rem","max":"3.27rem"},"name":"Extra Extra Large","size":"3.27rem","slug":"xx-large"}]},"fontFamilies":{"theme":[{"fontFamily":"-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif","name":"System Sans-serif","slug":"system-sans-serif"},{"fontFamily":"Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol","name":"System Serif","slug":"system-serif"}],"custom":[{"name":"Poppins","slug":"poppins","fontFamily":"Poppins, sans-serif","fontFace":[{"src":"https://brasil.wordcamp.org/2026/files/fonts/pxiEyp8kv8JHgFVrFJXUc1NECPY.woff2","fontWeight":"400","fontStyle":"normal","fontFamily":"Poppins"},{"src":"https://brasil.wordcamp.org/2026/files/fonts/pxiByp8kv8JHgFVrLEj6V15vFP-KUEg.woff2","fontWeight":"600","fontStyle":"normal","fontFamily":"Poppins"}]}]}}},"version":3,"isGlobalStylesUserThemeJSON":true}'
+    post_date: 20260708T105339-03
+    post_modified: 20260708T122752-03
+    comment_status: closed
+    ping_status: closed
+    post_name: wp-global-styles-twentytwentyfour
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_global_styles
+    is_sticky: 0
+    categories:
+      - 
+        domain: wp_theme
+        nicename: twentytwentyfour
+        value: twentytwentyfour
+  - 
+    post_id: 128
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=128'
+    pub_date: 20260708T141017
+    creator: camaleaun
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=128'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T111017-03
+    post_modified: 20260708T111017-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 8f527e7efad074283e411f5fc4af79f6
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 130
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=130'
+    pub_date: 20260708T141022
+    creator: camaleaun
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=130'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T111022-03
+    post_modified: 20260708T111022-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 469b1b9d5a562c1488248bad3cc3fc25
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 147
+    title: Poppins
+    link: https://brasil.wordcamp.org/2026/poppins/
+    pub_date: 20260708T152529
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/poppins/
+      isPermaLink: 'false'
+    content: '{"fontFamily":"Poppins, sans-serif","preview":"https:\/\/s.w.org\/images\/fonts\/wp-7.0\/previews\/poppins\/poppins.svg"}'
+    post_date: 20260708T122529-03
+    post_modified: 20260708T122529-03
+    comment_status: closed
+    ping_status: closed
+    post_name: poppins
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_font_family
+    is_sticky: 0
+  - 
+    post_id: 148
+    title: 'poppins;normal;400;100%;U+0-10FFFF'
+    link: https://brasil.wordcamp.org/2026/poppinsnormal400100u0-10ffff/
+    pub_date: 20260708T152530
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/poppinsnormal400100u0-10ffff/
+      isPermaLink: 'false'
+    content: '{"src":"https:\/\/brasil.wordcamp.org\/2026\/files\/fonts\/pxiEyp8kv8JHgFVrFJXUc1NECPY.woff2","fontWeight":"400","fontStyle":"normal","fontFamily":"Poppins","preview":"https:\/\/s.w.org\/images\/fonts\/wp-7.0\/previews\/poppins\/poppins-400-normal.svg"}'
+    post_date: 20260708T122530-03
+    post_modified: 20260708T122530-03
+    comment_status: closed
+    ping_status: closed
+    post_name: poppinsnormal400100u0-10ffff
+    status: publish
+    post_parent: 147
+    menu_order: 0
+    post_type: wp_font_face
+    is_sticky: 0
+    meta:
+      _wp_font_face_file: pxiEyp8kv8JHgFVrFJXUc1NECPY.woff2
+  - 
+    post_id: 149
+    title: 'poppins;normal;600;100%;U+0-10FFFF'
+    link: https://brasil.wordcamp.org/2026/poppinsnormal600100u0-10ffff/
+    pub_date: 20260708T152530
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/poppinsnormal600100u0-10ffff/
+      isPermaLink: 'false'
+    content: '{"src":"https:\/\/brasil.wordcamp.org\/2026\/files\/fonts\/pxiByp8kv8JHgFVrLEj6V15vFP-KUEg.woff2","fontWeight":"600","fontStyle":"normal","fontFamily":"Poppins","preview":"https:\/\/s.w.org\/images\/fonts\/wp-7.0\/previews\/poppins\/poppins-600-normal.svg"}'
+    post_date: 20260708T122530-03
+    post_modified: 20260708T122530-03
+    comment_status: closed
+    ping_status: closed
+    post_name: poppinsnormal600100u0-10ffff
+    status: publish
+    post_parent: 147
+    menu_order: 0
+    post_type: wp_font_face
+    is_sticky: 0
+    meta:
+      _wp_font_face_file: pxiByp8kv8JHgFVrLEj6V15vFP-KUEg.woff2
+  - 
+    post_id: 157
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=157'
+    pub_date: 20260708T220418
+    creator: Brightsol
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=157'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T190418-03
+    post_modified: 20260708T190418-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 289af5bd629fee90b19de0ed42517a48
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 166
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=166'
+    pub_date: 20260709T020130
+    creator: camaleaun
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=166'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T230130-03
+    post_modified: 20260708T230130-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 6a6b7197f9c3ba65ae2d664b033fff49
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 168
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=168'
+    pub_date: 20260709T020140
+    creator: camaleaun
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=168'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T230140-03
+    post_modified: 20260708T230140-03
+    comment_status: closed
+    ping_status: closed
+    post_name: df4612ce1ab588a27b5951a8fc2ddc34
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 105
+    title: Footer
+    link: https://brasil.wordcamp.org/2026/footer/
+    pub_date: 20260623T175152
+    creator: wordcamp
+    guid:
+      value: https://brasil.wordcamp.org/2026/footer/
+      isPermaLink: 'false'
+    content: |
+      
+      <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+      <!-- wp:columns {"align":"wide"} -->
+      <div class="wp-block-columns alignwide">
+      <!-- wp:column {"width":"30%"} -->
+      <div class="wp-block-column" style="flex-basis:30%">
+      <!-- wp:group {"style":{"dimensions":{"minHeight":""},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","orientation":"vertical"}} -->
+      <div class="wp-block-group">
+      <!-- wp:site-logo {"width":20,"shouldSyncIcon":true,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+      
+      <!-- wp:site-title {"level":0,"fontSize":"medium"} /-->
+      
+      <!-- wp:site-tagline {"fontSize":"small"} /-->
+      </div>
+      <!-- /wp:group -->
+      
+      <!-- wp:search {"label":"","buttonText":"Search"} /-->
+      </div>
+      <!-- /wp:column -->
+      
+      <!-- wp:column {"width":"20%"} -->
+      <div class="wp-block-column" style="flex-basis:20%">
+      </div>
+      <!-- /wp:column -->
+      
+      <!-- wp:column {"width":"50%"} -->
+      <div class="wp-block-column" style="flex-basis:50%">
+      <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+      <div class="wp-block-group">
+      <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+      <div class="wp-block-group">
+      <!-- wp:heading {"level":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontFamily":"body"} -->
+      <h2 class="wp-block-heading has-medium-font-size has-body-font-family" style="font-style:normal;font-weight:600">About</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+      <div class="wp-block-group">
+      
+      <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontSize":"small","ariaLabel":"About"} -->
+      
+      <!-- wp:navigation-link {"label":"Team","url":"#"} /-->
+      <!-- wp:navigation-link {"label":"History","url":"#"} /-->
+      <!-- wp:navigation-link {"label":"Careers","url":"#"} /-->
+      
+      <!-- /wp:navigation -->
+      
+      </div>
+      <!-- /wp:group -->
+      </div>
+      
+      <!-- /wp:group -->
+      
+      <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+      <div class="wp-block-group">
+      <!-- wp:heading {"level":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontFamily":"body"} -->
+      <h2 class="wp-block-heading has-medium-font-size has-body-font-family" style="font-style:normal;font-weight:600">Privacy</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+      <div class="wp-block-group">
+      
+      <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontSize":"small","ariaLabel":"Privacy"} -->
+      
+      <!-- wp:navigation-link {"label":"Privacy Policy","url":"#"} /-->
+      <!-- wp:navigation-link {"label":"Terms and Conditions","url":"#"} /-->
+      <!-- wp:navigation-link {"label":"Contact Us","url":"#"} /-->
+      
+      <!-- /wp:navigation -->
+      
+      </div>
+      <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+      
+      <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+      <div class="wp-block-group">
+      <!-- wp:heading {"level":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontFamily":"body"} -->
+      <h2 class="wp-block-heading has-medium-font-size has-body-font-family" style="font-style:normal;font-weight:600">Social</h2>
+      <!-- /wp:heading -->
+      
+      <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+      <div class="wp-block-group">
+      
+      <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"blockGap":"var:preset|spacing|10"}},"fontSize":"small","ariaLabel":"Social Media"} -->
+      
+      <!-- wp:navigation-link {"label":"Facebook","url":"#"} /-->
+      <!-- wp:navigation-link {"label":"Instagram","url":"#"} /-->
+      <!-- wp:navigation-link {"label":"Twitter/X","url":"#"} /-->
+      
+      <!-- /wp:navigation -->
+      
+      </div>
+      <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+      </div>
+      <!-- /wp:columns -->
+      
+      <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"0"}}}} -->
+      <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:0">
+      <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast-2","fontSize":"small"} -->
+      <p class="has-contrast-2-color has-text-color has-link-color has-small-font-size">
+      Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a>		</p>
+      <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    post_date: 20260623T145152-03
+    post_modified: 20260623T145152-03
+    comment_status: closed
+    ping_status: closed
+    post_name: footer
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_template_part
+    is_sticky: 0
+    categories:
+      - 
+        domain: wp_template_part_area
+        nicename: footer
+        value: footer
+      - 
+        domain: wp_theme
+        nicename: twentytwentyfour
+        value: twentytwentyfour
+    meta:
+      origin: theme
+  - 
+    post_id: 136
+    title: Header
+    link: https://brasil.wordcamp.org/2026/header/
+    pub_date: 20260708T150940
+    creator: camaleaun
+    guid:
+      value: https://brasil.wordcamp.org/2026/header/
+      isPermaLink: 'false'
+    content: |
+      <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"20px","bottom":"20px"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group alignwide has-base-background-color has-background" style="padding-top:20px;padding-bottom:20px"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+      <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex"}} -->
+      <div class="wp-block-group"><!-- wp:site-logo {"width":68,"shouldSyncIcon":true} /-->
+      
+      <!-- wp:group {"className":"logo-site-text","style":{"spacing":{"blockGap":"0px"}}} -->
+      <div class="wp-block-group logo-site-text"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast","fontSize":"medium"} -->
+      <p class="has-contrast-color has-text-color has-link-color has-medium-font-size" style="font-style:normal;font-weight:600"><a href="/2026/">WordCamp</a></p>
+      <!-- /wp:paragraph -->
+      
+      <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"},"elements":{"link":{"color":{"text":"var:preset|color|accent-3"}}}},"textColor":"accent-3","fontSize":"small"} -->
+      <p class="has-accent-3-color has-text-color has-link-color has-small-font-size" style="font-style:normal;font-weight:600"><a href="/2026/">Brasil 2026</a></p>
+      <!-- /wp:paragraph --></div>
+      <!-- /wp:group --></div>
+      <!-- /wp:group -->
+      
+      <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left"}} -->
+      <div class="wp-block-group"><!-- wp:navigation {"ref":104,"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|20"},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"}} /--></div>
+      <!-- /wp:group --></div>
+      <!-- /wp:group --></div>
+      <!-- /wp:group -->
+    post_date: 20260708T120940-03
+    post_modified: 20260708T122721-03
+    comment_status: closed
+    ping_status: closed
+    post_name: header
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_template_part
+    is_sticky: 0
+    categories:
+      - 
+        domain: wp_template_part_area
+        nicename: header
+        value: header
+      - 
+        domain: wp_theme
+        nicename: twentytwentyfour
+        value: twentytwentyfour
+    meta:
+      origin: theme
+  - 
+    post_id: 159
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=159'
+    pub_date: 20260708T220423
+    creator: Brightsol
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=159'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T190423-03
+    post_modified: 20260708T190423-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 8003c72ad3273003c12cae009c85a5b4
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 160
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=160'
+    pub_date: 20260708T220423
+    creator: Brightsol
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=160'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T190423-03
+    post_modified: 20260708T190423-03
+    comment_status: closed
+    ping_status: closed
+    post_name: cf0b15b297bc1b17749edf8c5c3b59c1
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'
+  - 
+    post_id: 165
+    title: Sync Storage
+    link: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=165'
+    pub_date: 20260708T220540
+    creator: Brightsol
+    guid:
+      value: 'https://brasil.wordcamp.org/2026/?post_type=wp_sync_storage&p=165'
+      isPermaLink: 'false'
+    content: ""
+    post_date: 20260708T190540-03
+    post_modified: 20260708T190540-03
+    comment_status: closed
+    ping_status: closed
+    post_name: 54b25ce61a9e3d10b0bc60cd60cc67f6
+    status: publish
+    post_parent: 0
+    menu_order: 0
+    post_type: wp_sync_storage
+    is_sticky: 0
+    meta:
+      wp_sync_awareness_state: '[]'

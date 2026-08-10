@@ -1,0 +1,357 @@
+<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">
+
+**Contributor Day Nav Links**
+
+<div class="wp-block-buttons alignwide has-custom-font-size wca25_list_nav_buttons has-medium-font-size is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-6ba64473 wp-block-buttons-is-layout-flex" style="border-top-color:var(--wp--preset--color--cyan-bluish-gray);border-top-width:1px;border-bottom-color:var(--wp--preset--color--cyan-bluish-gray);border-bottom-width:1px;margin-top:1rem;margin-bottom:1rem;padding-top:0.75rem;padding-right:0;padding-bottom:0.75rem;padding-left:0">
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day/" class="wp-block-button__link has-contrast-color has-text-color has-link-color has-medium-font-size has-custom-font-size wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">C/D Top</a>
+
+</div>
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day/getting-started-as-a-first-time-contributor/" class="wp-block-button__link has-contrast-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">Getting Started</a>
+
+</div>
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day/make-teams/" class="wp-block-button__link has-contrast-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">Make Teams</a>
+
+</div>
+
+<div class="wp-block-button is-style-outline is-style-outline--9">
+
+<span class="wp-block-button__link has-accent-5-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">Workshop</span>
+
+</div>
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day/open-source-library/" class="wp-block-button__link has-contrast-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">Open-Source Library</a>
+
+</div>
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day/contributor-stories/" class="wp-block-button__link has-contrast-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">Contributor Stories</a>
+
+</div>
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day/contributor-day-faq/" class="wp-block-button__link has-contrast-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">FAQ</a>
+
+</div>
+
+<div class="wp-block-button is-style-fill">
+
+<a href="https://asia.wordcamp.org/2026/youthcamp-is-back-at-wordcamp-asia-2026/" class="wp-block-button__link has-contrast-color has-text-color has-link-color wp-element-button" style="padding-top:0rem;padding-right:0rem;padding-bottom:0rem;padding-left:0rem;font-style:normal;font-weight:500">YouthCamp</a>
+
+</div>
+
+</div>
+
+</div>
+
+Contributor Day is an important part of WordCamp Asia, where people come together to learn, collaborate, and contribute back to WordPress.
+
+At WordCamp Asia 2026, alongside the conventional Contributor Day experience, we are introducing a set of focused, hands-on workshops designed to support attendees who are new to WordPress or not yet ready to jump into contribution.
+
+These workshops are not a replacement for Contributor Day. Instead, they provide a more guided and welcoming starting point. Participants can build confidence, learn by doing, and better understand how to get involved.
+
+## **What to Expect?**
+
+The workshops will run alongside the usual Contributor Day activities and are designed to be interactive, practical, and beginner-friendly.
+
+Each session follows a hands-on approach. Participants will be able to follow along, experiment, and ask questions throughout the workshop.
+
+These workshops are open to anyone who feels they can benefit from them, whether you are completely new to WordPress or looking to strengthen your fundamentals.
+
+Seating is limited and will be filled as participants arrive. We recommend coming early to secure your spot.
+
+Since these are hands-on sessions, attendees are encouraged to come prepared with their **laptops, chargers, power adapters, and any required accessories**. Make sure your laptop is fully charged before the session to get the most out of the experience.
+
+You’ll also need to **register for Contributor Day in advance**.
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-0aa01211 wp-block-buttons-is-layout-flex">
+
+<div class="wp-block-button">
+
+<a href="https://asia.wordcamp.org/2026/contributor-day-registration-is-now-open/" class="wp-block-button__link wp-element-button">Register for Contributor Day</a>
+
+</div>
+
+</div>
+
+## **Workshop Lineup**
+
+<div class="wp-block-group alignwide contributor-day-make-team-grid is-layout-grid wp-container-core-group-is-layout-d9e5f422 wp-block-group-is-layout-grid">
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+<div class="wp-block-group table-leads-container is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-e8db1259 wp-block-group-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+### **WordPress Core Development Setup**
+
+</div>
+
+#### **Time:**
+
+🕒 ☀️ **9:30 AM – 11:00 AM**
+
+This workshop introduces the process of setting up a local environment for WordPress Core development.
+
+#### **What to expect:**
+
+A practical walkthrough of the tools, setup process, and initial steps needed to prepare a Core development environment. Ideal for anyone curious about how Core contribution begins.
+
+#### **Facilitators:**
+
+<div class="wp-block-spacer" style="height:5px" aria-hidden="true">
+
+</div>
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3a88641f wp-block-columns-is-layout-flex">
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Prem-Tiwari.png?resize=200%2C200&amp;ssl=1" class="wp-image-11117" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11117" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/prem-tiwari-2/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Prem-Tiwari.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Prem Tiwari" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Prem-Tiwari.png?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Prem-Tiwari.png?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Prem-Tiwari.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+**Prem Tiwari**\
+Lead Facilitator
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=2544%2C2544&amp;ssl=1" class="wp-image-11309" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11309" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/20250604_165034_crop/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?fit=2544%2C2544&amp;ssl=1" data-orig-size="2544,2544" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="20250604_165034_crop" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?fit=1024%2C1024&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?w=2544&amp;ssl=1 2544w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/20250604_165034_crop.jpg?resize=2048%2C2048&amp;ssl=1 2048w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="2544" height="2544" />
+</figure>
+
+**Nimesh Agrawal**\
+Co-Facilitators
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Indira-Biswas.png?resize=200%2C200&amp;ssl=1" class="wp-image-11119" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11119" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/indira-biswas-2/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Indira-Biswas.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Indira Biswas" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Indira-Biswas.png?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Indira-Biswas.png?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Indira-Biswas.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+**Indira Biswas**\
+Co-Facilitators
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+<div class="wp-block-group table-leads-container is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-e8db1259 wp-block-group-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+### ****Beginner’s Guide to WordPress****
+
+</div>
+
+#### **Time:**
+
+🕒 ☀️ **9:30 AM – 11:00 AM**
+
+This workshop is designed for attendees who are new to WordPress or still exploring how it works.
+
+#### **What to expect:**
+
+A guided introduction to WordPress basics in a supportive environment. Participants will gain familiarity with the platform and build confidence to explore further.
+
+#### **Facilitators:**
+
+<div class="wp-block-spacer" style="height:5px" aria-hidden="true">
+
+</div>
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3a88641f wp-block-columns-is-layout-flex">
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Jamie-Marsland.png?resize=200%2C200&amp;ssl=1" class="wp-image-11121" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11121" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/jamie-marsland/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Jamie-Marsland.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Jamie Marsland" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Jamie-Marsland.png?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Jamie-Marsland.png?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Jamie-Marsland.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+****Jamie Marsland****\
+Lead Facilitator
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Rajan-Lama.png?resize=200%2C200&amp;ssl=1" class="wp-image-11122" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11122" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/rajan-lama-4/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Rajan-Lama.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Rajan Lama" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Rajan-Lama.png?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Rajan-Lama.png?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Rajan-Lama.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+****Rajan Lama****\
+Co-Facilitators
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Mohammad-Sajid-Ansari.png?resize=200%2C200&amp;ssl=1" class="wp-image-11123" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11123" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/mohammad-sajid-ansari-3/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Mohammad-Sajid-Ansari.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Mohammad Sajid Ansari" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Mohammad-Sajid-Ansari.png?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Mohammad-Sajid-Ansari.png?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Mohammad-Sajid-Ansari.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+****Sajid Ansari****\
+Co-Facilitators
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-spacer" style="height:50px" aria-hidden="true">
+
+</div>
+
+<div class="wp-block-group alignwide contributor-day-make-team-grid is-layout-grid wp-container-core-group-is-layout-d9e5f422 wp-block-group-is-layout-grid">
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+<div class="wp-block-group table-leads-container is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-e8db1259 wp-block-group-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+### ****Building a Block Theme from Scratch****
+
+</div>
+
+#### **Time:**
+
+**🕒 🌤️ 2:00 PM – 3:30 PM**
+
+This workshop focuses on modern ways to build and customize WordPress sites using Full Site Editing.
+
+#### **What to expect:**
+
+A hands-on introduction to block themes and Full Site Editing workflows. Participants will learn how modern WordPress themes work and how to start using them effectively.
+
+#### **Facilitators:**
+
+<div class="wp-block-spacer" style="height:5px" aria-hidden="true">
+
+</div>
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3a88641f wp-block-columns-is-layout-flex">
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/01/Birgit-Pauli-Haack.jpg?resize=400%2C400&amp;ssl=1" class="wp-image-7039" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="7039" data-permalink="https://asia.wordcamp.org/2026/speaker/leonardo-losoviz/birgit-pauli-haack-3/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/01/Birgit-Pauli-Haack.jpg?fit=400%2C400&amp;ssl=1" data-orig-size="400,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Birgit-Pauli-Haack" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/01/Birgit-Pauli-Haack.jpg?fit=400%2C400&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/01/Birgit-Pauli-Haack.jpg?w=400&amp;ssl=1 400w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/01/Birgit-Pauli-Haack.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/01/Birgit-Pauli-Haack.jpg?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 400px) 100vw, 400px" width="400" height="400" />
+</figure>
+
+******Birgit Pauli-Haack******\
+Lead Facilitator
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Muhammad-Ridha-Ridwan.png?resize=200%2C200&amp;ssl=1" class="wp-image-11125" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11125" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/muhammad-ridha-ridwan-2/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Muhammad-Ridha-Ridwan.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Muhammad Ridha Ridwan" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Muhammad-Ridha-Ridwan.png?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Muhammad-Ridha-Ridwan.png?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Muhammad-Ridha-Ridwan.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+****Muhammad Ridwan****\
+Co-Facilitators
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Bijay-Yadav.jpeg?resize=200%2C200&amp;ssl=1" class="wp-image-11126" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11126" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/bijay-yadav-2/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Bijay-Yadav.jpeg?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Bijay Yadav" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Bijay-Yadav.jpeg?fit=200%2C200&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Bijay-Yadav.jpeg?w=200&amp;ssl=1 200w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/Bijay-Yadav.jpeg?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 200px) 100vw, 200px" width="200" height="200" />
+</figure>
+
+****Bijay Yadav****\
+Co-Facilitators
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+<div class="wp-block-group table-leads-container is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-e8db1259 wp-block-group-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+### ******Beginner’s Guide to SEO******
+
+</div>
+
+#### **Time:**
+
+**🕒 🌤️ 2:00 PM – 3:30 PM**
+
+This workshop is designed to make SEO simple and approachable for beginners.
+
+#### **What to expect:**
+
+A practical introduction to SEO fundamentals with insights that can be applied to websites right away. Ideal for participants who want to understand how search visibility works.
+
+#### **Facilitators:**
+
+<div class="wp-block-spacer" style="height:5px" aria-hidden="true">
+
+</div>
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3a88641f wp-block-columns-is-layout-flex">
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?resize=1116%2C1127&amp;ssl=1" class="wp-image-12216" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="12216" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/seo-boom-profile/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?fit=1116%2C1127&amp;ssl=1" data-orig-size="1116,1127" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="seo-boom-profile" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?fit=1014%2C1024&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?w=1116&amp;ssl=1 1116w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?resize=297%2C300&amp;ssl=1 297w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?resize=1014%2C1024&amp;ssl=1 1014w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/seo-boom-profile.jpg?resize=768%2C776&amp;ssl=1 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1116" height="1127" />
+</figure>
+
+******Pimchanok Ariyawanwit******\
+Lead Facilitator
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%">
+
+<figure class="wp-block-image aligncenter size-full cd-table-lead-profile-image workshop-facilitator">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/MINAL-PURWAR.png?resize=600%2C600&amp;ssl=1" class="wp-image-12125" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="12125" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/minal-purwar/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/MINAL-PURWAR.png?fit=600%2C600&amp;ssl=1" data-orig-size="600,600" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MINAL-PURWAR" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/MINAL-PURWAR.png?fit=600%2C600&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/MINAL-PURWAR.png?w=600&amp;ssl=1 600w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/MINAL-PURWAR.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/MINAL-PURWAR.png?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 600px) 100vw, 600px" width="600" height="600" />
+</figure>
+
+****Minal Purwar****\
+Co-Facilitators
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+## **Join Us**
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-10 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure class="wp-block-image size-large">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o.jpg?resize=1024%2C683&amp;ssl=1" class="wp-image-11114" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11114" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/wordcamp-asia-2025-2/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;TORIYAMA Yuko&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1740100461&quot;,&quot;copyright&quot;:&quot;\u00a92025 TORIYAMA Yuko&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;WordCamp Asia 2025&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="WordCamp Asia 2025" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?fit=1024%2C683&amp;ssl=1" data-id="11114" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?resize=450%2C300&amp;ssl=1 450w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?resize=1536%2C1024&amp;ssl=1 1536w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54379954818_c89a263b18_o-scaled.jpg?resize=2048%2C1366&amp;ssl=1 2048w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1024" height="683" />
+</figure>
+<figure class="wp-block-image size-large">
+<img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o.jpg?resize=1024%2C683&amp;ssl=1" class="wp-image-11115" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="11115" data-permalink="https://asia.wordcamp.org/2026/contributor-day-workshops-at-wordcamp-asia-2026/wordcamp-asia-2025-3/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?fit=2560%2C1707&amp;ssl=1" data-orig-size="2560,1707" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;TORIYAMA Yuko&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1740100194&quot;,&quot;copyright&quot;:&quot;\u00a92025 TORIYAMA Yuko&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;WordCamp Asia 2025&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="WordCamp Asia 2025" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?fit=1024%2C683&amp;ssl=1" data-id="11115" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?resize=450%2C300&amp;ssl=1 450w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?resize=1536%2C1024&amp;ssl=1 1536w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/03/54380108095_5a3aa6023f_o-scaled.jpg?resize=2048%2C1366&amp;ssl=1 2048w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1024" height="683" />
+</figure>
+</figure>
+
+If you are attending WordCamp Asia 2026 and looking for a more guided way to begin your journey, these workshops are designed to help you take that first step with confidence.
+
+We look forward to seeing you at Contributor Day.

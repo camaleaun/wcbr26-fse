@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "telex/block-telex-countdown-timer",
+  "version": "0.1.0",
+  "title": "WordCamp Countdown Timer",
+  "category": "widgets",
+  "icon": "clock",
+  "description": "A beautiful countdown timer block for WordCamp and future events with live preview, translucent cards, and full Gutenberg color support.",
+  "example": {
+    "attributes": {
+      "eventTitle": "WordCamp Europe 2026",
+      "targetDate": "2026-12-31T23:59:59",
+      "completionMessage": "The event has started! 🎉"
+    }
+  },
+  "attributes": {
+    "eventTitle": {
+      "type": "string",
+      "default": "WordCamp 2026"
+    },
+    "targetDate": {
+      "type": "string",
+      "default": ""
+    },
+    "completionMessage": {
+      "type": "string",
+      "default": "The event has started! 🎉"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "link": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "telex-countdown-timer",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

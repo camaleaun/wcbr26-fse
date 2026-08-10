@@ -1,0 +1,869 @@
+<artefact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="artefact.xsd" name="WordCamp Countdown Timer" slug="telex-countdown-timer" type="code-package" schemaVersion="2">
+  <file path="readme.txt">
+    <description>This file contains the readme information for the block.</description>
+    <content><![CDATA[
+=== WordCamp Countdown Timer ===
+
+Contributors:      WordPress Telex
+Tags:              block, countdown, timer, wordcamp, events
+Tested up to:      6.8
+Stable tag:        0.1.0
+License:           GPLv2 or later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+
+A beautiful, accessible countdown timer block designed for WordCamp and future events. Features a live-ticking preview in both the editor and frontend, translucent glassmorphism numeric cards, and full Gutenberg color integration.
+
+== Description ==
+
+The WordCamp Countdown Timer block lets you add a visually striking countdown to any upcoming event directly within the WordPress block editor.
+
+**Key Features:**
+
+* **Live Preview in Editor & Frontend** — The countdown ticks in real time so you always see the current state.
+* **RichText Event Title** — Style your event name directly in the editor with bold, italic, and link formatting.
+* **Four Translucent Cards** — Days, hours, minutes, and seconds are displayed in modern glassmorphism-style cards.
+* **Inspector Controls** — Pick a target date/time and set a custom completion message from the sidebar.
+* **Native Color Support** — Uses Gutenberg's built-in color settings for text, background, and link (accent). CSS-only defaults inspired by WordCamp visual identity (#f56530 accent, #00595d text, #fff9ef background) are automatically overridden by user selections.
+* **Independent Instances** — Multiple countdown blocks on the same page each manage their own target date and interval independently.
+* **Completion Handling** — When the countdown reaches zero it stops cleanly, never shows negative values, and displays your custom completion message.
+* **Responsive & Accessible** — Mobile-friendly grid layout with proper ARIA attributes and semantic HTML.
+* **Interval Cleanup** — Frontend JavaScript properly cleans up intervals when blocks are removed from the DOM.
+
+== Installation ==
+
+1. Upload the plugin files to the `/wp-content/plugins/telex-countdown-timer` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. In the block editor, search for "WordCamp Countdown Timer" and add the block to your post or page.
+4. Set your target date and customize colors from the sidebar.
+
+== Frequently Asked Questions ==
+
+= Can I have multiple countdowns on one page? =
+
+Yes. Each block instance manages its own target date and ticking interval independently.
+
+= What happens when the countdown reaches zero? =
+
+The timer stops, displays "00" for all units, and shows your custom completion message. No negative values are ever displayed.
+
+= Can I customize the colors? =
+
+Absolutely. The block supports native Gutenberg color settings for text, background, and link (accent highlight). You can pick any color from your theme palette or use a custom color.
+
+== Screenshots ==
+
+1. The countdown timer block in the editor with live preview.
+2. Frontend rendering with translucent glassmorphism cards.
+
+== Changelog ==
+
+= 0.1.0 =
+* Initial release.
+
+== Arbitrary section ==
+
+This block was designed with the WordCamp visual identity in mind, featuring warm accent tones and a clean, modern aesthetic suitable for event websites.
+]]></content>
+  </file>
+  <file path="telex-countdown-timer.php">
+    <description>Main plugin file that registers the block.</description>
+    <content><![CDATA[<?php
+/**
+ * Plugin Name:       WordCamp Countdown Timer
+ * Description:       A beautiful countdown timer block for WordCamp and future events with live preview, translucent cards, and full Gutenberg color support.
+ * Version:           0.1.0
+ * Requires at least: 6.4
+ * Requires PHP:      7.4
+ * Author:            WordPress Telex
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       telex-countdown-timer
+ *
+ * @package TelexCountdownTimer
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Registers the block using the metadata loaded from the `block.json` file.
+ * Behind the scenes, it registers also all assets so they can be enqueued
+ * through the block editor in the corresponding context.
+ *
+ * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ */
+if ( ! function_exists( 'telex_countdown_timer_telex_countdown_timer_block_init' ) ) {
+	function telex_countdown_timer_telex_countdown_timer_block_init(): void {
+		register_block_type( __DIR__ . '/build/' );
+	}
+}
+add_action( 'init', 'telex_countdown_timer_telex_countdown_timer_block_init' );
+]]></content>
+  </file>
+  <file path="src/block.json">
+    <description>Block metadata including attributes, supports, and color settings.</description>
+    <content><![CDATA[{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "telex/block-telex-countdown-timer",
+	"version": "0.1.0",
+	"title": "WordCamp Countdown Timer",
+	"category": "widgets",
+	"icon": "clock",
+	"description": "A beautiful countdown timer block for WordCamp and future events with live preview, translucent cards, and full Gutenberg color support.",
+	"example": {
+		"attributes": {
+			"eventTitle": "WordCamp Europe 2026",
+			"targetDate": "2026-12-31T23:59:59",
+			"completionMessage": "The event has started! 🎉"
+		}
+	},
+	"attributes": {
+		"eventTitle": {
+			"type": "string",
+			"default": "WordCamp 2026"
+		},
+		"targetDate": {
+			"type": "string",
+			"default": ""
+		},
+		"completionMessage": {
+			"type": "string",
+			"default": "The event has started! 🎉"
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true,
+			"background": true,
+			"link": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		},
+		"align": [ "wide", "full" ]
+	},
+	"textdomain": "telex-countdown-timer",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}]]></content>
+  </file>
+  <file path="src/index.js">
+    <description>Registers the block type with edit component.</description>
+    <content><![CDATA[/**
+ * Registers a new block provided a unique name and an object defining its behavior.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ */
+import { registerBlockType } from '@wordpress/blocks';
+
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * All files containing `style` keyword are bundled together. The code used
+ * gets applied both to the front of your site and to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+import './style.scss';
+
+/**
+ * Internal dependencies
+ */
+import Edit from './edit';
+import metadata from './block.json';
+
+/**
+ * Every block starts by registering a new block type definition.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ */
+registerBlockType( metadata.name, {
+	/**
+	 * @see ./edit.js
+	 */
+	edit: Edit,
+} );
+]]></content>
+  </file>
+  <file path="src/edit.js">
+    <description>Edit component with live countdown preview, RichText title, InspectorControls for date picker and completion message.</description>
+    <content><![CDATA[/**
+ * Retrieves the translation of text.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
+ */
+import { __ } from '@wordpress/i18n';
+
+/**
+ * React hook that is used to mark the block wrapper element.
+ * It provides all the necessary props like the class name.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
+ */
+import { useBlockProps, InspectorControls, RichText } from '@wordpress/block-editor';
+
+import {
+	PanelBody,
+	DateTimePicker,
+	TextControl,
+} from '@wordpress/components';
+
+import { useState, useEffect } from '@wordpress/element';
+
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * Those files can contain any CSS code that gets applied to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+import './editor.scss';
+
+/**
+ * Calculates the time remaining until a target date.
+ *
+ * @param {string} targetDate - ISO 8601 date string.
+ * @return {{ days: number, hours: number, minutes: number, seconds: number, isComplete: boolean }} Time remaining.
+ */
+function getTimeRemaining( targetDate ) {
+	if ( ! targetDate ) {
+		return { days: 0, hours: 0, minutes: 0, seconds: 0, isComplete: false };
+	}
+
+	const total = new Date( targetDate ).getTime() - Date.now();
+
+	if ( total <= 0 ) {
+		return { days: 0, hours: 0, minutes: 0, seconds: 0, isComplete: true };
+	}
+
+	return {
+		days: Math.floor( total / ( 1000 * 60 * 60 * 24 ) ),
+		hours: Math.floor( ( total / ( 1000 * 60 * 60 ) ) % 24 ),
+		minutes: Math.floor( ( total / ( 1000 * 60 ) ) % 60 ),
+		seconds: Math.floor( ( total / 1000 ) % 60 ),
+		isComplete: false,
+	};
+}
+
+/**
+ * Pads a number to two digits.
+ *
+ * @param {number} num - The number to pad.
+ * @return {string} Zero-padded string.
+ */
+function padTwo( num ) {
+	return String( num ).padStart( 2, '0' );
+}
+
+/**
+ * The edit function describes the structure of your block in the context of the
+ * editor. This represents what the editor will render when the block is used.
+ *
+ * @param {Object}   props               - Block props.
+ * @param {Object}   props.attributes    - Block attributes.
+ * @param {Function} props.setAttributes - Attribute setter.
+ * @return {Element} Element to render.
+ */
+export default function Edit( { attributes, setAttributes } ) {
+	const { eventTitle, targetDate, completionMessage } = attributes;
+	const blockProps = useBlockProps( {
+		className: 'telex-countdown-timer',
+	} );
+
+	const [ timeLeft, setTimeLeft ] = useState( () => getTimeRemaining( targetDate ) );
+
+	useEffect( () => {
+		setTimeLeft( getTimeRemaining( targetDate ) );
+
+		if ( ! targetDate ) {
+			return;
+		}
+
+		const interval = setInterval( () => {
+			const remaining = getTimeRemaining( targetDate );
+			setTimeLeft( remaining );
+			if ( remaining.isComplete ) {
+				clearInterval( interval );
+			}
+		}, 1000 );
+
+		return () => clearInterval( interval );
+	}, [ targetDate ] );
+
+	const units = [
+		{ value: timeLeft.days, label: __( 'Days', 'telex-countdown-timer' ) },
+		{ value: timeLeft.hours, label: __( 'Hours', 'telex-countdown-timer' ) },
+		{ value: timeLeft.minutes, label: __( 'Minutes', 'telex-countdown-timer' ) },
+		{ value: timeLeft.seconds, label: __( 'Seconds', 'telex-countdown-timer' ) },
+	];
+
+	return (
+		<>
+			<InspectorControls>
+				<PanelBody
+					title={ __( 'Countdown Settings', 'telex-countdown-timer' ) }
+					initialOpen={ true }
+				>
+					<div style={ { marginBottom: '16px' } }>
+						<label
+							style={ {
+								display: 'block',
+								marginBottom: '8px',
+								fontWeight: 600,
+								fontSize: '11px',
+								textTransform: 'uppercase',
+								letterSpacing: '0.5px',
+							} }
+						>
+							{ __( 'Target Date & Time', 'telex-countdown-timer' ) }
+						</label>
+						<DateTimePicker
+							currentDate={ targetDate || undefined }
+							onChange={ ( newDate ) =>
+								setAttributes( { targetDate: newDate } )
+							}
+							is12Hour={ true }
+						/>
+					</div>
+					<TextControl
+						__nextHasNoMarginBottom
+						__next40pxDefaultSize
+						label={ __( 'Completion Message', 'telex-countdown-timer' ) }
+						help={ __( 'Displayed when the countdown reaches zero.', 'telex-countdown-timer' ) }
+						value={ completionMessage }
+						onChange={ ( value ) =>
+							setAttributes( { completionMessage: value } )
+						}
+					/>
+				</PanelBody>
+			</InspectorControls>
+
+			<div { ...blockProps }>
+				<div className="telex-countdown-timer__inner">
+					<RichText
+						tagName="h2"
+						className="telex-countdown-timer__title"
+						value={ eventTitle }
+						onChange={ ( value ) =>
+							setAttributes( { eventTitle: value } )
+						}
+						placeholder={ __( 'Event Title…', 'telex-countdown-timer' ) }
+						allowedFormats={ [
+							'core/bold',
+							'core/italic',
+							'core/link',
+						] }
+					/>
+
+					{ ! targetDate && (
+						<p className="telex-countdown-timer__notice">
+							{ __( 'Select a target date in the block settings sidebar.', 'telex-countdown-timer' ) }
+						</p>
+					) }
+
+					{ targetDate && timeLeft.isComplete && (
+						<p className="telex-countdown-timer__complete">
+							{ completionMessage }
+						</p>
+					) }
+
+					{ targetDate && ! timeLeft.isComplete && (
+						<div
+							className="telex-countdown-timer__grid"
+							role="timer"
+							aria-live="polite"
+							aria-atomic="true"
+							aria-label={ __( 'Countdown timer', 'telex-countdown-timer' ) }
+						>
+							{ units.map( ( unit ) => (
+								<div
+									className="telex-countdown-timer__card"
+									key={ unit.label }
+								>
+									<span className="telex-countdown-timer__value">
+										{ padTwo( unit.value ) }
+									</span>
+									<span className="telex-countdown-timer__label">
+										{ unit.label }
+									</span>
+								</div>
+							) ) }
+						</div>
+					) }
+				</div>
+			</div>
+		</>
+	);
+}
+]]></content>
+  </file>
+  <file path="src/save.js">
+    <description>Save returns null because this is a dynamic block rendered via render.php.</description>
+    <content><![CDATA[]]></content>
+  </file>
+  <file path="src/style.scss">
+    <description>Shared styles for both editor and frontend with CSS custom property defaults and translucent card design.</description>
+    <content><![CDATA[/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.wp-block-telex-block-telex-countdown-timer {
+	--countdown-accent: #f56530;
+	--countdown-text: #00595d;
+	--countdown-bg: #fff9ef;
+
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: var(--wp--custom--color--text, var(--countdown-text));
+	background: var(--wp--custom--color--background, var(--countdown-bg));
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative;
+}
+
+.wp-block-telex-block-telex-countdown-timer.has-text-color {
+	--countdown-text: currentColor;
+}
+
+.wp-block-telex-block-telex-countdown-timer.has-background {
+	--countdown-bg: currentColor;
+}
+
+.wp-block-telex-block-telex-countdown-timer.has-link-color {
+	--countdown-accent: var(--wp--style--block--link-color, #f56530);
+}
+
+.telex-countdown-timer__inner {
+	padding: 2.5rem 2rem;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.telex-countdown-timer__title {
+	font-size: clamp(1.25rem, 3vw, 2rem);
+	font-weight: 700;
+	margin: 0 0 0.25rem;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	color: inherit;
+
+	a {
+		color: var(--countdown-accent);
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 3px;
+
+		&:hover,
+		&:focus {
+			opacity: 0.85;
+		}
+	}
+}
+
+.telex-countdown-timer__notice {
+	font-size: 0.95rem;
+	opacity: 0.7;
+	margin: 1.5rem 0 0;
+	font-style: italic;
+}
+
+.telex-countdown-timer__complete {
+	font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+	font-weight: 600;
+	margin: 1.5rem 0 0;
+	color: var(--countdown-accent);
+	animation: countdown-fade-in 0.6s ease-out;
+}
+
+.telex-countdown-timer__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: clamp(0.5rem, 2vw, 1rem);
+	margin-top: 1.75rem;
+	max-width: 560px;
+	margin-inline: auto;
+}
+
+.telex-countdown-timer__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: clamp(0.75rem, 2vw, 1.25rem) clamp(0.5rem, 1.5vw, 1rem);
+	border-radius: 12px;
+	background: color-mix(in srgb, var(--countdown-accent) 10%, transparent);
+	border: 1px solid color-mix(in srgb, var(--countdown-accent) 20%, transparent);
+	backdrop-filter: blur(8px);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px color-mix(in srgb, var(--countdown-accent) 15%, transparent);
+	}
+}
+
+.telex-countdown-timer__value {
+	font-size: clamp(1.75rem, 5vw, 3rem);
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: -0.03em;
+	color: var(--countdown-accent);
+	font-variant-numeric: tabular-nums;
+	font-feature-settings: "tnum";
+}
+
+.telex-countdown-timer__label {
+	font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-top: 0.35rem;
+	opacity: 0.7;
+	color: inherit;
+}
+
+@keyframes countdown-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 480px) {
+	.telex-countdown-timer__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.telex-countdown-timer__inner {
+		padding: 1.75rem 1.25rem;
+	}
+}
+]]></content>
+  </file>
+  <file path="src/editor.scss">
+    <description>Editor-only styles for the countdown timer block.</description>
+    <content><![CDATA[/**
+ * The following styles get applied inside the editor only.
+ */
+
+.wp-block-telex-block-telex-countdown-timer {
+	.telex-countdown-timer__title {
+		&:focus {
+			outline: 2px solid var(--countdown-accent);
+			outline-offset: 2px;
+			border-radius: 4px;
+		}
+	}
+
+	.telex-countdown-timer__notice {
+		padding: 1rem;
+		background: color-mix(in srgb, var(--countdown-accent) 8%, transparent);
+		border-radius: 8px;
+		border: 1px dashed color-mix(in srgb, var(--countdown-accent) 30%, transparent);
+	}
+}
+]]></content>
+  </file>
+  <file path="src/view.js">
+    <description>Frontend JavaScript that ticks every second per block instance, handles completion, and cleans up intervals on removal.</description>
+    <content><![CDATA[/**
+ * Frontend countdown timer logic.
+ * Each block instance independently manages its own interval.
+ * Cleans up intervals when elements are removed from the DOM.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
+ */
+
+/**
+ * Pads a number with leading zeros to two digits.
+ *
+ * @param {number} num - The number to pad.
+ * @return {string} The zero-padded number string.
+ */
+function padTwo( num ) {
+	return String( num ).padStart( 2, '0' );
+}
+
+/**
+ * Calculates the time remaining until a target timestamp.
+ *
+ * @param {number} targetTimestamp - Target time in milliseconds.
+ * @return {{ days: number, hours: number, minutes: number, seconds: number, isComplete: boolean }} Remaining time.
+ */
+function getTimeRemaining( targetTimestamp ) {
+	const total = targetTimestamp - Date.now();
+
+	if ( total <= 0 ) {
+		return { days: 0, hours: 0, minutes: 0, seconds: 0, isComplete: true };
+	}
+
+	return {
+		days: Math.floor( total / ( 1000 * 60 * 60 * 24 ) ),
+		hours: Math.floor( ( total / ( 1000 * 60 * 60 ) ) % 24 ),
+		minutes: Math.floor( ( total / ( 1000 * 60 ) ) % 60 ),
+		seconds: Math.floor( ( total / 1000 ) % 60 ),
+		isComplete: false,
+	};
+}
+
+/**
+ * Initializes a single countdown block instance.
+ *
+ * @param {HTMLElement} block - The block wrapper element.
+ * @return {number|null} The interval ID, or null if no interval was started.
+ */
+function initCountdown( block ) {
+	const targetDateStr = block.dataset.targetDate;
+
+	if ( ! targetDateStr ) {
+		return null;
+	}
+
+	const targetTimestamp = new Date( targetDateStr ).getTime();
+
+	if ( isNaN( targetTimestamp ) ) {
+		return null;
+	}
+
+	const grid = block.querySelector( '.telex-countdown-timer__grid' );
+	const completeEl = block.querySelector( '.telex-countdown-timer__complete' );
+	const values = block.querySelectorAll( '.telex-countdown-timer__value' );
+
+	if ( ! grid || values.length < 4 ) {
+		return null;
+	}
+
+	/**
+	 * Updates the countdown display.
+	 */
+	function tick() {
+		const remaining = getTimeRemaining( targetTimestamp );
+
+		values[ 0 ].textContent = padTwo( remaining.days );
+		values[ 1 ].textContent = padTwo( remaining.hours );
+		values[ 2 ].textContent = padTwo( remaining.minutes );
+		values[ 3 ].textContent = padTwo( remaining.seconds );
+
+		if ( remaining.isComplete ) {
+			clearInterval( intervalId );
+			grid.setAttribute( 'aria-hidden', 'true' );
+			grid.style.display = 'none';
+
+			if ( completeEl ) {
+				completeEl.hidden = false;
+				completeEl.removeAttribute( 'aria-hidden' );
+			}
+		}
+	}
+
+	// Initial tick.
+	tick();
+
+	// Check if already complete before starting interval.
+	const initial = getTimeRemaining( targetTimestamp );
+	if ( initial.isComplete ) {
+		return null;
+	}
+
+	const intervalId = setInterval( tick, 1000 );
+	return intervalId;
+}
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	const blocks = document.querySelectorAll( '.wp-block-telex-block-telex-countdown-timer' );
+
+	/** @type {Map<HTMLElement, number>} */
+	const intervals = new Map();
+
+	blocks.forEach( function ( block ) {
+		const intervalId = initCountdown( block );
+		if ( intervalId !== null ) {
+			intervals.set( block, intervalId );
+		}
+	} );
+
+	// Clean up intervals when blocks are removed from the DOM.
+	if ( intervals.size > 0 && typeof MutationObserver !== 'undefined' ) {
+		const observer = new MutationObserver( function ( mutations ) {
+			mutations.forEach( function ( mutation ) {
+				mutation.removedNodes.forEach( function ( node ) {
+					if ( node.nodeType !== Node.ELEMENT_NODE ) {
+						return;
+					}
+
+					intervals.forEach( function ( id, el ) {
+						if ( node === el || node.contains( el ) ) {
+							clearInterval( id );
+							intervals.delete( el );
+						}
+					} );
+				} );
+			} );
+
+			if ( intervals.size === 0 ) {
+				observer.disconnect();
+			}
+		} );
+
+		observer.observe( document.body, {
+			childList: true,
+			subtree: true,
+		} );
+	}
+} );
+]]></content>
+  </file>
+  <file path="src/render.php">
+    <description>Server-side render callback for the dynamic countdown timer block.</description>
+    <content><![CDATA[<?php
+/**
+ * Server-side rendering for the WordCamp Countdown Timer block.
+ *
+ * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
+ *
+ * @var array    $attributes Block attributes.
+ * @var string   $content    Block default content.
+ * @var WP_Block $block      Block instance.
+ */
+
+$event_title        = $attributes['eventTitle'] ?? '';
+$target_date        = $attributes['targetDate'] ?? '';
+$completion_message = $attributes['completionMessage'] ?? '';
+
+$has_target   = ! empty( $target_date );
+$is_complete  = false;
+
+if ( $has_target ) {
+	$target_timestamp = strtotime( $target_date );
+	$is_complete      = $target_timestamp !== false && $target_timestamp <= time();
+}
+
+$wrapper_attributes = get_block_wrapper_attributes(
+	array(
+		'class'            => 'telex-countdown-timer',
+		'data-target-date' => esc_attr( $target_date ),
+	)
+);
+
+// Calculate initial values for server-side render (progressive enhancement).
+$days    = 0;
+$hours   = 0;
+$minutes = 0;
+$seconds = 0;
+
+if ( $has_target && ! $is_complete ) {
+	$diff    = max( 0, $target_timestamp - time() );
+	$days    = (int) floor( $diff / 86400 );
+	$hours   = (int) floor( ( $diff % 86400 ) / 3600 );
+	$minutes = (int) floor( ( $diff % 3600 ) / 60 );
+	$seconds = (int) ( $diff % 60 );
+}
+
+$units = array(
+	array(
+		'value' => $days,
+		'label' => __( 'Days', 'telex-countdown-timer' ),
+	),
+	array(
+		'value' => $hours,
+		'label' => __( 'Hours', 'telex-countdown-timer' ),
+	),
+	array(
+		'value' => $minutes,
+		'label' => __( 'Minutes', 'telex-countdown-timer' ),
+	),
+	array(
+		'value' => $seconds,
+		'label' => __( 'Seconds', 'telex-countdown-timer' ),
+	),
+);
+?>
+<div <?php echo $wrapper_attributes; ?>>
+	<div class="telex-countdown-timer__inner">
+		<?php if ( ! empty( $event_title ) ) : ?>
+			<h2 class="telex-countdown-timer__title">
+				<?php echo wp_kses_post( $event_title ); ?>
+			</h2>
+		<?php endif; ?>
+
+		<?php if ( ! $has_target ) : ?>
+			<p class="telex-countdown-timer__notice">
+				<?php esc_html_e( 'No target date has been set for this countdown.', 'telex-countdown-timer' ); ?>
+			</p>
+		<?php endif; ?>
+
+		<?php if ( $has_target && $is_complete ) : ?>
+			<p class="telex-countdown-timer__complete">
+				<?php echo esc_html( $completion_message ); ?>
+			</p>
+		<?php endif; ?>
+
+		<?php if ( $has_target && ! $is_complete ) : ?>
+			<div
+				class="telex-countdown-timer__grid"
+				role="timer"
+				aria-live="polite"
+				aria-atomic="true"
+				aria-label="<?php esc_attr_e( 'Countdown timer', 'telex-countdown-timer' ); ?>"
+			>
+				<?php foreach ( $units as $unit ) : ?>
+					<div class="telex-countdown-timer__card">
+						<span class="telex-countdown-timer__value">
+							<?php echo esc_html( str_pad( (string) $unit['value'], 2, '0', STR_PAD_LEFT ) ); ?>
+						</span>
+						<span class="telex-countdown-timer__label">
+							<?php echo esc_html( $unit['label'] ); ?>
+						</span>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if ( $has_target && ! $is_complete && ! empty( $completion_message ) ) : ?>
+			<p class="telex-countdown-timer__complete" hidden aria-hidden="true">
+				<?php echo esc_html( $completion_message ); ?>
+			</p>
+		<?php endif; ?>
+	</div>
+</div>
+]]></content>
+  </file>
+  <file path="package.json">
+    <description>Package configuration with build scripts.</description>
+    <content><![CDATA[{
+	"name": "telex-countdown-timer",
+	"version": "0.1.0",
+	"description": "A beautiful countdown timer block for WordCamp and future events with live preview, translucent cards, and full Gutenberg color support.",
+	"author": "WordPress Telex",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.15.0"
+	}
+}]]></content>
+  </file>
+</artefact>

@@ -1,0 +1,5 @@
+\n
+
+Eduardo é líder de experiência ao cliente no WordPress.com, parte da Automattic. Ex-desenvolvedor web com mais de uma década de atuação, tem longa trajetória na comunidade WordPress, incluindo o primeiro WordCamp Brasil (2009), a organização das edições em Curitiba, o retorno do evento ao Rio em 2024, e agora a organização do WordCamp Brasil 2025.
+
+\n

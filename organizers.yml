@@ -1,0 +1,82 @@
+items:
+  -
+    title: "Christian van 't Hof"
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        nicename: lideranca-e-patrocinios
+    meta:
+      _wcpt_user_name: Brightsol
+      _gravatar_hash: 28c5f3cff8b39f99dd482db0bed1a36db4d9b0f2d471f477d68685dcbabf0683
+  -
+    title: Eduardo Zulian
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Financeiro
+    meta:
+      _wcpt_user_name: eduardozulian
+      _gravatar_hash: d2b86b9638463db3ab4fb8ca2c51713befed32c44728e785fc531ec2d1922ffa
+  -
+    title: Amanda Cardoso
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Local do Evento
+    meta:
+      _wcpt_user_name: amandacodb
+      _gravatar_hash: a262ac5d912dbbb8c1f145ad3342cc6b53a3c37db6fda9f097361859a0468cc5
+  -
+    post_id: 231
+    title: Hans Möhl
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Website e Design
+    meta:
+      _wcpt_user_name: hansmosl
+      _gravatar_hash: e22f54b57dbecad0d7645dca2c8747955c7f6087bafaf55046c98d605937a243
+  -
+    title: Sandra Peres
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Rede Social e Textos
+    meta:
+      _wcpt_user_name: San Prs
+      _gravatar_hash: 7b7eaaa4aadc682d507bfde811645ed2a87632d6a23235c4e69b0b975ed61338
+  -
+    title: André Ribeiro
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Dia do Evento
+    meta:
+      _wcpt_user_name: andr3ribeiro
+      _gravatar_hash: 706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535
+  -
+    title: Gilberto Tavares
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Voluntários
+    meta:
+      _wcpt_user_name: camaleaun
+      _gravatar_hash: 846dac0ad49da6ec36c808dc932f2a9c2adae7e4b594025eec4e3081a524fefd
+  -
+    title: Pâmela Ribeiro
+    post_type: wcb_organizer
+    categories:
+      -
+        domain: wcb_organizer_team
+        value: Hospitalidade
+    meta:
+      _wcpt_user_name: pamprn
+      _gravatar_hash: 8cc582cc64177f604d63cc370b7c3168b79edb1b67797bbc29c36e90ca4b3e40

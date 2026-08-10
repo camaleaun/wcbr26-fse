@@ -112,7 +112,7 @@ svg.ic, .social svg, .sponsor__ic svg, .avatar svg {
 .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 0 var(--orange-500); }
 .btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 0 var(--orange-500); }
 .btn--sm { padding: 13px 30px; font-size: .9rem; letter-spacing: .04em; }
-.btn--brick { background: var(--orange-600); border-color: var(--orange-600); box-shadow: 5px 5px 0 0 var(--orange-600); }
+.btn--brick { background: var(--orange-600); border-color: var(--orange-500); box-shadow: 5px 5px 0 0 var(--orange-500); }
 .btn--brick:hover { box-shadow: 3px 3px 0 0 var(--orange-600); }
 .btn--brick:active { box-shadow: 0 0 0 0 var(--orange-600); }
 

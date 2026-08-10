@@ -1,0 +1,6 @@
+\n
+
+Gabriel Cano atua com WordPress há 12 anos e, nos últimos anos, vem se especializando no uso de Inteligência Artificial aplicada ao desenvolvimento de software.\
+Acompanhando de perto a evolução acelerada das LLMs, mantém-se sempre atualizado e transforma as novidades do mercado em ganhos reais de produtividade para ele e seu time.
+
+\n

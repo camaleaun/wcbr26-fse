@@ -1,0 +1,5 @@
+\n
+
+Fundador da Creativez, agência com base em Portugal e no Brasil, Italo atua com WordPress, marketing digital e estratégias de crescimento. Apaixonado por tecnologia e inovação, vem explorando o uso da IA para otimizar processos e transformar a forma como marcas se comunicam online.
+
+\n

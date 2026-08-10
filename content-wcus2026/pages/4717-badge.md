@@ -1,0 +1,193 @@
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-97ca5cbf wp-block-group-is-layout-constrained" style="margin-bottom:var(--wp--preset--spacing--50)">
+
+## Heading to WordCamp US 2026? Show it off!
+
+Add your photo and brand, then use them on your site, blog, or social channels.
+
+Tag us [@WordCampUS](https://x.com/WordCampUS) and use [\#WCUS](https://x.com/search?q=%23WCUS) to connect with the community, and link back to <a href="http://us.wordcamp.org/" target="_blank" rel="noopener">us.wordcamp.org</a> to help spread the word.
+
+### Make your own badge
+
+Click a badge to upload your photo and download your badge.
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3a88641f wp-block-columns-is-layout-flex">
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+
+<figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+<a href="https://wc-us.org/interactive-sponsor-badge/" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/proud-sponsor-wcus.png" class="wp-image-4728" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/proud-sponsor-wcus.png 1080w, https://us.wordcamp.org/2026/files/2026/07/proud-sponsor-wcus-150x150.png 150w, https://us.wordcamp.org/2026/files/2026/07/proud-sponsor-wcus-300x300.png 300w, https://us.wordcamp.org/2026/files/2026/07/proud-sponsor-wcus-768x768.png 768w, https://us.wordcamp.org/2026/files/2026/07/proud-sponsor-wcus-1024x1024.png 1024w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1080" /></a>
+</figure>
+
+</div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+
+<figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+<a href="https://wc-us.org/interactive-speaker-badge/" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/interactive-speaker-1.png" class="wp-image-4752" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/interactive-speaker-1.png 1080w, https://us.wordcamp.org/2026/files/2026/07/interactive-speaker-1-150x150.png 150w, https://us.wordcamp.org/2026/files/2026/07/interactive-speaker-1-300x300.png 300w, https://us.wordcamp.org/2026/files/2026/07/interactive-speaker-1-768x768.png 768w, https://us.wordcamp.org/2026/files/2026/07/interactive-speaker-1-1024x1024.png 1024w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1080" /></a>
+</figure>
+
+</div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+
+<figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+<a href="https://wc-us.org/interactive-organizer-badge/" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/organizer-interactive-badge.png" class="wp-image-5514" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/organizer-interactive-badge.png 1080w, https://us.wordcamp.org/2026/files/2026/07/organizer-interactive-badge-300x300.png 300w, https://us.wordcamp.org/2026/files/2026/07/organizer-interactive-badge-1024x1024.png 1024w, https://us.wordcamp.org/2026/files/2026/07/organizer-interactive-badge-150x150.png 150w, https://us.wordcamp.org/2026/files/2026/07/organizer-interactive-badge-768x768.png 768w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1080" /></a>
+</figure>
+
+</div>
+
+</div>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-3a88641f wp-block-columns-is-layout-flex">
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+
+<figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+<a href="https://wc-us.org/interactive-volunteer-badge/" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/volunteer.png" class="wp-image-6418" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/volunteer.png 1080w, https://us.wordcamp.org/2026/files/2026/07/volunteer-150x150.png 150w, https://us.wordcamp.org/2026/files/2026/07/volunteer-300x300.png 300w, https://us.wordcamp.org/2026/files/2026/07/volunteer-768x768.png 768w, https://us.wordcamp.org/2026/files/2026/07/volunteer-1024x1024.png 1024w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1080" /></a>
+</figure>
+
+</div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+
+<figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+<a href="https://wc-us.org/interactive-attendee-badge/" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/attendee.png" class="wp-image-6347" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/attendee.png 1080w, https://us.wordcamp.org/2026/files/2026/07/attendee-150x150.png 150w, https://us.wordcamp.org/2026/files/2026/07/attendee-300x300.png 300w, https://us.wordcamp.org/2026/files/2026/07/attendee-768x768.png 768w, https://us.wordcamp.org/2026/files/2026/07/attendee-1024x1024.png 1024w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1080" /></a>
+</figure>
+
+</div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+
+<figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
+<a href="https://wc-us.org/interactive-table-lead-badge/" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/table-lead.png" class="wp-image-6479" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/table-lead.png 1080w, https://us.wordcamp.org/2026/files/2026/07/table-lead-150x150.png 150w, https://us.wordcamp.org/2026/files/2026/07/table-lead-300x300.png 300w, https://us.wordcamp.org/2026/files/2026/07/table-lead-768x768.png 768w, https://us.wordcamp.org/2026/files/2026/07/table-lead-1024x1024.png 1024w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1080" /></a>
+</figure>
+
+</div>
+
+</div>
+
+<div class="wp-block-spacer" style="height:56px" aria-hidden="true">
+
+</div>
+
+### Downloadable badges
+
+Ready-made badge sets, in multiple formats — download and go!
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-76970e16 wp-block-columns-is-layout-flex" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-27fb6292 wp-block-column-is-layout-constrained" style="padding-right:0;padding-left:0">
+
+<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20)">
+<a href="https://drive.google.com/file/d/12TjrLLK6SxnEgKA0NR1aLVhU8LKNZIsb/view?usp=sharing" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/Proud-Sponsor-Instagram-Post-1080x1350-1-819x1024.png" class="wp-image-5517" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/Proud-Sponsor-Instagram-Post-1080x1350-1-819x1024.png 819w, https://us.wordcamp.org/2026/files/2026/07/Proud-Sponsor-Instagram-Post-1080x1350-1-240x300.png 240w, https://us.wordcamp.org/2026/files/2026/07/Proud-Sponsor-Instagram-Post-1080x1350-1-768x960.png 768w, https://us.wordcamp.org/2026/files/2026/07/Proud-Sponsor-Instagram-Post-1080x1350-1.png 1080w" sizes="auto, (max-width: 819px) 100vw, 819px" width="819" height="1024" /></a>
+</figure>
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-2e5df860 wp-block-buttons-is-layout-flex" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+<div class="wp-block-button has-custom-width wp-block-button__width wp-block-button__width-100" style="--wp--block-button--width: 100;">
+
+<a href="https://drive.google.com/file/d/12TjrLLK6SxnEgKA0NR1aLVhU8LKNZIsb/view?usp=sharing" class="wp-block-button__link has-text-align-center wp-element-button" target="_blank" rel="noopener">Grab Your Badges</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-e676c4cb wp-block-column-is-layout-constrained" style="border-style:none;border-width:0px">
+
+<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20)">
+<a href="https://drive.google.com/file/d/1cc0QkwVZlwGZtA8AztE-KwkijyqJiFhN/view?usp=sharing" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/Im-A-Speaker-Instagram-Post-1080x1350-1-819x1024.png" class="wp-image-5519" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/Im-A-Speaker-Instagram-Post-1080x1350-1-819x1024.png 819w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Speaker-Instagram-Post-1080x1350-1-240x300.png 240w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Speaker-Instagram-Post-1080x1350-1-768x960.png 768w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Speaker-Instagram-Post-1080x1350-1.png 1080w" sizes="auto, (max-width: 819px) 100vw, 819px" width="819" height="1024" /></a>
+</figure>
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-4a849dc9 wp-block-buttons-is-layout-flex" style="padding-right:0;padding-left:0">
+
+<div class="wp-block-button has-custom-width wp-block-button__width wp-block-button__width-100" style="--wp--block-button--width: 100;">
+
+<a href="https://drive.google.com/file/d/1cc0QkwVZlwGZtA8AztE-KwkijyqJiFhN/view?usp=sharing" class="wp-block-button__link has-text-align-center wp-element-button" target="_blank" rel="noopener">Grab Your Badges</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-e676c4cb wp-block-column-is-layout-constrained" style="border-style:none;border-width:0px">
+
+<figure class="wp-block-image size-full" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20)">
+<img src="https://us.wordcamp.org/2026/files/2026/07/Im-An-Organizer-Instagram-Post-1080x1350-2.png" class="wp-image-5556" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/Im-An-Organizer-Instagram-Post-1080x1350-2.png 1080w, https://us.wordcamp.org/2026/files/2026/07/Im-An-Organizer-Instagram-Post-1080x1350-2-240x300.png 240w, https://us.wordcamp.org/2026/files/2026/07/Im-An-Organizer-Instagram-Post-1080x1350-2-768x960.png 768w, https://us.wordcamp.org/2026/files/2026/07/Im-An-Organizer-Instagram-Post-1080x1350-2-819x1024.png 819w" sizes="auto, (max-width: 1080px) 100vw, 1080px" width="1080" height="1350" />
+</figure>
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-4a849dc9 wp-block-buttons-is-layout-flex" style="padding-right:0;padding-left:0">
+
+<div class="wp-block-button has-custom-width wp-block-button__width wp-block-button__width-100" style="--wp--block-button--width: 100;">
+
+<a href="https://drive.google.com/file/d/1_-j3nIrbDTBgquT96lCSRnvoeE0zUm1y/view?usp=drive_link" class="wp-block-button__link has-text-align-center wp-element-button" target="_blank" rel="noopener">Grab Your Badges</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-6254c20d wp-block-columns-is-layout-flex" style="margin-top:var(--wp--preset--spacing--10);margin-bottom:0;padding-top:0;padding-bottom:0">
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-27fb6292 wp-block-column-is-layout-constrained" style="padding-right:0;padding-left:0">
+
+<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20)">
+<a href="https://drive.google.com/file/d/19OJKXI-1f-WZJ_WqkmcamQua6WAWgGpL/view?usp=drive_link" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/Im-A-Volunteer-Instagram-Post-1080x1350-1-819x1024.png" class="wp-image-6406" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/Im-A-Volunteer-Instagram-Post-1080x1350-1-819x1024.png 819w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Volunteer-Instagram-Post-1080x1350-1-240x300.png 240w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Volunteer-Instagram-Post-1080x1350-1-768x960.png 768w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Volunteer-Instagram-Post-1080x1350-1.png 1080w" sizes="auto, (max-width: 819px) 100vw, 819px" width="819" height="1024" /></a>
+</figure>
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-4a849dc9 wp-block-buttons-is-layout-flex" style="padding-right:0;padding-left:0">
+
+<div class="wp-block-button has-custom-width wp-block-button__width wp-block-button__width-100" style="--wp--block-button--width: 100;">
+
+<a href="https://drive.google.com/file/d/19OJKXI-1f-WZJ_WqkmcamQua6WAWgGpL/view?usp=drive_link" class="wp-block-button__link has-text-align-center wp-element-button" target="_blank" rel="noopener">Grab Your Badges</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-e676c4cb wp-block-column-is-layout-constrained" style="border-style:none;border-width:0px">
+
+<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20)">
+<a href="https://drive.google.com/file/d/1xl28gKwIMUuogIVK-96OVjR819AGIFsw/view?usp=drive_link" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/Im-An-Attendee-Instagram-Post-1080x1350-1-819x1024.png" class="wp-image-6342" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/Im-An-Attendee-Instagram-Post-1080x1350-1-819x1024.png 819w, https://us.wordcamp.org/2026/files/2026/07/Im-An-Attendee-Instagram-Post-1080x1350-1-240x300.png 240w, https://us.wordcamp.org/2026/files/2026/07/Im-An-Attendee-Instagram-Post-1080x1350-1-768x960.png 768w, https://us.wordcamp.org/2026/files/2026/07/Im-An-Attendee-Instagram-Post-1080x1350-1.png 1080w" sizes="auto, (max-width: 819px) 100vw, 819px" width="819" height="1024" /></a>
+</figure>
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-4a849dc9 wp-block-buttons-is-layout-flex" style="padding-right:0;padding-left:0">
+
+<div class="wp-block-button has-custom-width wp-block-button__width wp-block-button__width-100" style="--wp--block-button--width: 100;">
+
+<a href="https://drive.google.com/file/d/1xl28gKwIMUuogIVK-96OVjR819AGIFsw/view?usp=drive_link" class="wp-block-button__link has-text-align-center wp-element-button" target="_blank" rel="noopener">Grab Your Badges</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-column has-global-padding is-layout-constrained wp-container-core-column-is-layout-e676c4cb wp-block-column-is-layout-constrained" style="border-style:none;border-width:0px">
+
+<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20)">
+<a href="https://drive.google.com/file/d/1PbRzG6z9Hrs36jkwACD5A6rSqQpRM0HB/view?usp=drive_link" target="_blank" rel=" noopener"><img src="https://us.wordcamp.org/2026/files/2026/07/Im-A-Table-Lead-Instagram-Post-1080x1350-1-819x1024.png" class="wp-image-6481" loading="lazy" decoding="async" srcset="https://us.wordcamp.org/2026/files/2026/07/Im-A-Table-Lead-Instagram-Post-1080x1350-1-819x1024.png 819w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Table-Lead-Instagram-Post-1080x1350-1-768x960.png 768w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Table-Lead-Instagram-Post-1080x1350-1-240x300.png 240w, https://us.wordcamp.org/2026/files/2026/07/Im-A-Table-Lead-Instagram-Post-1080x1350-1.png 1080w" sizes="auto, (max-width: 819px) 100vw, 819px" width="819" height="1024" /></a>
+</figure>
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-4a849dc9 wp-block-buttons-is-layout-flex" style="padding-right:0;padding-left:0">
+
+<div class="wp-block-button has-custom-width wp-block-button__width wp-block-button__width-100" style="--wp--block-button--width: 100;">
+
+<a href="https://drive.google.com/file/d/1PbRzG6z9Hrs36jkwACD5A6rSqQpRM0HB/view?usp=drive_link" class="wp-block-button__link has-text-align-center wp-element-button" target="_blank" rel="noopener">Grab Your Badges</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>

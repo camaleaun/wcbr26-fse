@@ -1,0 +1,110 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "WordCamp Brasil 2026 — Dev",
+    "author": "camaleaun"
+  },
+  "landingPage": "/",
+  "login": true,
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "features": { "networking": true },
+  "siteOptions": {
+    "blogname": "WordCamp Brasil 2026",
+    "blogdescription": "Belo Horizonte, 30 e 31 de outubro de 2026"
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": { "resource": "wordpress.org/themes", "slug": "twentytwentyfive" },
+      "options": { "activate": true }
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/uploads/wcbr2026"
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/img"
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/styles.css",
+      "data": { "resource": "url", "url": "http://localhost:8001/styles.css" }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/header.html",
+      "data": { "resource": "url", "url": "http://localhost:8001/header.html" }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/footer.html",
+      "data": { "resource": "url", "url": "http://localhost:8001/footer.html" }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/hero.html",
+      "data": { "resource": "url", "url": "http://localhost:8001/hero.html" }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/main.js",
+      "data": { "resource": "url", "url": "http://localhost:8001/main.js" }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/setup.php",
+      "data": { "resource": "url", "url": "http://localhost:8001/setup.php" }
+    },
+    {
+      "step": "writeFiles",
+      "writeToPath": "/wordpress/wp-content/uploads/wcbr2026/img",
+      "filesTree": {
+        "resource": "git:directory",
+        "url": "https://github.com/camaleaun/wcbr26-fse",
+        "ref": "main",
+        "refType": "branch",
+        "path": "/fse/img"
+      }
+    },
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/uploads/wcbr2026/fonts"
+    },
+    {
+      "step": "writeFiles",
+      "writeToPath": "/wordpress/wp-content/uploads/wcbr2026/fonts",
+      "filesTree": {
+        "resource": "git:directory",
+        "url": "https://github.com/camaleaun/wcbr26-fse",
+        "ref": "main",
+        "refType": "branch",
+        "path": "/html-from-figma/assets/fonts"
+      }
+    },
+    {
+      "step": "writeFiles",
+      "writeToPath": "/wordpress/wp-content/uploads/wcbr2026/img",
+      "filesTree": {
+        "resource": "git:directory",
+        "url": "https://github.com/camaleaun/wcbr26-fse",
+        "ref": "main",
+        "refType": "branch",
+        "path": "/html-from-figma/assets/img"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/mu-plugins/wcbr2026.php",
+      "data": { "resource": "url", "url": "http://localhost:8001/mu-plugin.php" }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-content/uploads/wcbr2026/setup.php';"
+    },
+    {
+      "step": "setSiteLanguage",
+      "language": "pt_BR"
+    }
+  ]
+}

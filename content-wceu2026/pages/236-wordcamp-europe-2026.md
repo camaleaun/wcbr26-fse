@@ -1,0 +1,101 @@
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-9dc6db0b wp-block-group-is-layout-constrained" style="padding-top:0;padding-right:var(--wp--preset--spacing--20);padding-bottom:0;padding-left:var(--wp--preset--spacing--20)">
+
+WordCamp Europe is an informal, community-organised gathering of WordPress enthusiasts – from casual users to Core developers – where we discuss all things WordPress, share ideas and get to know each other.
+
+## But… what is WordPress?
+
+<a href="https://wordpress.org/" target="_blank" rel="noreferrer noopener">WordPress</a> is the world’s largest Content Management System, powering over 43% (April 2025) of all the sites on the web, including those of NASA, Mercedes-Benz, Sony Music, Rolling Stone Magazine and more.
+
+Not only is WordPress the world’s largest CMS, but it’s also open-source and free to use!
+
+<figure class="wp-block-image size-full" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:-20px">
+<img src="https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/nilo-velez-54572679472_2e93b03e05_k.jpg?resize=900%2C600&amp;ssl=1" class="wp-image-1993" data-recalc-dims="1" loading="lazy" decoding="async" srcset="https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/nilo-velez-54572679472_2e93b03e05_k.jpg?w=900&amp;ssl=1 900w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/nilo-velez-54572679472_2e93b03e05_k.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/nilo-velez-54572679472_2e93b03e05_k.jpg?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/nilo-velez-54572679472_2e93b03e05_k.jpg?resize=450%2C300&amp;ssl=1 450w" sizes="auto, (max-width: 900px) 100vw, 900px" width="900" height="600" />
+<figcaption>Photo by: Nilo Velez</figcaption>
+</figure>
+
+## Previous Editions
+
+Over the last few years, WordCamp Europe has been in [Porto, Portugal (2022)](https://europe.wordcamp.org/2022/), [Athens, Greece (2023)](https://europe.wordcamp.org/2023/) in [Torino, Italy (2024)](https://europe.wordcamp.org/2024), and recently in [Basel, Switzerland (2025)](https://europe.wordcamp.org/2025/). You can see what we got up to on the dedicated event websites!
+
+## What to do at WordCamp Europe
+
+There’s always a lot going on at WordCamp Europe and this year’s event will be no different. From the many talks taking place across the three days, to the chance to educate yourself by attending one of the many hands-on sessions and workshops plus networking with all the attendees.
+
+A full schedule of sessions will allow you to choose which topics interest you. Typically there will be a broad selection of subjects aimed at all levels of WordPress knowledge and experience, following the inclusivity ethos we firmly believe in. We run multiple talks at the same time and split them into ‘tracks’.
+
+In addition to the tracks of talks, you can meet our sponsors, from very large companies right through to smaller niche ones. You can meet and talk to them, take part in product demos, and chat with employees of these companies.
+
+You will also be able to meet interesting people. Networking with other attendees gives you the opportunity to get to know other members of the WordPress community. Maybe catch up with someone you’ve followed on X, chatted with in user groups, or met during a previous WordCamp. **WCEU is the ideal place to meet friends, old and new.**
+
+## An event for all levels
+
+We work hard to ensure that the sessions cater for all abilities and levels of knowledge.
+
+Every year we have people coming along who have only just started with WordPress as well as those who have been using it from the beginning.
+
+**Remember, everyone started on their WordPress journey as a newbie too!**
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex" style="margin-bottom:0">
+
+<div class="wp-block-button is-style-outline is-style-outline--45">
+
+<a href="https://europe.wordcamp.org/2026/tickets/" class="wp-block-button__link wp-element-button">Grab Your Ticket Now!</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+<div class="wp-block-spacer" style="height:40px" aria-hidden="true">
+
+</div>
+
+<figure class="wp-block-image aligncenter size-full is-resized">
+<img src="https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/heart-ornament.png?resize=1000%2C112&amp;ssl=1" class="wp-image-2684" style="width:400px" data-recalc-dims="1" loading="lazy" decoding="async" srcset="https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/heart-ornament.png?w=1000&amp;ssl=1 1000w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/heart-ornament.png?resize=300%2C34&amp;ssl=1 300w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/heart-ornament.png?resize=768%2C86&amp;ssl=1 768w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/heart-ornament.png?resize=500%2C56&amp;ssl=1 500w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1000" height="112" />
+</figure>
+
+<div class="wp-block-spacer" style="height:40px" aria-hidden="true">
+
+</div>
+
+</div>
+
+<div class="wp-block-group alignfull has-base-background-color has-background is-layout-flow wp-container-core-group-is-layout-beb4e895 wp-block-group-is-layout-flow" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--20)">
+
+<div class="wp-block-columns alignwide home-relative is-layout-flex wp-container-core-columns-is-layout-32186ffc wp-block-columns-is-layout-flex" style="margin-top:0;margin-bottom:0;padding-top:0">
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
+
+<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:-20px">
+<img src="https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?resize=1024%2C683&amp;ssl=1" class="wp-image-1986" data-recalc-dims="1" loading="lazy" decoding="async" srcset="https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?resize=450%2C300&amp;ssl=1 450w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?resize=1536%2C1025&amp;ssl=1 1536w, https://i0.wp.com/europe.wordcamp.org/2026/files/2026/01/paco-marchante-54569231333_dde710f458_k.jpg?w=2048&amp;ssl=1 2048w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1024" height="683" />
+<figcaption>Photo by: Paco Marchante</figcaption>
+</figure>
+
+</div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-container-core-column-is-layout-9379429a wp-block-column-is-layout-flow" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20);flex-basis:40%">
+
+## How to contribute
+
+In addition to the conference, there will be a chance to contribute at the Contributor Day. A special event bringing together new and experienced community members to explore the various ways to get involved in the WordPress project.
+
+**Contributor Day is for everyone! All skills and levels of experience are welcome and needed.**
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+
+<div class="wp-block-button">
+
+<a href="https://europe.wordcamp.org/2026/community/contributor-day/" class="wp-block-button__link wp-element-button">Discover Contributor Day</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>

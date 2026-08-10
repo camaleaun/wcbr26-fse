@@ -1,0 +1,115 @@
+## WordCamp Asia 2026 Official Hotels Booking
+
+We have secured room blocks at two hotels within walking distance to the Jio World Convention Centre. Rooms fill up quickly, so we suggest booking as soon as possible.
+
+- **You may confirm your stay by clicking the link corresponding to your chosen room rate, choosing single or double occupancy. Your confirmation number will be provided for you shortly after your booking.**
+- The **rates for both hotels are per night**, with peak nights being **April 8-12**. <span style="text-decoration: underline">We don’t have the same capacities for earlier or later days.</span>
+- **If you are booking for multiple nights, please ensure to increase the quantity on the stripe link to the correct number of nights**\
+- Check-in is from 1500hrs – 1700hrs (3:00pm-5:00pm IST).
+- Check-out is at 1200hr (12:00pm IST).
+- All rooms include breakfast.
+- We have a variety of rooms available at both hotels. Rates are listed below:
+
+## Trident
+
+**Address**: **TRIDENT**, Bandra Kurla Complex, C 56, G Block BKC, Bandra East, Mumbai, Maharashtra 400098, India (7 minute walk to the Jio World Convention Center).
+
+<figure class="wp-block-image size-full">
+<a href="https://www.tridenthotels.com/hotels-in-mumbai-bandra-kurla/?utm_source=GMBlisting&amp;utm_medium=organic"><img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?resize=1024%2C663&amp;ssl=1" class="wp-image-7670" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="7670" data-permalink="https://asia.wordcamp.org/2026/official-hotels/image-27/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?fit=1024%2C663&amp;ssl=1" data-orig-size="1024,663" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?fit=1024%2C663&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?resize=300%2C194&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?resize=768%2C497&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-3.png?resize=463%2C300&amp;ssl=1 463w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1024" height="663" /></a>
+</figure>
+
+<figure class="wp-block-table is-style-regular">
+<table class="has-fixed-layout">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th class="has-text-align-left" data-align="left"><strong>Room Type</strong></th>
+<th class="has-text-align-center" data-align="center"><strong>Single Occupancy Price Per Night</strong></th>
+<th class="has-text-align-center" data-align="center"><strong>Double Occupancy Price Per Night</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="has-text-align-left" data-align="left">Deluxe Room<br />
+</td>
+<td class="has-text-align-center" data-align="center">INR 21,050 + 18% GST</td>
+<td class="has-text-align-center" data-align="center">INR 22,050 + 18% GST </td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">Pool View Room<br />
+</td>
+<td class="has-text-align-center" data-align="center">INR 23,550 + 18% GST</td>
+<td class="has-text-align-center" data-align="center">INR 24,550 + 18% GST</td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">Premier Room<br />
+</td>
+<td class="has-text-align-center" data-align="center">INR 24,550 + 18% GST</td>
+<td class="has-text-align-center" data-align="center">INR 25,550 + 18% GST</td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">Trident Club Room<br />
+</td>
+<td class="has-text-align-center" data-align="center">INR 28,550 + 18% GST</td>
+<td class="has-text-align-center" data-align="center">INR 28,550 + 18% GST</td>
+</tr>
+</tbody>
+</table>
+</figure>
+
+------------------------------------------------------------------------
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+## Sofitel
+
+**Address**: **SOFITEL**, Bandra-Kurla Complex, C 57, G Block BKC, Bandra East, Mumbai, Maharashtra 400098, India (8 minute walk to the Jio World Convention Center).
+
+<figure class="wp-block-image size-large">
+<a href="https://all.accor.com/booking/en/accor/hotel/6451?dateIn=2026-03-22&amp;nights=1&amp;compositions=2&amp;stayplus=false&amp;snu=false&amp;accessibleRooms=false&amp;hideWDR=true&amp;productCode=null&amp;hideHotelDetails=true&amp;gclid=CjwKCAiAybfLBhAjEiwAI0mBBoLjRNKGBZWYy0uvsFHv6b065GnbI8HvWonYu7aqwfZkRPOx-bGiThoCHwUQAvD_BwE&amp;utm_campaign=6451-US-cpc-desktop-default-0--mapresults-20593933908-0-0-1&amp;utm_medium=partenariats&amp;hmGUID=35758fab-a8b7-495a-8b37-75c71a441ef7&amp;utm_source=Google+Hotel+Ads"><img src="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2.png?resize=1024%2C450&amp;ssl=1" class="wp-image-7668" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="7668" data-permalink="https://asia.wordcamp.org/2026/official-hotels/image-26/" data-orig-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?fit=2560%2C1124&amp;ssl=1" data-orig-size="2560,1124" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?fit=1024%2C450&amp;ssl=1" srcset="https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?resize=1024%2C450&amp;ssl=1 1024w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?resize=300%2C132&amp;ssl=1 300w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?resize=768%2C337&amp;ssl=1 768w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?resize=500%2C219&amp;ssl=1 500w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?resize=1536%2C674&amp;ssl=1 1536w, https://i0.wp.com/asia.wordcamp.org/2026/files/2026/02/image-2-scaled.png?resize=2048%2C899&amp;ssl=1 2048w" sizes="auto, (max-width: 1000px) 100vw, 1000px" width="1024" height="450" /></a>
+</figure>
+
+</div>
+
+<figure class="wp-block-table">
+<table class="has-fixed-layout">
+<thead>
+<tr>
+<th><strong>Room Type</strong></th>
+<th><strong>Single Occupancy Price Per Night</strong></th>
+<th><strong>Double Occupancy Price Per Night</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Luxury Room</td>
+<td>INR 26,000 + 18% GST</td>
+<td>INR 27,500 + 18% GST </td>
+</tr>
+<tr>
+<td>Club Room</td>
+<td>INR 32,000 + 18% GST</td>
+<td>INR 33,500 + 18% GST </td>
+</tr>
+<tr>
+<td>Junior Suite</td>
+<td>INR 42,000 + 18% GST</td>
+<td>INR 43,500 + 18% GST</td>
+</tr>
+<tr>
+<td>Opera Suite</td>
+<td>INR 52,000 + 18% GST (Sold Out)</td>
+<td>INR 53,500 + 18% GST (Sold Out)</td>
+</tr>
+<tr>
+<td>Prestige Suite</td>
+<td>INR 62,000 + 18% GST (Sold Out)</td>
+<td>INR 63,500 + 18% GST (Sold Out)</td>
+</tr>
+</tbody>
+</table>
+</figure>

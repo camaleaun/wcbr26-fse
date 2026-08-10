@@ -12,3 +12,44 @@ node_modules/
 
 # Dumps de export (Figma/localhost)
 localhost_*.json
+
+# WordPress: core stock ignorado, wp-content rastreado por padrão para
+# capturar plugins/temas customizados adicionados depois — só o que é
+# stock/default fica de fora explicitamente.
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/wp-*.php
+wordpress/index.php
+wordpress/license.txt
+wordpress/readme.html
+wordpress/xmlrpc.php
+
+wordpress/wp-content/languages/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
+
+# Temas/plugins default do core (stock, recriáveis)
+wordpress/wp-content/themes/twentytwentytwo/
+wordpress/wp-content/themes/twentytwentythree/
+wordpress/wp-content/themes/twentytwentyfour/
+wordpress/wp-content/themes/twentytwentyfive/
+wordpress/wp-content/plugins/akismet/
+wordpress/wp-content/plugins/hello.php
+
+# Repo git próprio (Bootstrap theme) — não é submodule deste repo
+html-to-bs/
+
+# Screenshots de comparação/QA (recriáveis via ferramentas de dev)
+screenshots/
+/html-desktop.png
+/html-mobile.png
+/wp-desktop.png
+/wp-mobile.png
+/playground-preview*.png
+
+# Certificados locais mkcert (regeneráveis, chave privada)
+.serve/certs/
+
+# Estado/cache dos scripts de download (regenerável)
+content-*/.state-*.tsv

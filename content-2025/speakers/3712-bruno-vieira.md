@@ -1,0 +1,5 @@
+\n
+
+Profissional com mais de 12 anos de experiência na construção de parcerias estratégicas, desenvolvimento de canais e implementação de modelos de vendas de soluções para o mercado de hospedagem, e-commerce e serviços digitais. Ao longo da carreira, atuei na interseção entre produto, vendas e alianças, ajudando empresas a escalar negócios através de ecossistemas de parceiros, marketplaces e canais indiretos.
+
+\n

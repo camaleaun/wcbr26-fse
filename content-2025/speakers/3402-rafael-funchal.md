@@ -1,0 +1,13 @@
+\n
+
+Rafael Funchal é Happiness Engineer na Automattic/WordPress.com há 10 anos e desenvolve com WordPress desde 2009.
+
+\n\n\n\n
+
+​Foi organizador de WordCamps e meetups em São Paulo (2013-2019) e palestrante, hoje ajuda a comunidade com traduções.
+
+\n\n\n\n
+
+​É desenvolvedor Back End e Front End com mais de 20 anos de experiência em projetos web (sites, e-commerces, blogs, SEO, etc.), com passagem por editoras, agências e startups.
+
+\n

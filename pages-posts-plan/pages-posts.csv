@@ -1,0 +1,46 @@
+tipo,objetivo,slug_en,titulo_en,slug_pt_2025,titulo_pt_2025,slug_wceu_2026,slug_wcus_2026,slug_2026,titulo_2026,tipo_2026,status,incluir,responsavel,data,notas
+page,agenda,schedule,Schedule,programacao,Programação,schedule,schedule,agenda,Agenda,page,publish,sim,,,
+page,sessões,sessions,Sessions,,,sessions,sessions,sessoes,Sessões,page,publish,sim,,,
+page,palestrantes,speakers,Speakers,palestrantes,Palestrantes,speakers,speakers,,,page,publish,sim,,,
+page,patrocinadores,sponsors,Sponsors,patrocinadores,Patrocinadores,sponsors,sponsors,,,page,publish,sim,,,
+page,localização,location,Location,local,Localização,location,venue,,,page,publish,sim,,,
+page,organização,organizers,Organizers,organizacao,Organização,organisers,organizers,,,page,publish,sim,,,
+page,contato,contact,Contact,contato,Contato,contact,contact,,,page,publish,sim,,,
+page,código de conduta,code-of-conduct,Code of Conduct,codigo-conduta,Código de conduta,code-of-conduct,code-of-conduct,,,page,publish,sim,,,
+page,ingressos,tickets,Tickets,ingressos,Ingressos,tickets,tickets,,,page,draft,sim,,,
+page,participantes,attendees,Attendees,participantes,Participantes,attendees,attendees,,,page,draft,sim,,,
+page,dia do evento,day-of-event,Day Of Event,,,,,,,page,draft,avaliar,,,sem ref WCEU/WCUS
+page,vídeos,videos,Videos,,,,,,,page,draft,avaliar,,,sem ref WCEU/WCUS
+page,slideshow,slideshow,Slideshow,,,,,,,page,draft,avaliar,,,sem ref WCEU/WCUS
+post,bem-vindo,welcome-to-wordcamp-brasil-2026,Welcome to WordCamp Brasil 2026,inicio,WordCamp Brasil 2025,,,,,post,publish,sim,,,
+post,chamada palestrantes,call-for-speakers,Call for Speakers,seja-palestrante,Seja palestrante no WordCamp Brasil 2025,post,page,,,,draft,sim,,,decidir: page ou post?
+post,chamada patrocinadores,call-for-sponsors,Call for Sponsors,seja-patrocinador,Seja um patrocinador,post,page,,,,draft,sim,,,decidir: page ou post?
+post,chamada voluntários,call-for-volunteers,Call for Volunteers,chamada-voluntarios,Chamada para voluntários,post,page,,,,draft,sim,,,decidir: page ou post?
+post,agradecimento patrocinadores,thank-you-to-our-gold-sponsors,Thank you to our Gold sponsors,,,post,post,,,post,draft,sim,,,
+page,dia da colaboração,contributor-day,Contributor Day,,,contributor-day,contributor-day,,,page,draft,sim,,,
+page,notícias / blog,blog,Blog / News,noticias,Notícias,blog,news,,,page,publish,sim,,,BR2025=noticias
+page,informações de viagem,travel-information,Travel Information,,,travel-information,travel-accommodation,,,page,draft,sim,,,
+page,assinar novidades,subscribe-for-updates,Subscribe for Updates,,,newsletter,subscribe-for-updates,,,page,draft,sim,,,
+page,funções de voluntário,volunteer-roles,Volunteer Roles,,,volunteer-roles,,,,page,draft,avaliar,,,
+page,o que esperar,what-to-expect,What to Expect,,,what-to-expect,,,,page,draft,avaliar,,,guia para primeira vez
+page,eventos paralelos,side-events,Side Events,,,side-events,,,,page,draft,avaliar,,,
+page,crachás,badges,Badges,,,badges,badge,,,page,draft,avaliar,,,
+page,mapa do local,map,Venue Map,,,map,,,,page,draft,avaliar,,,
+page,palestrantes por cat.,speaker-by-category,Speaker by Category,,,speaker-by-category,,,,page,draft,avaliar,,,
+page,imprensa,press,Press,,,press,,,,page,draft,nao,,,
+page,parceiros de mídia,media-partners,Media Partners,,,media-partners,,,,page,draft,nao,,,
+page,micro-patrocinadores,microsponsors,Microsponsors,,,microsponsors,,,,page,draft,nao,,,
+page,reembolso de ingresso,ticket-refunds,Ticket Refunds,,,ticket-refunds,,,,page,draft,nao,,,
+page,divulgue,spread-the-word,Spread the Word,,,spread-the-word,,,,page,draft,nao,,,
+page,stand comunidade WP,wordpress-community-booth,WordPress Community Booth,,,wordpress-community-booth,,,,page,draft,nao,,,específico WCEU
+page,conta WordPress.org,wordpress-org-account,WordPress.org Account,,,wordpress-org-account,,,,page,draft,nao,,,específico WCEU
+page,inscrição workshops,workshop-registration,Workshop Registration,,,workshop-registration,,,,page,draft,nao,,,específico WCEU
+page,contato equipe palest.,contact-our-speakers-team,Contact Speakers Team,,,contact-our-speakers-team,,,,page,draft,nao,,,específico WCEU
+page,compromisso organiz.,organisers-pledge,Organiser's Pledge,,,organisers-pledge,,,,page,draft,nao,,,
+page,chamada organizadores,call-for-organizers,Call for Organizers,,,,call-for-organizers,,,page,draft,nao,,,específico WCUS
+page,responsab. da equipe,squad-responsibilities,Squad Responsibilities,,,,squad-responsibilities,,,page,draft,nao,,,específico WCUS
+page,sobre o evento,about,About,wordcamp-o-evento,WordCamp – O Evento,,about,,,page,publish,sim,,,BR2025=wordcamp-o-evento
+page,privacidade,privacy-policy,Privacy Policy,privacidade,Política de Privacidade,,,,,page,publish,sim,,,
+page,chamada parceiros mídia,call-for-media-partners,Call for Media Partners,,,call-for-media-partners,,,,page,draft,nao,,,específico WCEU
+page,chamadas abertas,open-calls,Open Calls,,,open-calls,,,,page,draft,nao,,,específico WCEU
+page,podcast,podcast,Podcast,,,podcast,,,,page,draft,nao,,,específico WCEU

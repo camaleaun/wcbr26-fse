@@ -118,6 +118,49 @@ function wcbr_process_content( $content, $uploads_base, $url_map ) {
 	return str_replace( '/wp-content/uploads/wcbr2026/', $uploads_base, $content );
 }
 
+// ── 0.5. Site Logo ────────────────────────────────────────────────────────────
+
+if ( ! empty( $attach_id_map['logo'] ) ) {
+	set_theme_mod( 'custom_logo', $attach_id_map['logo'] );
+}
+
+// ── 0.6. Navigation Menu ──────────────────────────────────────────────────────
+
+$nav_blocks = <<<'NAVBLOCKS'
+<!-- wp:navigation-submenu {"label":"Evento","url":"#","opensInNewTab":false} -->
+<!-- wp:navigation-link {"label":"Local","url":"/local/"} /-->
+<!-- wp:navigation-link {"label":"Organizadores","url":"/organizadores/"} /-->
+<!-- wp:navigation-link {"label":"Código de Conduta","url":"/codigo-de-conduta/"} /-->
+<!-- wp:navigation-link {"label":"Contato","url":"/contato/"} /-->
+<!-- /wp:navigation-submenu -->
+<!-- wp:navigation-link {"label":"Agenda","url":"/agenda/"} /-->
+<!-- wp:navigation-submenu {"label":"Chamadas","url":"#","opensInNewTab":false} -->
+<!-- wp:navigation-link {"label":"Chamada para Palestrantes","url":"/chamada-para-palestrantes/"} /-->
+<!-- wp:navigation-link {"label":"Chamada para Patrocinadores","url":"/chamada-para-patrocinadores/"} /-->
+<!-- wp:navigation-link {"label":"Chamada para Voluntários","url":"/chamada-para-voluntarios/"} /-->
+<!-- /wp:navigation-submenu -->
+<!-- wp:navigation-link {"label":"Notícias","url":"/noticias/"} /-->
+NAVBLOCKS;
+
+$existing_nav = get_posts( [
+	'post_type'      => 'wp_navigation',
+	'name'           => 'menu-principal',
+	'posts_per_page' => 1,
+] );
+
+if ( $existing_nav ) {
+	$nav_id = $existing_nav[0]->ID;
+	wp_update_post( [ 'ID' => $nav_id, 'post_content' => wp_slash( $nav_blocks ) ] );
+} else {
+	$nav_id = wp_insert_post( [
+		'post_type'    => 'wp_navigation',
+		'post_title'   => 'Menu Principal',
+		'post_name'    => 'menu-principal',
+		'post_status'  => 'publish',
+		'post_content' => wp_slash( $nav_blocks ),
+	] );
+}
+
 // ── 1. Template Parts ────────────────────────────────────────────────────────
 
 $parts = [
@@ -132,6 +175,13 @@ foreach ( $parts as $slug => $meta ) {
 	}
 
 	$content = wcbr_process_content( file_get_contents( $file ), $uploads_base, $url_map );
+
+	if ( $slug === 'header' && ! empty( $nav_id ) ) {
+		$content = str_replace( '"ref":0', '"ref":' . intval( $nav_id ), $content );
+	}
+
+	// wp_insert_post/wp_update_post chamam wp_unslash() — wp_slash() compensa.
+	$content = wp_slash( $content );
 
 	$existing = get_posts( [
 		'post_type'      => 'wp_template_part',
@@ -186,6 +236,7 @@ $palette = [
 	[ 'color' => '#4a5654', 'name' => 'Gray 700',   'slug' => 'gray-700'   ],
 	[ 'color' => '#ffb4a3', 'name' => 'Red 200',    'slug' => 'red-200'    ],
 	[ 'color' => '#ffffff', 'name' => 'White',      'slug' => 'white'      ],
+	[ 'color' => '#ffffff00', 'name' => 'Transparent', 'slug' => 'transparent' ],
 ];
 
 $ff_head = '"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
@@ -234,6 +285,7 @@ $gs_content = wp_json_encode( [
 		'typography' => [
 			'fontFamily'    => 'var:preset|font-family|montserrat',
 			'fontSize'      => 'var:preset|font-size|medium',
+			'fontWeight'    => '400',
 			'lineHeight'    => '1.5',
 			'letterSpacing' => '0',
 		],
@@ -273,7 +325,7 @@ $gs_content = wp_json_encode( [
 					'textTransform' => 'uppercase',
 				],
 				'spacing'    => [
-					'padding' => [ 'top' => '1rem', 'bottom' => '1rem', 'left' => '2rem', 'right' => '2rem' ],
+					'padding' => [ 'top' => '0.375rem', 'bottom' => '0.375rem', 'left' => '0.75rem', 'right' => '0.75rem' ],
 				],
 			],
 			'core/paragraph' => [
@@ -332,25 +384,28 @@ if ( $query->have_posts() ) {
 $hero_file    = $uploads_dir . 'hero.html';
 $hero_content = file_exists( $hero_file ) ? file_get_contents( $hero_file ) : '';
 $hero_content = wcbr_process_content( $hero_content, $uploads_base, $url_map );
+// wp_insert_post/wp_update_post chamam wp_unslash() — wp_slash() compensa.
+$hero_content = wp_slash( $hero_content );
 
-$existing_page = get_posts( [
-	'post_type'   => 'page',
-	'post_name'   => 'inicio',
-	'post_status' => 'publish',
-	'numberposts' => 1,
-] );
+// Remove Sample Page para não confundir com a página inicial.
+$sample = get_page_by_path( 'sample-page', OBJECT, 'page' );
+if ( $sample ) {
+	wp_delete_post( $sample->ID, true );
+}
+
+$existing_page = get_page_by_path( 'home', OBJECT, 'page' );
 
 if ( $existing_page ) {
 	wp_update_post( [
-		'ID'           => $existing_page[0]->ID,
+		'ID'           => $existing_page->ID,
 		'post_content' => $hero_content,
 	] );
-	$page_id = $existing_page[0]->ID;
+	$page_id = $existing_page->ID;
 } else {
 	$page_id = wp_insert_post( [
 		'post_type'    => 'page',
-		'post_title'   => 'Início',
-		'post_name'    => 'inicio',
+		'post_title'   => 'Inicial',
+		'post_name'    => 'home',
 		'post_status'  => 'publish',
 		'post_content' => $hero_content,
 	] );

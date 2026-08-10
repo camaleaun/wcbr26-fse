@@ -1,0 +1,5 @@
+\n
+
+Estudante de Nutrição na UERJ e estagiária em terapia nutricional em home care. Me interesso por temas que envolvem o mundo digital, especialmente comunicação, tecnologia e criação de conteúdo
+
+\n

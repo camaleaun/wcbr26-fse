@@ -1,0 +1,20 @@
+{
+	auto_https off
+	admin off
+}
+https://localhost:8443 {
+	root * /srv
+	encode zstd gzip
+	# imagens e fontes: conteúdo estável → cache longo
+	@immutable path /assets/img/* /assets/fonts/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+	# css/js mudam durante o desenvolvimento (nome de arquivo fixo) → sempre revalidar
+	@revalidate path /assets/css/* /assets/js/*
+	header @revalidate Cache-Control "no-cache"
+	@html {
+		path *.html /
+	}
+	header @html Cache-Control "no-cache"
+	tls /certs/localhost.pem /certs/localhost-key.pem
+	file_server
+}

@@ -1,0 +1,5 @@
+\n
+
+A palestra irá exemplificar e explicar como utilizar agentes de IA para criar blocos personalizados do WordPress de uma forma simples e prática, dando ferramentas para acelerar o desenvolvimento e também possibilitar pessoas menos técnicas de criarem blocos personalizados.
+
+\n

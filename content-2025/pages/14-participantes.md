@@ -1,0 +1,985 @@
+\n
+
+<div class="wp-block-group alignfull is-style-section-1 has-global-padding is-layout-constrained wp-container-core-group-is-layout-04834cbf wp-block-group-is-layout-constrained is-style-section-1--34">
+
+\n
+
+Aqui você pode conferir quem se inscreveu no evento e autorizou que sua presença seja exibida nesta página:
+
+\n\n\n\n
+
+<div class="wp-block-spacer" style="height:30px" aria-hidden="true">
+
+</div>
+
+\n\n\n\n
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+
+\t\t
+
+<div id="tix-attendees">
+
+\n\t\t\t
+
+- \n\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/a67a4886a5c217c77bfa3cd1561ed558513a7081aaa908ceb70fe33e7e6cc44b?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a67a4886a5c217c77bfa3cd1561ed558513a7081aaa908ceb70fe33e7e6cc44b?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Alessandra</span> <span class="tix-last">MArzano</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.kowy.xom.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">kowy.xom.br</a>
+- <img src="https://secure.gravatar.com/avatar/51e6ff3a29a161d8986c5f13d730edaf5c2397ddb57f6cbe8d6da7ff23418f15?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/51e6ff3a29a161d8986c5f13d730edaf5c2397ddb57f6cbe8d6da7ff23418f15?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Alicia</span> <span class="tix-last">Clayton</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://tmrkeyboard.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">tmrkeyboard.com</a>
+- <img src="https://secure.gravatar.com/avatar/5db7400dda2c6ce676b279c2e00234bf0e83203b461bf15e82613e1c6c4e0b79?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/5db7400dda2c6ce676b279c2e00234bf0e83203b461bf15e82613e1c6c4e0b79?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Aline</span> <span class="tix-last">Alves</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://kangaroo.host" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">kangaroo.host</a><a href="http://–" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">–</a>
+- <img src="https://secure.gravatar.com/avatar/0a9ff166e5035fc1811d81b2a6b7ab5f207eb16775dc7ab4b517bc03b1356883?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/0a9ff166e5035fc1811d81b2a6b7ab5f207eb16775dc7ab4b517bc03b1356883?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Álvaro</span> <span class="tix-last">Miguez Alves Fusco de Oliveira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://aprendamusica.opus3ensinomusical.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">aprendamusica.opus3ensinomusical.com.br</a>
+- <img src="https://secure.gravatar.com/avatar/a262ac5d912dbbb8c1f145ad3342cc6b53a3c37db6fda9f097361859a0468cc5?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a262ac5d912dbbb8c1f145ad3342cc6b53a3c37db6fda9f097361859a0468cc5?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Amanda</span> <span class="tix-last">Cardoso</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://amandacardoso.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">amandacardoso.com</a><a href="https://www.linkedin.com/in/amandacodb/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/amandacodb</a>
+- <img src="https://secure.gravatar.com/avatar/6f21f7c8b8d305541fa978089220979e69eeceec2610196f9407f7e61e486347?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/6f21f7c8b8d305541fa978089220979e69eeceec2610196f9407f7e61e486347?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Amanda</span> <span class="tix-last">Noronha Araujo</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/amandanoronha/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/amandanoronha</a><a href="https://www.linkedin.com/in/noronhamandy/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/noronhamandy</a>
+- <img src="https://secure.gravatar.com/avatar/df110f9643c65b260d6f8621e3f2d5571f50cc68bc2cc4afd20e44c77f566ddd?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/df110f9643c65b260d6f8621e3f2d5571f50cc68bc2cc4afd20e44c77f566ddd?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Anápuàka M.</span> <span class="tix-last">Tupinambá Hãhãhãe</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://radioyande.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">radioyande.com</a><a href="https://bloguedoanapuaka.wordpress.com/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">bloguedoanapuaka.wordpress.com</a><a href="https://www.linkedin.com/in/anapuakatupinamba/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/anapuakatupinamba</a>
+- <img src="https://secure.gravatar.com/avatar/0249ab70e9815dd08b4f2ffc8bf8cab9a974339d7cb37f5024ae6b7048d00b9d?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/0249ab70e9815dd08b4f2ffc8bf8cab9a974339d7cb37f5024ae6b7048d00b9d?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">André</span> <span class="tix-last">Ranulfo</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/andreranulfo/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/andreranulfo</a><a href="https://www.linkedin.com/in/andre-ranulfo/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/andre-ranulfo</a>
+- <img src="https://secure.gravatar.com/avatar/706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Andre</span> <span class="tix-last">Ribeiro</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://andreribeiro.dev" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">andreribeiro.dev</a><a href="https://profiles.wordpress.org/andr3ribeiro/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/andr3ribeiro</a><a href="https://www.linkedin.com/in/andr3ribeiro/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/andr3ribeiro</a>
+- <img src="https://secure.gravatar.com/avatar/23caa29c61cf5eb3f7410b9fb56d282be8791725987971d8bc688e107ad7454a?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/23caa29c61cf5eb3f7410b9fb56d282be8791725987971d8bc688e107ad7454a?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Anna Clara</span> <span class="tix-last">Adami</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.colectadigital.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">colectadigital.com.br</a><a href="https://profiles.wordpress.org/annaclaraadami" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/annaclaraadami</a><a href="https://www.linkedin.com/in/anna-clara-adami/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/anna-clara-adami</a>
+- <img src="https://secure.gravatar.com/avatar/dfc33b423d47d02de9afa8cc0f9e02021191205dc88eee186ecb1f4b203c1a8f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/dfc33b423d47d02de9afa8cc0f9e02021191205dc88eee186ecb1f4b203c1a8f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Antônio</span> <span class="tix-last">Silva Daniel</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://staycloud.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">staycloud.com.br</a><a href="https://www.linkedin.com/in/antoniodanieltf/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/antoniodanieltf</a>
+- <img src="https://secure.gravatar.com/avatar/ef5da25bdeea45e76d4e1fd0514869d8a6c1b15e1d5abfa066de1b0c9309eae6?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/ef5da25bdeea45e76d4e1fd0514869d8a6c1b15e1d5abfa066de1b0c9309eae6?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Aras</span> <span class="tix-last">Kocaoglan</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://tr.linkedin.com/in/araskocaoglan" class="tix-field tix-attendee-url tix-perfil-no-linkedin">tr.linkedin.com/in/araskocaoglan</a>
+- <img src="https://secure.gravatar.com/avatar/5d0474b81280152f281becb8ffa7f307356bb96029e7072cb1b357121c32fa7f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/5d0474b81280152f281becb8ffa7f307356bb96029e7072cb1b357121c32fa7f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Arielle</span> <span class="tix-last">Lucca</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/ariellelucca/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/ariellelucca</a><a href="https://www.linkedin.com/in/arielle-lucca/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/arielle-lucca</a>
+- <img src="https://secure.gravatar.com/avatar/f1285384e884089005f627ee1cea4bb866186cd5c55134b0283f8a35e9dfc482?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/f1285384e884089005f627ee1cea4bb866186cd5c55134b0283f8a35e9dfc482?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Beatriz</span> <span class="tix-last">De Carvalho Francisconi</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/d5db0cf4c28a2301cfaa2c215242906fcae87bc265c27a452207f1703e383197?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d5db0cf4c28a2301cfaa2c215242906fcae87bc265c27a452207f1703e383197?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Breno</span> <span class="tix-last">Alves</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/brenoalvs/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">linkedin.com/in/brenoalvs</a><a href="https://profiles.wordpress.org/breno-alves/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/breno-alves</a><a href="https://www.linkedin.com/in/brenoalvs/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/brenoalvs</a>
+- <img src="https://secure.gravatar.com/avatar/38054d002fb08f88a73d7882bc5a80c5dc55c9206dd28b4afe56abc85ee8eb1b?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/38054d002fb08f88a73d7882bc5a80c5dc55c9206dd28b4afe56abc85ee8eb1b?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Bruno</span> <span class="tix-last">Vieira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/bvieira27/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/bvieira27</a><a href="https://www.linkedin.com/in/bruno-ivan-vieira/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/bruno-ivan-vieira</a>
+- <img src="https://secure.gravatar.com/avatar/f67eef48b8d92c6cffa018fd8d93aff749f0fe5934e05d97f43550c2994178f4?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/f67eef48b8d92c6cffa018fd8d93aff749f0fe5934e05d97f43550c2994178f4?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Caio</span> <span class="tix-last">Barilli</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/caio-barilli/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/caio-barilli</a>
+- <img src="https://secure.gravatar.com/avatar/dc4537c616e5a70db3933301c9cada1b538625282da279c54b4a07bb53d55e1c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/dc4537c616e5a70db3933301c9cada1b538625282da279c54b4a07bb53d55e1c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Caio</span> <span class="tix-last">Ferreira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://caiohferreira.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">caiohferreira.com.br</a><a href="https://profiles.wordpress.org/caiohferreiradev/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/caiohferreiradev</a><a href="https://www.linkedin.com/in/caio-henrique-azevedo-ferreira/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/caio-henrique-azevedo-ferreira</a>
+- <img src="https://secure.gravatar.com/avatar/b6f034e65200fba6b3624aa66c04f48e7b15de277b92c390323c28c0791daed9?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/b6f034e65200fba6b3624aa66c04f48e7b15de277b92c390323c28c0791daed9?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Camila</span> <span class="tix-last">Brandão Dias</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/camibr/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/camibr</a>
+- <img src="https://secure.gravatar.com/avatar/d79619cdd52e87d709b14e5a49d5c20aa3107589d1b1c90064d050d8d56108e3?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d79619cdd52e87d709b14e5a49d5c20aa3107589d1b1c90064d050d8d56108e3?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Carlos</span> <span class="tix-last">Accioly</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/caccioly/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/caccioly</a><a href="https://www.linkedin.com/in/caccioly/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/caccioly</a>
+- <img src="https://secure.gravatar.com/avatar/8f2ea60e741ffffb2a3ce41fc61afcfa4beb82be9532108397e18c421cddb864?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/8f2ea60e741ffffb2a3ce41fc61afcfa4beb82be9532108397e18c421cddb864?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Carlos</span> <span class="tix-last">Ferreira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.campograndedigital.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">campograndedigital.com.br</a><a href="https://profiles.wordpress.org/cgdigital" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/cgdigital</a>
+- <img src="https://secure.gravatar.com/avatar/447a7d5a16e03ece236bd1a78cbe8a01acd983475effee7ee4765d10f65f4bbb?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/447a7d5a16e03ece236bd1a78cbe8a01acd983475effee7ee4765d10f65f4bbb?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Christian</span> <span class="tix-last">H. Mendes</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://oversize.cc/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">oversize.cc</a><a href="https://profiles.wordpress.org/christianmendes/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/christianmendes</a><a href="https://www.linkedin.com/in/christianmendes" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/christianmendes</a>
+- <img src="https://secure.gravatar.com/avatar/28c5f3cff8b39f99dd482db0bed1a36db4d9b0f2d471f477d68685dcbabf0683?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/28c5f3cff8b39f99dd482db0bed1a36db4d9b0f2d471f477d68685dcbabf0683?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Christian</span> <span class="tix-last">van ‘t Hof</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://brightsol.nl" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">brightsol.nl</a><a href="https://profiles.wordpress.org/brightsol" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/brightsol</a><a href="https://www.linkedin.com/in/christianvanthof" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/christianvanthof</a>
+- <img src="https://secure.gravatar.com/avatar/17b64cbe17098ca63a72927a4d779fae739d36650d85599c6e863c795a240098?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/17b64cbe17098ca63a72927a4d779fae739d36650d85599c6e863c795a240098?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Cristiano</span> <span class="tix-last">Santos</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://kamus.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">kamus.com.br</a><a href="https://profiles.wordpress.org/cristianoweb" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/cristianoweb</a><a href="https://www.linkedin.com/in/cristianoweb" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/cristianoweb</a>
+- <img src="https://secure.gravatar.com/avatar/46d7f6c50c44d6a8238270c87b239b570ac5c0d06700adbc15fa5ed155afb558?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/46d7f6c50c44d6a8238270c87b239b570ac5c0d06700adbc15fa5ed155afb558?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Cristina</span> <span class="tix-last">Dissat</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://cristinadissat.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">cristinadissat.com</a><a href="https://www.linkedin.com/in/cristinadissat/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/cristinadissat</a>
+- <img src="https://secure.gravatar.com/avatar/ec7b212302891cf31f8494c1004e990dde281b6901f996728c481bf1854ef167?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/ec7b212302891cf31f8494c1004e990dde281b6901f996728c481bf1854ef167?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Dafiny</span> <span class="tix-last">Silva</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://linkedin.com/in/dafiny-silva" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/dafiny-silva</a>
+- <img src="https://secure.gravatar.com/avatar/4fb133bfc5a336d112230c4b8ccb3a98b76eddc7094e7d5f9a1dcca0ddf3ac0f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/4fb133bfc5a336d112230c4b8ccb3a98b76eddc7094e7d5f9a1dcca0ddf3ac0f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Daniel</span> <span class="tix-last">Kossmann</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.danielkossmann.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">danielkossmann.com</a><a href="https://profiles.wordpress.org/kossmann" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/kossmann</a><a href="https://www.linkedin.com/in/danielkossmann/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/danielkossmann</a>
+- <img src="https://secure.gravatar.com/avatar/baad5319303cec7a0ed9dfea0ad0664feb439844d4daf98d2acf1b91a637680d?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/baad5319303cec7a0ed9dfea0ad0664feb439844d4daf98d2acf1b91a637680d?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Daniel</span> <span class="tix-last">Peres</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://dabliope.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">dabliope.com</a>
+- <img src="https://secure.gravatar.com/avatar/1eb4a08cafa905e1107989ed1b03632b45c0b7bd80d6409ef8d9fab557369269?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/1eb4a08cafa905e1107989ed1b03632b45c0b7bd80d6409ef8d9fab557369269?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Davi</span> <span class="tix-last">Abeid Pontes</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://automattic.com/for-agencies" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">automattic.com/for-agencies</a><a href="https://profiles.wordpress.org/dpontes/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/dpontes</a><a href="https://www.linkedin.com/m/in/davi-a-pontes/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/m/in/davi-a-pontes</a>
+- <img src="https://secure.gravatar.com/avatar/d182e659c3ca5aee80fcaa9ff4fe2d6365f59f76e14eb94bccef993de3cb633c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d182e659c3ca5aee80fcaa9ff4fe2d6365f59f76e14eb94bccef993de3cb633c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">David</span> <span class="tix-last">Arty</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://chiefofdesig.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">chiefofdesig.com.br</a><a href="https://profiles.wordpress.org/davidarty" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/davidarty</a><a href="https://br.linkedin.com/in/davidarty" class="tix-field tix-attendee-url tix-perfil-no-linkedin">br.linkedin.com/in/davidarty</a>
+- <img src="https://secure.gravatar.com/avatar/872645ced0fcce7971231a52796acfcff425b9769b8784a158bef98bea9bce51?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/872645ced0fcce7971231a52796acfcff425b9769b8784a158bef98bea9bce51?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">David</span> <span class="tix-last">Souza</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/dvdsouza/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/dvdsouza</a>
+- <img src="https://secure.gravatar.com/avatar/b0539e08ab12651dd2770b91b6440f2fa06de2592cf9fde6fad4af7d13820eaf?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/b0539e08ab12651dd2770b91b6440f2fa06de2592cf9fde6fad4af7d13820eaf?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Denys</span> <span class="tix-last">de Jesus Ferreira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/denysjf/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/denysjf</a>
+- <img src="https://secure.gravatar.com/avatar/4309342f9edb647764dd644d78af5695c099ed31006a073e913d937d370be5eb?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/4309342f9edb647764dd644d78af5695c099ed31006a073e913d937d370be5eb?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Diego</span> <span class="tix-last">Pereira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://dotrex" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">dotrex</a><a href="https://www.linkedin.com/in/diiegopereira?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/diiegopereira</a>
+- <img src="https://secure.gravatar.com/avatar/fd71d7a2ba8f9442e3423256ba2f2635d2bb29e06e741eea74055cc645751af6?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/fd71d7a2ba8f9442e3423256ba2f2635d2bb29e06e741eea74055cc645751af6?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Diogo</span> <span class="tix-last">Fukunaga de Carvalho</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://studiovisual.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">studiovisual.com.br</a><a href="https://www.linkedin.com/in/diogo-fukunaga-de-carvalho/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/diogo-fukunaga-de-carvalho</a>
+- <img src="https://secure.gravatar.com/avatar/a288f82e62e6937623e057741bedb50ac500d6c844419accfc874abbffc1d666?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a288f82e62e6937623e057741bedb50ac500d6c844419accfc874abbffc1d666?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Douglas</span> <span class="tix-last">Oliveira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://perfildoug" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">perfildoug</a><a href="http://linkedin.com/in/perfildoug" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/perfildoug</a>
+- <img src="https://secure.gravatar.com/avatar/78050c5529b285cbd8e91f7b8ab3de76929882135a3b7777f20f9d5bfe54a192?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/78050c5529b285cbd8e91f7b8ab3de76929882135a3b7777f20f9d5bfe54a192?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Edison</span> <span class="tix-last">Costa</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://keepcloud.io" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">keepcloud.io</a><a href="https://profiles.wordpress.org/lojaplus/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/lojaplus</a><a href="https://www.linkedin.com/in/edisonpcosta/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/edisonpcosta</a>
+- <img src="https://secure.gravatar.com/avatar/4d9da193b6f634b70fecaaf0fdbf65415ca6529a6d63050e1b2a9b08f8bd5683?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/4d9da193b6f634b70fecaaf0fdbf65415ca6529a6d63050e1b2a9b08f8bd5683?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Edison</span> <span class="tix-last">Filho</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://keepcloud.io" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">keepcloud.io</a><a href="https://profiles.wordpress.org/edisonfilho/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/edisonfilho</a>
+- <img src="https://secure.gravatar.com/avatar/9591180a376eb29b4689e3ea1c379777a4b00da66b8a3b0a997eab02a55c8608?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/9591180a376eb29b4689e3ea1c379777a4b00da66b8a3b0a997eab02a55c8608?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Eduarda</span> <span class="tix-last">Ferreira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/eduarda-mf/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/eduarda-mf</a>
+- <img src="https://secure.gravatar.com/avatar/bcd3bd1d46ca955759d82c4489900d5b8b0d7b8b408665bddd22ed762ab755f0?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/bcd3bd1d46ca955759d82c4489900d5b8b0d7b8b408665bddd22ed762ab755f0?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Eduardo</span> <span class="tix-last">Villão</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/evcode/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/evcode</a><a href="https://www.linkedin.com/in/eduardo-villao/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/eduardo-villao</a>
+- <img src="https://secure.gravatar.com/avatar/d2b86b9638463db3ab4fb8ca2c51713befed32c44728e785fc531ec2d1922ffa?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d2b86b9638463db3ab4fb8ca2c51713befed32c44728e785fc531ec2d1922ffa?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Eduardo</span> <span class="tix-last">Zulian</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://flutuante.org" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">flutuante.org</a><a href="http://profiles.wordpress.org/eduardozulian/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/eduardozulian</a><a href="https://www.linkedin.com/in/eduardozulian" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/eduardozulian</a>
+- <img src="https://secure.gravatar.com/avatar/bb7ecdf1f923b49609dfacdacbd53b089775002649724297fba5fb6a26fc23e5?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/bb7ecdf1f923b49609dfacdacbd53b089775002649724297fba5fb6a26fc23e5?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Elton</span> <span class="tix-last">Aquino</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.targethost.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">targethost.com.br</a><a href="https://profiles.wordpress.org/eltonaquino" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/eltonaquino</a><a href="https://www.linkedin.com/in/eltonaquino" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/eltonaquino</a>
+- <img src="https://secure.gravatar.com/avatar/8b680259037226f4b2951b6ceb17d4afacd4e027cd3df8e1064e76ebd812b534?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/8b680259037226f4b2951b6ceb17d4afacd4e027cd3df8e1064e76ebd812b534?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Erika</span> <span class="tix-last">Souza</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.fooba.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">fooba.com.br</a>
+- <img src="https://secure.gravatar.com/avatar/2d201242df39ec5187096ad0922f91c7470c6ea87944303ab3c3871131a8d4de?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2d201242df39ec5187096ad0922f91c7470c6ea87944303ab3c3871131a8d4de?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Ernandes</span> <span class="tix-last">Ferreira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/ernandesferreira/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/ernandesferreira</a><a href="https://www.linkedin.com/in/ernandesferreira/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/ernandesferreira</a>
+- <img src="https://secure.gravatar.com/avatar/3d959cff1e00e50f2c971d1bb142ebe839f91272e2f62c756c10df4a716bc3fc?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/3d959cff1e00e50f2c971d1bb142ebe839f91272e2f62c756c10df4a716bc3fc?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Fabricio</span> <span class="tix-last">Ramos Fernandes</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/frframos/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/frframos</a>
+- <img src="https://secure.gravatar.com/avatar/66ca0f1f3d354ed5b67fe8ba92b452ea51ad6aa3a7a2e9ddb1c1a15fcd4090d2?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/66ca0f1f3d354ed5b67fe8ba92b452ea51ad6aa3a7a2e9ddb1c1a15fcd4090d2?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Felipe</span> <span class="tix-last">Oliveira Gonçalves</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://blog.felipeog.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">blog.felipeog.com.br</a><a href="https://profiles.wordpress.org/felipeog476" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/felipeog476</a><a href="https://www.linkedin.com/in/felipeog" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/felipeog</a>
+- <img src="https://secure.gravatar.com/avatar/a456ef03cbe00c97550679fb264b6e51da93c8443aa1114069ddd49f3d0e8f8d?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a456ef03cbe00c97550679fb264b6e51da93c8443aa1114069ddd49f3d0e8f8d?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Felipe</span> <span class="tix-last">Velzani</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/3d503e66dd5ba59cf8b6f33f54a8cd197ebe6cf0b72cf97c589d44f2ab044192?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/3d503e66dd5ba59cf8b6f33f54a8cd197ebe6cf0b72cf97c589d44f2ab044192?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Fellyph</span> <span class="tix-last">Cintra</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://blog.fellyph.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">blog.fellyph.com.br</a><a href="https://profiles.wordpress.org/fellyph" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/fellyph</a><a href="https://linkedin.com/in/fellyph" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/fellyph</a>
+- <img src="https://secure.gravatar.com/avatar/c177e43a9fa716f59c5d24fccdbc30170f8a65a1df2ce4348acf9fb82a004146?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c177e43a9fa716f59c5d24fccdbc30170f8a65a1df2ce4348acf9fb82a004146?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Fernando</span> <span class="tix-last">da Costa Ribeiro</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://fernandoribeiro357" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">fernandoribeiro357</a>
+- <img src="https://secure.gravatar.com/avatar/9fa8314682787f4e0c17bb6f5a545d9d821a04d0a1fb0193c0f8f95cb31a2860?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/9fa8314682787f4e0c17bb6f5a545d9d821a04d0a1fb0193c0f8f95cb31a2860?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Fioravante</span> <span class="tix-last">Cavallari Souza</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/fiocavallari" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/fiocavallari</a>
+- <img src="https://secure.gravatar.com/avatar/d89e6f151d44bbcbc47655cc11715c3aa83a2ba439c3a4818c268e2283d3b6bb?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d89e6f151d44bbcbc47655cc11715c3aa83a2ba439c3a4818c268e2283d3b6bb?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Flavio</span> <span class="tix-last">Raffaelli</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://novadigitalweb.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">novadigitalweb.com.br</a><a href="https://profiles.wordpress.org/raffaelli/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/raffaelli</a>
+- <img src="https://secure.gravatar.com/avatar/d8332f4a06a43c629ce9d276bb369a289431ad7c0b2c3eff3b8136c22ed557ba?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d8332f4a06a43c629ce9d276bb369a289431ad7c0b2c3eff3b8136c22ed557ba?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Gabriel</span> <span class="tix-last">Cano</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://gabrielcano.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">gabrielcano.com.br</a><a href="https://profiles.wordpress.org/killuawax/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/killuawax</a><a href="https://www.linkedin.com/in/gabrielcano-in/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/gabrielcano-in</a>
+- <img src="https://secure.gravatar.com/avatar/b14206cf6c3d3ce7ba35035ef74854ab38d38f7c335d80cde16e8fc9f20bd664?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/b14206cf6c3d3ce7ba35035ef74854ab38d38f7c335d80cde16e8fc9f20bd664?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Gianmarco</span> <span class="tix-last">Schiavi</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://consultingscompany.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">consultingscompany.com</a><a href="https://profiles.wordpress.org/gianmarcoschiavi" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/gianmarcoschiavi</a><a href="https://www.linkedin.com/in/gianmarcoschaivi/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/gianmarcoschaivi</a>
+- <img src="https://secure.gravatar.com/avatar/846dac0ad49da6ec36c808dc932f2a9c2adae7e4b594025eec4e3081a524fefd?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/846dac0ad49da6ec36c808dc932f2a9c2adae7e4b594025eec4e3081a524fefd?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Gilberto</span> <span class="tix-last">Tavares</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/camaleaun/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/camaleaun</a>
+- <img src="https://secure.gravatar.com/avatar/6b8977bf68e4e65e953b4341ab33f160cffce734a790502e245d9a91b5b0ab52?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/6b8977bf68e4e65e953b4341ab33f160cffce734a790502e245d9a91b5b0ab52?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Giovani</span> <span class="tix-last">Blotta</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://%20profiles.wordpress.org/gblotta" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">%20profiles.wordpress.org/gblotta</a>
+- <img src="https://secure.gravatar.com/avatar/2bb28470352c969615480bad9545226701104d2ca26a6f2015261d4b4866c5d4?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2bb28470352c969615480bad9545226701104d2ca26a6f2015261d4b4866c5d4?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Guga</span> <span class="tix-last">Alves</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://gugaalves.net" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">gugaalves.net</a><a href="https://profiles.wordpress.org/gugaalves" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/gugaalves</a><a href="https://www.linkedin.com/in/gugaalves/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/gugaalves</a>
+- <img src="https://secure.gravatar.com/avatar/bf1cf719d6b29d7f99d7aa1780b57960deea0cc3224b9895a8b805b24f1a71a7?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/bf1cf719d6b29d7f99d7aa1780b57960deea0cc3224b9895a8b805b24f1a71a7?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Gutemberg</span> <span class="tix-last">Alves</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/e22f54b57dbecad0d7645dca2c8747955c7f6087bafaf55046c98d605937a243?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/e22f54b57dbecad0d7645dca2c8747955c7f6087bafaf55046c98d605937a243?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Hans</span> <span class="tix-last">Mosl</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://hans.mosl.nom.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">hans.mosl.nom.br</a><a href="https://profiles.wordpress.org/hansmosl/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/hansmosl</a><a href="https://br.linkedin.com/in/hansmosl" class="tix-field tix-attendee-url tix-perfil-no-linkedin">br.linkedin.com/in/hansmosl</a>
+- <img src="https://secure.gravatar.com/avatar/804d8b50e16b3d0e52994ad69da1bec2bc49578eac89e6a1be75b12e537c5025?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/804d8b50e16b3d0e52994ad69da1bec2bc49578eac89e6a1be75b12e537c5025?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Henrique</span> <span class="tix-last">Luz Vilela Reis</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://staycloud.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">staycloud.com.br</a><a href="https://profiles.wordpress.org/henriquelvreis" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/henriquelvreis</a><a href="http://henriquelvreis" class="tix-field tix-attendee-url tix-perfil-no-linkedin">henriquelvreis</a>
+- <img src="https://secure.gravatar.com/avatar/bcf6ca8d551adb229568fcfa901c911d59b031d59ba33b1b44f4dfc65f86d79c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/bcf6ca8d551adb229568fcfa901c911d59b031d59ba33b1b44f4dfc65f86d79c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Honório</span> <span class="tix-last">Fusco de Oliveira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/d63e46730f741f4ec1e703c7217ead24a668dc470b09f10bc7b5098f02d65a17?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d63e46730f741f4ec1e703c7217ead24a668dc470b09f10bc7b5098f02d65a17?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Italo</span> <span class="tix-last">Silva</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/7d53e47842d079c4410c516add58361b95c6af457ff8cbdca8026622339da25a?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/7d53e47842d079c4410c516add58361b95c6af457ff8cbdca8026622339da25a?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Jéssica</span> <span class="tix-last">Nascimento dos Santos</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://github.com/jessiicasantos" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">github.com/jessiicasantos</a><a href="https://profiles.wordpress.org/jessiicansantos/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/jessiicansantos</a><a href="https://www.linkedin.com/in/jessica-nascimento-11a3b8156/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/jessica-nascimento-11a3b8156</a>
+- <img src="https://secure.gravatar.com/avatar/683d0fa6c3160ed0915827c6dac9ac80fd8877757e907de70e02960a952c247b?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/683d0fa6c3160ed0915827c6dac9ac80fd8877757e907de70e02960a952c247b?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Jimmy</span> <span class="tix-last">Macedo</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/jimmymacedo/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/jimmymacedo</a>
+- <img src="https://secure.gravatar.com/avatar/22c1c908043b8e856ff6bfbe6669f7974c7a1e758a0088488811313486d8b19c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/22c1c908043b8e856ff6bfbe6669f7974c7a1e758a0088488811313486d8b19c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">João Breno</span> <span class="tix-last">da Silva</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.deal.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">deal.com.br</a><a href="https://www.linkedin.com/in/joaobreno4/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/joaobreno4</a>
+- <img src="https://secure.gravatar.com/avatar/a647c9f72fcf6fd15a70dbe6882581cea436b1b1c6df187ccdad48da16ee1bbb?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a647c9f72fcf6fd15a70dbe6882581cea436b1b1c6df187ccdad48da16ee1bbb?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">João</span> <span class="tix-last">Carvalho</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://joaoc.dev" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">joaoc.dev</a><a href="https://profiles.wordpress.org/jcarvalho" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/jcarvalho</a><a href="https://www.linkedin.com/in/jovtrc/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/jovtrc</a>
+- <img src="https://secure.gravatar.com/avatar/569ea7cdc5b19f668b9b2e5c2abfea15feab75a7b4a03a36766ac43334649782?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/569ea7cdc5b19f668b9b2e5c2abfea15feab75a7b4a03a36766ac43334649782?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Jofran</span> <span class="tix-last">Lirio</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/jofranlirio/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/jofranlirio</a>
+- <img src="https://secure.gravatar.com/avatar/1e64a763b795de7da95eb1b98f7745091d6e55696289deb722f3558d45d19f9a?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/1e64a763b795de7da95eb1b98f7745091d6e55696289deb722f3558d45d19f9a?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Jonnatha</span> <span class="tix-last">Santos</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://jonn.dev/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">jonn.dev</a><a href="https://profiles.wordpress.org/jonnps/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/jonnps</a><a href="https://www.linkedin.com/in/jonnps/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/jonnps</a>
+- <img src="https://secure.gravatar.com/avatar/94559fc950cf7e9a009de44c841dfc5d4d9f244519e1fb2b2aaab77ec77644c1?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/94559fc950cf7e9a009de44c841dfc5d4d9f244519e1fb2b2aaab77ec77644c1?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Jorge</span> <span class="tix-last">Sousa</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.signacriatividade.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">signacriatividade.com.br</a>
+- <img src="https://secure.gravatar.com/avatar/c623133d975883ad435eac2d72611d4d68a3e1b425c8814bf45a49fcba522ec3?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c623133d975883ad435eac2d72611d4d68a3e1b425c8814bf45a49fcba522ec3?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Julia</span> <span class="tix-last">Schiavi</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://consultingscompany.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">consultingscompany.com</a><a href="https://profiles.wordpress.org/consultingscompany" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/consultingscompany</a><a href="http://linkedin.com/in/júliaschiavi" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/júliaschiavi</a>
+- <img src="https://secure.gravatar.com/avatar/876aefd11e60f71fe07c647ac72f25eca04c8de4a76cd8df273ac5ad7b17e32e?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/876aefd11e60f71fe07c647ac72f25eca04c8de4a76cd8df273ac5ad7b17e32e?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Karin</span> <span class="tix-last">Schneider</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.packaging.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">packaging.com.br</a><a href="https://profiles.wordpress.org/karinschneider/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/karinschneider</a><a href="https://www.linkedin.com/in/karin-schneider-23361822/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/karin-schneider-23361822</a>
+- <img src="https://secure.gravatar.com/avatar/e5d55bdcff883165ced6017d1968547761239a327eb2c4f904e30a8db74cdf90?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/e5d55bdcff883165ced6017d1968547761239a327eb2c4f904e30a8db74cdf90?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Kleber</span> <span class="tix-last">Mattoso</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/kmattoso/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/kmattoso</a>
+- <img src="https://secure.gravatar.com/avatar/f08db937693facc1c7b42ca8f9c7a2d61960f4652ad814f5a017a926ee5dbf42?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/f08db937693facc1c7b42ca8f9c7a2d61960f4652ad814f5a017a926ee5dbf42?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Leandra</span> <span class="tix-last">Machado</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://lmtraducaoerevisao.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">lmtraducaoerevisao.com.br</a><a href="https://profiles.wordpress.org/leandramachado/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/leandramachado</a>
+- <img src="https://secure.gravatar.com/avatar/5fabcaf5428b6045b39aca3a4ff5e3198a9dffa23a5fcbf1c3ad74ac640dbc1f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/5fabcaf5428b6045b39aca3a4ff5e3198a9dffa23a5fcbf1c3ad74ac640dbc1f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Lenildo</span> <span class="tix-last">Thurler</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/4db3e529da87037845487666b5ffa7d7f521a5d690b732e2ec24b61d8bfcf7fe?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/4db3e529da87037845487666b5ffa7d7f521a5d690b732e2ec24b61d8bfcf7fe?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Leonardo</span> <span class="tix-last">Silva de Melo</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/a39a563976b58cb10ebf047d8564c62df9512a780e93157fe806e1a9aab2a6aa?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a39a563976b58cb10ebf047d8564c62df9512a780e93157fe806e1a9aab2a6aa?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Leticia</span> <span class="tix-last">Quilles</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/3244fda0332f8b1a15b8b9d3988b47b27a33d914fa144dc0fd34d69a508971c4?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/3244fda0332f8b1a15b8b9d3988b47b27a33d914fa144dc0fd34d69a508971c4?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Luan</span> <span class="tix-last">Cuba</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/luancuba/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/luancuba</a>
+- <img src="https://secure.gravatar.com/avatar/01c1312d0d5d8e895b0dfbbc30316eccbd11aa96a31f2cfe80ccc3867cffd947?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/01c1312d0d5d8e895b0dfbbc30316eccbd11aa96a31f2cfe80ccc3867cffd947?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Lucas Luiz</span> <span class="tix-last">da Silva</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/66c0557c074ea87a9a80b4539e2a81502d17706b4b74c41e95c727e420ab1593?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/66c0557c074ea87a9a80b4539e2a81502d17706b4b74c41e95c727e420ab1593?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Luiz Cesar</span> <span class="tix-last">Silva de Carvalho</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://fluxo360.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">fluxo360.com.br</a><a href="https://profiles.wordpress.org/lccarv/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/lccarv</a><a href="https://www.linkedin.com/in/luiz-cesar-carvalho-9b877947/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/luiz-cesar-carvalho-9b877947</a>
+- <img src="https://secure.gravatar.com/avatar/c8eb899d55062f7f06af4ea795efb81c60fd8812f6b322cc1e9391dea0bd1a4f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c8eb899d55062f7f06af4ea795efb81c60fd8812f6b322cc1e9391dea0bd1a4f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Marcelo</span> <span class="tix-last">Gomes da</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/128b929e047bce0b87e0e70320afbd434ed801bd17ebf08c7e970c9d3f9e21ee?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/128b929e047bce0b87e0e70320afbd434ed801bd17ebf08c7e970c9d3f9e21ee?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Marcio</span> <span class="tix-last">Araujo de Lima</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://marcioaraujo.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">marcioaraujo.com</a><a href="https://profiles.wordpress.org/marcioaraujo/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/marcioaraujo</a><a href="https://www.linkedin.com/in/marcioaraujolima/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/marcioaraujolima</a>
+- <img src="https://secure.gravatar.com/avatar/c4ed7a236dd69c358ee063d1cf3181712b11061d31df65d7deb7d2b2bbc80293?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c4ed7a236dd69c358ee063d1cf3181712b11061d31df65d7deb7d2b2bbc80293?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Marco Andrei</span> <span class="tix-last">Kichalowsky</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://marcoandrei.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">marcoandrei.com</a><a href="https://profiles.wordpress.org/marcoandrei/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/marcoandrei</a><a href="https://www.linkedin.com/in/marcoandrei/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/marcoandrei</a>
+- <img src="https://secure.gravatar.com/avatar/b1bb67d9e10afa14335a061612421dde6ae5ddc225988c50889e833eec269442?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/b1bb67d9e10afa14335a061612421dde6ae5ddc225988c50889e833eec269442?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Mariana</span> <span class="tix-last">R de Aquino Galvão</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/marianarag" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/marianarag</a><a href="https://www.linkedin.com/in/marianadeaquino/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/marianadeaquino</a>
+- <img src="https://secure.gravatar.com/avatar/6de6857d182a78b0b6cae288edf7a3ce45a72ebe6c289cfd11582f701af06d0f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/6de6857d182a78b0b6cae288edf7a3ce45a72ebe6c289cfd11582f701af06d0f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Matheus</span> <span class="tix-last">Grilo</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/848f0887020cde17d5ab571cf60262c86432afb26ceaf0a74fce48e2038ba25d?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/848f0887020cde17d5ab571cf60262c86432afb26ceaf0a74fce48e2038ba25d?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Matheus Luiz</span> <span class="tix-last">Fonseca Brandão</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://staycloud.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa" rel="nofollow">staycloud.com.br</a><a href="https://www.linkedin.com/in/matheuslfbrandao/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/matheuslfbrandao</a>
+- <img src="https://secure.gravatar.com/avatar/ecbda254b71b460af2a894b77f1e55fcd9ea76aa6c848fb3419c7fda814009e5?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/ecbda254b71b460af2a894b77f1e55fcd9ea76aa6c848fb3419c7fda814009e5?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Mauricio</span> <span class="tix-last">Samy Silva</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://maujor.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">maujor.com.br</a><a href="https://profiles.wordpress.org/maujor/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/maujor</a>
+- <img src="https://secure.gravatar.com/avatar/2b67dc2b52749f391a496c3d5b280e5cb793b3f20c892350e24f051b98d0fc0d?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2b67dc2b52749f391a496c3d5b280e5cb793b3f20c892350e24f051b98d0fc0d?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Monica</span> <span class="tix-last">Craveiro de Menezes</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/2499afae10ce20b8eed49d21c1ec826755b039f3f09bdb382fda81d2e860d9cb?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2499afae10ce20b8eed49d21c1ec826755b039f3f09bdb382fda81d2e860d9cb?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Pablo</span> <span class="tix-last">Almeida</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/ec5e4c3f868a34d20a82a58238a62de8a175f4bb9fc67b1f7530c18517bd5e67?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/ec5e4c3f868a34d20a82a58238a62de8a175f4bb9fc67b1f7530c18517bd5e67?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Paulo</span> <span class="tix-last">de Tarço</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/paulodetarco" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/paulodetarco</a>
+- <img src="https://secure.gravatar.com/avatar/48e0e32d9a0216683ebcb7d275dbcef4a43e77ab87ec658bda65d34b503c832d?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/48e0e32d9a0216683ebcb7d275dbcef4a43e77ab87ec658bda65d34b503c832d?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Paulo</span> <span class="tix-last">Dreyer Marques</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.odontorio.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">odontorio.com</a><a href="https://profiles.wordpress.org/pdremar/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/pdremar</a><a href="http://desarivado" class="tix-field tix-attendee-url tix-perfil-no-linkedin">desarivado</a>
+- <img src="https://secure.gravatar.com/avatar/53f90df0d912b7f344fde6813a07b129fcbda8592e84c9ff12aa656be8c6134f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/53f90df0d912b7f344fde6813a07b129fcbda8592e84c9ff12aa656be8c6134f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Pingüim</span> <span class="tix-last">Divers For Sharks</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.diversforsharks.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">diversforsharks.com.br</a>
+- <img src="https://secure.gravatar.com/avatar/f11628da9cf1003b290583f04edc6e9a6c2ae879cedfe30d51375822cccc017c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/f11628da9cf1003b290583f04edc6e9a6c2ae879cedfe30d51375822cccc017c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rafael</span> <span class="tix-last">Funchal</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://rafaelfunchal.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">rafaelfunchal.com.br</a><a href="https://profiles.wordpress.org/rafaelfunchal/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rafaelfunchal</a><a href="https://www.linkedin.com/in/rafaelfunchal/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/rafaelfunchal</a>
+- <img src="https://secure.gravatar.com/avatar/640739d709d089174133188ce5f3c12b6f629f359d433bc8b15bc03582772b51?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/640739d709d089174133188ce5f3c12b6f629f359d433bc8b15bc03582772b51?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Ramon</span> <span class="tix-last">Ahnert</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.nomar.dev/en/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">nomar.dev/en</a><a href="https://profiles.wordpress.org/rahmohn/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rahmohn</a>
+- <img src="https://secure.gravatar.com/avatar/de6e72d821eb8bc8ad61a1404042b01369d4b9ab250209099512757c97b65e5a?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/de6e72d821eb8bc8ad61a1404042b01369d4b9ab250209099512757c97b65e5a?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Raquel</span> <span class="tix-last">Reis</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://monadasolucoes.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">monadasolucoes.com.br</a><a href="http://raquelreisdg" class="tix-field tix-attendee-url tix-perfil-no-linkedin">raquelreisdg</a>
+- <img src="https://secure.gravatar.com/avatar/f4cdb61b8a119abbf5f92a2d3548efdc7e10b087b7bf423d11eb9e07c99a1f33?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/f4cdb61b8a119abbf5f92a2d3548efdc7e10b087b7bf423d11eb9e07c99a1f33?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Raquel</span> <span class="tix-last">Silveira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/raquel-corrêa-d-075a6ab4" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/raquel-corrêa-d-075a6ab4</a>
+- <img src="https://secure.gravatar.com/avatar/2fc6f7221a4dbbedf66541771f849402d63294a6de2daf144cbbac7dae6f8c81?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2fc6f7221a4dbbedf66541771f849402d63294a6de2daf144cbbac7dae6f8c81?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Ricardo</span> <span class="tix-last">Jorge</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.ricardojorge.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">ricardojorge.com.br</a><a href="https://profiles.wordpress.org/rcdojge/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rcdojge</a><a href="http://ricardo-jorge-903908309" class="tix-field tix-attendee-url tix-perfil-no-linkedin">ricardo-jorge-903908309</a>
+- <img src="https://secure.gravatar.com/avatar/2491e9463548d484f901888a960bfe01dd935d820c187936877b9511f1b922a6?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2491e9463548d484f901888a960bfe01dd935d820c187936877b9511f1b922a6?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Roberto Gleydson dos</span> <span class="tix-last">Santos</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/2daade90a1bbb844ffef70829ac4c3efabefd84a3d2a27dc5ae710e099dedfc5?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/2daade90a1bbb844ffef70829ac4c3efabefd84a3d2a27dc5ae710e099dedfc5?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Roberto</span> <span class="tix-last">Salgado</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://saltiz.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">saltiz.com</a><a href="https://profiles.wordpress.org/saltizbr/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/saltizbr</a><a href="https://www.linkedin.com/in/robertosalgadobr/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/robertosalgadobr</a>
+- <img src="https://secure.gravatar.com/avatar/48139f5f4f5c73623c39fea37a6764f052d12d9acc56bb049e57ab1a2f71d319?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/48139f5f4f5c73623c39fea37a6764f052d12d9acc56bb049e57ab1a2f71d319?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Robson</span> <span class="tix-last">Cruz</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/20e32a100b0618ee8487b9d9a37bfd1089d22f2d94f9ce0c72bdfe2c2832c1c5?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/20e32a100b0618ee8487b9d9a37bfd1089d22f2d94f9ce0c72bdfe2c2832c1c5?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rodolfo</span> <span class="tix-last">Estima dos Reis Rodrigues</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/c8cf504e5ae3826eb87591aa4f6658e912bc658a0d8aa487ad90b4ce26ff7f24?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c8cf504e5ae3826eb87591aa4f6658e912bc658a0d8aa487ad90b4ce26ff7f24?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rodrigo</span> <span class="tix-last">Donini</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://donini.me/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">donini.me</a><a href="http://profiles.wordpress.org/rodrigodonini" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rodrigodonini</a><a href="http://linkedin.com/in/donini" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/donini</a>
+- <img src="https://secure.gravatar.com/avatar/eec63bf8bae64eea094e76431d0d78c52a443149aa40bc5653af5878b6b6e82c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/eec63bf8bae64eea094e76431d0d78c52a443149aa40bc5653af5878b6b6e82c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rodrigo</span> <span class="tix-last">Ferreira</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://responsivosite.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">responsivosite.com</a><a href="https://www.linkedin.com/in/rmfti/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/rmfti</a>
+- <img src="https://secure.gravatar.com/avatar/58f4e17fc2c1ae33038a11d29c0cf39e4a50ab58681e307ed54a6fa9ff5bd841?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/58f4e17fc2c1ae33038a11d29c0cf39e4a50ab58681e307ed54a6fa9ff5bd841?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rodrigo</span> <span class="tix-last">Gianni</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/1dc85457417601db220b14e7fa96c842700fbd1cceecd21d65306c26fffb92cc?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/1dc85457417601db220b14e7fa96c842700fbd1cceecd21d65306c26fffb92cc?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rodrigo</span> <span class="tix-last">Primo</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/rodrigosprimo" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rodrigosprimo</a>
+- <img src="https://secure.gravatar.com/avatar/a64013156b17f9ecfac690ed32fee27996d8eb046841db864ef7f4741012a517?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/a64013156b17f9ecfac690ed32fee27996d8eb046841db864ef7f4741012a517?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rodrygo</span> <span class="tix-last">Almeida</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/d338f6229d3f75d49b7e85d88db966d0442bde4bcf25a3704d7863437248dee5?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d338f6229d3f75d49b7e85d88db966d0442bde4bcf25a3704d7863437248dee5?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Roneyb</span> <span class="tix-last">Belhassof</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://memedecarbono.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">memedecarbono.com.br</a><a href="https://profiles.wordpress.org/roneybelhassof" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/roneybelhassof</a>
+- <img src="https://secure.gravatar.com/avatar/80655ce27eccec8016b5f9876442652bd44675f670ba02a4d404419118b0fb4c?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/80655ce27eccec8016b5f9876442652bd44675f670ba02a4d404419118b0fb4c?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rosani</span> <span class="tix-last">Teixeira da Silva</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://nitscriandosites.com.br/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">nitscriandosites.com.br</a><a href="https://profiles.wordpress.org/rosani68" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rosani68</a>
+- <img src="https://secure.gravatar.com/avatar/d3c21878841dd054f50a6154e1d82ba3aa1d71411c37fe51656ebecc4e981be0?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/d3c21878841dd054f50a6154e1d82ba3aa1d71411c37fe51656ebecc4e981be0?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Rudá</span> <span class="tix-last">Almeida</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://rdlmda.me" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">rdlmda.me</a><a href="https://profiles.wordpress.org/rudaalmeida/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/rudaalmeida</a>
+- <img src="https://secure.gravatar.com/avatar/41c43f8daba75c8cfb999283b1df19f4168a8525a8bbbb619e4ae5e90f722b36?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/41c43f8daba75c8cfb999283b1df19f4168a8525a8bbbb619e4ae5e90f722b36?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Samuel</span> <span class="tix-last">Alves de Lisboa</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/mukinao/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/mukinao</a><a href="https://www.linkedin.com/in/samuel-alves-de-lisboa/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/samuel-alves-de-lisboa</a>
+- <img src="https://secure.gravatar.com/avatar/7b7eaaa4aadc682d507bfde811645ed2a87632d6a23235c4e69b0b975ed61338?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/7b7eaaa4aadc682d507bfde811645ed2a87632d6a23235c4e69b0b975ed61338?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Sandra</span> <span class="tix-last">Peres</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://comidices.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">comidices.com.br</a><a href="https://profiles.wordpress.org/san-prs/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/san-prs</a><a href="https://www.linkedin.com/in/asandraperes/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/asandraperes</a>
+- <img src="https://secure.gravatar.com/avatar/cf79eea77c641c8c1f747b9f7d15d603799c37f7cba30c916dce05577e7dc2f6?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/cf79eea77c641c8c1f747b9f7d15d603799c37f7cba30c916dce05577e7dc2f6?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Santiago</span> <span class="tix-last">Sipoli Risden</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://profiles.wordpress.org/santiagowd/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/santiagowd</a><a href="https://www.linkedin.com/in/santiago-sipoli/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/santiago-sipoli</a>
+- <img src="https://secure.gravatar.com/avatar/3c5bcf3102f30cac5ef7a994593e2d632fcdb26925982f326f06fa574bebe720?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/3c5bcf3102f30cac5ef7a994593e2d632fcdb26925982f326f06fa574bebe720?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Saulo</span> <span class="tix-last">Padilha</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://spadilha.com" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">spadilha.com</a><a href="https://profiles.wordpress.org/spadilha/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/spadilha</a>
+- <img src="https://secure.gravatar.com/avatar/9675b3404a934f1e4999dc71492d3acd3f18a52f2ece419e8ea460ca1443710b?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/9675b3404a934f1e4999dc71492d3acd3f18a52f2ece419e8ea460ca1443710b?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Sergio</span> <span class="tix-last">Maria</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://www.42engine.com;%20http://www.newscale.ai" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">42engine.com;%20http//www.newscale.ai</a><a href="https://profiles.wordpress.org/sergiomaria/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/sergiomaria</a><a href="https://www.linkedin.com/in/sergiomaria/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/sergiomaria</a>
+- <img src="https://secure.gravatar.com/avatar/c1065452a8e1061e4850f1adf06d30eec9edd957ce27cf15a6e753e3de52a911?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c1065452a8e1061e4850f1adf06d30eec9edd957ce27cf15a6e753e3de52a911?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Thaí­s</span> <span class="tix-last">de Lima Freitas</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="http://inftektecnologia.com.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">inftektecnologia.com.br</a><a href="https://profiles.wordpress.org/thaisdelima/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/thaisdelima</a>
+- <img src="https://secure.gravatar.com/avatar/5f8dc1f605f35a50a238c2f748e52aff3aec58496291479d3c86b38b253e138a?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/5f8dc1f605f35a50a238c2f748e52aff3aec58496291479d3c86b38b253e138a?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Thalles</span> <span class="tix-last">Thurler</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/f47535e791ece3bfdcf441f8e43f231c162c5914209aac689201bd86f237606f?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/f47535e791ece3bfdcf441f8e43f231c162c5914209aac689201bd86f237606f?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Thereza</span> <span class="tix-last">Coutinho</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.linkedin.com/in/thereza-coutinho-4a66a629b/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/thereza-coutinho-4a66a629b</a>
+- <img src="https://secure.gravatar.com/avatar/4ccef1da470991b4e3fd2ce5a491ba7c0e21f826daca68d2580eebbe1ba052fa?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/4ccef1da470991b4e3fd2ce5a491ba7c0e21f826daca68d2580eebbe1ba052fa?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Thiago</span> <span class="tix-last">Bergamini</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+- <img src="https://secure.gravatar.com/avatar/c2164b2373c3f1fce736407a129f8ffd0fd1152ac5bdb61542fc74099795ce2e?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/c2164b2373c3f1fce736407a129f8ffd0fd1152ac5bdb61542fc74099795ce2e?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Thierry</span> <span class="tix-last">Rene matos</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://thierryrenematos.tec.br" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">thierryrenematos.tec.br</a><a href="https://www.linkedin.com/in/thierryrenematos/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/thierryrenematos</a>
+- <img src="https://secure.gravatar.com/avatar/4d819ad8c7e8f573857c16092c7ddcc8bff682a13a16b73f94607e9908f12896?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/4d819ad8c7e8f573857c16092c7ddcc8bff682a13a16b73f94607e9908f12896?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Vivian</span> <span class="tix-last">Zabot</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t<a href="https://www.vivianzabot.com/" class="tix-field tix-attendee-url tix-site-seu-ou-se-sua-empresa">vivianzabot.com</a><a href="https://profiles.wordpress.org/vivianzabot/" class="tix-field tix-attendee-url tix-perfil-no-wordpress-org-exemplo-https-profiles-wordpress-org-usuario">profiles.wordpress.org/vivianzabot</a><a href="https://www.linkedin.com/in/vivianzabot/" class="tix-field tix-attendee-url tix-perfil-no-linkedin">linkedin.com/in/vivianzabot</a>
+- <img src="https://secure.gravatar.com/avatar/b59822a7769cb12d1506c82c6b92cba71fe656db019394fa426e9bdd7802fa79?s=256&amp;d=mm&amp;r=g" class="avatar avatar-256 photo" srcset="https://secure.gravatar.com/avatar/b59822a7769cb12d1506c82c6b92cba71fe656db019394fa426e9bdd7802fa79?s=512&amp;d=mm&amp;r=g 2x" loading="lazy" decoding="async" width="256" height="256" />\n\t\t\t\t\t\t
+  <div class="tix-field tix-attendee-name">
+
+  \n\t\t\t\t\t\t\t<span class="tix-first">Yuri</span> <span class="tix-last">Kague</span>\t\t\t\t\t\t
+
+  </div>
+
+  \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t
+  \t\t\t
+
+\n\t\t
+
+</div>
+
+\n\t\t\
+\n\t\t\n
+
+</div>
+
+\n
+
+</div>
+
+\n

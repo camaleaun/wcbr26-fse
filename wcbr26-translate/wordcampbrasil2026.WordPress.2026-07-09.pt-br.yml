@@ -1,0 +1,566 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/camaleaun/wxr-command/trunk/schemas/1.2/wxr-complete.schema.json
+items:
+  -
+    post_id: 1
+    title: Olá, mundo!
+    content: Este site do WordCamp está em fase inicial de planejamento. Volte em breve para mais informações.
+    categories:
+      -
+        domain: category
+        nicename: sem-categoria
+        value: Sem categoria
+    comments:
+      -
+        id: 1
+        content: |
+          Oi, isto é um comentário.
+          Para iniciar a moderar, editar e excluir comentários, visite a tela Comentários no painel.
+          Os avatares dos comentaristas vêm do <a href="https://br.gravatar.com/">Gravatar</a>.
+  -
+    post_id: 3
+    title: Boas-vindas ao WordCamp Brasil 2026
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Nota dos organizadores:</em> Por favor, atualize as partes <span style="color: red;text-decoration: underline">com texto em vermelho</span>.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Temos o prazer de anunciar que o WordCamp Brasil <span style="color: red;text-decoration: underline">YEAR</span> está oficialmente no calendário!</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>O WordCamp Brasil <span style="color: red;text-decoration: underline">YEAR</span> acontecerá em <span style="color: red;text-decoration: underline">DATA(S)</span>, em <span style="color: red;text-decoration: underline">NomeCidade CódigoEstado, LOCAL</span>.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p><span style="color: red;text-decoration: underline">Assine usando o formulário na barra lateral</span> para ficar por dentro das novidades. Manteremos você informado sobre todos os detalhes nos próximos meses, incluindo envio de propostas de palestras, venda de ingressos e muito mais!</p>
+      <!-- /wp:paragraph -->
+    categories:
+      -
+        domain: category
+        nicename: sem-categoria
+        value: Sem categoria
+  -
+    post_id: 4
+    title: Chamada para Patrocinadores
+    content: |
+      <!-- wp:paragraph {"backgroundColor":"accent","textColor":"background","className":"has-accent-background-color has-background"} -->
+      <p class="has-accent-background-color has-background has-background-color has-text-color"><em>Nota dos organizadores:</em>
+      Os envios deste formulário criarão automaticamente posts em <code>rascunho</code>
+      <a href="https://brasil.wordcamp.org/2026/wp-admin/edit.php?post_type=wcb_sponsor">Posts de Patrocinadores</a>.
+      Você pode usá-los para gerenciar seus patrocinadores, publicando os que aceitar e excluindo os que não aceitar.
+      Porém, alterar as perguntas <code>name</code>, <code>email</code>, <code>username</code> ou <code>first time sponsoring</code> pode quebrar a automação.
+      </p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Descrição com informações para potenciais patrocinadores.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:jetpack/contact-form {"subject":"Pedido de Patrocínio WordCamp","hasFormSettingsSet":"yes"} -->
+      <!-- wp:jetpack/field-text {"label":"Nome do Contato","required":true} /-->
+
+      <!-- wp:jetpack/field-name {"label":"Nome da Empresa","required":true} /-->
+
+      <!-- wp:jetpack/field-url {"label":"Site da Empresa","required":true} /-->
+
+      <!-- wp:jetpack/field-email {"label":"E-mail","required":true,"requiredText":"(obrigatório)","id":"sponsor-email"} /-->
+
+      <!-- wp:jetpack/field-telephone {"label":"Número de Telefone"} /-->
+
+      <!-- wp:jetpack/field-select {"label":"Nível de Patrocínio","options":["Bronze","Prata","Ouro"]} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Por que você gostaria de patrocinar o WordCamp?","required":true} /-->
+
+      <!-- wp:jetpack/field-radio {"label":"É a sua primeira vez como patrocinador em um evento WordPress?","options":["Sim","Não","Não tenho certeza"],"id":"first-time-sponsor"} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Perguntas / Comentários"} /-->
+      <!-- /wp:jetpack/contact-form -->
+    categories:
+      -
+        domain: category
+        nicename: sem-categoria
+        value: Sem categoria
+  -
+    post_id: 5
+    title: Chamada para Palestrantes
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Nota dos organizadores:</em> Os envios deste formulário criarão automaticamente posts em rascunho para os tipos de post Palestrante e Sessão. Sinta-se à vontade para personalizar o formulário, mas excluir ou renomear os seguintes campos quebrará a automação: Name, Email, WordPress.org Username, Your Bio, Session Title, Session Description.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Se você quiser propor vários tópicos, envie o formulário várias vezes, uma vez para cada tópico. [Outras instruções/informações para palestrantes vão aqui.]</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:jetpack/contact-form {"subject":"Proposta de Palestra WordCamp","hasFormSettingsSet":"yes"} -->
+      <!-- wp:jetpack/field-name {"label":"Nome","required":true} /-->
+
+      <!-- wp:jetpack/field-email {"label":"E-mail","required":true,"requiredText":"(obrigatório)","id":"speaker-email"} /-->
+
+      <!-- wp:jetpack/field-text {"label":"Nome de Usuário no WordPress.org","requiredText":"(obrigatório)","id":"speaker-username","required":true} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Sua Biografia","required":true} /-->
+
+      <!-- wp:jetpack/field-text {"label":"Título do Tópico","required":true} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Descrição do Tópico","required":true} /-->
+
+      <!-- wp:jetpack/field-text {"label":"Público-alvo","required":true} /-->
+
+      <!-- wp:jetpack/field-radio {"label":"É a sua primeira vez como palestrante em um evento WordPress?","options":["Sim","Não","Não tenho certeza"],"id":"first-time-speaker"} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Experiência anterior como palestrante (não obrigatório para se inscrever)"} /-->
+      <!-- /wp:jetpack/contact-form -->
+    categories:
+      -
+        domain: category
+        nicename: sem-categoria
+        value: Sem categoria
+  -
+    post_id: 6
+    title: Chamada para Voluntários
+    content: |
+      <!-- wp:paragraph {"backgroundColor":"accent","textColor":"background","className":"has-accent-background-color has-background"} -->
+      <p class="has-accent-background-color has-background has-background-color has-text-color"><em>Nota dos organizadores:</em>
+      Os envios deste formulário criarão automaticamente posts em <code>rascunho</code>
+      <a href="https://brasil.wordcamp.org/2026/wp-admin/edit.php?post_type=wcb_volunteer">Posts de Voluntários</a>.
+      Você pode usá-los para gerenciar seus voluntários, publicando os que aceitar e excluindo os que não aceitar.
+      Porém, alterar as perguntas <code>name</code>, <code>email</code>, <code>username</code> ou <code>first time volunteering</code> pode quebrar a automação.
+      </p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Descrição com informações para potenciais voluntários.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:jetpack/contact-form {"subject":"Inscrição de Voluntário WordCamp","hasFormSettingsSet":"yes"} -->
+      <!-- wp:jetpack/field-name {"label":"Nome","required":true} /-->
+      <!-- wp:jetpack/field-email {"label":"E-mail","required":true,"requiredText":"(obrigatório)","id":"volunteer-email"} /-->
+
+      <!-- wp:jetpack/field-text {"label":"Nome de Usuário no WordPress.org","requiredText":"(obrigatório)","id":"volunteer-username"} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Habilidades / Interesses / Experiência (não obrigatório para se voluntariar)","required":true} /-->
+
+      <!-- wp:jetpack/field-text {"label":"Número de Horas Disponíveis","required":true} /-->
+
+      <!-- wp:jetpack/field-radio {"label":"É a sua primeira vez como voluntário em um evento WordPress?","options":["Sim","Não","Não tenho certeza"],"id":"first-time-volunteer"} /-->
+
+      <!-- wp:jetpack/field-textarea {"label":"Perguntas / Comentários"} /-->
+      <!-- /wp:jetpack/contact-form -->
+    categories:
+      -
+        domain: category
+        nicename: sem-categoria
+        value: Sem categoria
+  -
+    post_id: 7
+    title: Agenda
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Nota dos organizadores:</em> Você pode inserir conteúdo para esta página no item de menu Sessões na barra lateral.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:wordcamp/schedule /-->
+  -
+    post_id: 8
+    title: Palestrantes
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Nota dos organizadores:</em> Você pode inserir conteúdo para esta página no item de menu Palestrantes na barra lateral.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:pattern {"slug":"wordcamp/speaker-grid-centered"} /-->
+  -
+    post_id: 9
+    title: Sessões
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Nota dos organizadores:</em> Você pode inserir conteúdo para esta página no item de menu Sessões na barra lateral.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:pattern {"slug":"wordcamp/session-list-basic"} /-->
+  -
+    post_id: 10
+    title: Patrocinadores
+    content: |
+      <!-- wp:group {"style":{"color":{"background":"#eeeeee"},"spacing":{"padding":{"top":"1em","right":"1em","bottom":"1em","left":"1em"}}},"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group has-background" style="background-color:#eeeeee;padding-top:1em;padding-right:1em;padding-bottom:1em;padding-left:1em"><!-- wp:paragraph -->
+      <p><strong><em>Nota dos organizadores:</em></strong></p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Os patrocinadores de múltiplos eventos foram criados automaticamente no menu Patrocinadores, mas você precisará remover os que não se aplicam ao seu evento específico. Para saber quais se aplicam, visite a página do manual <a href="https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/fundraising/global-community-sponsorship-for-event-organizers/">Global Community Sponsorship</a>. Depois disso, adicione os patrocinadores específicos do seu evento. Para sites em outros idiomas, certifique-se de que o URL abaixo corresponde à página Chamada para Patrocinadores.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>O post "Chamada para Patrocinadores" foi criado como rascunho, mas há um link para ele abaixo. Atualize o conteúdo desse post e publique-o antes de desativar o modo Em breve.</p>
+      <!-- /wp:paragraph --></div>
+      <!-- /wp:group -->
+
+      <!-- wp:heading -->
+      <h2 class="wp-block-heading">Nossos Patrocinadores</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Texto de agradecimento aos patrocinadores</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:pattern {"slug":"wordcamp/sponsor-grid-basic"} /-->
+
+      <!-- wp:heading -->
+      <h2 class="wp-block-heading">Interessado em patrocinar o WordCamp este ano?</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Consulte nosso post <a href="https://brasil.wordcamp.org/2026/call-for-sponsors/">Chamada para Patrocinadores</a> para saber como você pode ajudar a tornar o WordCamp deste ano o melhor possível!</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 11
+    title: Local
+  -
+    post_id: 12
+    title: Organizadores
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Nota dos organizadores:</em> Você pode inserir conteúdo para esta página no item de menu Organizadores na barra lateral.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:pattern {"slug":"wordcamp/organizer-list-bio"} /-->
+  -
+    post_id: 13
+    title: Ingressos
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Nota dos organizadores:</em> Se você quiser alterar o slug desta página, certifique-se de fazer isso antes de abrir a venda de ingressos. Alterar o slug da página após o início das vendas quebrará o link que os usuários recebem no e-mail de confirmação.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:shortcode -->
+      [camptix]
+      <!-- /wp:shortcode -->
+  -
+    post_id: 14
+    title: Participantes
+    content: |
+      <!-- wp:shortcode -->
+      [camptix_attendees columns="3"]
+      <!-- /wp:shortcode -->
+  -
+    post_id: 15
+    title: Vídeos
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background"><em>Nota dos organizadores:</em> Após o término do seu WordCamp e a publicação das sessões no WordPress.tv, você pode incorporá-las aqui. Basta inserir o slug do evento no shortcode abaixo e clicar no botão <em>Publicar</em>.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:shortcode -->
+      [wptv event="enter-event-slug-here"]
+      <!-- /wp:shortcode -->
+  -
+    post_id: 16
+    title: Apresentação de Slides
+    content: |
+      <!-- wp:jetpack/slideshow {"sizeSlug":"large","className":"wp-block-jetpack-slideshow aligncenter"} /-->
+  -
+    post_id: 17
+    title: Contato
+    content: |
+      <!-- wp:jetpack/contact-form {"subject":"Solicitação de Contato WordCamp","jetpackCRM":false,"salesforceData":{"organizationId":"","sendToSalesforce":false},"mailpoet":{"listId":null,"listName":null,"enabledForForm":false}} -->
+      <div class="wp-block-jetpack-contact-form"><!-- wp:jetpack/field-name {"id":"","required":true,"fieldVariant":"name"} -->
+      <div><!-- wp:jetpack/label {"label":"Nome"} /-->
+
+      <!-- wp:jetpack/input {"style":{"border":{"style":"solid"}}} /--></div>
+      <!-- /wp:jetpack/field-name -->
+
+      <!-- wp:jetpack/field-email {"id":"","required":true} -->
+      <div><!-- wp:jetpack/label {"label":"E-mail"} /-->
+
+      <!-- wp:jetpack/input {"style":{"border":{"style":"solid"}}} /--></div>
+      <!-- /wp:jetpack/field-email -->
+
+      <!-- wp:jetpack/field-textarea {"id":"","required":true} -->
+      <div><!-- wp:jetpack/label {"label":"Mensagem"} /-->
+
+      <!-- wp:jetpack/input {"type":"textarea","style":{"border":{"style":"solid"}}} /--></div>
+      <!-- /wp:jetpack/field-textarea -->
+
+      <!-- wp:jetpack/button {"element":"button","text":"Enviar","lock":{"move":false,"remove":true}} /--></div>
+      <!-- /wp:jetpack/contact-form -->
+  -
+    post_id: 18
+    title: Off-line
+    content: |
+      <!-- wp:paragraph {"customBackgroundColor":"#eeeeee"} -->
+      <p style="background-color:#eeeeee" class="has-background">Nota dos organizadores: Atualize esta página com algumas informações básicas sobre o seu WordCamp. Ela será armazenada nos navegadores dos visitantes do site e exibida automaticamente caso tentem acessar o site sem conexão com a internet.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Esta página não pôde ser carregada porque você parece estar off-line. Por favor, tente novamente quando tiver uma conexão de rede.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading -->
+      <h2>Local e Data</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>1 de janeiro de 1970<br>
+      <br />
+      </p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading -->
+      <h2>Agenda</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:wordcamp/schedule /-->
+  -
+    post_id: 19
+    title: Dia do Evento
+    content: |
+      <!-- wp:paragraph -->
+      <p>1 de janeiro de 1970<br>
+      <br>
+      </p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading -->
+      <h2 class="wp-block-heading">Agenda</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:wordcamp/live-schedule {"now":"Agora","next":"A seguir","level":3} -->
+      <div data-now="Agora" data-next="A seguir" data-level="3" class="wp-block-wordcamp-live-schedule"></div>
+      <!-- /wp:wordcamp/live-schedule -->
+
+      <!-- wp:heading -->
+      <h2 class="wp-block-heading">Posts mais recentes</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:latest-posts {"displayPostDate":true,"liveUpdateEnabled":true} /-->
+  -
+    post_id: 20
+    title: Código de Conduta
+    content: |
+      <!-- wp:paragraph {"metadata":{"noteId":[5],"blockVisibility":false},"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee"><em>Nota dos organizadores:</em> Abaixo está um modelo de código de conduta que você pode personalizar; outro ótimo exemplo é a política anti-assédio da Ada Initiative <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">anti-harassment policy.</a></p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"metadata":{"noteId":[6],"blockVisibility":false},"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee">Também recomendamos que a equipe organizadora leia este artigo sobre <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports">como receber um relato de assédio</a></p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph {"metadata":{"noteId":[7],"blockVisibility":false},"style":{"color":{"background":"#eeeeee"}}} -->
+      <p class="has-background" style="background-color:#eeeeee">Por favor, atualize as partes <span style="color: red;text-decoration: underline">com texto em vermelho.</span> Para remover a formatação de sublinhado vermelho, clique na seta na barra de ferramentas chamada "mais controles de rich text" e alterne o sublinhado.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">1. Propósito</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>O <span style="color: red;text-decoration: underline">WordCamp Brasil</span> acredita que nossa comunidade deve ser verdadeiramente aberta para todos. Por isso, estamos comprometidos em proporcionar um ambiente amigável, seguro e acolhedor para todos, independentemente de gênero, orientação sexual, deficiência, etnia, religião, idade, casta, classe social, sistema operacional preferido, linguagem de programação ou editor de texto, entre outras características identificadoras.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Este código de conduta descreve nossas expectativas quanto ao comportamento dos participantes, bem como as consequências de comportamentos inaceitáveis.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Convidamos todos os patrocinadores, voluntários, palestrantes, participantes e demais convidados a nos ajudar a criar uma experiência de conferência segura e positiva para todos.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">2. Cidadania do Código Aberto</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Um objetivo complementar deste código de conduta é aumentar a cidadania do código aberto, incentivando os participantes a reconhecer e fortalecer as relações entre o que fazemos e a comunidade em geral.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Em prol desse objetivo, os organizadores do <span style="color: red;text-decoration: underline">WordCamp Brasil</span> receberão indicações de cidadãos exemplares durante o evento e reconhecerão participantes selecionados após a conferência no site.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Se você vir alguém que está fazendo um esforço extra para garantir que nossa comunidade seja acolhedora, amigável e que incentive todos os participantes a contribuir ao máximo, queremos saber. <span style="color: red;text-decoration: underline">Você pode indicar alguém na mesa de inscrição ou on-line em URL AQUI.</span></p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">3. Comportamento Esperado</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:list -->
+      <ul class="wp-block-list"><!-- wp:list-item -->
+      <li>Seja atencioso, respeitoso e colaborativo.</li>
+      <!-- /wp:list-item -->
+
+      <!-- wp:list-item -->
+      <li>Abstenha-se de comportamentos e discursos depreciativos, discriminatórios ou de assédio.</li>
+      <!-- /wp:list-item -->
+
+      <!-- wp:list-item -->
+      <li>Esteja atento ao seu entorno e aos demais participantes. Avise os organizadores da conferência se notar uma situação perigosa ou alguém em dificuldade.</li>
+      <!-- /wp:list-item -->
+
+      <!-- wp:list-item -->
+      <li>Participe de forma autêntica e ativa. Ao fazê-lo, você ajuda a criar o <span style="color: red;text-decoration: underline">WordCamp Brasil</span> e torná-lo seu.</li>
+      <!-- /wp:list-item --></ul>
+      <!-- /wp:list -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">4. Comportamento Inaceitável</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Comportamentos inaceitáveis incluem: conduta intimidadora, de assédio, abusiva, discriminatória, depreciativa ou humilhante por parte de qualquer participante do <span style="color: red;text-decoration: underline">WordCamp Brasil</span> e eventos relacionados. Todos os locais do <span style="color: red;text-decoration: underline">WordCamp Brasil</span> podem ser compartilhados com membros do público; por favor, seja respeitoso com todos os frequentadores desses locais.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Assédio inclui: comentários verbais ofensivos relacionados a gênero, orientação sexual, raça, religião, deficiência; uso inadequado de nudez e/ou imagens sexuais em espaços públicos (incluindo slides de apresentação); intimidação deliberada, perseguição ou seguimento; fotografias ou gravações de assédio; perturbação persistente de palestras ou outros eventos; contato físico inapropriado e atenção sexual indesejada.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">5. Consequências do Comportamento Inaceitável</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Comportamentos inaceitáveis não serão tolerados por outros participantes, organizadores, equipe do local, patrocinadores ou outros frequentadores dos locais do <span style="color: red;text-decoration: underline">WordCamp Brasil</span>.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Espera-se que qualquer pessoa solicitada a interromper um comportamento inaceitável o faça imediatamente.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Se um participante se envolver em comportamento inaceitável, os organizadores da conferência poderão tomar qualquer medida que considerem adequada, incluindo a expulsão da conferência sem aviso prévio ou reembolso.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">6. O Que Fazer Se Você Testemunhar ou For Vítima de Comportamento Inaceitável</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Se você for vítima de comportamento inaceitável, perceber que outra pessoa está sendo vítima de comportamento inaceitável ou tiver qualquer outra preocupação, notifique um organizador da conferência o mais rápido possível.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>A equipe do <span style="color: red;text-decoration: underline">WordCamp Brasil</span> estará disponível para ajudar os participantes a entrar em contato com a segurança do local ou as autoridades locais, fornecer acompanhamento ou de outra forma ajudar quem estiver passando por comportamentos inaceitáveis a se sentir seguro durante a conferência. <span style="color: red;text-decoration: underline">Os voluntários estarão usando XXXXXXXXXXXXXXXXXXXXXXXX.</span> Qualquer voluntário pode conectá-lo a um organizador da conferência. Você também pode ir até o balcão especial de inscrição no saguão e pedir pelos organizadores.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">7. Escopo</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Esperamos que todos os participantes da conferência (patrocinadores, voluntários, palestrantes, participantes e outros convidados) respeitem este código de conduta em todos os locais da conferência e nos eventos sociais relacionados.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">8. Informações de Contato</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p><span style="color: red;text-decoration: underline">Informações de contato aqui! Certifique-se de incluir uma forma de acessar os organizadores durante o evento.</span></p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">9. Licença e Atribuição</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Este Código de Conduta é baseado no excelente trabalho do Open Source Bridge, com as informações do nosso evento substituídas. O original está disponível no <a href="http://web.archive.org/web/20191206083557/http://opensourcebridge.org/about/code-of-conduct/">Open Source Bridge 2018 [arquivado]</a> e é distribuído sob uma licença <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike</a>.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:heading {"level":3} -->
+      <h3 class="wp-block-heading">Declaração sobre Eventos Sociais ou Complementares (quando aplicável)</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph -->
+      <p>Os eventos sociais e complementares têm como objetivo oferecer oportunidades de networking e aprendizado adicional, além de uma chance de relaxar após um WordCamp completo. Eles também devem ser locais onde os participantes possam se sentir seguros e protegidos.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Queremos que você aproveite esses eventos e que o faça com segurança. Se você vivenciar uma violação do Código de Conduta, presenciar uma violação, estiver preocupado com o bem-estar, segurança ou comportamento de outro participante, ou tiver uma dúvida geral (entendemos que as violações nem sempre são óbvias!), entre em contato imediatamente notificando um organizador do WordCamp ou enviando um e-mail para <a href="mailto:report@wordcamp.org">report@wordcamp.org</a>. Para eventos presenciais, se você precisar de ajuda ou não conseguir se retirar de forma confortável e segura de uma situação indesejada, os organizadores priorizarão ajudá-lo imediata e discretamente. Alguns exemplos são: sentir-se mal; seus meios de transporte falharem; estar embriagado, estar sozinho ou com alguém em quem não confia, estar sobrecarregado, ter vivenciado ou presenciado uma violação do Código de Conduta. Por favor, peça ajuda a qualquer voluntário ou organizador do evento próximo a você.</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 21
+    title: Hostinger
+    content: |
+      <!-- wp:paragraph -->
+      <p>A <a href="https://www.hostinger.com/">Hostinger</a> cria produtos e serviços para ajudar clientes a desenvolver com sucesso sua presença on-line, oferecendo ferramentas para e-commerce, blogs, sites de portfólio e muito mais. Em 2025, o portfólio de produtos foi expandido para incluir o <a href="https://www.hostinger.com/horizons?trk=brand_horizons&amp;utm_source=google&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_id=1758060185&amp;utm_campaign=Brand-Phrase|NT:Se|LO:USA&amp;utm_term=hostinger+horizons&amp;utm_content=734451715881&amp;gad_source=1&amp;gad_campaignid=1758060185&amp;gbraid=0AAAAADMy-hZWqmaJGrWk8lhW5NCAqMh9u&amp;gclid=CjwKCAjw7vzOBhBxEiwAc7WNryJiMGVwypmMPOGbDDwdOT_o-z2wHyV4JDy-80BMTfM4sUzPwu_2-xoCY8MQAvD_BwE">Hostinger Horizons</a>, uma solução simples para criar aplicativos web.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>A empresa foi fundada na Lituânia em 2004. Sua equipe internacional é composta atualmente por cerca de 900 profissionais. Por seis anos consecutivos, a Hostinger foi destaque no ranking anual FT 1000 do Financial Times das empresas de crescimento mais rápido da Europa. Não apenas o negócio da empresa cresce de forma consistente, mas também o reconhecimento de sua marca — de acordo com o Google Trends, a Hostinger é agora o segundo provedor de hospedagem mais pesquisado no mundo.</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 23
+    title: Automattic
+    content: |
+      <!-- wp:paragraph -->
+      <p>Na <a href="https://automattic.com/about/" target="_blank" rel="noreferrer noopener">Automattic</a>, <em>somos</em>&nbsp;apaixonados por tornar&nbsp;<em>a&nbsp;web</em>&nbsp;um lugar&nbsp;melhor.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Somos as pessoas por trás do&nbsp;<a href="https://wordpress.com/">WordPress.com</a>,&nbsp;<a href="https://woocommerce.com/">WooCommerce</a>,&nbsp;<a href="https://jetpack.com/">Jetpack</a>,&nbsp;<a href="https://wpvip.com/">WordPress VIP</a>,&nbsp;<a href="https://simplenote.com/">Simplenote</a>,&nbsp;<a href="https://longreads.com/">Longreads</a>,&nbsp;<a href="http://wpscan.com/">WPScan</a>,&nbsp;<a href="https://akismet.com/">Akismet</a>,&nbsp;<a href="https://en.gravatar.com/">Gravatar</a>,&nbsp;<a href="https://crowdsignal.com/">Crowdsignal</a>,&nbsp;<a href="https://cloudup.com/">Cloudup</a>,&nbsp;<a href="https://www.tumblr.com/">Tumblr</a>,&nbsp;<a href="https://dayoneapp.com/">Day One</a>,&nbsp;<a href="https://www.pocketcasts.com/">Pocket Casts</a> e muito mais. Acreditamos em tornar a web um lugar melhor.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p><a href="https://distributed.blog/">Somos uma empresa distribuída</a>&nbsp;com 2.007 Automatticians em 97 países falando 123 idiomas diferentes. Estamos comprometidos com&nbsp;<a href="https://automattic.com/diversity-and-inclusion/">diversidade, equidade e inclusão</a>, e nosso objetivo comum é democratizar a publicação e o comércio para que qualquer pessoa com uma história possa contá-la, e qualquer pessoa com um produto possa vendê-lo, independentemente de renda, gênero, política, idioma ou onde vivam no mundo.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p><a href="https://github.com/Automattic">Acreditamos no código aberto</a>&nbsp;e a grande maioria do nosso trabalho está disponível sob a GPL.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Nos esforçamos para viver de acordo com o&nbsp;<a href="https://automattic.com/creed/">Automattic Creed</a>.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>A Automattic é uma&nbsp;<a href="https://mostlovedworkplace.com/companies/automattic-inc/">Most Loved Company</a>&nbsp;e&nbsp;<a href="https://disabilityconfident.campaign.gov.uk/">Disability Confident Committed</a>. (Aqui está&nbsp;<a href="https://happinessengineer.blog/2022/09/08/happiness-for-everyone-working-with-a-disability-at-automattic/">o que isso pode significar para você</a>.) Venha&nbsp;<a href="https://automattic.com/work-with-us/">trabalhar conosco</a>.</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 25
+    title: Bluehost
+    content: |
+      <!-- wp:paragraph -->
+      <p>A <a href="https://www.bluehost.com/">Bluehost</a> é parceira do WordPress desde 2005 e hospeda mais de 2 milhões de sites ao redor do mundo com hospedagem confiável e orientação personalizada. Ao aproveitar o poder do WordPress, a Bluehost oferece métodos rápidos de criação de sites aliados a ferramentas de gerenciamento intuitivas. De instalações seguras e automatizadas do WordPress a ferramentas e serviços avançados de marketing e acesso a especialistas em WordPress, a Bluehost é o melhor lugar para construir, crescer e expandir uma presença on-line.</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 27
+    title: Woo
+    content: |
+      <!-- wp:paragraph -->
+      <p>O <a href="https://woo.com/">Woo</a> é a principal plataforma de e-commerce de código aberto, responsável por 31,4% do primeiro milhão de lojas on-line.* Construído sobre o WordPress, o Woo capacita qualquer pessoa, em qualquer lugar, a vender qualquer coisa com extensibilidade, flexibilidade e controle verdadeiramente ilimitados sobre como constroem e desenvolvem seus negócios.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>* StoreLeads, <a href="https://storeleads.app/reports">StoreLeads.app, julho de 2026</a>.</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 103
+    title: Deixar Comentário
+    content: |
+      <!-- wp:paragraph {"style":{"color":{"background":"#94240b"}},"textColor":"white"} -->
+      <p class="has-white-color has-text-color has-background" style="background-color:#94240b">Nota dos organizadores: Esta página é utilizada para exibir a lista de sessões para o formulário de Comentários de Palestrantes. Ela será adicionada após o conteúdo que você inserir aqui. Você pode remover esta nota.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Você pode demonstrar seu apreço e contribuir com a comunidade deixando comentários construtivos. Isso não só ajuda os palestrantes a saber o que funcionou em sua apresentação e o que não funcionou, mas também ajuda os organizadores a ter uma ideia de quão bem-sucedido foi o evento como um todo.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <p>Os comentários que você deixar serão exibidos apenas para palestrantes e organizadores.</p>
+      <!-- /wp:paragraph -->
+  -
+    post_id: 29
+    title: Agradecemos aos nossos patrocinadores Ouro
+    content: |
+      <!-- wp:paragraph -->
+      <p>A Bluehost é parceira do WordPress desde 2005 e hospeda mais de 2 milhões de sites ao redor do mundo com hospedagem confiável e orientação personalizada.</p>
+      <!-- /wp:paragraph -->
+    categories:
+      -
+        domain: category
+        nicename: sem-categoria
+        value: Sem categoria

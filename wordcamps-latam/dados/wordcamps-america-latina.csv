@@ -1,0 +1,98 @@
+pais,codigo_pais,cidade,ano,data_inicio,data_fim,publico_previsto,capacidade_max,virtual,titulo,url,slug
+Argentina,AR,Buenos Aires,2007,2007-10-31,,,,não,WordCamp Argentina,https://central.wordcamp.org/wordcamps/argentina-2007/,argentina-2007
+Argentina,AR,Buenos Aires,2008,2008-11-08,,,,não,WordCamp Argentina,http://argentina.wordcamp.org,argentina-2008
+Argentina,AR,Buenos Aires,2010,2010-05-08,,,,não,WordCamp Argentina,http://argentina.wordcamp.org/,argentina-2010
+Argentina,AR,San Nicolas,2015,2015-05-30,,300,400,não,WordCamp Buenos Aires,https://buenosaires.wordcamp.org/2015/,wordcamp-buenos-aires
+Argentina,AR,Buenos Aires,2017,2017-07-08,,,,não,WordCamp Buenos Aires,https://buenosaires.wordcamp.org/2017/,wordcamp-buenos-aires-2017
+Bolívia,BO,Cochabamba,2025,2025-03-15,2025-03-15,30,,não,"Celebración del liderazgo de las mujeres en Tecnología y WordPress &#8211; Cochabamba, Bolivia",https://events.wordpress.org/cochabamba/2025/WomensDay/,womens-day-cochabamba-2025
+Brasil,BR,São Paulo,2009,2009-06-21,,,,não,WordCamp Brazil,http://www.wordpress-br.com/wordcamp-brasil,brazil-2009
+Brasil,BR,Curitiba,2010,2010-10-22,2010-10-23,,,não,WordCamp Curitiba,http://curitiba.wordcamp.com.br/,curitiba-2010
+Brasil,BR,Curitiba,2012,2012-06-15,2012-06-16,,,não,WordCamp Curitiba,https://curitiba.wordcamp.org/2012/,wordcamp-curitiba
+Brasil,BR,Sao Paulo,2012,2012-08-25,,,,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2012/,wordcamp-sao-paulo
+Brasil,BR,Porto Alegre,2013,2013-07-13,,,,não,WordCamp Porto Alegre,https://portoalegre.wordcamp.org/2013/,wordcamp-porto-alegre
+Brasil,BR,Sao Paulo,2013,2013-11-23,,,,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2013/,wordcamp-sao-paulo-2
+Brasil,BR,Belo Horizonte,2014,2014-05-17,,,,não,WordCamp Belo Horizonte,https://belohorizonte.wordcamp.org/2014/,wordcamp-belo-horizonte
+Brasil,BR,Rio De Janeiro,2014,2014-09-20,,250,240,não,WordCamp Rio de Janeiro,https://riodejaneiro.wordcamp.org/2014/,wordcamp-rio-de-janeiro
+Brasil,BR,Salvador,2014,2014-12-06,,240,,não,WordCamp Salvador,https://salvador.wordcamp.org/2014/,wordcamp-salvador
+Brasil,BR,Sao Paulo,2014,2014-10-18,,200,,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2014/,wordcamp-sao-paulo-3
+Brasil,BR,Belo Horizonte,2015,2015-06-13,,567,600,não,WordCamp Belo Horizonte,https://belohorizonte.wordcamp.org/2015/,wordcamp-belo-horizonte-2
+Brasil,BR,Porto Alegre,2015,2015-10-31,,100,100,não,WordCamp Porto Alegre,https://portoalegre.wordcamp.org/2015/,wordcamp-porto-alegre-2
+Brasil,BR,Rio De Janeiro,2015,2015-08-29,,240,240,não,WordCamp Rio de Janeiro,https://riodejaneiro.wordcamp.org/2015/,wordcamp-rio-de-janeiro-2
+Brasil,BR,Sao Paulo,2015,2015-11-28,,300,300,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2015/,wordcamp-sao-paulo-4
+Brasil,BR,Belo Horizonte,2016,2016-07-23,,300,,não,WordCamp Belo Horizonte,https://belohorizonte.wordcamp.org/2016/,wordcamp-belo-horizonte-3
+Brasil,BR,Fortaleza,2016,2016-08-13,2016-08-14,200,200,não,WordCamp Fortaleza,https://fortaleza.wordcamp.org/2016,wordcamp-fortaleza
+Brasil,BR,Rio De Janeiro,2016,2016-09-24,,250,200,não,WordCamp Rio de Janeiro,https://riodejaneiro.wordcamp.org/2016/,wordcamp-rio-de-janeiro-2016
+Brasil,BR,Sao Paulo,2016,2016-12-10,,700,,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2016/,wordcamp-sao-paulo-5
+Brasil,BR,Porto Alegre,2017,2017-05-06,,100,150,não,WordCamp Porto Alegre,https://portoalegre.wordcamp.org/2017/,wordcamp-porto-alegre-2017
+Brasil,BR,Sao Paulo,2017,2017-12-02,,250,250,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2017/,wordcamp-sao-paulo-6
+Brasil,BR,Florianopolis,2018,2018-04-07,2018-04-07,400,215,não,WordCamp Florianópolis,https://floripa.wordcamp.org/2018/,wordcamp-florianopolis
+Brasil,BR,Porto Alegre,2018,2018-05-05,,150,,não,WordCamp Porto Alegre,https://portoalegre.wordcamp.org/2018/,wordcamp-porto-alegre-2018
+Brasil,BR,Sao Paulo,2018,2018-10-13,2018-10-13,600,950,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2018/,wordcamp-sao-paulo-7
+Brasil,BR,Florianopolis Brazil,2019,2019-04-13,2019-04-13,215,215,não,WordCamp Floripa 2019,https://floripa.wordcamp.org/2019/,wordcamp-florianopolis-brazil
+Brasil,BR,Porto Alegre,2019,2019-06-15,,178,178,não,WordCamp Porto Alegre 2019,https://portoalegre.wordcamp.org/2019/,wordcamp-porto-alegre-2019
+Brasil,BR,Sao Paulo,2019,2019-10-05,,700,700,não,WordCamp São Paulo,https://saopaulo.wordcamp.org/2019/,wordcamp-sao-paulo-8
+Brasil,BR,Rio De Janeiro Rj Brazil,2024,2024-08-16,2024-08-17,150,190,não,WordCamp Rio 2024,https://riodejaneiro.wordcamp.org/2024/,wordcamp-rio-de-janeiro-rj-brazil-2
+Brasil,BR,Brasil,2025,2025-11-28,2025-11-29,250,250,não,WordCamp Brasil 2025,https://brasil.wordcamp.org/2025/,wordcamp-brasil-2025
+Chile,CL,Santiago,2010,2010-05-08,,,,não,WordCamp Chile,http://chile.wordcamp.org/,chile-2010
+Colômbia,CO,Bogotá,2010,2010-10-23,,,,não,WordCamp Bogotá,http://www.wordcampbogota.com/,bogota-2010
+Colômbia,CO,Medellín,2016,2016-11-05,,100,200,não,WordCamp Medellín,https://medellin.wordcamp.org/2016/,wordcamp-medellin
+Colômbia,CO,Bogota Colombia,2017,2017-09-09,,172,172,não,WordCamp Bogotá,https://bogota.wordcamp.org/2017/,wordcamp-bogota-colombia
+Colômbia,CO,Bogotá,2018,2018-11-09,2018-11-10,172,172,não,WordCamp Bogotá,https://bogota.wordcamp.org/2018/,wordcamp-bogota-2018
+Colômbia,CO,Bogota,2024,2024-08-30,2024-08-31,180,180,não,WordCamp Bogotá,https://bogota.wordcamp.org/2024/,wordcamp-bogota
+Colômbia,CO,Santa Marta,2025,2025-03-08,2025-03-08,150,800,não,"Women WordPress Day 2025, San José, Costa Rica",https://events.wordpress.org/sanjose/2025/women-wordpress-day/,women-wordpress-day-2025-san-jose-costa-rica
+Costa Rica,CR,San Jose Costa Rica,2016,2016-11-05,2016-11-06,220,220,não,WordCamp San José,https://sanjose.wordcamp.org/2016/,wordcamp-san-jose-costa-rica
+Costa Rica,CR,San Pedro,2017,2017-09-02,2017-09-03,350,450,não,WordCamp San José,https://sanjose.wordcamp.org/2017/,wordcamp-san-jose-2017
+Costa Rica,CR,San Pedro,2018,2018-07-21,2018-07-22,450,600,não,WordCamp San José,https://sanjose.wordcamp.org/2018/,wordcamp-san-jose-costa-rica-2
+Costa Rica,CR,San Pedro,2019,2019-09-07,2019-09-08,,700,não,WordCamp San José/ Costa Rica,https://sanjose.wordcamp.org/2019/,wordcamp-san-jose-costa-rica-3
+Costa Rica,CR,Curridabat,2022,2022-11-05,2022-11-06,,,não,WordCamp San José / Costa Rica,https://sanjose.wordcamp.org/2022/,wordcamp-san-jose-costa-rica-5
+Costa Rica,CR,Curridabat,2023,2023-11-04,2023-11-05,450,800,não,"WordCamp San José, Costa Rica",https://sanjose.wordcamp.org/2023/,wordcamp-san-jose-costa-rica-6
+Costa Rica,CR,Curridabat,2024,2024-03-08,2024-03-08,120,800,não,Women WordPress Day,https://events.wordpress.org/sanjose/2024/women-wordpress-day/,women-wordpress-day
+Costa Rica,CR,Curridabat,2024,2024-10-11,2024-10-12,450,600,não,WordCamp San José,https://sanjose.wordcamp.org/2024/,wordcamp-san-jose-costa-rica-7
+Costa Rica,CR,Cartago,2025,2025-07-04,2025-09-13,180,,não,WordPress Campus Connect Cartago,https://events.wordpress.org/campusconnect/2025/cartago-covao/,wordpress-campus-connect-cartago
+Costa Rica,CR,Curridabat,2025,2025-09-23,2025-09-25,100,800,não,WordPress Campus Connect San José,https://events.wordpress.org/campusconnect/2026/sanjose-fidelitas/,wordpress-campus-connect-san-jose
+Costa Rica,CR,San Jose,2025,2025-02-22,2025-02-22,150,600,não,WordPress Developer Day San José,https://events.wordpress.org/sanjose/2025/wordpress-devday/,san-jose
+Costa Rica,CR,San Pedro,2025,2025-10-31,2025-11-01,500,,não,WordCamp San Jose 2025,https://sanjose.wordcamp.org/2025/,wordcamp-san-jose-2025
+Costa Rica,CR,Cartago,2026,2026-09-12,2026-09-12,100,250,não,"WordPress Campus Connect BeeNova HHC Innovation Center, Cartago",https://events.wordpress.org/campusconnect/2026/beenova-hhc/,wordpress-campus-connect-beenova-hhc-innovation-center
+Costa Rica,CR,Cartago,2026,2026-03-28,2026-03-28,80,400,não,WordPress Women Day Cartago 2026,https://events.wordpress.org/cartago/2026/WomensDay/,women-wp-day-cartago-2026
+Costa Rica,CR,Curridabat,2026,2026-02-21,2026-02-21,150,300,não,WordPress Developer Day 2026 San José,https://events.wordpress.org/sanjose/2026/wordpress-devday/,wordpress-developer-day-san-jose-2026
+Costa Rica,CR,Puntarenas,2026,2026-08-29,2026-08-29,60,,não,WordPress Campus Connect UCR Sede del Pacífico Esparza,https://events.wordpress.org/campusconnect/2026/UCR-Esparza/,wordpress-campus-connect-ucr-sede-del-pacifico-esparza
+Costa Rica,CR,San José,2026,2026-09-18,2026-09-19,350,,não,WordCamp Costa Rica 2026,https://costarica.wordcamp.org/2026/,wordcamp-costa-rica-2026
+Costa Rica,CR,San Pedro,2026,2026-03-07,2026-03-07,75,400,não,Women WordPress Day San José 2026,https://events.wordpress.org/sanjose/2026/women-wordpress-day/,women-wp-day-san-jose-2026
+Equador,EC,Guayaquil,2019,2019-12-07,,160,300,não,WordCamp Guayaquil,https://guayaquil.wordcamp.org/2019/,wordcamp-guayaquil-2019
+Guatemala,GT,Ciudad de Guatemala,2024,2024-10-26,2024-10-26,150,150,não,WordCamp Guatemala City,https://guatemalacity.wordcamp.org/2024/,wordcamp-guatemala-guatemala
+Guatemala,GT,Ciudad de Guatemala,2025,2025-10-18,2025-10-18,150,150,não,WordCamp Guatemala 2025,https://guatemala.wordcamp.org/2025/,wordcamp-guatemala-2025
+Guatemala,GT,Guatemala 01104,2025,2025-03-22,2025-03-22,50,50,não,Women WordPress Day Guatemala 2025,https://events.wordpress.org/guatemala/2025/WomensDay/,women-wordpress-day-guatemala-2025
+Guatemala,GT,Ciudad de Guatemala,2026,2026-08-01,2026-08-01,50,250,não,WordPress Campus Connect UVG Guatemala,https://events.wordpress.org/campusconnect/2026/uvg-guatemala/,wordpress-campus-connect-uvg-guatemala
+Guatemala,GT,Ciudad de Guatemala,2026,2026-03-28,2026-03-28,65,70,não,Women WordPress Day Guatemala 2026,https://events.wordpress.org/guatemala/2026/WomensDay/,women-wp-day-guatemala-2026
+México,MX,Ciudad de México,2013,2013-01-18,2013-01-19,,60,não,WordCamp Mexico,https://mexico.wordcamp.org/2013/,wordcamp-mexico
+México,MX,Ciudad de México,2015,2015-11-06,,190,1000,não,WordCamp Mexico City,https://mexico.wordcamp.org/2015/,wordcamp-mexico-city
+México,MX,Ciudad de México,2017,2017-05-27,,250,250,não,WordCamp Mexico City,https://mexicocity.wordcamp.org/2017/,wordcamp-mexico-city-2017
+México,MX,Ciudad de México,2018,2018-08-24,,250,250,não,WordCamp México City/ México,https://mexicocity.wordcamp.org/2018/,wordcamp-mexico-city-mexico
+México,MX,Guadalajara,2018,2018-08-25,,,300,não,WordCamp Guadalajara,https://guadalajara.wordcamp.org/2018/,wordcamp-guadalajara
+México,MX,Heroica Puebla de Zaragoza,2018,2018-11-10,2018-11-10,100,130,não,WordCamp Puebla/México,https://puebla.wordcamp.org/2018/,wordcamp-puebla-mexico
+México,MX,Ciudad de México,2019,2019-08-31,,500,800,não,WordCamp México City México,https://mexicocity.wordcamp.org/2019/,wordcamp-mexico-city-2019
+México,MX,Guadalajara,2019,2019-10-26,2019-10-26,200,500,não,WordCamp Guadalajara 2019,https://guadalajara.wordcamp.org/2019/,wordcamp-guadalajara-2019
+México,MX,Heroica Puebla de Zaragoza,2019,2019-11-09,2019-11-09,200,300,não,WordCamp Puebla,https://puebla.wordcamp.org/2019/,wordcamp-puebla
+México,MX,Ciudad de México,2026,2026-08-29,2026-08-29,100,,não,WordPress Day CDMX 2026,https://events.wordpress.org/cdmx/2026/wordpress-day/,wordpress-day-cdmx-2026
+Nicarágua,NI,Managua,2013,2013-05-25,,,,não,WordCamp Nicaragua,https://nicaragua.wordcamp.org/2013/,wordcamp-nicaragua
+Nicarágua,NI,Las Peñitas,2014,2014-05-23,2014-05-25,,,não,WordCamp Las Peñitas,https://laspenitas.wordcamp.org/2014/,wordcamp-las-penitas
+Nicarágua,NI,Managua,2017,2017-05-26,2017-05-27,200,,não,WordCamp Managua,https://managua.wordcamp.org/2017/,wordcamp-managua-nicaragua
+Nicarágua,NI,Managua,2018,2018-05-25,2018-05-26,400,400,não,WordCamp Managua,https://managua.wordcamp.org/2018/,wordcamp-managua
+Nicarágua,NI,Managua,2019,2019-05-24,2019-05-25,400,500,não,WordCamp Managua,https://managua.wordcamp.org/2019/,wordcamp-managua-2019
+Nicarágua,NI,Managua,2023,2023-10-28,2023-10-28,200,1000,não,"WordCamp Managua, Nicaragua",https://managua.wordcamp.org/2023/,wordcamp-managua-nicaragua-4
+Nicarágua,NI,Managua,2024,2024-06-28,2024-06-29,90,90,não,WordPress Youth Day,https://events.wordpress.org/managua/2024/wordpress-youth-day/,managua-nicaragua
+Nicarágua,NI,Managua,2024,2024-09-28,2024-09-29,120,280,não,WordCamp Managua,https://managua.wordcamp.org/2024/,wordcamp-managua-nicaragua-6
+Nicarágua,NI,Managua,2025,2025-07-26,2025-07-26,300,800,não,WordCamp Nicaragua 2025,https://nicaragua.wordcamp.org/2025/,wordcamp-nicaragua-2025
+Nicarágua,NI,Managua,2025,2025-10-11,2025-10-11,150,250,não,WordPress Youth Day Nicaragua,https://events.wordpress.org/managua/2025/wordpress-youth-day/,youth-day-nicaragua-2025
+Nicarágua,NI,Managua,2026,2026-09-26,2026-09-27,250,,não,WordCamp Managua 2026,https://managua.wordcamp.org/2026/,wordcamp-managua-2026
+Nicarágua,NI,Managua,2026,2026-03-08,2026-03-08,50,50,não,Women WordPress Day Nicaragua 2026,https://events.wordpress.org/nicaragua/2026/WomensDay/,women-wp-day-nicaragua-2026
+Nicarágua,NI,San Marcos,2026,2026-03-20,2026-03-27,,,não,WordPress Campus Connect Keiser University Latin American Campus,https://events.wordpress.org/campusconnect/2026/keiser-university-latin-american-campus/,wordpress-campus-connect-keiser-university-latin-american-campus
+Panamá,PA,Panamá,2019,2019-10-19,2019-10-20,225,450,não,"WordCamp Panama City, Panama",https://panamacity.wordcamp.org/2019/,wordcamp-panama-city-panama
+Peru,PE,Lima,2009,2009-12-05,,,,não,WordCamp Peru,https://peru.wordcamp.org/2009/,peru-2009
+Peru,PE,Surquillo,2013,2013-10-19,,,,não,WordCamp Lima,https://lima.wordcamp.org/2013/,wordcamp-lima
+Peru,PE,Santiago de Surco,2014,2014-08-30,,150,,não,WordCamp Peru,https://peru.wordcamp.org/2014/,wordcamp-peru
+Peru,PE,Jesús María,2016,2016-07-16,,250,850,não,WordCamp Lima,https://lima.wordcamp.org/2016/,wordcamp-lima-2016
+Peru,PE,Cusco,2018,2018-09-01,2018-09-02,60,100,não,WordCamp Cusco,https://cusco.wordcamp.org/2018/,wordcamp-cusco
+Porto Rico,PR,Caguas,2011,2011-11-12,,,,não,WordCamp Caguas,https://caguas.wordcamp.org/2011/,caguas-2011
+Porto Rico,PR,Ponce,2012,2012-04-28,,,,não,WordCamp Ponce,https://ponce.wordcamp.org/2012/,ponce-2012
+Uruguai,UY,Montevideo,2018,2018-11-24,2018-11-24,110,250,não,"WordCamp Montevideo, Uruguay",https://montevideo.wordcamp.org/2018/,wordcamp-montevideo-uruguay-3
