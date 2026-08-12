@@ -263,8 +263,24 @@ $gs_content = wp_json_encode( [
 		'typography' => [
 			'fluid'        => false,
 			'fontFamilies' => [
-				[ 'fontFamily' => $ff_head, 'name' => 'Poppins',    'slug' => 'poppins'    ],
-				[ 'fontFamily' => $ff_body, 'name' => 'Montserrat', 'slug' => 'montserrat' ],
+				[
+					'fontFamily' => $ff_head,
+					'name'       => 'Poppins',
+					'slug'       => 'poppins',
+					'fontFace'   => [
+						[ 'fontFamily' => 'Poppins', 'fontStyle' => 'normal', 'fontWeight' => '400', 'fontDisplay' => 'swap', 'src' => [ $uploads_base . 'fonts/poppins-400.woff2' ] ],
+						[ 'fontFamily' => 'Poppins', 'fontStyle' => 'normal', 'fontWeight' => '700', 'fontDisplay' => 'swap', 'src' => [ $uploads_base . 'fonts/poppins-700.woff2' ] ],
+						[ 'fontFamily' => 'Poppins', 'fontStyle' => 'normal', 'fontWeight' => '900', 'fontDisplay' => 'swap', 'src' => [ $uploads_base . 'fonts/poppins-900.woff2' ] ],
+					],
+				],
+				[
+					'fontFamily' => $ff_body,
+					'name'       => 'Montserrat',
+					'slug'       => 'montserrat',
+					'fontFace'   => [
+						[ 'fontFamily' => 'Montserrat', 'fontStyle' => 'normal', 'fontWeight' => '700', 'fontDisplay' => 'swap', 'src' => [ $uploads_base . 'fonts/montserrat-700.woff2' ] ],
+					],
+				],
 			],
 			'fontSizes' => [
 				[ 'slug' => 'x-small',   'size' => '0.75rem',                         'name' => 'X Small'   ],
