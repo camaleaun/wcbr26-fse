@@ -307,7 +307,7 @@ $gs_content = wp_json_encode( [
 				'typography' => [ 'fontFamily' => 'var:preset|font-family|poppins', 'fontWeight' => '700', 'textTransform' => 'uppercase', 'lineHeight' => '1.1' ],
 			],
 			'link' => [
-				'color'      => [ 'text' => 'inherit' ],
+				'color'      => [ 'text' => 'var:preset|color|cyan-700' ],
 				'typography' => [ 'textDecoration' => 'none' ],
 			],
 		],
