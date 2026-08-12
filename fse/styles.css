@@ -27,6 +27,9 @@
 .hero-content > .wp-block-heading { margin-block-start: 28px !important; margin-block-end: 0 !important; }
 /* P: REF mt=24 (from H1 mb=24 collapse), mb=32; WP would default to gap=38.86 */
 .hero-content > .wp-block-paragraph { margin-block-start: 24px !important; margin-block-end: 32px !important; }
+/* Hero CTA: WP button__link font-size=20px → "GARANTA SEU INGRESSO" wraps 2 lines at 312px (text~231px+80px pad > 312px).
+   REF uses 16px → 1 line (185px+80px=265px < 312px) → height=68px. Fix to match. */
+.hero-content .wp-block-button__link { font-size: 1rem !important; padding-block: 20px !important; }
 
 /* ── Hero chips ── */
 .hero-chip { text-transform:uppercase; }
@@ -82,6 +85,8 @@
 .news-card .wp-block-post-excerpt { display:none; }
 
 /* ── Footer ── */
+/* WP padding-bottom: clamp→64px desktop / 48px mobile; REF = 72px both → fix both */
+.site-footer { padding-bottom: 72px !important; }
 .site-footer .wp-block-list { list-style:none; padding-left:0; display:flex; flex-direction:column; gap:0.75rem; }
 .site-footer .wp-block-list li { margin-block-start:0; }
 .footer-social .wp-block-social-link a { color:inherit; padding:0; background:none; border-radius:0; }
@@ -255,6 +260,8 @@
   /* WP global-padding mobile = 30px; REF container padding-inline = 24px → content 312px vs 300px.
      Forçar 24px em todas as alignfull sections para igualar largura de conteúdo. */
   .has-global-padding.alignfull { padding-inline: 24px !important; }
+  /* Footer: WP padding-top clamp→48px mobile; REF = 64px */
+  .site-footer { padding-top: 64px !important; }
 }
 
 /* ── Responsivo ── */
@@ -262,6 +269,9 @@
   /* formats: WP auto-fill→4 cols de 293px; REF usa repeat(3)+gap:32px em max-width:1184px
      WP content-size=1232px vs REF 1184px → colunas 389px (304px card) vs 373px (327px card).
      Forçar 3 cols + max-width:1184px → colunas 373px → alturas de card idênticas ao REF */
+  /* Org: REF has section-more link (~62px total: margin-top:48 + text:22 + padding-bottom:10 = 80px visible space, but net diff vs WP = 62px).
+     Add padding-bottom to match REF org height (749+62=811px) and fix newsletter/footer cascade (-103px → -41px). */
+  .section.organization { padding-bottom: 164px !important; }
   .formats-grid { align-items:stretch; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:32px !important; max-width:1184px !important; margin-inline:auto !important; }
   .format { display:flex; flex-direction:column; }
   .format-head { flex-direction:column; align-items:flex-start; gap:16px; padding:32px 32px 16px; cursor:default; }
