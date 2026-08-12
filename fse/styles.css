@@ -20,7 +20,7 @@
 
 /* ── Hero layout ── */
 .hero-grid { align-items:center; gap:48px; }
-.hero-media { width:100%; max-width:512px; justify-self:end; }
+.hero-media { width:100%; max-width:512px; justify-self:end !important; }
 /* WP figure inside hero-media has mb=16px (UA + block default); remove so hero-media=512px */
 .hero-media .wp-block-image { margin-bottom: 0 !important; }
 /* WP flow block-gap adds mt=38.86px to H1; REF gap (hero-meta mb=28 + H1 mt=0) = 28px */
@@ -238,6 +238,19 @@
 .wp-block-navigation__responsive-container-open {
   color:var(--wp--preset--color--cyan-700); background:none; border:0; cursor:pointer;
   padding:8px; display:flex; align-items:center;
+}
+
+/* ── Desktop only (≥1024px) ── */
+@media (min-width:1024px) {
+  /* Hero: WP padding-inline=24px → inner=1302px; REF container=1232px → inner=1184px.
+     Fix to 83px so inner=1184px → 1.05fr/0.95fr columns match REF widths exactly. */
+  .hero-grid { padding-inline: 83px !important; }
+  /* hero-media justify-self:end (right-align in col2); WP block margin:auto overrides it.
+     Use margin-left:auto (absorbed by grid) to push media to right of column 2. */
+  .hero-media { margin-left: auto !important; margin-right: 0 !important; }
+  /* hero-content: WP is-layout-flow constrains to 583px centered (7px off from REF=83px).
+     Force 100% width to fill column 1 (596px) and left-align at 83px matching REF. */
+  .hero-content { width: 100% !important; max-width: none !important; margin-right: 0 !important; }
 }
 
 /* ── Mobile/tablet ── */
