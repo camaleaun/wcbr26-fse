@@ -357,6 +357,9 @@ $gs_content = wp_json_encode( [
 			'core/group' => [
 				'spacing' => [ 'margin' => '0' ],
 			],
+			'core/navigation' => [
+				'spacing' => [ 'blockGap' => '2rem' ],
+			],
 			'core/social-links' => [
 				'spacing' => [ 'padding' => '0' ],
 			],
