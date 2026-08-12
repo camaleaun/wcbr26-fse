@@ -1,0 +1,43 @@
+# This file holds all sidebar menu's entries.
+# Each `title` is slugified (github-slugger) and must match a file at
+# `site/src/content/docs/<group-slug>/<page-slug>.mdx` — the build throws otherwise.
+#
+# Scope note: structure mirrors the Bootstrap docs, but pages are restricted to what
+# actually exists in `html-from-figma` (the current source of truth). Generic, reusable
+# pieces live under Components; WCBR page-section compositions (Stats, News, Sponsors,
+# Organization, Social, Footer) will live under Examples.
+
+- title: Getting Started
+  icon: rocket-takeoff
+  icon_color: primary
+  pages:
+    - title: Introduction
+
+- title: Content
+  icon: file-text
+  icon_color: warning
+  pages:
+    - title: Typography
+
+- title: Components
+  icon: bounding-box
+  icon_color: success
+  pages:
+    - title: Accordion
+    - title: Badges
+    - title: Buttons
+    - title: Cards
+    - title: Forms
+    - title: Navbar
+
+- title: Customize
+  icon: palette2
+  icon_color: pink
+  pages:
+    - title: Color
+
+- title: Templates
+  icon: layout-text-window
+  icon_color: primary
+  pages:
+    - title: Home

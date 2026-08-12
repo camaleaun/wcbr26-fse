@@ -1,0 +1,19 @@
+// ============================================================
+// SVG inline icons
+// ============================================================
+.social-icon {
+  fill: currentColor;
+  display: block;
+  height: 17px;
+  width: auto;
+  flex: none;
+}
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+  flex: none;
+}

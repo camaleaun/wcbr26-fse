@@ -1,0 +1,21 @@
+- category: Sections
+  description: 'The page sections of the WordCamp Brasil 2026 site, composed from wcbrbs components and Bootstrap utilities. Each one is the real markup used on the home page.'
+  examples:
+    - name: Hero
+      description: 'Opening statement: title, lead, badges, and the ticket CTA next to the framed photo.'
+    - name: Stats
+      description: 'The event numbers bar — four figures on the primary cyan band.'
+    - name: About
+      description: 'Intro copy paired with a framed image on the alternate sand background.'
+    - name: News
+      description: 'A responsive grid of news cards with tag, linked title, excerpt, and a read-more link.'
+    - name: Sponsors
+      description: 'Sponsor wall with tier dividers, three sponsor sizes, and the micro-sponsorship block.'
+    - name: Organization
+      description: 'The organizing team as a grid of ringed avatars with name and role.'
+    - name: Social
+      description: 'The six social links in their three contexts: header, offcanvas drawer, and footer.'
+    - name: Newsletter
+      description: 'Signup band: a form control and the orange submit button on cyan.'
+    - name: Footer
+      description: 'Brand column, link columns, social row, and the legal bottom bar.'

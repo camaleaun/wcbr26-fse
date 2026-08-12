@@ -1,0 +1,7 @@
+---
+import { getConfig } from '@libs/config'
+
+const { docs_version } = getConfig()
+
+return Astro.redirect(`/docs/${docs_version}/templates/home/`)
+---

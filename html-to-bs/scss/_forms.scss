@@ -1,0 +1,24 @@
+// ============================================================
+// Form controls
+// ============================================================
+
+// The newsletter control sits on the cyan band, so it inverts to the sand fill
+// and brightens to white on focus. Radius is already 0 globally.
+.newsletter .form-control {
+  background: $cream;
+  color: $ink;
+  border: 2px solid $cream;
+  padding: 18px 24px;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  line-height: normal;   // the source input keeps the browser default, not $input-line-height
+
+  &::placeholder { color: $muted; }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #fff;
+    background: #fff;
+  }
+}

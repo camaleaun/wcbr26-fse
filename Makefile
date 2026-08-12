@@ -13,7 +13,7 @@ FSE_PORT  := 8001
 WP_PORT   := 9999
 
 .DEFAULT_GOAL := help
-.PHONY: help up down restart logs status cert tunnel untunnel tunnel-url fse playground playground-dev
+.PHONY: help up down restart logs status cert tunnel untunnel tunnel-url fse playground playground-dev site
 
 help: ## Lista os comandos
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*?## "}{printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
@@ -70,6 +70,9 @@ playground: ## Inicia WP Playground CLI na porta 9999 — lê fse/ do GitHub/mai
 
 playground-dev: ## Inicia WP Playground CLI na porta 9999 — lê fse/ do localhost:8001 (rodar make fse primeiro)
 	npx @wp-playground/cli server --blueprint=./blueprint-dev.json --port=$(WP_PORT)
+
+site: ## Serve o doc Astro (Bootstrap) de html-to-bs/site em http://localhost:4321
+	@cd html-to-bs && npm run docs-serve
 
 status: ## Mostra status do container (e a URL do túnel, se ativo)
 	@docker ps --filter name=$(NAME) --format 'status: {{.Status}}\nports:  {{.Ports}}'

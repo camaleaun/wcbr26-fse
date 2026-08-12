@@ -1,0 +1,17 @@
+@import '../node_modules/bootstrap/scss/functions';
+
+@function _hex-char($n) {
+  @return str-slice("0123456789abcdef", $n + 1, $n + 1);
+}
+
+@function to-hex($color) {
+  $r: round(red($color) + 0.0001);
+  $g: round(green($color) + 0.0001);
+  $b: round(blue($color) + 0.0001);
+  @return unquote(
+    "#" +
+    _hex-char(floor($r * 0.0625)) + _hex-char($r % 16) +
+    _hex-char(floor($g * 0.0625)) + _hex-char($g % 16) +
+    _hex-char(floor($b * 0.0625)) + _hex-char($b % 16)
+  );
+}

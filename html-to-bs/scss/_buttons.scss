@@ -1,0 +1,38 @@
+// ============================================================
+// Buttons — WCBR "sticker" treatment on top of Bootstrap
+//
+// Sizing, family and weight come from the $btn-* variables, so every Bootstrap
+// variant (.btn-primary, .btn-orange, .btn-outline-*) inherits the brand
+// automatically. The hard offset shadow is drawn from the variant's own
+// --#{$prefix}btn-border-color, so it recolors itself per variant.
+// ============================================================
+.btn {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
+  transition: transform .12s ease, box-shadow .12s ease;
+
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0 0 var(--#{$prefix}btn-hover-border-color, var(--#{$prefix}btn-border-color));
+  }
+
+  &:active,
+  &.active {
+    transform: translate($btn-sticker-offset, $btn-sticker-offset);
+    box-shadow: 0 0 0 0 var(--#{$prefix}btn-border-color);
+  }
+
+  &:disabled,
+  &.disabled { box-shadow: none; transform: none; }
+}
+
+.btn-sm { letter-spacing: .04em; }
+
+// The CTA is two-tone: the fill stays dark enough for white text (5.34:1) while
+// the border — and therefore the sticker shadow — lifts to the lighter orange.
+// $orange-500 is never used as a fill; see _theme-colors.scss.
+.btn-orange {
+  --#{$prefix}btn-border-color: #{$orange-500};
+  --#{$prefix}btn-hover-border-color: #{$orange-500};
+}

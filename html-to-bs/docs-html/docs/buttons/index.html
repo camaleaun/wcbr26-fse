@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WCBR2026 Design System — WCBR2026 Design System</title><link rel="preload" href="/fonts/poppins-900.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/docs.css"></head><body><div class="ds-wrapper"><nav class="ds-sidebar"><a class="ds-brand" href="/"><strong>WCBR2026</strong><small>Design System</small></a><div class="ds-nav-group"><span class="ds-nav-label">Fundação</span><ul><li><a href="/docs/colors" class="ds-nav-link">Cores</a></li><li><a href="/docs/typography" class="ds-nav-link">Tipografia</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Componentes</span><ul><li><a href="/docs/buttons" class="ds-nav-link active">Botões</a></li><li><a href="/docs/badges" class="ds-nav-link">Badges &amp; Tags</a></li><li><a href="/docs/cards" class="ds-nav-link">Cards</a></li><li><a href="/docs/avatars" class="ds-nav-link">Avatares</a></li><li><a href="/docs/sponsors" class="ds-nav-link">Sponsors</a></li><li><a href="/docs/accordion" class="ds-nav-link">Accordion</a></li><li><a href="/docs/forms" class="ds-nav-link">Formulários</a></li><li><a href="/docs/social" class="ds-nav-link">Ícones Sociais</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Layout</span><ul><li><a href="/docs/header" class="ds-nav-link">Header &amp; Nav</a></li><li><a href="/docs/footer" class="ds-nav-link">Footer</a></li><li><a href="/docs/hero" class="ds-nav-link">Hero</a></li></ul></div></nav><main class="ds-content"><h2 id="botão-primário-cta">Botão primário (CTA)</h2>
+<p>Estilo <strong>sticker flat</strong>: fundo laranja, borda <code>$orange</code>, sombra offset 5px. Hover desloca 2px.</p>
+<div class="ds-example"><a class="btn btn-primary" href="#">Garanta seu ingresso</a></div><div class="ds-example-code"><pre><code class="language-html">&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;Garanta seu ingresso&lt;/a&gt;</code></pre></div>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">a</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;btn btn-primary&quot;</span><span style="color:#B392F0"> href</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;#&quot;</span><span style="color:#E1E4E8">&gt;Garanta seu ingresso&lt;/</span><span style="color:#85E89D">a</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="botão-primário-pequeno">Botão primário pequeno</h2>
+<p><code>.btn-sm</code> reduz o padding para uso no header desktop (“Ingressos”).</p>
+<div class="ds-example"><a class="btn btn-primary btn-sm" href="#">Ingressos</a></div><div class="ds-example-code"><pre><code class="language-html">&lt;a class=&quot;btn btn-primary btn-sm&quot; href=&quot;#&quot;&gt;Ingressos&lt;/a&gt;</code></pre></div>
+<h2 id="botão-newsletter-brick">Botão newsletter (brick)</h2>
+<p><code>.btn-newsletter</code> — fundo <code>$orange-900</code>, borda <code>$orange-700</code>. Usado no formulário de inscrição na newsletter.</p>
+<div class="ds-example"><button class="btn-newsletter" type="button">Inscrever</button></div><div class="ds-example-code"><pre><code class="language-html">&lt;button class=&quot;btn-newsletter&quot; type=&quot;button&quot;&gt;Inscrever&lt;/button&gt;</code></pre></div>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">button</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;btn-newsletter&quot;</span><span style="color:#B392F0"> type</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;button&quot;</span><span style="color:#E1E4E8">&gt;Inscrever&lt;/</span><span style="color:#85E89D">button</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="estados">Estados</h2>
+<div class="ds-example"><div class="d-flex flex-wrap gap-3"><a class="btn btn-primary" href="#">Normal</a><a class="btn btn-primary" href="#" style="transform:translate(2px,2px);box-shadow:3px 3px 0 0 #F56530">Hover</a><a class="btn btn-primary" href="#" style="transform:translate(5px,5px);box-shadow:none">Active</a></div></div><div class="ds-example-code"><pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap gap-3&quot;&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;Normal&lt;/a&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot; style=&quot;transform:translate(2px,2px);box-shadow:3px 3px 0 0 #F56530&quot;&gt;Hover&lt;/a&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot; style=&quot;transform:translate(5px,5px);box-shadow:none&quot;&gt;Active&lt;/a&gt;&lt;/div&gt;</code></pre></div>
+<h2 id="variáveis-que-controlam-os-botões">Variáveis que controlam os botões</h2>
+<table>
+<thead>
+<tr>
+<th>Variável SCSS</th>
+<th>Valor</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$orange-500</code></td>
+<td><code>shade-color($orange,12%)</code></td>
+<td>Fundo <code>.btn-primary</code></td>
+</tr>
+<tr>
+<td><code>$orange</code></td>
+<td><code>#F56530</code></td>
+<td>Borda e sombra CTA</td>
+</tr>
+<tr>
+<td><code>$orange-900</code></td>
+<td><code>shade-color($orange,31%)</code></td>
+<td>Fundo <code>.btn-newsletter</code></td>
+</tr>
+<tr>
+<td><code>$orange-700</code></td>
+<td><code>shade-color($orange,22%)</code></td>
+<td>Borda newsletter</td>
+</tr>
+</tbody>
+</table>
+<div class="ds-callout ds-callout-info"><p>O Bootstrap gera <code>.btn-secondary</code>, <code>.btn-outline-*</code> etc. a partir de <code>$secondary: $orange-500</code>. Neste design só usamos <code>.btn-primary</code> e <code>.btn-newsletter</code>.</p></div></main></div><script src="/js/bootstrap.bundle.min.js" defer></script></body></html>

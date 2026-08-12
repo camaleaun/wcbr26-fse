@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { getConfig } from '@libs/config'
+import type { Layout } from '@libs/layout'
+import { getVersionedDocsPath } from '@libs/path'
+
+interface Props {
+  addedIn?: CollectionEntry<'docs'>['data']['added']
+  layout: Layout
+}
+
+const { addedIn, layout } = Astro.props
+const { slug, version } = Astro.params
+
+const isHome = Astro.url.pathname === '/'
+
+let versionsLink = ''
+
+if (layout === 'docs' && version === getConfig().docs_version) {
+  versionsLink = `${slug}/`
+} else if (layout === 'single' && Astro.url.pathname.startsWith(getVersionedDocsPath(''))) {
+  versionsLink = Astro.url.pathname.replace(getVersionedDocsPath(''), '')
+}
+
+const addedIn51 = addedIn?.version === '5.1'
+const addedIn52 = addedIn?.version === '5.2'
+const addedIn53 = addedIn?.version === '5.3'
+---
+
+<li class="nav-item dropdown">
+  <button
+    type="button"
+    class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+    data-bs-display="static"
+  >
+    <span class="d-lg-none" aria-hidden="true">WCBR</span><span class="visually-hidden">WCBR&nbsp;</span> v{
+      getConfig().docs_version
+    }
+    <span class="visually-hidden">(switch to other versions)</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li>
+      <a
+        class="dropdown-item d-flex align-items-center justify-content-between active"
+        aria-current="true"
+        href={isHome ? '/' : `/docs/${getConfig().docs_version}/${versionsLink}`}
+      >
+        Latest ({getConfig().docs_version}.x)
+        <svg class="bi" aria-hidden="true"><use xlink:href="#check2"></use></svg>
+      </a>
+    </li>
+  </ul>
+</li>

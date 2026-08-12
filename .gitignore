@@ -37,16 +37,25 @@ wordpress/wp-content/themes/twentytwentyfive/
 wordpress/wp-content/plugins/akismet/
 wordpress/wp-content/plugins/hello.php
 
-# Repo git próprio (Bootstrap theme) — não é submodule deste repo
-html-to-bs/
+# Design system Bootstrap (fonte rastreada; artefatos de build ignorados)
+html-to-bs/dist/
+html-to-bs/.astro/
+html-to-bs/site/dist/
+html-to-bs/site/.astro/
 
 # Screenshots de comparação/QA (recriáveis via ferramentas de dev)
 screenshots/
+/mob-*.png
+/mobile-*.png
+/ref.png
+/ref-*.png
+/wp-*.png
 /html-desktop.png
 /html-mobile.png
 /wp-desktop.png
 /wp-mobile.png
 /playground-preview*.png
+/bootstrap
 
 # Certificados locais mkcert (regeneráveis, chave privada)
 .serve/certs/

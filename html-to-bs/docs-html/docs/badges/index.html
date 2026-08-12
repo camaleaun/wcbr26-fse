@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WCBR2026 Design System — WCBR2026 Design System</title><link rel="preload" href="/fonts/poppins-900.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/docs.css"></head><body><div class="ds-wrapper"><nav class="ds-sidebar"><a class="ds-brand" href="/"><strong>WCBR2026</strong><small>Design System</small></a><div class="ds-nav-group"><span class="ds-nav-label">Fundação</span><ul><li><a href="/docs/colors" class="ds-nav-link">Cores</a></li><li><a href="/docs/typography" class="ds-nav-link">Tipografia</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Componentes</span><ul><li><a href="/docs/buttons" class="ds-nav-link">Botões</a></li><li><a href="/docs/badges" class="ds-nav-link active">Badges &amp; Tags</a></li><li><a href="/docs/cards" class="ds-nav-link">Cards</a></li><li><a href="/docs/avatars" class="ds-nav-link">Avatares</a></li><li><a href="/docs/sponsors" class="ds-nav-link">Sponsors</a></li><li><a href="/docs/accordion" class="ds-nav-link">Accordion</a></li><li><a href="/docs/forms" class="ds-nav-link">Formulários</a></li><li><a href="/docs/social" class="ds-nav-link">Ícones Sociais</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Layout</span><ul><li><a href="/docs/header" class="ds-nav-link">Header &amp; Nav</a></li><li><a href="/docs/footer" class="ds-nav-link">Footer</a></li><li><a href="/docs/hero" class="ds-nav-link">Hero</a></li></ul></div></nav><main class="ds-content"><h2 id="tag-de-categoria">Tag de categoria</h2>
+<p><code>.tag</code> — identifica a categoria dos cards de notícia. Texto <code>$orange-900</code>, Montserrat uppercase, sem fundo.</p>
+<div class="ds-example"><p><span class="tag">Convocação</span>
+ 
+<span class="tag">Patrocínio</span>
+ 
+<span class="tag">Voluntariado</span>
+ 
+<span class="tag">Local</span>
+ 
+<span class="tag">Evento</span></p></div><div class="ds-example-code"><pre><code class="language-html">&lt;p&gt;&lt;span class=&quot;tag&quot;&gt;Convocação&lt;/span&gt;
+ 
+&lt;span class=&quot;tag&quot;&gt;Patrocínio&lt;/span&gt;
+ 
+&lt;span class=&quot;tag&quot;&gt;Voluntariado&lt;/span&gt;
+ 
+&lt;span class=&quot;tag&quot;&gt;Local&lt;/span&gt;
+ 
+&lt;span class=&quot;tag&quot;&gt;Evento&lt;/span&gt;&lt;/p&gt;</code></pre></div>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">span</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;tag&quot;</span><span style="color:#E1E4E8">&gt;Convocação&lt;/</span><span style="color:#85E89D">span</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="hero-chips">Hero chips</h2>
+<p><code>.hero-chip</code> — chip com fundo sólido, borda-radius 2px, aparece no bloco hero para data e local do evento.</p>
+<div class="ds-example"><div class="d-flex flex-wrap gap-3"><span class="hero-chip hero-chip--teal"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 2v3M17 2v3M3 8h18M4 5h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path></svg><p>30 e 31 outubro 2026</p></span><span class="hero-chip hero-chip--orange"><svg class="ic" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><p>Belo Horizonte MG</p></span></div></div><div class="ds-example-code"><pre><code class="language-html">&lt;div class=&quot;d-flex flex-wrap gap-3&quot;&gt;&lt;span class=&quot;hero-chip hero-chip--teal&quot;&gt;&lt;svg class=&quot;ic&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M7 2v3M17 2v3M3 8h18M4 5h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;p&gt;30 e 31 outubro 2026&lt;/p&gt;&lt;/span&gt;&lt;span class=&quot;hero-chip hero-chip--orange&quot;&gt;&lt;svg class=&quot;ic&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;16&quot; height=&quot;16&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z&quot;&gt;&lt;/path&gt;&lt;circle cx=&quot;12&quot; cy=&quot;10&quot; r=&quot;2.5&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;&lt;p&gt;Belo Horizonte MG&lt;/p&gt;&lt;/span&gt;&lt;/div&gt;</code></pre></div>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">span</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;hero-chip hero-chip--teal&quot;</span><span style="color:#E1E4E8">&gt;30 e 31 outubro 2026&lt;/</span><span style="color:#85E89D">span</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">span</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;hero-chip hero-chip--orange&quot;</span><span style="color:#E1E4E8">&gt;Belo Horizonte MG&lt;/</span><span style="color:#85E89D">span</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="variantes">Variantes</h2>
+<table>
+<thead>
+<tr>
+<th>Classe</th>
+<th>Fundo</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.hero-chip--teal</code></td>
+<td><code>$teal</code></td>
+<td>Data do evento</td>
+</tr>
+<tr>
+<td><code>.hero-chip--orange</code></td>
+<td><code>$orange-500</code></td>
+<td>Local do evento</td>
+</tr>
+<tr>
+<td><code>.tag</code></td>
+<td>sem fundo</td>
+<td>Categoria de notícia</td>
+</tr>
+</tbody>
+</table>
+<div class="ds-callout ds-callout-info"><p>Para badges Bootstrap padrão (<code>.badge</code>) com as cores do design, use <code>.bg-primary</code> (<code>$teal</code>) ou <code>.bg-secondary</code> (<code>$orange-500</code>).</p></div></main></div><script src="/js/bootstrap.bundle.min.js" defer></script></body></html>

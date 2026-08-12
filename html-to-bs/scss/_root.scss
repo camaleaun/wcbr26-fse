@@ -1,0 +1,11 @@
+:root,
+[data-bs-theme="light"] {
+}
+
+// The source enables kerning/ligatures and grayscale smoothing on the body.
+// Without these, Chrome renders text measurably wider (~8% on small caps),
+// which shifts every auto-margin layout that depends on text width.
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

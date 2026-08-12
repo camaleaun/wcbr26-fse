@@ -1,0 +1,34 @@
+// ============================================================
+// Badges
+//   .badge  filled pill — pair with .text-bg-* for color
+//   .tag    text-only label (cards, header, footer)
+// ============================================================
+
+// Brand treatment on the base, so every .text-bg-* variant inherits it.
+// Sizing/weight/radius come from the $badge-* variables.
+.badge {
+  // Source chip is a flex row with an 8px gap between icon and label;
+  // Bootstrap's .badge is inline-block, so the gap would come from a space.
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  // Bootstrap hard-sets line-height:1 on badges; the design inherits the body's.
+  line-height: $line-height-base;
+
+  // The orange chip is a step bolder than the cyan one in the design.
+  &.text-bg-orange { font-weight: 700; }
+}
+
+// Text-only label: meaning comes from case + color, never a fill.
+.tag {
+  align-self: flex-start;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .8125rem;
+  letter-spacing: .06em;
+  color: $orange-900;
+}

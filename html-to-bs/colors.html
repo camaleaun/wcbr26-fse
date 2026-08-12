@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WCBR2026 — Paleta de Cores</title>
+  <style>
+    body { font-family: system-ui, sans-serif; color: #000; background: #fff; padding: 2rem 1.5rem; max-width: 900px; max-width: none; margin: 0 auto; }
+    h1 { font-size: 1.5rem; font-weight: 700; margin: 0 0 2rem; }
+    h2 { font-size: .65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; border-top: 1px solid #ddd; padding-top: .75rem; margin: 2rem 0 .75rem; }
+    h1, h2 { display: none; }
+    .palette { display: flex; flex-wrap: wrap; gap: 1rem; gap: 0; }
+    .swatch { width: 130px; }
+    .swatch-block { height: 72px; border: 1px solid rgba(0,0,0,.1); border: 0; }
+    .swatch-meta { padding: .35rem 0 0; font-size: .7rem; line-height: 1.45; }
+    .swatch-name { font-weight: 700; font-family: monospace; }
+    .swatch-hex { font-family: monospace; font-size: .65rem; }
+    .swatch-note { font-size: .6rem; margin-top: .1rem; opacity: .5; }
+    /* .swatch-hex, .swatch-note { display: none; } */
+    .gray-scale { display: flex; margin-bottom: 1rem; border: 1px solid rgba(0,0,0,.1); overflow: hidden; }
+    .gray-scale-step { flex: 1; height: 48px; }
+    .gray-labels { display: flex; gap: 0; margin-bottom: 1.5rem; }
+    .gray-scale, .gray-labels { display: none; }
+    .gray-label { flex: 1; font-family: monospace; font-size: .6rem; text-align: center; padding-top: .25rem; opacity: .5; }
+  </style>
+</head>
+<body>
+
+<h1>WCBR2026 — Paleta de Cores</h1>
+
+<h2>Cyan</h2>
+<div class="palette">
+  <div class="swatch">
+    <div class="swatch-block" style="background:#00595d"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$cyan-700</div>
+      <div class="swatch-hex">#00595d</div>
+      <div class="swatch-note">primary · headings · links</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#004E4D"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--teal-d</div>
+      <div class="swatch-hex">#004E4D</div>
+      <div class="swatch-note">newsletter · molduras</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#003E3E"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--teal-dd</div>
+      <div class="swatch-hex">#003E3E</div>
+      <div class="swatch-note">footer · sombras hero</div>
+    </div>
+  </div>
+</div>
+
+<h2>Orange</h2>
+<div class="palette">
+  <div class="swatch">
+    <div class="swatch-block" style="background:#F56530"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--south</div>
+      <div class="swatch-hex">#F56530</div>
+      <div class="swatch-note">bordas · sombras · acentos</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#D43900"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--grenadier</div>
+      <div class="swatch-hex">#D43900</div>
+      <div class="swatch-note">botões CTA</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#C94220"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--brick-b</div>
+      <div class="swatch-hex">#C94220</div>
+      <div class="swatch-note">variante brick</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#B52701"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--brick</div>
+      <div class="swatch-hex">#B52701</div>
+      <div class="swatch-note">botão newsletter · laranja acessível</div>
+    </div>
+  </div>
+</div>
+
+<h2>Acento</h2>
+<div class="palette">
+  <div class="swatch">
+    <div class="swatch-block" style="background:#FFB4A3"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">--foot-head</div>
+      <div class="swatch-hex">#FFB4A3</div>
+      <div class="swatch-note">headings footer</div>
+    </div>
+  </div>
+</div>
+
+<h2>Neutros — escala de grays</h2>
+
+<div class="gray-scale">
+  <div class="gray-scale-step" style="background:#ffffff"></div>
+  <div class="gray-scale-step" style="background:#FFF8F1"></div>
+  <div class="gray-scale-step" style="background:#F7F0E6"></div>
+  <div class="gray-scale-step" style="background:#F5EDE3"></div>
+  <div class="gray-scale-step" style="background:#E9E1D8"></div>
+  <div class="gray-scale-step" style="background:#BEC9C8"></div>
+  <div class="gray-scale-step" style="background:#556260"></div>
+  <div class="gray-scale-step" style="background:#3E4948"></div>
+  <div class="gray-scale-step" style="background:#000000"></div>
+</div>
+<div class="gray-labels">
+  <div class="gray-label">white</div>
+  <div class="gray-label">$cream</div>
+  <div class="gray-label">$foot-text</div>
+  <div class="gray-label">$cream-alt</div>
+  <div class="gray-label">$panel</div>
+  <div class="gray-label">$line</div>
+  <div class="gray-label">$muted</div>
+  <div class="gray-label">$ink</div>
+  <div class="gray-label">black</div>
+</div>
+
+<div class="palette">
+  <div class="swatch">
+    <div class="swatch-block" style="background:#FFF8F1;border-color:#E9E1D8"></div>
+    <div class="swatch-block" style="background:#FFF8F1;border-color:#E9E1D8"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$cream</div>
+      <div class="swatch-hex">#FFF8F1</div>
+      <div class="swatch-note">body-bg<br>--bs-gray-100</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#F7F0E6;border-color:#E9E1D8"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$foot-text</div>
+      <div class="swatch-hex">#F7F0E6</div>
+      <div class="swatch-note">texto footer<br>--bs-gray-200</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#F5EDE3;border-color:#E9E1D8"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$cream-alt</div>
+      <div class="swatch-hex">#F5EDE3</div>
+      <div class="swatch-note">fundo alternado<br>--bs-gray-200</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#E9E1D8"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$panel</div>
+      <div class="swatch-hex">#E9E1D8</div>
+      <div class="swatch-note">painéis · cards<br>--bs-gray-300</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#BEC9C8"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$line</div>
+      <div class="swatch-hex">#BEC9C8</div>
+      <div class="swatch-note">bordas · divisores<br>--bs-gray-400</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#556260"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$muted</div>
+      <div class="swatch-hex">#556260</div>
+      <div class="swatch-note">texto secundário</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-block" style="background:#3E4948"></div>
+    <div class="swatch-meta">
+      <div class="swatch-name">$ink</div>
+      <div class="swatch-hex">#3E4948</div>
+      <div class="swatch-note">body-color</div>
+    </div>
+  </div>
+</div>
+
+
+<h2 style="display:block;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-top:1px solid #ddd;padding-top:.75rem;margin:2rem 0 .75rem">De → Para</h2>
+
+<table style="font-size:.7rem;font-family:monospace;border-collapse:collapse;width:100%">
+  <thead>
+    <tr style="border-bottom:1px solid #ddd">
+      <th style="text-align:left;padding:.35rem .5rem;font-weight:700">Figma (de)</th>
+      <th style="text-align:left;padding:.35rem .5rem;font-weight:700">Hex</th>
+      <th style="text-align:left;padding:.35rem .5rem;font-weight:700">Bootstrap WCBR (para)</th>
+      <th style="text-align:left;padding:.35rem .5rem;font-weight:700">Hex</th>
+      <th style="padding:.35rem .5rem"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Cyan -->
+    <tr><td style="padding:.3rem .5rem;color:#888" colspan="5">Cyan</td></tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--teal</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#00595d;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#00595d</td>
+      <td style="padding:.2rem .5rem">$primary / $cyan-700</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#00595d;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#00595d</td>
+      <td style="padding:.2rem .5rem;color:#080">✓</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--teal-d</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#004e4d;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#004e4d</td>
+      <td style="padding:.2rem .5rem">$cyan-800</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#004c4d;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#004c4d</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--teal-dd</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#003e3e;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#003e3e</td>
+      <td style="padding:.2rem .5rem">$cyan-900</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#003e3e;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#003e3e</td>
+      <td style="padding:.2rem .5rem;color:#080">✓</td>
+    </tr>
+    <!-- Orange -->
+    <tr><td style="padding:.3rem .5rem;color:#888" colspan="5">Orange</td></tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--south</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#f56530;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#f56530</td>
+      <td style="padding:.2rem .5rem">$orange-500</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#f56530;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#f56530</td>
+      <td style="padding:.2rem .5rem;color:#080">✓</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--grenadier</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#d43900;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#d43900</td>
+      <td style="padding:.2rem .5rem">$orange-600</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#c6360b;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#c6360b</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--brick-b</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#c94220;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#c94220</td>
+      <td style="padding:.2rem .5rem">$orange-600</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#c6360b;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#c6360b</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--brick</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#b52701;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#b52701</td>
+      <td style="padding:.2rem .5rem">$orange-600</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#c6360b;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#c6360b</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <!-- Neutros -->
+    <tr><td style="padding:.3rem .5rem;color:#888" colspan="5">Neutros</td></tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--cream</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#fff8f1;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#fff8f1</td>
+      <td style="padding:.2rem .5rem">$body-bg / $gray-100</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#fff8f1;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#fff8f1</td>
+      <td style="padding:.2rem .5rem;color:#080">✓</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--foot-text</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#f7f0e6;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#f7f0e6</td>
+      <td style="padding:.2rem .5rem">$gray-200</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#f6eee4;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#f6eee4</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--cream-2</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#f5ede3;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#f5ede3</td>
+      <td style="padding:.2rem .5rem">$gray-200</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#f6eee4;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#f6eee4</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--panel</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#e9e1d8;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#e9e1d8</td>
+      <td style="padding:.2rem .5rem">$gray-300</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#e9e0d8;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#e9e0d8</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--line</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#bec9c8;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#bec9c8</td>
+      <td style="padding:.2rem .5rem">$gray-400</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#bec9c8;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#bec9c8</td>
+      <td style="padding:.2rem .5rem;color:#080">✓</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--muted</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#556260;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#556260</td>
+      <td style="padding:.2rem .5rem">$gray-700</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#4a5654;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#4a5654</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--ink</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#3e4948;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#3e4948</td>
+      <td style="padding:.2rem .5rem">$gray-700</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#4a5654;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#4a5654</td>
+      <td style="padding:.2rem .5rem;color:#a60">≈</td>
+    </tr>
+    <!-- Acento -->
+    <tr><td style="padding:.3rem .5rem;color:#888" colspan="5">Acento</td></tr>
+    <tr>
+      <td style="padding:.2rem .5rem">--foot-head</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#ffb4a3;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#ffb4a3</td>
+      <td style="padding:.2rem .5rem">$red-200</td>
+      <td style="padding:.2rem .5rem"><span style="display:inline-block;width:.8rem;height:.8rem;background:#ffb4a3;border:1px solid rgba(0,0,0,.1);vertical-align:middle;margin-right:.25rem"></span>#ffb4a3</td>
+      <td style="padding:.2rem .5rem;color:#080">✓</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

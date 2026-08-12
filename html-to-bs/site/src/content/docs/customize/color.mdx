@@ -1,0 +1,79 @@
+---
+title: Color
+description: Color palette and theme variables.
+toc: true
+---
+
+import { getData } from '@libs/data'
+import { getSequence } from '@libs/utils'
+
+<div class="row font-monospace">
+  {getData('colors').map((color) => {
+    if ((color.name === "red")) {
+      return (
+        <div class="col-md-4 mb-3">
+          <div class="p-3 mb-2 position-relative swatch-red-200"><strong class="d-block">$red-200</strong>#ffb4a3</div>
+          {getSequence(200, 200, 100).map((value) => {
+            return (
+              <div class={`p-3 bd-${color.name}-${value}`}>${color.name}-{value}</div>
+            )
+          })}
+        </div>
+      )
+    }
+  })}
+
+  {getData('colors').map((color) => {
+    if ((color.name === "orange")) {
+      return (
+        <div class="col-md-4 mb-3">
+          <div class={`p-3 mb-2 position-relative swatch-${color.name}`}>
+            <strong class="d-block">${color.name}</strong>
+            {color.hex}
+          </div>
+
+          {getSequence(500, 600, 100).map((value) => {
+            return (
+              <div class={`p-3 bd-${color.name}-${value}`}>${color.name}-{value}</div>
+            )
+          })}
+        </div>
+      )
+    }
+  })}
+
+  {getData('colors').map((color) => {
+    if ((color.name === "cyan")) {
+      return (
+        <div class="col-md-4 mb-3">
+          <div class="p-3 mb-2 position-relative swatch-cyan-700"><strong class="d-block">$cyan-700</strong>#00595d</div>
+          {getSequence(700, 900, 100).map((value) => {
+            return (
+              <div class={`p-3 bd-${color.name}-${value}`}>${color.name}-{value}</div>
+            )
+          })}
+        </div>
+      )
+    }
+  })}
+
+  <div class="col-md-4 mb-3">
+    <div class="p-3 mb-2 position-relative swatch-gray-400"><strong class="d-block">$gray-400</strong>#bec9c8</div>
+    {getData('grays').map((gray) => {
+      return (
+        <div class={`p-3 bd-gray-${gray.name}`}>$gray-{gray.name}</div>
+      )
+    })}
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <div class="p-3 mb-2 bd-black text-white">
+      <strong class="d-block">$black</strong>
+      #000
+    </div>
+    <div class="p-3 mb-2 bd-white border">
+      <strong class="d-block">$white</strong>
+      #fff
+    </div>
+  </div>
+</div>

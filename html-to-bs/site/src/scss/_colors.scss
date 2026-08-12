@@ -1,0 +1,172 @@
+//
+// Docs color palette classes
+//
+
+@each $color, $value in map-merge($colors, ("red-200": $red-200, "cyan-700": $cyan-700, "gray-400": $gray-400)) {
+  .swatch-#{$color} {
+    color: color-contrast($value);
+    background-color: #{$value};
+
+    &::after {
+      $contrast-ratio: "#{contrast-ratio($value, color-contrast($value))}";
+      $against-white: "#{contrast-ratio($value, $white)}";
+      $against-black: "#{contrast-ratio($value, $black)}";
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding-left: 1rem;
+      font-size: .75rem;
+      line-height: 1.35;
+      white-space: pre;
+      content:
+        str-slice($contrast-ratio, 1, 4) "\A"
+        str-slice($against-white, 1, 4) "\A"
+        str-slice($against-black, 1, 4);
+      background-color: $value;
+      background-image:
+        linear-gradient(
+          to bottom,
+          transparent .25rem,
+          color-contrast($value) .25rem .75rem,
+          transparent .75rem 1.25rem,
+          $white 1.25rem 1.75rem,
+          transparent 1.75rem 2.25rem,
+          $black 2.25rem 2.75rem,
+          transparent 2.75rem
+        );
+      background-repeat: no-repeat;
+      background-size: .5rem 100%;
+    }
+  }
+}
+
+// stylelint-disable declaration-block-single-line-max-declarations
+.bd-blue-100 { color: color-contrast($blue-100); background-color: to-hex($blue-100); }
+.bd-blue-200 { color: color-contrast($blue-200); background-color: to-hex($blue-200); }
+.bd-blue-300 { color: color-contrast($blue-300); background-color: to-hex($blue-300); }
+.bd-blue-400 { color: color-contrast($blue-400); background-color: to-hex($blue-400); }
+.bd-blue-500 { color: color-contrast($blue-500); background-color: to-hex($blue-500); }
+.bd-blue-600 { color: color-contrast($blue-600); background-color: to-hex($blue-600); }
+.bd-blue-700 { color: color-contrast($blue-700); background-color: to-hex($blue-700); }
+.bd-blue-800 { color: color-contrast($blue-800); background-color: to-hex($blue-800); }
+.bd-blue-900 { color: color-contrast($blue-900); background-color: to-hex($blue-900); }
+
+.bd-indigo-100 { color: color-contrast($indigo-100); background-color: to-hex($indigo-100); }
+.bd-indigo-200 { color: color-contrast($indigo-200); background-color: to-hex($indigo-200); }
+.bd-indigo-300 { color: color-contrast($indigo-300); background-color: to-hex($indigo-300); }
+.bd-indigo-400 { color: color-contrast($indigo-400); background-color: to-hex($indigo-400); }
+.bd-indigo-500 { color: color-contrast($indigo-500); background-color: to-hex($indigo-500); }
+.bd-indigo-600 { color: color-contrast($indigo-600); background-color: to-hex($indigo-600); }
+.bd-indigo-700 { color: color-contrast($indigo-700); background-color: to-hex($indigo-700); }
+.bd-indigo-800 { color: color-contrast($indigo-800); background-color: to-hex($indigo-800); }
+.bd-indigo-900 { color: color-contrast($indigo-900); background-color: to-hex($indigo-900); }
+
+.bd-purple-100 { color: color-contrast($purple-100); background-color: to-hex($purple-100); }
+.bd-purple-200 { color: color-contrast($purple-200); background-color: to-hex($purple-200); }
+.bd-purple-300 { color: color-contrast($purple-300); background-color: to-hex($purple-300); }
+.bd-purple-400 { color: color-contrast($purple-400); background-color: to-hex($purple-400); }
+.bd-purple-500 { color: color-contrast($purple-500); background-color: to-hex($purple-500); }
+.bd-purple-600 { color: color-contrast($purple-600); background-color: to-hex($purple-600); }
+.bd-purple-700 { color: color-contrast($purple-700); background-color: to-hex($purple-700); }
+.bd-purple-800 { color: color-contrast($purple-800); background-color: to-hex($purple-800); }
+.bd-purple-900 { color: color-contrast($purple-900); background-color: to-hex($purple-900); }
+
+.bd-pink-100 { color: color-contrast($pink-100); background-color: to-hex($pink-100); }
+.bd-pink-200 { color: color-contrast($pink-200); background-color: to-hex($pink-200); }
+.bd-pink-300 { color: color-contrast($pink-300); background-color: to-hex($pink-300); }
+.bd-pink-400 { color: color-contrast($pink-400); background-color: to-hex($pink-400); }
+.bd-pink-500 { color: color-contrast($pink-500); background-color: to-hex($pink-500); }
+.bd-pink-600 { color: color-contrast($pink-600); background-color: to-hex($pink-600); }
+.bd-pink-700 { color: color-contrast($pink-700); background-color: to-hex($pink-700); }
+.bd-pink-800 { color: color-contrast($pink-800); background-color: to-hex($pink-800); }
+.bd-pink-900 { color: color-contrast($pink-900); background-color: to-hex($pink-900); }
+
+.bd-red-100 { color: color-contrast($red-100); background-color: to-hex($red-100); }
+.bd-red-200 { color: color-contrast($red-200); background-color: to-hex($red-200); }
+.bd-red-300 { color: color-contrast($red-300); background-color: to-hex($red-300); }
+.bd-red-400 { color: color-contrast($red-400); background-color: to-hex($red-400); }
+.bd-red-500 { color: color-contrast($red-500); background-color: to-hex($red-500); }
+.bd-red-600 { color: color-contrast($red-600); background-color: to-hex($red-600); }
+.bd-red-700 { color: color-contrast($red-700); background-color: to-hex($red-700); }
+.bd-red-800 { color: color-contrast($red-800); background-color: to-hex($red-800); }
+.bd-red-900 { color: color-contrast($red-900); background-color: to-hex($red-900); }
+
+.bd-orange-100 { color: color-contrast($orange-100); background-color: to-hex($orange-100); }
+.bd-orange-200 { color: color-contrast($orange-200); background-color: to-hex($orange-200); }
+.bd-orange-300 { color: color-contrast($orange-300); background-color: to-hex($orange-300); }
+.bd-orange-400 { color: color-contrast($orange-400); background-color: to-hex($orange-400); }
+.bd-orange-500 { color: color-contrast($orange-500); background-color: to-hex($orange-500); }
+.bd-orange-600 { color: color-contrast($orange-600); background-color: to-hex($orange-600); }
+.bd-orange-700 { color: color-contrast($orange-700); background-color: to-hex($orange-700); }
+.bd-orange-800 { color: color-contrast($orange-800); background-color: to-hex($orange-800); }
+.bd-orange-900 { color: color-contrast($orange-900); background-color: to-hex($orange-900); }
+
+.bd-yellow-100 { color: color-contrast($yellow-100); background-color: to-hex($yellow-100); }
+.bd-yellow-200 { color: color-contrast($yellow-200); background-color: to-hex($yellow-200); }
+.bd-yellow-300 { color: color-contrast($yellow-300); background-color: to-hex($yellow-300); }
+.bd-yellow-400 { color: color-contrast($yellow-400); background-color: to-hex($yellow-400); }
+.bd-yellow-500 { color: color-contrast($yellow-500); background-color: to-hex($yellow-500); }
+.bd-yellow-600 { color: color-contrast($yellow-600); background-color: to-hex($yellow-600); }
+.bd-yellow-700 { color: color-contrast($yellow-700); background-color: to-hex($yellow-700); }
+.bd-yellow-800 { color: color-contrast($yellow-800); background-color: to-hex($yellow-800); }
+.bd-yellow-900 { color: color-contrast($yellow-900); background-color: to-hex($yellow-900); }
+
+.bd-green-100 { color: color-contrast($green-100); background-color: to-hex($green-100); }
+.bd-green-200 { color: color-contrast($green-200); background-color: to-hex($green-200); }
+.bd-green-300 { color: color-contrast($green-300); background-color: to-hex($green-300); }
+.bd-green-400 { color: color-contrast($green-400); background-color: to-hex($green-400); }
+.bd-green-500 { color: color-contrast($green-500); background-color: to-hex($green-500); }
+.bd-green-600 { color: color-contrast($green-600); background-color: to-hex($green-600); }
+.bd-green-700 { color: color-contrast($green-700); background-color: to-hex($green-700); }
+.bd-green-800 { color: color-contrast($green-800); background-color: to-hex($green-800); }
+.bd-green-900 { color: color-contrast($green-900); background-color: to-hex($green-900); }
+
+.bd-teal-100 { color: color-contrast($teal-100); background-color: to-hex($teal-100); }
+.bd-teal-200 { color: color-contrast($teal-200); background-color: to-hex($teal-200); }
+.bd-teal-300 { color: color-contrast($teal-300); background-color: to-hex($teal-300); }
+.bd-teal-400 { color: color-contrast($teal-400); background-color: to-hex($teal-400); }
+.bd-teal-500 { color: color-contrast($teal-500); background-color: to-hex($teal-500); }
+.bd-teal-600 { color: color-contrast($teal-600); background-color: to-hex($teal-600); }
+.bd-teal-700 { color: color-contrast($teal-700); background-color: to-hex($teal-700); }
+.bd-teal-800 { color: color-contrast($teal-800); background-color: to-hex($teal-800); }
+.bd-teal-900 { color: color-contrast($teal-900); background-color: to-hex($teal-900); }
+
+.bd-cyan-100 { color: color-contrast($cyan-100); background-color: to-hex($cyan-100); }
+.bd-cyan-200 { color: color-contrast($cyan-200); background-color: to-hex($cyan-200); }
+.bd-cyan-300 { color: color-contrast($cyan-300); background-color: to-hex($cyan-300); }
+.bd-cyan-400 { color: color-contrast($cyan-400); background-color: to-hex($cyan-400); }
+.bd-cyan-500 { color: color-contrast($cyan-500); background-color: to-hex($cyan-500); }
+.bd-cyan-600 { color: color-contrast($cyan-600); background-color: to-hex($cyan-600); }
+.bd-cyan-700 { color: color-contrast($cyan-700); background-color: to-hex($cyan-700); }
+.bd-cyan-800 { color: color-contrast($cyan-800); background-color: to-hex($cyan-800); }
+.bd-cyan-900 { color: color-contrast($cyan-900); background-color: to-hex($cyan-900); }
+
+.bd-gray-100 { color: color-contrast($gray-100); background-color: to-hex($gray-100); }
+.bd-gray-200 { color: color-contrast($gray-200); background-color: to-hex($gray-200); }
+.bd-gray-300 { color: color-contrast($gray-300); background-color: to-hex($gray-300); }
+.bd-gray-400 { color: color-contrast($gray-400); background-color: to-hex($gray-400); }
+.bd-gray-500 { color: color-contrast($gray-500); background-color: to-hex($gray-500); }
+.bd-gray-600 { color: color-contrast($gray-600); background-color: to-hex($gray-600); }
+.bd-gray-700 { color: color-contrast($gray-700); background-color: to-hex($gray-700); }
+.bd-gray-800 { color: color-contrast($gray-800); background-color: to-hex($gray-800); }
+.bd-gray-900 { color: color-contrast($gray-900); background-color: to-hex($gray-900); }
+
+.bd-white {
+  color: color-contrast($white);
+  background-color: $white;
+
+  // Astro HTML parser adds extra <p> tags to the content
+  p {
+    margin: 0;
+  }
+}
+
+.bd-black {
+  color: color-contrast($black);
+  background-color: $black;
+
+  // Astro HTML parser adds extra <p> tags to the content
+  p {
+    margin: 0;
+  }
+}

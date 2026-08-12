@@ -1,0 +1,28 @@
+// ============================================================
+// SOBRE
+// ============================================================
+.about { background: $cream-alt; }
+
+// Source grid: 40px gap, 64px from lg up.
+.about-grid {
+  --#{$prefix}gutter-x: 2.5rem;
+  --#{$prefix}gutter-y: 2.5rem;
+
+  @include media-breakpoint-up(md) {
+    --#{$prefix}gutter-x: 4rem;
+    --#{$prefix}gutter-y: 4rem;
+  }
+}
+
+
+.about-title { margin-bottom: 8px; }
+.about-text p { margin-bottom: 20px; }
+
+.about-media {
+  position: relative;
+  aspect-ratio: 584 / 428;
+  border: 2px solid $orange;
+  box-shadow: 5px 5px 0 0 $orange;
+
+  img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+}

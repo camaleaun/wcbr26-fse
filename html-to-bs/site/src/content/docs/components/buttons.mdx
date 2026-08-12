@@ -1,0 +1,112 @@
+---
+title: Buttons
+description: WCBR buttons — standard Bootstrap variants restyled with the signature hard offset shadow, plus the custom .btn-orange CTA.
+toc: true
+---
+
+WCBR uses Bootstrap's `.btn` component as-is. The brand treatment — square corners, heavy
+uppercase Poppins, a 2px border, and a **hard offset shadow** that presses in on click — is
+applied to the base `.btn`, so **every** variant inherits it: `.btn-primary`, `.btn-orange`,
+`.btn-outline-*`, and so on.
+
+## Variants
+
+`orange` is added to `$theme-colors`, so Bootstrap generates its full family
+(`.btn-orange`, `.btn-outline-orange`, `.bg-orange`, `.text-orange`, `.border-orange`,
+`.link-orange`, …) exactly like the built-in colors.
+
+| Class | Fill | Role |
+|---|---|---|
+| `.btn-primary` | `$cyan-700` `#00595d` | Standard primary action |
+| `.btn-orange` | `$orange-600` `#c6360b` | The event CTA — tickets, newsletter |
+| `.btn-outline-orange` | — | Quiet CTA on busy backgrounds |
+
+There is **one** orange button, not several. See [Contrast](#contrast) for why.
+
+<div class="bd-example d-flex flex-wrap align-items-center gap-4">
+  <a class="btn btn-orange" href="#">Garanta seu ingresso</a>
+  <a class="btn btn-primary" href="#">Ver programação</a>
+  <a class="btn btn-outline-orange" href="#">Saiba mais</a>
+  <a class="btn btn-orange btn-sm" href="#">Ingressos</a>
+</div>
+
+```html
+<a class="btn btn-orange" href="#ingressos">Garanta seu ingresso</a>
+<a class="btn btn-primary" href="#programacao">Ver programação</a>
+<a class="btn btn-outline-orange" href="#sobre">Saiba mais</a>
+<a class="btn btn-orange btn-sm" href="#ingressos">Ingressos</a>
+<button class="btn btn-orange" type="submit">Inscrever</button>
+```
+
+## Contrast
+
+The orange scale is not interchangeable for fills. Measured against white text:
+
+| Token | Hex | vs. white | Usable as a fill? |
+|---|---|---|---|
+| `$orange-500` | `#f56530` | **3.09:1** | **No** — fails WCAG AA |
+| `$orange-600` | `#c6360b` | 5.34:1 | Yes ✓ |
+
+`$orange-500` is deliberately **not** registered in `$theme-colors`. If it were, Bootstrap's
+`color-contrast()` would flip its label to **black** to satisfy the ratio — and WCBR does not
+use black-on-orange. It stays an accent for borders and sticker shadows only.
+
+## The sticker shadow
+
+The offset shadow is drawn from the variant's own border color
+(`--wcbr-btn-border-color`), so it **recolors itself per variant** — no per-button CSS.
+
+```scss
+.btn {
+  box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
+}
+```
+
+`.btn-orange` is two-tone: the fill stays dark enough for white text while the border — and
+therefore the shadow — lifts to the lighter orange.
+
+```scss
+.btn-orange {
+  --#{$prefix}btn-border-color: #{$orange-500};       // #f56530
+  --#{$prefix}btn-hover-border-color: #{$orange-500};
+}
+```
+
+## Interaction
+
+| State | Shadow | Transform |
+|---|---|---|
+| Rest | `5px 5px 0` | none |
+| Hover | `3px 3px 0` | `translate(2px, 2px)` |
+| Active | `0 0 0` | `translate(5px, 5px)` |
+| Disabled | none | none |
+
+## Sizing
+
+Sizing comes from the `$btn-*` variables, so `.btn-sm` and `.btn-lg` work normally.
+
+```scss
+$btn-font-family:  $headings-font-family;  // Poppins
+$btn-font-weight:  900;
+$btn-border-width: 2px;
+$btn-padding-y:    1.25rem;   // 20px
+$btn-padding-x:    2.5rem;    // 40px
+$btn-font-size:    1.05rem;
+```
+
+## Mapping from the prototype
+
+| `html-from-figma` | Bootstrap / WCBR |
+|---|---|
+| `.btn` | `.btn.btn-orange` |
+| `.btn--sm` | `.btn.btn-orange.btn-sm` |
+| `.btn--brick` | `.btn.btn-orange` (consolidated) |
+| `.btn-newsletter` | `.btn.btn-orange` (consolidated) |
+| `.header__ingressos` | `.btn.btn-orange.btn-sm` in the navbar |
+| `.drawer__cta` | `.btn.btn-orange` inside the offcanvas |
+
+## Notes
+
+- Do not round the corners — `$border-radius: 0` is intentional and brand-defining.
+- Labels are uppercase Poppins 900; keep them short and imperative.
+- `.btn-primary` is **cyan**, not orange. Use `.btn-orange` for the ticket CTA.

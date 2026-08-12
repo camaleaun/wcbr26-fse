@@ -1,0 +1,20 @@
+// ============================================================
+// WCBR additions to Bootstrap's $theme-colors map
+// Imported AFTER bootstrap/scss/variables (so $theme-colors exists)
+// and BEFORE bootstrap/scss/bootstrap (so `maps` picks the additions up).
+//
+// Every key added here makes Bootstrap generate the full family for it:
+//   .btn-<key> .btn-outline-<key> .bg-<key> .text-<key> .text-bg-<key>
+//   .border-<key> .link-<key> --wcbr-<key> …
+//
+// Only ONE orange is registered. $orange-500 (#f56530) is deliberately kept out:
+// it only reaches 3.09:1 against white (fails WCAG AA), and registering it would
+// make Bootstrap's color-contrast() flip its label to black — a look the brand
+// does not use. $orange-500 stays an accent for borders and sticker shadows.
+// ============================================================
+
+$wcbr-colors: (
+  "orange": $orange-600  // #c6360b — 5.34:1 on white ✓ AA. The CTA fill.
+);
+
+$theme-colors: map-merge($theme-colors, $wcbr-colors);

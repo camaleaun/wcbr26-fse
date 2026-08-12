@@ -1,0 +1,52 @@
+---
+title: Forms
+description: The newsletter signup — a Bootstrap form control paired with the orange CTA on a cyan band.
+toc: true
+---
+
+The only form in the site is the **newsletter signup**: a single email field and a submit
+button, laid out side by side on `md+` and stacked on mobile, sitting on a `$cyan-700` band.
+
+## Newsletter
+
+<div class="bd-example p-4" style="background:var(--wcbr-primary)">
+  <form class="d-flex flex-column flex-md-row gap-3">
+    <label class="visually-hidden" for="nl-email">Seu melhor e-mail</label>
+    <input class="form-control form-control-lg rounded-0 flex-grow-1" type="email" id="nl-email" placeholder="Seu melhor e-mail" autocomplete="email" />
+    <button class="btn btn-orange" type="submit">Inscrever</button>
+  </form>
+</div>
+
+```html
+<form class="d-flex flex-column flex-md-row gap-3" action="#" method="post" novalidate>
+  <label class="visually-hidden" for="email">Seu melhor e-mail</label>
+  <input class="form-control form-control-lg rounded-0" type="email" id="email" name="email"
+         placeholder="Seu melhor e-mail" autocomplete="email" required>
+  <button class="btn btn-orange" type="submit">Inscrever</button>
+</form>
+```
+
+## Rules
+
+- **Always label the field.** The visible design has no label, so use `.visually-hidden` —
+  never a bare `placeholder` as the only description.
+- **Square the corners.** `.rounded-0` matches the brand (the theme sets `$border-radius: 0`,
+  so this is usually already the case).
+- **Use `.btn-orange` for submit.** See [Buttons](/docs/2026/components/buttons).
+- The input renders on `$sand-100` with `$gray-700` text; on focus the border goes white.
+
+## Mapping from the prototype
+
+| `html-from-figma` | Bootstrap / WCBR |
+|---|---|
+| `.newsletter__form` | `.d-flex.flex-column.flex-md-row.gap-3` |
+| `.sr-only` | `.visually-hidden` |
+| `.newsletter__input` | `.form-control.form-control-lg` |
+| `.btn.btn--brick` | `.btn.btn-orange` |
+
+## Notes
+
+- Keep `novalidate` on the form only if you handle validation yourself; otherwise let the
+  browser validate `type="email"` + `required`.
+- For error and success states use Bootstrap's standard
+  [validation](https://getbootstrap.com/docs/5.3/forms/validation/) classes.

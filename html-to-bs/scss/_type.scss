@@ -1,0 +1,16 @@
+// ============================================================
+// Type — the WCBR editorial heading treatment
+//
+// Family / weight / color come from $headings-* in _variables.scss.
+// Sizes are fluid and set here (not via $h*-font-size) so they bypass RFS,
+// which cannot process clamp() values.
+// ============================================================
+h1, h2, h3,
+.h1, .h2, .h3 {
+  text-transform: uppercase;
+  line-height: 1.08;
+}
+
+h1, .h1 { font-size: clamp(2.25rem, 6.2vw, 3.625rem); letter-spacing: -.02em; }
+h2, .h2 { font-size: clamp(1.9rem, 5vw, 3rem);        letter-spacing: -.01em; }
+h3, .h3 { font-size: clamp(1.4rem, 3vw, 1.875rem); }

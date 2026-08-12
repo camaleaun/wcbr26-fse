@@ -1,0 +1,12 @@
+// ============================================================
+// NEWS (section)
+// ============================================================
+.news { background: $cream-alt; }
+
+// News links are plain teal text — no underline bar.
+.news .link-under {
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 1rem;
+}

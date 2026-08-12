@@ -1,0 +1,5 @@
+- group: v2026.x
+  baseurl: 'https://wordcampbr.github.io/docs'
+  description: 'Current major release. Last update was v2026.0.'
+  versions:
+    - '2026.0'

@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WCBR2026 Design System — WCBR2026 Design System</title><link rel="preload" href="/fonts/poppins-900.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/docs.css"></head><body><div class="ds-wrapper"><nav class="ds-sidebar"><a class="ds-brand" href="/"><strong>WCBR2026</strong><small>Design System</small></a><div class="ds-nav-group"><span class="ds-nav-label">Fundação</span><ul><li><a href="/docs/colors" class="ds-nav-link">Cores</a></li><li><a href="/docs/typography" class="ds-nav-link">Tipografia</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Componentes</span><ul><li><a href="/docs/buttons" class="ds-nav-link">Botões</a></li><li><a href="/docs/badges" class="ds-nav-link">Badges &amp; Tags</a></li><li><a href="/docs/cards" class="ds-nav-link active">Cards</a></li><li><a href="/docs/avatars" class="ds-nav-link">Avatares</a></li><li><a href="/docs/sponsors" class="ds-nav-link">Sponsors</a></li><li><a href="/docs/accordion" class="ds-nav-link">Accordion</a></li><li><a href="/docs/forms" class="ds-nav-link">Formulários</a></li><li><a href="/docs/social" class="ds-nav-link">Ícones Sociais</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Layout</span><ul><li><a href="/docs/header" class="ds-nav-link">Header &amp; Nav</a></li><li><a href="/docs/footer" class="ds-nav-link">Footer</a></li><li><a href="/docs/hero" class="ds-nav-link">Hero</a></li></ul></div></nav><main class="ds-content"><h2 id="card-de-notícia">Card de notícia</h2>
+<p><code>.news-card</code> — borda <code>$line</code>, fundo <code>$cream</code>, sem border-radius. A imagem aparece apenas em <code>md+</code> (breakpoint 768px).</p>
+<div class="ds-example"><div style="max-width:360px"><article class="news-card"><div class="news-card__media"><img src="/img/news-convocacao.jpg" alt="Call for Speakers" width="512" height="320" loading="lazy"/></div><div class="news-card__body d-flex flex-column gap-2 p-4"><span class="tag">Convocação</span><h3 class="news-card__title"><a href="#">Chamada para Palestrantes aberta!</a></h3><p class="news-card__desc">Compartilhe sua experiência com a comunidade. Estamos buscando novas vozes para o palco.</p><a class="link-under mt-auto" href="#">Leia mais <svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></article></div></div><div class="ds-example-code"><pre><code class="language-html">&lt;div style=&quot;max-width:360px&quot;&gt;&lt;article class=&quot;news-card&quot;&gt;&lt;div class=&quot;news-card__media&quot;&gt;&lt;img src=&quot;/img/news-convocacao.jpg&quot; alt=&quot;Call for Speakers&quot; width=&quot;512&quot; height=&quot;320&quot; loading=&quot;lazy&quot;/&gt;&lt;/div&gt;&lt;div class=&quot;news-card__body d-flex flex-column gap-2 p-4&quot;&gt;&lt;span class=&quot;tag&quot;&gt;Convocação&lt;/span&gt;&lt;h3 class=&quot;news-card__title&quot;&gt;&lt;a href=&quot;#&quot;&gt;Chamada para Palestrantes aberta!&lt;/a&gt;&lt;/h3&gt;&lt;p class=&quot;news-card__desc&quot;&gt;Compartilhe sua experiência com a comunidade. Estamos buscando novas vozes para o palco.&lt;/p&gt;&lt;a class=&quot;link-under mt-auto&quot; href=&quot;#&quot;&gt;Leia mais &lt;svg class=&quot;ic&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;14&quot; height=&quot;14&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M5 12h14M13 6l6 6-6 6&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;&lt;/article&gt;&lt;/div&gt;</code></pre></div>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">article</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;news-card h-100&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">a</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;news-card__media&quot;</span><span style="color:#B392F0"> href</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;#&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">img</span><span style="color:#B392F0"> src</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;...&quot;</span><span style="color:#B392F0"> alt</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;...&quot;</span><span style="color:#B392F0"> loading</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;lazy&quot;</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;img-fluid&quot;</span><span style="color:#E1E4E8"> /&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">a</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;news-card__body d-flex flex-column gap-2 p-4&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">span</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;tag&quot;</span><span style="color:#E1E4E8">&gt;Categoria&lt;/</span><span style="color:#85E89D">span</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">h3</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;news-card__title&quot;</span><span style="color:#E1E4E8">&gt;&lt;</span><span style="color:#85E89D">a</span><span style="color:#B392F0"> href</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;#&quot;</span><span style="color:#E1E4E8">&gt;Título do artigo&lt;/</span><span style="color:#85E89D">a</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">h3</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">p</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;news-card__desc&quot;</span><span style="color:#E1E4E8">&gt;Descrição...&lt;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">a</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;link-under mt-auto&quot;</span><span style="color:#B392F0"> href</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;#&quot;</span><span style="color:#E1E4E8">&gt;Leia mais&lt;/</span><span style="color:#85E89D">a</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">article</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="grid-de-notícias">Grid de notícias</h2>
+<p>Bootstrap <code>row-cols-*</code> controla as colunas em cada breakpoint.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;col&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">article</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;news-card h-100&quot;</span><span style="color:#E1E4E8">&gt;...&lt;/</span><span style="color:#85E89D">article</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="anatomia">Anatomia</h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Classe</th>
+<th>Comportamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Container</td>
+<td><code>.news-card</code></td>
+<td><code>flex-column</code>, borda <code>$line</code></td>
+</tr>
+<tr>
+<td>Link imagem</td>
+<td><code>.news-card__media</code></td>
+<td><code>display:none</code> mobile, <code>aspect-ratio 16/9</code> em md+</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>.tag</code></td>
+<td>Categoria, cor <code>$orange-900</code></td>
+</tr>
+<tr>
+<td>Título</td>
+<td><code>.news-card__title</code></td>
+<td>Poppins 400, cor <code>$teal-700</code></td>
+</tr>
+<tr>
+<td>Descrição</td>
+<td><code>.news-card__desc</code></td>
+<td>Oculta no mobile, visível em md+</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><code>.link-under</code></td>
+<td>Com borda-bottom <code>$orange</code></td>
+</tr>
+</tbody>
+</table>
+<div class="ds-callout ds-callout-info"><p>Use <code>h-100</code> no <code>article</code> e <code>mt-auto</code> no <code>.link-under</code> para que o link sempre fique na base do card independente do tamanho do conteúdo.</p></div></main></div><script src="/js/bootstrap.bundle.min.js" defer></script></body></html>

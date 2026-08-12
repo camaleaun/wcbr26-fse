@@ -1,0 +1,30 @@
+// ============================================================
+// ORGANIZATION (section)
+// ============================================================
+.organization { background: $cream-alt; }
+
+// Source grid: gap 36px 20px, capped at 940px and centred from lg up.
+.org-grid {
+  --#{$prefix}gutter-x: 1.25rem;
+  --#{$prefix}gutter-y: 2.25rem;
+
+  @include media-breakpoint-up(md) {
+    // The source caps its CSS grid at 940px. A Bootstrap .row carries
+    // -10px side margins (half the gutter), so the cap must add the gutter
+    // back for the columns to land on the same geometry.
+    max-width: 960px;   // 940 + 20px gutter
+    margin-inline: auto;
+  }
+}
+
+.organizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  &-name { font-family: $headings-font-family; font-weight: 600; color: $cyan-800; font-size: 1rem; }
+  &-role { font-family: $font-family-sans-serif; font-weight: 400; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: $gray-700; }
+}
+.organization-note { text-align: center; color: $gray-700; max-width: 52ch; margin: 32px auto 0; }

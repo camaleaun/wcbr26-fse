@@ -1,0 +1,28 @@
+GIMP Palette
+Name: WCBR2026
+#
+# WordCamp Brasil 2026 — Design System Colors
+#
+
+# Teal
+  0  89  93	Teal
+  0  78  77	Teal D
+  0  62  62	Teal DD
+
+# Orange
+245 101  48	South (Orange)
+212  57   0	Grenadier
+201  66  32	Brick B
+181  39   1	Brick
+
+# Acento
+255 180 163	Foot Head
+
+# Neutros
+255 248 241	Cream
+247 240 230	Foot Text
+245 237 227	Cream Alt
+233 225 216	Panel
+190 201 200	Line
+ 85  98  96	Muted
+ 62  73  72	Ink

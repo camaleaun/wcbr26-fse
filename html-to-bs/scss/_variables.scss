@@ -1,0 +1,257 @@
+// ============================================================
+// Bootstrap variable overrides + WCBR2026 custom tokens
+// Importado APÓS bootstrap/scss/functions para usar shade-color/tint-color
+// ============================================================
+
+$prefix: wcbr- !default;
+
+$robins-egg-blue:  #00c7c9 !default;
+$sherpa-blue:      #004c4d !default;
+$blue-stone:       #00595d !default;
+$cyprus:           #003e3e !default;
+$pomegranate:      #e84814 !default;
+$flamingo:         #f56530 !default;
+$tia-maria:        #C6360B !default;
+$raffia:           #ead4bc !default;
+$bridal-heath:     #fff8f1 !default;
+$merino:           #f6eee4 !default;
+$pearl-bush:       #e9e0d8 !default;
+$granny-smith:     #8c9e9b !default;
+$submarine:        #bec9c8 !default;
+$nandor:           #4a5654 !default;
+$vermilion:        #ff4419 !default;
+$cornflower-lilac: #ffb4a3 !default;
+
+$cyan:   $robins-egg-blue !default;
+$orange: $pomegranate !default;
+$red:    $vermilion !default;
+$sand:   $raffia !default;
+$slate:  $granny-smith !default;
+
+$sand-100: $bridal-heath !default;
+$sand-200: $merino !default;
+$sand-300: $pearl-bush !default;
+$sand-400: tint-color($sand, 20%) !default;
+$sand-500: $sand !default;
+$sand-600: shade-color($sand, 20%) !default;
+$sand-700: shade-color($sand, 40%) !default;
+$sand-800: shade-color($sand, 60%) !default;
+$sand-900: shade-color($sand, 80%) !default;
+
+$sands: (
+  "sand-100": $sand-100,
+  "sand-200": $sand-200,
+  "sand-300": $sand-300,
+  "sand-400": $sand-400,
+  "sand-500": $sand-500,
+  "sand-600": $sand-600,
+  "sand-700": $sand-700,
+  "sand-800": $sand-800,
+  "sand-900": $sand-900
+) !default;
+
+$slate-100: tint-color($slate, 80%) !default;
+$slate-200: tint-color($slate, 60%) !default;
+$slate-300: tint-color($slate, 40%) !default;
+$slate-400: $submarine !default;
+$slate-500: $slate !default;
+$slate-600: shade-color($slate, 20%) !default;
+$slate-700: $nandor !default;
+$slate-800: shade-color($slate, 60%) !default;
+$slate-900: shade-color($slate, 80%) !default;
+
+$slates: (
+  "slate-100": $slate-100,
+  "slate-200": $slate-200,
+  "slate-300": $slate-300,
+  "slate-400": $slate-400,
+  "slate-500": $slate-500,
+  "slate-600": $slate-600,
+  "slate-700": $slate-700,
+  "slate-800": $slate-800,
+  "slate-900": $slate-900
+) !default;
+
+$gray-100: $sand-100 !default;
+$gray-200: $sand-200 !default;
+$gray-300: $sand-300 !default;
+$gray-400: $slate-400 !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: $slate-700 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+
+$red-100: tint-color($red, 80%) !default;
+$red-200: tint-color($red, 60%) !default;
+$red-300: tint-color($red, 40%) !default;
+$red-400: tint-color($red, 20%) !default;
+$red-500: $red !default;
+$red-600: shade-color($red, 20%)  !default;
+$red-700: shade-color($red, 40%) !default;
+$red-800: shade-color($red, 60%) !default;
+$red-900: shade-color($red, 80%) !default;
+
+$reds: (
+  "red-100": $red-100,
+  "red-200": $red-200,
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "red-500": $red-500,
+  "red-600": $red-600,
+  "red-700": $red-700,
+  "red-800": $red-800,
+  "red-900": $red-900
+) !default;
+
+$orange-100: tint-color($orange, 80%) !default;
+$orange-200: tint-color($orange, 60%) !default;
+$orange-300: tint-color($orange, 40%) !default;
+$orange-400: tint-color($orange, 20%) !default;
+$orange-500: $flamingo !default;
+$orange-600: $tia-maria !default; // shade-color($orange, 20%)
+$orange-700: shade-color($orange, 40%) !default;
+$orange-800: shade-color($orange, 60%) !default;
+$orange-900: shade-color($orange, 80%) !default;
+
+$oranges: (
+  "orange-100": $orange-100,
+  "orange-200": $orange-200,
+  "orange-300": $orange-300,
+  "orange-400": $orange-400,
+  "orange-500": $orange-500,
+  "orange-600": $orange-600,
+  "orange-700": $orange-700,
+  "orange-800": $orange-800,
+  "orange-900": $orange-900
+) !default;
+
+$cyan-100: tint-color($cyan, 80%) !default;
+$cyan-200: tint-color($cyan, 60%) !default;
+$cyan-300: tint-color($cyan, 40%) !default;
+$cyan-400: tint-color($cyan, 20%) !default;
+$cyan-500: $cyan !default;
+$cyan-600: shade-color($cyan, 20%) !default;
+$cyan-700: $blue-stone  !default;
+$cyan-800: $sherpa-blue !default;
+$cyan-900: $cyprus      !default;
+
+$cyans: (
+  "cyan-100": $cyan-100,
+  "cyan-200": $cyan-200,
+  "cyan-300": $cyan-300,
+  "cyan-400": $cyan-400,
+  "cyan-500": $cyan-500,
+  "cyan-600": $cyan-600,
+  "cyan-700": $cyan-700,
+  "cyan-800": $cyan-800,
+  "cyan-900": $cyan-900
+) !default;
+
+$cream:     $sand-100;
+$cream-alt: $sand-200;
+$line:      $slate-400;
+$panel:     $sand-300;
+$muted:     #556260;
+$ink:       #3e4948;
+
+$foot-head: $red-200;
+$foot-text: $sand-200;
+
+// scss-docs-start wcbr-theme-variables
+$primary:    $cyan-700;
+$secondary:  $orange;
+$body-bg:    $cream;
+$body-color: $ink;
+// scss-docs-end wcbr-theme-variables
+
+// scss-docs-start wcbr-type-variables
+$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-family:   "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-weight:   900;
+$headings-color:         $primary;
+$font-size-base:         1.125rem; // 18px
+$line-height-base:       1.45;
+// scss-docs-end wcbr-type-variables
+
+// scss-docs-start wcbr-layout-variables
+$border-radius:      0;
+$border-radius-sm:   0;
+$border-radius-lg:   0;
+$border-radius-pill: 0;
+
+// The design's own breakpoints — 640 (tablet grids), 900 (content grids),
+// 1080 (desktop header). Bootstrap's defaults (576/768/992) match none of them.
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 900px,
+  lg: 1080px,
+  xl: 1232px
+);
+
+// The source container is fluid up to a single 1232px cap — not stepped per
+// breakpoint — so every step carries the same max-width.
+$container-max-widths: (
+  sm: 1232px,
+  md: 1232px,
+  lg: 1232px,
+  xl: 1232px
+);
+
+$grid-gutter-width: 1.5rem;
+
+// Source container is `padding-inline: 24px`. make-container() sets
+// --gutter-x to this value and then applies HALF of it as padding, so the
+// variable must be double the intended padding.
+$container-padding-x: 3rem;
+// scss-docs-end wcbr-layout-variables
+
+// scss-docs-start wcbr-button-variables
+$btn-font-family:  $headings-font-family;
+$btn-font-weight:  900;
+$btn-border-width: 2px;
+
+$btn-padding-y:    1.25rem;  // 20px
+$btn-padding-x:    2.5rem;   // 40px
+$btn-font-size:    1.05rem;
+
+$btn-padding-y-sm: .8125rem; // 13px
+$btn-padding-x-sm: 1.875rem; // 30px
+$btn-font-size-sm: .9rem;
+
+// Offset of the signature hard "sticker" shadow.
+$btn-sticker-offset: 5px;
+// scss-docs-end wcbr-button-variables
+
+// scss-docs-start wcbr-badge-variables
+$badge-font-size:     .9rem;
+$badge-font-weight:   600;
+$badge-padding-y:     .5625rem; // 9px
+$badge-padding-x:     1rem;     // 16px
+$badge-border-radius: 2px;
+// scss-docs-end wcbr-badge-variables
+
+// The header row spacing comes from the flex gap; Bootstrap's brand margin
+// would add an extra 16px the design does not have.
+$navbar-brand-margin-end: 0;
+
+// scss-docs-start wcbr-link-variables
+$link-color:      $primary;
+$link-decoration: none;
+
+$nav-link-color:       $primary;
+$nav-link-font-weight: 700;
+// scss-docs-end wcbr-link-variables

@@ -1,0 +1,59 @@
+// ============================================================
+// FOOTER
+// ============================================================
+.site-footer {
+  background: $cyan-900;
+  color: $foot-text;
+  padding-block: 64px 72px;
+}
+
+// Source grid: gap 40px, brand column 1.4fr against three 1fr link columns.
+.footer-grid {
+  display: grid;
+  gap: 40px;
+
+  @include media-breakpoint-up(sm) { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+}
+
+.footer-brand img { width: 171px; height: auto; margin-bottom: 20px; }
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+
+  a { color: #fff; opacity: .9; display: inline-flex; &:hover { color: $foot-head; opacity: 1; } }
+  .social-icon { height: 20px; }
+}
+
+.footer-tags { font-family: $font-family-sans-serif; font-weight: 700; font-size: .625rem; letter-spacing: .1em; color: $foot-head; text-transform: uppercase; margin-bottom: 8px; }
+.footer-date { font-size: .625rem; text-transform: uppercase; letter-spacing: .04em; opacity: .7; margin: 8px 0 0; }
+.footer-description { font-size: .875rem; line-height: 1.6; opacity: .7; margin-bottom: 0; }
+
+.footer-title { font-family: $headings-font-family; font-weight: 400; text-transform: uppercase; font-size: 1rem; line-height: $line-height-base; color: $foot-head; margin-bottom: 20px; }
+
+.footer-col-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin-bottom: 0;
+
+  a { font-size: 1rem; opacity: .8; text-decoration: none; color: $foot-text; transition: opacity .15s ease; &:hover { opacity: 1; color: $foot-head; } }
+}
+
+.footer-bottom { border-top: 1px solid rgba(#fff, .12); margin-top: 48px; padding-top: 32px; text-align: center; }
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+  margin-bottom: 20px;
+}
+
+.footer-legal a { font-family: $headings-font-family; font-weight: 400; text-transform: uppercase; font-size: .8rem; letter-spacing: .04em; opacity: .8; color: $foot-text; text-decoration: none; transition: opacity .15s ease; &:hover { opacity: 1; color: $foot-head; } }
+
+.footer-motto { font-family: $headings-font-family; font-weight: 700; font-size: 1.15rem; color: $foot-head; margin: 0 0 12px; }
+.footer-copy { font-size: .8rem; line-height: 1.6; opacity: .6; margin-bottom: 0; }

@@ -1,0 +1,67 @@
+---
+title: Accordion
+description: The session-formats accordion — Bootstrap's accordion with a leading icon per item.
+toc: true
+---
+
+The **O que esperar** (formats) section is a Bootstrap
+[accordion](https://getbootstrap.com/docs/5.3/components/accordion/): each session format is a
+collapsible item with a leading icon, an uppercase heading, and a body of copy.
+
+## Structure
+
+Each item is an `.accordion-item` with an `.accordion-button` (which carries the built-in
+caret) and a collapsible `.accordion-collapse`. The prototype's custom caret (`.fmt__caret`)
+is dropped — Bootstrap draws it. The leading icon is kept as a `<span>` before the label.
+
+## Markup
+
+```html
+<div class="accordion formats-accordion" id="formats">
+  <div class="accordion-item format">
+    <h3 class="accordion-header">
+      <button class="accordion-button format-head collapsed" type="button"
+              data-bs-toggle="collapse" data-bs-target="#format-1"
+              aria-expanded="false" aria-controls="format-1">
+        <span class="format-icon format-icon-cyan" aria-hidden="true">
+          <!-- inline SVG icon -->
+        </span>
+        <span class="format-title">Palestras</span>
+      </button>
+    </h3>
+    <div id="format-1" class="accordion-collapse collapse" data-bs-parent="#formats">
+      <div class="accordion-body">
+        Sessões de 40 minutos com especialistas nacionais e internacionais
+        abordando as últimas tendências do WordPress.
+      </div>
+    </div>
+  </div>
+  <!-- Mini Palestras, Painéis … -->
+</div>
+```
+
+The icon takes one of three color modifiers: `.format-icon-cyan`, `.format-icon-orange`, or
+`.format-icon-panel`. On `sm+`, `.formats-accordion` lays the three items out side by side and
+keeps every panel open.
+
+Set `data-bs-parent="#formats"` on every collapse so only one item opens at a time (matching
+the prototype). Drop it if you want multiple panels open.
+
+## Mapping from the prototype
+
+| `html-from-figma` | Bootstrap |
+|---|---|
+| `.fmt` (article) | `.accordion-item` |
+| `.fmt__head` (button) | `.accordion-header` + `.accordion-button` |
+| `aria-expanded` / `aria-controls` (custom JS) | `data-bs-toggle="collapse"` / `data-bs-target` |
+| `.fmt__panel` (region) | `.accordion-collapse.collapse` |
+| `.fmt__panel-inner` | `.accordion-body` |
+| `.fmt__title` (`h3`) | text inside `.accordion-button` |
+| `.fmt__icon` | leading `<span>` (kept, custom-styled) |
+| `.fmt__caret` | removed — Bootstrap's built-in caret |
+
+## Notes
+
+- The three formats are **Palestras**, **Mini Palestras**, and **Painéis**.
+- Headings sit inside the button; keep them as `h3` for the document outline.
+- Requires Bootstrap's JS bundle (Collapse) — already loaded site-wide.

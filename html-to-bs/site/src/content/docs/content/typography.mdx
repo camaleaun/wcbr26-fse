@@ -1,0 +1,86 @@
+---
+title: Typography
+description: The WCBR2026 type system — Poppins for headings, Montserrat for body, and the uppercase label style used across the site.
+toc: true
+---
+
+WCBR2026 pairs two typefaces: **Poppins** for headings and labels, **Montserrat** for body
+copy. Type is set on an **18px base** with a sharp, editorial feel — headings are heavy
+(weight 900), uppercase, and colored with the primary cyan.
+
+## Typefaces
+
+| Role | Family | Weights loaded | Sass token |
+|---|---|---|---|
+| Headings & labels | **Poppins** | 400, 600, 700, 900 | `$headings-font-family` |
+| Body | **Montserrat** | 400, 700 | `$font-family-sans-serif` |
+
+Both are self-hosted as `woff2` with `font-display: swap`, falling back to
+`system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`.
+
+## Base
+
+```scss
+$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-family:   "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-weight:   900;
+$headings-color:         $primary;   // $cyan-700 · #00595d
+$font-size-base:         1.125rem;   // 18px
+$line-height-base:       1.45;
+```
+
+## Headings
+
+Headings use Poppins **900**, `text-transform: uppercase`, primary color, and a tight
+`line-height` (~1.1). Sizes are fluid (`clamp`) so they scale with the viewport.
+
+| Level | Size (`clamp`) | Letter-spacing |
+|---|---|---|
+| `h1` / `.h1` | `clamp(2.25rem, 6.2vw, 3.625rem)` | `-0.02em` |
+| `h2` / `.h2` | `clamp(1.9rem, 5vw, 3rem)` | `-0.01em` |
+| `h3` / `.h3` | inherited ramp | — |
+
+<div class="bd-example">
+  <h1 class="text-uppercase" style="color:var(--wcbr-primary);font-weight:900;line-height:1.1">WordCamp Brasil 2026</h1>
+  <h2 class="text-uppercase" style="color:var(--wcbr-primary);font-weight:900;line-height:1.1">O que esperar</h2>
+  <h3 class="text-uppercase" style="color:var(--wcbr-primary);font-weight:900;line-height:1.1">Últimas notícias</h3>
+</div>
+
+## Body & lead
+
+Body text is Montserrat at the 18px base with `line-height: 1.45`. The intro/lead paragraph
+scales up fluidly.
+
+```html
+<p class="lead">A maior conferência WordPress do Brasil, em Belo Horizonte.</p>
+```
+
+<div class="bd-example">
+  <p class="lead">A maior conferência WordPress do Brasil, em Belo Horizonte.</p>
+  <p>Palestras, mini-palestras, painéis e muito networking com a comunidade.</p>
+</div>
+
+## Eyebrows & labels
+
+A recurring pattern across the site: small, **uppercase** labels in Poppins with positive
+letter-spacing — used for section eyebrows, stat labels, tags, and nav items. Colors vary by
+context (`--wcbr-orange-600` for tags, `--wcbr-cyan-800` for nav, `--wcbr-gray-700` for meta).
+
+| Use | Weight | Size | Letter-spacing |
+|---|---|---|---|
+| Section eyebrow | 600 | ~0.81rem | `.06em` |
+| Stat label | 400 | ~0.95rem | — |
+| Tag | 700 | ~0.625rem | `.06em` |
+| Nav item | 700 | ~0.8rem | `.02em` |
+
+<div class="bd-example">
+  <span class="text-uppercase d-block" style="font-weight:700;font-size:.625rem;letter-spacing:.06em;color:var(--wcbr-orange-600)">Chamada para palestras</span>
+  <span class="text-uppercase d-block" style="font-weight:600;font-size:.8125rem;letter-spacing:.06em;color:var(--wcbr-orange-600)">Sobre o evento</span>
+</div>
+
+## Notes
+
+- Headings default to uppercase in the WCBR brand — do not rely on sentence case for `h1`–`h3`.
+- Because `$border-radius: 0`, type sits on hard-edged surfaces; keep labels tight and aligned.
+- These values are taken from the `html-from-figma` prototype (`assets/css/styles.css`) and the
+  theme's `scss/_variables.scss`.

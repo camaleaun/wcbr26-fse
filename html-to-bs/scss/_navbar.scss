@@ -1,0 +1,117 @@
+// ============================================================
+// HEADER
+// ============================================================
+.site-header {
+  background: $cream;
+  .navbar { min-height: 72px; padding-block: 0; }
+}
+
+// Source layout: a flex row with a 20px gap. `.navbar > .container` sets
+// justify-content: space-between with higher specificity, so the reset needs
+// the same child selector to win.
+.navbar > .header-inner { justify-content: flex-start; }
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 72px;
+  flex-wrap: nowrap;
+
+  // Source widens the gap once the desktop header appears.
+  @include media-breakpoint-up(lg) { gap: 32px; }
+}
+
+.header-logo {
+  height: 44px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  display: block;
+}
+
+.header-nav {
+  gap: 24px;
+
+  // The design uses an inline chevron, not Bootstrap's CSS triangle.
+  .dropdown-toggle::after { display: none; }
+
+  .nav-caret { color: inherit; stroke-width: 2.5; transition: transform .18s ease; }
+  .nav-item.show .nav-caret { transform: rotate(180deg); }
+
+  .nav-link {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: $cyan-700;
+    padding: 6px 0;
+    border-bottom: 3px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: border-color .15s ease;
+
+    &:hover, &:focus { border-color: $orange; color: $cyan-700; }
+  }
+
+  .dropdown-menu {
+    border: 1px solid $line;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,.14);
+    padding: 8px;
+    min-width: 210px;
+    background: $cream;
+
+    .dropdown-item {
+      font-family: $headings-font-family;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: .8rem;
+      letter-spacing: .02em;
+      color: $cyan-700;
+      padding: 9px 12px;
+      border-radius: 0;
+
+      + .dropdown-item { margin-top: 2px; }
+
+      &:hover, &:focus { background: $cream-alt; color: $cyan-800; }
+    }
+  }
+}
+
+.header-meta {
+  flex: none;   // must not shrink below the date line, as in the source
+  margin-left: auto;
+  text-align: right;
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-bottom: 4px;
+  color: $cyan-800;
+
+  a { color: inherit; display: inline-flex; &:hover { color: $orange-600; } }
+}
+
+.header-tags {
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  font-size: .625rem;
+  letter-spacing: .06em;
+  color: $orange-600;
+  text-transform: uppercase;
+}
+
+.header-date {
+  font-family: $headings-font-family;
+  font-weight: 400;
+  font-size: .625rem;
+  letter-spacing: .02em;
+  color: $gray-700;
+  text-transform: uppercase;
+  margin-top: 2px;
+}

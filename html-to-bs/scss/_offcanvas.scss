@@ -1,0 +1,100 @@
+// ============================================================
+// OFFCANVAS / DRAWER MOBILE
+// ============================================================
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: $headings-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .9375rem;
+  letter-spacing: .05em;
+  line-height: 1;
+  color: $ink;
+  text-decoration: none;
+  transition: background .15s ease;
+  width: 100%;
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover  { background: $cream-alt; color: $ink; }
+  &.active { background: $cream-alt; color: $cyan-700; font-weight: 900; }
+}
+
+.drawer-caret {
+  margin-left: auto;
+  flex: none;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .28s ease;
+}
+[aria-expanded="true"] .drawer-caret { transform: rotate(180deg); }
+
+.drawer-sub {
+  padding: 0;
+  margin: 0;
+
+  a {
+    display: block;
+    padding: 12px 16px 12px 52px;
+    border-radius: 8px;
+    font-family: $headings-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .82rem;
+    letter-spacing: .04em;
+    color: $cyan-700;
+    text-decoration: none;
+
+    &:hover { background: $cream-alt; }
+  }
+}
+
+.drawer-foot { margin-top: auto; }
+
+.drawer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: $cyan-800;
+  a { color: inherit; display: inline-flex; &:hover { color: $orange-600; } }
+  .social-icon { height: 20px; }
+}
+
+.drawer-tags {
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .06em;
+  color: $orange-600;
+}
+
+.drawer-date {
+  font-family: $headings-font-family;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 1.5;
+  color: #1e1b15;
+  opacity: .6;
+  margin: 0;
+}

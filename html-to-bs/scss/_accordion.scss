@@ -1,0 +1,92 @@
+// ============================================================
+// FORMATS / ACCORDION
+// ============================================================
+.formats { background: $cream; }
+
+.format.accordion-item {
+  background: $cream;
+  border: 2px solid $line;
+  box-shadow: 5px 5px 0 0 $cyan-700;
+  border-radius: 0;
+
+  + .format.accordion-item { margin-top: 20px; }
+}
+
+.format-head.accordion-button {
+  background: none;
+  box-shadow: none;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 0;
+  font-size: inherit;
+
+  &:not(.collapsed) { background: none; color: inherit; box-shadow: none; }
+  &::after { display: none; }
+}
+
+.format-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  flex-shrink: 0;
+
+  svg { display: block; max-width: 52%; max-height: 48%; fill: currentColor; stroke: none; }
+
+  &-cyan   { background: $cyan-700; color: #95E4E2; }
+  &-orange { background: $orange-500; color: #fff; }
+  &-panel  { background: $panel; color: $cyan-800; }
+}
+
+.format-title {
+  font-family: $headings-font-family;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $cyan-700;
+  font-size: 1.25rem;
+  line-height: 1.08;
+  margin: 0;
+}
+
+@media (min-width: map-get($grid-breakpoints, sm)) {
+  // Source uses `repeat(3, minmax(0, 1fr))`; the minmax(0,…) is what lets the
+  // columns shrink below their min-content. The flex equivalent is min-width: 0.
+  .formats-accordion {
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .format.accordion-item {
+    flex: 1;
+    min-width: 0;
+    + .format.accordion-item { margin-top: 0; }
+  }
+
+  .format-head.accordion-button {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 32px 16px;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .format-icon { width: 64px; height: 64px; }
+
+  .format-title { font-size: clamp(1.4rem, 3vw, 1.875rem); }
+
+  .format.accordion-item .accordion-collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .format.accordion-item .accordion-body {
+    padding: 0 32px 32px;
+    font-size: 1.125rem;
+    color: $ink;
+  }
+}

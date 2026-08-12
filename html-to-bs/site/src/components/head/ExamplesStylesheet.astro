@@ -1,0 +1,11 @@
+---
+
+---
+
+{/* Examples render with the WCBR theme, not stock Bootstrap. `wcbr.scss` already
+    imports all of Bootstrap, so linking bootstrap.css on top would duplicate it
+    (and that file is not even emitted by the build). Mirrors the docs' Scss.astro,
+    minus the docs-site-only stylesheets. */}
+<style is:global lang="scss">
+  @import '../../../../scss/wcbr.scss';
+</style>

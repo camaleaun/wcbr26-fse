@@ -1,0 +1,41 @@
+// 1. Funções Bootstrap (shade-color, tint-color, etc.) — devem vir primeiro
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Tokens WCBR (usam shade-color; sobrescrevem defaults do Bootstrap sem !default)
+@import "variables";
+@import "../node_modules/bootstrap/scss/variables";
+
+// 2b. Additions to $theme-colors — must land before Bootstrap builds its maps
+@import "theme-colors";
+
+// 3. Bootstrap completo (todas as variáveis com !default respeitam os valores acima)
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 4. Base do tema
+@import "root";
+@import "fonts";
+@import "type";
+
+// 5. Componentes — um partial por componente, como no Bootstrap.
+//    Genéricos e reutilizáveis; é daqui que os examples se servem.
+@import "icons";
+@import "links";
+@import "buttons";
+@import "badge";
+@import "navbar";
+@import "offcanvas";
+@import "accordion";
+@import "card";
+@import "avatar";
+@import "forms";
+
+// 6. Seções da página — composições WCBR (a base de cada example).
+@import "sections";
+@import "hero";
+@import "stats";
+@import "about";
+@import "news";
+@import "sponsors";
+@import "organization";
+@import "newsletter";
+@import "footer";

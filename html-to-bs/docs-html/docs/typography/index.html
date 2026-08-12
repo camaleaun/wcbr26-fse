@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WCBR2026 Design System — WCBR2026 Design System</title><link rel="preload" href="/fonts/poppins-900.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/styles.css"><link rel="stylesheet" href="/css/docs.css"></head><body><div class="ds-wrapper"><nav class="ds-sidebar"><a class="ds-brand" href="/"><strong>WCBR2026</strong><small>Design System</small></a><div class="ds-nav-group"><span class="ds-nav-label">Fundação</span><ul><li><a href="/docs/colors" class="ds-nav-link">Cores</a></li><li><a href="/docs/typography" class="ds-nav-link active">Tipografia</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Componentes</span><ul><li><a href="/docs/buttons" class="ds-nav-link">Botões</a></li><li><a href="/docs/badges" class="ds-nav-link">Badges &amp; Tags</a></li><li><a href="/docs/cards" class="ds-nav-link">Cards</a></li><li><a href="/docs/avatars" class="ds-nav-link">Avatares</a></li><li><a href="/docs/sponsors" class="ds-nav-link">Sponsors</a></li><li><a href="/docs/accordion" class="ds-nav-link">Accordion</a></li><li><a href="/docs/forms" class="ds-nav-link">Formulários</a></li><li><a href="/docs/social" class="ds-nav-link">Ícones Sociais</a></li></ul></div><div class="ds-nav-group"><span class="ds-nav-label">Layout</span><ul><li><a href="/docs/header" class="ds-nav-link">Header &amp; Nav</a></li><li><a href="/docs/footer" class="ds-nav-link">Footer</a></li><li><a href="/docs/hero" class="ds-nav-link">Hero</a></li></ul></div></nav><main class="ds-content"><h2 id="famílias">Famílias</h2>
+<p>Duas fontes self-hosted em woff2 — declaradas em <code>_fonts.scss</code>, referenciadas pelas variáveis Bootstrap.</p>
+<table>
+<thead>
+<tr>
+<th>Variável SCSS</th>
+<th>Fonte</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$headings-font-family</code></td>
+<td><strong>Poppins</strong></td>
+<td>Títulos, nav, botões, badges</td>
+</tr>
+<tr>
+<td><code>$font-family-sans-serif</code></td>
+<td><strong>Montserrat</strong></td>
+<td>Corpo de texto, tags, legenda</td>
+</tr>
+</tbody>
+</table>
+<h2 id="títulos-display-">Títulos (<code>display-*</code>)</h2>
+<p>Bootstrap gera as classes <code>.display-1</code> a <code>.display-6</code>. Nós definimos:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="scss"><code><span class="line"><span style="color:#FFAB70">$headings-font-weight</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">900</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">$headings-color</span><span style="color:#E1E4E8">: </span><span style="color:#FFAB70">$teal</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<div class="ds-example"><h1 class="display-1 mb-2">Display 1</h1><h2 class="display-2 mb-2">Display 2</h2><h3 class="display-3 mb-2">Display 3</h3><h4 class="display-4 mb-2">Display 4</h4></div><div class="ds-example-code"><pre><code class="language-html">&lt;h1 class=&quot;display-1 mb-2&quot;&gt;Display 1&lt;/h1&gt;&lt;h2 class=&quot;display-2 mb-2&quot;&gt;Display 2&lt;/h2&gt;&lt;h3 class=&quot;display-3 mb-2&quot;&gt;Display 3&lt;/h3&gt;&lt;h4 class=&quot;display-4 mb-2&quot;&gt;Display 4&lt;/h4&gt;</code></pre></div>
+<div class="ds-callout ds-callout-info"><p>No design original, todos os títulos principais são <code>text-transform: uppercase</code>. Aplique a classe Bootstrap <code>text-uppercase</code> ou via SCSS.</p></div>
+<h2 id="corpo-de-texto">Corpo de texto</h2>
+<p><code>$font-size-base: 1.125rem</code> (18px) e <code>$line-height-base: 1.45</code>.</p>
+<div class="ds-example"><p class="mb-3">Parágrafo padrão — Montserrat 18px/1.45. A maior conferência WordPress da América Latina desembarca na capital mineira em 2026.</p><p class="text-muted">Texto secundário <code>.text-muted</code> — cor <code>$muted</code> (#556260).</p></div><div class="ds-example-code"><pre><code class="language-html">&lt;p class=&quot;mb-3&quot;&gt;Parágrafo padrão — Montserrat 18px/1.45. A maior conferência WordPress da América Latina desembarca na capital mineira em 2026.&lt;/p&gt;&lt;p class=&quot;text-muted&quot;&gt;Texto secundário &lt;code&gt;.text-muted&lt;/code&gt; — cor &lt;code&gt;$muted&lt;/code&gt; (#556260).&lt;/p&gt;</code></pre></div>
+<h2 id="escalas-bootstrap-utilitárias">Escalas Bootstrap utilitárias</h2>
+<div class="ds-example"><p class="fs-1 mb-1">fs-1</p><p class="fs-2 mb-1">fs-2</p><p class="fs-3 mb-1">fs-3</p><p class="fs-4 mb-1">fs-4</p><p class="fs-5 mb-1">fs-5</p><p class="fs-6 mb-0">fs-6</p></div><div class="ds-example-code"><pre><code class="language-html">&lt;p class=&quot;fs-1 mb-1&quot;&gt;fs-1&lt;/p&gt;&lt;p class=&quot;fs-2 mb-1&quot;&gt;fs-2&lt;/p&gt;&lt;p class=&quot;fs-3 mb-1&quot;&gt;fs-3&lt;/p&gt;&lt;p class=&quot;fs-4 mb-1&quot;&gt;fs-4&lt;/p&gt;&lt;p class=&quot;fs-5 mb-1&quot;&gt;fs-5&lt;/p&gt;&lt;p class=&quot;fs-6 mb-0&quot;&gt;fs-6&lt;/p&gt;</code></pre></div>
+<h2 id="pesos-poppins-disponíveis">Pesos Poppins disponíveis</h2>
+<p>400 · 600 · 700 · 900 (arquivos declarados em <code>_fonts.scss</code>).</p>
+<div class="ds-example"><p class="fw-normal mb-1" style="font-family:'Poppins',sans-serif">Poppins 400 — Normal</p><p class="fw-semibold mb-1" style="font-family:'Poppins',sans-serif">Poppins 600 — Semibold</p><p class="fw-bold mb-1" style="font-family:'Poppins',sans-serif">Poppins 700 — Bold</p><p class="fw-bolder mb-0" style="font-family:'Poppins',sans-serif">Poppins 900 — Black</p></div><div class="ds-example-code"><pre><code class="language-html">&lt;p class=&quot;fw-normal mb-1&quot; style=&quot;font-family:&#39;Poppins&#39;,sans-serif&quot;&gt;Poppins 400 — Normal&lt;/p&gt;&lt;p class=&quot;fw-semibold mb-1&quot; style=&quot;font-family:&#39;Poppins&#39;,sans-serif&quot;&gt;Poppins 600 — Semibold&lt;/p&gt;&lt;p class=&quot;fw-bold mb-1&quot; style=&quot;font-family:&#39;Poppins&#39;,sans-serif&quot;&gt;Poppins 700 — Bold&lt;/p&gt;&lt;p class=&quot;fw-bolder mb-0&quot; style=&quot;font-family:&#39;Poppins&#39;,sans-serif&quot;&gt;Poppins 900 — Black&lt;/p&gt;</code></pre></div></main></div><script src="/js/bootstrap.bundle.min.js" defer></script></body></html>
