@@ -330,9 +330,13 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
      WP card is wider (395px) so img crops to 395×209; aspect ratio differs slightly but heights align. */
   .news-card .wp-block-post-featured-image { height: 209px !important; overflow: hidden !important; }
   .news-card .wp-block-post-featured-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; }
-  .news-card > .wp-block-group { min-height: 260px !important; }
-  /* News card typography: WP excerpt 16px vs REF 18px; read-more 13px vs REF 16px */
+  /* Card body: gap 8px→12px (REF), min-height to target 470px card (209fig+259body+2border) */
+  .news-card > .wp-block-group { gap: 12px !important; min-height: 259px !important; }
+  /* Excerpt <p> has margin-bottom:18px by default; zero it so excerpt block = text only (78px) */
+  .news-card .wp-block-post-excerpt__excerpt { margin-bottom: 0 !important; }
+  /* News card typography: WP excerpt 16px→18px, read-more 13px→16px; lh 1.5→1.45 on tag+read-more */
   .news-card .wp-block-post-excerpt,
   .news-card .wp-block-post-excerpt p { font-size: 1.125rem !important; line-height: 1.45 !important; }
-  .news-card .wp-block-read-more { font-size: 1rem !important; }
+  .news-card .wp-block-read-more { font-size: 1rem !important; line-height: 1.45 !important; }
+  .news-card .taxonomy-category { line-height: 1.45 !important; }
 }
