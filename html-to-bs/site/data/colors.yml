@@ -6,9 +6,9 @@
   hex: '#6f42c1'
 - name: pink
   hex: '#d63384'
-- name: red
+- name: custom-red
   hex: '#ff4419'
-- name: orange
+- name: custom-orange
   hex: '#f56530'
 - name: yellow
   hex: '#ffc107'
@@ -16,7 +16,7 @@
   hex: '#198754'
 - name: teal
   hex: '#20c997'
-- name: cyan
+- name: custom-cyan
   hex: '#00c7c9'
 - name: white
   hex: '#fff'

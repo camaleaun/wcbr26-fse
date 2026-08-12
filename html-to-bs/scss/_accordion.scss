@@ -6,7 +6,7 @@
 .format.accordion-item {
   background: $cream;
   border: 2px solid $line;
-  box-shadow: 5px 5px 0 0 $cyan-700;
+  box-shadow: 5px 5px 0 0 $custom-cyan-700;
   border-radius: 0;
 
   + .format.accordion-item { margin-top: 20px; }
@@ -36,16 +36,16 @@
 
   svg { display: block; max-width: 52%; max-height: 48%; fill: currentColor; stroke: none; }
 
-  &-cyan   { background: $cyan-700; color: #95E4E2; }
-  &-orange { background: $orange-500; color: #fff; }
-  &-panel  { background: $panel; color: $cyan-800; }
+  &-cyan   { background: $custom-cyan-700; color: #95E4E2; }
+  &-orange { background: $custom-orange-500; color: #fff; }
+  &-panel  { background: $panel; color: $custom-cyan-800; }
 }
 
 .format-title {
   font-family: $headings-font-family;
   font-weight: 900;
   text-transform: uppercase;
-  color: $cyan-700;
+  color: $custom-cyan-700;
   font-size: 1.25rem;
   line-height: 1.08;
   margin: 0;

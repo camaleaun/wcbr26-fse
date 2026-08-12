@@ -14,7 +14,7 @@
 // ============================================================
 
 $wcbr-colors: (
-  "orange": $orange-600  // #c6360b — 5.34:1 on white ✓ AA. The CTA fill.
+  "orange": $custom-orange-600  // #c6360b — 5.34:1 on white ✓ AA. The CTA fill.
 );
 
 $theme-colors: map-merge($theme-colors, $wcbr-colors);

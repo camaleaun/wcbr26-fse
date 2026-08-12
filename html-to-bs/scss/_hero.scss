@@ -42,14 +42,14 @@
   position: relative;
   aspect-ratio: 1 / 1;
   isolation: isolate;
-  border: 2px solid $cyan-900;
-  box-shadow: 5px 5px 0 0 $cyan-900;
+  border: 2px solid $custom-cyan-900;
+  box-shadow: 5px 5px 0 0 $custom-cyan-900;
 
   &::before {
     content: "";
     position: absolute;
     inset: -16px 16px 16px -16px;
-    border: 4px solid $cyan-700;
+    border: 4px solid $custom-cyan-700;
     z-index: -1;
   }
 

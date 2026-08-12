@@ -24,7 +24,7 @@
   text-align: center;
   gap: 10px;
 
-  &-name { font-family: $headings-font-family; font-weight: 600; color: $cyan-800; font-size: 1rem; }
+  &-name { font-family: $headings-font-family; font-weight: 600; color: $custom-cyan-800; font-size: 1rem; }
   &-role { font-family: $font-family-sans-serif; font-weight: 400; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: $gray-700; }
 }
 .organization-note { text-align: center; color: $gray-700; max-width: 52ch; margin: 32px auto 0; }

@@ -16,6 +16,6 @@
   picture { display: contents; }
   img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
 
-  &-cyan  { border-color: $cyan-800; }
-  &-brick { border-color: $orange-600; }
+  &-cyan  { border-color: $custom-cyan-800; }
+  &-brick { border-color: $custom-orange-600; }
 }

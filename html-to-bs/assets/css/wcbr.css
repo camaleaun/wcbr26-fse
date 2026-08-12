@@ -11197,8 +11197,8 @@ h3, .h3 {
 }
 
 .btn-orange {
-  --wcbr-btn-border-color: #f56530;
-  --wcbr-btn-hover-border-color: #f56530;
+  --wcbr-btn-border-color: #e84814;
+  --wcbr-btn-hover-border-color: #e84814;
 }
 
 .badge {
@@ -12163,5 +12163,3 @@ h3, .h3 {
   opacity: 0.6;
   margin-bottom: 0;
 }
-
-/*# sourceMappingURL=wcbr.css.map */

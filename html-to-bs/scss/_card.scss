@@ -25,12 +25,12 @@
     font-family: $headings-font-family;
     font-weight: 400;
     text-transform: none;
-    color: $cyan-800;
+    color: $custom-cyan-800;
     font-size: 1.5rem;
     line-height: 1.15;
     margin: 0;
 
-    a { color: inherit; text-decoration: none; &:hover { color: $orange-500; } }
+    a { color: inherit; text-decoration: none; &:hover { color: $custom-orange-500; } }
   }
 
   &-description {

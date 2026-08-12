@@ -44,7 +44,7 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
-    color: $cyan-700;
+    color: $custom-cyan-700;
     padding: 6px 0;
     border-bottom: 3px solid transparent;
     display: inline-flex;
@@ -52,7 +52,7 @@
     gap: 6px;
     transition: border-color .15s ease;
 
-    &:hover, &:focus { border-color: $orange; color: $cyan-700; }
+    &:hover, &:focus { border-color: $orange; color: $custom-cyan-700; }
   }
 
   .dropdown-menu {
@@ -69,13 +69,13 @@
       text-transform: uppercase;
       font-size: .8rem;
       letter-spacing: .02em;
-      color: $cyan-700;
+      color: $custom-cyan-700;
       padding: 9px 12px;
       border-radius: 0;
 
       + .dropdown-item { margin-top: 2px; }
 
-      &:hover, &:focus { background: $cream-alt; color: $cyan-800; }
+      &:hover, &:focus { background: $cream-alt; color: $custom-cyan-800; }
     }
   }
 }
@@ -92,9 +92,9 @@
   justify-content: flex-end;
   gap: 14px;
   margin-bottom: 4px;
-  color: $cyan-800;
+  color: $custom-cyan-800;
 
-  a { color: inherit; display: inline-flex; &:hover { color: $orange-600; } }
+  a { color: inherit; display: inline-flex; &:hover { color: $custom-orange-600; } }
 }
 
 .header-tags {
@@ -102,7 +102,7 @@
   font-weight: 700;
   font-size: .625rem;
   letter-spacing: .06em;
-  color: $orange-600;
+  color: $custom-orange-600;
   text-transform: uppercase;
 }
 
