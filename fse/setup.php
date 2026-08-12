@@ -349,6 +349,7 @@ $gs_content = wp_json_encode( [
 			],
 			'core/paragraph' => [
 				'typography' => [ 'fontSize' => 'var:preset|font-size|medium' ],
+				'spacing'    => [ 'margin' => [ 'top' => '0', 'bottom' => '1em' ] ],
 			],
 			'core/list' => [
 				'spacing' => [ 'padding' => '0' ],
