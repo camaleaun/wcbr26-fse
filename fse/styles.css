@@ -111,6 +111,11 @@
 .wp-block-button__link.has-cyan-700-border-color:hover  { box-shadow:3px 3px 0 0 var(--wp--preset--color--cyan-700) !important; }
 .wp-block-button__link.has-cyan-700-border-color:active { box-shadow:0 0 0 0 var(--wp--preset--color--cyan-700) !important; }
 
+/* ── Header: WP=68px, REF=73px → add 5px via padding to match ── */
+/* The WP header is <header.wp-block-template-part>, not .site-header.
+   REF inner uses 18px font → 72px content + borders = 73px total. */
+header.wp-block-template-part { padding-block: 2px 3px !important; }
+
 /* ── Header-meta: remove margens UA do <ul> de social-icons e dos <p> ── */
 /* UL social tem margin-block:1em (UA), que com font-size:24px = 24px top+bottom */
 .header-meta .wp-block-social-links { margin-block: 0 !important; }
@@ -264,8 +269,12 @@
   .section.about .wp-block-columns { gap: 40px !important; }
 }
 @media (max-width:639px) {
-  /* Hero chips: empilha em coluna */
-  .hero-meta { flex-direction:column !important; align-items:flex-start; }
+  /* Hero chips: REF usa flex-row+wrap com chips 39px (0.9rem font + 9px padding).
+     WP defaul usa column 44px; fix para row+wrap igualando layout e altura do REF. */
+  .hero-meta { flex-direction:row !important; flex-wrap:wrap !important; gap:16px !important; align-items:flex-start !important; }
+  /* WP wp-block-paragraph inside chip has own font-size=16px; force to 0.9rem to get 39px chip height */
+  .hero-chip { font-size:0.9rem !important; padding-block:9px !important; }
+  .hero-chip .wp-block-paragraph { font-size:0.9rem !important; line-height:1.45 !important; }
   /* Stats: 2×2 ao invés de 4 colunas apertadas */
   .stats-grid { grid-template-columns:repeat(2,1fr) !important; }
   /* Organizers: minimumColumnWidth=160px → 1 col at 312px; REF usa 2 cols */
