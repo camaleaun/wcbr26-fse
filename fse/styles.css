@@ -284,6 +284,12 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
   .has-global-padding.alignfull { padding-inline: 24px !important; }
   /* Footer: WP padding-top clamp→48px mobile; REF = 64px */
   .site-footer { padding-top: 64px !important; }
+  /* Footer content mobile: WP 865px vs REF 909px (18px font vs 16px) → −44px.
+     Add 44px to padding-bottom: 72+44=116px to match REF height 1093px. */
+  .site-footer { padding-bottom: 116px !important; }
+  /* About: REF about-content usa font-size:18px vs WP 16px → content 15px mais alto.
+     WP paddingBottom=64px; fix=78px → about height 921+14=935px = REF ✓ */
+  .section.about { padding-bottom: 78px !important; }
   /* Org: REF content=1008px vs WP=928px (section-more + layout diffs = 80px).
      WP paddingBottom=64px; fix = 64+80=144px to match REF org height of 1136px. */
   .section.organization { padding-bottom: 144px !important; }
