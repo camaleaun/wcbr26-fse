@@ -1,3 +1,8 @@
+/* Montserrat: setup.php registra montserrat-700.woff2 mas o arquivo é montserrat.woff2 → font-display:swap usa fallback.
+   Adicionar @font-face correto override para 400 e 700 usando o arquivo disponível. */
+@font-face { font-family:Montserrat; font-style:normal; font-weight:400; font-display:swap; src:url("/wp-content/uploads/wcbr2026/fonts/montserrat.woff2") format("woff2"); }
+@font-face { font-family:Montserrat; font-style:normal; font-weight:700; font-display:swap; src:url("/wp-content/uploads/wcbr2026/fonts/montserrat.woff2") format("woff2"); }
+
 /* Componentes em wp:html (sem bloco WP) e bridges de renderização WP.
    Tipografia, cores e espaçamento globais vivem em setup.php (styles.elements/blocks).
    Variáveis de cor: var(--wp--preset--color--SLUG) geradas pelos presets.
@@ -26,7 +31,7 @@
 /* ── Hero chips ── */
 .hero-chip { text-transform:uppercase; }
 /* REF hero-lead: fs=22px lh=30.8px; WP inherits body 16px → 3 lines instead of 4 */
-.hero-lead { max-width:40ch; font-size:1.375rem; line-height:1.4; }
+.hero-lead { max-width:40ch; font-size:clamp(1.05rem,2.2vw,1.375rem); line-height:1.4; }
 
 /* ── Formats accordion (wp:html) ── */
 .format { background:var(--wp--preset--color--sand-100); border:2px solid var(--wp--preset--color--gray-400); box-shadow:5px 5px 0 0 var(--wp--preset--color--cyan-700); }
@@ -62,8 +67,8 @@
 
 /* ── Newsletter form (wp:html) ── */
 .newsletter-form { display:flex; flex-direction:column; gap:16px; max-width:576px; margin-inline:auto; }
-/* Newsletter lead: REF fs=22px lh=30.8px, P width=672px (720px container - 48px padding) → 3 lines (92px) */
-.section.newsletter > .wp-block-paragraph { font-size:1.375rem; line-height:1.4; max-width:672px; margin-inline:auto; }
+/* Newsletter lead: clamp igual ao REF (1.05rem mobile, 1.375rem desktop); max-width≈672px */
+.section.newsletter > .wp-block-paragraph { font-size:clamp(1.05rem,2.2vw,1.375rem); line-height:1.4; max-width:672px; margin-inline:auto; }
 .newsletter-input { flex:1; background:var(--wp--preset--color--sand-100); color:var(--wp--preset--color--gray-700); border:2px solid var(--wp--preset--color--sand-100); border-radius:0; padding:18px 24px; font-family:var(--wp--preset--font-family--montserrat); font-size:1rem; }
 .newsletter-input::placeholder { color:var(--wp--preset--color--gray-700); }
 .button-brick { display:inline-flex; align-items:center; justify-content:center; font-family:var(--wp--preset--font-family--poppins); font-weight:900; text-transform:uppercase; letter-spacing:.05em; color:#fff; background:var(--wp--preset--color--orange-600); border:2px solid var(--wp--preset--color--orange-500); box-shadow:5px 5px 0 0 var(--wp--preset--color--orange-500); border-radius:0; padding:20px 40px; font-size:1rem; cursor:pointer; }
@@ -125,10 +130,12 @@
 .section.about .wp-block-column > .wp-block-paragraph { font-size: 1.125rem; line-height: 1.45; }
 /* About: figura tem margin-bottom:16px de default WP → remove para não inflar coluna esq */
 .section.about .wp-block-image { margin-bottom: 0 !important; }
-/* About: colunas WP=1232px→cols=598px→img=437px; REF=1184px→cols=560px→img=410px.
-   Reduz max-width para igualar col=560px e gap flex→17px para right-col=420px = REF. */
-.section.about .wp-block-columns { max-width: 1156px !important; }
+/* About: gap=64px (WP global), 2 cols=560px cada → total=1184px. REF col=560px, gap=64px → total=1184px. */
+.section.about .wp-block-columns { max-width: 1184px !important; }
 .section.about .wp-block-column { gap: 19px !important; }
+
+/* ── Org: nota de rodapé — WP exibe 1 linha (1184px); REF tem max-width:52ch → 3 linhas ── */
+.section.organization > .wp-block-paragraph { max-width:52ch; margin-inline:auto; }
 
 /* ── Heading first-child de seção: margin-top inesperado de block-gap ── */
 /* theme.json de heading gera .wp-block-heading { margin-top: block-gap } com mesma
@@ -232,20 +239,30 @@
 @media (max-width:1023px) {
   /* Header: esconde nav desktop + meta + botão INGRESSOS — só hamburger no mobile/tablet */
   .nav-desktop, .header-meta, .header-cta { display:none !important; }
-  /* Hero: colapsa para coluna única; zera padding nativo WP (REF tem 0) */
-  .hero-grid { grid-template-columns:1fr !important; padding-block:0 !important; }
+  /* Hero: colapsa para coluna única; padding igual ao REF clamp(48px,8vw,100px) */
+  .hero-grid { grid-template-columns:1fr !important; padding-block:clamp(48px,8vw,100px) !important; }
   .hero-lead { max-width:none; }
+  /* About: REF usa gap:40px no about-grid mobile; WP tem blockGap:4rem=64px */
+  .section.about .wp-block-columns { gap: 40px !important; }
 }
 @media (max-width:639px) {
   /* Hero chips: empilha em coluna */
   .hero-meta { flex-direction:column !important; align-items:flex-start; }
   /* Stats: 2×2 ao invés de 4 colunas apertadas */
   .stats-grid { grid-template-columns:repeat(2,1fr) !important; }
+  /* Organizers: minimumColumnWidth=160px → 1 col at 312px; REF usa 2 cols */
+  .organization .wp-block-post-template { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+  /* WP global-padding mobile = 30px; REF container padding-inline = 24px → content 312px vs 300px.
+     Forçar 24px em todas as alignfull sections para igualar largura de conteúdo. */
+  .has-global-padding.alignfull { padding-inline: 24px !important; }
 }
 
 /* ── Responsivo ── */
 @media (min-width:640px) {
-  .formats-grid { align-items:stretch; }
+  /* formats: WP auto-fill→4 cols de 293px; REF usa repeat(3)+gap:32px em max-width:1184px
+     WP content-size=1232px vs REF 1184px → colunas 389px (304px card) vs 373px (327px card).
+     Forçar 3 cols + max-width:1184px → colunas 373px → alturas de card idênticas ao REF */
+  .formats-grid { align-items:stretch; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:32px !important; max-width:1184px !important; margin-inline:auto !important; }
   .format { display:flex; flex-direction:column; }
   .format-head { flex-direction:column; align-items:flex-start; gap:16px; padding:32px 32px 16px; cursor:default; }
   .format-icon { width:64px; height:64px; }
