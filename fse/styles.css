@@ -72,6 +72,120 @@
 .wp-block-read-more { display:inline-flex; align-items:center; gap:6px; }
 .wp-block-read-more::after { content:""; width:14px; height:14px; flex:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300595d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-size:contain; }
 
+/* ── Estados interativos ── */
+
+/* Botões sticker: hover desloca 2px, active desloca até a sombra (5px) zerando-a */
+.wp-block-button__link { transition:transform .12s ease, box-shadow .12s ease; }
+.wp-block-button__link:hover  { transform:translate(2px,2px); }
+.wp-block-button__link:active { transform:translate(5px,5px); box-shadow:none !important; }
+/* CTA orange (border orange-500) */
+.wp-block-button__link.has-orange-500-border-color:hover  { box-shadow:3px 3px 0 0 var(--wp--preset--color--orange-500) !important; }
+.wp-block-button__link.has-orange-500-border-color:active { box-shadow:0 0 0 0 var(--wp--preset--color--orange-500) !important; }
+/* Botão cyan padrão */
+.wp-block-button__link.has-cyan-700-border-color:hover  { box-shadow:3px 3px 0 0 var(--wp--preset--color--cyan-700) !important; }
+.wp-block-button__link.has-cyan-700-border-color:active { box-shadow:0 0 0 0 var(--wp--preset--color--cyan-700) !important; }
+
+/* Nav desktop: sublinhado laranja no hover */
+.site-header .wp-block-navigation-item__content {
+  border-bottom:3px solid transparent; padding-bottom:3px; transition:border-color .15s ease;
+}
+.site-header .wp-block-navigation-item__content:hover,
+.site-header .wp-block-navigation-item__content:focus-visible { border-color:var(--wp--preset--color--orange-500); }
+/* Submenu items: sem borda inferior */
+.wp-block-navigation__submenu-container .wp-block-navigation-item__content { border-bottom:0 !important; padding-bottom:0; }
+
+/* Submenu dropdown (desktop) */
+.wp-block-navigation__submenu-container {
+  background:var(--wp--preset--color--sand-100);
+  border:1px solid var(--wp--preset--color--gray-400);
+  border-radius:0;
+  box-shadow:0 10px 30px rgba(0,0,0,.14);
+  padding:8px;
+  min-width:210px;
+}
+.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+  font-weight:700; font-size:.8rem; letter-spacing:.02em; padding:9px 12px; display:block;
+}
+.wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover,
+.wp-block-navigation__submenu-container .wp-block-navigation-item__content:focus-visible {
+  background:var(--wp--preset--color--sand-200); color:var(--wp--preset--color--cyan-800);
+}
+
+/* Read-more: seta avança no hover */
+.wp-block-read-more { transition:gap .15s ease; }
+.wp-block-read-more:hover { gap:10px; }
+
+/* News card: título fica orange no hover */
+.news-card .wp-block-post-title a { transition:color .15s ease; }
+.news-card .wp-block-post-title a:hover { color:var(--wp--preset--color--orange-500) !important; }
+
+/* Footer links: clareia no hover */
+.site-footer .wp-block-list a { opacity:.9; transition:color .15s ease, opacity .15s ease; }
+.site-footer .wp-block-list a:hover { opacity:1; color:var(--wp--preset--color--sand-100) !important; }
+
+/* ── Drawer mobile (nav overlay → painel lateral direito) ── */
+.wp-block-navigation__responsive-container {
+  position:fixed !important;
+  top:0 !important; right:0 !important; bottom:0 !important; left:auto !important;
+  width:min(340px, 90vw) !important;
+  background:var(--wp--preset--color--sand-100);
+  overflow-y:auto;
+  z-index:9999;
+  transform:translateX(110%);
+  transition:transform .28s ease, box-shadow .28s ease;
+  box-shadow:none;
+  display:flex !important;
+  flex-direction:column !important;
+}
+/* Oculto mas mantém flex para a transição funcionar */
+.wp-block-navigation__responsive-container[hidden] { display:flex !important; pointer-events:none; }
+/* Drawer aberto: só quando JS adiciona is-menu-open */
+.wp-block-navigation__responsive-container.is-menu-open {
+  transform:translateX(0);
+  box-shadow:-100vw 0 0 100vw rgba(0,0,0,.4), -4px 0 20px rgba(0,0,0,.15);
+  pointer-events:auto;
+}
+/* Dialog inner wrapper */
+.wp-block-navigation__responsive-dialog {
+  display:flex; flex-direction:column; min-height:100%; padding:24px; gap:0;
+}
+/* Botão fechar */
+.wp-block-navigation__responsive-container-close {
+  align-self:flex-end; background:none; border:0; cursor:pointer;
+  color:var(--wp--preset--color--cyan-700); padding:8px; margin-bottom:16px;
+}
+/* Links dentro do drawer */
+.wp-block-navigation__responsive-container-content .wp-block-navigation-item__content {
+  display:flex; align-items:center; padding:16px; border-radius:8px;
+  font-family:var(--wp--preset--font-family--poppins); font-weight:700;
+  text-transform:uppercase; font-size:.9375rem; letter-spacing:.05em; line-height:1;
+  color:var(--wp--preset--color--gray-700); text-decoration:none;
+  transition:background .15s ease; border:0 !important;
+}
+.wp-block-navigation__responsive-container-content .wp-block-navigation-item__content:hover {
+  background:var(--wp--preset--color--sand-200);
+}
+/* Botão hamburger */
+.wp-block-navigation__responsive-container-open {
+  color:var(--wp--preset--color--cyan-700); background:none; border:0; cursor:pointer;
+  padding:8px; display:flex; align-items:center;
+}
+
+/* ── Mobile/tablet ── */
+@media (max-width:1023px) {
+  /* Header: esconde nav desktop + meta + botão INGRESSOS — só hamburger no mobile/tablet */
+  .nav-desktop, .header-meta, .header-cta { display:none !important; }
+  /* Hero: colapsa para coluna única */
+  .hero-grid { grid-template-columns:1fr !important; padding-block:3rem !important; }
+  .hero-lead { max-width:none; }
+}
+@media (max-width:639px) {
+  /* Hero chips: empilha em coluna */
+  .hero-meta { flex-direction:column !important; align-items:flex-start; }
+  /* Stats: 2×2 ao invés de 4 colunas apertadas */
+  .stats-grid { grid-template-columns:repeat(2,1fr) !important; }
+}
+
 /* ── Responsivo ── */
 @media (min-width:640px) {
   .formats-grid { align-items:stretch; }
