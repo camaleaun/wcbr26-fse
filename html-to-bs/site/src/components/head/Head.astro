@@ -48,6 +48,25 @@ const ScssProd = import.meta.env.PROD ? await import('@components/head/ScssProd.
 
 {robots && <meta name="robots" content={robots} />}
 
+<script is:inline>
+  (function () {
+    var KEY = 'wcbr-docs-lang';
+    var path = location.pathname;
+    var inPt = path.indexOf('/pt-br/') !== -1;
+    var pref = localStorage.getItem(KEY);
+    if (pref === 'en' && inPt) { location.replace(path.replace('/pt-br/', '/')); return; }
+    var translatable = /\/docs\/\d+\/(components|content|templates)\//.test(path);
+    if (pref === 'pt' && !inPt && translatable) { location.replace(path.replace(/(\/docs\/\d+\/)/, '$1pt-br/')); return; }
+    if (!pref && !inPt && translatable) {
+      var langs = navigator.languages || [navigator.language || ''];
+      if (langs.some(function (l) { return l.toLowerCase().startsWith('pt'); })) {
+        localStorage.setItem(KEY, 'pt');
+        location.replace(path.replace(/(\/docs\/\d+\/)/, '$1pt-br/'));
+      }
+    }
+  })();
+</script>
+
 <script is:inline src={getVersionedDocsPath('assets/js/color-modes.js')}></script>
 
 {/* ScssProd bundles wcbr.scss, which already imports all of Bootstrap — linking

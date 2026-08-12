@@ -34,7 +34,7 @@ export function getAliasedExamplesPages(pages: AstroInstance[]) {
 }
 
 export function getExampleNameFromPagePath(examplePath: string) {
-  const matches = examplePath.match(/([^/]+)\/(?:[^/]+)\.astro$/)
+  const matches = examplePath.match(/assets\/examples\/(.+)\/[^/]+\.astro$/)
 
   if (!matches || !matches[1]) {
     throw new Error(`Failed to get example name from path: '${examplePath}'.`)

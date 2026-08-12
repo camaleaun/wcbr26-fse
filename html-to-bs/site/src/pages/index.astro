@@ -1,7 +1,12 @@
 ---
-import { getConfig } from '@libs/config'
-
-const { docs_version } = getConfig()
-
-return Astro.redirect(`/docs/${docs_version}/templates/home/`)
+import BaseLayout from '@layouts/BaseLayout.astro'
+import GetStarted from '@components/home/GetStarted.astro'
+import MastHead from '@components/home/MastHead.astro'
 ---
+
+<BaseLayout>
+  <MastHead />
+  <div class="container-xxl bd-gutter masthead-followup">
+    <GetStarted />
+  </div>
+</BaseLayout>

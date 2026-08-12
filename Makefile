@@ -9,14 +9,19 @@ URL   := https://localhost:$(PORT)/
 TUNLOG := $(SERVE)/cloudflared.log
 TUNPID := $(SERVE)/cloudflared.pid
 
+DOCS_NAME := wcbr-docs-caddy
+DOCS_PORT := 8444
+DOCS_SITE := $(CURDIR)/html-to-bs/site/dist
+DOCS_URL  := https://localhost:$(DOCS_PORT)/
+
 FSE_PORT  := 8001
 WP_PORT   := 9999
 
 .DEFAULT_GOAL := help
-.PHONY: help up down restart logs status cert tunnel untunnel tunnel-url fse playground playground-dev site
+.PHONY: help up down restart logs status cert tunnel untunnel tunnel-url fse playground playground-dev site i18n-check i18n-sync docs-build docs-up docs-down
 
 help: ## Lista os comandos
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*?## "}{printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*?## "}{printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
 cert: ## Gera o cert local (mkcert) se ainda não existir
 	@command -v mkcert >/dev/null || { echo "mkcert ausente — instale: brew install mkcert && mkcert -install"; exit 1; }
@@ -73,6 +78,27 @@ playground-dev: ## Inicia WP Playground CLI na porta 9999 — lê fse/ do localh
 
 site: ## Serve o doc Astro (Bootstrap) de html-to-bs/site em http://localhost:4321
 	@cd html-to-bs && npm run docs-serve
+
+docs-build: ## Compila o Astro docs (html-to-bs/site → dist/)
+	@cd html-to-bs && npm run build
+
+docs-up: cert ## Serve os docs buildados em https://localhost:8444
+	@docker rm -f $(DOCS_NAME) >/dev/null 2>&1 || true
+	@docker run -d --name $(DOCS_NAME) -p $(DOCS_PORT):$(DOCS_PORT) \
+		-v "$(DOCS_SITE)":/srv:ro \
+		-v "$(SERVE)/Caddyfile.docs":/etc/caddy/Caddyfile:ro \
+		-v "$(CERTS)":/certs:ro \
+		$(IMAGE) >/dev/null
+	@echo "▲ docs: $(DOCS_URL)"
+
+docs-down: ## Derruba o servidor de docs
+	@docker rm -f $(DOCS_NAME) >/dev/null 2>&1 && echo "▼ docs parado" || echo "já estava parado"
+
+i18n-check: ## Verifica sincronismo EN↔PT-BR (exemplos e docs)
+	@cd html-to-bs && npm run i18n-check
+
+i18n-sync: ## Registra estado atual como sincronizado (rodar após traduzir)
+	@cd html-to-bs && npm run i18n-sync
 
 status: ## Mostra status do container (e a URL do túnel, se ativo)
 	@docker ps --filter name=$(NAME) --format 'status: {{.Status}}\nports:  {{.Ports}}'

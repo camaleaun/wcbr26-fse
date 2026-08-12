@@ -48,6 +48,7 @@ const dataDefinitions = {
           description: z.string(),
           indexPath: z.string().optional(),
           name: z.string(),
+          slug: z.string().optional(),
           url: z.string().optional()
         })
         .array()

@@ -1,6 +1,8 @@
-@font-face { font-family: "Poppins"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/poppins-400.woff2") format("woff2"); }
-@font-face { font-family: "Poppins"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/poppins-600.woff2") format("woff2"); }
-@font-face { font-family: "Poppins"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/poppins-700.woff2") format("woff2"); }
-@font-face { font-family: "Poppins"; font-style: normal; font-weight: 900; font-display: swap; src: url("../fonts/poppins-900.woff2") format("woff2"); }
-@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/montserrat.woff2") format("woff2"); }
-@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/montserrat.woff2") format("woff2"); }
+$font-path: '../fonts/' !default;
+
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 400; font-display: swap; src: url("#{$font-path}poppins-400.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 600; font-display: swap; src: url("#{$font-path}poppins-600.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 700; font-display: swap; src: url("#{$font-path}poppins-700.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 900; font-display: swap; src: url("#{$font-path}poppins-900.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 400; font-display: swap; src: url("#{$font-path}montserrat.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url("#{$font-path}montserrat.woff2") format("woff2"); }

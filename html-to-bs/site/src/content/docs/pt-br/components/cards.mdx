@@ -1,0 +1,68 @@
+---
+title: Cards
+description: O card de notícias — card Bootstrap com link de mídia, tag, link de título e link "leia mais" com ícone.
+toc: true
+---
+
+A seção **Últimas notícias** é uma grade de
+[cards](https://getbootstrap.com/docs/5.3/components/card/) Bootstrap. Cada card tem uma imagem vinculada, uma
+[tag](/docs/2026/components/badges), um título que linka para o artigo, um trecho curto e um
+link "Leia mais" com ícone.
+
+## Anatomia
+
+- **Mídia** — imagem recortada e vinculada (`.card-img-top`, 16×9).
+- **Tag** — rótulo maiúsculo `$orange-600` (veja [Badges](/docs/2026/components/badges)).
+- **Título** — `h3`, linka para o artigo; hover vira `$orange-600`.
+- **Trecho** — corpo do texto.
+- **Leia mais** — link com ícone (`Leia mais →`).
+
+## Marcação
+
+```html
+<article class="card news-card h-100">
+  <a href="#" class="ratio ratio-16x9 d-block">
+    <img src="assets/img/news-convocacao.jpg" class="card-img-top object-fit-cover"
+         alt="Microfone com o letreiro Call for Speakers ao fundo" width="512" height="320" loading="lazy">
+  </a>
+  <div class="card-body d-flex flex-column">
+    <span class="tag mb-2">Convocação</span>
+    <h3 class="card-title h5">
+      <a href="#" class="text-reset text-decoration-none">Chamada para Palestrantes aberta!</a>
+    </h3>
+    <p class="card-text">Compartilhe sua experiência com a comunidade. Estamos buscando novas vozes para o palco.</p>
+    <a href="#" class="icon-link mt-auto">
+      Leia mais
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </a>
+  </div>
+</article>
+```
+
+Envolva os cards em uma grade responsiva:
+
+```html
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  <div class="col"><!-- card --></div>
+  <!-- … -->
+</div>
+```
+
+## Mapeamento do protótipo
+
+| `html-from-figma` | Bootstrap / WCBR |
+|---|---|
+| `.news-card` (article) | `.card.news-card` |
+| `.news-card__media` (`a > picture`) | link `.ratio.ratio-16x9` + `.card-img-top` |
+| `.news-card__body` | `.card-body` |
+| `.tag` | `.tag` |
+| `.news-card__title` (`h3 > a`) | `.card-title` + título vinculado |
+| `p` | `.card-text` |
+| `.link-under` (variante news) | `.icon-link` |
+| `.news__grid` | grade `.row.row-cols-*` |
+
+## Notas
+
+- Mantenha `object-fit: cover` na imagem para que variações de proporção recortem corretamente em 16×9.
+- O link "Leia mais" das notícias é texto ciano simples (sem barra de sublinhado) — use `.icon-link`, não a variante sublinhada `.link-under` usada em outros lugares.
+- Títulos de card usam `$cyan-800`; a cor de hover é `$orange-600`.

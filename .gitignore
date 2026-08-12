@@ -55,7 +55,7 @@ screenshots/
 /wp-desktop.png
 /wp-mobile.png
 /playground-preview*.png
-/bootstrap
+/bootstrap*
 
 # Certificados locais mkcert (regeneráveis, chave privada)
 .serve/certs/

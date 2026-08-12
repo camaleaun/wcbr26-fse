@@ -13,6 +13,7 @@ import { stripMarkdown } from '@libs/utils'
 type Props = {
   // A specific layout to use for the current page used to determine if some components should be rendered or not.
   // Available layouts are defined in `src/libs/layout.ts`.
+  lang?: string
   layout?: Layout
   // An object containing HTML attributes that can be overridden for some HTML elements used in the base layout keyed by
   // HTML element names.
@@ -34,7 +35,7 @@ type Props = {
 // not rendering a markdown page.
 type MarkdownProps = { frontmatter?: Partial<CollectionEntry<'docs'>['data']> }
 
-const { frontmatter, layout, overrides, robots } = Astro.props
+const { frontmatter, layout, overrides, robots, lang = 'en' } = Astro.props
 
 const title = Astro.props.title ?? frontmatter?.title ?? getConfig().title
 const description = frontmatter?.description ? stripMarkdown(frontmatter.description) : getConfig().description
@@ -45,7 +46,7 @@ const mainProps = overrides?.main ?? {}
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
+<html lang={lang} data-bs-theme="auto">
   <head>
     <Head
       description={description}

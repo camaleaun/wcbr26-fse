@@ -1,0 +1,72 @@
+---
+title: Badges
+description: Rótulos do WCBR — o .badge preenchido com cores .text-bg-*, e o .tag somente texto.
+toc: true
+---
+
+O WCBR tem dois padrões de rótulo: um **badge preenchido** para metadados em destaque (o hero), e uma **tag somente texto** para eyebrows de cards e cabeçalho.
+
+## Badge
+
+Use o `.badge` do Bootstrap com uma cor `.text-bg-*`. O tratamento de marca — Poppins, maiúsculo, letter-spacing e o raio de 2px — fica no base `.badge`, então **todas** as variantes de cor herdam.
+
+<div class="bd-example d-flex flex-wrap align-items-center gap-3">
+  <span class="badge text-bg-primary">Belo Horizonte</span>
+  <span class="badge text-bg-orange">Outubro 2026</span>
+  <span class="badge text-bg-dark">30 e 31 de outubro</span>
+</div>
+
+```html
+<span class="badge text-bg-primary">Belo Horizonte</span>
+<span class="badge text-bg-orange">Outubro 2026</span>
+```
+
+`text-bg-orange` existe porque `orange` está registrado em `$theme-colors` — veja
+[Botões](/docs/2026/components/buttons#variantes).
+
+<div class="bd-callout bd-callout-warning">
+
+**Não existe `.badge-orange` ou `.badge-primary`.** O Bootstrap 5 removeu as variantes de cor `.badge-*` (era a API do Bootstrap 4) em favor de `.text-bg-*`, que define o fundo **e** escolhe um texto legível. Use `.text-bg-orange`, não `.badge-orange`.
+
+</div>
+
+### Tamanhos
+
+A geometria do badge vem das variáveis `$badge-*`, correspondendo ao chip do hero no design:
+
+```scss
+$badge-font-size:     .9rem;
+$badge-font-weight:   600;
+$badge-padding-y:     .5625rem;  // 9px
+$badge-padding-x:     1rem;      // 16px
+$badge-border-radius: 2px;
+```
+
+## Tag
+
+Uma **tag** é um rótulo pequeno, maiúsculo, com letter-spacing e **sem preenchimento** — usada acima dos títulos de cards e no cabeçalho. Montserrat 600, `$orange-900`, `.8125rem`, `letter-spacing: .06em`.
+
+<div class="bd-example">
+  <span class="tag">Convocação</span>
+</div>
+
+```html
+<span class="tag">Convocação</span>
+```
+
+Tags transmitem significado pela cor e caixa, não por preenchimento — não dê background ao `.tag`.
+
+## Mapeamento do protótipo
+
+| `html-from-figma` | Bootstrap / WCBR |
+|---|---|
+| `.hero__chip--teal` | `.badge.text-bg-primary` |
+| `.hero__chip--orange` | `.badge.text-bg-orange` |
+| `.tag` (card de notícia) | `.tag` |
+| `.header__tags` | `.tag` |
+| `.footer__tags` | `.tag` sobre fundo escuro |
+
+## Notas
+
+- Preenchimentos de badge precisam ter contraste 4.5:1 com o rótulo. `$orange-500` (3.09:1) deliberadamente não é opção de preenchimento — veja [Contraste](/docs/2026/components/buttons#contraste).
+- A classe `.hero-chip` foi removida; é agora um `.badge` simples.

@@ -19,6 +19,7 @@ const { frontmatter, headings, id } = Astro.props
 
 // Extract the directory/section from the ID (format: "directory/filename.mdx")
 const parentDirectory = id.includes('/') ? id.split('/')[0] : ''
+const lang = id.startsWith('pt-br/') ? 'pt-BR' : 'en'
 
 const bodyProps: LayoutOverridesHTMLAttributes<'body'> = {}
 
@@ -28,7 +29,7 @@ if (frontmatter.toc) {
 }
 ---
 
-<BaseLayout {...Astro.props} layout="docs" overrides={{ body: bodyProps }}>
+<BaseLayout {...Astro.props} layout="docs" lang={lang} overrides={{ body: bodyProps }}>
   <div slot="main" class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
     <aside class="bd-sidebar">
       <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">

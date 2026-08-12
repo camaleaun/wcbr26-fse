@@ -12,10 +12,18 @@ type Props = ExampleFrontmatter
 
 const { body_class, direction, extra_css, extra_js, html_class, include_js, title = 'Example' } = Astro.props
 
-const pageTitle = `${title} · ${getConfig().title} v${getConfig().docs_version}`
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
+const pathname = Astro.url.pathname
+const isPtBr = pathname.includes('/examples/pt-br/')
+const langHref = isPtBr
+  ? pathname.replace('/examples/pt-br/', '/examples/')
+  : pathname.replace('/examples/', '/examples/pt-br/')
 
-const htmlProps: HTMLAttributes<'html'> = direction === 'rtl' ? { lang: 'ar', dir: 'rtl' } : { lang: 'en' }
+const pageTitle = `${title} · ${getConfig().title} v${getConfig().docs_version}`
+const canonicalUrl = new URL(pathname, Astro.site)
+
+const htmlProps: HTMLAttributes<'html'> = direction === 'rtl'
+  ? { lang: 'ar', dir: 'rtl' }
+  : { lang: isPtBr ? 'pt-BR' : 'en' }
 ---
 
 <!doctype html>
@@ -23,12 +31,28 @@ const htmlProps: HTMLAttributes<'html'> = direction === 'rtl' ? { lang: 'ar', di
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content={`${title} — WCBR Bootstrap Design System`} />
     <meta name="author" content={getConfig().authors} />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
 
     <link rel="canonical" href={canonicalUrl} />
+
+    <script is:inline>
+      (function () {
+        var KEY = 'wcbr-ex-lang';
+        var path = location.pathname;
+        var inPt = path.indexOf('/examples/pt-br/') !== -1;
+        var pref = localStorage.getItem(KEY);
+        if (pref === 'en' && inPt) { location.replace(path.replace('/examples/pt-br/', '/examples/')); return; }
+        if (pref === 'pt' && !inPt) { location.replace(path.replace('/examples/', '/examples/pt-br/')); return; }
+        if (!pref && path.indexOf('/examples/') !== -1 && !inPt) {
+          var langs = navigator.languages || [navigator.language || ''];
+          var isPt = langs.some(function (l) { return l.toLowerCase().startsWith('pt'); });
+          if (isPt) { localStorage.setItem(KEY, 'pt'); location.replace(path.replace('/examples/', '/examples/pt-br/')); }
+        }
+      })();
+    </script>
 
     <ExamplesStylesheet />
     <Favicons />
@@ -117,6 +141,35 @@ const htmlProps: HTMLAttributes<'html'> = direction === 'rtl' ? { lang: 'ar', di
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .ex-lang-switcher {
+        position: fixed;
+        top: 0.75rem;
+        right: 0.75rem;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 0.125rem;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        border-radius: 2rem;
+        padding: 0.1875rem 0.375rem;
+      }
+      .ex-lang-btn {
+        font-size: 0.625rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 0.2rem 0.5rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.55);
+        line-height: 1.4;
+      }
+      .ex-lang-active {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+      }
+      .ex-lang-btn:not(.ex-lang-active):hover { color: #fff; }
     </style>
 
     {extra_css?.map((extraCss) => <link href={extraCss} rel="stylesheet" />)}
@@ -124,7 +177,29 @@ const htmlProps: HTMLAttributes<'html'> = direction === 'rtl' ? { lang: 'ar', di
   <body class:list={body_class}>
     <Icons />
 
+    <nav class="ex-lang-switcher" aria-label="Language">
+      {isPtBr ? (
+        <>
+          <a href={langHref} class="ex-lang-btn" data-lang-switch="en">EN</a>
+          <span class="ex-lang-btn ex-lang-active" aria-current="page">PT-BR</span>
+        </>
+      ) : (
+        <>
+          <span class="ex-lang-btn ex-lang-active" aria-current="page">EN</span>
+          <a href={langHref} class="ex-lang-btn" data-lang-switch="pt">PT-BR</a>
+        </>
+      )}
+    </nav>
+
     <slot />
+
+    <script is:inline>
+      document.querySelectorAll('[data-lang-switch]').forEach(function (el) {
+        el.addEventListener('click', function () {
+          localStorage.setItem('wcbr-ex-lang', this.dataset.langSwitch);
+        });
+      });
+    </script>
 
     {
       include_js !== false && (

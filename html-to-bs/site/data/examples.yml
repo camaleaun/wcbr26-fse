@@ -1,3 +1,9 @@
+- category: Templates
+  description: 'Full-page compositions combining all WCBR sections. Use these as a starting point for the complete WordCamp Brasil 2026 website.'
+  examples:
+    - name: Home
+      description: 'The complete WCBR2026 home page: header, hero, stats, about, news, sponsors, organization, newsletter, and footer.'
+
 - category: Sections
   description: 'The page sections of the WordCamp Brasil 2026 site, composed from wcbrbs components and Bootstrap utilities. Each one is the real markup used on the home page.'
   examples:
@@ -19,3 +25,37 @@
       description: 'Signup band: a form control and the orange submit button on cyan.'
     - name: Footer
       description: 'Brand column, link columns, social row, and the legal bottom bar.'
+
+- category: PT-BR
+  description: 'The same examples with real WordCamp Brasil 2026 content in Portuguese.'
+  examples:
+    - name: Home
+      slug: pt-br/home
+      description: 'Página inicial completa do WCBR2026: cabeçalho, hero, estatísticas, sobre, notícias, patrocinadores, organização, newsletter e rodapé.'
+    - name: Hero
+      slug: pt-br/hero
+      description: 'Abertura: título, lead, badges de data e local, e o CTA de ingresso ao lado da foto emoldurada.'
+    - name: Stats
+      slug: pt-br/stats
+      description: 'Barra de números do evento — quatro cifras na faixa cyan primária.'
+    - name: About
+      slug: pt-br/about
+      description: 'Texto de apresentação ao lado de uma imagem emoldurada no fundo areia alternativo.'
+    - name: News
+      slug: pt-br/news
+      description: 'Grade responsiva de cards de notícias com tag, título linkado, trecho e link de leitura.'
+    - name: Sponsors
+      slug: pt-br/sponsors
+      description: 'Painel de patrocinadores com divisores de tier, três tamanhos de logo e o bloco de micropatrocínio.'
+    - name: Organization
+      slug: pt-br/organization
+      description: 'Equipe organizadora em grade de avatares com borda laranja, nome e cargo.'
+    - name: Social
+      slug: pt-br/social
+      description: 'Os seis links de redes sociais nos três contextos: cabeçalho, drawer mobile e rodapé.'
+    - name: Newsletter
+      slug: pt-br/newsletter
+      description: 'Faixa de inscrição: campo de formulário e botão laranja de envio sobre cyan.'
+    - name: Footer
+      slug: pt-br/footer
+      description: 'Coluna de marca, colunas de links, linha de redes sociais e barra legal inferior.'

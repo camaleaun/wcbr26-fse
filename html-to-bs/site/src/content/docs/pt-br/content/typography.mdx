@@ -1,0 +1,84 @@
+---
+title: Tipografia
+description: O sistema de tipo do WCBR2026 — Poppins para headings, Montserrat para corpo e o estilo de rótulo maiúsculo usado em todo o site.
+toc: true
+---
+
+O WCBR2026 combina duas tipografias: **Poppins** para headings e rótulos, **Montserrat** para
+corpo de texto. A tipagem usa **base de 18px** com um toque editorial afiado — headings são pesados
+(peso 900), maiúsculos e coloridos com o ciano primário.
+
+## Tipografias
+
+| Função | Família | Pesos carregados | Token Sass |
+|---|---|---|---|
+| Headings e rótulos | **Poppins** | 400, 600, 700, 900 | `$headings-font-family` |
+| Corpo | **Montserrat** | 400, 700 | `$font-family-sans-serif` |
+
+Ambas são auto-hospedadas como `woff2` com `font-display: swap`, com fallback para
+`system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`.
+
+## Base
+
+```scss
+$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-family:   "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$headings-font-weight:   900;
+$headings-color:         $primary;   // $cyan-700 · #00595d
+$font-size-base:         1.125rem;   // 18px
+$line-height-base:       1.45;
+```
+
+## Headings
+
+Os headings usam Poppins **900**, `text-transform: uppercase`, cor primária e `line-height`
+compacto (~1.1). Os tamanhos são fluidos (`clamp`) para escalar com o viewport.
+
+| Nível | Tamanho (`clamp`) | Letter-spacing |
+|---|---|---|
+| `h1` / `.h1` | `clamp(2.25rem, 6.2vw, 3.625rem)` | `-0.02em` |
+| `h2` / `.h2` | `clamp(1.9rem, 5vw, 3rem)` | `-0.01em` |
+| `h3` / `.h3` | rampa herdada | — |
+
+<div class="bd-example">
+  <h1 class="text-uppercase" style="color:var(--wcbr-primary);font-weight:900;line-height:1.1">WordCamp Brasil 2026</h1>
+  <h2 class="text-uppercase" style="color:var(--wcbr-primary);font-weight:900;line-height:1.1">O que esperar</h2>
+  <h3 class="text-uppercase" style="color:var(--wcbr-primary);font-weight:900;line-height:1.1">Últimas notícias</h3>
+</div>
+
+## Corpo e lead
+
+O corpo é Montserrat na base de 18px com `line-height: 1.45`. O parágrafo de intro/lead
+escala de forma fluida.
+
+```html
+<p class="lead">A maior conferência WordPress da América Latina, em Belo Horizonte.</p>
+```
+
+<div class="bd-example">
+  <p class="lead">A maior conferência WordPress da América Latina, em Belo Horizonte.</p>
+  <p>Palestras, mini-palestras, painéis e muito networking com a comunidade.</p>
+</div>
+
+## Eyebrows e rótulos
+
+Um padrão recorrente em todo o site: pequenos rótulos **maiúsculos** em Poppins com
+letter-spacing positivo — usados em eyebrows de seção, rótulos de estatísticas, tags e itens de nav. As cores variam pelo contexto (`--wcbr-orange-600` para tags, `--wcbr-cyan-800` para nav, `--wcbr-gray-700` para meta).
+
+| Uso | Peso | Tamanho | Letter-spacing |
+|---|---|---|---|
+| Eyebrow de seção | 600 | ~0.81rem | `.06em` |
+| Rótulo de stat | 400 | ~0.95rem | — |
+| Tag | 700 | ~0.625rem | `.06em` |
+| Item de nav | 700 | ~0.8rem | `.02em` |
+
+<div class="bd-example">
+  <span class="text-uppercase d-block" style="font-weight:700;font-size:.625rem;letter-spacing:.06em;color:var(--wcbr-orange-600)">Chamada para palestras</span>
+  <span class="text-uppercase d-block" style="font-weight:600;font-size:.8125rem;letter-spacing:.06em;color:var(--wcbr-orange-600)">Sobre o evento</span>
+</div>
+
+## Notas
+
+- Headings são maiúsculos por padrão na marca WCBR — não dependa de caixa normal para `h1`–`h3`.
+- Como `$border-radius: 0`, o texto assenta em superfícies de bordas retas; mantenha rótulos compactos e alinhados.
+- Esses valores foram extraídos do protótipo `html-from-figma` (`assets/css/styles.css`) e do `scss/_variables.scss` do tema.

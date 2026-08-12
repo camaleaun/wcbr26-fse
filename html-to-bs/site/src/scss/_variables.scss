@@ -20,6 +20,8 @@ $bd-callout-variants: info, warning, danger !default;
   --bd-callout-link: #{to-rgb($blue-600)};
   --bd-callout-code-color: #{$pink-600};
   --bd-pre-bg: var(--bs-tertiary-bg);
+  // $pink (#d63384) = 4.28:1 on cream $body-bg — fails WCAG AA; shade 20% → 6.12:1
+  --#{$prefix}code-color: #{shade-color($pink, 20%)};
 }
 
 @include color-mode(dark, true) {

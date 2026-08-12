@@ -6,7 +6,7 @@ toc: true
 
 The site header is a Bootstrap [navbar](https://getbootstrap.com/docs/5.3/components/navbar/):
 logo, a horizontal menu with dropdowns, event meta (social, hashtags, date), and the
-*Ingressos* CTA. Below `xl` the menu collapses into an
+*Tickets* CTA. Below `xl` the menu collapses into an
 [offcanvas](https://getbootstrap.com/docs/5.3/components/offcanvas/) drawer.
 
 ## Structure
@@ -15,7 +15,7 @@ logo, a horizontal menu with dropdowns, event meta (social, hashtags, date), and
 <header class="site-header sticky-top border-bottom">
   <nav class="navbar navbar-expand-xl">
     <div class="container">
-      <a class="navbar-brand" href="/" aria-label="WordCamp Brasil 2026 — início">
+      <a class="navbar-brand" href="/" aria-label="WordCamp Brasil 2026 — home">
         <img class="header-logo" src="assets/img/logo.avif" alt="WordCamp Brasil 2026"
              width="260" height="102" fetchpriority="high">
       </a>
@@ -23,21 +23,21 @@ logo, a horizontal menu with dropdowns, event meta (social, hashtags, date), and
       <ul class="nav header-nav d-none d-xl-flex">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#sobre" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Evento</a>
+             data-bs-toggle="dropdown" aria-expanded="false">Event</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#sobre">Sobre o evento</a></li>
-            <li><a class="dropdown-item" href="#formatos">O que esperar</a></li>
+            <li><a class="dropdown-item" href="#sobre">About the event</a></li>
+            <li><a class="dropdown-item" href="#formatos">What to expect</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#formatos">Agenda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formatos">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="#noticias">News</a></li>
       </ul>
 
-      <a class="btn btn-orange btn-sm d-none d-xl-inline-flex" href="#ingressos">Ingressos</a>
+      <a class="btn btn-orange btn-sm d-none d-xl-inline-flex" href="#ingressos">Tickets</a>
 
       <button class="navbar-toggler d-xl-none" type="button"
               data-bs-toggle="offcanvas" data-bs-target="#mobile-drawer"
-              aria-controls="mobile-drawer" aria-label="Menu de navegação">
+              aria-controls="mobile-drawer" aria-label="Open menu">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
@@ -65,25 +65,25 @@ dropdowns.
      aria-labelledby="mobile-drawer-label">
   <div class="offcanvas-header">
     <h2 class="offcanvas-title" id="mobile-drawer-label">Menu</h2>
-    <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
   </div>
   <div class="offcanvas-body d-flex flex-column">
-    <nav class="drawer-nav" aria-label="Navegação mobile">
-      <a class="drawer-link" href="#formatos">Agenda</a>
+    <nav class="drawer-nav" aria-label="Mobile navigation">
+      <a class="drawer-link" href="#formatos">Schedule</a>
 
       <button class="drawer-link" type="button" data-bs-toggle="collapse"
               data-bs-target="#dsub-evento" aria-expanded="false" aria-controls="dsub-evento">
-        Evento
+        Event
         <svg class="drawer-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
       </button>
       <div class="collapse drawer-sub" id="dsub-evento">
-        <a href="#sobre">Sobre o evento</a>
-        <a href="#formatos">O que esperar</a>
+        <a href="#sobre">About the event</a>
+        <a href="#formatos">What to expect</a>
       </div>
     </nav>
 
     <div class="drawer-foot mt-auto">
-      <a class="btn btn-orange w-100" href="#ingressos">Ingressos</a>
+      <a class="btn btn-orange w-100" href="#ingressos">Tickets</a>
     </div>
   </div>
 </div>

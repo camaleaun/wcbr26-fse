@@ -27,6 +27,16 @@ import docsearch from '@docsearch/js'
 
   const siteDocsVersion = searchElement.getAttribute('data-bd-docs-version')
 
+  // WCAG 2.5.3: align aria-label with visible text after DocSearch renders
+  new MutationObserver((_, obs) => {
+    const btn = searchElement.querySelector('.DocSearch-Button')
+    if (!btn) return
+    btn.setAttribute('aria-label', 'Search')
+    const keys = btn.querySelector('.DocSearch-Button-Keys')
+    if (keys) keys.setAttribute('aria-hidden', 'true')
+    obs.disconnect()
+  }).observe(searchElement, { childList: true, subtree: true })
+
   docsearch({
     apiKey: CONFIG.apiKey,
     indexName: CONFIG.indexName,

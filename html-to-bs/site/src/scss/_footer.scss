@@ -3,14 +3,27 @@
 //
 
 .bd-footer {
+  // Raise secondary-color opacity: rgba($ink, .75) = 4.48:1 on cream — fails WCAG AA
+  --#{$prefix}secondary-color: #{rgba($ink, .87)};
+
   a {
-    color: var(--bs-body-color);
+    color: var(--#{$prefix}body-color); // was --bs-body-color (wrong prefix → undefined)
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: var(--bs-link-hover-color);
+      color: var(--#{$prefix}link-hover-color);
       text-decoration: underline;
+    }
+  }
+
+  // In-text links (embedded in sentences) need underlines for WCAG 1.4.1
+  .small a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
     }
   }
 }

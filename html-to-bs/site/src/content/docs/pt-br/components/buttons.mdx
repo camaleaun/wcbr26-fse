@@ -1,0 +1,106 @@
+---
+title: Botões
+description: Botões do WCBR — variantes Bootstrap reestilizadas com a sombra offset característica, mais o CTA customizado .btn-orange.
+toc: true
+---
+
+O WCBR usa o componente `.btn` do Bootstrap sem alterações estruturais. O tratamento de marca — cantos retos, Poppins maiúsculo em peso 900, borda de 2px e uma **sombra offset rígida** que afunda no clique — é aplicado ao `.btn` base, então **todas** as variantes herdam: `.btn-primary`, `.btn-orange`, `.btn-outline-*` etc.
+
+## Variantes
+
+`orange` é adicionado a `$theme-colors`, então o Bootstrap gera sua família completa
+(`.btn-orange`, `.btn-outline-orange`, `.bg-orange`, `.text-orange`, `.border-orange`,
+`.link-orange`, …) exatamente como as cores nativas.
+
+| Classe | Preenchimento | Função |
+|---|---|---|
+| `.btn-primary` | `$cyan-700` `#00595d` | Ação primária padrão |
+| `.btn-orange` | `$orange-600` `#c6360b` | CTA do evento — ingressos, newsletter |
+| `.btn-outline-orange` | — | CTA discreto em fundos carregados |
+
+Existe **um** botão laranja, não vários. Veja [Contraste](#contraste) para entender o porquê.
+
+<div class="bd-example d-flex flex-wrap align-items-center gap-4">
+  <a class="btn btn-orange" href="#">Garanta seu ingresso</a>
+  <a class="btn btn-primary" href="#">Ver programação</a>
+  <a class="btn btn-outline-orange" href="#">Saiba mais</a>
+  <a class="btn btn-orange btn-sm" href="#">Ingressos</a>
+</div>
+
+```html
+<a class="btn btn-orange" href="#ingressos">Garanta seu ingresso</a>
+<a class="btn btn-primary" href="#programacao">Ver programação</a>
+<a class="btn btn-outline-orange" href="#sobre">Saiba mais</a>
+<a class="btn btn-orange btn-sm" href="#ingressos">Ingressos</a>
+<button class="btn btn-orange" type="submit">Inscrever</button>
+```
+
+## Contraste
+
+A escala orange não é intercambiável para preenchimentos. Medida contra texto branco:
+
+| Token | Hex | vs. branco | Usável como preenchimento? |
+|---|---|---|---|
+| `$orange-500` | `#f56530` | **3.09:1** | **Não** — reprovado no WCAG AA |
+| `$orange-600` | `#c6360b` | 5.34:1 | Sim ✓ |
+
+`$orange-500` é deliberadamente **não** registrado em `$theme-colors`. Se estivesse, o `color-contrast()` do Bootstrap viraria o rótulo para **preto** — e o WCBR não usa preto sobre laranja. Ele permanece como acento para bordas e sombras de sticker.
+
+## A sombra sticker
+
+A sombra offset é derivada da cor de borda da própria variante
+(`--wcbr-btn-border-color`), então ela **se recolore por variante** — sem CSS por botão.
+
+```scss
+.btn {
+  box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
+}
+```
+
+`.btn-orange` é bicolor: o preenchimento permanece escuro o suficiente para texto branco enquanto a borda — e portanto a sombra — sobe ao laranja mais claro.
+
+```scss
+.btn-orange {
+  --#{$prefix}btn-border-color: #{$orange-500};       // #f56530
+  --#{$prefix}btn-hover-border-color: #{$orange-500};
+}
+```
+
+## Interação
+
+| Estado | Sombra | Transform |
+|---|---|---|
+| Repouso | `5px 5px 0` | nenhum |
+| Hover | `3px 3px 0` | `translate(2px, 2px)` |
+| Ativo | `0 0 0` | `translate(5px, 5px)` |
+| Desabilitado | nenhum | nenhum |
+
+## Tamanhos
+
+Tamanhos vêm das variáveis `$btn-*`, então `.btn-sm` e `.btn-lg` funcionam normalmente.
+
+```scss
+$btn-font-family:  $headings-font-family;  // Poppins
+$btn-font-weight:  900;
+$btn-border-width: 2px;
+$btn-padding-y:    1.25rem;   // 20px
+$btn-padding-x:    2.5rem;    // 40px
+$btn-font-size:    1.05rem;
+```
+
+## Mapeamento do protótipo
+
+| `html-from-figma` | Bootstrap / WCBR |
+|---|---|
+| `.btn` | `.btn.btn-orange` |
+| `.btn--sm` | `.btn.btn-orange.btn-sm` |
+| `.btn--brick` | `.btn.btn-orange` (consolidado) |
+| `.btn-newsletter` | `.btn.btn-orange` (consolidado) |
+| `.header__ingressos` | `.btn.btn-orange.btn-sm` na navbar |
+| `.drawer__cta` | `.btn.btn-orange` dentro do offcanvas |
+
+## Notas
+
+- Não arredonde os cantos — `$border-radius: 0` é intencional e parte da identidade visual.
+- Rótulos são Poppins 900 maiúsculo; mantenha-os curtos e imperativos.
+- `.btn-primary` é **ciano**, não laranja. Use `.btn-orange` para o CTA de ingressos.

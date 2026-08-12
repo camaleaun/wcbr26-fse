@@ -3,6 +3,10 @@
 .bd-toc {
   font-size: .875rem;
   container-type: inline-size;
+  // rgba($ink, .75) = 4.48:1 on cream — fails WCAG AA; raise to .87 → ~6:1
+  --#{$prefix}secondary-color: #{rgba($ink, .87)};
+  // Explicit bg so Lighthouse can resolve contrast for nav links (transparent chain)
+  background-color: var(--#{$prefix}body-bg);
 
   @include media-breakpoint-up(lg) {
     position: sticky;

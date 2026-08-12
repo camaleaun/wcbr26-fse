@@ -106,6 +106,14 @@
   }
 }
 
+// WCAG 2.1 §1.4.1 / Lighthouse link-in-text-block: links in body text must be
+// distinguishable from surrounding text by means other than color alone.
+.bd-content p a,
+.bd-content li a,
+.bd-content dd a {
+  text-decoration: underline;
+}
+
 .bd-title {
   --bs-heading-color: var(--bs-emphasis-color);
   @include font-size(3rem);
@@ -149,16 +157,16 @@
   --bs-tertiary-bg: #{$blue-600};
 
   .dropdown-menu {
-    --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+    --bs-dropdown-bg: #{mix($blue-500, $blue-600, 50%)};
     --bs-dropdown-link-active-bg: #{$blue-700};
   }
 
   .btn-secondary {
-    --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+    --bs-btn-bg: #{mix($gray-600, $blue-400, 50%)};
     --bs-btn-border-color: #{rgba($white, .25)};
-    --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+    --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, 50%), 5%)};
     --bs-btn-hover-border-color: #{rgba($white, .25)};
-    --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+    --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, 50%), 10%)};
     --bs-btn-active-border-color: #{rgba($white, .5)};
     --bs-btn-focus-border-color: #{rgba($white, .5)};
     --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);

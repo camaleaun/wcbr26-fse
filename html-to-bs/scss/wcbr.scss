@@ -1,5 +1,7 @@
 // 1. Funções Bootstrap (shade-color, tint-color, etc.) — devem vir primeiro
 @import "../node_modules/bootstrap/scss/functions";
+// Overrides using sass:color modules — stay in scope; bootstrap.scss dedupes its own functions import
+@import "functions";
 
 // 2. Tokens WCBR (usam shade-color; sobrescrevem defaults do Bootstrap sem !default)
 @import "variables";

@@ -37,6 +37,20 @@
   --base0F: #{$red-300}; // #be5046
 }
 
+// Shiki (pre.astro-code) dark-theme colors need a dark background.
+// .highlight sets background-color: transparent, falling through to cream body-bg,
+// so the github-dark inline colors (#85E89D, #B392F0, #9ECBFF, #E1E4E8) fail contrast.
+pre.astro-code {
+  background-color: #24292e;
+  color: #e1e4e8;
+
+  // github-dark comment color #6A737D = 3.42:1 on #24292e — override to #8b949e (4.79:1)
+  span[style*="6A737D"],
+  span[style*="6a737d"] {
+    color: #8b949e !important;
+  }
+}
+
 // Shell prompts
 .language-bash .line::before,
 .language-sh .line::before {
@@ -59,7 +73,7 @@
   &.prolog,
   &.doctype,
   &.cdata {
-    color: var(--base03);
+    color: var(--base03) !important; /* overrides Prism inline style="color:#6A737D" */
   }
 
   &.punctuation {

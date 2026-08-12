@@ -1,0 +1,82 @@
+version: 1
+pairs:
+  - id: examples/stats
+    en: site/src/assets/examples/stats/index.astro
+    pt: site/src/assets/examples/pt-br/stats/index.astro
+    en_sha: 8ae9060c12d1
+    pt_sha: 38177261c98f
+  - id: examples/newsletter
+    en: site/src/assets/examples/newsletter/index.astro
+    pt: site/src/assets/examples/pt-br/newsletter/index.astro
+    en_sha: 0d35d00631c7
+    pt_sha: 05b074eb8186
+  - id: examples/about
+    en: site/src/assets/examples/about/index.astro
+    pt: site/src/assets/examples/pt-br/about/index.astro
+    en_sha: 378b4c1cf8ae
+    pt_sha: 4b74f0ced71d
+  - id: examples/hero
+    en: site/src/assets/examples/hero/index.astro
+    pt: site/src/assets/examples/pt-br/hero/index.astro
+    en_sha: d50f8ccaada3
+    pt_sha: b56bc094c023
+  - id: examples/organization
+    en: site/src/assets/examples/organization/index.astro
+    pt: site/src/assets/examples/pt-br/organization/index.astro
+    en_sha: c31d0e059cb9
+    pt_sha: 2f64fac8afab
+  - id: examples/sponsors
+    en: site/src/assets/examples/sponsors/index.astro
+    pt: site/src/assets/examples/pt-br/sponsors/index.astro
+    en_sha: a129fa07368c
+    pt_sha: 5a35752c3d90
+  - id: examples/footer
+    en: site/src/assets/examples/footer/index.astro
+    pt: site/src/assets/examples/pt-br/footer/index.astro
+    en_sha: 9a4d93fcd769
+    pt_sha: 4b64ed8afb8e
+  - id: examples/news
+    en: site/src/assets/examples/news/index.astro
+    pt: site/src/assets/examples/pt-br/news/index.astro
+    en_sha: b9efc019ca44
+    pt_sha: 333f181768ba
+  - id: examples/home
+    en: site/src/assets/examples/home/index.astro
+    pt: site/src/assets/examples/pt-br/home/index.astro
+    en_sha: 6027d8b105f5
+    pt_sha: 7a78cd895584
+  - id: docs/accordion
+    en: site/src/content/docs/components/accordion.mdx
+    pt: site/src/content/docs/pt-br/components/accordion.mdx
+    en_sha: ef6af269402b
+    pt_sha: 52b43e48ff4e
+  - id: docs/badges
+    en: site/src/content/docs/components/badges.mdx
+    pt: site/src/content/docs/pt-br/components/badges.mdx
+    en_sha: d7a5f9b11bf7
+    pt_sha: 5476c26d13ac
+  - id: docs/typography
+    en: site/src/content/docs/content/typography.mdx
+    pt: site/src/content/docs/pt-br/content/typography.mdx
+    en_sha: 6e5057bc5d15
+    pt_sha: bf0192430615
+  - id: docs/navbar
+    en: site/src/content/docs/components/navbar.mdx
+    pt: site/src/content/docs/pt-br/components/navbar.mdx
+    en_sha: ffeb1d4e2e02
+    pt_sha: a07101dc4b7c
+  - id: docs/cards
+    en: site/src/content/docs/components/cards.mdx
+    pt: site/src/content/docs/pt-br/components/cards.mdx
+    en_sha: e259031638e8
+    pt_sha: 0131f886d99e
+  - id: docs/buttons
+    en: site/src/content/docs/components/buttons.mdx
+    pt: site/src/content/docs/pt-br/components/buttons.mdx
+    en_sha: 513f2328020e
+    pt_sha: b3a17d1e90c5
+  - id: docs/home
+    en: site/src/content/docs/templates/home.mdx
+    pt: site/src/content/docs/pt-br/templates/home.mdx
+    en_sha: dcfce5f94496
+    pt_sha: 379f2378b581

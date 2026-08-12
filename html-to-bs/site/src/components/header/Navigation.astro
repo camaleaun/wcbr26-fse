@@ -19,6 +19,12 @@ interface Props {
 }
 
 const { addedIn, layout, title } = Astro.props
+
+const pathname = Astro.url.pathname
+const isPtBrDoc = pathname.includes('/pt-br/')
+const isTranslatable = /\/docs\/\d+\/(components|content|templates)\//.test(pathname)
+const enHref = isPtBrDoc ? pathname.replace('/pt-br/', '/') : undefined
+const ptHref = !isPtBrDoc && isTranslatable ? pathname.replace(/(\/docs\/\d+\/)/, '$1pt-br/') : undefined
 ---
 
 <header class="navbar navbar-expand-lg bd-navbar sticky-top">
@@ -42,7 +48,7 @@ const { addedIn, layout, title } = Astro.props
     }
     {layout !== 'docs' && <div class="d-lg-none" style="width: 4.25rem;" />}
 
-    <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
+    <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="WCBR">
       <WcbrWhiteFillIcon class="d-block my-1" height={32} width={31} />
     </a>
 
@@ -68,7 +74,7 @@ const { addedIn, layout, title } = Astro.props
       aria-labelledby="bdNavbarOffcanvasLabel"
     >
       <div class="offcanvas-header px-4 pb-0">
-        <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
+        <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">WCBR</h5>
         <button
           type="button"
           class="btn-close btn-close-white"
@@ -82,6 +88,9 @@ const { addedIn, layout, title } = Astro.props
         <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
           <LinkItem active={layout === 'docs'} href={getVersionedDocsPath('getting-started/introduction/')} track>
             Docs
+          </LinkItem>
+          <LinkItem active={layout === 'examples'} href={getVersionedDocsPath('examples/')}>
+            Examples
           </LinkItem>
         </ul>
 
@@ -106,6 +115,26 @@ const { addedIn, layout, title } = Astro.props
             <hr class="d-lg-none my-2 text-white-50" />
           </li>
 
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+            <div class="d-flex align-items-center gap-1 px-1">
+              {isPtBrDoc ? (
+                <>
+                  <a href={enHref} class="bd-lang-btn" data-lang-switch="en">EN</a>
+                  <span class="bd-lang-btn bd-lang-active" aria-current="page">PT-BR</span>
+                </>
+              ) : (
+                <>
+                  <span class="bd-lang-btn bd-lang-active" aria-current="page">EN</span>
+                  {ptHref ? (
+                    <a href={ptHref} class="bd-lang-btn" data-lang-switch="pt">PT-BR</a>
+                  ) : (
+                    <span class="bd-lang-btn bd-lang-disabled" aria-disabled="true">PT-BR</span>
+                  )}
+                </>
+              )}
+            </div>
+          </li>
+
           <Versions layout={layout} addedIn={addedIn} />
 
           <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
@@ -121,3 +150,35 @@ const { addedIn, layout, title } = Astro.props
     </div>
   </nav>
 </header>
+
+<style>
+  .bd-lang-btn {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.45rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.4;
+  }
+  .bd-lang-active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  .bd-lang-disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  .bd-lang-btn:not(.bd-lang-active):not(.bd-lang-disabled):hover {
+    color: #fff;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-lang-switch]').forEach((el) => {
+    el.addEventListener('click', () => {
+      localStorage.setItem('wcbr-docs-lang', el.dataset.langSwitch!)
+    })
+  })
+</script>

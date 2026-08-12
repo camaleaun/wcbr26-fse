@@ -2,17 +2,20 @@
   "name": "wcbr2026-bootstrap",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "css": "sass scss/wcbr.scss assets/css/wcbr.css --style expanded --source-map --quiet-deps --silence-deprecation=import,if-function,global-builtin,color-functions",
-    "css-watch": "sass scss/wcbr.scss assets/css/wcbr.css --style expanded --source-map --quiet-deps --silence-deprecation=import,if-function,global-builtin,color-functions --watch",
-    "docs-css": "sass site/src/scss/docs.scss assets/css/docs.css --style expanded --source-map --quiet-deps --silence-deprecation=import,if-function,global-builtin,color-functions",
-    "docs-css-watch": "sass site/src/scss/docs.scss assets/css/docs.css --style expanded --source-map --quiet-deps --silence-deprecation=import,if-function,global-builtin,color-functions --watch",
-    "docs-serve": "ASTRO_DEV_BACKGROUND=1 astro dev --root site --port 4321",
+    "css": "sass scss/wcbr.scss assets/css/wcbr.css --style expanded --source-map --silence-deprecation=import,if-function",
+    "css-watch": "sass scss/wcbr.scss assets/css/wcbr.css --style expanded --source-map --silence-deprecation=import,if-function --watch",
+    "docs-css": "sass site/src/scss/docs.scss assets/css/docs.css --style expanded --source-map --silence-deprecation=import,if-function",
+    "docs-css-watch": "sass site/src/scss/docs.scss assets/css/docs.css --style expanded --source-map --silence-deprecation=import,if-function --watch",
+    "docs-serve": "ASTRO_DEV_BACKGROUND=1 astro dev --root site --port 4321 --force",
     "docs-build": "astro build --root site",
     "serve": "npx --yes serve . -p 3000",
     "dev": "npm run css-watch & npm run serve",
     "start": "npm run css & npm run docs-css & npm run css-watch & npm run docs-css-watch & npm run docs-serve",
-    "build": "npm run css && npm run docs-css && npm run docs-build"
+    "build": "npm run css && npm run docs-css && npm run docs-build",
+    "i18n-check": "node scripts/i18n-check.js",
+    "i18n-sync": "node scripts/i18n-sync.js"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

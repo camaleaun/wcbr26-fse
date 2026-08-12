@@ -202,13 +202,10 @@ $grid-breakpoints: (
   xl: 1232px
 );
 
-// The source container is fluid up to a single 1232px cap — not stepped per
-// breakpoint — so every step carries the same max-width.
+// Single 1232px cap at the xxl breakpoint; all smaller containers use
+// Bootstrap defaults. The WCBR site uses container-fluid for full-width sections.
 $container-max-widths: (
-  sm: 1232px,
-  md: 1232px,
-  lg: 1232px,
-  xl: 1232px
+  xxl: 1232px
 );
 
 $grid-gutter-width: 1.5rem;

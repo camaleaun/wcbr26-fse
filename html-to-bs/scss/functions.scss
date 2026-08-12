@@ -1,17 +1,174 @@
-@import '../node_modules/bootstrap/scss/functions';
+@use "sass:color";
+@use "sass:math";
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
 
-@function _hex-char($n) {
-  @return str-slice("0123456789abcdef", $n + 1, $n + 1);
+// Shadows of deprecated global color builtins → Bootstrap's tint-color/shade-color/to-rgb/luminance
+// call these; shadowing here means no deprecation fires at call time.
+@function red($color) {
+  @return math.round(color.channel($color, 'red', $space: rgb));
 }
 
-@function to-hex($color) {
-  $r: round(red($color) + 0.0001);
-  $g: round(green($color) + 0.0001);
-  $b: round(blue($color) + 0.0001);
-  @return unquote(
+@function green($color) {
+  @return math.round(color.channel($color, 'green', $space: rgb));
+}
+
+@function blue($color) {
+  @return math.round(color.channel($color, 'blue', $space: rgb));
+}
+
+// Force a modern color back to legacy sRGB (rgba with integers) so CSS output is #rrggbb not rgb(r% g% b%)
+@function _to-legacy($color) {
+  @return rgba(
+    math.round(color.channel($color, 'red', $space: rgb)),
+    math.round(color.channel($color, 'green', $space: rgb)),
+    math.round(color.channel($color, 'blue', $space: rgb)),
+    color.alpha($color)
+  );
+}
+
+@function mix($color1, $color2, $weight: 50%) {
+  @return _to-legacy(color.mix($color1, $color2, $weight));
+}
+
+@function lighten($color, $amount) {
+  @return _to-legacy(color.adjust($color, $lightness: $amount));
+}
+
+@function darken($color, $amount) {
+  @return _to-legacy(color.adjust($color, $lightness: -$amount));
+}
+
+@function saturate($color, $amount) {
+  @return _to-legacy(color.adjust($color, $saturation: $amount));
+}
+
+@function desaturate($color, $amount) {
+  @return _to-legacy(color.adjust($color, $saturation: -$amount));
+}
+
+@function adjust-color($color, $kwargs...) {
+  @return _to-legacy(color.adjust($color, $kwargs...));
+}
+
+// Shadows of deprecated global math builtins → Bootstrap's -assert-ascending/-assert-starts-at-zero
+@function unit($number) {
+  @return math.unit($number);
+}
+
+@function comparable($number1, $number2) {
+  @return math.compatible($number1, $number2);
+}
+
+// Shadows of deprecated global list/map builtins
+@function length($list) {
+  @return list.length($list);
+}
+
+@function nth($list, $n) {
+  @return list.nth($list, $n);
+}
+
+@function map-values($map) {
+  @return map.values($map);
+}
+
+@function map-get($map, $key, $keys...) {
+  @return map.get($map, $key, $keys...);
+}
+
+@function map-merge($map1, $map2) {
+  @return map.merge($map1, $map2);
+}
+
+@function map-keys($map) {
+  @return map.keys($map);
+}
+
+@function map-has-key($map, $key, $keys...) {
+  @return map.has-key($map, $key, $keys...);
+}
+
+@function map-remove($map, $keys...) {
+  @return map.remove($map, $keys...);
+}
+
+// Shadows of deprecated global meta/string/color builtins
+@function type-of($value) {
+  @return meta.type-of($value);
+}
+
+@function opacity($color) {
+  @return color.alpha($color);
+}
+
+@function unquote($string) {
+  @return string.unquote($string);
+}
+
+@function quote($string) {
+  @return string.quote($string);
+}
+
+@function str-slice($string, $start-at, $end-at: -1) {
+  @return string.slice($string, $start-at, $end-at);
+}
+
+@function str-length($string) {
+  @return string.length($string);
+}
+
+@function append($list, $val, $separator: auto) {
+  @return list.append($list, $val, $separator);
+}
+
+@function inspect($value) {
+  @return meta.inspect($value);
+}
+
+@function get-function($name, $css: false, $module: null) {
+  @return meta.get-function($name, $css: $css, $module: $module);
+}
+
+@function call($function, $args...) {
+  @return meta.call($function, $args...);
+}
+
+@function percentage($number) {
+  @return math.percentage($number);
+}
+
+@function variable-exists($name) {
+  @return meta.variable-exists($name);
+}
+
+@function str-index($string, $substring) {
+  @return string.index($string, $substring);
+}
+
+@function index($list, $value) {
+  @return list.index($list, $value);
+}
+
+@function zip($lists...) {
+  @return list.zip($lists...);
+}
+
+// to-hex() — our own utility, rewritten with module functions
+@function _hex-char($n) {
+  @return string.slice("0123456789abcdef", $n + 1, $n + 1);
+}
+
+@function to-hex($value) {
+  $r: math.round(red($value));
+  $g: math.round(green($value));
+  $b: math.round(blue($value));
+  @return string.unquote(
     "#" +
-    _hex-char(floor($r * 0.0625)) + _hex-char($r % 16) +
-    _hex-char(floor($g * 0.0625)) + _hex-char($g % 16) +
-    _hex-char(floor($b * 0.0625)) + _hex-char($b % 16)
+    _hex-char(math.floor($r * 0.0625)) + _hex-char($r % 16) +
+    _hex-char(math.floor($g * 0.0625)) + _hex-char($g % 16) +
+    _hex-char(math.floor($b * 0.0625)) + _hex-char($b % 16)
   );
 }
