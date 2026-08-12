@@ -298,6 +298,9 @@ $gs_content = wp_json_encode( [
 			'background' => 'var:preset|color|sand-100',
 			'text'       => 'var:preset|color|gray-700',
 		],
+		'spacing' => [
+			'blockGap' => '0',
+		],
 		'typography' => [
 			'fontFamily'    => 'var:preset|font-family|montserrat',
 			'fontSize'      => 'var:preset|font-size|medium',

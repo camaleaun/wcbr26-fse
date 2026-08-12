@@ -1,17 +1,18 @@
-<!-- wp:group {"tagName":"footer","align":"full","backgroundColor":"cyan-900","textColor":"sand-200","className":"site-footer","layout":{"type":"default"}} -->
-<footer class="wp-block-group alignfull site-footer has-cyan-900-background-color has-background has-sand-200-color has-text-color">
-<!-- wp:group {"className":"container footer-grid","layout":{"type":"default"}} -->
-<div class="wp-block-group container footer-grid">
+<!-- wp:group {"tagName":"footer","align":"full","backgroundColor":"cyan-900","textColor":"sand-200","className":"site-footer","style":{"elements":{"link":{"color":{"text":"var:preset|color|sand-200"}}},"spacing":{"padding":{"top":"clamp(3rem,6vw,4rem)","bottom":"clamp(3rem,6vw,4rem)"}}},"layout":{"type":"constrained"}} -->
+<footer class="wp-block-group alignfull site-footer has-cyan-900-background-color has-background has-sand-200-color has-text-color" style="padding-top:clamp(3rem,6vw,4rem);padding-bottom:clamp(3rem,6vw,4rem)">
 
-<!-- wp:group {"className":"footer-brand","layout":{"type":"default"}} -->
-<div class="wp-block-group footer-brand">
-<!-- wp:image {"sizeSlug":"full","linkDestination":"custom","className":"footer-brand-logo"} -->
-<figure class="wp-block-image size-full footer-brand-logo">
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"2.5rem","left":"2.5rem"}}}} -->
+<div class="wp-block-columns">
+
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%">
+<!-- wp:image {"sizeSlug":"full","linkDestination":"custom","style":{"css":"& img{filter:invert(1) brightness(2);width:171px;height:auto}"}} -->
+<figure class="wp-block-image size-full has-custom-css">
 <a href="/"><img src="/wp-content/uploads/wcbr2026/img/logo-monochrome.avif" alt="WordCamp Brasil 2026" width="171" height="69" loading="lazy"/></a>
 </figure>
 <!-- /wp:image -->
-<!-- wp:social-links {"iconColor":"sand-200","iconColorValue":"#f6eee4","className":"footer-social is-style-logos-only","style":{"spacing":{"blockGap":{"top":"1rem","left":"1rem"}}}} -->
-<ul class="wp-block-social-links has-icon-color footer-social is-style-logos-only">
+<!-- wp:social-links {"iconColor":"sand-200","iconColorValue":"#f6eee4","className":"footer-social is-style-logos-only","style":{"spacing":{"blockGap":{"top":"0.875rem","left":"0.875rem"},"margin":{"top":"1rem","bottom":"0.875rem"}}}} -->
+<ul class="wp-block-social-links has-icon-color footer-social is-style-logos-only" style="margin-top:1rem;margin-bottom:0.875rem">
 <!-- wp:social-link {"url":"https://chat.whatsapp.com/FlLyOoqPrXaDtJuhhJvI2T","service":"whatsapp","label":"WhatsApp"} /-->
 <!-- wp:social-link {"url":"https://www.instagram.com/wordcampbrasil","service":"instagram","label":"Instagram"} /-->
 <!-- wp:social-link {"url":"https://x.com/wordcampbrasil","service":"x","label":"X"} /-->
@@ -20,17 +21,21 @@
 <!-- wp:social-link {"url":"https://brasil.wordcamp.org/2026/contato/","service":"mail","label":"Contato"} /-->
 </ul>
 <!-- /wp:social-links -->
-<!-- wp:paragraph {"textColor":"orange-600","className":"footer-tags"} --><p class="footer-tags has-orange-600-color has-text-color">#WCBR &nbsp; #WCBR2026</p><!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"footer-date"} --><p class="footer-date">Belo Horizonte MG, 30 e 31 outubro 2026</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"textColor":"orange-600","style":{"typography":{"fontSize":"0.625rem","fontWeight":"700","letterSpacing":"0.1em","textTransform":"uppercase"},"spacing":{"margin":{"top":"0","bottom":"0.5rem"}}}} --><p class="has-orange-600-color has-text-color" style="font-size:0.625rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-top:0;margin-bottom:0.5rem">#WCBR &nbsp; #WCBR2026</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.625rem","textTransform":"uppercase","letterSpacing":"0.04em"},"spacing":{"margin":{"top":"0"}}}} --><p style="font-size:0.625rem;text-transform:uppercase;letter-spacing:0.04em;margin-top:0;opacity:0.7">Belo Horizonte MG, 30 e 31 outubro 2026</p><!-- /wp:paragraph -->
 </div>
-<!-- /wp:group -->
+<!-- /wp:column -->
 
-<!-- wp:paragraph {"className":"footer-desc"} --><p class="footer-desc">WordCamp Brasil 2026 — Belo Horizonte, MG. A conferência oficial da comunidade WordPress no Brasil.</p><!-- /wp:paragraph -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem","lineHeight":"1.6"},"spacing":{"margin":{"top":"0"}}}} --><p style="font-size:0.875rem;line-height:1.6;margin-top:0;opacity:0.7">WordCamp Brasil 2026 — Belo Horizonte, MG. A conferência oficial da comunidade WordPress no Brasil.</p><!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
 
-<!-- wp:group {"className":"footer-col","layout":{"type":"default"}} -->
-<div class="wp-block-group footer-col">
-<!-- wp:heading {"level":2,"textColor":"red-200","className":"footer-title","style":{"typography":{"fontWeight":"400"}}} --><h2 class="wp-block-heading footer-title has-red-200-color has-text-color" style="font-weight:400">Menu Rápido</h2><!-- /wp:heading -->
-<!-- wp:list -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":2,"textColor":"red-200","style":{"typography":{"fontWeight":"400","fontSize":"1rem","textTransform":"uppercase"},"spacing":{"margin":{"top":"0","bottom":"1.25rem"}}}} --><h2 class="wp-block-heading has-red-200-color has-text-color" style="font-weight:400;font-size:1rem;text-transform:uppercase;margin-top:0;margin-bottom:1.25rem">Menu Rápido</h2><!-- /wp:heading -->
+<!-- wp:list {"style":{"spacing":{"blockGap":"0.75rem"}}} -->
 <ul class="wp-block-list">
 <!-- wp:list-item --><li><a href="/">Início</a></li><!-- /wp:list-item -->
 <!-- wp:list-item --><li><a href="#">Notícias</a></li><!-- /wp:list-item -->
@@ -39,12 +44,12 @@
 </ul>
 <!-- /wp:list -->
 </div>
-<!-- /wp:group -->
+<!-- /wp:column -->
 
-<!-- wp:group {"className":"footer-col","layout":{"type":"default"}} -->
-<div class="wp-block-group footer-col">
-<!-- wp:heading {"level":2,"textColor":"red-200","className":"footer-title","style":{"typography":{"fontWeight":"400"}}} --><h2 class="wp-block-heading footer-title has-red-200-color has-text-color" style="font-weight:400">Participação</h2><!-- /wp:heading -->
-<!-- wp:list -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":2,"textColor":"red-200","style":{"typography":{"fontWeight":"400","fontSize":"1rem","textTransform":"uppercase"},"spacing":{"margin":{"top":"0","bottom":"1.25rem"}}}} --><h2 class="wp-block-heading has-red-200-color has-text-color" style="font-weight:400;font-size:1rem;text-transform:uppercase;margin-top:0;margin-bottom:1.25rem">Participação</h2><!-- /wp:heading -->
+<!-- wp:list {"style":{"spacing":{"blockGap":"0.75rem"}}} -->
 <ul class="wp-block-list">
 <!-- wp:list-item --><li><a href="#">Palestrantes</a></li><!-- /wp:list-item -->
 <!-- wp:list-item --><li><a href="#">Patrocinadores</a></li><!-- /wp:list-item -->
@@ -53,27 +58,23 @@
 </ul>
 <!-- /wp:list -->
 </div>
-<!-- /wp:group -->
+<!-- /wp:column -->
 
 </div>
-<!-- /wp:group -->
+<!-- /wp:columns -->
 
-<!-- wp:group {"className":"footer-bottom","layout":{"type":"default"}} -->
-<div class="wp-block-group footer-bottom">
-<!-- wp:group {"className":"container","layout":{"type":"default"}} -->
-<div class="wp-block-group container">
-<!-- wp:list {"className":"footer-legal"} -->
-<ul class="wp-block-list footer-legal">
-<!-- wp:list-item --><li><a href="#">Privacidade</a></li><!-- /wp:list-item -->
-<!-- wp:list-item --><li><a href="#">Código de Conduta</a></li><!-- /wp:list-item -->
-<!-- wp:list-item --><li><a href="#">Acessibilidade</a></li><!-- /wp:list-item -->
-<!-- wp:list-item --><li><a href="#">Contato</a></li><!-- /wp:list-item -->
-</ul>
-<!-- /wp:list -->
-<!-- wp:paragraph {"textColor":"red-200","className":"footer-motto"} --><p class="footer-motto has-red-200-color has-text-color">Código é poesia.</p><!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"footer-copy"} --><p class="footer-copy">© 2026 WordCamp Brasil — Belo Horizonte. Orgulhosamente feito com WordPress.</p><!-- /wp:paragraph -->
+<!-- wp:group {"style":{"border":{"top":{"color":"rgba(255,255,255,0.12)","width":"1px"}},"spacing":{"padding":{"top":"2rem"},"margin":{"top":"3rem"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:3rem;padding-top:2rem">
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"spacing":{"blockGap":{"top":"0.625rem","left":"1.5rem"},"margin":{"bottom":"1.25rem"}}}} -->
+<div class="wp-block-group" style="margin-bottom:1.25rem">
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem","textTransform":"uppercase","letterSpacing":"0.04em"}}} --><p style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em"><a href="#">Privacidade</a></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem","textTransform":"uppercase","letterSpacing":"0.04em"}}} --><p style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em"><a href="#">Código de Conduta</a></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem","textTransform":"uppercase","letterSpacing":"0.04em"}}} --><p style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em"><a href="#">Acessibilidade</a></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem","textTransform":"uppercase","letterSpacing":"0.04em"}}} --><p style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.04em"><a href="#">Contato</a></p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
+<!-- wp:paragraph {"textColor":"red-200","style":{"typography":{"fontWeight":"700","fontSize":"1.15rem"},"spacing":{"margin":{"top":"0","bottom":"0.75rem"}}}} --><p class="has-red-200-color has-text-color" style="font-weight:700;font-size:1.15rem;margin-top:0;margin-bottom:0.75rem">Código é poesia.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem","lineHeight":"1.6"},"spacing":{"margin":{"top":"0"}}}} --><p style="font-size:0.8rem;line-height:1.6;margin-top:0;opacity:0.6">© 2026 WordCamp Brasil — Belo Horizonte. Orgulhosamente feito com WordPress.</p><!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 
