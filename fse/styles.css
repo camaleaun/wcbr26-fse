@@ -5,9 +5,17 @@
 
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
 
+/* ── Layout utilitários ── */
+.container { width:100%; max-width:var(--wp--style--global--content-size); margin-inline:auto; padding-inline:24px; }
+.section-more { text-align:center; margin-top:48px; }
+
 /* ── chip icons (wp:icon dentro de wp:group hero-chip) ── */
 .wp-block-icon.chip-icon { margin:0; display:contents; }
 .wp-block-icon.chip-icon svg { width:16px; height:16px; display:block; flex:none; fill:currentColor; }
+
+/* ── Hero chips ── */
+.hero-chip { text-transform:uppercase; }
+.hero-lead { max-width:40ch; }
 
 /* ── Formats accordion (wp:html) ── */
 .format { background:var(--wp--preset--color--sand-100); border:2px solid var(--wp--preset--color--gray-400); box-shadow:5px 5px 0 0 var(--wp--preset--color--cyan-700); }
@@ -48,6 +56,34 @@
 .button-brick { display:inline-flex; align-items:center; justify-content:center; font-family:var(--wp--preset--font-family--poppins); font-weight:900; text-transform:uppercase; letter-spacing:.05em; color:#fff; background:var(--wp--preset--color--orange-600); border:2px solid var(--wp--preset--color--orange-500); box-shadow:5px 5px 0 0 var(--wp--preset--color--orange-500); border-radius:0; padding:20px 40px; font-size:1rem; cursor:pointer; }
 .button-brick:hover { transform:translate(2px,2px); box-shadow:3px 3px 0 0 var(--wp--preset--color--orange-500); }
 
+/* ── News cards (wp:query post-template) ── */
+.news-card { background:var(--wp--preset--color--sand-100); border:1px solid var(--wp--preset--color--gray-400); }
+.news-card-body { flex:1; }
+.news-card-body p { display:none; }
+
+/* ── Footer (wp:group blocks) ── */
+.footer-grid { display:grid; gap:40px; }
+.footer-brand .wp-block-image img { width:171px; height:auto; }
+.footer-social.wp-block-social-links { display:flex; align-items:center; gap:14px; margin-block-start:0; padding:0; }
+.footer-social .wp-block-social-link a { color:inherit; opacity:.9; padding:0; background:none; border-radius:0; }
+.footer-social .wp-block-social-link a:hover { color:var(--wp--preset--color--red-200); opacity:1; }
+.footer-social .wp-block-social-link svg { fill:currentColor; width:20px; height:20px; display:block; }
+.footer-tags.wp-block-paragraph { font-family:var(--wp--preset--font-family--montserrat); font-weight:700; font-size:.625rem; letter-spacing:.1em; text-transform:uppercase; margin-block:0; line-height:1.4; }
+.footer-date.wp-block-paragraph { font-size:.625rem; text-transform:uppercase; letter-spacing:.04em; opacity:.7; margin-block-start:0; }
+.footer-desc.wp-block-paragraph { font-size:.875rem; line-height:1.6; opacity:.7; margin-block-start:0; }
+.footer-col .wp-block-list { display:flex; flex-direction:column; gap:12px; }
+.footer-col .wp-block-list li { margin-block-start:0; }
+.footer-col a { color:inherit; font-size:1rem; opacity:.8; transition:opacity .15s ease; }
+.footer-col a:hover { opacity:1; color:var(--wp--preset--color--red-200); }
+.footer-title.wp-block-heading { font-size:1rem; font-weight:400; text-transform:uppercase; margin-bottom:20px; }
+.footer-bottom { border-top:1px solid rgba(255,255,255,.12); margin-top:48px; padding-top:32px; text-align:center; }
+.footer-legal.wp-block-list { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 24px; margin-bottom:20px; padding:0; list-style:none; }
+.footer-legal li { margin-block-start:0; }
+.footer-legal a { font-family:var(--wp--preset--font-family--poppins); font-weight:400; text-transform:uppercase; font-size:.8rem; letter-spacing:.04em; opacity:.8; transition:opacity .15s ease; }
+.footer-legal a:hover { opacity:1; color:var(--wp--preset--color--red-200); }
+.footer-motto.wp-block-paragraph { font-family:var(--wp--preset--font-family--poppins); font-weight:700; font-size:1.15rem; margin:0 0 12px; }
+.footer-copy.wp-block-paragraph { font-size:.8rem; line-height:1.6; opacity:.6; margin-block-start:0; }
+
 /* ── WP block bridges ── */
 /* news: seta "Leia mais" via pseudo no wp:read-more */
 .wp-block-read-more { display:inline-flex; align-items:center; gap:6px; }
@@ -66,4 +102,5 @@
   .sponsor-grid-lg { grid-template-columns:repeat(4, minmax(0,1fr)); }
   .sponsor-grid-md { grid-template-columns:repeat(6, minmax(0,1fr)); }
   .newsletter-form { flex-direction:row; }
+  .footer-grid { grid-template-columns:1.4fr 1fr 1fr 1fr; }
 }
