@@ -324,4 +324,15 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
   /* News cards: show images and excerpts on tablet/desktop */
   .news-card .wp-block-post-featured-image { display:block; }
   .news-card .wp-block-post-excerpt { display:block; }
+  /* News grid: WP uses content-size=1232px+20px gap → cards at x=59 (vs REF x=83). Fix to 1184px+32px gap → col1=83, col2=488, col3=894 (= REF exactly). */
+  .section.news .wp-block-post-template { max-width: 1184px !important; margin-inline: auto !important; gap: 32px !important; }
+  /* News cards: uniform ≈470px height — figure 209px (=16/9 at REF 373px width) + body min 260px.
+     WP card is wider (395px) so img crops to 395×209; aspect ratio differs slightly but heights align. */
+  .news-card .wp-block-post-featured-image { height: 209px !important; overflow: hidden !important; }
+  .news-card .wp-block-post-featured-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; }
+  .news-card > .wp-block-group { min-height: 260px !important; }
+  /* News card typography: WP excerpt 16px vs REF 18px; read-more 13px vs REF 16px */
+  .news-card .wp-block-post-excerpt,
+  .news-card .wp-block-post-excerpt p { font-size: 1.125rem !important; line-height: 1.45 !important; }
+  .news-card .wp-block-read-more { font-size: 1rem !important; }
 }
