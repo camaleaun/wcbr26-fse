@@ -284,6 +284,9 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
   .has-global-padding.alignfull { padding-inline: 24px !important; }
   /* Footer: WP padding-top clamp→48px mobile; REF = 64px */
   .site-footer { padding-top: 64px !important; }
+  /* Org: REF content=1008px vs WP=928px (section-more + layout diffs = 80px).
+     WP paddingBottom=64px; fix = 64+80=144px to match REF org height of 1136px. */
+  .section.organization { padding-bottom: 144px !important; }
 }
 
 /* ── Responsivo ── */
