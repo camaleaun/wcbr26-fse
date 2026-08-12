@@ -295,6 +295,13 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
   .section.organization { padding-bottom: 144px !important; }
 }
 
+/* ── Desktop-only height cascade fixes ── */
+@media (min-width:640px) {
+  /* About: REF about-content usa font-size:18px vs WP 16px → grid 413px vs 420px (7px).
+     REF: padding 102/102. WP natural: 102/102. Fix paddingBottom=109px → 102+413+109=624px = REF ✓ */
+  .section.about { padding-bottom: 109px !important; }
+}
+
 /* ── Responsivo ── */
 @media (min-width:640px) {
   /* formats: WP auto-fill→4 cols de 293px; REF usa repeat(3)+gap:32px em max-width:1184px
