@@ -10,7 +10,7 @@
   --#{$prefix}gutter-y: 1.25rem;
 }
 
-.sponsor-grid-sm { max-width: 580px; margin-inline: auto; }   // 560 + 20px gutter
+.sponsor-grid-sm { max-width: 580px; }   // 560 + 20px gutter — centred via mx-auto in HTML
 
 .tier {
   display: flex;

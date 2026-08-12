@@ -1,0 +1,147 @@
+---
+import fs from 'node:fs'
+import path from 'node:path'
+
+interface Icon {
+  name: string
+  svg: string
+  category: 'social' | 'format' | 'ui'
+}
+
+const SOCIAL = new Set(['instagram', 'envelope', 'twitter-x', 'whatsapp', 'linkedin', 'tiktok'])
+const FORMAT = new Set(['format-mini', 'format-paineis', 'format-palestras'])
+
+const iconsDir = path.resolve(process.cwd(), '../html-from-figma/icons')
+const icons: Icon[] = fs
+  .readdirSync(iconsDir)
+  .filter((f) => f.endsWith('.svg'))
+  .sort()
+  .map((f) => {
+    const name = f.replace('.svg', '')
+    const raw = fs.readFileSync(path.join(iconsDir, f), 'utf-8')
+    const svg = raw.replace(/<\?xml[^?]*\?>\s*/i, '').trim()
+    const category = SOCIAL.has(name) ? 'social' : FORMAT.has(name) ? 'format' : 'ui'
+    return { name, svg, category }
+  })
+---
+
+<div class="bd-icons-wrap">
+  <div class="mb-4 d-flex align-items-center gap-3">
+    <input
+      type="search"
+      class="form-control"
+      id="wcbr-icon-search"
+      placeholder="Search icons…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <span class="text-muted text-nowrap small" id="wcbr-icon-count">{icons.length} icons</span>
+  </div>
+
+  <div class="row g-3" id="wcbr-icons-grid">
+    {icons.map((icon) => (
+      <div class="col-6 col-sm-4 col-md-3 col-xl-2 wcbr-icon-item" data-name={icon.name} data-category={icon.category}>
+        <div class="wcbr-icon-card d-flex flex-column align-items-center gap-2 p-3 border rounded h-100">
+          <div class="wcbr-icon-preview d-flex align-items-center justify-content-center flex-grow-1" set:html={icon.svg} />
+          <code class="wcbr-icon-name small text-truncate w-100 text-center">{icon.name}</code>
+          <div class="d-flex gap-1">
+            <button
+              class="btn btn-sm btn-outline-secondary wcbr-icon-action"
+              data-value={icon.svg}
+              title="Copy SVG"
+              type="button"
+            >SVG</button>
+            <button
+              class="btn btn-sm btn-outline-secondary wcbr-icon-action"
+              data-value={icon.name}
+              title="Copy name"
+              type="button"
+            >Name</button>
+            <a
+              href={`/docs/2026/icons/${icon.name}.png`}
+              download
+              class="btn btn-sm btn-outline-secondary wcbr-icon-action"
+              title="Download PNG"
+            >PNG</a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <p class="text-muted mt-3 d-none" id="wcbr-icons-empty">No icons found.</p>
+</div>
+
+<style>
+  .wcbr-icon-preview {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .wcbr-icon-preview :global(svg) {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .wcbr-icon-card {
+    transition: background-color 0.15s;
+  }
+  .wcbr-icon-card:hover {
+    background-color: var(--bs-tertiary-bg);
+  }
+  .wcbr-icon-name {
+    font-size: 0.7rem;
+  }
+  .wcbr-icon-action {
+    text-transform: none;
+    letter-spacing: normal;
+    box-shadow: none;
+  }
+  .wcbr-icon-action:hover,
+  .wcbr-icon-action:active {
+    transform: none;
+    box-shadow: none;
+  }
+</style>
+
+<script>
+  const searchInput = document.getElementById('wcbr-icon-search') as HTMLInputElement | null
+  const emptyMsg = document.getElementById('wcbr-icons-empty')
+  const countEl = document.getElementById('wcbr-icon-count')
+  const allItems = Array.from(document.querySelectorAll<HTMLElement>('.wcbr-icon-item'))
+  const total = allItems.length
+
+  searchInput?.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase().trim()
+    let visible = 0
+    allItems.forEach((item) => {
+      const name = (item.dataset.name ?? '').toLowerCase()
+      const show = !q || name.includes(q)
+      item.classList.toggle('d-none', !show)
+      if (show) visible++
+    })
+    if (countEl) {
+      countEl.textContent = q ? `${visible} of ${total} icons` : `${total} icons`
+    }
+    emptyMsg?.classList.toggle('d-none', visible > 0)
+  })
+
+  async function copyText(text: string, btn: HTMLButtonElement) {
+    try {
+      await navigator.clipboard.writeText(text)
+      const orig = btn.textContent ?? ''
+      btn.textContent = '✓'
+      btn.classList.replace('btn-outline-secondary', 'btn-success')
+      setTimeout(() => {
+        btn.textContent = orig
+        btn.classList.replace('btn-success', 'btn-outline-secondary')
+      }, 1500)
+    } catch {
+      // clipboard unavailable — silently ignore
+    }
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.wcbr-icon-action').forEach((btn) => {
+    btn.addEventListener('click', () => copyText(btn.dataset.value ?? '', btn))
+  })
+</script>

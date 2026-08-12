@@ -26,6 +26,8 @@ const configSchema = z.object({
   swag: z.string().optional(),
   blog: z.string().optional(),
   x: z.string().optional(),
+  versions: z.array(z.string()).optional(),
+  basesite: z.string().optional(),
 })
 
 let config: Config | undefined

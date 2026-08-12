@@ -1,0 +1,21 @@
+---
+interface Props {
+  de: string
+  para: string
+  note?: string
+}
+const { de, para, note } = Astro.props
+---
+
+<div class="de-para my-3 d-flex align-items-center gap-3 flex-wrap">
+  <div class="d-flex flex-column">
+    <small class="text-muted text-uppercase fw-semibold" style="font-size:.65rem;letter-spacing:.08em">DE</small>
+    <code>{de}</code>
+  </div>
+  <span class="text-muted" aria-hidden="true">→</span>
+  <div class="d-flex flex-column">
+    <small class="text-muted text-uppercase fw-semibold" style="font-size:.65rem;letter-spacing:.08em">PARA</small>
+    <code>{para}</code>
+  </div>
+  {note && <small class="text-muted fst-italic">— {note}</small>}
+</div>

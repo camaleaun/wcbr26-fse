@@ -11168,21 +11168,21 @@ h3, .h3 {
   color: #00595d;
 }
 
-.btn {
+.btn:not(.btn-link) {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: 5px 5px 0 0 var(--wcbr-btn-border-color);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
-.btn:hover {
+.btn:not(.btn-link):hover {
   transform: translate(2px, 2px);
   box-shadow: 3px 3px 0 0 var(--wcbr-btn-hover-border-color, var(--wcbr-btn-border-color));
 }
-.btn:active, .btn.active {
+.btn:not(.btn-link):active, .btn:not(.btn-link).active {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 0 var(--wcbr-btn-border-color);
 }
-.btn:disabled, .btn.disabled {
+.btn:not(.btn-link):disabled, .btn:not(.btn-link).disabled {
   box-shadow: none;
   transform: none;
 }

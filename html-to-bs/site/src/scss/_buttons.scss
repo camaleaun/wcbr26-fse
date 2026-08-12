@@ -50,3 +50,19 @@
 
   padding: .8125rem 2rem;
 }
+
+// Reset WCBR sticker — docs UI buttons are not brand buttons
+.btn-bd-primary,
+.btn-bd-accent,
+.btn-bd-light,
+.bd-btn-lg {
+  text-transform: none;
+  letter-spacing: normal;
+  box-shadow: none;
+
+  &:hover,
+  &:active {
+    transform: none;
+    box-shadow: none;
+  }
+}

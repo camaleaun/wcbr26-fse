@@ -15,7 +15,8 @@
     "start": "npm run css & npm run docs-css & npm run css-watch & npm run docs-css-watch & npm run docs-serve",
     "build": "npm run css && npm run docs-css && npm run docs-build",
     "i18n-check": "node scripts/i18n-check.js",
-    "i18n-sync": "node scripts/i18n-sync.js"
+    "i18n-sync": "node scripts/i18n-sync.js",
+    "icons-png": "node scripts/icons-png.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
@@ -28,6 +29,7 @@
     "bootstrap": "^5.3.3",
     "js-yaml": "^5.2.3",
     "sass": "^1.79.0",
+    "sharp": "^0.35.3",
     "zod": "^4.4.3"
   },
   "dependencies": {

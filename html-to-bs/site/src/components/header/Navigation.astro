@@ -23,8 +23,29 @@ const { addedIn, layout, title } = Astro.props
 const pathname = Astro.url.pathname
 const isPtBrDoc = pathname.includes('/pt-br/')
 const isTranslatable = /\/docs\/\d+\/(components|content|templates)\//.test(pathname)
-const enHref = isPtBrDoc ? pathname.replace('/pt-br/', '/') : undefined
-const ptHref = !isPtBrDoc && isTranslatable ? pathname.replace(/(\/docs\/\d+\/)/, '$1pt-br/') : undefined
+
+const langItems = [
+  {
+    code: 'en',
+    short: 'EN',
+    label: 'English',
+    isCurrent: !isPtBrDoc,
+    href: isPtBrDoc ? pathname.replace('/pt-br/', '/') : undefined,
+    isAvailable: true,
+  },
+  {
+    code: 'pt-br',
+    short: 'PT-BR',
+    label: 'Português (Brasil)',
+    isCurrent: isPtBrDoc,
+    href: !isPtBrDoc && isTranslatable ? pathname.replace(/(\/docs\/\d+\/)/, '$1pt-br/') : undefined,
+    isAvailable: isPtBrDoc || isTranslatable,
+  },
+  // To add Spanish: { code: 'es', short: 'ES', label: 'Español', isCurrent: false, href: undefined, isAvailable: false }
+]
+
+const currentLang = langItems.find((l) => l.isCurrent)!
+const hasLangAlternative = langItems.some((l) => !l.isCurrent && l.isAvailable)
 ---
 
 <header class="navbar navbar-expand-lg bd-navbar sticky-top">
@@ -115,29 +136,45 @@ const ptHref = !isPtBrDoc && isTranslatable ? pathname.replace(/(\/docs\/\d+\/)/
             <hr class="d-lg-none my-2 text-white-50" />
           </li>
 
-          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-            <div class="d-flex align-items-center gap-1 px-1">
-              {isPtBrDoc ? (
-                <>
-                  <a href={enHref} class="bd-lang-btn" data-lang-switch="en">EN</a>
-                  <span class="bd-lang-btn bd-lang-active" aria-current="page">PT-BR</span>
-                </>
-              ) : (
-                <>
-                  <span class="bd-lang-btn bd-lang-active" aria-current="page">EN</span>
-                  {ptHref ? (
-                    <a href={ptHref} class="bd-lang-btn" data-lang-switch="pt">PT-BR</a>
+          {hasLangAlternative ? (
+          <li class="nav-item dropdown">
+            <button
+              type="button"
+              class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-display="static"
+            >
+              {currentLang.short}
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              {langItems.map((lang) => (
+                <li>
+                  {lang.isCurrent ? (
+                    <span class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true">
+                      {lang.label}
+                      <svg class="bi ms-2" aria-hidden="true"><use xlink:href="#check2"></use></svg>
+                    </span>
+                  ) : lang.isAvailable ? (
+                    <a class="dropdown-item" href={lang.href} data-lang-switch={lang.code}>
+                      {lang.label}
+                    </a>
                   ) : (
-                    <span class="bd-lang-btn bd-lang-disabled" aria-disabled="true">PT-BR</span>
+                    <span class="dropdown-item disabled" aria-disabled="true">{lang.label}</span>
                   )}
-                </>
-              )}
-            </div>
+                </li>
+              ))}
+            </ul>
           </li>
+          ) : (
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+            <span class="nav-link px-0 px-lg-2" style="opacity:.55;cursor:default">{currentLang.short}</span>
+          </li>
+          )}
 
           <Versions layout={layout} addedIn={addedIn} />
 
-          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto bd-theme-divider">
             <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
             <hr class="d-lg-none my-2 text-white-50" />
           </li>
@@ -151,29 +188,6 @@ const ptHref = !isPtBrDoc && isTranslatable ? pathname.replace(/(\/docs\/\d+\/)/
   </nav>
 </header>
 
-<style>
-  .bd-lang-btn {
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    padding: 0.2rem 0.45rem;
-    border-radius: 2rem;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.55);
-    line-height: 1.4;
-  }
-  .bd-lang-active {
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-  }
-  .bd-lang-disabled {
-    opacity: 0.3;
-    cursor: default;
-  }
-  .bd-lang-btn:not(.bd-lang-active):not(.bd-lang-disabled):hover {
-    color: #fff;
-  }
-</style>
 
 <script>
   document.querySelectorAll<HTMLElement>('[data-lang-switch]').forEach((el) => {

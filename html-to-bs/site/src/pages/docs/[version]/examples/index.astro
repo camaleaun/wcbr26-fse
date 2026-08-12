@@ -17,13 +17,13 @@ export function getStaticPaths() {
 >
   <div class="d-flex flex-column flex-md-row gap-3" slot="header-content">
     <a
-      href={getConfig().download.dist_examples}
+      href={getConfig().download.source}
       class="btn btn-lg bd-btn-lg btn-bd-primary d-flex align-items-center justify-content-center fw-semibold"
     >
       <svg class="bi me-2" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
-      Download examples
+      Download source
     </a>
-    <a href={getConfig().download.source} class="btn btn-lg bd-btn-lg btn-outline-secondary"> Download source code</a>
+    <a href={getConfig().github_org} class="btn btn-lg bd-btn-lg btn-outline-secondary" target="_blank" rel="noopener">View on GitHub</a>
   </div>
   <Fragment slot="main-content">
     <ExamplesMain />

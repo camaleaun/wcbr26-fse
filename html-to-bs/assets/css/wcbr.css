@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*!
+ * WCBR Design System (https://wordcampbr.github.io/wordcampbr/)
+ * Copyright 2026 WordCamp Brasil
+ * Licensed under MIT (https://github.com/wordcampbr/wordcampbr/blob/main/LICENSE)
+ */
+/*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -11168,21 +11173,21 @@ h3, .h3 {
   color: #00595d;
 }
 
-.btn {
+.btn:not(.btn-link) {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: 5px 5px 0 0 var(--wcbr-btn-border-color);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
-.btn:hover {
+.btn:not(.btn-link):hover {
   transform: translate(2px, 2px);
   box-shadow: 3px 3px 0 0 var(--wcbr-btn-hover-border-color, var(--wcbr-btn-border-color));
 }
-.btn:active, .btn.active {
+.btn:not(.btn-link):active, .btn:not(.btn-link).active {
   transform: translate(5px, 5px);
   box-shadow: 0 0 0 0 var(--wcbr-btn-border-color);
 }
-.btn:disabled, .btn.disabled {
+.btn:not(.btn-link):disabled, .btn:not(.btn-link).disabled {
   box-shadow: none;
   transform: none;
 }
@@ -11424,10 +11429,6 @@ h3, .h3 {
 }
 .drawer-sub a:hover {
   background: #f6eee4;
-}
-
-.drawer-foot {
-  margin-top: auto;
 }
 
 .drawer-social {
@@ -11711,16 +11712,6 @@ h3, .h3 {
   margin-bottom: clamp(40px, 6vw, 64px);
 }
 
-.section-more {
-  text-align: center;
-  margin: 48px 0 0;
-}
-
-.section-cta {
-  text-align: center;
-  margin: 24px 0 0;
-}
-
 .hero {
   background: #fff8f1;
 }
@@ -11867,7 +11858,6 @@ h3, .h3 {
 
 .sponsor-grid-sm {
   max-width: 580px;
-  margin-inline: auto;
 }
 
 .tier {
@@ -12022,12 +12012,10 @@ h3, .h3 {
 
 .newsletter-inner {
   max-width: 720px;
-  margin-inline: auto;
 }
 
 .newsletter-form {
   max-width: 576px;
-  margin-inline: auto;
 }
 
 .newsletter-form .btn {

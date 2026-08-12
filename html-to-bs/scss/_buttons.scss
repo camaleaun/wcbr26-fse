@@ -6,7 +6,7 @@
 // automatically. The hard offset shadow is drawn from the variant's own
 // --#{$prefix}btn-border-color, so it recolors itself per variant.
 // ============================================================
-.btn {
+.btn:not(.btn-link) {
   text-transform: uppercase;
   letter-spacing: .05em;
   box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);

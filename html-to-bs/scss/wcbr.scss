@@ -1,3 +1,9 @@
+/*!
+ * WCBR Design System (https://wordcampbr.github.io/wordcampbr/)
+ * Copyright 2026 WordCamp Brasil
+ * Licensed under MIT (https://github.com/wordcampbr/wordcampbr/blob/main/LICENSE)
+ */
+
 // 1. Funções Bootstrap (shade-color, tint-color, etc.) — devem vir primeiro
 @import "../node_modules/bootstrap/scss/functions";
 // Overrides using sass:color modules — stay in scope; bootstrap.scss dedupes its own functions import

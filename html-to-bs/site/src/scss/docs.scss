@@ -1,10 +1,3 @@
-/*!
- * Bootstrap Docs (https://getbootstrap.com/)
- * Copyright 2011-2026 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- * For details, see https://creativecommons.org/licenses/by/3.0/.
- */
-
 // Dev notes
 //
 // Background information on nomenclature and architecture decisions here.
@@ -57,3 +50,10 @@ $enable-cssgrid: true;
 // Load docs dependencies
 @import "syntax";
 @import "anchor";
+
+// WCBR: search not yet configured — remove to re-enable
+.bd-search { display: none; }
+
+// WCBR: single light theme — remove this block to re-enable the theme toggle
+.bd-theme-divider,
+.nav-item:has(#bd-theme) { display: none; }

@@ -9,9 +9,10 @@
   &-lead { font-size: clamp(1.05rem, 2.2vw, 1.375rem); line-height: 1.4; opacity: .9; margin-bottom: 32px; }
 }
 
-// Source caps the copy at 720px and the form at 576px, both centred.
-.newsletter-inner { max-width: 720px; margin-inline: auto; }
-.newsletter-form  { max-width: 576px; margin-inline: auto; }
+// Source caps the copy at 720px and the form at 576px.
+// newsletter-inner sits on a .container (already centred); newsletter-form uses mx-auto in HTML.
+.newsletter-inner { max-width: 720px; }
+.newsletter-form  { max-width: 576px; }
 
 // The signup CTA is lighter than the theme's default 900 button.
 .newsletter-form .btn {
