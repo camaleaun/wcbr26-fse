@@ -1,4 +1,4 @@
-.bd-sidebar {
+.wcbrd-sidebar {
   @include media-breakpoint-up(lg) {
     position: sticky;
     top: 5rem;
@@ -20,11 +20,11 @@
   }
 }
 
-.bd-links-heading {
+.wcbrd-links-heading {
   color: var(--bs-emphasis-color);
 }
 
-.bd-links-nav {
+.wcbrd-links-nav {
   @include media-breakpoint-down(lg) {
     font-size: .875rem;
   }
@@ -33,17 +33,17 @@
     column-count: 2;
     column-gap: 1.5rem;
 
-    .bd-links-group {
+    .wcbrd-links-group {
       break-inside: avoid;
     }
 
-    .bd-links-span-all {
+    .wcbrd-links-span-all {
       column-span: all;
     }
   }
 }
 
-.bd-links-link {
+.wcbrd-links-link {
   padding: .1875rem .5rem;
   margin-top: .125rem;
   margin-left: 1.125rem;

@@ -1,8 +1,8 @@
-.bd-gutter {
+.wcbrd-gutter {
   --bs-gutter-x: #{$bd-gutter-x};
 }
 
-.bd-layout {
+.wcbrd-layout {
 
   @include media-breakpoint-up(lg) {
     display: grid;
@@ -12,11 +12,11 @@
   }
 }
 
-.bd-sidebar {
+.wcbrd-sidebar {
   grid-area: sidebar;
 }
 
-.bd-main {
+.wcbrd-main {
   grid-area: main;
 
   @include media-breakpoint-down(lg) {
@@ -43,15 +43,15 @@
   }
 }
 
-.bd-intro {
+.wcbrd-intro {
   grid-area: intro;
 }
 
-.bd-toc {
+.wcbrd-toc {
   grid-area: toc;
 }
 
-.bd-content {
+.wcbrd-content {
   grid-area: content;
   min-width: 1px; // Fix width when bd-content contains a `<pre>` https://github.com/twbs/bootstrap/issues/25410
 }

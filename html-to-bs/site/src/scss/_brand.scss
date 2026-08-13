@@ -3,7 +3,7 @@
 //
 
 // Logo series wrapper
-.bd-brand-logos {
+.wcbrd-brand-logos {
   color: $bd-cyan;
 
   .inverse {
@@ -13,13 +13,13 @@
 }
 
 // Individual items
-.bd-brand-item {
-  + .bd-brand-item {
+.wcbrd-brand-item {
+  + .wcbrd-brand-item {
     border-top: 1px solid var(--bs-border-color);
   }
 
   @include media-breakpoint-up(md) {
-    + .bd-brand-item {
+    + .wcbrd-brand-item {
       border-top: 0;
       border-left: 1px solid var(--bs-border-color);
     }
@@ -35,16 +35,16 @@
   margin: 0 -5px;
 
   // Docs colors
-  .bd-cyan {
+  .wcbrd-cyan {
     background-color: $bd-cyan;
   }
-  .bd-cyan-light {
+  .wcbrd-cyan-light {
     background-color: $bd-cyan-light;
   }
-  .bd-cyan-lighter {
+  .wcbrd-cyan-lighter {
     background-color: #e5e1ea;
   }
-  .bd-gray {
+  .wcbrd-gray {
     background-color: #f9f9f9;
   }
 }

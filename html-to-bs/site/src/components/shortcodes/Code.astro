@@ -75,12 +75,12 @@ if (filePath && fileMatch && codeToDisplay) {
   snippetButtonTooltip('.btn-edit', btnEdit)
 
   const clipboard = new ClipboardJS('.btn-clipboard', {
-    target: (trigger) => trigger.closest('.bd-code-snippet')?.querySelector('.highlight')!,
+    target: (trigger) => trigger.closest('.wcbrd-code-snippet')?.querySelector('.highlight')!,
     text: (trigger) => {
       // Trim text to workaround a Firefox issue where the structure of the DOM (uncontrolled) is relevant for the
       // copied text.
       // https://github.com/zenorocha/clipboard.js/issues/439#issuecomment-312344621
-      return trigger.closest('.bd-code-snippet')?.querySelector('.highlight')!.textContent?.trim()!
+      return trigger.closest('.wcbrd-code-snippet')?.querySelector('.highlight')!.textContent?.trim()!
     }
   })
 

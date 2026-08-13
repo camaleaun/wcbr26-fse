@@ -2,7 +2,7 @@
 // Bootstrap docs content theming
 //
 
-.bd-content {
+.wcbrd-content {
   > h2,
   > h3,
   > h4 {
@@ -68,7 +68,7 @@
       color: var(--bs-emphasis-color);
     }
 
-    &:not(.bd-callout) > strong { // Keep callout correct color when used within tables
+    &:not(.wcbrd-callout) > strong { // Keep callout correct color when used within tables
       color: var(--bs-emphasis-color);
     }
 
@@ -108,18 +108,18 @@
 
 // WCAG 2.1 §1.4.1 / Lighthouse link-in-text-block: links in body text must be
 // distinguishable from surrounding text by means other than color alone.
-.bd-content p a,
-.bd-content li a,
-.bd-content dd a {
+.wcbrd-content p a,
+.wcbrd-content li a,
+.wcbrd-content dd a {
   text-decoration: underline;
 }
 
-.bd-title {
+.wcbrd-title {
   --bs-heading-color: var(--bs-emphasis-color);
   @include font-size(3rem);
 }
 
-.bd-subtitle {
+.wcbrd-subtitle {
   @include font-size(1.5rem);
   font-weight: 300;
 }
@@ -138,7 +138,7 @@
 }
 
 // stylelint-disable selector-no-qualifying-type
-.bd-summary-link {
+.wcbrd-summary-link {
   color: var(--bs-link-color);
 
   &:hover,

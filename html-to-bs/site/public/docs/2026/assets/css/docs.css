@@ -1617,7 +1617,7 @@
 
 .swatch-orange {
   color: #111;
-  background-color: #e84814;
+  background-color: #f56530;
 }
 .swatch-orange::after {
   position: absolute;
@@ -1627,8 +1627,8 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "4.82" "\a" "3.91" "\a" "4.82";
-  background-color: #e84814;
+  content: "6.10" "\a" "3.09" "\a" "6.10";
+  background-color: #f56530;
   background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1786,11 +1786,11 @@
   background-size: 0.5rem 100%;
 }
 
-.swatch-custom-red-200 {
+.swatch-red-200 {
   color: #111;
   background-color: rgb(255, 180, 163);
 }
-.swatch-custom-red-200::after {
+.swatch-red-200::after {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -1805,11 +1805,11 @@
   background-size: 0.5rem 100%;
 }
 
-.swatch-custom-cyan-700 {
+.swatch-cyan-700 {
   color: #fff;
   background-color: #00595d;
 }
-.swatch-custom-cyan-700::after {
+.swatch-cyan-700::after {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -1820,25 +1820,6 @@
   content: "8.11" "\a" "8.11" "\a" "2.32";
   background-color: #00595d;
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
-  background-repeat: no-repeat;
-  background-size: 0.5rem 100%;
-}
-
-.swatch-custom-orange {
-  color: #111;
-  background-color: #f56530;
-}
-.swatch-custom-orange::after {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding-left: 1rem;
-  font-size: 0.75rem;
-  line-height: 1.35;
-  white-space: pre;
-  content: "6.10" "\a" "3.09" "\a" "6.10";
-  background-color: #f56530;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }

@@ -1,4 +1,4 @@
-.bd-masthead {
+.wcbrd-masthead {
   --bd-pink-rgb: #{to-rgb($pink)};
   padding: 3rem 0;
   // stylelint-disable
@@ -20,7 +20,7 @@
     color: var(--bs-secondary-color);
   }
 
-  .bd-code-snippet {
+  .wcbrd-code-snippet {
     margin: 0;
     border-color: var(--bs-border-color-translucent);
     border-width: 1px;

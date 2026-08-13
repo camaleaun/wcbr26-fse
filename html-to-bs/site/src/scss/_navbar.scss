@@ -1,4 +1,4 @@
-.bd-navbar {
+.wcbrd-navbar {
   padding: .75rem 0;
   background-color: transparent;
   box-shadow: 0 .5rem 1rem rgba($black, .15), inset 0 -1px 0 rgba($white, .15);
@@ -16,7 +16,7 @@
     background-image: linear-gradient(rgba(var(--bd-cyan-rgb), 1), rgba(var(--bd-cyan-rgb), .95));
   }
 
-  .bd-navbar-toggle {
+  .wcbrd-navbar-toggle {
     @include media-breakpoint-down(lg) {
       width: 4.25rem;
     }
@@ -127,7 +127,7 @@
 }
 
 @include color-mode(dark) {
-  .bd-navbar {
+  .wcbrd-navbar {
     box-shadow: 0 .5rem 1rem rgba($black, .15), inset 0 -1px 0 rgba($white, .15);
   }
 }

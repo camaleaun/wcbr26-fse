@@ -9,7 +9,7 @@
 // - Bootstrap's **docs variables** are prefixed with `$bd-`.
 //   These custom colors avoid collision with the components Bootstrap provides.
 //
-// - Classes are prefixed with `.bd-`.
+// - Classes are prefixed with `.wcbrd-`.
 //   These classes indicate custom-built or modified components for the design
 //   and layout of the Bootstrap docs. They are not included in our builds.
 //
@@ -52,8 +52,8 @@ $enable-cssgrid: true;
 @import "anchor";
 
 // WCBR: search not yet configured — remove to re-enable
-.bd-search { display: none; }
+.wcbrd-search { display: none; }
 
 // WCBR: single light theme — remove this block to re-enable the theme toggle
-.bd-theme-divider,
+.wcbrd-theme-divider,
 .nav-item:has(#bd-theme) { display: none; }

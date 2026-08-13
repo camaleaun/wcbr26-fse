@@ -1,6 +1,6 @@
 // stylelint-disable selector-max-type, selector-no-qualifying-type
 
-.bd-toc {
+.wcbrd-toc {
   font-size: .875rem;
   container-type: inline-size;
   // rgba($ink, .75) = 4.48:1 on cream — fails WCAG AA; raise to .87 → ~6:1
@@ -54,7 +54,7 @@
   }
 }
 
-.bd-toc-toggle {
+.wcbrd-toc-toggle {
   display: flex;
   align-items: center;
 
@@ -84,7 +84,7 @@
   }
 }
 
-.bd-toc-collapse {
+.wcbrd-toc-collapse {
   @include media-breakpoint-down(md) {
     nav {
       padding: 1.25rem 1.25rem 1.25rem 1rem;

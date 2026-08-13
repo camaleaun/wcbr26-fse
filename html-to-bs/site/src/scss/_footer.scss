@@ -2,7 +2,7 @@
 // Footer
 //
 
-.bd-footer {
+.wcbrd-footer {
   // Raise secondary-color opacity: rgba($ink, .75) = 4.48:1 on cream — fails WCAG AA
   --#{$prefix}secondary-color: #{rgba($ink, .87)};
 
