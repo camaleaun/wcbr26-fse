@@ -1,6 +1,6 @@
 ---
 title: Navbar
-description: The site header — a sticky navbar with dropdowns on desktop and an offcanvas drawer on mobile.
+description: The site header, a sticky navbar with dropdowns on desktop and an offcanvas drawer on mobile.
 toc: true
 ---
 
@@ -15,8 +15,8 @@ CTA, and a menu toggler that only shows below `xl`.
 
 ## Dropdowns
 
-Desktop submenus open on click, replacing the prototype's hover-based submenus — the caret
-icon is drawn by the toggle itself, so the prototype's hand-rolled caret SVG is dropped.
+Desktop submenus open on click, not hover like the prototype. The toggle draws its own caret,
+so the prototype's hand-rolled caret SVG is dropped.
 
 Nav links are Poppins 700 uppercase in `$cyan-700`, with a 3px transparent bottom border that
 turns orange on hover.
@@ -25,8 +25,9 @@ turns orange on hover.
 
 On mobile the whole menu becomes an offcanvas panel opening from the end side. The header's
 "Event" submenu becomes a collapsible sub-list inside the drawer, toggled by its own button.
-The drawer's caret rotates 180° when its control is expanded, driven purely by
-`[aria-expanded="true"]` — no bespoke JavaScript.
+
+The drawer's caret rotates 180° when its control is expanded. That's driven purely by
+`[aria-expanded="true"]`, no bespoke JavaScript.
 
 {/*
 Mapping from the prototype (agent-readable only — these Bootstrap classes
@@ -47,7 +48,7 @@ don't survive the move to WordPress, so this stays out of the rendered page):
 
 ## Notes
 
-- All the custom drawer JavaScript is replaced by declarative data attributes — the site ships
+- All the custom drawer JavaScript is replaced by declarative data attributes. The site ships
   no bespoke nav script.
-- Keep `aria-label` on the brand link and the toggler; the logo image carries the alt text.
+- Keep `aria-label` on the brand link and the toggler. The logo image carries the alt text.
 - The header sticks to the top (`.sticky-top`) with a bottom border, over `$sand-100`.

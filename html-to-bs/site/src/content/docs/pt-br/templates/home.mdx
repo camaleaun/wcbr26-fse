@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Página inicial do WordCamp Brasil 2026 — mapeamento do protótipo Figma para o design system WCBR.
+description: Página inicial do WordCamp Brasil 2026, mapeamento do protótipo Figma para o design system WCBR.
 toc: true
 ---
 
@@ -30,28 +30,28 @@ sobrevivem à migração pro WordPress, então isso fica fora da página renderi
 ### Header / Navbar
 
 O header do Figma era um bloco totalmente customizado. O build usa uma navbar padrão com
-dropdowns no desktop e um drawer offcanvas no mobile — sem JS manual. Veja
+dropdowns no desktop e um drawer offcanvas no mobile, sem JS manual. Veja
 [Navbar](/docs/2026/components/navbar) para o detalhamento completo.
 
 ### Hero
 
 Duas colunas, imagem de um lado, heading/lead/CTA do outro, centralizados verticalmente.
 
-### Accordion — O que esperar
+### Accordion, o que esperar
 
-Responsivo: no mobile é um accordion colapsável; acima de `sm` vira três cards lado a lado (via
-media query em SCSS). Múltiplos painéis podem ficar abertos ao mesmo tempo — veja
+Responsivo. No mobile é um accordion colapsável. Acima de `sm` vira três cards lado a lado, via
+media query em SCSS. Múltiplos painéis podem ficar abertos ao mesmo tempo. Veja
 [Accordion](/docs/2026/components/accordion).
 
 ### Cards de notícias
 
-Uma grade responsiva de cards, três colunas no máximo. Cada card usa `.card.news-card.h-100` —
-a base do card fornece `display: flex; flex-direction: column`, então o link "Leia mais" fica
+Uma grade responsiva de cards, três colunas no máximo. Cada card usa `.card.news-card.h-100`.
+A base do card fornece `display: flex; flex-direction: column`, então o link "Leia mais" fica
 fixado no rodapé com `mt-auto`. Veja [Cards](/docs/2026/components/cards).
 
-O DNA visual do evento — as sombras sticker, underlines animados, tratamento de badge, molduras
-decorativas de mídia e estilos de accordion/patrocinador/avatar — é feito à mão e genuinamente
-customizado; nada disso vem de utility classes prontas.
+O DNA visual do evento é feito à mão e genuinamente customizado: as sombras sticker, underlines
+animados, tratamento de badge, molduras decorativas de mídia e estilos de
+accordion/patrocinador/avatar. Nada disso vem de utility classes prontas.
 
 {/*
 DNA visual WCBR — CSS genuinamente customizado (leitura só por agente, mesmo motivo acima):

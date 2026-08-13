@@ -1,6 +1,6 @@
 ---
 title: Home
-description: WordCamp Brasil 2026 home page — mapping the Figma prototype to the WCBR design system.
+description: WordCamp Brasil 2026 home page, mapping the Figma prototype to the WCBR design system.
 toc: true
 ---
 
@@ -30,28 +30,28 @@ don't survive the move to WordPress, so this stays out of the rendered page):
 ### Header / Navbar
 
 The Figma header was a fully custom block. The build uses a standard navbar with dropdowns on
-desktop and an offcanvas drawer on mobile — no manual JS. See [Navbar](/docs/2026/components/navbar)
+desktop and an offcanvas drawer on mobile, no manual JS. See [Navbar](/docs/2026/components/navbar)
 for the full breakdown.
 
 ### Hero
 
 Two columns, image on one side, heading/lead/CTA on the other, vertically centered.
 
-### Accordion — What to expect
+### Accordion, what to expect
 
-Responsive: on mobile it is a collapsible accordion; above `sm` it becomes three cards side by
-side (via a SCSS media query). Multiple panels can stay open at once — see
+Responsive. On mobile it is a collapsible accordion. Above `sm` it becomes three cards side by
+side, via a SCSS media query. Multiple panels can stay open at once. See
 [Accordion](/docs/2026/components/accordion).
 
 ### News cards
 
-A responsive card grid, three columns at its widest. Each card uses `.card.news-card.h-100` —
-the card base provides `display: flex; flex-direction: column`, so the "Read more" link stays
+A responsive card grid, three columns at its widest. Each card uses `.card.news-card.h-100`.
+The card base provides `display: flex; flex-direction: column`, so the "Read more" link stays
 pinned to the bottom with `mt-auto`. See [Cards](/docs/2026/components/cards).
 
-The event's visual identity — the sticker shadows, animated underlines, badge treatment,
-decorative media frames, and accordion/sponsor/avatar styling — is hand-built and genuinely
-custom; none of it comes from off-the-shelf utility classes.
+The event's visual identity is hand-built and genuinely custom: the sticker shadows, animated
+underlines, badge treatment, decorative media frames, and accordion/sponsor/avatar styling.
+None of it comes from off-the-shelf utility classes.
 
 {/*
 WCBR visual DNA — genuinely custom CSS (agent-readable only, same reason as above):

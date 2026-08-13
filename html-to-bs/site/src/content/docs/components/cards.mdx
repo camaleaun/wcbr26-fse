@@ -1,20 +1,20 @@
 ---
 title: Cards
-description: The news card — a media link, a tag, a title link, and a "read more" icon link.
+description: The news card, a media link, a tag, a title link, and a "read more" icon link.
 toc: true
 ---
 
 The **Latest news** section is a grid of cards. Each card has a linked image, a
-[tag](/docs/2026/components/badges), a title that links to the article, a short excerpt, and a
-"Read more" icon link.
+[tag](/docs/2026/components/badges), a linked title, a short excerpt, and a "Read more" icon
+link.
 
 ## Anatomy
 
-- **Media** — a linked, cropped image (16×9).
-- **Tag** — an uppercase `$orange-600` label (see [Badges](/docs/2026/components/badges)).
-- **Title** — links to the article; hover turns it `$orange-600`.
-- **Excerpt** — body copy.
-- **Read more** — an icon link (`Read more →`).
+- **Media**: a linked, cropped image (16×9).
+- **Tag**: an uppercase `$orange-600` label. See [Badges](/docs/2026/components/badges).
+- **Title**: links to the article. Hover turns it `$orange-600`.
+- **Excerpt**: body copy.
+- **Read more**: an icon link (`Read more →`).
 
 {/*
 Mapping from the prototype (agent-readable only — these Bootstrap classes
@@ -35,6 +35,6 @@ don't survive the move to WordPress, so this stays out of the rendered page):
 ## Notes
 
 - Keep `object-fit: cover` on the image so varied source ratios crop cleanly to 16×9.
-- The news "Read more" link is plain teal text (no underline bar) — use `.icon-link`, not the
+- The news "Read more" link is plain teal text with no underline bar. Use `.icon-link`, not the
   underlined `.link-under` variant used elsewhere.
-- Card titles use `$cyan-800`; the hover color is `$orange-600`.
+- Card titles use `$cyan-800`. The hover color is `$orange-600`.

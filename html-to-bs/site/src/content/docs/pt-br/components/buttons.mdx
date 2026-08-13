@@ -1,17 +1,18 @@
 ---
 title: Botões
-description: Botões do WCBR — o tratamento de CTA sticker, cantos retos, sombra offset rígida, duas cores de marca.
+description: Botões do WCBR, o tratamento de CTA sticker, cantos retos, sombra offset rígida, duas cores de marca.
 toc: true
 ---
 
-O tratamento de marca dos botões — cantos retos, Poppins maiúsculo em peso 900, borda de 2px e uma **sombra offset rígida** que afunda no clique — é aplicado às duas variantes: `.btn-primary` e `.btn-orange`.
+Cantos retos, Poppins maiúsculo em peso 900, borda de 2px e uma **sombra offset rígida** que
+afunda no clique. As duas variantes compartilham esse tratamento: `.btn-primary` e `.btn-orange`.
 
 ## Variantes
 
 | Classe | Preenchimento | Função |
 |---|---|---|
 | `.btn-primary` | `$cyan-700` `#00595d` | Ação primária padrão |
-| `.btn-orange` | `$orange-600` `#c6360b` | CTA do evento — ingressos, newsletter |
+| `.btn-orange` | `$orange-600` `#c6360b` | CTA do evento, ingressos e newsletter |
 
 Existe **um** botão laranja, não vários. Veja [Contraste](#contraste) para entender o porquê.
 
@@ -20,22 +21,29 @@ Existe **um** botão laranja, não vários. Veja [Contraste](#contraste) para en
   <a class="btn btn-orange" href="#">Ingressos</a>
 </div>
 
-Tamanhos são uma questão separada — veja [Tamanhos](#tamanhos) abaixo.
+Tamanhos são uma questão separada. Veja [Tamanhos](#tamanhos) abaixo.
 
 ## Contraste
 
-A escala orange não é intercambiável para preenchimentos. Medida contra texto branco:
+A escala orange precisa da cor de texto certa por tom. Use a que passar:
 
-| Token | Hex | vs. branco | Usável como preenchimento? |
+| Token | Hex | vs. branco | vs. preto |
 |---|---|---|---|
-| `$orange-500` | `#f56530` | **3.09:1** | **Não** — reprovado no WCAG AA |
-| `$orange-600` | `#c6360b` | 5.34:1 | Sim ✓ |
+| `$orange-500` | `#f56530` | 3.09:1, reprovado no WCAG AA | ~6.7:1, aprovado ✓ |
+| `$orange-600` | `#c6360b` | 5.34:1, aprovado ✓ | reprovado |
 
-`$orange-500` deliberadamente não é usado como preenchimento — nesse contraste, uma checagem automática de texto acessível viraria o rótulo para **preto**, e o WCBR não usa preto sobre laranja. Ele permanece como acento para bordas e sombras de sticker.
+`.btn-orange` usa `$orange-600` com texto branco. `$orange-500` é mais claro. Combine com
+texto preto se algum dia for usado como preenchimento. Do contrário, permanece como acento
+para bordas e sombras de sticker.
 
 ## A sombra sticker
 
-A sombra offset é derivada da cor de borda da própria variante, então ela **se recolore por variante** automaticamente — sem CSS por botão. Ambas as variantes são bicolores: o preenchimento fica em um tom, a borda (e portanto a sombra) fica um passo mais escura ou mais clara — `$cyan-900` sob o preenchimento `$cyan-700` na primária, `$orange-500` sob o preenchimento `$orange-600` na laranja.
+A sombra offset é derivada da cor de borda da própria variante, então ela **se recolore por
+variante** automaticamente, sem CSS por botão.
+
+Ambas as variantes são bicolores. O preenchimento fica em um tom. A borda, e portanto a
+sombra, fica um passo mais escura ou mais clara: `$cyan-900` sob o preenchimento `$cyan-700`
+na primária, `$orange-500` sob o preenchimento `$orange-600` na laranja.
 
 ## Interação
 
@@ -48,18 +56,20 @@ A sombra offset é derivada da cor de borda da própria variante, então ela **s
 
 ## Tamanhos
 
-Existem dois tamanhos. O `.btn` base é o menor — o CTA "Ingressos" da navbar é o único lugar onde aparece. `.btn-lg` é o CTA sticker maior, usado em todo o resto (hero, patrocinador, newsletter, drawer).
+Existem dois tamanhos. O `.btn` base é o menor, usado só pelo CTA "Ingressos" da navbar.
+`.btn-lg` é o CTA sticker maior: hero, patrocinador, newsletter, drawer, todo o resto.
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
   <a class="btn btn-orange fw-black" href="#">Ingressos</a>
   <a class="btn btn-orange btn-lg" href="#">Garanta seu ingresso</a>
 </div>
 
-`.btn-lg` já traz o peso (900) sozinho; o tamanho base precisa de `.fw-black` quando também precisar parecer pesado.
+`.btn-lg` já traz o peso (900) sozinho. O tamanho base precisa de `.fw-black` quando também
+precisar parecer pesado.
 
-O CTA de patrocinador ("Torne-se um patrocinador") é uma divergência deliberada do protótipo:
-é renderizado no ciano primário em vez do laranja de ingresso, pra separar uma ação de
-interesse geral dos CTAs de ingresso/newsletter — veja a nota em [Variantes](#variantes) acima.
+O CTA de patrocinador ("Torne-se um patrocinador") é uma divergência deliberada do protótipo.
+É renderizado no ciano primário em vez do laranja de ingresso. Isso separa uma ação de
+interesse geral dos CTAs de ingresso e newsletter. Veja a nota em [Variantes](#variantes) acima.
 
 {/*
 Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
@@ -80,6 +90,6 @@ Divergência do CTA de patrocinador: protótipo mantém laranja/brick, WCBR rend
 
 ## Notas
 
-- Não arredonde os cantos — `$border-radius: 0` é intencional e parte da identidade visual.
-- Rótulos são Poppins 900 maiúsculo; mantenha-os curtos e imperativos.
+- Não arredonde os cantos. `$border-radius: 0` é intencional e parte da identidade visual.
+- Rótulos são Poppins 900 maiúsculo. Mantenha-os curtos e imperativos.
 - `.btn-primary` é **ciano**, não laranja. Use `.btn-orange` para o CTA de ingressos.

@@ -1,19 +1,18 @@
 ---
 title: Buttons
-description: WCBR buttons — the sticker CTA treatment, square corners, hard offset shadow, two brand colors.
+description: WCBR buttons, the sticker CTA treatment, square corners, hard offset shadow, two brand colors.
 toc: true
 ---
 
-The brand button treatment — square corners, heavy uppercase Poppins, a 2px border, and a
-**hard offset shadow** that presses in on click — applies to both button variants:
-`.btn-primary` and `.btn-orange`.
+Square corners, heavy uppercase Poppins, a 2px border, and a **hard offset shadow** that
+presses in on click. Both variants share this treatment: `.btn-primary` and `.btn-orange`.
 
 ## Variants
 
 | Class | Fill | Role |
 |---|---|---|
 | `.btn-primary` | `$cyan-700` `#00595d` | Standard primary action |
-| `.btn-orange` | `$orange-600` `#c6360b` | The event CTA — tickets, newsletter |
+| `.btn-orange` | `$orange-600` `#c6360b` | The event CTA, tickets and newsletter |
 
 There is **one** orange button, not several. See [Contrast](#contrast) for why.
 
@@ -22,27 +21,29 @@ There is **one** orange button, not several. See [Contrast](#contrast) for why.
   <a class="btn btn-orange" href="#">Get your ticket</a>
 </div>
 
-Sizes are a separate concern — see [Sizing](#sizing) below.
+Sizes are a separate concern. See [Sizing](#sizing) below.
 
 ## Contrast
 
-The orange scale is not interchangeable for fills. Measured against white text:
+The orange scale needs the right text color per shade. Pick whichever passes:
 
-| Token | Hex | vs. white | Usable as a fill? |
+| Token | Hex | vs. white | vs. black |
 |---|---|---|---|
-| `$orange-500` | `#f56530` | **3.09:1** | **No** — fails WCAG AA |
-| `$orange-600` | `#c6360b` | 5.34:1 | Yes ✓ |
+| `$orange-500` | `#f56530` | 3.09:1, fails WCAG AA | ~6.7:1, passes ✓ |
+| `$orange-600` | `#c6360b` | 5.34:1, passes ✓ | fails |
 
-`$orange-500` is deliberately not used as a fill — at that contrast an automatic accessible-text
-check would flip the label to **black**, and WCBR does not use black-on-orange. It stays an
-accent for borders and sticker shadows only.
+`.btn-orange` fills with `$orange-600` and white text. `$orange-500` is lighter. Pair it with
+black text if it's ever used as a fill. Otherwise it stays an accent for borders and sticker
+shadows.
 
 ## The sticker shadow
 
-The offset shadow is drawn from the variant's own border color, so it **recolors itself per
-variant** automatically — no per-button CSS. Both variants are two-tone: the fill stays one
-shade, the border (and therefore the shadow) sits a step darker or lighter — `$cyan-900` under
-the `$cyan-700` fill for primary, `$orange-500` under the `$orange-600` fill for orange.
+The offset shadow reads its color from the variant's own border. Change the border, the shadow
+follows. No per-button CSS needed.
+
+Both variants are two-tone. The fill stays one shade. The border, and the shadow, sits a step
+darker or lighter: `$cyan-900` under the `$cyan-700` fill for primary, `$orange-500` under the
+`$orange-600` fill for orange.
 
 ## Interaction
 
@@ -55,21 +56,20 @@ the `$cyan-700` fill for primary, `$orange-500` under the `$orange-600` fill for
 
 ## Sizing
 
-There are two sizes. Base `.btn` is the smaller one — the navbar "Ingressos" CTA is the only
-place it appears. `.btn-lg` is the bigger sticker CTA used everywhere else (hero, sponsor,
-newsletter, drawer).
+There are two sizes. Base `.btn` is the small one, used only by the navbar "Ingressos" CTA.
+`.btn-lg` is the big sticker CTA: hero, sponsor, newsletter, drawer, everywhere else.
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
   <a class="btn btn-orange fw-black" href="#">Tickets</a>
   <a class="btn btn-orange btn-lg" href="#">Get your ticket</a>
 </div>
 
-`.btn-lg` carries its own weight (900) automatically; the base size needs `.fw-black` added
+`.btn-lg` carries its own weight (900) automatically. The base size needs `.fw-black` added
 when it should look just as heavy.
 
-The sponsor CTA ("Torne-se um patrocinador") is one deliberate divergence from the prototype:
-it's rendered in the primary cyan instead of the ticket orange, to separate a general-interest
-action from ticket/newsletter CTAs — see the [Variants](#variants) note above.
+The sponsor CTA ("Torne-se um patrocinador") is one deliberate change from the prototype. It's
+primary cyan, not ticket orange. That keeps it visually apart from the ticket and newsletter
+CTAs. See [Variants](#variants).
 
 {/*
 Mapping from the prototype (agent-readable only — these Bootstrap classes
@@ -90,6 +90,6 @@ Sponsor CTA divergence: prototype keeps orange/brick, WCBR renders `.btn.btn-pri
 
 ## Notes
 
-- Do not round the corners — square corners are intentional and brand-defining.
-- Labels are uppercase Poppins 900; keep them short and imperative.
+- Do not round the corners. Square corners are intentional and brand-defining.
+- Labels are uppercase Poppins 900. Keep them short and imperative.
 - `.btn-primary` is **cyan**, not orange. Use `.btn-orange` for the ticket CTA.

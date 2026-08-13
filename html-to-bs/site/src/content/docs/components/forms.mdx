@@ -1,11 +1,11 @@
 ---
 title: Forms
-description: The newsletter signup — an email field paired with the orange CTA on a cyan band.
+description: The newsletter signup, an email field paired with the orange CTA on a cyan band.
 toc: true
 ---
 
-The only form in the site is the **newsletter signup**: a single email field and a submit
-button, laid out side by side on `md+` and stacked on mobile, sitting on a `$cyan-700` band.
+The only form on the site is the **newsletter signup**: an email field and a submit button,
+side by side on `md+`, stacked on mobile. It sits on a `$cyan-700` band.
 
 ## Newsletter
 
@@ -19,12 +19,12 @@ button, laid out side by side on `md+` and stacked on mobile, sitting on a `$cya
 
 ## Rules
 
-- **Always label the field.** The visible design has no label, so use `.visually-hidden` —
-  never a bare `placeholder` as the only description.
-- **Square the corners.** `.rounded-0` matches the brand (the theme sets `$border-radius: 0`,
-  so this is usually already the case).
+- **Always label the field.** The visible design has no label, so use `.visually-hidden`.
+  Never rely on a bare `placeholder` as the only description.
+- **Square the corners.** `.rounded-0` matches the brand. The theme sets `$border-radius: 0`,
+  so this is usually already the case.
 - **Use `.btn-orange` for submit.** See [Buttons](/docs/2026/components/buttons).
-- The input renders on `$sand-100` with `$gray-700` text; on focus the border goes white.
+- The input renders on `$sand-100` with `$gray-700` text. On focus the border goes white.
 
 {/*
 Mapping from the prototype (agent-readable only — these Bootstrap classes
@@ -40,6 +40,6 @@ don't survive the move to WordPress, so this stays out of the rendered page):
 
 ## Notes
 
-- Keep `novalidate` on the form only if you handle validation yourself; otherwise let the
+- Keep `novalidate` on the form only if you handle validation yourself. Otherwise let the
   browser validate `type="email"` + `required`.
 - For error and success states use the standard validation classes.

@@ -1,6 +1,6 @@
 ---
 title: Accordion
-description: O accordion de formatos de sessão — um item recolhível por formato, com ícone à esquerda.
+description: O accordion de formatos de sessão, um item recolhível por formato, com ícone à esquerda.
 toc: true
 ---
 
@@ -8,13 +8,16 @@ A seção **O que esperar** (formatos) é um accordion: cada formato de sessão 
 
 ## Estrutura
 
-Cada item é um bloco recolhível: um botão de cabeçalho (que carrega o caret nativo) e um corpo recolhível. O caret customizado do protótipo (`.fmt__caret`) foi removido — o próprio botão de cabeçalho desenha o dele. O ícone de entrada é mantido como `<span>` antes do rótulo.
+Cada item é um bloco recolhível: um botão de cabeçalho (que carrega o caret nativo) e um corpo
+recolhível. O caret customizado do protótipo (`.fmt__caret`) foi removido. O próprio botão de
+cabeçalho desenha o dele. O ícone de entrada é mantido como `<span>` antes do rótulo.
 
 O ícone usa um de três modificadores de cor: `.format-icon-cyan`, `.format-icon-orange` ou
 `.format-icon-panel`. Em `sm+`, `.formats-accordion` dispõe os três itens lado a lado e
 mantém todos os painéis abertos.
 
-Apenas um item abre por vez, igual ao protótipo — isso é controlado por grupo, então remover o vínculo do grupo abre a porta para múltiplos painéis abertos ao mesmo tempo, se algum dia precisar.
+Apenas um item abre por vez, igual ao protótipo. Isso é controlado por grupo. Remova o vínculo
+do grupo se múltiplos painéis precisarem ficar abertos ao mesmo tempo algum dia.
 
 {/*
 Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
@@ -35,5 +38,5 @@ sobrevivem à migração pro WordPress, então isso fica fora da página renderi
 ## Notas
 
 - Os três formatos são **Palestras**, **Mini Palestras** e **Painéis**.
-- Os headings ficam dentro do botão; mantenha-os como `h3` para o outline do documento.
-- Requer o comportamento de collapse do site — já carregado globalmente.
+- Os headings ficam dentro do botão. Mantenha-os como `h3` para o outline do documento.
+- Requer o comportamento de collapse do site, já carregado globalmente.

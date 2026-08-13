@@ -1,6 +1,6 @@
 ---
 title: Navbar
-description: O cabeçalho do site — navbar sticky com dropdowns no desktop e drawer offcanvas no mobile.
+description: O cabeçalho do site, navbar sticky com dropdowns no desktop e drawer offcanvas no mobile.
 toc: true
 ---
 
@@ -12,13 +12,17 @@ O cabeçalho é uma barra fixa com borda inferior. Dentro dela: o logo da marca,
 
 ## Dropdowns
 
-Os submenus do desktop abrem no clique, substituindo os menus hover customizados do protótipo — o ícone do caret é desenhado pelo próprio botão de toggle, então o SVG artesanal do protótipo foi removido.
+Os submenus do desktop abrem no clique, não no hover como o protótipo. O próprio botão de
+toggle desenha o caret, então o SVG artesanal do protótipo foi removido.
 
 Links de nav são Poppins 700 maiúsculo em `$cyan-700`, com borda inferior transparente de 3px que fica laranja no hover.
 
 ## Drawer offcanvas
 
-No mobile o menu vira um painel offcanvas que abre pelo lado. O submenu "Evento" do cabeçalho vira uma sublista recolhível dentro do drawer, acionada pelo próprio botão. O caret do drawer gira 180° quando seu controle está expandido, acionado puramente por `[aria-expanded="true"]` — sem JavaScript próprio.
+No mobile o menu vira um painel offcanvas que abre pelo lado. O submenu "Evento" do cabeçalho vira uma sublista recolhível dentro do drawer, acionada pelo próprio botão.
+
+O caret do drawer gira 180° quando seu controle está expandido. Isso é acionado puramente por
+`[aria-expanded="true"]`, sem JavaScript próprio.
 
 {/*
 Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
@@ -39,6 +43,6 @@ sobrevivem à migração pro WordPress, então isso fica fora da página renderi
 
 ## Notas
 
-- Todo o JavaScript customizado do drawer foi substituído por atributos data declarativos — o site não embarca nenhum script de nav próprio.
-- Mantenha `aria-label` no link de marca e no toggler; a imagem do logo carrega o texto alternativo.
+- Todo o JavaScript customizado do drawer foi substituído por atributos data declarativos. O site não embarca nenhum script de nav próprio.
+- Mantenha `aria-label` no link de marca e no toggler. A imagem do logo carrega o texto alternativo.
 - O cabeçalho fica fixo no topo (`.sticky-top`) com borda inferior, sobre `$sand-100`.

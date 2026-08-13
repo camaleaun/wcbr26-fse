@@ -1,6 +1,6 @@
 ---
 title: Accordion
-description: The session-formats accordion — a collapsible item per format, with a leading icon.
+description: The session-formats accordion, a collapsible item per format, with a leading icon.
 toc: true
 ---
 
@@ -10,15 +10,15 @@ collapsible item with a leading icon, an uppercase heading, and a body of copy.
 ## Structure
 
 Each item is a collapsible block: a header button (which carries the built-in caret) and a
-collapsible body. The prototype's custom caret (`.fmt__caret`) is dropped — the header button
+collapsible body. The prototype's custom caret (`.fmt__caret`) is dropped. The header button
 draws its own. The leading icon is kept as a `<span>` before the label.
 
 The icon takes one of three color modifiers: `.format-icon-cyan`, `.format-icon-orange`, or
 `.format-icon-panel`. On `sm+`, `.formats-accordion` lays the three items out side by side and
 keeps every panel open.
 
-Only one item opens at a time, matching the prototype — that's controlled per group, so
-dropping the group link opens the door to multiple panels open at once if ever needed.
+Only one item opens at a time, matching the prototype. That's set per group. Drop the group
+link if multiple panels ever need to stay open together.
 
 {/*
 Mapping from the prototype (agent-readable only — these Bootstrap classes
@@ -39,5 +39,5 @@ don't survive the move to WordPress, so this stays out of the rendered page):
 ## Notes
 
 - The three formats are **Talks**, **Lightning Talks**, and **Panels**.
-- Headings sit inside the button; keep them as `h3` for the document outline.
-- Needs the site's collapse behavior JS — already loaded site-wide.
+- Headings sit inside the button. Keep them as `h3` for the document outline.
+- Needs the site's collapse behavior JS, already loaded site-wide.
