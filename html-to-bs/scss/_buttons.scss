@@ -36,7 +36,11 @@
   &.disabled { box-shadow: none; transform: none; }
 }
 
-.btn-lg { letter-spacing: .05em; }
+// The big sticker CTA is always heavy — no need for .fw-black on top of it.
+.btn-lg {
+  letter-spacing: .05em;
+  --#{$prefix}btn-font-weight: 900;
+}
 
 // The CTA is two-tone: the fill stays dark enough for white text (5.34:1) while
 // the border — and therefore the sticker shadow — lifts to the lighter orange.

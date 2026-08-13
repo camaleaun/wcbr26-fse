@@ -226,8 +226,9 @@ $container-padding-x: 3rem;
 
 // scss-docs-start wcbr-button-variables
 $btn-font-family:  $headings-font-family;
-// Neutral default — the sticker weight (900) is opt-in via .fw-black
-// (see scss/_utilities.scss), not baked into every .btn.
+// Neutral default for the base size. .btn-lg bakes its own 900 back in
+// (scss/_buttons.scss); the base-size CTA opts in via .fw-black (see
+// scss/_utilities.scss) when it needs to look heavy too.
 $btn-font-weight:  400;
 $btn-line-height:  1.5;
 $btn-border-width: 2px;
@@ -240,9 +241,9 @@ $btn-padding-y:    .375rem; // 6px
 $btn-padding-x:    .75rem;  // 12px
 $btn-font-size:    1rem;
 
-$btn-padding-y-lg: 1.25rem; // 20px
-$btn-padding-x-lg: 2.5rem;  // 40px
-$btn-font-size-lg: 1.05rem;
+$btn-padding-y-lg: .8125rem; // 13px
+$btn-padding-x-lg: 1.625rem; // 26px
+$btn-font-size-lg: 1.25rem;
 
 // Offset of the signature hard "sticker" shadow.
 $btn-sticker-offset: 5px;

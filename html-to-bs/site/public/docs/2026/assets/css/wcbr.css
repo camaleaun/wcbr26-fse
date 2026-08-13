@@ -1968,9 +1968,9 @@ textarea.form-control-lg {
 }
 
 .btn-lg {
-  --wp--btn-padding-y: 1.25rem;
-  --wp--btn-padding-x: 2.5rem;
-  --wp--btn-font-size: 1.05rem;
+  --wp--btn-padding-y: 0.8125rem;
+  --wp--btn-padding-x: 1.625rem;
+  --wp--btn-font-size: 1.25rem;
   --wp--btn-border-radius: var(--wp--border-radius-lg);
 }
 
@@ -8289,6 +8289,7 @@ h3, .h3 {
 
 .btn-lg {
   letter-spacing: 0.05em;
+  --wp--btn-font-weight: 900;
 }
 
 .btn-orange {

@@ -111,7 +111,7 @@ svg.icon, .social svg, .sponsor-icon svg, .avatar svg {
 }
 .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 0 var(--orange-500); }
 .btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 0 var(--orange-500); }
-.btn-lg { padding: 20px 40px; font-size: 1.05rem; letter-spacing: .05em; }
+.btn-lg { padding: 13px 26px; font-size: 1.25rem; letter-spacing: .05em; }
 /* Sticker weight is opt-in — matches .fw-black in the WCBR Bootstrap build */
 .fw-black { font-weight: 900; }
 .btn-brick { background: var(--orange-600); border-color: var(--orange-500); box-shadow: 5px 5px 0 0 var(--orange-500); }

@@ -92,12 +92,12 @@ smaller size.
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
   <a class="btn btn-orange fw-black" href="#">Tickets</a>
-  <a class="btn btn-orange btn-lg fw-black" href="#">Get your ticket</a>
+  <a class="btn btn-orange btn-lg" href="#">Get your ticket</a>
 </div>
 
 ```html
 <a class="btn btn-orange fw-black" href="#ingressos">Tickets</a>
-<a class="btn btn-orange btn-lg fw-black" href="#ingressos">Get your ticket</a>
+<a class="btn btn-orange btn-lg" href="#ingressos">Get your ticket</a>
 ```
 
 ```scss
@@ -110,9 +110,11 @@ $btn-padding-y:    .375rem;  // 6px — Bootstrap's own default, base
 $btn-padding-x:    .75rem;   // 12px
 $btn-font-size:    1rem;
 
-$btn-padding-y-lg: 1.25rem;  // 20px — .btn-lg
-$btn-padding-x-lg: 2.5rem;   // 40px
-$btn-font-size-lg: 1.05rem;
+$btn-padding-y-lg: .8125rem; // 13px — .btn-lg
+$btn-padding-x-lg: 1.625rem; // 26px
+$btn-font-size-lg: 1.25rem;
+// .btn-lg also bakes its own weight back in (scss/_buttons.scss) — no need
+// for .fw-black on top of it.
 ```
 
 ## Mapping from the prototype
