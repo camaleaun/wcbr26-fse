@@ -1,10 +1,10 @@
-- name: red
+- name: Red
   hex: '#ff4419'
-- name: orange
+- name: Orange
   hex: '#f56530'
-- name: cyan
+- name: Cyan
   hex: '#00c7c9'
-- name: white
+- name: Base
   hex: '#fff'
-- name: gray
+- name: Gray
   hex: '#6c757d'

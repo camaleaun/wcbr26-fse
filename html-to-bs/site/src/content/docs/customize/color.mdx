@@ -9,13 +9,13 @@ import { getSequence } from '@libs/utils'
 
 <div class="row font-monospace">
   {getData('colors').map((color) => {
-    if ((color.name === "red")) {
+    if ((color.name === "Red")) {
       return (
         <div class="col-md-4 mb-3">
-          <div class="p-3 mb-2 position-relative swatch-red-200"><strong class="d-block">Red 200</strong>#ffb4a3</div>
+          <div class="p-3 mb-2 position-relative swatch-red-200"><strong class="d-block">{color.name} 200</strong>#ffb4a3</div>
           {getSequence(200, 200, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>Red {value}</div>
+              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
             )
           })}
         </div>
@@ -24,17 +24,17 @@ import { getSequence } from '@libs/utils'
   })}
 
   {getData('colors').map((color) => {
-    if ((color.name === "orange")) {
+    if ((color.name === "Orange")) {
       return (
         <div class="col-md-4 mb-3">
           <div class={`p-3 mb-2 position-relative swatch-${color.name}`}>
-            <strong class="d-block">Orange</strong>
+            <strong class="d-block">{color.name}</strong>
             {color.hex}
           </div>
 
           {getSequence(500, 600, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>Orange {value}</div>
+              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
             )
           })}
         </div>
@@ -43,13 +43,13 @@ import { getSequence } from '@libs/utils'
   })}
 
   {getData('colors').map((color) => {
-    if ((color.name === "cyan")) {
+    if ((color.name === "Cyan")) {
       return (
         <div class="col-md-4 mb-3">
-          <div class="p-3 mb-2 position-relative swatch-cyan-700"><strong class="d-block">Cyan 700</strong>#00595d</div>
+          <div class="p-3 mb-2 position-relative swatch-cyan-700"><strong class="d-block">{color.name} 700</strong>#00595d</div>
           {getSequence(700, 900, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>Cyan {value}</div>
+              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
             )
           })}
         </div>
@@ -58,10 +58,10 @@ import { getSequence } from '@libs/utils'
   })}
 
   <div class="col-md-4 mb-3">
-    <div class="p-3 mb-2 position-relative swatch-gray-400"><strong class="d-block">Gray 400</strong>#bec9c8</div>
-    {getData('grays').map((gray) => {
+    <div class="p-3 mb-2 position-relative swatch-gray-400"><strong class="d-block">{color.name} 400</strong>#bec9c8</div>
+    {getData('grays').map((Gray) => {
       return (
-        <div class={`p-3 bd-gray-${gray.name}`}>Gray {gray.name}</div>
+        <div class={`p-3 bd-gray-${gray.name}`}>{color.name} {gray.name}</div>
       )
     })}
   </div>
