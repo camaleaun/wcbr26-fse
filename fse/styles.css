@@ -133,6 +133,7 @@ body { font-size: 1.125rem; line-height: 1.45; }
 /* ── News cards (wp:query post-template) ── */
 .news-card { background:var(--wp--preset--color--sand-100); border:1px solid var(--wp--preset--color--gray-400); }
 .news-card-body { flex:1; }
+.news-card > .wp-block-group { gap: 8px !important; }
 /* Mobile: sem imagem e sem descrição (mirrors ref CSS) */
 .news-card .wp-block-post-featured-image { display:none; }
 .news-card .wp-block-post-excerpt { display:none; }

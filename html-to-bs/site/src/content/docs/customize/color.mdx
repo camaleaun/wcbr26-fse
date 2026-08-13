@@ -8,14 +8,25 @@ import { getData } from '@libs/data'
 import { getSequence } from '@libs/utils'
 
 <div class="row font-monospace">
+  <div class="col-md-4 mb-3">
+    <div class="p-3 mb-2 wcbrd-white border">
+      <strong class="d-block">Base</strong>
+      #fff
+    </div>
+    <div class="p-3 mb-2 wcbrd-black text-white">
+      <strong class="d-block">Contrast</strong>
+      #111
+    </div>
+  </div>
+
   {getData('colors').map((color) => {
     if ((color.name === "Red")) {
       return (
         <div class="col-md-4 mb-3">
-          <div class="p-3 mb-2 position-relative swatch-red-200"><strong class="d-block">{color.name} 200</strong>#ffb4a3</div>
+          <div class={`p-3 mb-2 position-relative swatch-${color.slug}-200`}><strong class="d-block">{color.name} 200</strong>#ffb4a3</div>
           {getSequence(200, 200, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
+              <div class={`p-3 wcbrd-${color.slug}-${value}`}>{color.name} {value}</div>
             )
           })}
         </div>
@@ -34,7 +45,7 @@ import { getSequence } from '@libs/utils'
 
           {getSequence(500, 600, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
+              <div class={`p-3 wcbrd-${color.slug}-${value}`}>{color.name} {value}</div>
             )
           })}
         </div>
@@ -46,10 +57,10 @@ import { getSequence } from '@libs/utils'
     if ((color.name === "Cyan")) {
       return (
         <div class="col-md-4 mb-3">
-          <div class="p-3 mb-2 position-relative swatch-{color.slug}-700"><strong class="d-block">{color.name} 700</strong>#00595d</div>
+          <div class={`p-3 mb-2 position-relative swatch-${color.slug}-700`}><strong class="d-block">{color.name} 700</strong>#00595d</div>
           {getSequence(700, 900, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
+              <div class={`p-3 wcbrd-${color.slug}-${value}`}>{color.name} {value}</div>
             )
           })}
         </div>
@@ -61,19 +72,8 @@ import { getSequence } from '@libs/utils'
     <div class="p-3 mb-2 position-relative swatch-gray-400"><strong class="d-block">Gray 400</strong>#bec9c8</div>
     {getData('grays').map((gray) => {
       return (
-        <div class={`p-3 bd-gray-${gray.name}`}>Gray {gray.name}</div>
+        <div class={`p-3 wcbrd-gray-${gray.slug}`}>Gray {gray.name}</div>
       )
     })}
-  </div>
-
-  <div class="col-md-4 mb-3">
-    <div class="p-3 mb-2 bd-black text-white">
-      <strong class="d-block">Contrast</strong>
-      #111
-    </div>
-    <div class="p-3 mb-2 bd-white border">
-      <strong class="d-block">Base</strong>
-      #fff
-    </div>
   </div>
 </div>

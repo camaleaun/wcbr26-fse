@@ -23,7 +23,9 @@ const dataDefinitions = {
       container: zPxSizeOrEmpty
     })
     .array(),
-  colors: zNamedHexColors(5),
+  colors: zNamedHexColors(5).transform((colors) =>
+    colors.map((c) => ({ ...c, slug: getSlug(String(c.name)) }))
+  ),
   'core-team': z
     .object({
       name: z.string(),
@@ -54,7 +56,9 @@ const dataDefinitions = {
         .array()
     })
     .array(),
-  grays: zNamedHexColors(5),
+  grays: zNamedHexColors(5).transform((grays) =>
+    grays.map((g) => ({ ...g, slug: String(g.name) }))
+  ),
   icons: z.object({
     preferred: z
       .object({
