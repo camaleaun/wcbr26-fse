@@ -24,6 +24,7 @@ figure.hero-frame img {
 .wcb_sponsor {
   border: 2px solid var(--wp--preset--color--custom-gray-400) !important;
   aspect-ratio: 282 / 96;
+  max-height: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
