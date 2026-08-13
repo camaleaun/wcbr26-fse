@@ -1,35 +1,35 @@
 // Local docs variables
-$bd-cyan:       $cyan-700;
-$bd-cyan-light: lighten(saturate($bd-cyan, 5%), 45%); // stylelint-disable-line function-disallowed-list
-$bd-accent:     #ffe484;
+$wcbrd-cyan:       $cyan-700;
+$wcbrd-cyan-light: lighten(saturate($wcbrd-cyan, 5%), 45%); // stylelint-disable-line function-disallowed-list
+$wcbrd-accent:     #ffe484;
 
-$bd-gutter-x: 3rem;
-$bd-callout-variants: info, warning, danger !default;
+$wcbrd-gutter-x: 3rem;
+$wcbrd-callout-variants: info, warning, danger !default;
 
 :root,
 [data-bs-theme="light"] {
-  --bd-cyan: #{to-hex($bd-cyan)};
-  --bd-accent: #{$bd-accent};
-  --bd-cyan-rgb: #{to-rgb($bd-cyan)}; // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
-  --bd-accent-rgb: #{to-rgb($bd-accent)}; // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
-  --bd-pink-rgb: #{to-rgb($pink-500)};
-  --bd-teal-rgb: #{to-rgb($teal-500)};
-  --bd-cyan-bg: var(--bd-cyan);
-  --bd-toc-color: var(--bd-cyan);
-  --bd-sidebar-link-bg: rgba(var(--bd-cyan-rgb), .1);
-  --bd-callout-link: #{to-rgb($blue-600)};
-  --bd-callout-code-color: #{$pink-600};
-  --bd-pre-bg: var(--bs-tertiary-bg);
+  --wcbrd-cyan: #{to-hex($wcbrd-cyan)};
+  --wcbrd-accent: #{$wcbrd-accent};
+  --wcbrd-cyan-rgb: #{to-rgb($wcbrd-cyan)}; // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
+  --wcbrd-accent-rgb: #{to-rgb($wcbrd-accent)}; // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
+  --wcbrd-pink-rgb: #{to-rgb($pink-500)};
+  --wcbrd-teal-rgb: #{to-rgb($teal-500)};
+  --wcbrd-cyan-bg: var(--wcbrd-cyan);
+  --wcbrd-toc-color: var(--wcbrd-cyan);
+  --wcbrd-sidebar-link-bg: rgba(var(--wcbrd-cyan-rgb), .1);
+  --wcbrd-callout-link: #{to-rgb($blue-600)};
+  --wcbrd-callout-code-color: #{$pink-600};
+  --wcbrd-pre-bg: var(--bs-tertiary-bg);
   // $pink (#d63384) = 4.28:1 on cream $body-bg — fails WCAG AA; shade 20% → 6.12:1
   --#{$prefix}code-color: #{shade-color($pink, 20%)};
 }
 
 @include color-mode(dark, true) {
-  --bd-cyan: #{mix($bd-cyan, $white, 75%)}; // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
-  --bd-cyan-bg: #{$bd-cyan};
-  --bd-toc-color: var(--#{$prefix}emphasis-color);
-  --bd-sidebar-link-bg: rgba(#{to-rgb(mix($bd-cyan, $black, 75%))}, .5); // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
-  --bd-callout-link: #{to-rgb($blue-300)};
-  --bd-callout-code-color: #{$pink-300};
-  --bd-pre-bg: #{adjust-color($gray-900, $lightness: -2.5%)}; // stylelint-disable-line scss/at-function-named-arguments
+  --wcbrd-cyan: #{mix($wcbrd-cyan, $white, 75%)}; // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
+  --wcbrd-cyan-bg: #{$wcbrd-cyan};
+  --wcbrd-toc-color: var(--#{$prefix}emphasis-color);
+  --wcbrd-sidebar-link-bg: rgba(#{to-rgb(mix($wcbrd-cyan, $black, 75%))}, .5); // stylelint-disable-line scss/dollar-variable-no-missing-interpolation
+  --wcbrd-callout-link: #{to-rgb($blue-300)};
+  --wcbrd-callout-code-color: #{$pink-300};
+  --wcbrd-pre-bg: #{adjust-color($gray-900, $lightness: -2.5%)}; // stylelint-disable-line scss/at-function-named-arguments
 }

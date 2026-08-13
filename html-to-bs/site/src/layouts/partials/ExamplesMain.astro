@@ -8,11 +8,11 @@ import { getSlug } from '@libs/utils'
 {
   getData('examples').map(({ category, description, examples, external }) => {
     return (
-      <div class="bd-content">
+      <div class="wcbrd-content">
         <h2 id={getSlug(category)}>{category}</h2>
         <p>{description}</p>
         {category === 'RTL' && (
-          <div class="bd-callout bd-callout-warning small">
+          <div class="wcbrd-callout wcbrd-callout-warning small">
             <p>
               <strong>RTL is still experimental</strong> and will evolve with feedback. Spotted something or have an
               improvement to suggest?

@@ -6,7 +6,7 @@
 //   Doing so gives us access to the same core utilities provided by Bootstrap.
 //   For example, consistent media queries through those mixins.
 //
-// - Bootstrap's **docs variables** are prefixed with `$bd-`.
+// - Bootstrap's **docs variables** are prefixed with `$wcbrd-`.
 //   These custom colors avoid collision with the components Bootstrap provides.
 //
 // - Classes are prefixed with `.wcbrd-`.
@@ -56,4 +56,4 @@ $enable-cssgrid: true;
 
 // WCBR: single light theme — remove this block to re-enable the theme toggle
 .wcbrd-theme-divider,
-.nav-item:has(#bd-theme) { display: none; }
+.nav-item:has(#wcbrd-theme) { display: none; }

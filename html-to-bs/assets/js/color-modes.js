@@ -30,13 +30,13 @@
   setTheme(getPreferredTheme())
 
   const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme')
+    const themeSwitcher = document.querySelector('#wcbrd-theme')
 
     if (!themeSwitcher) {
       return
     }
 
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const themeSwitcherText = document.querySelector('#wcbrd-theme-text')
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
     const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')

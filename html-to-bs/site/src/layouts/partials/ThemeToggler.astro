@@ -9,8 +9,8 @@ const { layout } = Astro.props
 ---
 
 <button
-  class=`btn ${layout === 'examples' ? 'btn-bd-primary' : 'btn-link nav-link px-0 px-lg-2'} py-2 dropdown-toggle d-flex align-items-center`
-  id="bd-theme"
+  class=`btn ${layout === 'examples' ? 'btn-wcbrd-primary' : 'btn-link nav-link px-0 px-lg-2'} py-2 dropdown-toggle d-flex align-items-center`
+  id="wcbrd-theme"
   type="button"
   aria-expanded="false"
   data-bs-toggle="dropdown"
@@ -18,9 +18,9 @@ const { layout } = Astro.props
   aria-label="Toggle theme (auto)"
 >
   <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
-  <span class=`${layout === 'examples' ? 'visually-hidden' : 'd-lg-none ms-2'}` id="bd-theme-text">Toggle theme</span>
+  <span class=`${layout === 'examples' ? 'visually-hidden' : 'd-lg-none ms-2'}` id="wcbrd-theme-text">Toggle theme</span>
 </button>
-<ul class=`dropdown-menu dropdown-menu-end${layout === 'examples' ? ' shadow' : ''}` aria-labelledby="bd-theme-text">
+<ul class=`dropdown-menu dropdown-menu-end${layout === 'examples' ? ' shadow' : ''}` aria-labelledby="wcbrd-theme-text">
   <li>
     <button
       type="button"

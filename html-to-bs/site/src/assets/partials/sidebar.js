@@ -1,7 +1,7 @@
 export default () => {
   // Scroll the active sidebar link into view
-  const sidenav = document.querySelector('.bd-sidebar')
-  const sidenavActiveLink = document.querySelector('.bd-links-nav .active')
+  const sidenav = document.querySelector('.wcbrd-sidebar')
+  const sidenavActiveLink = document.querySelector('.wcbrd-links-nav .active')
 
   if (!sidenav || !sidenavActiveLink) {
     return

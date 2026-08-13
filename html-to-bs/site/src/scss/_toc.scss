@@ -39,8 +39,8 @@
 
       &:hover,
       &.active {
-        color: var(--bd-toc-color);
-        border-left-color: var(--bd-toc-color);
+        color: var(--wcbrd-toc-color);
+        border-left-color: var(--wcbrd-toc-color);
       }
 
       &.active {
@@ -72,14 +72,14 @@
     &:focus,
     &:active,
     &[aria-expanded="true"] {
-      color: var(--bd-cyan);
+      color: var(--wcbrd-cyan);
       background-color: var(--bs-body-bg);
-      border-color: var(--bd-cyan);
+      border-color: var(--wcbrd-cyan);
     }
 
     &:focus,
     &[aria-expanded="true"] {
-      box-shadow: 0 0 0 3px rgba(var(--bd-cyan-rgb), .25);
+      box-shadow: 0 0 0 3px rgba(var(--wcbrd-cyan-rgb), .25);
     }
   }
 }

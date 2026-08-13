@@ -1,12 +1,12 @@
 .wcbrd-masthead {
-  --bd-pink-rgb: #{to-rgb($pink)};
+  --wcbrd-pink-rgb: #{to-rgb($pink)};
   padding: 3rem 0;
   // stylelint-disable
   background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), .01), rgba(var(--bs-body-bg-rgb), 1) 85%),
                     radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), .5), transparent 50%),
-                    radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), .5), transparent 50%),
-                    radial-gradient(ellipse at center right, rgba(var(--bd-cyan-rgb), .5), transparent 50%),
-                    radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), .5), transparent 50%);
+                    radial-gradient(ellipse at top right, rgba(var(--wcbrd-accent-rgb), .5), transparent 50%),
+                    radial-gradient(ellipse at center right, rgba(var(--wcbrd-cyan-rgb), .5), transparent 50%),
+                    radial-gradient(ellipse at center left, rgba(var(--wcbrd-pink-rgb), .5), transparent 50%);
   // stylelint-enable
 
   h1 {
@@ -98,7 +98,7 @@
 }
 
 .masthead-notice {
-  background-color: var(--bd-accent);
+  background-color: var(--wcbrd-accent);
   box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), .15), 0 .25rem 1.5rem rgba(var(--bs-body-bg-rgb), .75);
 }
 

@@ -10,7 +10,7 @@ O WCBR tem dois padrões de rótulo: um **badge preenchido** para metadados em d
 
 Use o `.badge` do Bootstrap com uma cor `.text-bg-*`. O tratamento de marca — Poppins, maiúsculo, letter-spacing e o raio de 2px — fica no base `.badge`, então **todas** as variantes de cor herdam.
 
-<div class="bd-example d-flex flex-wrap align-items-center gap-3">
+<div class="wcbrd-example d-flex flex-wrap align-items-center gap-3">
   <span class="badge text-bg-primary">Belo Horizonte</span>
   <span class="badge text-bg-orange">Outubro 2026</span>
   <span class="badge text-bg-dark">30 e 31 de outubro</span>
@@ -24,7 +24,7 @@ Use o `.badge` do Bootstrap com uma cor `.text-bg-*`. O tratamento de marca — 
 `text-bg-orange` existe porque `orange` está registrado em `$theme-colors` — veja
 [Botões](/docs/2026/components/buttons#variantes).
 
-<div class="bd-callout bd-callout-warning">
+<div class="wcbrd-callout wcbrd-callout-warning">
 
 **Não existe `.badge-orange` ou `.badge-primary`.** O Bootstrap 5 removeu as variantes de cor `.badge-*` (era a API do Bootstrap 4) em favor de `.text-bg-*`, que define o fundo **e** escolhe um texto legível. Use `.text-bg-orange`, não `.badge-orange`.
 
@@ -46,7 +46,7 @@ $badge-border-radius: 2px;
 
 Uma **tag** é um rótulo pequeno, maiúsculo, com letter-spacing e **sem preenchimento** — usada acima dos títulos de cards e no cabeçalho. Montserrat 600, `$orange-900`, `.8125rem`, `letter-spacing: .06em`.
 
-<div class="bd-example">
+<div class="wcbrd-example">
   <span class="tag">Convocação</span>
 </div>
 

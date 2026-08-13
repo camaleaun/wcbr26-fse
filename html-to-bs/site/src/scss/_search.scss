@@ -1,8 +1,8 @@
 // stylelint-disable selector-class-pattern
 
 :root {
-  --docsearch-primary-color: var(--bd-cyan);
-  --docsearch-logo-color: var(--bd-cyan);
+  --docsearch-primary-color: var(--wcbrd-cyan);
+  --docsearch-logo-color: var(--wcbrd-cyan);
 }
 
 @include color-mode(dark, true) {
@@ -60,7 +60,7 @@
   --docsearch-searchbox-background: #{rgba($black, .1)};
   --docsearch-searchbox-color: #{$white};
   --docsearch-searchbox-focus-background: #{rgba($black, .25)};
-  --docsearch-searchbox-shadow: #{0 0 0 .25rem rgba($bd-accent, .4)};
+  --docsearch-searchbox-shadow: #{0 0 0 .25rem rgba($wcbrd-accent, .4)};
   --docsearch-text-color: #{$white};
   --docsearch-muted-color: #{rgba($white, .65)};
 
@@ -77,7 +77,7 @@
   &:active,
   &:focus,
   &:hover {
-    border-color: rgba($bd-accent, 1);
+    border-color: rgba($wcbrd-accent, 1);
 
     .DocSearch-Search-Icon {
       opacity: 1;

@@ -48,17 +48,17 @@ const currentLang = langItems.find((l) => l.isCurrent)!
 const hasLangAlternative = langItems.some((l) => !l.isCurrent && l.isAvailable)
 ---
 
-<header class="navbar navbar-expand-lg bd-navbar sticky-top">
-  <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+<header class="navbar navbar-expand-lg wcbrd-navbar sticky-top">
+  <nav class="container-xxl wcbrd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
     {
       layout === 'docs' && (
-        <div class="bd-navbar-toggle">
+        <div class="wcbrd-navbar-toggle">
           <button
             class="navbar-toggler p-2"
             type="button"
             data-bs-toggle="offcanvas"
-            data-bs-target="#bdSidebar"
-            aria-controls="bdSidebar"
+            data-bs-target="#wcbrdSidebar"
+            aria-controls="wcbrdSidebar"
             aria-label="Toggle docs navigation"
           >
             <HamburgerIcon class="bi" height={24} width={24} />
@@ -74,14 +74,14 @@ const hasLangAlternative = langItems.some((l) => !l.isCurrent && l.isAvailable)
     </a>
 
     <div class="d-flex">
-      <div class="bd-search" id="docsearch" data-bd-docs-version={getConfig().docs_version}></div>
+      <div class="wcbrd-search" id="docsearch" data-wcbrd-docs-version={getConfig().docs_version}></div>
 
       <button
         class="navbar-toggler d-flex d-lg-none order-3 p-2"
         type="button"
         data-bs-toggle="offcanvas"
-        data-bs-target="#bdNavbar"
-        aria-controls="bdNavbar"
+        data-bs-target="#wcbrdNavbar"
+        aria-controls="wcbrdNavbar"
         aria-label="Toggle navigation"
       >
         <svg class="bi" aria-hidden="true"><use xlink:href="#three-dots"></use></svg>
@@ -91,22 +91,22 @@ const hasLangAlternative = langItems.some((l) => !l.isCurrent && l.isAvailable)
     <div
       class="offcanvas-lg offcanvas-end flex-grow-1"
       tabindex="-1"
-      id="bdNavbar"
-      aria-labelledby="bdNavbarOffcanvasLabel"
+      id="wcbrdNavbar"
+      aria-labelledby="wcbrdNavbarOffcanvasLabel"
     >
       <div class="offcanvas-header px-4 pb-0">
-        <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">WCBR</h5>
+        <h5 class="offcanvas-title text-white" id="wcbrdNavbarOffcanvasLabel">WCBR</h5>
         <button
           type="button"
           class="btn-close btn-close-white"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-          data-bs-target="#bdNavbar"></button>
+          data-bs-target="#wcbrdNavbar"></button>
       </div>
 
       <div class="offcanvas-body p-4 pt-0 p-lg-0">
         <hr class="d-lg-none text-white-50" />
-        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+        <ul class="navbar-nav flex-row flex-wrap wcbrd-navbar-nav">
           <LinkItem active={layout === 'docs'} href={getVersionedDocsPath('getting-started/introduction/')} track>
             Docs
           </LinkItem>
@@ -177,7 +177,7 @@ const hasLangAlternative = langItems.some((l) => !l.isCurrent && l.isAvailable)
 
           <Versions layout={layout} addedIn={addedIn} />
 
-          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto bd-theme-divider">
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto wcbrd-theme-divider">
             <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
             <hr class="d-lg-none my-2 text-white-50" />
           </li>

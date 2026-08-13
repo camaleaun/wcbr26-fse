@@ -3,7 +3,7 @@
 //
 
 .wcbrd-code-snippet {
-  margin: 0 ($bd-gutter-x * -.5) 1rem;
+  margin: 0 ($wcbrd-gutter-x * -.5) 1rem;
   border: solid var(--bs-border-color);
   border-width: 1px 0;
 
@@ -16,17 +16,17 @@
 }
 
 .wcbrd-example {
-  --bd-example-padding: 1rem;
+  --wcbrd-example-padding: 1rem;
 
   position: relative;
-  padding: var(--bd-example-padding);
-  margin: 0 ($bd-gutter-x * -.5) 1rem;
+  padding: var(--wcbrd-example-padding);
+  margin: 0 ($wcbrd-gutter-x * -.5) 1rem;
   border: solid var(--bs-border-color);
   border-width: 1px 0;
   @include clearfix();
 
   @include media-breakpoint-up(md) {
-    --bd-example-padding: 1.5rem;
+    --wcbrd-example-padding: 1.5rem;
 
     margin-right: 0;
     margin-left: 0;
@@ -93,13 +93,13 @@
   .fixed-top,
   .sticky-top {
     position: static;
-    margin: calc(-1 * var(--bd-example-padding)) calc(-1 * var(--bd-example-padding)) var(--bd-example-padding); // stylelint-disable-line function-disallowed-list
+    margin: calc(-1 * var(--wcbrd-example-padding)) calc(-1 * var(--wcbrd-example-padding)) var(--wcbrd-example-padding); // stylelint-disable-line function-disallowed-list
   }
 
   .fixed-bottom,
   .sticky-bottom {
     position: static;
-    margin: var(--bd-example-padding) calc(-1 * var(--bd-example-padding)) calc(-1 * var(--bd-example-padding)); // stylelint-disable-line function-disallowed-list
+    margin: var(--wcbrd-example-padding) calc(-1 * var(--wcbrd-example-padding)) calc(-1 * var(--wcbrd-example-padding)); // stylelint-disable-line function-disallowed-list
 
   }
 
@@ -118,8 +118,8 @@
 .wcbrd-example-cssgrid [class*="grid"] > * {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  background-color: rgba(var(--bd-cyan-rgb), .15);
-  border: 1px solid rgba(var(--bd-cyan-rgb), .3);
+  background-color: rgba(var(--wcbrd-cyan-rgb), .15);
+  border: 1px solid rgba(var(--wcbrd-cyan-rgb), .3);
 }
 
 .wcbrd-example-row .row + .row,
@@ -129,12 +129,12 @@
 
 .wcbrd-example-row-flex-cols .row {
   min-height: 10rem;
-  background-color: rgba(var(--bd-cyan-rgb), .15);
+  background-color: rgba(var(--wcbrd-cyan-rgb), .15);
 }
 
 .wcbrd-example-flex div:not(.vr) {
-  background-color: rgba(var(--bd-cyan-rgb), .15);
-  border: 1px solid rgba(var(--bd-cyan-rgb), .3);
+  background-color: rgba(var(--wcbrd-cyan-rgb), .15);
+  border: 1px solid rgba(var(--wcbrd-cyan-rgb), .3);
 }
 
 // Grid mixins
@@ -220,7 +220,7 @@
 
 // scss-docs-start custom-tooltip
 .custom-tooltip {
-  --bs-tooltip-bg: var(--bd-cyan-bg);
+  --bs-tooltip-bg: var(--wcbrd-cyan-bg);
   --bs-tooltip-color: var(--bs-white);
 }
 // scss-docs-end custom-tooltip
@@ -228,8 +228,8 @@
 // scss-docs-start custom-popovers
 .custom-popover {
   --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bd-cyan-bg);
-  --bs-popover-header-bg: var(--bd-cyan-bg);
+  --bs-popover-border-color: var(--wcbrd-cyan-bg);
+  --bs-popover-header-bg: var(--wcbrd-cyan-bg);
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
@@ -250,7 +250,7 @@
 
 .simple-list-example-scrollspy {
   .active {
-    background-color: rgba(var(--bd-cyan-rgb), .15);
+    background-color: rgba(var(--wcbrd-cyan-rgb), .15);
   }
 }
 
@@ -314,8 +314,8 @@
 
   > div {
     color: var(--bs-body-bg);
-    background-color: var(--bd-cyan);
-    border: 1px solid var(--bd-teal);
+    background-color: var(--wcbrd-cyan);
+    border: 1px solid var(--wcbrd-teal);
 
     > span {
       position: absolute;
@@ -348,8 +348,8 @@
 
 .highlight {
   position: relative;
-  padding: .75rem ($bd-gutter-x * .5);
-  background-color: var(--bd-pre-bg);
+  padding: .75rem ($wcbrd-gutter-x * .5);
+  background-color: var(--wcbrd-pre-bg);
 
   @include media-breakpoint-up(md) {
     padding: .75rem 1.25rem;
@@ -384,7 +384,7 @@
 }
 
 .highlight-toolbar {
-  background-color: var(--bd-pre-bg);
+  background-color: var(--wcbrd-pre-bg);
 
   + .highlight {
     @include border-top-radius(0);

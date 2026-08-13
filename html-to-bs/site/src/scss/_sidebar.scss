@@ -55,7 +55,7 @@
   &.active {
     color: var(--bs-emphasis-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
-    background-color: var(--bd-sidebar-link-bg);
+    background-color: var(--wcbrd-sidebar-link-bg);
   }
 
   &.active {

@@ -25,7 +25,7 @@ import docsearch from '@docsearch/js'
     return
   }
 
-  const siteDocsVersion = searchElement.getAttribute('data-bd-docs-version')
+  const siteDocsVersion = searchElement.getAttribute('data-wcbrd-docs-version')
 
   // WCAG 2.5.3: align aria-label with visible text after DocSearch renders
   new MutationObserver((_, obs) => {

@@ -35,7 +35,7 @@ export default () => {
   }
 
   // Instantiate all toasts in docs pages only
-  document.querySelectorAll('.bd-example .toast')
+  document.querySelectorAll('.wcbrd-example .toast')
     .forEach(toastNode => {
       const toast = new bootstrap.Toast(toastNode, {
         autohide: false
@@ -97,7 +97,7 @@ export default () => {
   // Checks & Radios
   // -------------------------------
   // Indeterminate checkbox example in docs and StackBlitz
-  document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
+  document.querySelectorAll('.wcbrd-example-indeterminate [type="checkbox"]')
     .forEach(checkbox => {
       if (checkbox.id.includes('Indeterminate')) {
         checkbox.indeterminate = true
@@ -108,7 +108,7 @@ export default () => {
   // Links
   // -------------------------------
   // Disable empty links in docs examples only
-  document.querySelectorAll('.bd-content [href="#"]')
+  document.querySelectorAll('.wcbrd-content [href="#"]')
     .forEach(link => {
       link.addEventListener('click', event => {
         event.preventDefault()
@@ -144,7 +144,7 @@ export default () => {
   // Offcanvas
   // -------------------------------
   // 'Offcanvas components' example in docs only
-  const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
+  const myOffcanvas = document.querySelectorAll('.wcbrd-example-offcanvas .offcanvas')
   if (myOffcanvas) {
     myOffcanvas.forEach(offcanvas => {
       offcanvas.addEventListener('show.bs.offcanvas', event => {

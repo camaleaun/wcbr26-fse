@@ -3,36 +3,36 @@
 // Custom buttons for the docs.
 
 // scss-docs-start btn-css-vars-example
-.btn-bd-primary {
+.btn-wcbrd-primary {
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-cyan-bg);
-  --bs-btn-border-color: var(--bd-cyan-bg);
+  --bs-btn-bg: var(--wcbrd-cyan-bg);
+  --bs-btn-border-color: var(--wcbrd-cyan-bg);
   --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #{shade-color($bd-cyan, 10%)};
-  --bs-btn-hover-border-color: #{shade-color($bd-cyan, 10%)};
-  --bs-btn-focus-shadow-rgb: var(--bd-cyan-rgb);
+  --bs-btn-hover-bg: #{shade-color($wcbrd-cyan, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($wcbrd-cyan, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--wcbrd-cyan-rgb);
   --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #{shade-color($bd-cyan, 20%)};
-  --bs-btn-active-border-color: #{shade-color($bd-cyan, 20%)};
+  --bs-btn-active-bg: #{shade-color($wcbrd-cyan, 20%)};
+  --bs-btn-active-border-color: #{shade-color($wcbrd-cyan, 20%)};
 }
 // scss-docs-end btn-css-vars-example
 
-.btn-bd-accent {
+.btn-wcbrd-accent {
   --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bd-accent);
-  --bs-btn-border-color: var(--bd-accent);
-  --bs-btn-hover-color: var(--bd-dark);
-  --bs-btn-hover-bg: var(--bd-accent);
-  --bs-btn-hover-border-color: var(--bd-accent);
-  --bs-btn-focus-shadow-rgb: var(--bd-accent-rgb);
+  --bs-btn-color: var(--wcbrd-accent);
+  --bs-btn-border-color: var(--wcbrd-accent);
+  --bs-btn-hover-color: var(--wcbrd-dark);
+  --bs-btn-hover-bg: var(--wcbrd-accent);
+  --bs-btn-hover-border-color: var(--wcbrd-accent);
+  --bs-btn-focus-shadow-rgb: var(--wcbrd-accent-rgb);
   --bs-btn-active-color: var(--bs-btn-hover-color);
   --bs-btn-active-bg: var(--bs-btn-hover-bg);
   --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
 }
 
-.btn-bd-light {
-  --btn-custom-color: #{mix($bd-cyan, $white, 75%)};
+.btn-wcbrd-light {
+  --btn-custom-color: #{mix($wcbrd-cyan, $white, 75%)};
 
   --bs-btn-color: var(--bs-gray-600);
   --bs-btn-border-color: var(--bs-border-color);
@@ -42,7 +42,7 @@
   --bs-btn-active-bg: var(--bs-white);
   --bs-btn-active-border-color: var(--btn-custom-color);
   --bs-btn-focus-border-color: var(--btn-custom-color);
-  --bs-btn-focus-shadow-rgb: var(--bd-cyan-rgb);
+  --bs-btn-focus-shadow-rgb: var(--wcbrd-cyan-rgb);
 }
 
 .wcbrd-btn-lg {
@@ -52,9 +52,9 @@
 }
 
 // Reset WCBR sticker — docs UI buttons are not brand buttons
-.btn-bd-primary,
-.btn-bd-accent,
-.btn-bd-light,
+.btn-wcbrd-primary,
+.btn-wcbrd-accent,
+.btn-wcbrd-light,
 .wcbrd-btn-lg {
   text-transform: none;
   letter-spacing: normal;

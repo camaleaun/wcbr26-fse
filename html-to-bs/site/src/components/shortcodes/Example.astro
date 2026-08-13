@@ -53,19 +53,19 @@ markup = replacePlaceholdersInHtml(markup)
 
 const simplifiedMarkup = markup
   .replace(
-    /<svg.*class="bd-placeholder-img(?:-lg)?(?: *?bd-placeholder-img-lg)? ?(.*?)".*?<\/svg>/g,
+    /<svg.*class="wcbrd-placeholder-img(?:-lg)?(?: *?wcbrd-placeholder-img-lg)? ?(.*?)".*?<\/svg>/g,
     (match, classes) => `<img src="..."${classes ? ` class="${classes}"` : ''} alt="...">`
   )
   .replace(
-    /<img.*class="bd-placeholder-img(?:-lg)?(?: *?bd-placeholder-img-lg)? ?(.*?)".*?>/g,
+    /<img.*class="wcbrd-placeholder-img(?:-lg)?(?: *?wcbrd-placeholder-img-lg)? ?(.*?)".*?>/g,
     (match, classes) => `<img src="..."${classes ? ` class="${classes}"` : ''} alt="...">`
   )
 ---
 
-<div class="bd-example-snippet bd-code-snippet">
+<div class="wcbrd-example-snippet wcbrd-code-snippet">
   {
     showPreview && (
-      <div id={id} class:list={['bd-example m-0 border-0', className]}>
+      <div id={id} class:list={['wcbrd-example m-0 border-0', className]}>
         <Fragment set:html={markup} />
       </div>
     )

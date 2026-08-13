@@ -25,8 +25,8 @@ const CONFIG = {
 // Open in StackBlitz logic
 document.querySelectorAll('.btn-edit').forEach(btn => {
   btn.addEventListener('click', event => {
-    const codeSnippet = event.target.closest('.bd-code-snippet')
-    const exampleEl = codeSnippet.querySelector('.bd-example')
+    const codeSnippet = event.target.closest('.wcbrd-code-snippet')
+    const exampleEl = codeSnippet.querySelector('.wcbrd-example')
 
     const htmlSnippet = exampleEl.innerHTML
     const jsSnippet = codeSnippet.querySelector('.btn-edit').getAttribute('data-sb-js-snippet')

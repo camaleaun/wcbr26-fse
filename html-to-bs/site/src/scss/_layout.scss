@@ -1,5 +1,5 @@
 .wcbrd-gutter {
-  --bs-gutter-x: #{$bd-gutter-x};
+  --bs-gutter-x: #{$wcbrd-gutter-x};
 }
 
 .wcbrd-layout {
@@ -53,5 +53,5 @@
 
 .wcbrd-content {
   grid-area: content;
-  min-width: 1px; // Fix width when bd-content contains a `<pre>` https://github.com/twbs/bootstrap/issues/25410
+  min-width: 1px; // Fix width when wcbrd-content contains a `<pre>` https://github.com/twbs/bootstrap/issues/25410
 }

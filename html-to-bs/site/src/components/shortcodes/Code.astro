@@ -135,7 +135,7 @@ if (filePath && fileMatch && codeToDisplay) {
   })
 </script>
 
-<div class:list={[{ 'bd-code-snippet': !nestedInExample }, containerClass]}>
+<div class:list={[{ 'wcbrd-code-snippet': !nestedInExample }, containerClass]}>
   {
     nestedInExample
       ? (<></>)
@@ -144,7 +144,7 @@ if (filePath && fileMatch && codeToDisplay) {
           <slot name="pre" />
         )
         : (
-          <div class="bd-clipboard">
+          <div class="wcbrd-clipboard">
             <button type="button" class="btn-clipboard">
               <svg class="bi" role="img" aria-label="Copy">
                 <use xlink:href="#clipboard" />
