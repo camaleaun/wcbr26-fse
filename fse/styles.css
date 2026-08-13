@@ -333,7 +333,7 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
   .section.news .wp-block-post-template { max-width: 1184px !important; margin-inline: auto !important; gap: 32px !important; }
   /* News cards: uniform ≈470px height — figure 209px (=16/9 at REF 373px width) + body min 260px.
      WP card is wider (395px) so img crops to 395×209; aspect ratio differs slightly but heights align. */
-  .news-card .wp-block-post-featured-image { height: 209px !important; overflow: hidden !important; }
+  .news-card .wp-block-post-featured-image { width: 100% !important; height: 209px !important; overflow: hidden !important; }
   .news-card .wp-block-post-featured-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; }
   /* Card body: gap 8px→12px (REF), min-height to target 470px card (209fig+259body+2border) */
   .news-card > .wp-block-group { gap: 12px !important; min-height: 259px !important; }
