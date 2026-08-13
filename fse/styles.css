@@ -143,6 +143,8 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
 /* About: gap=64px (WP global), 2 cols=560px cada → total=1184px. REF col=560px, gap=64px → total=1184px. */
 .section.about .wp-block-columns { max-width: 1184px !important; }
 .section.about .wp-block-column { gap: 19px !important; }
+/* About: "Conheça nossa história" link → REF usa cyan-800, border-bottom orange, sem underline */
+.section.about .about-content a { color: var(--wp--preset--color--custom-cyan-800) !important; text-decoration: none !important; border-bottom: 4px solid var(--wp--preset--color--orange-500); padding-bottom: 4px; }
 
 /* ── Org: nota de rodapé — WP exibe 1 linha (1184px); REF tem max-width:52ch → 3 linhas ── */
 .section.organization > .wp-block-paragraph { max-width:52ch; margin-inline:auto; }
@@ -311,6 +313,9 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
      Add padding-bottom to match REF org height (749+62=811px) and fix newsletter/footer cascade (-103px → -41px). */
   .section.organization { padding-bottom: 164px !important; }
   .formats-grid { align-items:stretch; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:32px !important; max-width:1184px !important; margin-inline:auto !important; }
+  /* formats: WP grid é 4px mais alto que REF (331px vs 327px) → reduz padding-bottom 102→98px
+     para alinhar news section com REF (WP news 2269 → 2265, REF 2264, diff 1px) */
+  .section.formats { padding-bottom: 98px !important; }
   .format { display:flex; flex-direction:column; }
   .format-head { flex-direction:column; align-items:flex-start; gap:16px; padding:32px 32px 16px; cursor:default; }
   .format-icon { width:64px; height:64px; }
