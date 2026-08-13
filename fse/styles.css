@@ -182,9 +182,9 @@ body { font-size: 1.125rem; line-height: 1.45; }
 .header-meta .wp-block-social-links { margin-block: 0 !important; }
 .header-meta .wp-block-paragraph { margin-bottom: 0 !important; }
 /* REF .header-date: ff-head, uppercase, 10px, gray-700 — WP renderiza como texto simples */
-.header-meta p:last-child { text-transform:uppercase; font-family:var(--wp--preset--font-family--poppins); font-weight:400; font-size:.625rem; letter-spacing:.02em; color:var(--wp--preset--color--gray-700) !important; margin-top:2px; }
+.header-meta p:last-child.has-x-small-font-size { text-transform:uppercase; font-family:var(--wp--preset--font-family--poppins); font-weight:400; font-size:.625rem !important; letter-spacing:.02em; color:var(--wp--preset--color--gray-700) !important; margin-top:2px; }
 /* REF .header-tags: fs=.625rem, fw=700, ls=.06em — WP usa preset "small" (bem maior) */
-.header-meta .has-small-font-size { font-size:.625rem !important; font-weight:700; letter-spacing:.06em; }
+.header-meta .has-small-font-size { font-size:.625rem !important; font-weight:700 !important; letter-spacing:.06em; }
 /* REF .header-logo img: height:44px, width:auto; WP site-logo renderiza no width fixo do block (171px→68px alto) */
 .wp-block-site-logo img { height:44px !important; width:auto !important; }
 

@@ -28,13 +28,13 @@ import { getSequence } from '@libs/utils'
       return (
         <div class="col-md-4 mb-3">
           <div class={`p-3 mb-2 position-relative swatch-${color.name}`}>
-            <strong class="d-block">${color.name}</strong>
+            <strong class="d-block">Orange</strong>
             {color.hex}
           </div>
 
           {getSequence(500, 600, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
+              <div class={`p-3 bd-${color.name}-${value}`}>Orange {value}</div>
             )
           })}
         </div>
@@ -49,7 +49,7 @@ import { getSequence } from '@libs/utils'
           <div class="p-3 mb-2 position-relative swatch-cyan-700"><strong class="d-block">Cyan 700</strong>#00595d</div>
           {getSequence(700, 900, 100).map((value) => {
             return (
-              <div class={`p-3 bd-${color.name}-${value}`}>{color.name} {value}</div>
+              <div class={`p-3 bd-${color.name}-${value}`}>Cyan {value}</div>
             )
           })}
         </div>
