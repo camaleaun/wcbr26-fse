@@ -374,9 +374,6 @@ body { font-size: 1.125rem; line-height: 1.45; }
   /* formats: WP auto-fill→4 cols de 293px; REF usa repeat(3)+gap:32px em max-width:1184px
      WP content-size=1232px vs REF 1184px → colunas 389px (304px card) vs 373px (327px card).
      Forçar 3 cols + max-width:1184px → colunas 373px → alturas de card idênticas ao REF */
-  /* Org: REF has section-more link (~62px total: margin-top:48 + text:22 + padding-bottom:10 = 80px visible space, but net diff vs WP = 62px).
-     Add padding-bottom to match REF org height (749+62=811px) and fix newsletter/footer cascade (-103px → -41px). */
-  .section.organization { padding-bottom: 164px !important; }
   .formats-grid { align-items:stretch; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:32px !important; max-width:1184px !important; margin-inline:auto !important; }
   /* formats: WP grid é 4px mais alto que REF (331px vs 327px) → reduz padding-bottom 102→98px
      para alinhar news section com REF (WP news 2269 → 2265, REF 2264, diff 1px) */
