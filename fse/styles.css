@@ -331,9 +331,10 @@ header.wp-block-template-part { padding-block: 2px 3px !important; }
   .news-card .wp-block-post-excerpt { display:block; }
   /* News grid: WP uses content-size=1232px+20px gap → cards at x=59 (vs REF x=83). Fix to 1184px+32px gap → col1=83, col2=488, col3=894 (= REF exactly). */
   .section.news .wp-block-post-template { max-width: 1184px !important; margin-inline: auto !important; gap: 32px !important; }
-  /* News cards: uniform ≈470px height — figure 209px (=16/9 at REF 373px width) + body min 260px.
-     WP card is wider (395px) so img crops to 395×209; aspect ratio differs slightly but heights align. */
-  .news-card .wp-block-post-featured-image { width: 100% !important; height: 209px !important; overflow: hidden !important; }
+  /* News cards: REF usa aspect-ratio:16/9 + border-bottom:1px (box-sizing:border-box) no .news-card-media.
+     Isso dá content-height = (371.328 * 9/16) - 1px = 207.867px p/ o img (AVIF crop idêntico ao REF).
+     height:209px dava 209px de content → crop diferente → 21% diff nas imagens. */
+  .news-card .wp-block-post-featured-image { width: 100% !important; box-sizing: border-box !important; aspect-ratio: 16/9 !important; border-bottom: 1px solid var(--wp--preset--color--gray-400) !important; overflow: hidden !important; }
   .news-card .wp-block-post-featured-image img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important; }
   /* Card body: gap 8px→12px (REF), min-height to target 470px card (209fig+259body+2border) */
   .news-card > .wp-block-group { gap: 12px !important; min-height: 259px !important; }
