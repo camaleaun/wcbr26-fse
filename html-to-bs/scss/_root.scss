@@ -1,5 +1,41 @@
 :root,
 [data-bs-theme="light"] {
+  // Note: Custom variable values only support SassScript inside `#{}`.
+
+  // Colors
+  //
+  // Generate palettes for full colors, grays, and theme colors.
+
+  @each $color, $value in $colors {
+    --#{$prefix}--preset--color--#{$color}: #{$value};
+  }
+
+  @each $color, $value in $grays {
+    --#{$prefix}--preset--color--gray-#{$color}: #{$value};
+  }
+
+  // @each $color, $value in $theme-colors {
+  //   --#{$prefix}--preset--color--#{$color}: #{$value};
+  // }
+
+  // @each $color, $value in $theme-colors-rgb {
+  //   --#{$prefix}--preset--color--#{$color}-rgb: #{$value};
+  // }
+
+  // @each $color, $value in $theme-colors-text {
+  //   --#{$prefix}--preset--color--#{$color}-text-emphasis: #{$value};
+  // }
+
+  // @each $color, $value in $theme-colors-bg-subtle {
+  //   --#{$prefix}--preset--color--#{$color}-bg-subtle: #{$value};
+  // }
+
+  // @each $color, $value in $theme-colors-border-subtle {
+  //   --#{$prefix}--preset--color--#{$color}-border-subtle: #{$value};
+  // }
+
+  // --#{$prefix}--preset--color--white-rgb: #{to-rgb($white)};
+  // --#{$prefix}--preset--color--black-rgb: #{to-rgb($black)};
 }
 
 // The source enables kerning/ligatures and grayscale smoothing on the body.

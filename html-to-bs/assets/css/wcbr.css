@@ -1,18 +1,1130 @@
-/* Error: Undefined mixin.
- *    ,
- * 22 |   @include media-breakpoint-up(lg) { gap: 32px; }
- *    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss/_navbar.scss 22:3  @import
- *   scss/wcbr.scss 33:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 22 \2502    @include media-breakpoint-up(lg) { gap: 32px; }\a    \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/_navbar.scss 22:3  @import\a   scss/wcbr.scss 33:9     root stylesheet";
+/*!
+ * WCBR Design System (https://wordcampbr.github.io/wordcampbr/)
+ * Copyright 2026 WordCamp Brasil
+ * Licensed under MIT (https://github.com/wordcampbr/wordcampbr/blob/main/LICENSE)
+ */
+:root,
+[data-bs-theme=light] {
+  --wp----preset--color--blue: #0d6efd;
+  --wp----preset--color--indigo: #6610f2;
+  --wp----preset--color--purple: #6f42c1;
+  --wp----preset--color--pink: #d63384;
+  --wp----preset--color--red: #ff4419;
+  --wp----preset--color--orange: #e84814;
+  --wp----preset--color--yellow: #ffc107;
+  --wp----preset--color--green: #198754;
+  --wp----preset--color--teal: #20c997;
+  --wp----preset--color--cyan: #00c7c9;
+  --wp----preset--color--black: #000;
+  --wp----preset--color--white: #fff;
+  --wp----preset--color--gray: #6c757d;
+  --wp----preset--color--gray-dark: #343a40;
+  --wp----preset--color--gray-100: #fff8f1;
+  --wp----preset--color--gray-200: #f6eee4;
+  --wp----preset--color--gray-300: #e9e0d8;
+  --wp----preset--color--gray-400: #bec9c8;
+  --wp----preset--color--gray-500: #adb5bd;
+  --wp----preset--color--gray-600: #6c757d;
+  --wp----preset--color--gray-700: #4a5654;
+  --wp----preset--color--gray-800: #343a40;
+  --wp----preset--color--gray-900: #212529;
 }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/poppins-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/poppins-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/poppins-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/poppins-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/montserrat.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/montserrat.woff2") format("woff2");
+}
+h1, h2, h3,
+.h1, .h2, .h3 {
+  text-transform: uppercase;
+  line-height: 1.08;
+}
+
+h1, .h1 {
+  font-size: clamp(2.25rem, 6.2vw, 3.625rem);
+  letter-spacing: -0.02em;
+}
+
+h2, .h2 {
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  letter-spacing: -0.01em;
+}
+
+h3, .h3 {
+  font-size: clamp(1.4rem, 3vw, 1.875rem);
+}
+
+.social-icon {
+  fill: currentColor;
+  display: block;
+  height: 17px;
+  width: auto;
+  flex: none;
+}
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+  flex: none;
+}
+
+.link-under {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #00595d;
+  border-bottom: 4px solid #e84814;
+  padding-bottom: 4px;
+  text-decoration: none;
+  transition: gap 0.15s ease;
+}
+.link-under:hover {
+  gap: 12px;
+  color: #00595d;
+}
+
+.btn:not(.btn-link) {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 5px 5px 0 0 var(--wp--btn-border-color);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.btn:not(.btn-link):hover {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 0 var(--wp--btn-hover-border-color, var(--wp--btn-border-color));
+}
+.btn:not(.btn-link):active, .btn:not(.btn-link).active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 0 var(--wp--btn-border-color);
+}
+.btn:not(.btn-link):disabled, .btn:not(.btn-link).disabled {
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-sm {
+  letter-spacing: 0.04em;
+}
+
+.btn-orange {
+  --wp--btn-border-color: #e84814;
+  --wp--btn-hover-border-color: #e84814;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.45;
+}
+.badge.text-bg-orange {
+  font-weight: 700;
+}
+
+.tag {
+  align-self: flex-start;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  color: rgb(46, 14, 4);
+}
+
+.site-header {
+  background: #fff8f1;
+}
+.site-header .navbar {
+  min-height: 72px;
+  padding-block: 0;
+}
+
+.navbar > .header-inner {
+  justify-content: flex-start;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 72px;
+  flex-wrap: nowrap;
+}
+@media (min-width: 1080px) {
+  .header-inner {
+    gap: 32px;
+  }
+}
+
+.header-logo {
+  height: 44px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  display: block;
+}
+
+.header-nav {
+  gap: 24px;
+}
+.header-nav .dropdown-toggle::after {
+  display: none;
+}
+.header-nav .nav-caret {
+  color: inherit;
+  stroke-width: 2.5;
+  transition: transform 0.18s ease;
+}
+.header-nav .nav-item.show .nav-caret {
+  transform: rotate(180deg);
+}
+.header-nav .nav-link {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #00595d;
+  padding: 6px 0;
+  border-bottom: 3px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.15s ease;
+}
+.header-nav .nav-link:hover, .header-nav .nav-link:focus {
+  border-color: #e84814;
+  color: #00595d;
+}
+.header-nav .dropdown-menu {
+  border: 1px solid #bec9c8;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  padding: 8px;
+  min-width: 210px;
+  background: #fff8f1;
+}
+.header-nav .dropdown-menu .dropdown-item {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: #00595d;
+  padding: 9px 12px;
+  border-radius: 0;
+}
+.header-nav .dropdown-menu .dropdown-item + .dropdown-item {
+  margin-top: 2px;
+}
+.header-nav .dropdown-menu .dropdown-item:hover, .header-nav .dropdown-menu .dropdown-item:focus {
+  background: #f6eee4;
+  color: #004c4d;
+}
+
+.header-meta {
+  flex: none;
+  margin-left: auto;
+  text-align: right;
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-bottom: 4px;
+  color: #004c4d;
+}
+.header-social a {
+  color: inherit;
+  display: inline-flex;
+}
+.header-social a:hover {
+  color: #C6360B;
+}
+
+.header-tags {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  color: #C6360B;
+  text-transform: uppercase;
+}
+
+.header-date {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 0.625rem;
+  letter-spacing: 0.02em;
+  color: #4a5654;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: #3e4948;
+  text-decoration: none;
+  transition: background 0.15s ease;
+  width: 100%;
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+.drawer-link:hover {
+  background: #f6eee4;
+  color: #3e4948;
+}
+.drawer-link.active {
+  background: #f6eee4;
+  color: #00595d;
+  font-weight: 900;
+}
+
+.drawer-caret {
+  margin-left: auto;
+  flex: none;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.28s ease;
+}
+
+[aria-expanded=true] .drawer-caret {
+  transform: rotate(180deg);
+}
+
+.drawer-sub {
+  padding: 0;
+  margin: 0;
+}
+.drawer-sub a {
+  display: block;
+  padding: 12px 16px 12px 52px;
+  border-radius: 8px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: #00595d;
+  text-decoration: none;
+}
+.drawer-sub a:hover {
+  background: #f6eee4;
+}
+
+.drawer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #004c4d;
+}
+.drawer-social a {
+  color: inherit;
+  display: inline-flex;
+}
+.drawer-social a:hover {
+  color: #C6360B;
+}
+.drawer-social .social-icon {
+  height: 20px;
+}
+
+.drawer-tags {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: #C6360B;
+}
+
+.drawer-date {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #1e1b15;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.formats {
+  background: #fff8f1;
+}
+
+.format.accordion-item {
+  background: #fff8f1;
+  border: 2px solid #bec9c8;
+  box-shadow: 5px 5px 0 0 #00595d;
+  border-radius: 0;
+}
+.format.accordion-item + .format.accordion-item {
+  margin-top: 20px;
+}
+
+.format-head.accordion-button {
+  background: none;
+  box-shadow: none;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 0;
+  font-size: inherit;
+}
+.format-head.accordion-button:not(.collapsed) {
+  background: none;
+  color: inherit;
+  box-shadow: none;
+}
+.format-head.accordion-button::after {
+  display: none;
+}
+
+.format-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+.format-icon svg {
+  display: block;
+  max-width: 52%;
+  max-height: 48%;
+  fill: currentColor;
+  stroke: none;
+}
+.format-icon-cyan {
+  background: #00595d;
+  color: #95E4E2;
+}
+.format-icon-orange {
+  background: #f56530;
+  color: #fff;
+}
+.format-icon-panel {
+  background: #e9e0d8;
+  color: #004c4d;
+}
+
+.format-title {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #00595d;
+  font-size: 1.25rem;
+  line-height: 1.08;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .formats-accordion {
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+  }
+  .format.accordion-item {
+    flex: 1;
+    min-width: 0;
+  }
+  .format.accordion-item + .format.accordion-item {
+    margin-top: 0;
+  }
+  .format-head.accordion-button {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 32px 16px;
+    cursor: default;
+    pointer-events: none;
+  }
+  .format-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .format-title {
+    font-size: clamp(1.4rem, 3vw, 1.875rem);
+  }
+  .format.accordion-item .accordion-collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .format.accordion-item .accordion-body {
+    padding: 0 32px 32px;
+    font-size: 1.125rem;
+    color: #3e4948;
+  }
+}
+.news-card {
+  background: #fff8f1;
+  border: 1px solid #bec9c8;
+  border-radius: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.news-card-media {
+  display: none;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-bottom: 1px solid #bec9c8;
+}
+.news-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 640px) {
+  .news-card-media {
+    display: block;
+  }
+}
+.news-card-title {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  color: #004c4d;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  margin: 0;
+}
+.news-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.news-card-title a:hover {
+  color: #f56530;
+}
+.news-card-description {
+  color: #3e4948;
+  font-size: 1.125rem;
+  display: none;
+}
+@media (min-width: 640px) {
+  .news-card-description {
+    display: block;
+  }
+}
+
+.news-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  flex: 1;
+}
+.news-card-body p {
+  margin: 0;
+}
+@media (min-width: 640px) {
+  .news-card-body {
+    gap: 12px;
+  }
+}
+
+.news-grid {
+  --wp--gutter-x: 1.25rem;
+  --wp--gutter-y: 1.25rem;
+}
+@media (min-width: 640px) {
+  .news-grid {
+    --wp--gutter-x: 2rem;
+    --wp--gutter-y: 2rem;
+  }
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff8f1;
+  border: 3px solid #bec9c8;
+}
+.avatar picture {
+  display: contents;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.avatar-cyan {
+  border-color: #004c4d;
+}
+.avatar-brick {
+  border-color: #C6360B;
+}
+
+.newsletter .form-control {
+  background: #fff8f1;
+  color: #3e4948;
+  border: 2px solid #fff8f1;
+  padding: 18px 24px;
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+}
+.newsletter .form-control::placeholder {
+  color: #556260;
+}
+.newsletter .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #fff;
+  background: #fff;
+}
+
+.section {
+  padding-block: clamp(64px, 9vw, 102px);
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.hero {
+  background: #fff8f1;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+  padding-block: clamp(48px, 8vw, 100px);
+}
+@media (min-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+}
+
+.hero-meta {
+  margin-bottom: 28px;
+}
+
+.hero-title {
+  margin-bottom: 24px;
+}
+
+.hero-lead {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(1.05rem, 2.2vw, 1.375rem);
+  line-height: 1.4;
+  color: #4a5654;
+  max-width: 40ch;
+  margin-bottom: 32px;
+}
+
+.hero-media {
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 512px;
+}
+
+.hero-frame {
+  position: relative;
+  aspect-ratio: 1/1;
+  isolation: isolate;
+  border: 2px solid #003e3e;
+  box-shadow: 5px 5px 0 0 #003e3e;
+}
+.hero-frame::before {
+  content: "";
+  position: absolute;
+  inset: -16px 16px 16px -16px;
+  border: 4px solid #00595d;
+  z-index: -1;
+}
+.hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats-grid {
+  --wp--gutter-x: 2rem;
+  --wp--gutter-y: 2rem;
+}
+
+.stats {
+  background: #00595d;
+  padding-block: clamp(44px, 6vw, 64px);
+}
+
+.stat-number {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 7vw, 3rem);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.stat-label {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  margin-top: 6px;
+  color: #fff;
+}
+
+.about {
+  background: #f6eee4;
+}
+
+.about-grid {
+  --wp--gutter-x: 2.5rem;
+  --wp--gutter-y: 2.5rem;
+}
+@media (min-width: 900px) {
+  .about-grid {
+    --wp--gutter-x: 4rem;
+    --wp--gutter-y: 4rem;
+  }
+}
+
+.about-title {
+  margin-bottom: 8px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-media {
+  position: relative;
+  aspect-ratio: 584/428;
+  border: 2px solid #e84814;
+  box-shadow: 5px 5px 0 0 #e84814;
+}
+.about-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news {
+  background: #f6eee4;
+}
+
+.news .link-under {
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.sponsors {
+  background: #fff8f1;
+}
+
+.sponsor-grid {
+  --wp--gutter-x: 1.25rem;
+  --wp--gutter-y: 1.25rem;
+}
+
+.sponsor-grid-sm {
+  max-width: 580px;
+}
+
+.tier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00595d;
+  letter-spacing: 0.05em;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin: 48px 0 24px;
+}
+.tier::before, .tier::after {
+  content: "";
+  height: 2px;
+  width: 40px;
+  background: #e84814;
+  flex: none;
+}
+.tier:first-of-type {
+  margin-top: 0;
+}
+.tier-sm {
+  color: #4a5654;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  margin: 36px 0 18px;
+}
+.tier-sm::before, .tier-sm::after {
+  width: 24px;
+  background: #bec9c8;
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #fff8f1;
+  border: 2px solid #bec9c8;
+  box-shadow: 4px 4px 0 0 #00595d;
+  color: #00595d;
+  min-height: 72px;
+  padding: 14px 18px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.sponsor-lg {
+  min-height: 96px;
+  justify-content: flex-start;
+  padding-inline: 24px;
+  font-size: 1.15rem;
+}
+.sponsor-text {
+  min-height: 56px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #4a5654;
+  box-shadow: 3px 3px 0 0 #bec9c8;
+}
+.sponsor-icon {
+  color: #00595d;
+  display: inline-flex;
+}
+
+.micro-sponsor {
+  text-align: center;
+  margin-top: 40px;
+}
+.micro-sponsor-title {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  color: #004c4d;
+  margin: 0 0 8px;
+}
+.micro-sponsor-names {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.95rem;
+  color: #4a5654;
+}
+
+.organization {
+  background: #f6eee4;
+}
+
+.org-grid {
+  --wp--gutter-x: 1.25rem;
+  --wp--gutter-y: 2.25rem;
+}
+@media (min-width: 900px) {
+  .org-grid {
+    max-width: 960px;
+    margin-inline: auto;
+  }
+}
+
+.organizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.organizer-name {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  color: #004c4d;
+  font-size: 1rem;
+}
+.organizer-role {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #4a5654;
+}
+
+.organization-note {
+  text-align: center;
+  color: #4a5654;
+  max-width: 52ch;
+  margin: 32px auto 0;
+}
+
+.newsletter {
+  background: #004c4d;
+  color: #fff;
+}
+.newsletter-title {
+  color: #fff;
+  margin-bottom: 16px;
+}
+.newsletter-lead {
+  font-size: clamp(1.05rem, 2.2vw, 1.375rem);
+  line-height: 1.4;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.newsletter-inner {
+  max-width: 720px;
+}
+
+.newsletter-form {
+  max-width: 576px;
+}
+
+.newsletter-form .btn {
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.site-footer {
+  background: #003e3e;
+  color: #f6eee4;
+  padding-block: 64px 72px;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 40px;
+}
+@media (min-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+}
+
+.footer-brand img {
+  width: 171px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.footer-social a {
+  color: #fff;
+  opacity: 0.9;
+  display: inline-flex;
+}
+.footer-social a:hover {
+  color: rgb(255, 180, 163);
+  opacity: 1;
+}
+.footer-social .social-icon {
+  height: 20px;
+}
+
+.footer-tags {
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: rgb(255, 180, 163);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.footer-date {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  margin: 8px 0 0;
+}
+
+.footer-description {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.footer-title {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: rgb(255, 180, 163);
+  margin-bottom: 20px;
+}
+
+.footer-col-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.footer-col-list a {
+  font-size: 1rem;
+  opacity: 0.8;
+  text-decoration: none;
+  color: #f6eee4;
+  transition: opacity 0.15s ease;
+}
+.footer-col-list a:hover {
+  opacity: 1;
+  color: rgb(255, 180, 163);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 48px;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+  margin-bottom: 20px;
+}
+
+.footer-legal a {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  color: #f6eee4;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.footer-legal a:hover {
+  opacity: 1;
+  color: rgb(255, 180, 163);
+}
+
+.footer-motto {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: rgb(255, 180, 163);
+  margin: 0 0 12px;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=wcbr.css.map */
