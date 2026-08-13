@@ -27,6 +27,7 @@
     "astro": "^7.1.6",
     "astro-auto-import": "^0.5.2",
     "bootstrap": "^5.3.3",
+    "fuse.js": "^7.5.0",
     "js-yaml": "^5.2.3",
     "sass": "^1.79.0",
     "sharp": "^0.35.3",

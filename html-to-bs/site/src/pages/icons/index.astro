@@ -1,0 +1,126 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { icons } from '../../data/icons'
+---
+
+<BaseLayout title="Icons">
+  <main class="container-xxl bd-gutter" id="content">
+
+    <div class="my-5">
+      <div class="d-flex mb-4">
+        <h2 id="icons" class="mb-0">Icons</h2>
+        <form class="subnav-search d-flex flex-nowrap ms-auto">
+          <label for="search" class="visually-hidden">Search for icons</label>
+          <input class="form-control search mb-0" id="search" type="search"
+                 placeholder="Start typing to filter..." autocomplete="off">
+        </form>
+      </div>
+
+      <ul id="icons-list" class="row row-cols-3 row-cols-sm-4 row-cols-lg-6 row-cols-xl-8 list-unstyled wcbri-list">
+        {icons.map((icon) => (
+          <li class="col mb-4"
+              data-name={icon.name}
+              data-tags={icon.tags.join(' ')}
+              data-categories={icon.categories.join(' ').toLowerCase()}>
+            <a class="d-block text-body-emphasis text-decoration-none" href={`/icons/${icon.name}/`}>
+              <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded wcbri-cell">
+                <Fragment set:html={icon.svg} />
+              </div>
+              <div class="text-muted text-center pt-1 small">{icon.name}</div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </main>
+</BaseLayout>
+
+<style is:global>
+  .wcbri-list {
+    font-size: 2rem;
+  }
+
+  .wcbri-list a:hover .wcbri-cell,
+  .wcbri-list a:focus .wcbri-cell {
+    background-color: var(--bs-secondary-bg-subtle) !important;
+  }
+
+  .wcbri-list a:hover .text-muted,
+  .wcbri-list a:focus .text-muted {
+    color: var(--bs-link-hover-color) !important;
+  }
+
+  .wcbri-cell svg {
+    width: 1em;
+    height: 1em;
+  }
+
+  .wcbri-list:empty::before {
+    display: block;
+    width: 100%;
+    padding: 100px 2rem;
+    color: var(--bs-secondary-color);
+    text-align: center;
+    content: "Nothing found, try searching again.";
+    background-color: var(--bs-secondary-bg);
+    border-radius: .5rem;
+  }
+
+  .subnav-search {
+    max-width: 280px;
+  }
+</style>
+
+<script>
+  import Fuse from 'fuse.js'
+
+  ;(function () {
+    const iconListContainer = document.querySelector<HTMLElement>('#icons-list')
+    const searchInput = document.querySelector<HTMLInputElement>('#search')
+
+    if (!iconListContainer || !searchInput) return
+
+    const iconElementList = Array.from(iconListContainer.children) as HTMLElement[]
+
+    const iconDataList = iconElementList.map((el) => ({
+      name: el.dataset.name ?? '',
+      categories: el.dataset.categories ? el.dataset.categories.split(' ') : [],
+      tags: el.dataset.tags ? el.dataset.tags.split(' ') : [],
+    }))
+
+    const fuse = new Fuse(iconDataList, {
+      ignoreLocation: true,
+      useExtendedSearch: true,
+      shouldSort: false,
+      keys: ['name', 'categories', 'tags'],
+      threshold: 0,
+    })
+
+    function search(term: string) {
+      const trimmed = term.trim()
+      iconListContainer!.innerHTML = ''
+      if (trimmed.length > 0) {
+        const results = fuse.search(trimmed)
+        iconListContainer!.append(...results.map((r) => iconElementList[r.refIndex]))
+      } else {
+        iconListContainer!.append(...iconElementList)
+      }
+      const url = new URL(window.location.href)
+      trimmed.length > 0 ? url.searchParams.set('q', trimmed) : url.searchParams.delete('q')
+      window.history.replaceState(null, '', url)
+    }
+
+    let timeout: ReturnType<typeof setTimeout>
+    searchInput.addEventListener('input', () => {
+      clearTimeout(timeout)
+      timeout = setTimeout(() => search(searchInput.value), 250)
+    })
+
+    const query = new URLSearchParams(window.location.search).get('q')
+    if (query?.trim()) {
+      search(query.trim())
+      searchInput.value = query.trim()
+    }
+  })()
+</script>

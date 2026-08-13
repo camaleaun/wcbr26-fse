@@ -113,11 +113,9 @@ const hasLangAlternative = langItems.some((l) => !l.isCurrent && l.isAvailable)
           <LinkItem active={layout === 'examples'} href={getVersionedDocsPath('examples/')}>
             Examples
           </LinkItem>
-          {getConfig().icons && (
-            <LinkItem href={getConfig().icons!} target="_blank" rel="noopener">
-              Icons
-            </LinkItem>
-          )}
+          <LinkItem active={pathname.startsWith('/icons')} href="/icons/">
+            Icons
+          </LinkItem>
         </ul>
 
         <hr class="d-lg-none text-white-50" />

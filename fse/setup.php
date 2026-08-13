@@ -544,9 +544,9 @@ $organizers_data = [
 	[ 'name' => "Christian van 't Hof", 'role' => 'Liderança e Patrocínios', 'photo' => 'christian', 'username' => 'Brightsol',     'gravatar' => '28c5f3cff8b39f99dd482db0bed1a36db4d9b0f2d471f477d68685dcbabf0683' ],
 	[ 'name' => 'Eduardo Zulian',       'role' => 'Financeiro',              'photo' => 'eduardo',   'username' => 'eduardozulian',  'gravatar' => 'd2b86b9638463db3ab4fb8ca2c51713befed32c44728e785fc531ec2d1922ffa'  ],
 	[ 'name' => 'Amanda Cardoso',       'role' => 'Local do Evento',         'photo' => 'amanda',    'username' => 'amandacodb',     'gravatar' => 'a262ac5d912dbbb8c1f145ad3342cc6b53a3c37db6fda9f097361859a0468cc5'  ],
+	[ 'name' => 'André Ribeiro',        'role' => 'Dia do Evento',           'photo' => 'andre',     'username' => 'andr3ribeiro',   'gravatar' => '706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535'  ],
 	[ 'name' => 'Hans Möhl',            'role' => 'Website e Design',        'photo' => 'hans',      'username' => 'hansmosl',       'gravatar' => 'e22f54b57dbecad0d7645dca2c8747955c7f6087bafaf55046c98d605937a243'  ],
 	[ 'name' => 'Sandra Peres',         'role' => 'Rede Social e Textos',    'photo' => 'sandra',    'username' => 'San Prs',        'gravatar' => '7b7eaaa4aadc682d507bfde811645ed2a87632d6a23235c4e69b0b975ed61338'  ],
-	[ 'name' => 'André Ribeiro',        'role' => 'Dia do Evento',           'photo' => 'andre',     'username' => 'andr3ribeiro',   'gravatar' => '706eac30b67a39777c3b12288fa5b40f309f8187c37da23f7f5419e97be23535'  ],
 	[ 'name' => 'Gilberto Tavares',     'role' => 'Voluntários',             'photo' => 'gilberto',  'username' => 'camaleaun',      'gravatar' => '846dac0ad49da6ec36c808dc932f2a9c2adae7e4b594025eec4e3081a524fefd'  ],
 	[ 'name' => 'Pâmela Ribeiro',       'role' => 'Hospitalidade',           'photo' => 'pamela',    'username' => 'pamprn',         'gravatar' => '8cc582cc64177f604d63cc370b7c3168b79edb1b67797bbc29c36e90ca4b3e40'  ],
 ];

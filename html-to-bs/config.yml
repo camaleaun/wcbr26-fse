@@ -21,7 +21,7 @@ toc:
   min: 2
   max: 4
 
-icons:          "http://localhost:4000"
+icons:          "https://icons.getbootstrap.com"
 github_org:     "https://github.com/wordcampbr/wordcampbr"
 x:              "wordcampbrasil"
 
