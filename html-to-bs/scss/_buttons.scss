@@ -2,17 +2,25 @@
 // Buttons — WCBR "sticker" treatment on top of Bootstrap
 //
 // Sizing, family and weight come from the $btn-* variables. Bootstrap's
-// full color-variant loop is forked and trimmed to .btn-primary/.btn-orange/
-// .btn-outline-orange in vendor/bootstrap-buttons.scss — see that file's
-// header comment. The hard offset shadow is drawn from
-// --#{$prefix}btn-border-color, so it recolors itself automatically for any
-// variant defined there.
+// full color-variant loop is forked and trimmed to .btn-primary/.btn-orange
+// in vendor/bootstrap-buttons.scss — see that file's header comment. The
+// hard offset shadow is drawn from --#{$prefix}btn-border-color, so it
+// recolors itself automatically for any variant defined there.
+//
+// Base .btn is the smaller of the prototype's two sizes (navbar "Ingressos");
+// .btn-lg is the bigger sticker CTA used everywhere else (hero, sponsor,
+// newsletter, drawer) — matches html-from-figma's own .btn/.btn-lg naming.
 // ============================================================
 .btn:not(.btn-link) {
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: .04em;
   box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
   transition: transform .12s ease, box-shadow .12s ease;
+
+  // The shadow shrinking + button translating already reads as "hover" —
+  // Bootstrap's default shade/tint on the fill would fight that cue, so the
+  // background stays identical to the resting state.
+  --#{$prefix}btn-hover-bg: var(--#{$prefix}btn-bg);
 
   &:hover {
     transform: translate(2px, 2px);
@@ -29,7 +37,7 @@
   &.disabled { box-shadow: none; transform: none; }
 }
 
-.btn-sm { letter-spacing: .04em; }
+.btn-lg { letter-spacing: .05em; }
 
 // The CTA is two-tone: the fill stays dark enough for white text (5.34:1) while
 // the border — and therefore the sticker shadow — lifts to the lighter orange.
@@ -37,4 +45,11 @@
 .btn-orange {
   --#{$prefix}btn-border-color: #{$orange-500};
   --#{$prefix}btn-hover-border-color: #{$orange-500};
+}
+
+// Same two-tone treatment as .btn-orange, but darker: cyan-700 fill with a
+// cyan-900 border/shadow.
+.btn-primary {
+  --#{$prefix}btn-border-color: #{$cyan-900};
+  --#{$prefix}btn-hover-border-color: #{$cyan-900};
 }

@@ -226,16 +226,23 @@ $container-padding-x: 3rem;
 
 // scss-docs-start wcbr-button-variables
 $btn-font-family:  $headings-font-family;
-$btn-font-weight:  900;
+// Neutral default — the sticker weight (900) is opt-in via .fw-black
+// (see scss/_utilities.scss), not baked into every .btn.
+$btn-font-weight:  400;
+$btn-line-height:  1.5;
 $btn-border-width: 2px;
 
-$btn-padding-y:    1.25rem;  // 20px
-$btn-padding-x:    2.5rem;   // 40px
-$btn-font-size:    1.05rem;
+// Base is the navbar "Ingressos" CTA size (redesigned, no longer matching
+// html-from-figma's original 13px/30px spec — the reference was updated to
+// follow). -lg is the big sticker CTA used everywhere else (hero, sponsor,
+// newsletter, drawer) — see components/buttons.mdx.
+$btn-padding-y:    .5rem;   // 8px
+$btn-padding-x:    1rem;    // 16px
+$btn-font-size:    1rem;
 
-$btn-padding-y-sm: .8125rem; // 13px
-$btn-padding-x-sm: 1.875rem; // 30px
-$btn-font-size-sm: .9rem;
+$btn-padding-y-lg: 1.25rem; // 20px
+$btn-padding-x-lg: 2.5rem;  // 40px
+$btn-font-size-lg: 1.05rem;
 
 // Offset of the signature hard "sticker" shadow.
 $btn-sticker-offset: 5px;

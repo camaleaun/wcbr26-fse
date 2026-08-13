@@ -16,7 +16,7 @@ Tabela de classes da versão Figma (`html-from-figma`) mapeadas para o equivalen
 | `.nav__item--has-sub` | `.nav-item.dropdown` + `.dropdown-menu` |
 | `data-drawer-*` (JS customizado) | `data-bs-toggle="offcanvas"` / `data-bs-dismiss` |
 | `.nav__sub` (drawer customizado) | `.offcanvas.offcanvas-end` + `.collapse` |
-| `.btn--sm` | `.btn.btn-sm` |
+| `.btn` (CTA da navbar) | `.btn` (base = o tamanho menor) |
 | `.hero-lead` | `.lead` |
 | `.stat-num.d-block` | `.stat-number.d-block` (cor no SCSS) |
 | `.stat-label.d-block` | `.stat-label.d-block` (cor + uppercase no SCSS) |
@@ -50,7 +50,7 @@ O header do Figma era um bloco totalmente customizado. No Bootstrap usa `navbar`
         <li class="nav-item"><a class="nav-link" href="#formatos">Agenda</a></li>
       </ul>
 
-      <a class="btn btn-primary btn-sm d-none d-xl-inline-flex ms-3" href="#">Ingressos</a>
+      <a class="btn btn-primary d-none d-xl-inline-flex ms-3" href="#">Ingressos</a>
 
       <!-- Hambúrguer mobile -->
       <button class="navbar-toggler d-xl-none ms-auto" type="button"
@@ -91,7 +91,7 @@ Submenus no drawer usam `.collapse` com `data-bs-toggle="collapse"` — Bootstra
       </li>
     </ul>
 
-    <a class="btn btn-primary w-100 mt-4" href="#">Ingressos</a>
+    <a class="btn btn-primary btn-lg w-100 mt-4" href="#">Ingressos</a>
 
   </div>
 </div>
@@ -108,7 +108,7 @@ Grid com `row align-items-center g-5` e duas colunas `col-lg-6`.
       <div class="col-lg-6">
         <h1 id="hero-title" class="display-1 mb-3">Bem-vindo ao<br>WordCamp Brasil</h1>
         <p class="lead mb-4">A maior conferência WordPress...</p>
-        <a class="btn btn-primary" href="#">Garanta seu ingresso</a>
+        <a class="btn btn-primary btn-lg" href="#">Garanta seu ingresso</a>
       </div>
       <div class="col-lg-6 d-flex justify-content-end">
         <div class="hero-frame">

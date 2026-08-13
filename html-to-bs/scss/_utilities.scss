@@ -1,0 +1,26 @@
+// ============================================================
+// Extends Bootstrap's font-weight utility with a 900 ("black") step.
+//
+// Bootstrap ships lighter/light/normal/medium/semibold/bold/bolder — nothing
+// reaches 900. WCBR's sticker CTAs need it on demand (base .btn defaults to
+// $btn-font-weight: 400, not baked-in bold — see scss/_variables.scss), so
+// this adds .fw-black rather than hardcoding weight on every button.
+//
+// Must be imported after node_modules/bootstrap/scss/utilities (which
+// defines the base $utilities map) and before utilities/api (which
+// generates the classes from it).
+// ============================================================
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "font-weight"), "values"),
+          ("black": 900)
+        )
+      )
+    )
+  )
+);

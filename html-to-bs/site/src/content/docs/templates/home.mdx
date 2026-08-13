@@ -16,7 +16,7 @@ Class mapping from the Figma version (`html-from-figma`) to the Bootstrap equiva
 | `.nav__item--has-sub` | `.nav-item.dropdown` + `.dropdown-menu` |
 | `data-drawer-*` (custom JS) | `data-bs-toggle="offcanvas"` / `data-bs-dismiss` |
 | `.nav__sub` (custom drawer) | `.offcanvas.offcanvas-end` + `.collapse` |
-| `.btn--sm` | `.btn.btn-sm` |
+| `.btn` (navbar CTA) | `.btn` (base = the smaller size) |
 | `.hero-lead` | `.lead` |
 | `.stat-num.d-block` | `.stat-number.d-block` (color in SCSS) |
 | `.stat-label.d-block` | `.stat-label.d-block` (color + uppercase in SCSS) |
@@ -50,7 +50,7 @@ The Figma header was a fully custom block. In Bootstrap it uses `navbar` with na
         <li class="nav-item"><a class="nav-link" href="#formatos">Schedule</a></li>
       </ul>
 
-      <a class="btn btn-primary btn-sm d-none d-xl-inline-flex ms-3" href="#">Tickets</a>
+      <a class="btn btn-primary d-none d-xl-inline-flex ms-3" href="#">Tickets</a>
 
       <!-- Mobile hamburger -->
       <button class="navbar-toggler d-xl-none ms-auto" type="button"
@@ -91,7 +91,7 @@ Submenus in the drawer use `.collapse` with `data-bs-toggle="collapse"` — nati
       </li>
     </ul>
 
-    <a class="btn btn-primary w-100 mt-4" href="#">Tickets</a>
+    <a class="btn btn-primary btn-lg w-100 mt-4" href="#">Tickets</a>
 
   </div>
 </div>
@@ -108,7 +108,7 @@ Grid with `row align-items-center g-5` and two `col-lg-6` columns.
       <div class="col-lg-6">
         <h1 id="hero-title" class="display-1 mb-3">Welcome to<br>WordCamp Brasil</h1>
         <p class="lead mb-4">The largest WordPress conference...</p>
-        <a class="btn btn-primary" href="#">Get your ticket</a>
+        <a class="btn btn-primary btn-lg" href="#">Get your ticket</a>
       </div>
       <div class="col-lg-6 d-flex justify-content-end">
         <div class="hero-frame">

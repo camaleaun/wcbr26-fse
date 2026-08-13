@@ -1,17 +1,22 @@
 // Forked from bootstrap@5.3.8 scss/_buttons.scss on 2026-08-13.
 // Reason: the upstream file loops .btn-<color>/.btn-outline-<color> over the
 // entire $theme-colors map (primary, secondary, success, danger, warning,
-// info, light, dark, orange, ...) plus .btn-link. Only .btn-primary,
-// .btn-orange, and .btn-outline-orange are used — .btn-orange for ticket/
-// newsletter CTAs, .btn-primary for secondary CTAs (e.g. "Torne-se um
-// patrocinador") in index.html, plus all three in the docs site's own
-// component examples (components/buttons.mdx, components/forms.mdx — see
-// build-pipeline.mdx). No other color, no other outline variant, no
-// .btn-link. Base .btn structure, .btn-lg and .btn-sm are kept verbatim.
+// info, light, dark, orange, ...) plus .btn-link. Only .btn-primary and
+// .btn-orange are used in index.html — .btn-orange for ticket/newsletter
+// CTAs, .btn-primary for secondary CTAs (e.g. "Torne-se um patrocinador").
+// No outline variant: .btn-outline-orange only ever existed as a live demo
+// in the docs site's components/buttons.mdx, never in the actual prototype
+// — dropped per "escopo restrito ao que existe no protótipo" (see
+// build-pipeline.mdx). No other color, no .btn-link.
+//
+// Sizes: base .btn is the smaller of the prototype's two sizes (navbar
+// "Ingressos"); .btn-lg is the bigger sticker CTA (hero, sponsor,
+// newsletter, drawer) — see $btn-padding-y/-lg in scss/_variables.scss.
+// .btn-sm is dropped: nothing in the prototype uses a third, smaller size.
+// Base .btn structure and button-size()/button-variant() are kept verbatim.
 // To refresh: diff node_modules/bootstrap/scss/_buttons.scss against this
 // file on every Bootstrap version bump; re-apply the trim if upstream
-// changed the base .btn block or button-variant()/button-outline-variant()/
-// button-size() mixins.
+// changed the base .btn block or button-variant()/button-size() mixins.
 
 //
 // Base styles
@@ -148,10 +153,6 @@
 
 .btn-orange {
   @include button-variant(map-get($theme-colors, "orange"), map-get($theme-colors, "orange"));
-}
-
-.btn-outline-orange {
-  @include button-outline-variant(map-get($theme-colors, "orange"));
 }
 
 

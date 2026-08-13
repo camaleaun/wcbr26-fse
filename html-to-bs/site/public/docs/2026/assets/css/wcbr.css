@@ -1856,12 +1856,12 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --wp--btn-padding-x: 2.5rem;
-  --wp--btn-padding-y: 1.25rem;
+  --wp--btn-padding-x: 1rem;
+  --wp--btn-padding-y: 0.5rem;
   --wp--btn-font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --wp--btn-font-size: 1.05rem;
-  --wp--btn-font-weight: 900;
-  --wp--btn-line-height: 1.45;
+  --wp--btn-font-size: 1rem;
+  --wp--btn-font-weight: 400;
+  --wp--btn-line-height: 1.5;
   --wp--btn-color: var(--wp--body-color);
   --wp--btn-bg: transparent;
   --wp--btn-border-width: 2px;
@@ -1967,41 +1967,17 @@ textarea.form-control-lg {
   --wp--btn-disabled-border-color: #C6360B;
 }
 
-.btn-outline-orange {
-  --wp--btn-color: #C6360B;
-  --wp--btn-border-color: #C6360B;
-  --wp--btn-hover-color: #fff;
-  --wp--btn-hover-bg: #C6360B;
-  --wp--btn-hover-border-color: #C6360B;
-  --wp--btn-focus-shadow-rgb: 198, 54, 11;
-  --wp--btn-active-color: #fff;
-  --wp--btn-active-bg: #C6360B;
-  --wp--btn-active-border-color: #C6360B;
-  --wp--btn-active-shadow: inset 0 3px 5px rgba(17, 17, 17, 0.125);
-  --wp--btn-disabled-color: #C6360B;
-  --wp--btn-disabled-bg: transparent;
-  --wp--btn-disabled-border-color: #C6360B;
-  --wp--gradient: none;
-}
-
 .btn-lg {
-  --wp--btn-padding-y: 0.5rem;
-  --wp--btn-padding-x: 1rem;
-  --wp--btn-font-size: calc(1.265625rem + 0.1875vw);
-}
-@media (min-width: 1200px) {
-  .btn-lg {
-    --wp--btn-font-size: 1.40625rem;
-  }
-}
-.btn-lg {
+  --wp--btn-padding-y: 1.25rem;
+  --wp--btn-padding-x: 2.5rem;
+  --wp--btn-font-size: 1.05rem;
   --wp--btn-border-radius: var(--wp--border-radius-lg);
 }
 
 .btn-sm {
-  --wp--btn-padding-y: 0.8125rem;
-  --wp--btn-padding-x: 1.875rem;
-  --wp--btn-font-size: 0.9rem;
+  --wp--btn-padding-y: 0.25rem;
+  --wp--btn-padding-x: 0.5rem;
+  --wp--btn-font-size: 0.984375rem;
   --wp--btn-border-radius: var(--wp--border-radius-sm);
 }
 
@@ -5149,6 +5125,10 @@ textarea.form-control-lg {
   font-weight: bolder !important;
 }
 
+.fw-black {
+  font-weight: 900 !important;
+}
+
 .lh-1 {
   line-height: 1 !important;
 }
@@ -8290,9 +8270,10 @@ h3, .h3 {
 
 .btn:not(.btn-link) {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   box-shadow: 5px 5px 0 0 var(--wp--btn-border-color);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
+  --wp--btn-hover-bg: var(--wp--btn-bg);
 }
 .btn:not(.btn-link):hover {
   transform: translate(2px, 2px);
@@ -8307,13 +8288,18 @@ h3, .h3 {
   transform: none;
 }
 
-.btn-sm {
-  letter-spacing: 0.04em;
+.btn-lg {
+  letter-spacing: 0.05em;
 }
 
 .btn-orange {
   --wp--btn-border-color: #f56530;
   --wp--btn-hover-border-color: #f56530;
+}
+
+.btn-primary {
+  --wp--btn-border-color: #003e3e;
+  --wp--btn-hover-border-color: #003e3e;
 }
 
 .badge {

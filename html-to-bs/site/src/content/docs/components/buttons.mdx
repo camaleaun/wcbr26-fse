@@ -6,37 +6,33 @@ toc: true
 
 WCBR uses Bootstrap's `.btn` component as-is. The brand treatment — square corners, heavy
 uppercase Poppins, a 2px border, and a **hard offset shadow** that presses in on click — is
-applied to the base `.btn`, so **every** variant inherits it: `.btn-primary`, `.btn-orange`,
-`.btn-outline-*`, and so on.
+applied to the base `.btn`, so **every** variant inherits it: `.btn-primary`, `.btn-orange`.
 
 ## Variants
 
-`orange` is added to `$theme-colors`, so Bootstrap generates its full family
-(`.btn-orange`, `.btn-outline-orange`, `.bg-orange`, `.text-orange`, `.border-orange`,
-`.link-orange`, …) exactly like the built-in colors.
+`orange` is added to `$theme-colors`, so Bootstrap could generate its full family
+(`.btn-outline-orange`, `.bg-orange`, `.text-orange`, `.border-orange`, `.link-orange`, …)
+like the built-in colors — but the build only ships the two variants the prototype actually
+uses (see [Build Pipeline](/docs/2026/getting-started/build-pipeline)).
 
 | Class | Fill | Role |
 |---|---|---|
 | `.btn-primary` | `$cyan-700` `#00595d` | Standard primary action |
 | `.btn-orange` | `$orange-600` `#c6360b` | The event CTA — tickets, newsletter |
-| `.btn-outline-orange` | — | Quiet CTA on busy backgrounds |
 
 There is **one** orange button, not several. See [Contrast](#contrast) for why.
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
-  <a class="btn btn-orange" href="#">Get your ticket</a>
   <a class="btn btn-primary" href="#">View schedule</a>
-  <a class="btn btn-outline-orange" href="#">Learn more</a>
-  <a class="btn btn-orange btn-sm" href="#">Tickets</a>
+  <a class="btn btn-orange" href="#">Get your ticket</a>
 </div>
 
 ```html
+<a class="btn btn-primary" href="#formatos">View schedule</a>
 <a class="btn btn-orange" href="#ingressos">Get your ticket</a>
-<a class="btn btn-primary" href="#programacao">View schedule</a>
-<a class="btn btn-outline-orange" href="#sobre">Learn more</a>
-<a class="btn btn-orange btn-sm" href="#ingressos">Tickets</a>
-<button class="btn btn-orange" type="submit">Subscribe</button>
 ```
+
+Sizes are a separate concern — see [Sizing](#sizing) below.
 
 ## Contrast
 
@@ -62,10 +58,15 @@ The offset shadow is drawn from the variant's own border color
 }
 ```
 
-`.btn-orange` is two-tone: the fill stays dark enough for white text while the border — and
-therefore the shadow — lifts to the lighter orange.
+Both variants are two-tone: the fill stays one shade, the border (and therefore the shadow)
+sits a step darker or lighter.
 
 ```scss
+.btn-primary {
+  --#{$prefix}btn-border-color: #{$cyan-900};         // #003e3e
+  --#{$prefix}btn-hover-border-color: #{$cyan-900};
+}
+
 .btn-orange {
   --#{$prefix}btn-border-color: #{$orange-500};       // #f56530
   --#{$prefix}btn-hover-border-color: #{$orange-500};
@@ -83,27 +84,52 @@ therefore the shadow — lifts to the lighter orange.
 
 ## Sizing
 
-Sizing comes from the `$btn-*` variables, so `.btn-sm` and `.btn-lg` work normally.
+The prototype only uses two sizes. Base `.btn` is the smaller one — the navbar "Ingressos"
+CTA is the only place it appears. `.btn-lg` is the bigger sticker CTA used everywhere else
+(hero, sponsor, newsletter, drawer). There's no `.btn-sm`: nothing in the prototype needs a
+third, smaller size.
+
+<div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
+  <a class="btn btn-orange" href="#">Tickets</a>
+  <a class="btn btn-orange btn-lg" href="#">Get your ticket</a>
+</div>
+
+```html
+<a class="btn btn-orange" href="#ingressos">Tickets</a>
+<a class="btn btn-orange btn-lg" href="#ingressos">Get your ticket</a>
+```
 
 ```scss
 $btn-font-family:  $headings-font-family;  // Poppins
 $btn-font-weight:  900;
 $btn-border-width: 2px;
-$btn-padding-y:    1.25rem;   // 20px
-$btn-padding-x:    2.5rem;    // 40px
-$btn-font-size:    1.05rem;
+
+$btn-padding-y:    .8125rem;  // 13px — base
+$btn-padding-x:    1.875rem;  // 30px
+$btn-font-size:    .9rem;
+
+$btn-padding-y-lg: 1.25rem;   // 20px — .btn-lg
+$btn-padding-x-lg: 2.5rem;    // 40px
+$btn-font-size-lg: 1.05rem;
 ```
 
 ## Mapping from the prototype
 
+`html-from-figma` uses the same `.btn`/`.btn-lg` size naming as the WCBR build — bare `.btn`
+is the small navbar CTA, `.btn-lg` is the big sticker CTA.
+
 | `html-from-figma` | Bootstrap / WCBR |
 |---|---|
 | `.btn` | `.btn.btn-orange` |
-| `.btn--sm` | `.btn.btn-orange.btn-sm` |
-| `.btn--brick` | `.btn.btn-orange` (consolidated) |
-| `.btn-newsletter` | `.btn.btn-orange` (consolidated) |
-| `.header__ingressos` | `.btn.btn-orange.btn-sm` in the navbar |
-| `.drawer__cta` | `.btn.btn-orange` inside the offcanvas |
+| `.btn-lg` | `.btn.btn-orange.btn-lg` |
+| `.btn-brick` | `.btn-orange` (consolidated) |
+| `.header__ingressos` | `.btn.btn-orange` in the navbar |
+| `.drawer__cta` | `.btn.btn-orange.btn-lg` inside the offcanvas |
+
+The sponsor CTA ("Torne-se um patrocinador") is the one deliberate divergence: the prototype
+keeps it orange/brick like every other CTA, but WCBR renders it `.btn.btn-primary.btn-lg`
+(cyan) to separate it from the ticket/newsletter CTAs — see the [Variants](#variants) note
+above.
 
 ## Notes
 

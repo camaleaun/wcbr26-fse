@@ -31,8 +31,8 @@ error.
 `colors.html`), and directly by `site/src/components/head/{Scss,ScssProd}.astro` and
 `ExamplesStylesheet.astro` — so this same file backs every docs-site page too,
 including the live `wcbrd-example` demos inside `components/*.mdx` (e.g.
-`components/buttons.mdx` renders real `.btn-primary`/`.btn-orange`/`.btn-outline-orange`
-buttons, `components/badges.mdx` real `.text-bg-*` badges). Those `.astro`/`.mdx`
+`components/buttons.mdx` renders real `.btn-primary`/`.btn-orange` buttons,
+`components/badges.mdx` real `.text-bg-*` badges). Those `.astro`/`.mdx`
 files are `git grep`-searched together with `index.html`/`colors.html` when auditing
 what's "used" — a class is only excluded if it's absent from all of them **and** never
 appears outside a fenced code sample. `Scss.astro`/`ScssProd.astro` also `@import`
@@ -55,7 +55,7 @@ Audited against `bootstrap@5.3.8` (the installed version — devDependency range
 | `images` | `node_modules` | `.img-fluid`, used on news-card images. |
 | `containers`, `grid` (via local `grid.scss` wrapper) | `node_modules` | `.container`, `.row`, `.col-*`, `.row-cols-*` — used throughout every section. |
 | `forms` | **fork** — `scss/vendor/bootstrap-forms.scss` | Only `labels`, `form-text`, `form-control` kept (newsletter input, `components/forms.mdx`). See below. |
-| `buttons` | **fork** — `scss/vendor/bootstrap-buttons.scss` | Base `.btn` + `.btn-primary`/`.btn-orange`/`.btn-outline-orange` only. See below. |
+| `buttons` | **fork** — `scss/vendor/bootstrap-buttons.scss` | Base `.btn` + `.btn-primary`/`.btn-orange` only. See below. |
 | `transitions` | `node_modules` | `.collapse` / `.collapsing` — powers the accordion and the mobile navbar toggle. |
 | `dropdown` | `node_modules` | `.dropdown-menu` structure for the header's `EVENTO`/`CHAMADAS` menus. |
 | `nav` | `node_modules` | Base `.nav-link` (navbar links extend it, don't redefine it). |
@@ -114,11 +114,18 @@ how to refresh it:
   see above).
 - **`vendor/bootstrap-buttons.scss`** — upstream `_buttons.scss` loops
   `.btn-<color>` / `.btn-outline-<color>` over the entire `$theme-colors` map plus
-  `.btn-link`. Only `.btn-primary`, `.btn-orange`, and `.btn-outline-orange` are used
+  `.btn-link`. Only `.btn-primary` and `.btn-orange` are used in `index.html`
   (`.btn-orange` for ticket/newsletter CTAs, `.btn-primary` for secondary CTAs like
-  "Torne-se um patrocinador", `.btn-outline-orange` in `components/buttons.mdx`'s live
-  example), so the fork keeps the base `.btn` block, `.btn-lg`/`.btn-sm`, and those
-  three variant rules — no `.btn-link`, no other color.
+  "Torne-se um patrocinador"), so the fork keeps the base `.btn` block and those two
+  variant rules — no outline variant, no `.btn-link`, no other color.
+  `.btn-outline-orange` used to exist as a live demo in `components/buttons.mdx`,
+  but never in the actual prototype — removed from both the fork and the doc's
+  example per "escopo restrito ao que existe no protótipo." Sizes: the fork also
+  reassigns which tier is "base" — `$btn-padding-y/x`/`$btn-font-size` in
+  `scss/_variables.scss` now hold the *smaller* of the prototype's two sizes (the
+  navbar CTA), and `.btn-lg` (kept) holds the bigger sticker CTA used everywhere
+  else, matching `html-from-figma`'s own `.btn`/`.btn-lg` naming. `.btn-sm` is
+  dropped — no third size exists in the prototype.
 
 ## Adding a Bootstrap partial
 

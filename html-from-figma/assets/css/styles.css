@@ -100,18 +100,20 @@ svg.icon, .social svg, .sponsor-icon svg, .avatar svg {
 /* ---------- Botões (estilo sticker) ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  font-family: var(--ff-head); font-weight: 900; text-transform: uppercase;
-  letter-spacing: .05em; color: #fff; text-align: center;
+  font-family: var(--ff-head); font-weight: 400; line-height: 1.5; text-transform: uppercase;
+  letter-spacing: .04em; color: #fff; text-align: center;
   background: var(--orange-600);
   border: 2px solid var(--orange-500);
   box-shadow: 5px 5px 0 0 var(--orange-500);
   border-radius: 0;
-  padding: 20px 40px; font-size: 1.05rem;
+  padding: .5rem 1rem; font-size: 1rem;
   transition: transform .12s ease, box-shadow .12s ease;
 }
 .btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 0 var(--orange-500); }
 .btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 0 var(--orange-500); }
-.btn-sm { padding: 13px 30px; font-size: .9rem; letter-spacing: .04em; }
+.btn-lg { padding: 20px 40px; font-size: 1.05rem; letter-spacing: .05em; }
+/* Sticker weight is opt-in — matches .fw-black in the WCBR Bootstrap build */
+.fw-black { font-weight: 900; }
 .btn-brick { background: var(--orange-600); border-color: var(--orange-500); box-shadow: 5px 5px 0 0 var(--orange-500); }
 .btn-brick:hover { box-shadow: 3px 3px 0 0 var(--orange-600); }
 .btn-brick:active { box-shadow: 0 0 0 0 var(--orange-600); }
