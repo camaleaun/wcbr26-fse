@@ -20,8 +20,8 @@ function titleFromName(name: string): string {
 
 const categoryMap: Record<string, string[]> = {
   'lightning':        ['Format'],
-  'people-fill':      ['Format'],
-  'broadcast':        ['Format'],
+  'people-group':     ['Format'],
+  'person-voice':     ['Format'],
   'instagram':        ['Social'],
   'linkedin':         ['Social'],
   'tiktok':           ['Social'],
@@ -35,8 +35,8 @@ const categoryMap: Record<string, string[]> = {
 
 const tagMap: Record<string, string[]> = {
   'lightning':        ['format', 'mini', 'lightning', 'workshop', 'flash'],
-  'people-fill':      ['format', 'paineis', 'panels', 'people', 'group', 'audience'],
-  'broadcast':        ['format', 'palestras', 'talks', 'speaker', 'broadcast', 'voice'],
+  'people-group':     ['format', 'paineis', 'panels', 'people', 'group', 'audience'],
+  'person-voice':     ['format', 'palestras', 'talks', 'speaker', 'voice', 'presenter'],
   'instagram':        ['instagram', 'social', 'photo'],
   'linkedin':         ['linkedin', 'social', 'professional'],
   'tiktok':           ['tiktok', 'social', 'video'],

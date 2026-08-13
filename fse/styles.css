@@ -37,6 +37,10 @@ figure.hero-frame img {
 @media (max-width: 639px) { .sponsor-cpt-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
 /* REF: .org-grid = 2 colunas <640px, 4 colunas >=640px (mesmo breakpoint) */
 @media (max-width: 639px) { .org-cpt-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; } }
+/* REF .organizer: display:flex;flex-direction:column;gap:10px — WP li é list-item com
+   margens de bloco padrão entre figure/h3/terms (~18px+16px), maior que o gap:10px do REF */
+.wcb_organizer { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+.wcb_organizer figure, .wcb_organizer h3, .wcb_organizer .wp-block-post-terms { margin: 0; }
 /* Montserrat: setup.php registra montserrat-700.woff2 mas o arquivo é montserrat.woff2 → font-display:swap usa fallback.
    Adicionar @font-face correto override para 400 e 700 usando o arquivo disponível. */
 @font-face { font-family:Montserrat; font-style:normal; font-weight:400; font-display:swap; src:url("/wp-content/uploads/wcbr2026/fonts/montserrat.woff2") format("woff2"); }
