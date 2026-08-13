@@ -9,7 +9,7 @@ import {
   zVersionMajorMinor,
   zVersionSemver
 } from './validation'
-import { capitalizeFirstLetter } from './utils'
+import { capitalizeFirstLetter, getSlug } from './utils'
 
 // An object containing all the data types and their associated schema. The key should match the name of the data file
 // in the `./site/data/` directory.
@@ -85,9 +85,15 @@ const dataDefinitions = {
         .object({
           title: z.string()
         })
+        .transform((page) => ({ ...page, slug: getSlug(page.title) }))
         .array()
         .optional()
     })
+    .transform((section) => ({
+      ...section,
+      slug: getSlug(section.title),
+      pages: section.pages
+    }))
     .array(),
   'theme-colors': z
     .object({

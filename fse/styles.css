@@ -115,6 +115,8 @@ body { font-size: 1.125rem; line-height: 1.45; }
 .sponsor-lg { min-height:96px; justify-content:flex-start; padding-inline:24px; font-size:1.15rem; }
 .sponsor-text { min-height:56px; font-size:.82rem; text-transform:uppercase; letter-spacing:.06em; color:var(--wp--preset--color--gray-700); box-shadow:3px 3px 0 0 var(--wp--preset--color--gray-400); }
 .sponsor-icon { color:var(--wp--preset--color--cyan-700); display:inline-flex; }
+/* REF .micro-sponsor-names: fs=.95rem — paragrafo sem classe herdava o body:18px */
+.micro-sponsor-names { font-size:.95rem !important; }
 .sponsor-icon svg { fill:currentColor; stroke:none; }
 
 /* ── Newsletter form (wp:html) ── */
