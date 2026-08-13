@@ -1,10 +1,12 @@
 // ============================================================
 // Buttons — WCBR "sticker" treatment on top of Bootstrap
 //
-// Sizing, family and weight come from the $btn-* variables, so every Bootstrap
-// variant (.btn-primary, .btn-orange, .btn-outline-*) inherits the brand
-// automatically. The hard offset shadow is drawn from the variant's own
-// --#{$prefix}btn-border-color, so it recolors itself per variant.
+// Sizing, family and weight come from the $btn-* variables. Bootstrap's
+// full color-variant loop is forked and trimmed to .btn-primary/.btn-orange/
+// .btn-outline-orange in vendor/bootstrap-buttons.scss — see that file's
+// header comment. The hard offset shadow is drawn from
+// --#{$prefix}btn-border-color, so it recolors itself automatically for any
+// variant defined there.
 // ============================================================
 .btn:not(.btn-link) {
   text-transform: uppercase;

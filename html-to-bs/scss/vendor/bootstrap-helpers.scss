@@ -1,0 +1,24 @@
+// Forked from bootstrap@5.3.8 scss/_helpers.scss on 2026-08-13.
+// Reason: _helpers.scss is an index of 12 sub-partials. Kept: visually-hidden
+// (.visually-hidden/.visually-hidden-focusable, skip links + newsletter
+// label), position (.sticky-top, the header), color-bg (.text-bg-orange/
+// .text-bg-primary, the badges — index.html and components/badges.mdx),
+// colored-links (.link-body-emphasis, components/icons.mdx's live social
+// icon example), text-truncation (.text-truncate, WcbrIconsGallery.astro),
+// and vr (Navigation.astro's desktop divider). Dropped: clearfix,
+// focus-ring, stacks (.hstack/.vstack), stretched-link, ratio, icon-link.
+// ratio/icon-link only appear inside a ```html code sample in
+// components/cards.mdx (dead documentation text, not a live `wcbrd-example`) —
+// index.html's actual news cards still use the legacy .news-card-media/
+// .link-under classes, not this documented target markup. Re-add both if
+// cards.mdx's markup sample ever becomes a live rendered example, or if
+// index.html's news cards are migrated to it (see build-pipeline.mdx).
+// To refresh: diff node_modules/bootstrap/scss/_helpers.scss against this
+// file's import list on every Bootstrap version bump; re-apply the trim if
+// upstream added/removed sub-partials.
+@import "../../node_modules/bootstrap/scss/helpers/visually-hidden";
+@import "../../node_modules/bootstrap/scss/helpers/position";
+@import "../../node_modules/bootstrap/scss/helpers/color-bg";
+@import "../../node_modules/bootstrap/scss/helpers/colored-links";
+@import "../../node_modules/bootstrap/scss/helpers/text-truncation";
+@import "../../node_modules/bootstrap/scss/helpers/vr";

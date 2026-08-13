@@ -1,0 +1,12 @@
+// Forked from bootstrap@5.3.8 scss/_forms.scss on 2026-08-13.
+// Reason: _forms.scss is an index of 9 sub-partials; only labels, form-text,
+// and form-control are used (.form-control, in the newsletter signup).
+// Dropped: form-select, form-check, form-range, floating-labels, input-group,
+// validation — none appear in index.html/colors.html/examples (see
+// build-pipeline.mdx).
+// To refresh: diff node_modules/bootstrap/scss/_forms.scss against this
+// file's import list on every Bootstrap version bump; re-apply the trim if
+// upstream added/removed sub-partials.
+@import "../../node_modules/bootstrap/scss/forms/labels";
+@import "../../node_modules/bootstrap/scss/forms/form-text";
+@import "../../node_modules/bootstrap/scss/forms/form-control";

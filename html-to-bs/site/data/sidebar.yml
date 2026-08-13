@@ -12,6 +12,7 @@
   icon_color: primary
   pages:
     - title: Introduction
+    - title: Build Pipeline
 
 - title: Content
   icon: file-text

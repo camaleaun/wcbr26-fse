@@ -1,0 +1,150 @@
+---
+title: Build Pipeline
+description: How wcbr.scss is assembled from selective Bootstrap partials — what's imported, why, and how to extend it.
+toc: true
+---
+
+`wcbrbs` does not `@import "bootstrap/scss/bootstrap"`. `scss/wcbr.scss` imports only
+the Bootstrap Sass partials the theme's own components actually depend on, directly
+from `node_modules`, and forks (copies into `scss/vendor/`) the handful of partials
+that bundle more sub-features than the brand uses. The goal is the **minimum CSS
+output that serves what's actually rendered** — `index.html`, `colors.html`, and every
+*live* example in the docs site (a `<div class="wcbrd-example">` block in a `.mdx` page,
+or markup inside a real `.astro` component) — not Bootstrap's full component/utility
+surface, and not markup that only appears inside a fenced code sample (dead
+documentation text, not something the browser renders, so it doesn't need real CSS
+behind it).
+
+## Why this exists
+
+`scss/_navbar.scss`, `_accordion.scss`, `_offcanvas.scss`, `_forms.scss`, `_card.scss`,
+`_badge.scss`, and `_buttons.scss` are **theme-only** partials: they restyle selectors
+like `.navbar`, `.accordion-collapse`, `.dropdown-menu`, `.offcanvas`, `.form-control`
+with WCBR colors, type, and spacing — none of them define the base `display`,
+`position`, or `transition` behavior those selectors need to actually work. That
+structure comes from Bootstrap's own partials. Drop the Bootstrap partial that defines
+a selector, and every local override built on top of it silently breaks (no layout, no
+collapse/expand, no offcanvas slide-in) even though the SCSS still compiles without
+error.
+
+`wcbr.scss` is consumed by `npm run css` → `assets/css/wcbr.css` (used by `index.html`,
+`colors.html`), and directly by `site/src/components/head/{Scss,ScssProd}.astro` and
+`ExamplesStylesheet.astro` — so this same file backs every docs-site page too,
+including the live `wcbrd-example` demos inside `components/*.mdx` (e.g.
+`components/buttons.mdx` renders real `.btn-primary`/`.btn-orange`/`.btn-outline-orange`
+buttons, `components/badges.mdx` real `.text-bg-*` badges). Those `.astro`/`.mdx`
+files are `git grep`-searched together with `index.html`/`colors.html` when auditing
+what's "used" — a class is only excluded if it's absent from all of them **and** never
+appears outside a fenced code sample. `Scss.astro`/`ScssProd.astro` also `@import`
+`site/src/scss/docs.scss` in the same `<style>` block, so docs-only chrome (search,
+sidebar, the Bootstrap reference tables under generic utility pages) can lean on that
+file's own, separately-audited Bootstrap imports instead — those classes don't need to
+exist in `wcbr.css` too.
+
+## Current partials
+
+Audited against `bootstrap@5.3.8` (the installed version — devDependency range is
+`^5.3.3`). Order in `wcbr.scss` mirrors `node_modules/bootstrap/scss/bootstrap.scss`.
+
+| Partial | Source | Why |
+|---|---|---|
+| `functions`, `variables`, `maps`, `mixins`, `utilities` | `node_modules` | Config layer — variables, derived maps, mixins, and the `$utilities` map that the utility API loop reads. |
+| `root` | `node_modules` | `--bs-*` custom properties other partials' compiled CSS reads via `var()`. |
+| `reboot` | `node_modules` | Base normalize/box-sizing reset. |
+| `type` | `node_modules` | Base heading/paragraph/list styles (`.list-unstyled` used in header/footer). |
+| `images` | `node_modules` | `.img-fluid`, used on news-card images. |
+| `containers`, `grid` (via local `grid.scss` wrapper) | `node_modules` | `.container`, `.row`, `.col-*`, `.row-cols-*` — used throughout every section. |
+| `forms` | **fork** — `scss/vendor/bootstrap-forms.scss` | Only `labels`, `form-text`, `form-control` kept (newsletter input, `components/forms.mdx`). See below. |
+| `buttons` | **fork** — `scss/vendor/bootstrap-buttons.scss` | Base `.btn` + `.btn-primary`/`.btn-orange`/`.btn-outline-orange` only. See below. |
+| `transitions` | `node_modules` | `.collapse` / `.collapsing` — powers the accordion and the mobile navbar toggle. |
+| `dropdown` | `node_modules` | `.dropdown-menu` structure for the header's `EVENTO`/`CHAMADAS` menus. |
+| `nav` | `node_modules` | Base `.nav-link` (navbar links extend it, don't redefine it). |
+| `navbar` | `node_modules` | `.navbar`, `.navbar-toggler`, `.navbar-collapse` structure. |
+| `card` | `node_modules` | Base `.card` used by the news grid. |
+| `accordion` | `node_modules` | `.accordion-item`/`.accordion-button`/`.accordion-collapse` structure ("O que esperar"). |
+| `badge` | `node_modules` | Base `.badge`, themed via `text-bg-orange`/`text-bg-primary` (`index.html`, `components/badges.mdx`). |
+| `close` | `node_modules` | `.btn-close` — a standalone partial, not bundled with `buttons`/`modal`. |
+| `offcanvas` | `node_modules` | Mobile drawer structure. |
+| `helpers` | **fork** — `scss/vendor/bootstrap-helpers.scss` | `visually-hidden`, `position`, `color-bg`, `colored-links`, `text-truncation`, `vr` kept. See below. |
+| `utilities/api` | `node_modules` | Generates the utility classes (`.d-flex`, `.gap-3`, `.mb-*`, `.text-center`, …) from the `$utilities` map. |
+
+**Excluded entirely** (not referenced anywhere in `index.html`, `colors.html`,
+`docs-html/index.html`, `site/src/assets/examples/**`, `site/src/components/**`, or
+live in any `components/*.mdx` — the `docs-site chrome` pages that *do* use classes
+like `.alert`/`.breadcrumb`/`.table-responsive`/`.btn-outline-secondary` render them
+via `site/src/scss/docs.scss`'s own imports, not `wcbr.scss`): `variables-dark`,
+`tables`, `button-group`, `breadcrumb`, `pagination`, `alert`, `progress`,
+`list-group`, `toasts`, `modal`, `tooltip`, `popover`, `carousel`, `spinners`,
+`placeholders`. Re-verify with:
+
+```bash
+grep -rlE 'class="[^"]*(modal|carousel|tooltip|popover|spinner|breadcrumb|pagination|list-group|toast|progress|alert)' \
+  index.html colors.html docs-html/index.html site/src/assets/examples/
+```
+
+Remember to exclude fenced code samples when re-running this check by hand — a class
+mentioned only inside an `html` code fence in a `.mdx` file (e.g. `components/cards.mdx`
+documents `.ratio`/`.icon-link` as the *target* markup for news cards, but no
+`wcbrd-example` on that page actually renders them, and `index.html`'s current cards
+still use the legacy `.news-card-media`/`.link-under` classes) doesn't need CSS
+support yet.
+
+### Forked partials
+
+Three partials are index files that bundle sub-features the theme doesn't use, or
+generate more variant CSS than the HTML calls for. Rather than importing the full
+partial, each is copied into `scss/vendor/` and trimmed. Every forked file starts with
+a header comment stating the upstream version, the date, the reason for the cut, and
+how to refresh it:
+
+```scss
+// Forked from bootstrap@5.3.8 scss/_forms.scss on 2026-08-13.
+// Reason: cut to labels/form-text/form-control — form-select, form-check,
+// form-range, floating-labels, input-group, validation are unused.
+// To refresh: diff node_modules/bootstrap/scss/_forms.scss against this file
+// on every Bootstrap version bump; re-apply the trim if upstream changed.
+```
+
+- **`vendor/bootstrap-forms.scss`** — upstream `_forms.scss` is an index of 9
+  sub-partials; only `labels`, `form-text`, `form-control` are kept.
+- **`vendor/bootstrap-helpers.scss`** — upstream `_helpers.scss` is an index of 12
+  sub-partials; `visually-hidden`, `position`, `color-bg`, `colored-links`,
+  `text-truncation`, and `vr` are kept — dropped `clearfix`, `focus-ring`, `stacks`,
+  `stretched-link`, `ratio`, `icon-link` (the last two only appear in a code sample,
+  see above).
+- **`vendor/bootstrap-buttons.scss`** — upstream `_buttons.scss` loops
+  `.btn-<color>` / `.btn-outline-<color>` over the entire `$theme-colors` map plus
+  `.btn-link`. Only `.btn-primary`, `.btn-orange`, and `.btn-outline-orange` are used
+  (`.btn-orange` for ticket/newsletter CTAs, `.btn-primary` for secondary CTAs like
+  "Torne-se um patrocinador", `.btn-outline-orange` in `components/buttons.mdx`'s live
+  example), so the fork keeps the base `.btn` block, `.btn-lg`/`.btn-sm`, and those
+  three variant rules — no `.btn-link`, no other color.
+
+## Adding a Bootstrap partial
+
+When a new component becomes necessary (e.g. the prototype grows a modal or a table):
+
+1. Read `node_modules/bootstrap/scss/_<component>.scss` to find what it needs — watch
+   for index files with sub-imports (`forms`, `helpers` both work this way).
+2. Check where it sits in the [official import order](https://github.com/twbs/bootstrap/blob/main/scss/bootstrap.scss)
+   and add it to `wcbr.scss` section 3 in the matching position.
+3. Add or update the corresponding local override partial (section 4/5 of
+   `wcbr.scss`) so WCBR theming lands *after* the new Bootstrap import.
+4. Run `npm run css` and confirm the new selectors compiled
+   (`grep -c "^\.<selector>" assets/css/wcbr.css`).
+5. Update the partial table above.
+
+## Forking a partial on demand
+
+The default stays importing `node_modules/bootstrap/scss/*` directly — **no general
+vendoring**. Only fork a partial when it bundles sub-features you don't need, or
+generates more variant CSS than the HTML uses. Never fork "just in case."
+
+1. Copy the file into `scss/vendor/bootstrap-<name>.scss`.
+2. Add the header comment shown above (upstream version, date, reason, refresh steps).
+3. Point `wcbr.scss`'s import at `vendor/bootstrap-<name>` instead of
+   `../node_modules/bootstrap/scss/<name>`.
+4. To check whether a fork is stale after a Bootstrap version bump:
+   `diff node_modules/bootstrap/scss/_<name>.scss scss/vendor/bootstrap-<name>.scss`
+   — `node_modules/bootstrap` is always present, so this is a live command, no
+   snapshot needed.

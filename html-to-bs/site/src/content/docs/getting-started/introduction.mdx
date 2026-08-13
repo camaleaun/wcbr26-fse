@@ -11,9 +11,15 @@ ready-to-use markup, so every surface looks and behaves like one product.
 
 ## What it is
 
-- **A Bootstrap theme, not a fork.** Every WCBR token is a Bootstrap variable override
-  (`$primary`, `$body-bg`, the color scales, the type ramp). You keep the full Bootstrap
-  component set and utility API, restyled with the WCBR brand.
+- **A curated fork, not a full-bundle theme.** `wcbr.scss` doesn't `@import` Bootstrap's
+  bundle wholesale — it imports only the specific partials the theme actually uses,
+  directly from `node_modules`, and forks (copies into `scss/vendor/`) the few partials
+  that bundle more sub-features than the brand needs, trimmed to size. Every WCBR token
+  is still a Bootstrap variable override (`$primary`, `$body-bg`, the color scales, the
+  type ramp) — but the CSS output tracks what the HTML actually uses, not Bootstrap's
+  full component/utility surface. See
+  [Build Pipeline](/docs/2026/getting-started/build-pipeline) for the current partial
+  list and how to extend or fork one.
 - **Token-driven.** Colors and type come from a single Sass source
   (`scss/_variables.scss`) that mirrors the Figma **WCBR Bootstrap** variable collection.
 - **Sharp and editorial.** Border-radius is `0` across the board, headings use **Poppins 900**
