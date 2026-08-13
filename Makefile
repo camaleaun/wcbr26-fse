@@ -14,11 +14,16 @@ DOCS_PORT := 8444
 DOCS_SITE := $(CURDIR)/html-to-bs/site/dist
 DOCS_URL  := https://localhost:$(DOCS_PORT)/
 
+SPONSOR_NAME := wcbr-sponsor-caddy
+SPONSOR_PORT := 8445
+SPONSOR_SITE := $(CURDIR)/sponsor-kit
+SPONSOR_URL  := https://localhost:$(SPONSOR_PORT)/
+
 FSE_PORT  := 8001
 WP_PORT   := 9999
 
 .DEFAULT_GOAL := help
-.PHONY: help up down restart logs status cert tunnel untunnel tunnel-url fse playground playground-dev site i18n-check i18n-sync docs-build docs-up docs-down
+.PHONY: help up down restart logs status cert tunnel untunnel tunnel-url fse playground playground-dev site i18n-check i18n-sync docs-build docs-up docs-down sponsor-up sponsor-down sponsor-restart sponsor-logs sponsor-status
 
 help: ## Lista os comandos
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*?## "}{printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
@@ -93,6 +98,29 @@ docs-up: cert ## Serve os docs buildados em https://localhost:8444
 
 docs-down: ## Derruba o servidor de docs
 	@docker rm -f $(DOCS_NAME) >/dev/null 2>&1 && echo "▼ docs parado" || echo "já estava parado"
+
+sponsor-up: cert ## Sobe o site de patrocínio em https://localhost:8445
+	@docker rm -f $(SPONSOR_NAME) >/dev/null 2>&1 || true
+	@docker run -d --name $(SPONSOR_NAME) -p $(SPONSOR_PORT):$(SPONSOR_PORT) \
+		-v "$(SPONSOR_SITE)":/srv:ro \
+		-v "$(SERVE)/Caddyfile.sponsor":/etc/caddy/Caddyfile:ro \
+		-v "$(CERTS)":/certs:ro \
+		$(IMAGE) >/dev/null
+	@echo "▲ patrocínio: $(SPONSOR_URL)"
+
+sponsor-down: ## Derruba o servidor de patrocínio
+	@docker rm -f $(SPONSOR_NAME) >/dev/null 2>&1 && echo "▼ patrocínio parado" || echo "já estava parado"
+
+sponsor-restart: ## Reinicia o servidor de patrocínio
+	@$(MAKE) --no-print-directory sponsor-down
+	@$(MAKE) --no-print-directory sponsor-up
+
+sponsor-logs: ## Segue os logs do container de patrocínio
+	@docker logs -f $(SPONSOR_NAME)
+
+sponsor-status: ## Mostra status do container de patrocínio
+	@docker ps --filter name=$(SPONSOR_NAME) --format 'status: {{.Status}}\nports:  {{.Ports}}'
+	@echo "url:    $(SPONSOR_URL)"
 
 i18n-check: ## Verifica sincronismo EN↔PT-BR (exemplos e docs)
 	@cd html-to-bs && npm run i18n-check
