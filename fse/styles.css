@@ -1,3 +1,36 @@
+figure.hero-frame {
+  position: relative;
+  aspect-ratio: 1/1;
+  isolation: isolate;
+  border: 2px solid var(--wp--preset--color--custom-wcbr-teal);
+  box-shadow: 5px 5px 0 0 var(--wp--preset--color--custom-wcbr-teal);
+  margin: 0;
+}
+
+figure.hero-frame::before {
+  content: "";
+  position: absolute;
+  inset: -16px 16px 16px -16px;
+  border: 4px solid var(--wp--preset--color--custom-wcbr-teal);
+  z-index: -1;
+}
+
+figure.hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wcb_sponsor {
+  border: 2px solid var(--wp--preset--color--custom-gray-400);
+  aspect-ratio: 282 / 96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--wp--preset--spacing--20) * 1.4) calc(var(--wp--preset--spacing--30) * 1.2);
+  box-shadow: 0.25rem 0.25rem 0 0 var(--wp--preset--color--custom-cyan-700);
+  height: 100%;
+}
 /* Montserrat: setup.php registra montserrat-700.woff2 mas o arquivo é montserrat.woff2 → font-display:swap usa fallback.
    Adicionar @font-face correto override para 400 e 700 usando o arquivo disponível. */
 @font-face { font-family:Montserrat; font-style:normal; font-weight:400; font-display:swap; src:url("/wp-content/uploads/wcbr2026/fonts/montserrat.woff2") format("woff2"); }

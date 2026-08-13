@@ -402,11 +402,27 @@ if ( $query->have_posts() ) {
 	}
 }
 
+// ── 2.5. Cota de patrocínio "Tropeirão (Ouro)" ──────────────────────────────
+// Criada antes do hero.html ser processado para substituir o term_id do
+// wp:query (query block foi montado no editor apontando para o term_id 32,
+// que não é garantido em uma instalação nova — resolve dinamicamente aqui).
+
+$tropeirao_term = get_term_by( 'name', 'Tropeirão (Ouro)', 'wcb_sponsor_level' );
+if ( ! $tropeirao_term ) {
+	$result           = wp_insert_term( 'Tropeirão (Ouro)', 'wcb_sponsor_level' );
+	$tropeirao_term_id = is_wp_error( $result ) ? 0 : $result['term_id'];
+} else {
+	$tropeirao_term_id = $tropeirao_term->term_id;
+}
+
 // ── 3. Front page com Hero ──────────────────────────────────────────────────
 
 $hero_file    = $uploads_dir . 'hero.html';
 $hero_content = file_exists( $hero_file ) ? file_get_contents( $hero_file ) : '';
 $hero_content = wcbr_process_content( $hero_content, $uploads_base, $url_map );
+if ( $tropeirao_term_id ) {
+	$hero_content = str_replace( '"wcb_sponsor_level":[0]', '"wcb_sponsor_level":[' . (int) $tropeirao_term_id . ']', $hero_content );
+}
 // wp_insert_post/wp_update_post chamam wp_unslash() — wp_slash() compensa.
 $hero_content = wp_slash( $hero_content );
 
@@ -573,6 +589,46 @@ foreach ( $organizers_data as $order => $item ) {
 		$dest_file = 'organizer-' . $item['photo'] . '.jpg';
 		$thumb_id  = wcbr_import_image( $photo_src, $dest_file, 'organizers/' . $item['photo'] . '.jpg', $media_dir, $media_url, $mime_map, $url_map );
 	}
+
+	if ( $thumb_id && ! is_wp_error( $thumb_id ) ) {
+		set_post_thumbnail( $post_id, $thumb_id );
+	}
+}
+
+// ── 7. Patrocinadores — Cota Tropeirão (Ouro) ──────────────────────────────
+
+$sponsors_tropeirao = [
+	[ 'name' => 'Automattic', 'logo' => 'automattic-logo' ],
+	[ 'name' => 'Hostinger',  'logo' => 'hostinger-logo' ],
+	[ 'name' => 'Bluehost',   'logo' => 'bluehost-logo' ],
+	[ 'name' => 'Woo',        'logo' => 'woo-logo' ],
+];
+
+foreach ( $sponsors_tropeirao as $order => $item ) {
+	$existing = get_posts( [ 'post_type' => 'wcb_sponsor', 'title' => $item['name'], 'post_status' => 'publish', 'numberposts' => 1 ] );
+	if ( $existing ) {
+		continue;
+	}
+
+	$post_id = wp_insert_post( [
+		'post_type'    => 'wcb_sponsor',
+		'post_title'   => $item['name'],
+		'post_status'  => 'publish',
+		'post_content' => '',
+		'menu_order'   => $order,
+	] );
+
+	if ( ! $post_id || is_wp_error( $post_id ) ) {
+		continue;
+	}
+
+	if ( $tropeirao_term_id ) {
+		wp_set_object_terms( $post_id, $tropeirao_term_id, 'wcb_sponsor_level' );
+	}
+
+	$logo_src  = $uploads_dir . 'img/sponsors/' . $item['logo'] . '.avif';
+	$dest_file = $item['logo'] . '.avif';
+	$thumb_id  = wcbr_import_image( $logo_src, $dest_file, 'sponsors/' . $item['logo'] . '.avif', $media_dir, $media_url, $mime_map, $url_map );
 
 	if ( $thumb_id && ! is_wp_error( $thumb_id ) ) {
 		set_post_thumbnail( $post_id, $thumb_id );
