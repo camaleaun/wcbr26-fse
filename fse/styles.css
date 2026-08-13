@@ -118,7 +118,9 @@ body { font-size: 1.125rem; line-height: 1.45; }
 .sponsor-icon svg { fill:currentColor; stroke:none; }
 
 /* ── Newsletter form (wp:html) ── */
-.newsletter-form { display:flex; flex-direction:column; gap:16px; max-width:576px; margin-inline:auto; }
+/* :root :where(.is-layout-constrained) > * do WP aplica max-width:720px aos filhos diretos
+   com a mesma especificidade (0,1,0) e carrega depois → precisa de !important para vencer */
+.newsletter-form { display:flex; flex-direction:column; gap:16px; max-width:576px !important; margin-inline:auto; }
 /* Newsletter lead: clamp igual ao REF (1.05rem mobile, 1.375rem desktop); max-width≈672px */
 .section.newsletter > .wp-block-paragraph { font-size:clamp(1.05rem,2.2vw,1.375rem); line-height:1.4; max-width:672px; margin-inline:auto; }
 .newsletter-input { flex:1; background:var(--wp--preset--color--sand-100); color:var(--wp--preset--color--gray-700); border:2px solid var(--wp--preset--color--sand-100); border-radius:0; padding:18px 24px; font-family:var(--wp--preset--font-family--montserrat); font-size:1rem; }
@@ -209,8 +211,8 @@ body { font-size: 1.125rem; line-height: 1.45; }
 /* About: "Conheça nossa história" link → REF usa cyan-800, border-bottom orange, sem underline */
 .section.about .about-content a { color: var(--wp--preset--color--custom-cyan-800) !important; text-decoration: none !important; border-bottom: 4px solid var(--wp--preset--color--orange-500); padding-bottom: 4px; }
 
-/* ── Org: nota de rodapé — WP exibe 1 linha (1184px); REF tem max-width:52ch → 3 linhas ── */
-.section.organization > .wp-block-paragraph { max-width:52ch; margin-inline:auto; }
+/* ── Org: nota de rodapé — 52ch computa 551px em vez dos 620px medidos no REF ── */
+.section.organization > .wp-block-paragraph { max-width:620px; margin-inline:auto; }
 
 /* ── Heading first-child de seção: margin-top inesperado de block-gap ── */
 /* theme.json de heading gera .wp-block-heading { margin-top: block-gap } com mesma

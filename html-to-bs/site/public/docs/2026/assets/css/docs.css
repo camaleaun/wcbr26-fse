@@ -1,16 +1,16 @@
 :root {
-  --wcbr-breakpoint-xs: 0;
-  --wcbr-breakpoint-sm: 640px;
-  --wcbr-breakpoint-md: 900px;
-  --wcbr-breakpoint-lg: 1080px;
-  --wcbr-breakpoint-xl: 1232px;
+  --wp--breakpoint-xs: 0;
+  --wp--breakpoint-sm: 640px;
+  --wp--breakpoint-md: 900px;
+  --wp--breakpoint-lg: 1080px;
+  --wp--breakpoint-xl: 1232px;
 }
 
 .grid {
   display: grid;
-  grid-template-rows: repeat(var(--wcbr-rows, 1), 1fr);
-  grid-template-columns: repeat(var(--wcbr-columns, 12), 1fr);
-  gap: var(--wcbr-gap, 1.5rem);
+  grid-template-rows: repeat(var(--wp--rows, 1), 1fr);
+  grid-template-columns: repeat(var(--wp--columns, 12), 1fr);
+  gap: var(--wp--gap, 1.5rem);
 }
 .grid .g-col-1 {
   grid-column: auto/span 1;
@@ -380,14 +380,14 @@
   --bd-callout-link: 10, 88, 202;
   --bd-callout-code-color: rgb(171, 41, 106);
   --bd-pre-bg: var(--bs-tertiary-bg);
-  --wcbr-code-color: rgb(171, 41, 106);
+  --wp--code-color: rgb(171, 41, 106);
 }
 
 [data-bs-theme=dark] {
   --bd-cyan: rgb(64, 131, 134);
   --bd-cyan-bg: #00595d;
-  --bd-toc-color: var(--wcbr-emphasis-color);
-  --bd-sidebar-link-bg: rgba(0, 67, 70, .5);
+  --bd-toc-color: var(--wp--emphasis-color);
+  --bd-sidebar-link-bg: rgba(4, 71, 74, .5);
   --bd-callout-link: 110, 168, 254;
   --bd-callout-code-color: rgb(230, 133, 181);
   --bd-pre-bg: rgb(27, 31, 34);
@@ -396,7 +396,7 @@
 .bd-navbar {
   padding: 0.75rem 0;
   background-color: transparent;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
 }
 @media (forced-colors) {
   .bd-navbar {
@@ -484,7 +484,7 @@
   --bs-dropdown-font-size: 0.875rem;
   font-size: 0.875rem;
   border-radius: 0.5rem;
-  box-shadow: var(--wcbr-box-shadow);
+  box-shadow: var(--wp--box-shadow);
 }
 .bd-navbar .dropdown-menu li + li {
   margin-top: 0.125rem;
@@ -506,7 +506,7 @@
 }
 
 [data-bs-theme=dark] .bd-navbar {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .bd-masthead {
@@ -901,8 +901,8 @@
 .bd-toc {
   font-size: 0.875rem;
   container-type: inline-size;
-  --wcbr-secondary-color: rgba(62, 73, 72, 0.87);
-  background-color: var(--wcbr-body-bg);
+  --wp--secondary-color: rgba(62, 73, 72, 0.87);
+  background-color: var(--wp--body-bg);
 }
 @media (min-width: 1080px) {
   .bd-toc {
@@ -984,14 +984,14 @@
 }
 
 .bd-footer {
-  --wcbr-secondary-color: rgba(62, 73, 72, 0.87);
+  --wp--secondary-color: rgba(62, 73, 72, 0.87);
 }
 .bd-footer a {
-  color: var(--wcbr-body-color);
+  color: var(--wp--body-color);
   text-decoration: none;
 }
 .bd-footer a:hover, .bd-footer a:focus {
-  color: var(--wcbr-link-hover-color);
+  color: var(--wp--link-hover-color);
   text-decoration: underline;
 }
 .bd-footer .small a {
@@ -1117,32 +1117,32 @@
 
 .example-container {
   width: 800px;
-  --wcbr-gutter-x: 3rem;
-  --wcbr-gutter-y: 0;
+  --wp--gutter-x: 3rem;
+  --wp--gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(--wcbr-gutter-x) * 0.5);
-  padding-left: calc(var(--wcbr-gutter-x) * 0.5);
+  padding-right: calc(var(--wp--gutter-x) * 0.5);
+  padding-left: calc(var(--wp--gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
 }
 
 .example-row {
-  --wcbr-gutter-x: 1.5rem;
-  --wcbr-gutter-y: 0;
+  --wp--gutter-x: 1.5rem;
+  --wp--gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--wcbr-gutter-y));
-  margin-right: calc(-0.5 * var(--wcbr-gutter-x));
-  margin-left: calc(-0.5 * var(--wcbr-gutter-x));
+  margin-top: calc(-1 * var(--wp--gutter-y));
+  margin-right: calc(-0.5 * var(--wp--gutter-x));
+  margin-left: calc(-0.5 * var(--wp--gutter-x));
 }
 
 .example-content-main {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--wcbr-gutter-x) * 0.5);
-  padding-left: calc(var(--wcbr-gutter-x) * 0.5);
-  margin-top: var(--wcbr-gutter-y);
+  padding-right: calc(var(--wp--gutter-x) * 0.5);
+  padding-left: calc(var(--wp--gutter-x) * 0.5);
+  margin-top: var(--wp--gutter-y);
 }
 @media (min-width: 640px) {
   .example-content-main {
@@ -1161,9 +1161,9 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--wcbr-gutter-x) * 0.5);
-  padding-left: calc(var(--wcbr-gutter-x) * 0.5);
-  margin-top: var(--wcbr-gutter-y);
+  padding-right: calc(var(--wp--gutter-x) * 0.5);
+  padding-left: calc(var(--wp--gutter-x) * 0.5);
+  margin-top: var(--wp--gutter-y);
 }
 @media (min-width: 640px) {
   .example-content-secondary {
@@ -1435,8 +1435,8 @@
 }
 
 .bd-callout {
-  --wcbr-link-color-rgb: var(--bd-callout-link);
-  --wcbr-code-color: var(--bd-callout-code-color);
+  --wp--link-color-rgb: var(--bd-callout-link);
+  --wp--code-color: var(--bd-callout-code-color);
   padding: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -1454,7 +1454,7 @@
   margin-top: -0.25rem;
 }
 .bd-callout .highlight {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(17, 17, 17, 0.05);
 }
 
 .bd-callout-info {
@@ -1532,9 +1532,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "4.50" "\a" "4.50" "\a" "4.66";
+  content: "4.50" "\a" "4.50" "\a" "4.19";
   background-color: #0d6efd;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1551,9 +1551,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "7.18" "\a" "7.18" "\a" "2.92";
+  content: "7.18" "\a" "7.18" "\a" "2.62";
   background-color: #6610f2;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1570,9 +1570,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "6.51" "\a" "6.51" "\a" "3.22";
+  content: "6.51" "\a" "6.51" "\a" "2.90";
   background-color: #6f42c1;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1589,15 +1589,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "4.50" "\a" "4.50" "\a" "4.66";
+  content: "4.50" "\a" "4.50" "\a" "4.19";
   background-color: #d63384;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-red {
-  color: #000;
+  color: #111;
   background-color: #ff4419;
 }
 .swatch-red::after {
@@ -1608,15 +1608,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "6.09" "\a" "3.44" "\a" "6.09";
+  content: "5.47" "\a" "3.44" "\a" "5.47";
   background-color: #ff4419;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-orange {
-  color: #000;
+  color: #111;
   background-color: #e84814;
 }
 .swatch-orange::after {
@@ -1627,15 +1627,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "5.36" "\a" "3.91" "\a" "5.36";
+  content: "4.82" "\a" "3.91" "\a" "4.82";
   background-color: #e84814;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-yellow {
-  color: #000;
+  color: #111;
   background-color: #ffc107;
 }
 .swatch-yellow::after {
@@ -1646,9 +1646,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "12.8" "\a" "1.63" "\a" "12.8";
+  content: "11.5" "\a" "1.63" "\a" "11.5";
   background-color: #ffc107;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1665,15 +1665,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "4.53" "\a" "4.53" "\a" "4.63";
+  content: "4.53" "\a" "4.53" "\a" "4.16";
   background-color: #198754;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-teal {
-  color: #000;
+  color: #111;
   background-color: #20c997;
 }
 .swatch-teal::after {
@@ -1684,15 +1684,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "9.86" "\a" "2.12" "\a" "9.86";
+  content: "8.86" "\a" "2.12" "\a" "8.86";
   background-color: #20c997;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-cyan {
-  color: #000;
+  color: #111;
   background-color: #00c7c9;
 }
 .swatch-cyan::after {
@@ -1703,16 +1703,16 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "10.0" "\a" "2.09" "\a" "10.0";
+  content: "9.00" "\a" "2.09" "\a" "9.00";
   background-color: #00c7c9;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-black {
   color: #fff;
-  background-color: #000;
+  background-color: #111;
 }
 .swatch-black::after {
   position: absolute;
@@ -1722,15 +1722,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "21" "\a" "21" "\a" "1";
-  background-color: #000;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  content: "18.8" "\a" "18.8" "\a" "1";
+  background-color: #111;
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-white {
-  color: #000;
+  color: #111;
   background-color: #fff;
 }
 .swatch-white::after {
@@ -1741,9 +1741,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "21" "\a" "1" "\a" "21";
+  content: "18.8" "\a" "1" "\a" "18.8";
   background-color: #fff;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1760,9 +1760,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "4.68" "\a" "4.68" "\a" "4.47";
+  content: "4.68" "\a" "4.68" "\a" "4.02";
   background-color: #6c757d;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1779,15 +1779,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "11.5" "\a" "11.5" "\a" "1.82";
+  content: "11.5" "\a" "11.5" "\a" "1.64";
   background-color: #343a40;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-custom-red-200 {
-  color: #000;
+  color: #111;
   background-color: rgb(255, 180, 163);
 }
 .swatch-custom-red-200::after {
@@ -1798,9 +1798,9 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "12.3" "\a" "1.70" "\a" "12.3";
+  content: "11.0" "\a" "1.70" "\a" "11.0";
   background-color: rgb(255, 180, 163);
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
@@ -1817,15 +1817,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "8.11" "\a" "8.11" "\a" "2.58";
+  content: "8.11" "\a" "8.11" "\a" "2.32";
   background-color: #00595d;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-custom-orange {
-  color: #000;
+  color: #111;
   background-color: #f56530;
 }
 .swatch-custom-orange::after {
@@ -1836,15 +1836,15 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "6.78" "\a" "3.09" "\a" "6.78";
+  content: "6.10" "\a" "3.09" "\a" "6.10";
   background-color: #f56530;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .swatch-gray-400 {
-  color: #000;
+  color: #111;
   background-color: #bec9c8;
 }
 .swatch-gray-400::after {
@@ -1855,30 +1855,30 @@
   font-size: 0.75rem;
   line-height: 1.35;
   white-space: pre;
-  content: "12.3" "\a" "1.69" "\a" "12.3";
+  content: "11.1" "\a" "1.69" "\a" "11.1";
   background-color: #bec9c8;
-  background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
+  background-image: linear-gradient(to bottom, transparent 0.25rem, #111 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #111 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
 }
 
 .bd-blue-100 {
-  color: #000;
+  color: #111;
   background-color: #cfe2ff;
 }
 
 .bd-blue-200 {
-  color: #000;
+  color: #111;
   background-color: #9ec5fe;
 }
 
 .bd-blue-300 {
-  color: #000;
+  color: #111;
   background-color: #6ea8fe;
 }
 
 .bd-blue-400 {
-  color: #000;
+  color: #111;
   background-color: #3d8bfd;
 }
 
@@ -1908,17 +1908,17 @@
 }
 
 .bd-indigo-100 {
-  color: #000;
+  color: #111;
   background-color: #e0cffc;
 }
 
 .bd-indigo-200 {
-  color: #000;
+  color: #111;
   background-color: #c29ffa;
 }
 
 .bd-indigo-300 {
-  color: #000;
+  color: #111;
   background-color: #a370f7;
 }
 
@@ -1953,22 +1953,22 @@
 }
 
 .bd-purple-100 {
-  color: #000;
+  color: #111;
   background-color: #e2d9f3;
 }
 
 .bd-purple-200 {
-  color: #000;
+  color: #111;
   background-color: #c5b3e6;
 }
 
 .bd-purple-300 {
-  color: #000;
+  color: #111;
   background-color: #a98eda;
 }
 
 .bd-purple-400 {
-  color: #000;
+  color: #111;
   background-color: #8c68cd;
 }
 
@@ -1998,22 +1998,22 @@
 }
 
 .bd-pink-100 {
-  color: #000;
+  color: #111;
   background-color: #f7d6e6;
 }
 
 .bd-pink-200 {
-  color: #000;
+  color: #111;
   background-color: #efadce;
 }
 
 .bd-pink-300 {
-  color: #000;
+  color: #111;
   background-color: #e685b5;
 }
 
 .bd-pink-400 {
-  color: #000;
+  color: #111;
   background-color: #de5c9d;
 }
 
@@ -2043,27 +2043,27 @@
 }
 
 .bd-custom-red-100 {
-  color: #000;
+  color: #111;
   background-color: #ffdad1;
 }
 
 .bd-custom-red-200 {
-  color: #000;
+  color: #111;
   background-color: #ffb4a3;
 }
 
 .bd-custom-red-300 {
-  color: #000;
+  color: #111;
   background-color: #ff8f75;
 }
 
 .bd-custom-red-400 {
-  color: #000;
+  color: #111;
   background-color: #ff6947;
 }
 
 .bd-custom-red-500 {
-  color: #000;
+  color: #111;
   background-color: #ff4419;
 }
 
@@ -2088,27 +2088,27 @@
 }
 
 .bd-custom-orange-100 {
-  color: #000;
+  color: #111;
   background-color: #fadad0;
 }
 
 .bd-custom-orange-200 {
-  color: #000;
+  color: #111;
   background-color: #f6b6a1;
 }
 
 .bd-custom-orange-300 {
-  color: #000;
+  color: #111;
   background-color: #f19172;
 }
 
 .bd-custom-orange-400 {
-  color: #000;
+  color: #111;
   background-color: #ed6d43;
 }
 
 .bd-custom-orange-500 {
-  color: #000;
+  color: #111;
   background-color: #f56530;
 }
 
@@ -2133,37 +2133,37 @@
 }
 
 .bd-yellow-100 {
-  color: #000;
+  color: #111;
   background-color: #fff3cd;
 }
 
 .bd-yellow-200 {
-  color: #000;
+  color: #111;
   background-color: #ffe69c;
 }
 
 .bd-yellow-300 {
-  color: #000;
+  color: #111;
   background-color: #ffda6a;
 }
 
 .bd-yellow-400 {
-  color: #000;
+  color: #111;
   background-color: #ffcd39;
 }
 
 .bd-yellow-500 {
-  color: #000;
+  color: #111;
   background-color: #ffc107;
 }
 
 .bd-yellow-600 {
-  color: #000;
+  color: #111;
   background-color: #cc9a06;
 }
 
 .bd-yellow-700 {
-  color: #000;
+  color: #111;
   background-color: #997404;
 }
 
@@ -2178,22 +2178,22 @@
 }
 
 .bd-green-100 {
-  color: #000;
+  color: #111;
   background-color: #d1e7dd;
 }
 
 .bd-green-200 {
-  color: #000;
+  color: #111;
   background-color: #a3cfbb;
 }
 
 .bd-green-300 {
-  color: #000;
+  color: #111;
   background-color: #75b798;
 }
 
 .bd-green-400 {
-  color: #000;
+  color: #111;
   background-color: #479f76;
 }
 
@@ -2223,32 +2223,32 @@
 }
 
 .bd-teal-100 {
-  color: #000;
+  color: #111;
   background-color: #d2f4ea;
 }
 
 .bd-teal-200 {
-  color: #000;
+  color: #111;
   background-color: #a6e9d5;
 }
 
 .bd-teal-300 {
-  color: #000;
+  color: #111;
   background-color: #79dfc1;
 }
 
 .bd-teal-400 {
-  color: #000;
+  color: #111;
   background-color: #4dd4ac;
 }
 
 .bd-teal-500 {
-  color: #000;
+  color: #111;
   background-color: #20c997;
 }
 
 .bd-teal-600 {
-  color: #000;
+  color: #111;
   background-color: #1aa179;
 }
 
@@ -2268,32 +2268,32 @@
 }
 
 .bd-custom-cyan-100 {
-  color: #000;
+  color: #111;
   background-color: #ccf4f4;
 }
 
 .bd-custom-cyan-200 {
-  color: #000;
+  color: #111;
   background-color: #99e9e9;
 }
 
 .bd-custom-cyan-300 {
-  color: #000;
+  color: #111;
   background-color: #66dddf;
 }
 
 .bd-custom-cyan-400 {
-  color: #000;
+  color: #111;
   background-color: #33d2d4;
 }
 
 .bd-custom-cyan-500 {
-  color: #000;
+  color: #111;
   background-color: #00c7c9;
 }
 
 .bd-custom-cyan-600 {
-  color: #000;
+  color: #111;
   background-color: #009fa1;
 }
 
@@ -2313,27 +2313,27 @@
 }
 
 .bd-gray-100 {
-  color: #000;
+  color: #111;
   background-color: #fff8f1;
 }
 
 .bd-gray-200 {
-  color: #000;
+  color: #111;
   background-color: #f6eee4;
 }
 
 .bd-gray-300 {
-  color: #000;
+  color: #111;
   background-color: #e9e0d8;
 }
 
 .bd-gray-400 {
-  color: #000;
+  color: #111;
   background-color: #bec9c8;
 }
 
 .bd-gray-500 {
-  color: #000;
+  color: #111;
   background-color: #adb5bd;
 }
 
@@ -2358,7 +2358,7 @@
 }
 
 .bd-white {
-  color: #000;
+  color: #111;
   background-color: #fff;
 }
 .bd-white p {
@@ -2367,7 +2367,7 @@
 
 .bd-black {
   color: #fff;
-  background-color: #000;
+  background-color: #111;
 }
 .bd-black p {
   margin: 0;
@@ -2453,7 +2453,7 @@ main [tabindex="0"] {
   --base06: #fff;
   --base07: rgb(19, 121, 91);
   --base08: rgb(230, 61, 23);
-  --base09: rgb(0, 119, 121);
+  --base09: #00595d;
   --base0A: #6f42c1;
   --base0B: rgb(8, 66, 152);
   --base0C: rgb(8, 66, 152);
