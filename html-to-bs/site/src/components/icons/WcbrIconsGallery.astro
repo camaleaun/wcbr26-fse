@@ -11,7 +11,7 @@ interface Icon {
 const SOCIAL = new Set(['instagram', 'envelope', 'twitter-x', 'whatsapp', 'linkedin', 'tiktok'])
 const FORMAT = new Set(['format-mini', 'format-paineis', 'format-palestras'])
 
-const iconsDir = path.resolve(process.cwd(), '../html-from-figma/icons')
+const iconsDir = path.resolve(process.cwd(), '../html-to-bs/icons')
 const icons: Icon[] = fs
   .readdirSync(iconsDir)
   .filter((f) => f.endsWith('.svg'))

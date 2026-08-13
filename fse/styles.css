@@ -3,6 +3,10 @@
 @font-face { font-family:Montserrat; font-style:normal; font-weight:400; font-display:swap; src:url("/wp-content/uploads/wcbr2026/fonts/montserrat.woff2") format("woff2"); }
 @font-face { font-family:Montserrat; font-style:normal; font-weight:700; font-display:swap; src:url("/wp-content/uploads/wcbr2026/fonts/montserrat.woff2") format("woff2"); }
 
+/* REF usa body fs=18px/lh=1.45; WP global styles usa 16px/1.5 → cascata de alturas menores em toda a página */
+body { font-size: 1.125rem; line-height: 1.45; }
+.wp-block-navigation { font-size: 1rem; }
+
 /* Componentes em wp:html (sem bloco WP) e bridges de renderização WP.
    Tipografia, cores e espaçamento globais vivem em setup.php (styles.elements/blocks).
    Variáveis de cor: var(--wp--preset--color--SLUG) geradas pelos presets.
@@ -34,7 +38,8 @@
 /* ── Hero chips ── */
 .hero-chip { text-transform:uppercase; }
 /* REF hero-lead: fs=22px lh=30.8px; WP inherits body 16px → 3 lines instead of 4 */
-.hero-lead { max-width:40ch; font-size:clamp(1.05rem,2.2vw,1.375rem); line-height:1.4; }
+/* :root :where(p) do WP global styles tem a mesma especificidade (0,1,0) desta classe e vem depois no cascade → vence sem !important */
+.hero-lead { max-width:40ch; font-size:clamp(1.05rem,2.2vw,1.375rem) !important; line-height:1.4; }
 
 /* ── Formats accordion (wp:html) ── */
 .format { background:var(--wp--preset--color--sand-100); border:2px solid var(--wp--preset--color--gray-400); box-shadow:5px 5px 0 0 var(--wp--preset--color--cyan-700); }
@@ -89,6 +94,8 @@
 .site-footer { padding-bottom: 72px !important; }
 .site-footer .wp-block-list { list-style:none; padding-left:0; display:flex; flex-direction:column; gap:0.75rem; }
 .site-footer .wp-block-list li { margin-block-start:0; }
+.site-footer .wp-block-heading { line-height: 1.45 !important; }
+.footer-legal > p { line-height: 26.1px; }
 .footer-social .wp-block-social-link a { color:inherit; padding:0; background:none; border-radius:0; }
 .footer-social .wp-block-social-link a:hover { color:var(--wp--preset--color--red-200); }
 .footer-social .wp-block-social-link svg { fill:currentColor; width:20px; height:20px; display:block; }
@@ -111,15 +118,17 @@
 .wp-block-button__link.has-cyan-700-border-color:hover  { box-shadow:3px 3px 0 0 var(--wp--preset--color--cyan-700) !important; }
 .wp-block-button__link.has-cyan-700-border-color:active { box-shadow:0 0 0 0 var(--wp--preset--color--cyan-700) !important; }
 
-/* ── Header: WP=68px, REF=73px → add 5px via padding to match ── */
-/* The WP header is <header.wp-block-template-part>, not .site-header.
-   REF inner uses 18px font → 72px content + borders = 73px total. */
-header.wp-block-template-part { padding-block: 2px 3px !important; }
+/* ── Header: REF .header-inner tem min-height:72px (+1px border = 73px) ── */
+.header-inner { min-height: 72px; }
 
 /* ── Header-meta: remove margens UA do <ul> de social-icons e dos <p> ── */
 /* UL social tem margin-block:1em (UA), que com font-size:24px = 24px top+bottom */
 .header-meta .wp-block-social-links { margin-block: 0 !important; }
 .header-meta .wp-block-paragraph { margin-bottom: 0 !important; }
+/* REF .header-date: ff-head, uppercase, 10px, gray-700 — WP renderiza como texto simples */
+.header-meta p:last-child { text-transform:uppercase; font-family:var(--wp--preset--font-family--poppins); font-size:.625rem; letter-spacing:.02em; color:var(--wp--preset--color--gray-700) !important; margin-top:2px; }
+/* REF .header-logo img: height:44px, width:auto; WP site-logo renderiza no width fixo do block (171px→68px alto) */
+.wp-block-site-logo img { height:44px !important; width:auto !important; }
 
 /* ── Stats: line-height e double-gap ── */
 /* Ref usa line-height:1.1 nos números; WP default herda 1.5 → 19px extra */

@@ -409,6 +409,24 @@ body.no-scroll { overflow: hidden; }
   color: var(--cyan-700); min-width: 0; min-height: 72px; padding: 14px 18px;
   font-family: var(--ff-head); font-weight: 700; font-size: 1.05rem;
   text-align: center; overflow-wrap: anywhere;
+  --pe: 5.01792115%;
+  padding: calc(var(--pe) * 0.777777778) var(--pe);
+  --ar-h: 281;
+  --ar-v: 96;
+  aspect-ratio: var(--ar-h) / var(--ar-v);
+}
+.sponsor-grid-lg .sponsor {
+  padding-block: calc(var(--pe) * 0.9932);
+}
+.sponsor-grid-md .sponsor {
+  --ar-h: 180.66;
+  --ar-v: 72;
+  --pe: 9.965%;
+}
+.sponsor-grid-sm .sponsor {
+  --ar-h: 135;
+  --ar-v: 28;
+  --pe: 6.667%;
 }
 .sponsor-lg { min-height: 96px; justify-content: flex-start; padding-inline: 24px; font-size: 1.15rem; }
 .sponsor-text { min-height: 56px; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: var(--gray-700); box-shadow: 3px 3px 0 0 var(--gray-400); }

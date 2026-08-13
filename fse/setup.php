@@ -416,6 +416,12 @@ if ( $sample ) {
 	wp_delete_post( $sample->ID, true );
 }
 
+// Remove o post padrão "Hello world!" para não poluir a query de notícias.
+$hello_world = get_page_by_path( 'hello-world', OBJECT, 'post' );
+if ( $hello_world ) {
+	wp_delete_post( $hello_world->ID, true );
+}
+
 $existing_page = get_page_by_path( 'home', OBJECT, 'page' );
 
 if ( $existing_page ) {
