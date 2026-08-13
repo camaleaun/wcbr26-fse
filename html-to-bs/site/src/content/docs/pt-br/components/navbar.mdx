@@ -1,108 +1,44 @@
 ---
 title: Navbar
-description: O cabeçalho do site — navbar Bootstrap sticky com dropdowns no desktop e drawer offcanvas no mobile.
+description: O cabeçalho do site — navbar sticky com dropdowns no desktop e drawer offcanvas no mobile.
 toc: true
 ---
 
-O cabeçalho do site é uma [navbar](https://getbootstrap.com/docs/5.3/components/navbar/) Bootstrap:
-logo, menu horizontal com dropdowns, meta do evento (redes sociais, hashtags, data) e o
-CTA de *Ingressos*. Abaixo de `xl` o menu recolhe em um drawer
-[offcanvas](https://getbootstrap.com/docs/5.3/components/offcanvas/).
+O cabeçalho do site tem logo, menu horizontal com dropdowns, meta do evento (redes sociais, hashtags, data) e o CTA de *Ingressos*. Abaixo de `xl` o menu recolhe em um drawer offcanvas.
 
 ## Estrutura
 
-```html
-<header class="site-header sticky-top border-bottom">
-  <nav class="navbar navbar-expand-xl">
-    <div class="container">
-      <a class="navbar-brand" href="/" aria-label="WordCamp Brasil 2026 — início">
-        <img class="header-logo" src="assets/img/logo.avif" alt="WordCamp Brasil 2026"
-             width="260" height="102" fetchpriority="high">
-      </a>
-
-      <ul class="nav header-nav d-none d-xl-flex">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#sobre" role="button"
-             data-bs-toggle="dropdown" aria-expanded="false">Evento</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#sobre">Sobre o evento</a></li>
-            <li><a class="dropdown-item" href="#formatos">O que esperar</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#formatos">Agenda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
-      </ul>
-
-      <a class="btn btn-orange d-none d-xl-inline-flex" href="#ingressos">Ingressos</a>
-
-      <button class="navbar-toggler d-xl-none" type="button"
-              data-bs-toggle="offcanvas" data-bs-target="#mobile-drawer"
-              aria-controls="mobile-drawer" aria-label="Abrir menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-</header>
-```
+O cabeçalho é uma barra fixa com borda inferior. Dentro dela: o logo da marca, uma lista de navegação horizontal (visível de `xl` pra cima) com dois itens de dropdown ("Evento" e seu submenu), o CTA de *Ingressos*, e um toggler de menu que só aparece abaixo de `xl`.
 
 ## Dropdowns
 
-Os submenus do desktop são dropdowns Bootstrap padrão — `data-bs-toggle="dropdown"` substitui os menus hover customizados `.nav__sub` do protótipo. O Bootstrap desenha o caret via `.dropdown-toggle`, então o SVG artesanal `.nav__caret` foi removido.
+Os submenus do desktop abrem no clique, substituindo os menus hover customizados do protótipo — o ícone do caret é desenhado pelo próprio botão de toggle, então o SVG artesanal do protótipo foi removido.
 
 Links de nav são Poppins 700 maiúsculo em `$cyan-700`, com borda inferior transparente de 3px que fica laranja no hover.
 
 ## Drawer offcanvas
 
-No mobile o menu vira um painel offcanvas que abre pelo lado. Menus aninhados dentro dele usam [collapse](https://getbootstrap.com/docs/5.3/components/collapse/), não dropdowns.
+No mobile o menu vira um painel offcanvas que abre pelo lado. O submenu "Evento" do cabeçalho vira uma sublista recolhível dentro do drawer, acionada pelo próprio botão. O caret do drawer gira 180° quando seu controle está expandido, acionado puramente por `[aria-expanded="true"]` — sem JavaScript próprio.
 
-```html
-<div class="offcanvas offcanvas-end" tabindex="-1" id="mobile-drawer"
-     aria-labelledby="mobile-drawer-label">
-  <div class="offcanvas-header">
-    <h2 class="offcanvas-title" id="mobile-drawer-label">Menu</h2>
-    <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Fechar menu"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column">
-    <nav class="drawer-nav" aria-label="Navegação mobile">
-      <a class="drawer-link" href="#formatos">Agenda</a>
+{/*
+Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
+sobrevivem à migração pro WordPress, então isso fica fora da página renderizada):
 
-      <button class="drawer-link" type="button" data-bs-toggle="collapse"
-              data-bs-target="#dsub-evento" aria-expanded="false" aria-controls="dsub-evento">
-        Evento
-        <svg class="drawer-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-      </button>
-      <div class="collapse drawer-sub" id="dsub-evento">
-        <a href="#sobre">Sobre o evento</a>
-        <a href="#formatos">O que esperar</a>
-      </div>
-    </nav>
-
-    <div class="drawer-foot mt-auto">
-      <a class="btn btn-orange w-100" href="#ingressos">Ingressos</a>
-    </div>
-  </div>
-</div>
-```
-
-O `.drawer-caret` gira 180° quando seu controle está expandido, acionado puramente por
-`[aria-expanded="true"]` — sem JavaScript próprio.
-
-## Mapeamento do protótipo
-
-| `html-from-figma` | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.site-header` | `.site-header.sticky-top.border-bottom` |
 | `.header__nav ul` | `.nav.header-nav.d-none.d-xl-flex` |
-| `.nav__item--has-sub` | `.nav-item.dropdown` + `.dropdown-menu` |
-| `.nav__caret` | removido — `.dropdown-toggle` o desenha |
-| `.nav-toggle` (JS customizado) | `.navbar-toggler` + `data-bs-toggle="offcanvas"` |
-| `.nav__sub` (drawer customizado) | `.offcanvas.offcanvas-end` + `.collapse` |
-| `data-drawer-*` | `data-bs-toggle` / `data-bs-dismiss` |
+| `.nav__item--has-sub` | item de dropdown + menu |
+| `.nav__caret` | removido — o toggle do dropdown o desenha |
+| `.nav-toggle` (JS customizado) | toggler do offcanvas |
+| `.nav__sub` (drawer customizado) | painel offcanvas + sublista recolhível |
+| `data-drawer-*` | atributos data de offcanvas/collapse |
 | `.header__ingressos` | `.btn.btn-orange` |
 | `.header__tags` / `.header__date` | `.header-tags` / `.header-date` |
+*/}
 
 ## Notas
 
-- Todo o JavaScript customizado do drawer foi substituído por atributos data do Bootstrap — o site não embarca nenhum script de nav próprio.
+- Todo o JavaScript customizado do drawer foi substituído por atributos data declarativos — o site não embarca nenhum script de nav próprio.
 - Mantenha `aria-label` no link de marca e no toggler; a imagem do logo carrega o texto alternativo.
 - O cabeçalho fica fixo no topo (`.sticky-top`) com borda inferior, sobre `$sand-100`.

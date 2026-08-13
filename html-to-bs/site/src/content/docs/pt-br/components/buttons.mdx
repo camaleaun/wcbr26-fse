@@ -1,17 +1,12 @@
 ---
 title: Botões
-description: Botões do WCBR — variantes Bootstrap reestilizadas com a sombra offset característica, mais o CTA customizado .btn-orange.
+description: Botões do WCBR — o tratamento de CTA sticker, cantos retos, sombra offset rígida, duas cores de marca.
 toc: true
 ---
 
-O WCBR usa o componente `.btn` do Bootstrap sem alterações estruturais. O tratamento de marca — cantos retos, Poppins maiúsculo em peso 900, borda de 2px e uma **sombra offset rígida** que afunda no clique — é aplicado ao `.btn` base, então **todas** as variantes herdam: `.btn-primary`, `.btn-orange`.
+O tratamento de marca dos botões — cantos retos, Poppins maiúsculo em peso 900, borda de 2px e uma **sombra offset rígida** que afunda no clique — é aplicado às duas variantes: `.btn-primary` e `.btn-orange`.
 
 ## Variantes
-
-`orange` é adicionado a `$theme-colors`, então o Bootstrap poderia gerar sua família completa
-(`.btn-outline-orange`, `.bg-orange`, `.text-orange`, `.border-orange`, `.link-orange`, …)
-como as cores nativas — mas o build só entrega as duas variantes que o protótipo realmente usa
-(veja [Build Pipeline](/docs/2026/getting-started/build-pipeline)).
 
 | Classe | Preenchimento | Função |
 |---|---|---|
@@ -25,11 +20,6 @@ Existe **um** botão laranja, não vários. Veja [Contraste](#contraste) para en
   <a class="btn btn-orange" href="#">Ingressos</a>
 </div>
 
-```html
-<a class="btn btn-primary" href="#formatos">Ver agenda</a>
-<a class="btn btn-orange" href="#ingressos">Ingressos</a>
-```
-
 Tamanhos são uma questão separada — veja [Tamanhos](#tamanhos) abaixo.
 
 ## Contraste
@@ -41,32 +31,11 @@ A escala orange não é intercambiável para preenchimentos. Medida contra texto
 | `$orange-500` | `#f56530` | **3.09:1** | **Não** — reprovado no WCAG AA |
 | `$orange-600` | `#c6360b` | 5.34:1 | Sim ✓ |
 
-`$orange-500` é deliberadamente **não** registrado em `$theme-colors`. Se estivesse, o `color-contrast()` do Bootstrap viraria o rótulo para **preto** — e o WCBR não usa preto sobre laranja. Ele permanece como acento para bordas e sombras de sticker.
+`$orange-500` deliberadamente não é usado como preenchimento — nesse contraste, uma checagem automática de texto acessível viraria o rótulo para **preto**, e o WCBR não usa preto sobre laranja. Ele permanece como acento para bordas e sombras de sticker.
 
 ## A sombra sticker
 
-A sombra offset é derivada da cor de borda da própria variante
-(`--wcbr-btn-border-color`), então ela **se recolore por variante** — sem CSS por botão.
-
-```scss
-.btn {
-  box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
-}
-```
-
-Ambas as variantes são bicolores: o preenchimento fica em um tom, a borda (e portanto a sombra) fica um passo mais escura ou mais clara.
-
-```scss
-.btn-primary {
-  --#{$prefix}btn-border-color: #{$cyan-900};         // #003e3e
-  --#{$prefix}btn-hover-border-color: #{$cyan-900};
-}
-
-.btn-orange {
-  --#{$prefix}btn-border-color: #{$orange-500};       // #f56530
-  --#{$prefix}btn-hover-border-color: #{$orange-500};
-}
-```
+A sombra offset é derivada da cor de borda da própria variante, então ela **se recolore por variante** automaticamente — sem CSS por botão. Ambas as variantes são bicolores: o preenchimento fica em um tom, a borda (e portanto a sombra) fica um passo mais escura ou mais clara — `$cyan-900` sob o preenchimento `$cyan-700` na primária, `$orange-500` sob o preenchimento `$orange-600` na laranja.
 
 ## Interação
 
@@ -79,45 +48,26 @@ Ambas as variantes são bicolores: o preenchimento fica em um tom, a borda (e po
 
 ## Tamanhos
 
-O protótipo só usa dois tamanhos. O `.btn` base é o menor — o CTA "Ingressos" da navbar é o
-único lugar onde aparece, e é um tamanho neutro, padrão do Bootstrap (não ligado ao spec
-original do Figma). `.btn-lg` é o CTA sticker maior, usado em todo o resto (hero,
-patrocinador, newsletter, drawer). Não existe `.btn-sm`: nada no protótipo precisa de um
-terceiro tamanho, menor ainda.
+Existem dois tamanhos. O `.btn` base é o menor — o CTA "Ingressos" da navbar é o único lugar onde aparece. `.btn-lg` é o CTA sticker maior, usado em todo o resto (hero, patrocinador, newsletter, drawer).
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
   <a class="btn btn-orange fw-black" href="#">Ingressos</a>
   <a class="btn btn-orange btn-lg" href="#">Garanta seu ingresso</a>
 </div>
 
-```html
-<a class="btn btn-orange fw-black" href="#ingressos">Ingressos</a>
-<a class="btn btn-orange btn-lg" href="#ingressos">Garanta seu ingresso</a>
-```
+`.btn-lg` já traz o peso (900) sozinho; o tamanho base precisa de `.fw-black` quando também precisar parecer pesado.
 
-```scss
-$btn-font-family:  $headings-font-family;  // Poppins
-$btn-font-weight:  400;  // padrão neutro — .fw-black opta pelo 900
-$btn-line-height:  1.5;
-$btn-border-width: 2px;
+O CTA de patrocinador ("Torne-se um patrocinador") é uma divergência deliberada do protótipo:
+é renderizado no ciano primário em vez do laranja de ingresso, pra separar uma ação de
+interesse geral dos CTAs de ingresso/newsletter — veja a nota em [Variantes](#variantes) acima.
 
-$btn-padding-y:    .375rem;  // 6px — padrão do próprio Bootstrap, base
-$btn-padding-x:    .75rem;   // 12px
-$btn-font-size:    1rem;
-
-$btn-padding-y-lg: .8125rem; // 13px — .btn-lg
-$btn-padding-x-lg: 1.625rem; // 26px
-$btn-font-size-lg: 1.25rem;
-// .btn-lg também traz o peso de volta sozinho (scss/_buttons.scss) — não
-// precisa de .fw-black em cima dele.
-```
-
-## Mapeamento do protótipo
-
+{/*
+Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
+sobrevivem à migração pro WordPress, então isso fica fora da página renderizada).
 O `html-from-figma` usa a mesma nomenclatura de tamanho `.btn`/`.btn-lg` do build WCBR — `.btn`
 sozinho é o CTA pequeno da navbar, `.btn-lg` é o CTA sticker grande.
 
-| `html-from-figma` | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.btn` | `.btn.btn-orange` |
 | `.btn-lg` | `.btn.btn-orange.btn-lg` |
@@ -125,10 +75,8 @@ sozinho é o CTA pequeno da navbar, `.btn-lg` é o CTA sticker grande.
 | `.header__ingressos` | `.btn.btn-orange` na navbar |
 | `.drawer__cta` | `.btn.btn-orange.btn-lg` dentro do offcanvas |
 
-O CTA de patrocinador ("Torne-se um patrocinador") é a única divergência deliberada: o
-protótipo mantém laranja/brick como todo o resto, mas o WCBR renderiza `.btn.btn-primary.btn-lg`
-(ciano) para separá-lo dos CTAs de ingresso/newsletter — veja a nota em [Variantes](#variantes)
-acima.
+Divergência do CTA de patrocinador: protótipo mantém laranja/brick, WCBR renderiza `.btn.btn-primary.btn-lg`.
+*/}
 
 ## Notas
 

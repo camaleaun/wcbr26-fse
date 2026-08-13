@@ -1,19 +1,14 @@
 ---
 title: Buttons
-description: WCBR buttons — standard Bootstrap variants restyled with the signature hard offset shadow, plus the custom .btn-orange CTA.
+description: WCBR buttons — the sticker CTA treatment, square corners, hard offset shadow, two brand colors.
 toc: true
 ---
 
-WCBR uses Bootstrap's `.btn` component as-is. The brand treatment — square corners, heavy
-uppercase Poppins, a 2px border, and a **hard offset shadow** that presses in on click — is
-applied to the base `.btn`, so **every** variant inherits it: `.btn-primary`, `.btn-orange`.
+The brand button treatment — square corners, heavy uppercase Poppins, a 2px border, and a
+**hard offset shadow** that presses in on click — applies to both button variants:
+`.btn-primary` and `.btn-orange`.
 
 ## Variants
-
-`orange` is added to `$theme-colors`, so Bootstrap could generate its full family
-(`.btn-outline-orange`, `.bg-orange`, `.text-orange`, `.border-orange`, `.link-orange`, …)
-like the built-in colors — but the build only ships the two variants the prototype actually
-uses (see [Build Pipeline](/docs/2026/getting-started/build-pipeline)).
 
 | Class | Fill | Role |
 |---|---|---|
@@ -27,11 +22,6 @@ There is **one** orange button, not several. See [Contrast](#contrast) for why.
   <a class="btn btn-orange" href="#">Get your ticket</a>
 </div>
 
-```html
-<a class="btn btn-primary" href="#formatos">View schedule</a>
-<a class="btn btn-orange" href="#ingressos">Get your ticket</a>
-```
-
 Sizes are a separate concern — see [Sizing](#sizing) below.
 
 ## Contrast
@@ -43,35 +33,16 @@ The orange scale is not interchangeable for fills. Measured against white text:
 | `$orange-500` | `#f56530` | **3.09:1** | **No** — fails WCAG AA |
 | `$orange-600` | `#c6360b` | 5.34:1 | Yes ✓ |
 
-`$orange-500` is deliberately **not** registered in `$theme-colors`. If it were, Bootstrap's
-`color-contrast()` would flip its label to **black** to satisfy the ratio — and WCBR does not
-use black-on-orange. It stays an accent for borders and sticker shadows only.
+`$orange-500` is deliberately not used as a fill — at that contrast an automatic accessible-text
+check would flip the label to **black**, and WCBR does not use black-on-orange. It stays an
+accent for borders and sticker shadows only.
 
 ## The sticker shadow
 
-The offset shadow is drawn from the variant's own border color
-(`--wcbr-btn-border-color`), so it **recolors itself per variant** — no per-button CSS.
-
-```scss
-.btn {
-  box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
-}
-```
-
-Both variants are two-tone: the fill stays one shade, the border (and therefore the shadow)
-sits a step darker or lighter.
-
-```scss
-.btn-primary {
-  --#{$prefix}btn-border-color: #{$cyan-900};         // #003e3e
-  --#{$prefix}btn-hover-border-color: #{$cyan-900};
-}
-
-.btn-orange {
-  --#{$prefix}btn-border-color: #{$orange-500};       // #f56530
-  --#{$prefix}btn-hover-border-color: #{$orange-500};
-}
-```
+The offset shadow is drawn from the variant's own border color, so it **recolors itself per
+variant** automatically — no per-button CSS. Both variants are two-tone: the fill stays one
+shade, the border (and therefore the shadow) sits a step darker or lighter — `$cyan-900` under
+the `$cyan-700` fill for primary, `$orange-500` under the `$orange-600` fill for orange.
 
 ## Interaction
 
@@ -84,45 +55,29 @@ sits a step darker or lighter.
 
 ## Sizing
 
-The prototype only uses two sizes. Base `.btn` is the smaller one — the navbar "Ingressos"
-CTA is the only place it appears, and it's a neutral, Bootstrap-standard size (not tied to
-the original Figma spec). `.btn-lg` is the bigger sticker CTA used everywhere else (hero,
-sponsor, newsletter, drawer). There's no `.btn-sm`: nothing in the prototype needs a third,
-smaller size.
+There are two sizes. Base `.btn` is the smaller one — the navbar "Ingressos" CTA is the only
+place it appears. `.btn-lg` is the bigger sticker CTA used everywhere else (hero, sponsor,
+newsletter, drawer).
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
   <a class="btn btn-orange fw-black" href="#">Tickets</a>
   <a class="btn btn-orange btn-lg" href="#">Get your ticket</a>
 </div>
 
-```html
-<a class="btn btn-orange fw-black" href="#ingressos">Tickets</a>
-<a class="btn btn-orange btn-lg" href="#ingressos">Get your ticket</a>
-```
+`.btn-lg` carries its own weight (900) automatically; the base size needs `.fw-black` added
+when it should look just as heavy.
 
-```scss
-$btn-font-family:  $headings-font-family;  // Poppins
-$btn-font-weight:  400;  // neutral default — .fw-black opts into 900
-$btn-line-height:  1.5;
-$btn-border-width: 2px;
+The sponsor CTA ("Torne-se um patrocinador") is one deliberate divergence from the prototype:
+it's rendered in the primary cyan instead of the ticket orange, to separate a general-interest
+action from ticket/newsletter CTAs — see the [Variants](#variants) note above.
 
-$btn-padding-y:    .375rem;  // 6px — Bootstrap's own default, base
-$btn-padding-x:    .75rem;   // 12px
-$btn-font-size:    1rem;
-
-$btn-padding-y-lg: .8125rem; // 13px — .btn-lg
-$btn-padding-x-lg: 1.625rem; // 26px
-$btn-font-size-lg: 1.25rem;
-// .btn-lg also bakes its own weight back in (scss/_buttons.scss) — no need
-// for .fw-black on top of it.
-```
-
-## Mapping from the prototype
-
+{/*
+Mapping from the prototype (agent-readable only — these Bootstrap classes
+don't survive the move to WordPress, so this stays out of the rendered page).
 `html-from-figma` uses the same `.btn`/`.btn-lg` size naming as the WCBR build — bare `.btn`
 is the small navbar CTA, `.btn-lg` is the big sticker CTA.
 
-| `html-from-figma` | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.btn` | `.btn.btn-orange` |
 | `.btn-lg` | `.btn.btn-orange.btn-lg` |
@@ -130,13 +85,11 @@ is the small navbar CTA, `.btn-lg` is the big sticker CTA.
 | `.header__ingressos` | `.btn.btn-orange` in the navbar |
 | `.drawer__cta` | `.btn.btn-orange.btn-lg` inside the offcanvas |
 
-The sponsor CTA ("Torne-se um patrocinador") is the one deliberate divergence: the prototype
-keeps it orange/brick like every other CTA, but WCBR renders it `.btn.btn-primary.btn-lg`
-(cyan) to separate it from the ticket/newsletter CTAs — see the [Variants](#variants) note
-above.
+Sponsor CTA divergence: prototype keeps orange/brick, WCBR renders `.btn.btn-primary.btn-lg`.
+*/}
 
 ## Notes
 
-- Do not round the corners — `$border-radius: 0` is intentional and brand-defining.
+- Do not round the corners — square corners are intentional and brand-defining.
 - Labels are uppercase Poppins 900; keep them short and imperative.
 - `.btn-primary` is **cyan**, not orange. Use `.btn-orange` for the ticket CTA.

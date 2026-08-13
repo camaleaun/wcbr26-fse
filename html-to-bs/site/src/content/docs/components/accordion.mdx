@@ -1,67 +1,43 @@
 ---
 title: Accordion
-description: The session-formats accordion — Bootstrap's accordion with a leading icon per item.
+description: The session-formats accordion — a collapsible item per format, with a leading icon.
 toc: true
 ---
 
-The **What to expect** (formats) section is a Bootstrap
-[accordion](https://getbootstrap.com/docs/5.3/components/accordion/): each session format is a
+The **What to expect** (formats) section is an accordion: each session format is a
 collapsible item with a leading icon, an uppercase heading, and a body of copy.
 
 ## Structure
 
-Each item is an `.accordion-item` with an `.accordion-button` (which carries the built-in
-caret) and a collapsible `.accordion-collapse`. The prototype's custom caret (`.fmt__caret`)
-is dropped — Bootstrap draws it. The leading icon is kept as a `<span>` before the label.
-
-## Markup
-
-```html
-<div class="accordion formats-accordion" id="formats">
-  <div class="accordion-item format">
-    <h3 class="accordion-header">
-      <button class="accordion-button format-head collapsed" type="button"
-              data-bs-toggle="collapse" data-bs-target="#format-1"
-              aria-expanded="false" aria-controls="format-1">
-        <span class="format-icon format-icon-cyan" aria-hidden="true">
-          <!-- inline SVG icon -->
-        </span>
-        <span class="format-title">Talks</span>
-      </button>
-    </h3>
-    <div id="format-1" class="accordion-collapse collapse" data-bs-parent="#formats">
-      <div class="accordion-body">
-        40-minute sessions with national and international experts covering
-        the latest WordPress trends.
-      </div>
-    </div>
-  </div>
-  <!-- Lightning Talks, Panels … -->
-</div>
-```
+Each item is a collapsible block: a header button (which carries the built-in caret) and a
+collapsible body. The prototype's custom caret (`.fmt__caret`) is dropped — the header button
+draws its own. The leading icon is kept as a `<span>` before the label.
 
 The icon takes one of three color modifiers: `.format-icon-cyan`, `.format-icon-orange`, or
 `.format-icon-panel`. On `sm+`, `.formats-accordion` lays the three items out side by side and
 keeps every panel open.
 
-Set `data-bs-parent="#formats"` on every collapse so only one item opens at a time (matching
-the prototype). Drop it if you want multiple panels open.
+Only one item opens at a time, matching the prototype — that's controlled per group, so
+dropping the group link opens the door to multiple panels open at once if ever needed.
 
-## Mapping from the prototype
+{/*
+Mapping from the prototype (agent-readable only — these Bootstrap classes
+don't survive the move to WordPress, so this stays out of the rendered page):
 
-| `html-from-figma` | Bootstrap |
+| `html-from-figma` | WCBR |
 |---|---|
-| `.fmt` (article) | `.accordion-item` |
-| `.fmt__head` (button) | `.accordion-header` + `.accordion-button` |
-| `aria-expanded` / `aria-controls` (custom JS) | `data-bs-toggle="collapse"` / `data-bs-target` |
-| `.fmt__panel` (region) | `.accordion-collapse.collapse` |
-| `.fmt__panel-inner` | `.accordion-body` |
-| `.fmt__title` (`h3`) | text inside `.accordion-button` |
+| `.fmt` (article) | accordion item |
+| `.fmt__head` (button) | header + toggle button |
+| `aria-expanded` / `aria-controls` (custom JS) | declarative collapse toggle |
+| `.fmt__panel` (region) | collapsible body |
+| `.fmt__panel-inner` | body copy |
+| `.fmt__title` (`h3`) | text inside the toggle button |
 | `.fmt__icon` | leading `<span>` (kept, custom-styled) |
-| `.fmt__caret` | removed — Bootstrap's built-in caret |
+| `.fmt__caret` | removed — the built-in caret |
+*/}
 
 ## Notes
 
 - The three formats are **Talks**, **Lightning Talks**, and **Panels**.
 - Headings sit inside the button; keep them as `h3` for the document outline.
-- Requires Bootstrap's JS bundle (Collapse) — already loaded site-wide.
+- Needs the site's collapse behavior JS — already loaded site-wide.

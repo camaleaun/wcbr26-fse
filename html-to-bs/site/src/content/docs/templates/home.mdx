@@ -1,174 +1,62 @@
 ---
 title: Home
-description: WordCamp Brasil 2026 home page — converting Figma HTML to Bootstrap 5 with WCBR tokens.
+description: WordCamp Brasil 2026 home page — mapping the Figma prototype to the WCBR design system.
 toc: true
 ---
 
-## From custom CSS to Bootstrap utilities
+{/*
+Mapping from the prototype (agent-readable only — these Bootstrap classes
+don't survive the move to WordPress, so this stays out of the rendered page):
 
-Class mapping from the Figma version (`html-from-figma`) to the Bootstrap equivalent in `html-to-bs`:
-
-| Figma custom | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.skip-link` | `.visually-hidden-focusable` |
 | `.site-header` | `.site-header.sticky-top.border-bottom` |
 | `.header__nav ul` | `.nav.header-nav.d-none.d-xl-flex` |
 | `.nav__item--has-sub` | `.nav-item.dropdown` + `.dropdown-menu` |
-| `data-drawer-*` (custom JS) | `data-bs-toggle="offcanvas"` / `data-bs-dismiss` |
-| `.nav__sub` (custom drawer) | `.offcanvas.offcanvas-end` + `.collapse` |
+| `data-drawer-*` (custom JS) | offcanvas toggle/dismiss data attributes |
+| `.nav__sub` (custom drawer) | offcanvas panel + collapsible sub-list |
 | `.btn` (navbar CTA) | `.btn` (base = the smaller size) |
 | `.hero-lead` | `.lead` |
 | `.stat-num.d-block` | `.stat-number.d-block` (color in SCSS) |
 | `.stat-label.d-block` | `.stat-label.d-block` (color + uppercase in SCSS) |
-| `.news-card` | `.card.news-card` (Bootstrap base + color override) |
+| `.news-card` | `.card.news-card` (card base + color override) |
 | `.footer__col-list` | `.footer-col-list` (flex column + gap in SCSS) |
 | `.organizer__role` | `.organizer-role` (uppercase in SCSS) |
+*/}
 
-## Native Bootstrap components used
+## Structure
 
 ### Header / Navbar
 
-The Figma header was a fully custom block. In Bootstrap it uses `navbar` with native `dropdown` for desktop and `offcanvas` for mobile — no manual JS.
-
-```html
-<header class="site-header sticky-top border-bottom">
-  <nav class="navbar" aria-label="Main navigation">
-    <div class="container">
-
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.avif" alt="WordCamp Brasil 2026" width="260" height="102" fetchpriority="high" class="header-logo">
-      </a>
-
-      <!-- Desktop: hidden below xl -->
-      <ul class="nav header-nav d-none d-xl-flex ms-4">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#sobre" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#sobre">About the event</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#formatos">Schedule</a></li>
-      </ul>
-
-      <a class="btn btn-primary d-none d-xl-inline-flex ms-3" href="#">Tickets</a>
-
-      <!-- Mobile hamburger -->
-      <button class="navbar-toggler d-xl-none ms-auto" type="button"
-              data-bs-toggle="offcanvas" data-bs-target="#mobile-drawer"
-              aria-controls="mobile-drawer" aria-label="Open menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    </div>
-  </nav>
-</header>
-```
-
-### Mobile offcanvas
-
-Submenus in the drawer use `.collapse` with `data-bs-toggle="collapse"` — native Bootstrap.
-
-```html
-<div class="offcanvas offcanvas-end" id="mobile-drawer" tabindex="-1" aria-label="Navigation menu">
-  <div class="offcanvas-header">
-    <span class="offcanvas-title">Menu</span>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column">
-
-    <ul class="list-unstyled drawer-nav">
-      <li>
-        <button class="drawer-link" type="button"
-                data-bs-toggle="collapse" data-bs-target="#dsub-evento" aria-expanded="false">
-          <span>Event</span>
-          <svg class="drawer-caret ms-auto" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5"/></svg>
-        </button>
-        <div class="collapse" id="dsub-evento">
-          <ul class="list-unstyled drawer-sub">
-            <li><a href="#sobre">About the event</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-
-    <a class="btn btn-primary btn-lg w-100 mt-4" href="#">Tickets</a>
-
-  </div>
-</div>
-```
+The Figma header was a fully custom block. The build uses a standard navbar with dropdowns on
+desktop and an offcanvas drawer on mobile — no manual JS. See [Navbar](/docs/2026/components/navbar)
+for the full breakdown.
 
 ### Hero
 
-Grid with `row align-items-center g-5` and two `col-lg-6` columns.
-
-```html
-<section class="hero" aria-labelledby="hero-title">
-  <div class="container">
-    <div class="row align-items-center g-5 py-5">
-      <div class="col-lg-6">
-        <h1 id="hero-title" class="display-1 mb-3">Welcome to<br>WordCamp Brasil</h1>
-        <p class="lead mb-4">The largest WordPress conference...</p>
-        <a class="btn btn-primary btn-lg" href="#">Get your ticket</a>
-      </div>
-      <div class="col-lg-6 d-flex justify-content-end">
-        <div class="hero-frame">
-          <picture>
-            <source type="image/avif" srcset="assets/img/hero.avif">
-            <img src="assets/img/hero.jpg" alt="..." width="512" height="512" fetchpriority="high" class="img-fluid">
-          </picture>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-```
+Two columns, image on one side, heading/lead/CTA on the other, vertically centered.
 
 ### Accordion — What to expect
 
-Responsive: on mobile it is a collapsible accordion; above `sm` it becomes three cards side by side (via a SCSS media query). `data-bs-parent` is not used, allowing multiple panels to be open simultaneously.
-
-```html
-<div class="accordion formats-accordion" id="formatsAccordion">
-  <article class="accordion-item format">
-    <h3 class="accordion-header">
-      <button class="accordion-button format-head collapsed" type="button"
-              data-bs-toggle="collapse" data-bs-target="#format-panel-1" aria-expanded="false">
-        <span class="format-icon format-icon-cyan" aria-hidden="true"><!-- svg --></span>
-        <span class="format-title">Talks</span>
-      </button>
-    </h3>
-    <div class="accordion-collapse collapse" id="format-panel-1" data-bs-parent="#formatsAccordion">
-      <div class="accordion-body">40-minute sessions with national and international experts...</div>
-    </div>
-  </article>
-</div>
-```
+Responsive: on mobile it is a collapsible accordion; above `sm` it becomes three cards side by
+side (via a SCSS media query). Multiple panels can stay open at once — see
+[Accordion](/docs/2026/components/accordion).
 
 ### News cards
 
-Grid `row-cols-1 row-cols-md-2 row-cols-lg-3 g-4`. Each card uses `.card.news-card.h-100` — the Bootstrap base provides `display: flex; flex-direction: column`. The "Read more" link stays at the bottom with `mt-auto`.
+A responsive card grid, three columns at its widest. Each card uses `.card.news-card.h-100` —
+the card base provides `display: flex; flex-direction: column`, so the "Read more" link stays
+pinned to the bottom with `mt-auto`. See [Cards](/docs/2026/components/cards).
 
-```html
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-  <div class="col">
-    <article class="card news-card h-100">
-      <a class="news-card-media" href="#"><picture>...</picture></a>
-      <div class="card-body d-flex flex-column gap-2 p-4">
-        <span class="tag">Call for Speakers</span>
-        <h3 class="news-card-title"><a href="#">Post title</a></h3>
-        <p class="news-card-description">Short excerpt.</p>
-        <a class="link-under mt-auto" href="#">Read more</a>
-      </div>
-    </article>
-  </div>
-</div>
-```
+The event's visual identity — the sticker shadows, animated underlines, badge treatment,
+decorative media frames, and accordion/sponsor/avatar styling — is hand-built and genuinely
+custom; none of it comes from off-the-shelf utility classes.
 
-## WCBR visual DNA — genuinely custom CSS
+{/*
+WCBR visual DNA — genuinely custom CSS (agent-readable only, same reason as above):
 
-The components below **cannot** be replaced by Bootstrap utilities — they are the event's visual identity:
-
-| Class | Why it stays in SCSS |
+| Class | Why it stays custom |
 |---|---|
 | `.btn`, `.btn-orange` | Sticker flat style: `box-shadow: 5px 5px 0 0` (color from the variant itself), hover `transform: translate` |
 | `.link-under` | Animated underline: `gap` transition on hover |
@@ -179,7 +67,8 @@ The components below **cannot** be replaced by Bootstrap utilities — they are 
 | `.sponsor`, `.tier` | Sticker box + divider with `::before`/`::after` |
 | `.avatar` + variants | Circle with themed `border-color` |
 | `.social-icon`, `.icon` | Inline SVG: `fill: currentColor` with fixed dimensions |
-| `.section` | `padding-block: clamp(64px, 9vw, 102px)` — no equivalent Bootstrap utility |
+| `.section` | `padding-block: clamp(64px, 9vw, 102px)` — no off-the-shelf equivalent |
+*/}
 
 ## Accessibility
 
@@ -187,4 +76,5 @@ The components below **cannot** be replaced by Bootstrap utilities — they are 
 - `aria-labelledby` on every `<section>` with a matching `id` on the heading
 - `aria-hidden="true"` on all decorative SVGs
 - `aria-current="page"` on the active item in the mobile drawer
-- `aria-expanded` managed automatically by Bootstrap JS (dropdown, collapse, offcanvas)
+- `aria-expanded` managed automatically by the site's interactive behavior (dropdown, collapse,
+  offcanvas)

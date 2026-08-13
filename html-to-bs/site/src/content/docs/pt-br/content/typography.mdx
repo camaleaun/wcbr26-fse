@@ -20,14 +20,8 @@ Ambas são auto-hospedadas como `woff2` com `font-display: swap`, com fallback p
 
 ## Base
 
-```scss
-$font-family-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-$headings-font-family:   "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-$headings-font-weight:   900;
-$headings-color:         $primary;   // $cyan-700 · #00595d
-$font-size-base:         1.125rem;   // 18px
-$line-height-base:       1.45;
-```
+O corpo de texto usa Montserrat em `1.125rem` (18px) com `line-height: 1.45`. Os headings usam
+Poppins por padrão, peso 900, coloridos com `$primary` (`$cyan-700` · `#00595d`).
 
 ## Headings
 
@@ -50,10 +44,6 @@ compacto (~1.1). Os tamanhos são fluidos (`clamp`) para escalar com o viewport.
 
 O corpo é Montserrat na base de 18px com `line-height: 1.45`. O parágrafo de intro/lead
 escala de forma fluida.
-
-```html
-<p class="lead">A maior conferência WordPress da América Latina, em Belo Horizonte.</p>
-```
 
 <div class="wcbrd-example">
   <p class="lead">A maior conferência WordPress da América Latina, em Belo Horizonte.</p>

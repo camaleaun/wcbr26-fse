@@ -1,63 +1,39 @@
 ---
 title: Accordion
-description: O accordion de formatos de sessão — accordion Bootstrap com ícone à esquerda por item.
+description: O accordion de formatos de sessão — um item recolhível por formato, com ícone à esquerda.
 toc: true
 ---
 
-A seção **O que esperar** (formatos) é um
-[accordion](https://getbootstrap.com/docs/5.3/components/accordion/) Bootstrap: cada formato de sessão é um item recolhível com ícone à esquerda, título maiúsculo e corpo de texto.
+A seção **O que esperar** (formatos) é um accordion: cada formato de sessão é um item recolhível com ícone à esquerda, título maiúsculo e corpo de texto.
 
 ## Estrutura
 
-Cada item é um `.accordion-item` com um `.accordion-button` (que carrega o caret nativo) e um `.accordion-collapse` recolhível. O caret customizado do protótipo (`.fmt__caret`) foi removido — o Bootstrap o desenha. O ícone de entrada é mantido como `<span>` antes do rótulo.
-
-## Marcação
-
-```html
-<div class="accordion formats-accordion" id="formats">
-  <div class="accordion-item format">
-    <h3 class="accordion-header">
-      <button class="accordion-button format-head collapsed" type="button"
-              data-bs-toggle="collapse" data-bs-target="#format-1"
-              aria-expanded="false" aria-controls="format-1">
-        <span class="format-icon format-icon-cyan" aria-hidden="true">
-          <!-- SVG inline -->
-        </span>
-        <span class="format-title">Palestras</span>
-      </button>
-    </h3>
-    <div id="format-1" class="accordion-collapse collapse" data-bs-parent="#formats">
-      <div class="accordion-body">
-        Sessões de 40 minutos com especialistas nacionais e internacionais
-        abordando as últimas tendências do WordPress.
-      </div>
-    </div>
-  </div>
-  <!-- Mini Palestras, Painéis … -->
-</div>
-```
+Cada item é um bloco recolhível: um botão de cabeçalho (que carrega o caret nativo) e um corpo recolhível. O caret customizado do protótipo (`.fmt__caret`) foi removido — o próprio botão de cabeçalho desenha o dele. O ícone de entrada é mantido como `<span>` antes do rótulo.
 
 O ícone usa um de três modificadores de cor: `.format-icon-cyan`, `.format-icon-orange` ou
 `.format-icon-panel`. Em `sm+`, `.formats-accordion` dispõe os três itens lado a lado e
 mantém todos os painéis abertos.
 
-Defina `data-bs-parent="#formats"` em cada collapse para que apenas um item abra por vez (igual ao protótipo). Remova-o se quiser múltiplos painéis abertos.
+Apenas um item abre por vez, igual ao protótipo — isso é controlado por grupo, então remover o vínculo do grupo abre a porta para múltiplos painéis abertos ao mesmo tempo, se algum dia precisar.
 
-## Mapeamento do protótipo
+{/*
+Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
+sobrevivem à migração pro WordPress, então isso fica fora da página renderizada):
 
-| `html-from-figma` | Bootstrap |
+| `html-from-figma` | WCBR |
 |---|---|
-| `.fmt` (article) | `.accordion-item` |
-| `.fmt__head` (button) | `.accordion-header` + `.accordion-button` |
-| `aria-expanded` / `aria-controls` (JS customizado) | `data-bs-toggle="collapse"` / `data-bs-target` |
-| `.fmt__panel` (region) | `.accordion-collapse.collapse` |
-| `.fmt__panel-inner` | `.accordion-body` |
-| `.fmt__title` (`h3`) | texto dentro do `.accordion-button` |
+| `.fmt` (article) | item do accordion |
+| `.fmt__head` (button) | cabeçalho + botão de toggle |
+| `aria-expanded` / `aria-controls` (JS customizado) | toggle de collapse declarativo |
+| `.fmt__panel` (region) | corpo recolhível |
+| `.fmt__panel-inner` | corpo de texto |
+| `.fmt__title` (`h3`) | texto dentro do botão de toggle |
 | `.fmt__icon` | `<span>` inicial (mantido, estilizado customizado) |
-| `.fmt__caret` | removido — caret nativo do Bootstrap |
+| `.fmt__caret` | removido — o caret nativo |
+*/}
 
 ## Notas
 
 - Os três formatos são **Palestras**, **Mini Palestras** e **Painéis**.
 - Os headings ficam dentro do botão; mantenha-os como `h3` para o outline do documento.
-- Requer o bundle JS do Bootstrap (Collapse) — já carregado globalmente no site.
+- Requer o comportamento de collapse do site — já carregado globalmente.

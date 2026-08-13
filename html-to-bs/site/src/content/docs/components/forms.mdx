@@ -1,6 +1,6 @@
 ---
 title: Forms
-description: The newsletter signup — a Bootstrap form control paired with the orange CTA on a cyan band.
+description: The newsletter signup — an email field paired with the orange CTA on a cyan band.
 toc: true
 ---
 
@@ -17,15 +17,6 @@ button, laid out side by side on `md+` and stacked on mobile, sitting on a `$cya
   </form>
 </div>
 
-```html
-<form class="d-flex flex-column flex-md-row gap-3" action="#" method="post" novalidate>
-  <label class="visually-hidden" for="email">Your best email</label>
-  <input class="form-control form-control-lg rounded-0" type="email" id="email" name="email"
-         placeholder="Your best email" autocomplete="email" required>
-  <button class="btn btn-orange btn-lg" type="submit">Subscribe</button>
-</form>
-```
-
 ## Rules
 
 - **Always label the field.** The visible design has no label, so use `.visually-hidden` —
@@ -35,18 +26,20 @@ button, laid out side by side on `md+` and stacked on mobile, sitting on a `$cya
 - **Use `.btn-orange` for submit.** See [Buttons](/docs/2026/components/buttons).
 - The input renders on `$sand-100` with `$gray-700` text; on focus the border goes white.
 
-## Mapping from the prototype
+{/*
+Mapping from the prototype (agent-readable only — these Bootstrap classes
+don't survive the move to WordPress, so this stays out of the rendered page):
 
-| `html-from-figma` | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.newsletter__form` | `.d-flex.flex-column.flex-md-row.gap-3` |
 | `.sr-only` | `.visually-hidden` |
 | `.newsletter__input` | `.form-control.form-control-lg` |
 | `.btn-lg.btn-brick` | `.btn.btn-orange.btn-lg` |
+*/}
 
 ## Notes
 
 - Keep `novalidate` on the form only if you handle validation yourself; otherwise let the
   browser validate `type="email"` + `required`.
-- For error and success states use Bootstrap's standard
-  [validation](https://getbootstrap.com/docs/5.3/forms/validation/) classes.
+- For error and success states use the standard validation classes.

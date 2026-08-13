@@ -1,27 +1,19 @@
 ---
 title: Introduction
-description: The WCBR2026 Design System — the WordCamp Brasil 2026 brand built as a themeable layer on top of Bootstrap 5.
+description: The WCBR2026 Design System — the WordCamp Brasil 2026 brand as tokens, components, and page sections.
 toc: true
 ---
 
-The **WCBR2026 Design System** (`wcbrbs`) is the visual language of WordCamp Brasil 2026,
-delivered as a theming layer on top of [Bootstrap 5.3](https://getbootstrap.com). It ships
-the event's colors, typography, and page sections as Bootstrap variable overrides and
-ready-to-use markup, so every surface looks and behaves like one product.
+The **WCBR2026 Design System** (`wcbrbs`) is the visual language of WordCamp Brasil 2026. It
+ships the event's colors, typography, and page sections as reusable tokens and ready-to-use
+markup, so every surface looks and behaves like one product.
 
 ## What it is
 
-- **A curated fork, not a full-bundle theme.** `wcbr.scss` doesn't `@import` Bootstrap's
-  bundle wholesale — it imports only the specific partials the theme actually uses,
-  directly from `node_modules`, and forks (copies into `scss/vendor/`) the few partials
-  that bundle more sub-features than the brand needs, trimmed to size. Every WCBR token
-  is still a Bootstrap variable override (`$primary`, `$body-bg`, the color scales, the
-  type ramp) — but the CSS output tracks what the HTML actually uses, not Bootstrap's
-  full component/utility surface. See
-  [Build Pipeline](/docs/2026/getting-started/build-pipeline) for the current partial
-  list and how to extend or fork one.
 - **Token-driven.** Colors and type come from a single Sass source
-  (`scss/_variables.scss`) that mirrors the Figma **WCBR Bootstrap** variable collection.
+  (`scss/_variables.scss`) that mirrors the Figma **WCBR** variable collection.
+- **Minimal by design.** Only the styles the prototype actually uses ship — nothing
+  speculative, nothing unused.
 - **Sharp and editorial.** Border-radius is `0` across the board, headings use **Poppins 900**
   uppercase, body copy uses **Montserrat** at an 18px base.
 
@@ -29,7 +21,6 @@ ready-to-use markup, so every surface looks and behaves like one product.
 
 | Layer | Choice |
 |---|---|
-| Framework | Bootstrap 5.3.3 |
 | CSS prefix | `wcbr-` (e.g. `--wcbr-primary`) |
 | Body font | Montserrat |
 | Heading font | Poppins (weight 900) |
@@ -40,10 +31,9 @@ ready-to-use markup, so every surface looks and behaves like one product.
 
 ## Source of truth
 
-The current source of truth is **`html-from-figma`** — the hand-built HTML/CSS prototype of
-the 2026 home page, distilled directly from the Figma design. This documentation covers only
-what that prototype actually contains; it does not document Bootstrap features the project
-does not use yet.
+The current source of truth is **`html-from-figma`** — the hand-built prototype of the 2026
+home page, distilled directly from the Figma design. This documentation covers only what that
+prototype actually contains.
 
 The prototype is composed of these sections, each becoming a documented component:
 

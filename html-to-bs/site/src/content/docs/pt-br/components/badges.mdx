@@ -8,7 +8,7 @@ O WCBR tem dois padrões de rótulo: um **badge preenchido** para metadados em d
 
 ## Badge
 
-Use o `.badge` do Bootstrap com uma cor `.text-bg-*`. O tratamento de marca — Poppins, maiúsculo, letter-spacing e o raio de 2px — fica no base `.badge`, então **todas** as variantes de cor herdam.
+`.badge` combinado com uma cor `.text-bg-*`. O tratamento de marca — Poppins, maiúsculo, letter-spacing e o raio de 2px — fica no base `.badge`, então **todas** as variantes de cor herdam.
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-3">
   <span class="badge text-bg-primary">Belo Horizonte</span>
@@ -16,31 +16,15 @@ Use o `.badge` do Bootstrap com uma cor `.text-bg-*`. O tratamento de marca — 
   <span class="badge text-bg-dark">30 e 31 de outubro</span>
 </div>
 
-```html
-<span class="badge text-bg-primary">Belo Horizonte</span>
-<span class="badge text-bg-orange">Outubro 2026</span>
-```
-
-`text-bg-orange` existe porque `orange` está registrado em `$theme-colors` — veja
-[Botões](/docs/2026/components/buttons#variantes).
-
 <div class="wcbrd-callout wcbrd-callout-warning">
 
-**Não existe `.badge-orange` ou `.badge-primary`.** O Bootstrap 5 removeu as variantes de cor `.badge-*` (era a API do Bootstrap 4) em favor de `.text-bg-*`, que define o fundo **e** escolhe um texto legível. Use `.text-bg-orange`, não `.badge-orange`.
+**Não existe `.badge-orange` ou `.badge-primary`.** `.text-bg-orange` define o fundo **e** escolhe um texto legível em uma classe só. Use `.text-bg-orange`, não `.badge-orange`.
 
 </div>
 
 ### Tamanhos
 
-A geometria do badge vem das variáveis `$badge-*`, correspondendo ao chip do hero no design:
-
-```scss
-$badge-font-size:     .9rem;
-$badge-font-weight:   600;
-$badge-padding-y:     .5625rem;  // 9px
-$badge-padding-x:     1rem;      // 16px
-$badge-border-radius: 2px;
-```
+A geometria do badge corresponde ao chip do hero no design: rótulo `.9rem`, peso 600, padding `9px`/`16px`, raio de canto `2px`.
 
 ## Tag
 
@@ -50,21 +34,20 @@ Uma **tag** é um rótulo pequeno, maiúsculo, com letter-spacing e **sem preenc
   <span class="tag">Convocação</span>
 </div>
 
-```html
-<span class="tag">Convocação</span>
-```
-
 Tags transmitem significado pela cor e caixa, não por preenchimento — não dê background ao `.tag`.
 
-## Mapeamento do protótipo
+{/*
+Mapeamento do protótipo (leitura só por agente — essas classes Bootstrap não
+sobrevivem à migração pro WordPress, então isso fica fora da página renderizada):
 
-| `html-from-figma` | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.hero__chip--teal` | `.badge.text-bg-primary` |
 | `.hero__chip--orange` | `.badge.text-bg-orange` |
 | `.tag` (card de notícia) | `.tag` |
 | `.header__tags` | `.tag` |
 | `.footer__tags` | `.tag` sobre fundo escuro |
+*/}
 
 ## Notas
 

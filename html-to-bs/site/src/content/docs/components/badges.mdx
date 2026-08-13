@@ -9,7 +9,7 @@ WCBR has two label patterns: a **filled badge** for standout metadata (the hero)
 
 ## Badge
 
-Use Bootstrap's `.badge` with a `.text-bg-*` color. The brand treatment — Poppins, uppercase,
+`.badge` paired with a `.text-bg-*` color. The brand treatment — Poppins, uppercase,
 letter-spacing, and the 2px radius — lives on the `.badge` base, so **every** color variant
 inherits it.
 
@@ -19,33 +19,18 @@ inherits it.
   <span class="badge text-bg-dark">October 30–31</span>
 </div>
 
-```html
-<span class="badge text-bg-primary">Belo Horizonte</span>
-<span class="badge text-bg-orange">October 2026</span>
-```
-
-`text-bg-orange` exists because `orange` is registered in `$theme-colors` — see
-[Buttons](/docs/2026/components/buttons#variants).
-
 <div class="wcbrd-callout wcbrd-callout-warning">
 
-**There is no `.badge-orange` or `.badge-primary`.** Bootstrap 5 removed the `.badge-*` color
-variants (they were a Bootstrap 4 API) in favour of `.text-bg-*`, which sets the background
-**and** picks a readable foreground. Reach for `.text-bg-orange`, not `.badge-orange`.
+**There is no `.badge-orange` or `.badge-primary`.** `.text-bg-orange` sets the background
+**and** picks a readable foreground in one class. Reach for `.text-bg-orange`, not
+`.badge-orange`.
 
 </div>
 
 ### Sizing
 
-Badge geometry comes from the `$badge-*` variables, matching the hero chip in the design:
-
-```scss
-$badge-font-size:     .9rem;
-$badge-font-weight:   600;
-$badge-padding-y:     .5625rem;  // 9px
-$badge-padding-x:     1rem;      // 16px
-$badge-border-radius: 2px;
-```
+Badge geometry matches the hero chip in the design: `.9rem` label, weight 600, `9px`/`16px`
+padding, `2px` corner radius.
 
 ## Tag
 
@@ -56,21 +41,20 @@ and in the header. Montserrat 600, `$orange-900`, `.8125rem`, `letter-spacing: .
   <span class="tag">Call for Speakers</span>
 </div>
 
-```html
-<span class="tag">Call for Speakers</span>
-```
-
 Tags carry meaning through color and case, not a fill — do not give `.tag` a background.
 
-## Mapping from the prototype
+{/*
+Mapping from the prototype (agent-readable only — these Bootstrap classes
+don't survive the move to WordPress, so this stays out of the rendered page):
 
-| `html-from-figma` | Bootstrap / WCBR |
+| `html-from-figma` | WCBR |
 |---|---|
 | `.hero__chip--teal` | `.badge.text-bg-primary` |
 | `.hero__chip--orange` | `.badge.text-bg-orange` |
 | `.tag` (news card) | `.tag` |
 | `.header__tags` | `.tag` |
 | `.footer__tags` | `.tag` on dark |
+*/}
 
 ## Notes
 
