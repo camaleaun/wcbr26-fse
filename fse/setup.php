@@ -237,6 +237,9 @@ $palette = [
 	[ 'color' => '#ffb4a3', 'name' => 'Red 200',    'slug' => 'red-200'    ],
 	[ 'color' => '#ffffff', 'name' => 'White',      'slug' => 'white'      ],
 	[ 'color' => '#ffffff00', 'name' => 'Transparent', 'slug' => 'transparent' ],
+	[ 'color' => '#003e3e', 'name' => 'Custom WCBR Teal', 'slug' => 'custom-wcbr-teal' ],
+	[ 'color' => '#bec9c8', 'name' => 'Custom Gray 400',  'slug' => 'custom-gray-400'  ],
+	[ 'color' => '#00595d', 'name' => 'Custom Cyan 700',  'slug' => 'custom-cyan-700'  ],
 ];
 
 $ff_head = '"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
