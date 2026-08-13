@@ -22,13 +22,23 @@ $nandor:           #4a5654 !default;
 $vermilion:        #ff4419 !default;
 $cornflower-lilac: #ffb4a3 !default;
 
-$cyan:   $robins-egg-blue !default;
 $orange: $pomegranate !default;
 $red:    $vermilion !default;
 $sand:   $raffia !default;
 $slate:  $granny-smith !default;
+$cyan:   $robins-egg-blue !default;
 
 $black: #111 !default;
+$white: #fff !default;
+
+$colors: (
+  "red":        $red,
+  "orange":     $orange,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white
+) !default;
+
 
 $sand-100: $bridal-heath !default;
 $sand-200: $merino !default;

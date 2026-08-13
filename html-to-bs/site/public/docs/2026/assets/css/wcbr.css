@@ -5,20 +5,11 @@
  */
 :root,
 [data-bs-theme=light] {
-  --wp----preset--color--blue: #0d6efd;
-  --wp----preset--color--indigo: #6610f2;
-  --wp----preset--color--purple: #6f42c1;
-  --wp----preset--color--pink: #d63384;
   --wp----preset--color--red: #ff4419;
   --wp----preset--color--orange: #e84814;
-  --wp----preset--color--yellow: #ffc107;
-  --wp----preset--color--green: #198754;
-  --wp----preset--color--teal: #20c997;
   --wp----preset--color--cyan: #00c7c9;
   --wp----preset--color--black: #111;
   --wp----preset--color--white: #fff;
-  --wp----preset--color--gray: #6c757d;
-  --wp----preset--color--gray-dark: #343a40;
   --wp----preset--color--gray-100: #fff8f1;
   --wp----preset--color--gray-200: #f6eee4;
   --wp----preset--color--gray-300: #e9e0d8;

@@ -84,6 +84,17 @@
     },
     {
       "step": "writeFiles",
+      "writeToPath": "/wordpress/wp-content/uploads/wcbr2026/fonts",
+      "filesTree": {
+        "resource": "git:directory",
+        "url": "https://github.com/camaleaun/wcbr26-fse",
+        "ref": "main",
+        "refType": "branch",
+        "path": "/fse/fonts"
+      }
+    },
+    {
+      "step": "writeFiles",
       "writeToPath": "/wordpress/wp-content/uploads/wcbr2026/img",
       "filesTree": {
         "resource": "git:directory",
