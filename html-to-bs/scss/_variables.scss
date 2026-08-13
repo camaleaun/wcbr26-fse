@@ -236,8 +236,8 @@ $btn-border-width: 2px;
 // html-from-figma's original 13px/30px spec — the reference was updated to
 // follow). -lg is the big sticker CTA used everywhere else (hero, sponsor,
 // newsletter, drawer) — see components/buttons.mdx.
-$btn-padding-y:    .5rem;   // 8px
-$btn-padding-x:    1rem;    // 16px
+$btn-padding-y:    .375rem; // 6px
+$btn-padding-x:    .75rem;  // 12px
 $btn-font-size:    1rem;
 
 $btn-padding-y-lg: 1.25rem; // 20px

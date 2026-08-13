@@ -80,31 +80,33 @@ Ambas as variantes são bicolores: o preenchimento fica em um tom, a borda (e po
 ## Tamanhos
 
 O protótipo só usa dois tamanhos. O `.btn` base é o menor — o CTA "Ingressos" da navbar é o
-único lugar onde aparece. `.btn-lg` é o CTA sticker maior, usado em todo o resto (hero,
+único lugar onde aparece, e é um tamanho neutro, padrão do Bootstrap (não ligado ao spec
+original do Figma). `.btn-lg` é o CTA sticker maior, usado em todo o resto (hero,
 patrocinador, newsletter, drawer). Não existe `.btn-sm`: nada no protótipo precisa de um
 terceiro tamanho, menor ainda.
 
 <div class="wcbrd-example d-flex flex-wrap align-items-center gap-4">
-  <a class="btn btn-orange" href="#">Ingressos</a>
-  <a class="btn btn-orange btn-lg" href="#">Garanta seu ingresso</a>
+  <a class="btn btn-orange fw-black" href="#">Ingressos</a>
+  <a class="btn btn-orange btn-lg fw-black" href="#">Garanta seu ingresso</a>
 </div>
 
 ```html
-<a class="btn btn-orange" href="#ingressos">Ingressos</a>
-<a class="btn btn-orange btn-lg" href="#ingressos">Garanta seu ingresso</a>
+<a class="btn btn-orange fw-black" href="#ingressos">Ingressos</a>
+<a class="btn btn-orange btn-lg fw-black" href="#ingressos">Garanta seu ingresso</a>
 ```
 
 ```scss
 $btn-font-family:  $headings-font-family;  // Poppins
-$btn-font-weight:  900;
+$btn-font-weight:  400;  // padrão neutro — .fw-black opta pelo 900
+$btn-line-height:  1.5;
 $btn-border-width: 2px;
 
-$btn-padding-y:    .8125rem;  // 13px — base
-$btn-padding-x:    1.875rem;  // 30px
-$btn-font-size:    .9rem;
+$btn-padding-y:    .375rem;  // 6px — padrão do próprio Bootstrap, base
+$btn-padding-x:    .75rem;   // 12px
+$btn-font-size:    1rem;
 
-$btn-padding-y-lg: 1.25rem;   // 20px — .btn-lg
-$btn-padding-x-lg: 2.5rem;    // 40px
+$btn-padding-y-lg: 1.25rem;  // 20px — .btn-lg
+$btn-padding-x-lg: 2.5rem;   // 40px
 $btn-font-size-lg: 1.05rem;
 ```
 

@@ -13,7 +13,6 @@
 // ============================================================
 .btn:not(.btn-link) {
   text-transform: uppercase;
-  letter-spacing: .04em;
   box-shadow: $btn-sticker-offset $btn-sticker-offset 0 0 var(--#{$prefix}btn-border-color);
   transition: transform .12s ease, box-shadow .12s ease;
 
