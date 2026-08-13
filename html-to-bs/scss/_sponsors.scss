@@ -20,7 +20,7 @@
   font-family: $headings-font-family;
   font-weight: 700;
   text-transform: uppercase;
-  color: $custom-cyan-700;
+  color: $cyan-700;
   letter-spacing: .05em;
   font-size: 1.05rem;
   line-height: $line-height-base;   // the tier label is body-height, not a display heading
@@ -45,8 +45,8 @@
   gap: 12px;
   background: $cream;
   border: 2px solid $line;
-  box-shadow: 4px 4px 0 0 $custom-cyan-700;
-  color: $custom-cyan-700;
+  box-shadow: 4px 4px 0 0 $cyan-700;
+  color: $cyan-700;
   min-height: 72px;
   padding: 14px 18px;
   font-family: $headings-font-family;
@@ -57,13 +57,13 @@
 
   &-lg { min-height: 96px; justify-content: flex-start; padding-inline: 24px; font-size: 1.15rem; }
   &-text { min-height: 56px; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; color: $gray-700; box-shadow: 3px 3px 0 0 $line; }
-  &-icon  { color: $custom-cyan-700; display: inline-flex; }
+  &-icon  { color: $cyan-700; display: inline-flex; }
 }
 
 .micro-sponsor {
   text-align: center;
   margin-top: 40px;
 
-  &-title { font-family: $headings-font-family; font-weight: 400; text-transform: uppercase; font-size: 1rem; line-height: $line-height-base; letter-spacing: .04em; color: $custom-cyan-800; margin: 0 0 8px; }
+  &-title { font-family: $headings-font-family; font-weight: 400; text-transform: uppercase; font-size: 1rem; line-height: $line-height-base; letter-spacing: .04em; color: $cyan-800; margin: 0 0 8px; }
   &-names { font-family: $font-family-sans-serif; font-size: .95rem; color: $gray-700; }
 }

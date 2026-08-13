@@ -28,57 +28,57 @@ $red:    $vermilion !default;
 $sand:   $raffia !default;
 $slate:  $granny-smith !default;
 
-$custom-sand-100: $bridal-heath !default;
-$custom-sand-200: $merino !default;
-$custom-sand-300: $pearl-bush !default;
-$custom-sand-400: tint-color($sand, 20%) !default;
-$custom-sand-500: $sand !default;
-$custom-sand-600: shade-color($sand, 20%) !default;
-$custom-sand-700: shade-color($sand, 40%) !default;
-$custom-sand-800: shade-color($sand, 60%) !default;
-$custom-sand-900: shade-color($sand, 80%) !default;
+$sand-100: $bridal-heath !default;
+$sand-200: $merino !default;
+$sand-300: $pearl-bush !default;
+$sand-400: tint-color($sand, 20%) !default;
+$sand-500: $sand !default;
+$sand-600: shade-color($sand, 20%) !default;
+$sand-700: shade-color($sand, 40%) !default;
+$sand-800: shade-color($sand, 60%) !default;
+$sand-900: shade-color($sand, 80%) !default;
 
-$custom-sands: (
-  "custom-sand-100": $custom-sand-100,
-  "custom-sand-200": $custom-sand-200,
-  "custom-sand-300": $custom-sand-300,
-  "custom-sand-400": $custom-sand-400,
-  "custom-sand-500": $custom-sand-500,
-  "custom-sand-600": $custom-sand-600,
-  "custom-sand-700": $custom-sand-700,
-  "custom-sand-800": $custom-sand-800,
-  "custom-sand-900": $custom-sand-900
+$sands: (
+  "custom-sand-100": $sand-100,
+  "custom-sand-200": $sand-200,
+  "custom-sand-300": $sand-300,
+  "custom-sand-400": $sand-400,
+  "custom-sand-500": $sand-500,
+  "custom-sand-600": $sand-600,
+  "custom-sand-700": $sand-700,
+  "custom-sand-800": $sand-800,
+  "custom-sand-900": $sand-900
 ) !default;
 
-$custom-slate-100: tint-color($slate, 80%) !default;
-$custom-slate-200: tint-color($slate, 60%) !default;
-$custom-slate-300: tint-color($slate, 40%) !default;
-$custom-slate-400: $submarine !default;
-$custom-slate-500: $slate !default;
-$custom-slate-600: shade-color($slate, 20%) !default;
-$custom-slate-700: $nandor !default;
-$custom-slate-800: shade-color($slate, 60%) !default;
-$custom-slate-900: shade-color($slate, 80%) !default;
+$slate-100: tint-color($slate, 80%) !default;
+$slate-200: tint-color($slate, 60%) !default;
+$slate-300: tint-color($slate, 40%) !default;
+$slate-400: $submarine !default;
+$slate-500: $slate !default;
+$slate-600: shade-color($slate, 20%) !default;
+$slate-700: $nandor !default;
+$slate-800: shade-color($slate, 60%) !default;
+$slate-900: shade-color($slate, 80%) !default;
 
-$custom-slates: (
-  "custom-slate-100": $custom-slate-100,
-  "custom-slate-200": $custom-slate-200,
-  "custom-slate-300": $custom-slate-300,
-  "custom-slate-400": $custom-slate-400,
-  "custom-slate-500": $custom-slate-500,
-  "custom-slate-600": $custom-slate-600,
-  "custom-slate-700": $custom-slate-700,
-  "custom-slate-800": $custom-slate-800,
-  "custom-slate-900": $custom-slate-900
+$slates: (
+  "custom-slate-100": $slate-100,
+  "custom-slate-200": $slate-200,
+  "custom-slate-300": $slate-300,
+  "custom-slate-400": $slate-400,
+  "custom-slate-500": $slate-500,
+  "custom-slate-600": $slate-600,
+  "custom-slate-700": $slate-700,
+  "custom-slate-800": $slate-800,
+  "custom-slate-900": $slate-900
 ) !default;
 
-$gray-100: $custom-sand-100 !default;
-$gray-200: $custom-sand-200 !default;
-$gray-300: $custom-sand-300 !default;
-$gray-400: $custom-slate-400 !default;
+$gray-100: $sand-100 !default;
+$gray-200: $sand-200 !default;
+$gray-300: $sand-300 !default;
+$gray-400: $slate-400 !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
-$gray-700: $custom-slate-700 !default;
+$gray-700: $slate-700 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 
@@ -87,91 +87,91 @@ $grays: (
   "200": $gray-200,
   "300": $gray-300,
   "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
+  // "500": $gray-500,
+  // "600": $gray-600,
+  "700": $gray-700//,
+  // "800": $gray-800,
+  // "900": $gray-900
 ) !default;
 
-$custom-red-100: tint-color($red, 80%) !default;
-$custom-red-200: tint-color($red, 60%) !default;
-$custom-red-300: tint-color($red, 40%) !default;
-$custom-red-400: tint-color($red, 20%) !default;
-$custom-red-500: $red !default;
-$custom-red-600: shade-color($red, 20%)  !default;
-$custom-red-700: shade-color($red, 40%) !default;
-$custom-red-800: shade-color($red, 60%) !default;
-$custom-red-900: shade-color($red, 80%) !default;
+$red-100: tint-color($red, 80%) !default;
+$red-200: tint-color($red, 60%) !default;
+$red-300: tint-color($red, 40%) !default;
+$red-400: tint-color($red, 20%) !default;
+$red-500: $red !default;
+$red-600: shade-color($red, 20%)  !default;
+$red-700: shade-color($red, 40%) !default;
+$red-800: shade-color($red, 60%) !default;
+$red-900: shade-color($red, 80%) !default;
 
-$custom-reds: (
-  "custom-red-100": $custom-red-100,
-  "custom-red-200": $custom-red-200,
-  "custom-red-300": $custom-red-300,
-  "custom-red-400": $custom-red-400,
-  "custom-red-500": $custom-red-500,
-  "custom-red-600": $custom-red-600,
-  "custom-red-700": $custom-red-700,
-  "custom-red-800": $custom-red-800,
-  "custom-red-900": $custom-red-900
+$reds: (
+  "custom-red-100": $red-100,
+  "custom-red-200": $red-200,
+  "custom-red-300": $red-300,
+  "custom-red-400": $red-400,
+  "custom-red-500": $red-500,
+  "custom-red-600": $red-600,
+  "custom-red-700": $red-700,
+  "custom-red-800": $red-800,
+  "custom-red-900": $red-900
 ) !default;
 
-$custom-orange-100: tint-color($orange, 80%) !default;
-$custom-orange-200: tint-color($orange, 60%) !default;
-$custom-orange-300: tint-color($orange, 40%) !default;
-$custom-orange-400: tint-color($orange, 20%) !default;
-$custom-orange-500: $flamingo !default;
-$custom-orange-600: $tia-maria !default; // shade-color($orange, 20%)
-$custom-orange-700: shade-color($orange, 40%) !default;
-$custom-orange-800: shade-color($orange, 60%) !default;
-$custom-orange-900: shade-color($orange, 80%) !default;
+$orange-100: tint-color($orange, 80%) !default;
+$orange-200: tint-color($orange, 60%) !default;
+$orange-300: tint-color($orange, 40%) !default;
+$orange-400: tint-color($orange, 20%) !default;
+$orange-500: $flamingo !default;
+$orange-600: $tia-maria !default; // shade-color($orange, 20%)
+$orange-700: shade-color($orange, 40%) !default;
+$orange-800: shade-color($orange, 60%) !default;
+$orange-900: shade-color($orange, 80%) !default;
 
-$custom-oranges: (
-  "custom-orange-100": $custom-orange-100,
-  "custom-orange-200": $custom-orange-200,
-  "custom-orange-300": $custom-orange-300,
-  "custom-orange-400": $custom-orange-400,
-  "custom-orange-500": $custom-orange-500,
-  "custom-orange-600": $custom-orange-600,
-  "custom-orange-700": $custom-orange-700,
-  "custom-orange-800": $custom-orange-800,
-  "custom-orange-900": $custom-orange-900
+$oranges: (
+  "custom-orange-100": $orange-100,
+  "custom-orange-200": $orange-200,
+  "custom-orange-300": $orange-300,
+  "custom-orange-400": $orange-400,
+  "custom-orange-500": $orange-500,
+  "custom-orange-600": $orange-600,
+  "custom-orange-700": $orange-700,
+  "custom-orange-800": $orange-800,
+  "custom-orange-900": $orange-900
 ) !default;
 
-$custom-cyan-100: tint-color($cyan, 80%) !default;
-$custom-cyan-200: tint-color($cyan, 60%) !default;
-$custom-cyan-300: tint-color($cyan, 40%) !default;
-$custom-cyan-400: tint-color($cyan, 20%) !default;
-$custom-cyan-500: $cyan !default;
-$custom-cyan-600: shade-color($cyan, 20%) !default;
-$custom-cyan-700: $blue-stone  !default;
-$custom-cyan-800: $sherpa-blue !default;
-$custom-cyan-900: $cyprus      !default;
+$cyan-100: tint-color($cyan, 80%) !default;
+$cyan-200: tint-color($cyan, 60%) !default;
+$cyan-300: tint-color($cyan, 40%) !default;
+$cyan-400: tint-color($cyan, 20%) !default;
+$cyan-500: $cyan !default;
+$cyan-600: shade-color($cyan, 20%) !default;
+$cyan-700: $blue-stone  !default;
+$cyan-800: $sherpa-blue !default;
+$cyan-900: $cyprus      !default;
 
-$custom-cyans: (
-  "custom-cyan-100": $custom-cyan-100,
-  "custom-cyan-200": $custom-cyan-200,
-  "custom-cyan-300": $custom-cyan-300,
-  "custom-cyan-400": $custom-cyan-400,
-  "custom-cyan-500": $custom-cyan-500,
-  "custom-cyan-600": $custom-cyan-600,
-  "custom-cyan-700": $custom-cyan-700,
-  "custom-cyan-800": $custom-cyan-800,
-  "custom-cyan-900": $custom-cyan-900
+$cyans: (
+  "custom-cyan-100": $cyan-100,
+  "custom-cyan-200": $cyan-200,
+  "custom-cyan-300": $cyan-300,
+  "custom-cyan-400": $cyan-400,
+  "custom-cyan-500": $cyan-500,
+  "custom-cyan-600": $cyan-600,
+  "custom-cyan-700": $cyan-700,
+  "custom-cyan-800": $cyan-800,
+  "custom-cyan-900": $cyan-900
 ) !default;
 
-$cream:     $custom-sand-100;
-$cream-alt: $custom-sand-200;
-$line:      $custom-slate-400;
-$panel:     $custom-sand-300;
+$cream:     $sand-100;
+$cream-alt: $sand-200;
+$line:      $slate-400;
+$panel:     $sand-300;
 $muted:     #556260;
 $ink:       #3e4948;
 
-$foot-head: $custom-red-200;
-$foot-text: $custom-sand-200;
+$foot-head: $red-200;
+$foot-text: $sand-200;
 
 // scss-docs-start wcbr-theme-variables
-$primary:    $custom-cyan-700;
+$primary:    $cyan-700;
 $secondary:  $orange;
 $body-bg:    $cream;
 $body-color: $ink;

@@ -23,11 +23,7 @@
   --wp----preset--color--gray-200: #f6eee4;
   --wp----preset--color--gray-300: #e9e0d8;
   --wp----preset--color--gray-400: #bec9c8;
-  --wp----preset--color--gray-500: #adb5bd;
-  --wp----preset--color--gray-600: #6c757d;
   --wp----preset--color--gray-700: #4a5654;
-  --wp----preset--color--gray-800: #343a40;
-  --wp----preset--color--gray-900: #212529;
 }
 
 body {
@@ -160,8 +156,8 @@ h3, .h3 {
 }
 
 .btn-orange {
-  --wp--btn-border-color: #e84814;
-  --wp--btn-hover-border-color: #e84814;
+  --wp--btn-border-color: #f56530;
+  --wp--btn-hover-border-color: #f56530;
 }
 
 .badge {

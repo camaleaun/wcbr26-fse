@@ -163,7 +163,17 @@ body { font-size: 1.125rem; line-height: 1.45; }
 .wp-block-button__link.has-cyan-700-border-color:active { box-shadow:0 0 0 0 var(--wp--preset--color--cyan-700) !important; }
 
 /* ── Header: REF .header-inner tem min-height:72px (+1px border = 73px) ── */
-.header-inner { min-height: 72px; }
+/* REF .container (que é o .header-inner) soma max-width + padding-inline:24px numa
+   classe só; o "constrained" layout do WP só dá o max-width, sem o padding interno. */
+.header-inner { min-height: 72px; padding-inline: 24px; }
+/* REF: .header-nav {margin-left:auto} empurra SÓ o grupo à direita (nav fica colado no logo).
+   WP usa justify-content:space-between + nav selfStretch:fill, que espalha/alarga o nav
+   por todo o espaço, deslocando os itens ~140px para a esquerda e alargando ~240px. */
+.header-inner { justify-content: flex-start !important; }
+.header-inner .wp-block-navigation { flex: 0 1 auto !important; margin-left: auto !important; }
+/* REF .social-icon: height:17px; WP renderiza no tamanho padrão do core (24px) */
+.header-social .wp-social-link { width: 17px !important; height: 17px !important; padding: 0 !important; }
+.header-social .wp-social-link svg { width: 17px !important; height: 17px !important; }
 
 /* ── Header-meta: remove margens UA do <ul> de social-icons e dos <p> ── */
 /* UL social tem margin-block:1em (UA), que com font-size:24px = 24px top+bottom */
